@@ -20,7 +20,7 @@ const App = () => {
         </div>
         
         <div className="row">
-          <div className="border border-warning  col-8 md-0">
+          <div className="border border-warning  col-md-8 col-sm">
             <AppRouters/>   
           </div>
           <div className="border border-primary col col-2-md md-0 ">

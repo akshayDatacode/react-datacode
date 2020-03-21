@@ -8,8 +8,7 @@ class MainComponent extends Component {
             <>
            
             <div className="container">
-                <div className="row">
-                    <h6> Main Component</h6>  
+                <div className="row"> 
                     <Indexposts/> 
                  
                  
