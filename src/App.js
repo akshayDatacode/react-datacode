@@ -1,12 +1,11 @@
 import React from 'react';
 import './App.css';
 import "bootstrap/dist/css/bootstrap.css";
-import HeaderComponent from "./components/header_component/HeaderComponent";
-import FooterComponent from "./components/footer_component/FooterComponent";
 import { BrowserRouter as Router } from "react-router-dom";
 import AppRouters from "./app_routers/AppRouters";
 import SideSection from './components/side_section/SideSection';
 import IndexFooter from './components/footer_component/indexFooter';
+import IndexHeader from './components/header_component/IndexHeader';
 
 const App = () => {
   return (
@@ -15,7 +14,7 @@ const App = () => {
       <div className="containers">
         <div className="row">
           <div className="col">
-            <HeaderComponent/>
+            <IndexHeader/>
           </div>
         </div>
         

@@ -6,7 +6,7 @@ class Quize  extends Component {
      }
 
      handleOption = (event) =>{
-        if(event.target.value == this.props.correctAnswer) {
+        if(event.target.value === this.props.correctAnswer) {
         this.setState({ isClicked : true , status : "correct"})
         this.props.counter()
         }else{
@@ -15,10 +15,10 @@ class Quize  extends Component {
      }
      getColorChange = () => {
         let classes = "badge m-2 badge-";
-        if (this.state.status == "correct") {
+        if (this.state.status === "correct") {
           classes += "success";
         } 
-        if(this.state.status == 'wrrong'){
+        if(this.state.status === 'wrrong'){
           classes += "danger";
         }
         return classes;
@@ -28,7 +28,7 @@ class Quize  extends Component {
             <>
             <h6>Quize : 1</h6>  
                     <h4>{this.props.question}</h4>
-                    {!this.state.status == "" && (
+                    {!this.state.status === "" && (
                         <span className={this.getColorChange()}> {this.state.status}</span>
                     )}
                      <br/>
