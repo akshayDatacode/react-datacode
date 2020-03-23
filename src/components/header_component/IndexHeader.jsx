@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import HeaderBannerSection from './HeaderBannerSection';
 import HeaderComponent from './HeaderComponent';
 class IndexHeader extends Component {
     state = {  }
@@ -8,7 +7,7 @@ class IndexHeader extends Component {
             <>
             
             <HeaderComponent/>
-            <HeaderBannerSection />
+            
             </>
          );
     }

@@ -1,3 +1,12 @@
 Blog Site Examplle :- 
 
  https://bootsnipp.com/snippets/RE68M
+
+ Installations
+
+ fontawesome : - 
+ npm i --save @fortawesome/fontawesome-svg-core  @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
+ npm i --save @fortawesome/free-brands-svg-icons
+ 
+ react-bootstrap : - 
+ npm intall react-bootstrap bootstrap 

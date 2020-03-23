@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import { fab, faFacebookSquare, faLinkedinIn, faYoutube, faInstagram, faMailchimp } from '@fortawesome/free-brands-svg-icons'
+import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
 class FooterComponent extends Component {
     state = {  }
     render() { 
@@ -49,6 +52,7 @@ class FooterComponent extends Component {
 
         <ul class="list-unstyled">
           <li>
+          <FontAwesomeIcon icon={faEnvelope}/>
             <a href="#!" class="text-muted">datacode.in@gmail.com</a>
           </li>
           <li>
@@ -78,28 +82,25 @@ class FooterComponent extends Component {
 <h6>space for buttons</h6>
   <ul class="list-unstyled list-inline text-center">
     <li class="list-inline-item">
-      <a class="btn-floating btn-fb mx-1">
-        <i class="fab fa-facebook-f"> </i>
+    <a class="btn-floating btn-tw mx-2" href="https://www.facebook.com/Datacode.in/">
+        <FontAwesomeIcon icon={faFacebookSquare} color="white"/>
+    </a>
+      
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-tw mx-2">
+
+      <FontAwesomeIcon icon={faLinkedinIn}/>
       </a>
     </li>
     <li class="list-inline-item">
-      <a class="btn-floating btn-tw mx-1">
-        <i class="fab fa-twitter"> </i>
+      <a class="btn-floating btn-gplus mx-2">
+      <FontAwesomeIcon icon={faYoutube}/>
       </a>
     </li>
     <li class="list-inline-item">
-      <a class="btn-floating btn-gplus mx-1">
-        <i class="fab fa-google-plus-g"> </i>
-      </a>
-    </li>
-    <li class="list-inline-item">
-      <a class="btn-floating btn-li mx-1">
-        <i class="fab fa-linkedin-in"> </i>
-      </a>
-    </li>
-    <li class="list-inline-item">
-      <a class="btn-floating btn-dribbble mx-1">
-        <i class="fab fa-dribbble"> </i>
+      <a class="btn-floating btn-li mx-2">
+      <FontAwesomeIcon icon={faInstagram}/>
       </a>
     </li>
   </ul>
