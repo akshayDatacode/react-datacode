@@ -5,22 +5,28 @@ class PostCard extends Component {
     render() { 
         return ( 
             <>
-                    <div className = " border border-success">
+
+            <div className="card bg-light mb-5 shadow mb-2 rounded">
+                <div className="card-body"> 
+            
                     <img
                     src= {require("../../../assets/images/"+this.props.require)}
-                    className="mx-auto img-fluid img-circle d-block"
+                    className="mx-auto img-fluid img-circle d-block mb-2"
                     alt="avatar"
                     />
-                    <h5>{this.props.titelHead}</h5>
-                    <p>{this.props.paragraph}</p>    
+                    <h5 className="text-info">{this.props.titelHead}</h5>
+                    <p clsssName="text-light">{this.props.paragraph}</p>    
                     
                     <div className="row">
-                        <div className="col-8"></div> 
-                        <div className="col-4">
+                        <div className="col-7"></div> 
+                        <div className="col-5">
                             <h6 className="text-primary">Read More</h6>
                         </div>             
                     </div>
-                    </div>
+                    
+               </div>
+            </div>     
+                    
             </>
          );
     }

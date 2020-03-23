@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-class SideSection extends Component {
+class RightSideSection extends Component {
     state = {  }
     render() { 
         return ( 
@@ -13,4 +13,4 @@ class SideSection extends Component {
     }
 }
  
-export default SideSection;
+export default RightSideSection;
