@@ -6,7 +6,6 @@ class PostCard extends Component {
     return (
       <>
         <div className="card bg-light shadow rounded">
-          <div class="card-footer"></div>
           <img
             className=" card-img-top mx-auto img-fluid img-circle d-block"
             src={require("../../../assets/images/" + this.props.require)}

@@ -8,20 +8,9 @@ class MainComponent extends Component {
   render() {
     return (
       <>
-        <div className="row ">
-          <div className="col-12 mb-5">
-            <HeaderBannerSection imgsource="h2.jpeg" />
-          </div>
-          <div className="row">
-            <div className="col-1"></div>
+        <HeaderBannerSection imgsource="h2.jpeg" interlink="#btn_header" />
 
-            <div className="col-10">
-              <Indexposts />
-            </div>
-
-            <div className="col-1"></div>
-          </div>
-        </div>
+        <Indexposts />
       </>
     );
   }
