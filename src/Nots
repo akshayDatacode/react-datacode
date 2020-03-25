@@ -11,7 +11,7 @@ Blog Site Examplle :-
  react-bootstrap : - 
  npm intall react-bootstrap bootstrap 
 
-
+npm install react-responsive-carousel
 
 
 import React, { Component } from "react";
@@ -78,3 +78,75 @@ class Quize extends Component {
     );
   }
 }
+
+// ========================================================
+{/* Card Code */}
+
+        <Card className="bg-dark text-white">
+          <Card.Img
+            src={require("../../assets/images/" + this.props.imgsource)}
+            alt="Card image"
+          />
+          <Card.ImgOverlay>
+            <div className="col-sm-3">
+              <Card.Title className="d-none d-sm-block">Datacode.in</Card.Title>
+              <a
+                variant="primary"
+                href={this.props.interlink}
+                className=" btn btn-warning btn-lg"
+              >
+                Start Learning
+              </a>
+            </div>
+          </Card.ImgOverlay>
+        </Card>
+
+// ================================================================
+
+// =======================React Carousel Code >==================
+<Carousel>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={require("../../assets/images/" + this.props.imgsource)}
+              alt="First slide"
+            />
+            <Carousel.Caption>
+              <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={require("../../assets/images/" + this.props.imgsource)}
+              alt="Third slide"
+            />
+            <Carousel.Caption>
+              <h3>Second slide label</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={require("../../assets/images/" + this.props.imgsource)}
+              alt="Third slide"
+            />
+            <Carousel.Caption>
+              <a
+                variant="primary"
+                href={this.props.interlink}
+                className=" btn btn-warning btn-lg"
+              >
+                Start Learning
+              </a>
+              <h3>Third slide label</h3>
+              <p>
+                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              </p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>

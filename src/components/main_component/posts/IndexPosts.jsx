@@ -23,7 +23,7 @@ class IndexPosts extends Component {
     return (
       <>
         <div class="row  pt-2 pb-2 rounded ">
-          <div className="col-12">
+          <div className="col">
             <div className="row">
               <div className=" col-md-4 col-sm mb-2 mt-2">
                 <Link to="/dbms_interview_question">
