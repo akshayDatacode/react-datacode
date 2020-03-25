@@ -14,7 +14,7 @@ class HeaderComponent extends Component {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav>
-              <Nav.Link href="/">
+              <Nav.Link href="/home">
                 <FontAwesomeIcon icon={faHome} /> Home
               </Nav.Link>
               <Nav.Link href="aboutus">
@@ -35,7 +35,6 @@ class HeaderComponent extends Component {
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
-          
         </Navbar>
       </>
     );

@@ -57,7 +57,7 @@ class IndexPosts extends Component {
             </div>
           </div>
         </div>
-        <div class="row bg-warning pt-2 pb-2 mt-3 rounded" id="btn_header">
+        <div class="row bg-warning pt-2 pb-2 mt-3 rounded">
           <div className="col-md-6 col-sm-3 col-4 ">
             <div className="card bg-light shadow rounded">
               <div className="card-body">

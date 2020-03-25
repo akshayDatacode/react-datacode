@@ -6,6 +6,7 @@ import AboutUs from "../components/header_component/AboutUs";
 import DBMSInterviewQuestion from "../components/main_component/posts/technical_interview_questions/DBMSInterviewQuestion";
 import OOPsInterviewQuestion from "../components/main_component/posts/technical_interview_questions/OOPsInterviewQuestion";
 import PythonQuize from "../components/main_component/posts/mcqQuestions/PythonQuize";
+import HomeComponent from "../components/main_component/HomeComponent";
 
 class AppRouters extends Component {
   state = {};
@@ -14,6 +15,7 @@ class AppRouters extends Component {
       <>
         <Switch>
           <Route exact path="/" component={MainComponent} />
+          <Route exact path="/home" component={HomeComponent} />
           <Route exact path="/articles" component={Articles} />
           <Route exact path="/aboutus" component={AboutUs} />
           <Route

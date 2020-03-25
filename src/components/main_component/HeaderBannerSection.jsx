@@ -5,8 +5,6 @@ class HeaderBannerSection extends Component {
   render() {
     return (
       <>
-        
-
         {/* Card Code */}
 
         <Card className="bg-dark text-white">
