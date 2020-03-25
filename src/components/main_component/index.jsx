@@ -8,9 +8,16 @@ class MainComponent extends Component {
   render() {
     return (
       <>
-        <HeaderBannerSection imgsource="h2.jpeg" interlink="#btn_header" />
-
-        <Indexposts />
+        <div className="row">
+          <div className="col border border-primary ">
+            <HeaderBannerSection imgsource="h2.jpeg" interlink="#btn_header" />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col">
+            <Indexposts />
+          </div>
+        </div>
       </>
     );
   }

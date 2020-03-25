@@ -7,14 +7,13 @@ class IndexFooter extends Component {
     return (
       <>
         <div className="row">
-          <div className="col-md-12 col-sm-6">
+          <div className="col">
             <FooterComponentUpper />
           </div>
-
-          <div className="row ">
-            <div className="col-md-12 col-sm-6 ">
-              <FooterComponent />
-            </div>
+        </div>
+        <div className="row">
+          <div className="col p-0 m-0">
+            <FooterComponent />
           </div>
         </div>
       </>
