@@ -1,63 +1,110 @@
 import React, { Component } from "react";
+import { Accordion, Card, Button } from "react-bootstrap";
 class Quize extends Component {
   state = {
     isClicked: false,
-    status: ""
+    status: "",
+    correctAns: ""
   };
 
   handleOption = event => {
     if (event.target.value == this.props.correctAnswer) {
-      this.setState({ isClicked: true, status: "correct" });
+      this.setState({ isClicked: true, status: "correct", correctAns: " " });
       this.props.counter();
     } else {
-      this.setState({ isClicked: true, status: "wrrong" });
+      this.setState({
+        isClicked: true,
+        status: "wrrong",
+        correctAns: this.props.correctAnswer
+      });
     }
   };
   getColorChange = () => {
-    let classes = "badge m-2 badge-";
+    let classes = "";
     if (this.state.status == "correct") {
-      classes = classes + "success";
+      classes = "card-header bg-success";
     }
     if (this.state.status == "wrrong") {
-      classes = classes + "danger";
+      classes = "bg-danger";
     }
     return classes;
   };
   render() {
     return (
       <>
-        <h6>Quize : {this.props.quizeNo}</h6>
-        <h4>{this.props.question}</h4>
-        {!this.state.status == "" && (
-          <span className={this.getColorChange()}> {this.state.status}</span>
-        )}
-        <br />
-        {!this.state.isClicked && (
-          <>
-            <h5>Options:</h5>
-            <input
-              type="radio"
-              name="op1"
-              value={this.props.v1}
-              onClick={this.handleOption}
-            />{" "}
-            {this.props.v1} <br />
-            <input
-              type="radio"
-              name="op1"
-              value={this.props.v2}
-              onClick={this.handleOption}
-            />{" "}
-            {this.props.v2} <br />
-            <input
-              type="radio"
-              name="op1"
-              value={this.props.v3}
-              onClick={this.handleOption}
-            />{" "}
-            {this.props.v3}
-          </>
-        )}
+        <div className="card-fluid text-dark mt-2 mb-4 shadow">
+          {this.state.status == "correct" && (
+            <div className={this.getColorChange()}>{this.state.status}</div>
+          )}{" "}
+          <div className="card-body">
+            <div className="p-2 border-left border-primary">
+              <h5 className="text-left ml-2">{this.props.question}</h5>
+            </div>
+
+            {!this.state.isClicked && (
+              <>
+                <ul class="list-group list-group-flush">
+                  <li className="list-group-item">
+                    <input
+                      type="radio"
+                      name="op1"
+                      value={this.props.v1}
+                      onClick={this.handleOption}
+                    />{" "}
+                    {this.props.v1}
+                  </li>
+                  <li className="list-group-item">
+                    <input
+                      type="radio"
+                      name="op1"
+                      value={this.props.v2}
+                      onClick={this.handleOption}
+                    />{" "}
+                    {this.props.v2}
+                  </li>
+
+                  <li className="list-group-item">
+                    <input
+                      type="radio"
+                      name="op1"
+                      value={this.props.v3}
+                      onClick={this.handleOption}
+                    />{" "}
+                    {this.props.v3}
+                  </li>
+                  <li className="list-group-item">
+                    <input
+                      type="radio"
+                      name="op1"
+                      value={this.props.v3}
+                      onClick={this.handleOption}
+                    />{" "}
+                    {this.props.v3}
+                  </li>
+                </ul>
+              </>
+            )}
+          </div>
+          {this.state.status == "wrrong" && (
+            <Accordion>
+              <Card>
+                <Card.Footer className={this.getColorChange()}>
+                  <Accordion.Toggle
+                    as={Button}
+                    variant="button"
+                    className="btn btn-primary"
+                    eventKey="0"
+                  >
+                    Show Correct Answer
+                  </Accordion.Toggle>
+                </Card.Footer>
+                <Accordion.Collapse eventKey="0">
+                  <Card.Body>{this.state.correctAns}</Card.Body>
+                </Accordion.Collapse>
+              </Card>
+            </Accordion>
+          )}
+        </div>
       </>
     );
   }

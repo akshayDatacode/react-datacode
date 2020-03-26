@@ -12,18 +12,6 @@ class HeaderBannerSection extends Component {
             src={require("../../assets/images/" + this.props.imgsource)}
             alt="Card image"
           />
-          <Card.ImgOverlay>
-            <div className="col-sm-3">
-              <Card.Title className="d-none d-sm-block">Datacode.in</Card.Title>
-              <a
-                variant="primary"
-                href={this.props.interlink}
-                className=" btn btn-warning btn-lg"
-              >
-                Start Learning
-              </a>
-            </div>
-          </Card.ImgOverlay>
         </Card>
       </>
     );
