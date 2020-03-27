@@ -14,10 +14,10 @@ class HeaderComponent extends Component {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav>
-              <Nav.Link href="/home">
+              <Nav.Link href="#/home">
                 <FontAwesomeIcon icon={faHome} /> Home
               </Nav.Link>
-              <Nav.Link href="aboutus">
+              <Nav.Link href="#/aboutus">
                 <FontAwesomeIcon icon={faAddressCard} /> About us
               </Nav.Link>
               <NavDropdown title="Technologies" id="basic-nav-dropdown">

@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
-import { BrowserRouter as Router } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 import AppRouters from "./app_routers/AppRouters";
 
 import IndexFooter from "./components/footer_component/indexFooter";
