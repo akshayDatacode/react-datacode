@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/react-datacode.in/static/css/main.5f361e03.chunk.css",
-    "main.js": "/react-datacode.in/static/js/main.0ae21394.chunk.js",
-    "main.js.map": "/react-datacode.in/static/js/main.0ae21394.chunk.js.map",
+    "main.js": "/react-datacode.in/static/js/main.65adf541.chunk.js",
+    "main.js.map": "/react-datacode.in/static/js/main.65adf541.chunk.js.map",
     "runtime-main.js": "/react-datacode.in/static/js/runtime-main.eb019ca3.js",
     "runtime-main.js.map": "/react-datacode.in/static/js/runtime-main.eb019ca3.js.map",
     "static/css/2.89f067aa.chunk.css": "/react-datacode.in/static/css/2.89f067aa.chunk.css",
-    "static/js/2.1d598a48.chunk.js": "/react-datacode.in/static/js/2.1d598a48.chunk.js",
-    "static/js/2.1d598a48.chunk.js.map": "/react-datacode.in/static/js/2.1d598a48.chunk.js.map",
+    "static/js/2.47202913.chunk.js": "/react-datacode.in/static/js/2.47202913.chunk.js",
+    "static/js/2.47202913.chunk.js.map": "/react-datacode.in/static/js/2.47202913.chunk.js.map",
     "index.html": "/react-datacode.in/index.html",
-    "precache-manifest.d8eb9349295a663a3dd62d0525f7b2f2.js": "/react-datacode.in/precache-manifest.d8eb9349295a663a3dd62d0525f7b2f2.js",
+    "precache-manifest.02f038798cd4219019010902e1d56b33.js": "/react-datacode.in/precache-manifest.02f038798cd4219019010902e1d56b33.js",
     "service-worker.js": "/react-datacode.in/service-worker.js",
     "static/css/2.89f067aa.chunk.css.map": "/react-datacode.in/static/css/2.89f067aa.chunk.css.map",
     "static/css/main.5f361e03.chunk.css.map": "/react-datacode.in/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.1d598a48.chunk.js.LICENSE.txt": "/react-datacode.in/static/js/2.1d598a48.chunk.js.LICENSE.txt",
+    "static/js/2.47202913.chunk.js.LICENSE.txt": "/react-datacode.in/static/js/2.47202913.chunk.js.LICENSE.txt",
     "static/media/Cover Photo (3).png": "/react-datacode.in/static/media/Cover Photo (3).6bc137af.png",
     "static/media/Shootpy_W Cover Page (1).jpg": "/react-datacode.in/static/media/Shootpy_W Cover Page (1).39eabcb7.jpg",
     "static/media/coder1.jpeg": "/react-datacode.in/static/media/coder1.17a6aab6.jpeg",
@@ -34,8 +34,8 @@
   "entrypoints": [
     "static/js/runtime-main.eb019ca3.js",
     "static/css/2.89f067aa.chunk.css",
-    "static/js/2.1d598a48.chunk.js",
+    "static/js/2.47202913.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.0ae21394.chunk.js"
+    "static/js/main.65adf541.chunk.js"
   ]
 }
