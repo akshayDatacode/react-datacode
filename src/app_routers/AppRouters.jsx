@@ -14,21 +14,21 @@ class AppRouters extends Component {
     return (
       <>
         <Switch>
-          <Route exact path="#/" component={MainComponent} />
-          <Route exact path="#/home" component={HomeComponent} />
-          <Route exact path="#/articles" component={Articles} />
-          <Route exact path="#/aboutus" component={AboutUs} />
+          <Route exact path="/" component={MainComponent} />
+          <Route exact path="/home" component={HomeComponent} />
+          <Route exact path="/articles" component={Articles} />
+          <Route exact path="/aboutus" component={AboutUs} />
           <Route
             exact
-            path="#/dbms_interview_question"
+            path="/dbms_interview_question"
             component={DBMSInterviewQuestion}
           />
           <Route
             exact
-            path="#/oops_interview_question"
+            path="/oops_interview_question"
             component={OOPsInterviewQuestion}
           />
-          <Route exact path="#/python_mcqs" component={PythonQuize} />
+          <Route exact path="/python_mcqs" component={PythonQuize} />
         </Switch>
       </>
     );
