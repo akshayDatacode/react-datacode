@@ -13,6 +13,8 @@ Blog Site Examplle :-
 
 npm install react-responsive-carousel
 
+/====================FOr Git Pages
+npm install gh-pages --save
 
 import React, { Component } from "react";
 class Quize extends Component {
