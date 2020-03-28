@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "911b493fb293d62c67c9df0a12f5fb5a",
+    "revision": "ea082a0e6884baf5dc74263828f63693",
     "url": "/react-datacode.in/index.html"
   },
   {
-    "revision": "7e9fe89dfdd5859676e0",
+    "revision": "21898237f51a515b2c48",
     "url": "/react-datacode.in/static/css/2.89f067aa.chunk.css"
   },
   {
-    "revision": "92fab7f0015f623957c0",
+    "revision": "678d3037c08a6c790b80",
     "url": "/react-datacode.in/static/css/main.5f361e03.chunk.css"
   },
   {
-    "revision": "7e9fe89dfdd5859676e0",
-    "url": "/react-datacode.in/static/js/2.47202913.chunk.js"
+    "revision": "21898237f51a515b2c48",
+    "url": "/react-datacode.in/static/js/2.d21a339e.chunk.js"
   },
   {
     "revision": "df8be702f0cc9d299c0ff42ca03d3e40",
-    "url": "/react-datacode.in/static/js/2.47202913.chunk.js.LICENSE.txt"
+    "url": "/react-datacode.in/static/js/2.d21a339e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "92fab7f0015f623957c0",
-    "url": "/react-datacode.in/static/js/main.ec89b165.chunk.js"
+    "revision": "678d3037c08a6c790b80",
+    "url": "/react-datacode.in/static/js/main.26c5b790.chunk.js"
   },
   {
     "revision": "5fdec35ade7f6236807f",
