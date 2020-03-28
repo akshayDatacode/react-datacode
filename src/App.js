@@ -9,7 +9,7 @@ import IndexHeader from "./components/header_component/IndexHeader";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/">
       <div className="container-fluid">
         <div className="row">
           <div className="row">
