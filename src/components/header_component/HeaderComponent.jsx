@@ -10,26 +10,26 @@ class HeaderComponent extends Component {
     return (
       <>
         <Navbar fixed="top" bg="dark" expand="md" variant="dark ">
-          <Navbar.Brand href="react-datacode.in/">Datacode.in</Navbar.Brand>
+          <Navbar.Brand href="/">Datacode.in</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav>
-              <Nav.Link href="react-datacode.in/home">
+              <Nav.Link href="/home">
                 <FontAwesomeIcon icon={faHome} /> Home
               </Nav.Link>
 
-              <Nav.Link href="react-datacode.in/aboutus">
+              <Nav.Link href="/aboutus">
                 <FontAwesomeIcon icon={faAddressCard} /> About us
               </Nav.Link>
 
               <NavDropdown title="Technologies" id="basic-nav-dropdown">
-                <Nav.Link href="react-datacode.in/dbms_interview_question">
+                <Nav.Link href="/dbms_interview_question">
                   <NavDropdown.Item>DBMS</NavDropdown.Item>
                 </Nav.Link>
-                <Nav.Link href="react-datacode.in/python_mcqs">
+                <Nav.Link href="/python_mcqs">
                   <NavDropdown.Item>Python MCQs</NavDropdown.Item>
                 </Nav.Link>
-                <Nav.Link href="react-datacode.in/dbms_interview_question">
+                <Nav.Link href="/dbms_interview_question">
                   <NavDropdown.Item>Articles</NavDropdown.Item>
                 </Nav.Link>
                 <NavDropdown.Divider />
