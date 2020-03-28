@@ -35,7 +35,7 @@ class HeaderComponent extends Component {
                   <NavDropdown.Item>Articles</NavDropdown.Item>
                 </Link>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
+                <NavDropdown.Item href="/action/3.4">
                   Separated link
                 </NavDropdown.Item>
               </NavDropdown>
