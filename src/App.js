@@ -9,7 +9,7 @@ import IndexHeader from "./components/header_component/IndexHeader";
 
 const App = () => {
   return (
-    <Router basename="/">
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="container-fluid">
         <div className="row">
           <div className="row">
