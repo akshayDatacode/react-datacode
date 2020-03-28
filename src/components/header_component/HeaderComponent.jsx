@@ -10,30 +10,30 @@ class HeaderComponent extends Component {
     return (
       <>
         <Navbar fixed="top" bg="dark" expand="md" variant="dark ">
-          <Navbar.Brand href="/">Datacode.in</Navbar.Brand>
+          <Navbar.Brand href="react-datacode.in/">Datacode.in</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav>
-              <Nav.Link href="/home">
+              <Nav.Link href="react-datacode.in/home">
                 <FontAwesomeIcon icon={faHome} /> Home
               </Nav.Link>
 
-              <Nav.Link href="/aboutus">
+              <Nav.Link href="react-datacode.in/aboutus">
                 <FontAwesomeIcon icon={faAddressCard} /> About us
               </Nav.Link>
 
               <NavDropdown title="Technologies" id="basic-nav-dropdown">
-                <Nav.Link href="/dbms_interview_question">
+                <Nav.Link href="react-datacode.in/dbms_interview_question">
                   <NavDropdown.Item>DBMS</NavDropdown.Item>
                 </Nav.Link>
-                <Nav.Link href="/python_mcqs">
+                <Nav.Link href="react-datacode.in/python_mcqs">
                   <NavDropdown.Item>Python MCQs</NavDropdown.Item>
                 </Nav.Link>
-                <Nav.Link href="/dbms_interview_question">
+                <Nav.Link href="react-datacode.in/dbms_interview_question">
                   <NavDropdown.Item>Articles</NavDropdown.Item>
                 </Nav.Link>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/action/3.4">
+                <NavDropdown.Item href="/action/3.90">
                   Separated link
                 </NavDropdown.Item>
               </NavDropdown>
