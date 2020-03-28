@@ -14,26 +14,24 @@ class HeaderComponent extends Component {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav>
-              <Link to="/home">
-                <Nav.Link>
-                  <FontAwesomeIcon icon={faHome} /> Home
-                </Nav.Link>
-              </Link>
-              <Link to="/aboutus">
-                <Nav.Link>
-                  <FontAwesomeIcon icon={faAddressCard} /> About us
-                </Nav.Link>
-              </Link>
+              <Nav.Link href="/home">
+                <FontAwesomeIcon icon={faHome} /> Home
+              </Nav.Link>
+
+              <Nav.Link href="/aboutus">
+                <FontAwesomeIcon icon={faAddressCard} /> About us
+              </Nav.Link>
+
               <NavDropdown title="Technologies" id="basic-nav-dropdown">
-                <Link to="/dbms_interview_question">
+                <Nav.Link href="/dbms_interview_question">
                   <NavDropdown.Item>DBMS</NavDropdown.Item>
-                </Link>
-                <Link to="/python_mcqs">
+                </Nav.Link>
+                <Nav.Link href="/python_mcqs">
                   <NavDropdown.Item>Python MCQs</NavDropdown.Item>
-                </Link>
-                <Link to="/dbms_interview_question">
+                </Nav.Link>
+                <Nav.Link href="/dbms_interview_question">
                   <NavDropdown.Item>Articles</NavDropdown.Item>
-                </Link>
+                </Nav.Link>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="/action/3.4">
                   Separated link
