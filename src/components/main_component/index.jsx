@@ -4,6 +4,7 @@ import Indexposts from "./posts/IndexPosts";
 import HeaderBannerSection from "./HeaderBannerSection";
 import CarouselComponent from "./CarouselComponent";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import {
   fab,
   faCodepen,
