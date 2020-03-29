@@ -27,7 +27,7 @@ class MainComponent extends Component {
             <center>
               <a
                 variant="primary"
-                href="/react-datacode/#/home"
+                href="/home"
                 className=" btn btn-warning btn-lg"
               >
                 Start Learning
@@ -53,7 +53,7 @@ class MainComponent extends Component {
                 <div className="row">
                   <div className="col-6"></div>
                   <div className="col-5 mb-2  pr-2">
-                    <a to="/home">Read More</a>
+                    <a href="/home">Read More</a>
                   </div>
                 </div>
               </div>

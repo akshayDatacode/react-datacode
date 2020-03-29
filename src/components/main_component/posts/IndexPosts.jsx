@@ -143,7 +143,7 @@ class IndexPosts extends Component {
               </div>
 
               <div className="col-md-4 col-sm mb-2 mt-2 ">
-                <Link to="/python_msqs">
+                <Link to="/python_mcqs">
                   <PostCard
                     require="pythontech.jpeg"
                     titelHead="Pthon Interview Questions"
