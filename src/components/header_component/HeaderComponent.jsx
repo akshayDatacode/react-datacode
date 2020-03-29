@@ -19,23 +19,23 @@ class HeaderComponent extends Component {
                   <FontAwesomeIcon icon={faHome} /> Home
                 </Nav.Link>
               </Link>
-              <Link to="/aboutus">
-                <Nav.Link>
-                  <FontAwesomeIcon icon={faAddressCard} /> About us
-                </Nav.Link>
-              </Link>
+              <a href="/aboutus">
+                <FontAwesomeIcon icon={faAddressCard} /> About us
+              </a>
               <NavDropdown title="Technologies" id="basic-nav-dropdown">
                 <Link to="/dbms_interview_question">
                   <NavDropdown.Item>DBMS</NavDropdown.Item>
                 </Link>
-                <Nav.Link href="react-datacode/#/python_mcqs">
-                  <NavDropdown.Item>Python MCQs</NavDropdown.Item>
-                </Nav.Link>
-                <Link to="/dbms_interview_question">
+
+                <NavDropdown.Item href="/react-datacode/#/python_mcqs">
+                  Python MCQs
+                </NavDropdown.Item>
+
+                <Link href="/react-datacode/#/python_mcqs">
                   <NavDropdown.Item>Articles</NavDropdown.Item>
                 </Link>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/action/3.90">
+                <NavDropdown.Item href="/action/3.100">
                   Separated link
                 </NavDropdown.Item>
               </NavDropdown>
