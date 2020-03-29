@@ -26,13 +26,13 @@ class IndexPosts extends Component {
           <div className="col">
             <div className="row">
               <div className=" col-md-4 col-sm mb-2 mt-2">
-                <a href="/react-datacode/#//dbms_interview_question">
+                <Link to="/dbms_interview_question">
                   <PostCard
                     require="dbms_interview_question.jpeg.jpeg"
                     titelHead="DBMS Interview Questions"
                     paragraph="also the rst starting education why dont know how but because of this we are fonf fgdfslsk sg;gk fs;lskg gf;gkg dggk;lfkglk dfgdlfgk  "
                   />
-                </a>
+                </Link>
               </div>
 
               <div className="col-md-4 col-sm mb-2 mt-2">
@@ -46,7 +46,7 @@ class IndexPosts extends Component {
               </div>
 
               <div className="col-md-4 col-sm mb-2 mt-2 ">
-                <Link to="/react-datacode/#/oops_interview_question">
+                <Link to="/oops_interview_question">
                   <PostCard
                     require="pythontech.jpeg"
                     titelHead="Pthon Interview Questions"
@@ -88,13 +88,13 @@ class IndexPosts extends Component {
               <div className="card-body">
                 <h5 className="card-title text-info">Find Your Book Here !!</h5>
                 <p clsssName=" card-text text-light ">
-                  "I really Love tddddddddddddddddddddddddddddhis one "
+                  "Use this Because This IS Using LINK tag with home "
                 </p>
               </div>
 
-              <a href="/" class="btn btn-right btn-primary ">
+              <Link to="/home" class="btn btn-right btn-primary ">
                 Read More
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -143,7 +143,7 @@ class IndexPosts extends Component {
               </div>
 
               <div className="col-md-4 col-sm mb-2 mt-2 ">
-                <Link to="/dbms_interview_question">
+                <Link to="/python_msqs">
                   <PostCard
                     require="pythontech.jpeg"
                     titelHead="Pthon Interview Questions"

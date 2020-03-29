@@ -26,7 +26,7 @@ class MainComponent extends Component {
             <center>
               <a
                 variant="primary"
-                href="/home"
+                href="/react-datacode/#/home"
                 className=" btn btn-warning btn-lg"
               >
                 Start Learning
@@ -45,14 +45,14 @@ class MainComponent extends Component {
                 <div className="card-body">
                   <h5 className="card-title text-info">Code Pen</h5>
                   <p clsssName=" card-text text-light ">
-                    We Usually want to make a site for just fun and timepass
+                    This Card is Just only using herf="/home"
                   </p>
                 </div>
 
                 <div className="row">
                   <div className="col-6"></div>
                   <div className="col-5 mb-2  pr-2">
-                    <a href="/home">Read More</a>
+                    <a to="/home">Read More</a>
                   </div>
                 </div>
               </div>
@@ -65,14 +65,14 @@ class MainComponent extends Component {
                 <div className="card-body">
                   <h5 className="card-title text-info">Code Pen</h5>
                   <p clsssName=" card-text text-light ">
-                    We Usually want to make a site for just fun and timepass
+                    This Card is Using LINK TAG LINK to = "/home"
                   </p>
                 </div>
 
                 <div className="row">
                   <div className="col-6"></div>
                   <div className="col-5 mb-2 pr-2">
-                    <a href="/home">Read More</a>
+                    <Link to="/home">Read More</Link>
                   </div>
                 </div>
               </div>
@@ -85,14 +85,15 @@ class MainComponent extends Component {
                 <div className="card-body">
                   <h5 className="card-title text-info">Datacode Kings</h5>
                   <p clsssName=" card-text text-light ">
-                    We Usually want to make a site for just fun and timepass
+                    This Card is Using href = "/react-datacode/#/home" so Check
+                    all Once
                   </p>
                 </div>
 
                 <div className="row">
                   <div className="col-6"></div>
                   <div className="col-5 mb-2 pr-2">
-                    <a href="/home">Read More</a>
+                    <a href="/react-datacode/#/home">Read More</a>
                   </div>
                 </div>
               </div>

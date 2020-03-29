@@ -29,8 +29,8 @@ class HeaderComponent extends Component {
                   Python MCQs
                 </NavDropdown.Item>
 
-                <NavDropdown.Item href="/react-datacode/#/articles">
-                  Articles
+                <NavDropdown.Item>
+                  <Link to="/articles">Articles</Link>
                 </NavDropdown.Item>
 
                 <NavDropdown.Divider />
