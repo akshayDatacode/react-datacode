@@ -26,13 +26,13 @@ class IndexPosts extends Component {
           <div className="col">
             <div className="row">
               <div className=" col-md-4 col-sm mb-2 mt-2">
-                <Link to="/dbms_interview_question">
+                <a href="/react-datacode/#//dbms_interview_question">
                   <PostCard
                     require="dbms_interview_question.jpeg.jpeg"
                     titelHead="DBMS Interview Questions"
                     paragraph="also the rst starting education why dont know how but because of this we are fonf fgdfslsk sg;gk fs;lskg gf;gkg dggk;lfkglk dfgdlfgk  "
                   />
-                </Link>
+                </a>
               </div>
 
               <div className="col-md-4 col-sm mb-2 mt-2">
@@ -46,7 +46,7 @@ class IndexPosts extends Component {
               </div>
 
               <div className="col-md-4 col-sm mb-2 mt-2 ">
-                <Link to="/dbms_interview_question">
+                <Link to="/react-datacode/#/oops_interview_question">
                   <PostCard
                     require="pythontech.jpeg"
                     titelHead="Pthon Interview Questions"
