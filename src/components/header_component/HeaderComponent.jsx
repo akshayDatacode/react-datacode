@@ -28,9 +28,9 @@ class HeaderComponent extends Component {
                 <Link to="/dbms_interview_question">
                   <NavDropdown.Item>DBMS</NavDropdown.Item>
                 </Link>
-                <Link to="/python_mcqs">
+                <Nav.Link herf="/react-datacode/#/python_mcqs">
                   <NavDropdown.Item>Python MCQs</NavDropdown.Item>
-                </Link>
+                </Nav.Link>
                 <Link to="/dbms_interview_question">
                   <NavDropdown.Item>Articles</NavDropdown.Item>
                 </Link>
