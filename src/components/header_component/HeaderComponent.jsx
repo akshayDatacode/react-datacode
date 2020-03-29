@@ -10,15 +10,13 @@ class HeaderComponent extends Component {
     return (
       <>
         <Navbar fixed="top" bg="dark" expand="md" variant="dark ">
-          <Navbar.Brand href="/">Datacode.in</Navbar.Brand>
+          <Navbar.Brand href="/#">Datacode.in</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav>
-              <Link to="/react-datacode/#/home">
-                <Nav.Link>
-                  <FontAwesomeIcon icon={faHome} /> Home
-                </Nav.Link>
-              </Link>
+              <Nav.Link href="/react-datacode/#/home">
+                <FontAwesomeIcon icon={faHome} /> Home
+              </Nav.Link>
               <a href="/aboutus">
                 <FontAwesomeIcon icon={faAddressCard} /> About us
               </a>
@@ -31,9 +29,10 @@ class HeaderComponent extends Component {
                   Python MCQs
                 </NavDropdown.Item>
 
-                <Link href="/react-datacode/#/python_mcqs">
-                  <NavDropdown.Item>Articles</NavDropdown.Item>
-                </Link>
+                <NavDropdown.Item href="/react-datacode/#/articles">
+                  Articles
+                </NavDropdown.Item>
+
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="/action/3.100">
                   Separated link
