@@ -1,15 +1,13 @@
 import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
-import { HashRouter as Router } from "react-router-dom";
 import AppRouters from "./app_routers/AppRouters";
-
 import IndexFooter from "./components/footer_component/indexFooter";
 import IndexHeader from "./components/header_component/IndexHeader";
 
 const App = () => {
   return (
-    <Router basename="react-datacode">
+    <>
       <div className="container-fluid">
         <div className="row">
           <div className="row">
@@ -33,7 +31,7 @@ const App = () => {
           <IndexFooter />
         </div>
       </div>
-    </Router>
+    </>
   );
 };
 
