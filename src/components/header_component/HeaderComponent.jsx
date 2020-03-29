@@ -10,11 +10,11 @@ class HeaderComponent extends Component {
     return (
       <>
         <Navbar fixed="top" bg="dark" expand="md" variant="dark ">
-          <Navbar.Brand href="react-datacode/#">Datacode.in</Navbar.Brand>
+          <Navbar.Brand href="/">Datacode.in</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav>
-              <Link to="/home">
+              <Link to="/react-datacode/#/home">
                 <Nav.Link>
                   <FontAwesomeIcon icon={faHome} /> Home
                 </Nav.Link>
@@ -23,9 +23,9 @@ class HeaderComponent extends Component {
                 <FontAwesomeIcon icon={faAddressCard} /> About us
               </a>
               <NavDropdown title="Technologies" id="basic-nav-dropdown">
-                <Link to="/dbms_interview_question">
-                  <NavDropdown.Item>DBMS</NavDropdown.Item>
-                </Link>
+                <NavDropdown.Item href="/react-datacode/#/dbms_interview_question">
+                  DBMS
+                </NavDropdown.Item>
 
                 <NavDropdown.Item href="/react-datacode/#/python_mcqs">
                   Python MCQs
