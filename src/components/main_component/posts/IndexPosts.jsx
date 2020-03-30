@@ -3,18 +3,12 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import PostCard from "./PostCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  fab,
-  faFacebookSquare,
-  faLinkedinIn,
-  faYoutube,
-  faInstagram,
-  faMailchimp
-} from "@fortawesome/free-brands-svg-icons";
-import {
-  faEnvelope,
-  faQuestionCircle,
-  faBookOpen,
-  faLaptopCode
+  faChessQueen,
+  faListOl,
+  faListAlt,
+  faUser,
+  faUsers,
+  faTerminal
 } from "@fortawesome/free-solid-svg-icons";
 
 class IndexPosts extends Component {
@@ -22,138 +16,164 @@ class IndexPosts extends Component {
   render() {
     return (
       <>
-        <div class="row  pt-2 pb-2 rounded ">
-          <div className="col">
-            <div className="row">
-              <div className=" col-md-4 col-sm mb-2 mt-2">
-                <Link to="/dbms_interview_question">
-                  <PostCard
-                    require="dbms_interview_question.jpeg.jpeg"
-                    titelHead="DBMS Interview Questions"
-                    paragraph="also the rst starting education why dont know how but because of this we are fonf fgdfslsk sg;gk fs;lskg gf;gkg dggk;lfkglk dfgdlfgk  "
+        {/* First 3 Post Cards */}
+        <div className="container-fluid mt-5">
+          <div class="row ">
+            <div className="col">
+              <div class="card-deck mt-3">
+                <div class="card border border-white">
+                  <img
+                    className=" card-img-top mx-auto img-fluid img-circle d-block"
+                    src={require("../../../assets/images/indexcover2.jpeg")}
+                    alt="avatar"
                   />
-                </Link>
-              </div>
 
-              <div className="col-md-4 col-sm mb-2 mt-2">
-                <Link to="/dbms_interview_question">
-                  <PostCard
-                    require="sql1.jpeg"
-                    titelHead="SQL Interview Questions"
-                    paragraph="finest and first starting education why dont know how but because of this we are fonf fgdfslsk sg;gk fs;lskg gf;gkg dggk;lfkglk dfgdlfgk  "
+                  <div class="card-body">
+                    <h5 class="card-title">Programming MCQs</h5>
+                    <p class="card-text">
+                      We Love to Code and this is the best way to express our
+                      love to Computer Science Wolrd.
+                    </p>
+                  </div>
+                  <div class="card-footer border border-white bg-white">
+                    <div className="row">
+                      <div className="col-6"></div>
+                      <div className="col-5 text-right ">
+                        <Link to="/home">Read More</Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card border border-white">
+                  <img
+                    className=" card-img-top mx-auto img-fluid img-circle d-block"
+                    src={require("../../../assets/images/programming_boooks.jpeg")}
+                    alt="avatar"
                   />
-                </Link>
-              </div>
 
-              <div className="col-md-4 col-sm mb-2 mt-2 ">
-                <Link to="/oops_interview_question">
-                  <PostCard
-                    require="pythontech.jpeg"
-                    titelHead="Pthon Interview Questions"
-                    paragraph="irst starting educatidfdfdfdfdfon why dont know how but because of this we are fonf fgdfslsk sg;gk fs;lskg gf;gkg dggk;lfkglk dfgdlfgk  "
+                  <div class="card-body">
+                    <h5 class="card-title">Programming Books</h5>
+                    <p class="card-text">
+                      We Love to Code and this is the best way to express our
+                      love to Computer Science Wolrd.
+                    </p>
+                  </div>
+                  <div class="card-footer border border-white bg-white">
+                    <div className="row">
+                      <div className="col-6"></div>
+                      <div className="col-5 text-right ">
+                        <Link to="/home">Read More</Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card border border-white">
+                  <img
+                    className=" card-img-top mx-auto img-fluid img-circle d-block"
+                    src={require("../../../assets/images/programming_practices.jpeg")}
+                    alt="avatar"
                   />
-                </Link>
+
+                  <div class="card-body">
+                    <h5 class="card-title">Programming Books</h5>
+                    <p class="card-text">
+                      We Love to Code and this is the best way to express our
+                      love to Computer Science Wolrd.
+                    </p>
+                  </div>
+                  <div class="card-footer border border-white bg-white">
+                    <div className="row">
+                      <div className="col-6"></div>
+                      <div className="col-5 text-right ">
+                        <Link to="/home">Read More</Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="row bg-warning pt-2 pb-2 mt-3 rounded">
-          <div className="col-md-6 col-sm-3 col-4 ">
-            <div className="card bg-light shadow rounded">
-              <div className="card-body">
-                <h5 className="card-title text-info">Who Let the Dogs Out</h5>
-                <p clsssName=" card-text text-light ">
-                  "I dont Know Bro I am Also A Kind of "
-                </p>
-              </div>
-
-              <a href="/" class="btn btn-right btn-primary ">
-                Read More
-              </a>
-            </div>
-          </div>
-          <div className="col-4 col-sm d-none d-sm-block"></div>
-          <div className="col-4 col-sm-3 m-5">
-            <FontAwesomeIcon icon={faQuestionCircle} size="10x" />
-          </div>
-        </div>
-
-        <div class="row bg-success pt-2 pb-2 mt-3 rounded " id="btn_header">
-          <div className="col-4 col-sm-3 m-5">
-            <FontAwesomeIcon icon={faBookOpen} size="10x" />
-          </div>
-          <div className="col-4 col-sm d-none d-sm-block "></div>
-          <div className="col-md-6 col-sm-3 col-4 ml-5">
-            <div className="card bg-light shadow rounded ">
-              <div className="card-body">
-                <h5 className="card-title text-info">Find Your Book Here !!</h5>
-                <p clsssName=" card-text text-light ">
-                  "Use this Because This IS Using LINK tag with home "
-                </p>
-              </div>
-
-              <Link to="/home" class="btn btn-right btn-primary ">
-                Read More
-              </Link>
-            </div>
-          </div>
-        </div>
-        <div class="row bg-info pt-2 pb-2 mt-3 rounded" id="btn_header">
-          <div className="col-md-6 col-sm-3 col-4 ">
-            <div className="card bg-light shadow rounded">
-              <div className="card-body">
-                <h5 className="card-title text-info">Who Let the Dogs Out</h5>
-                <p clsssName=" card-text text-light ">
-                  "I dont Know Bro I am Also A Kind of "
-                </p>
-              </div>
-
-              <a href="/" class="btn btn-right btn-primary ">
-                Read More
-              </a>
-            </div>
-          </div>
-          <div className="col-4 col-sm d-none d-sm-block"></div>
-          <div className="col-4 col-sm-3 m-5">
-            <FontAwesomeIcon icon={faLaptopCode} size="10x" />
-          </div>
-        </div>
-
-        <div class="row  pt-2 pb-2 mt-3 rounded">
-          <div className="col-12">
-            <div className="row">
-              <div className=" col-md-4 col-sm mb-2 mt-2">
-                <Link to="/dbms_interview_question">
-                  <PostCard
-                    require="dbms_interview_question.jpeg.jpeg"
-                    titelHead="DBMS Interview Questions"
-                    paragraph="also the rst starting education why dont know how but because of this we are fonf fgdfslsk sg;gk fs;lskg gf;gkg dggk;lfkglk dfgdlfgk  "
+        {/* First Row 3 Post Cards Ending >>>>>>>>>>>>>>>>>>>>> */}
+        {/* First 3 Post Cards */}
+        <div className="container-fluid mt-5">
+          <div class="row ">
+            <div className="col">
+              <div class="card-deck mt-3">
+                <div class="card border border-white">
+                  <img
+                    className=" card-img-top mx-auto img-fluid img-circle d-block"
+                    src={require("../../../assets/images/cprogramming_practice_question.jpeg")}
+                    alt="avatar"
                   />
-                </Link>
-              </div>
 
-              <div className="col-md-4 col-sm mb-2 mt-2">
-                <Link to="/dbms_interview_question">
-                  <PostCard
-                    require="sql1.jpeg"
-                    titelHead="SQL Interview Questions"
-                    paragraph="finest and first starting education why dont know how but because of this we are fonf fgdfslsk sg;gk fs;lskg gf;gkg dggk;lfkglk dfgdlfgk  "
+                  <div class="card-body">
+                    <h5 class="card-title">C Programming Practice Questions</h5>
+                    <p class="card-text">
+                      We Love to Code and this is the best way to express our
+                      love to Computer Science Wolrd.
+                    </p>
+                  </div>
+                  <div class="card-footer border border-white bg-white">
+                    <div className="row">
+                      <div className="col-6"></div>
+                      <div className="col-5 text-right ">
+                        <Link to="/home">Read More</Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card border border-white">
+                  <img
+                    className=" card-img-top mx-auto img-fluid img-circle d-block"
+                    src={require("../../../assets/images/dsa_programming_questions.jpeg")}
+                    alt="avatar"
                   />
-                </Link>
-              </div>
 
-              <div className="col-md-4 col-sm mb-2 mt-2 ">
-                <Link to="/python_mcqs">
-                  <PostCard
-                    require="pythontech.jpeg"
-                    titelHead="Pthon Interview Questions"
-                    paragraph="irst starting educatidfdfdfdfdfon why dont know how but because of this we are fonf fgdfslsk sg;gk fs;lskg gf;gkg dggk;lfkglk dfgdlfgk  "
+                  <div class="card-body">
+                    <h5 class="card-title">DataStructure And Algoritham</h5>
+                    <p class="card-text">
+                      We Love to Code and this is the best way to express our
+                      love to Computer Science Wolrd.
+                    </p>
+                  </div>
+                  <div class="card-footer border border-white bg-white">
+                    <div className="row">
+                      <div className="col-6"></div>
+                      <div className="col-5 text-right ">
+                        <Link to="/home">Read More</Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card border border-white">
+                  <img
+                    className=" card-img-top mx-auto img-fluid img-circle d-block"
+                    src={require("../../../assets/images/python_programming.jpeg")}
+                    alt="avatar"
                   />
-                </Link>
+
+                  <div class="card-body">
+                    <h5 class="card-title">Python Programming</h5>
+                    <p class="card-text">
+                      We Love to Code and this is the best way to express our
+                      love to Computer Science Wolrd.
+                    </p>
+                  </div>
+                  <div class="card-footer border border-white bg-white">
+                    <div className="row">
+                      <div className="col-6"></div>
+                      <div className="col-5 text-right ">
+                        <Link to="/python_mcqs">Read More</Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        {/* First Row 3 Post Cards Ending >>>>>>>>>>>>>>>>>>>>> */}
       </>
     );
   }
