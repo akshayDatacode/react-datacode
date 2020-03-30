@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/react-datacode/static/css/main.5f361e03.chunk.css",
-    "main.js": "/react-datacode/static/js/main.16ebcadc.chunk.js",
-    "main.js.map": "/react-datacode/static/js/main.16ebcadc.chunk.js.map",
+    "main.js": "/react-datacode/static/js/main.50b972da.chunk.js",
+    "main.js.map": "/react-datacode/static/js/main.50b972da.chunk.js.map",
     "runtime-main.js": "/react-datacode/static/js/runtime-main.20ff38fd.js",
     "runtime-main.js.map": "/react-datacode/static/js/runtime-main.20ff38fd.js.map",
     "static/css/2.89f067aa.chunk.css": "/react-datacode/static/css/2.89f067aa.chunk.css",
-    "static/js/2.d04916c9.chunk.js": "/react-datacode/static/js/2.d04916c9.chunk.js",
-    "static/js/2.d04916c9.chunk.js.map": "/react-datacode/static/js/2.d04916c9.chunk.js.map",
+    "static/js/2.19a30158.chunk.js": "/react-datacode/static/js/2.19a30158.chunk.js",
+    "static/js/2.19a30158.chunk.js.map": "/react-datacode/static/js/2.19a30158.chunk.js.map",
     "index.html": "/react-datacode/index.html",
-    "precache-manifest.f3e49c72ff608d86df163e33810113e8.js": "/react-datacode/precache-manifest.f3e49c72ff608d86df163e33810113e8.js",
+    "precache-manifest.e3a69d8a6597fe2b0bcfdf006005105d.js": "/react-datacode/precache-manifest.e3a69d8a6597fe2b0bcfdf006005105d.js",
     "service-worker.js": "/react-datacode/service-worker.js",
     "static/css/2.89f067aa.chunk.css.map": "/react-datacode/static/css/2.89f067aa.chunk.css.map",
     "static/css/main.5f361e03.chunk.css.map": "/react-datacode/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.d04916c9.chunk.js.LICENSE.txt": "/react-datacode/static/js/2.d04916c9.chunk.js.LICENSE.txt",
+    "static/js/2.19a30158.chunk.js.LICENSE.txt": "/react-datacode/static/js/2.19a30158.chunk.js.LICENSE.txt",
     "static/media/Cover Photo (3).png": "/react-datacode/static/media/Cover Photo (3).6bc137af.png",
     "static/media/Green Disease Prevention Instagram Post.png": "/react-datacode/static/media/Green Disease Prevention Instagram Post.ee3b12ec.png",
     "static/media/Shootpy_W Cover Page (1).jpg": "/react-datacode/static/media/Shootpy_W Cover Page (1).39eabcb7.jpg",
@@ -43,8 +43,8 @@
   "entrypoints": [
     "static/js/runtime-main.20ff38fd.js",
     "static/css/2.89f067aa.chunk.css",
-    "static/js/2.d04916c9.chunk.js",
+    "static/js/2.19a30158.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.16ebcadc.chunk.js"
+    "static/js/main.50b972da.chunk.js"
   ]
 }
