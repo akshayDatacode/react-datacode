@@ -14,7 +14,7 @@ class Quize extends Component {
     } else {
       this.setState({
         isClicked: true,
-        status: "wrrong",
+        status: "wrong",
         correctAns: this.props.correctAnswer
       });
     }
@@ -24,7 +24,7 @@ class Quize extends Component {
     if (this.state.status == "correct") {
       classes = "card-header bg-success";
     }
-    if (this.state.status == "wrrong") {
+    if (this.state.status == "wrong") {
       classes = "bg-danger";
     }
     return classes;
@@ -76,16 +76,16 @@ class Quize extends Component {
                     <input
                       type="radio"
                       name="op1"
-                      value={this.props.v3}
+                      value={this.props.v4}
                       onClick={this.handleOption}
                     />{" "}
-                    {this.props.v3}
+                    {this.props.v4}
                   </li>
                 </ul>
               </>
             )}
           </div>
-          {this.state.status == "wrrong" && (
+          {this.state.status == "wrong" && (
             <Accordion>
               <Card>
                 <Card.Footer className={this.getColorChange()}>
