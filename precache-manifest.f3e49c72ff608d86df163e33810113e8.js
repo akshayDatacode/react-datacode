@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0b7cf8b35922687d1e8446b17b581b83",
+    "revision": "e4ba78567a171d11ac96bb858cffd65d",
     "url": "/react-datacode/index.html"
   },
   {
-    "revision": "c85a3190d8a7eb4cbc9f",
+    "revision": "42b1bc0e01aa9908e352",
     "url": "/react-datacode/static/css/2.89f067aa.chunk.css"
   },
   {
-    "revision": "72831e53ce1af7f91ac6",
+    "revision": "c4b1a4b04b94f77ab890",
     "url": "/react-datacode/static/css/main.5f361e03.chunk.css"
   },
   {
-    "revision": "c85a3190d8a7eb4cbc9f",
-    "url": "/react-datacode/static/js/2.40d1820e.chunk.js"
+    "revision": "42b1bc0e01aa9908e352",
+    "url": "/react-datacode/static/js/2.d04916c9.chunk.js"
   },
   {
     "revision": "df8be702f0cc9d299c0ff42ca03d3e40",
-    "url": "/react-datacode/static/js/2.40d1820e.chunk.js.LICENSE.txt"
+    "url": "/react-datacode/static/js/2.d04916c9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "72831e53ce1af7f91ac6",
-    "url": "/react-datacode/static/js/main.5b293913.chunk.js"
+    "revision": "c4b1a4b04b94f77ab890",
+    "url": "/react-datacode/static/js/main.16ebcadc.chunk.js"
   },
   {
     "revision": "98dbeaf4c8bec0657410",
@@ -32,6 +32,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-datacode/static/media/Cover Photo (3).6bc137af.png"
   },
   {
+    "revision": "ee3b12ecf25dd8709532309d2667c2ad",
+    "url": "/react-datacode/static/media/Green Disease Prevention Instagram Post.ee3b12ec.png"
+  },
+  {
     "revision": "39eabcb71339d36994fb545af35d2c9c",
     "url": "/react-datacode/static/media/Shootpy_W Cover Page (1).39eabcb7.jpg"
   },
@@ -40,12 +44,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-datacode/static/media/coder1.17a6aab6.jpeg"
   },
   {
+    "revision": "0554f5070f329307ffdd7b06ad1a0781",
+    "url": "/react-datacode/static/media/cprogramming_practice_question.0554f507.jpeg"
+  },
+  {
+    "revision": "bd748d1d96be11a3de6252357849bbe4",
+    "url": "/react-datacode/static/media/datacodelogo.bd748d1d.jpeg"
+  },
+  {
     "revision": "84a2e6ad6a4a98c2f6d49243b054681b",
     "url": "/react-datacode/static/media/dbms_interview_question.jpeg.84a2e6ad.jpeg"
   },
   {
     "revision": "78cb0203ba5f313e0292e7ee1735e3d1",
     "url": "/react-datacode/static/media/ds1.jpg.78cb0203.png"
+  },
+  {
+    "revision": "b3c2e11089a5f0103b53c19736366591",
+    "url": "/react-datacode/static/media/dsa_programming_questions.b3c2e110.jpeg"
   },
   {
     "revision": "e03defd019c51307e7db7aa9f0a9affc",
@@ -60,8 +76,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-datacode/static/media/headermain.7527ed34.jpeg"
   },
   {
+    "revision": "3a570b828f518460b65553ba29e7fac0",
+    "url": "/react-datacode/static/media/indexcover1.3a570b82.jpeg"
+  },
+  {
+    "revision": "d657c63ccf22fa6c5b96a727d73d6f29",
+    "url": "/react-datacode/static/media/indexcover2.d657c63c.jpeg"
+  },
+  {
     "revision": "c2d14b11dc654d3e4eac809598d6244f",
     "url": "/react-datacode/static/media/oops1.jpeg.c2d14b11.png"
+  },
+  {
+    "revision": "f5e5cba6b1d56026cebf117530c48269",
+    "url": "/react-datacode/static/media/programming_boooks.f5e5cba6.jpeg"
+  },
+  {
+    "revision": "3a7c54ac3b52ad0104eb6c8d83228674",
+    "url": "/react-datacode/static/media/programming_practices.3a7c54ac.jpeg"
+  },
+  {
+    "revision": "a0c67178f3fa27b7bc316040c592ce2f",
+    "url": "/react-datacode/static/media/python_programming.a0c67178.jpeg"
   },
   {
     "revision": "429f9e69c23535a032da5438e12daf81",
