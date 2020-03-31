@@ -1,5 +1,8 @@
 Blog Site Examplle :- 
 
+https://hackr.io/
+Hackr.io is a community to find and share the best online courses & tutorials
+
 https://raquelmsmith.com/blog/how-to-deploy-create-react-app-to-github-pages/
  https://bootsnipp.com/snippets/RE68M
 
@@ -14,142 +17,19 @@ https://raquelmsmith.com/blog/how-to-deploy-create-react-app-to-github-pages/
 
 npm install react-responsive-carousel
 
+//====for Code Editor Plugin----------
+
+
+npm install prismjs
+npm install --save-dev babel-plugin-prismjs
+npm install --save prism-react-renderer
+
 /====================FOr Git Pages
 npm install gh-pages --save
 
-import React, { Component } from "react";
-class Quize extends Component {
-  state = {
-    isClicked: false,
-    status: ""
-  };
+// Study For Code Editor Plugin
 
-  handleOption = event => {
-    if (event.target.value == this.props.correctAnswer) {
-      this.setState({ isClicked: true, status: "correct" });
-      this.props.counter();
-    } else {
-      this.setState({ isClicked: true, status: "wrrong" });
-    }
-  };
-  getColorChange = () => {
-    let classes = "badge m-2 badge-";
-    if (this.state.status == "correct") {
-      classes = classes + "success";
-    }
-    if (this.state.status == "wrrong") {
-      classes = classes + "danger";
-    }
-    return classes;
-  };
-  render() {
-    return (
-      <>
-        <h6>Quize : 1</h6>
-        <h4>{this.props.question}</h4>
-        {!this.state.status == "" && (
-          <span className={this.getColorChange()}> {this.state.status}</span>
-        )}
-        <br />
-        {!this.state.isClicked && (
-          <>
-            <h5>Options:</h5>
-            <input
-              type="radio"
-              name="op1"
-              value={this.props.v1}
-              onClick={this.handleOption}
-            />{" "}
-            {this.props.v1} <br />
-            <input
-              type="radio"
-              name="op1"
-              value={this.props.v2}
-              onClick={this.handleOption}
-            />{" "}
-            {this.props.v2} <br />
-            <input
-              type="radio"
-              name="op1"
-              value={this.props.v3}
-              onClick={this.handleOption}
-            />{" "}
-            {this.props.v3}
-          </>
-        )}
-      </>
-    );
-  }
-}
+https://prismjs.com/#plugins
 
-// ========================================================
-{/* Card Code */}
 
-        <Card className="bg-dark text-white">
-          <Card.Img
-            src={require("../../assets/images/" + this.props.imgsource)}
-            alt="Card image"
-          />
-          <Card.ImgOverlay>
-            <div className="col-sm-3">
-              <Card.Title className="d-none d-sm-block">Datacode.in</Card.Title>
-              <a
-                variant="primary"
-                href={this.props.interlink}
-                className=" btn btn-warning btn-lg"
-              >
-                Start Learning
-              </a>
-            </div>
-          </Card.ImgOverlay>
-        </Card>
-
-// ================================================================
-
-// =======================React Carousel Code >==================
-<Carousel>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={require("../../assets/images/" + this.props.imgsource)}
-              alt="First slide"
-            />
-            <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={require("../../assets/images/" + this.props.imgsource)}
-              alt="Third slide"
-            />
-            <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={require("../../assets/images/" + this.props.imgsource)}
-              alt="Third slide"
-            />
-            <Carousel.Caption>
-              <a
-                variant="primary"
-                href={this.props.interlink}
-                className=" btn btn-warning btn-lg"
-              >
-                Start Learning
-              </a>
-              <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
-            </Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>
+https://betterstack.dev/blog/code-highlighting-in-react-using-prismjs/#heading-install-and-configure-prismjs
