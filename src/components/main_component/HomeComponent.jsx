@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Indexposts from "./posts/IndexPosts";
 import HeaderBannerSection from "./HeaderBannerSection";
 import RightSideSection from "../right_section/RightSideSection";
+import FooterComponentUpper from "../footer_component/FooterComponentUpper";
 class HomeComponent extends Component {
   state = {};
   render() {
@@ -11,13 +12,15 @@ class HomeComponent extends Component {
 
         {/* Index Posts */}
         <div className="row">
-          <div className="col-md-9">
+          <div className="col-md-1"></div>
+          <div className="col-md-8 p-0">
             <Indexposts />
           </div>
           <div className="col-md-3">
             <RightSideSection />
           </div>
         </div>
+        <FooterComponentUpper />
       </>
     );
   }

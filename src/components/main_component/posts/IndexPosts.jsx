@@ -38,7 +38,7 @@ class IndexPosts extends Component {
                   <div class="card-footer border border-white bg-white">
                     <div className="row">
                       <div className="col-6"></div>
-                      <div className="col-5 text-right ">
+                      <div className="col-6 text-right ">
                         <Link to="/home">Read More</Link>
                       </div>
                     </div>
@@ -61,7 +61,7 @@ class IndexPosts extends Component {
                   <div class="card-footer border border-white bg-white">
                     <div className="row">
                       <div className="col-6"></div>
-                      <div className="col-5 text-right ">
+                      <div className="col-6 text-right ">
                         <Link to="/home">Read More</Link>
                       </div>
                     </div>
@@ -84,7 +84,7 @@ class IndexPosts extends Component {
                   <div class="card-footer border border-white bg-white">
                     <div className="row">
                       <div className="col-6"></div>
-                      <div className="col-5 text-right ">
+                      <div className="col-6 text-right ">
                         <Link to="/home">Read More</Link>
                       </div>
                     </div>
@@ -117,7 +117,7 @@ class IndexPosts extends Component {
                   <div class="card-footer border border-white bg-white">
                     <div className="row">
                       <div className="col-6"></div>
-                      <div className="col-5 text-right ">
+                      <div className="col-6 text-right ">
                         <Link to="/home">Read More</Link>
                       </div>
                     </div>
@@ -140,7 +140,7 @@ class IndexPosts extends Component {
                   <div class="card-footer border border-white bg-white">
                     <div className="row">
                       <div className="col-6"></div>
-                      <div className="col-5 text-right ">
+                      <div className="col-6 text-right ">
                         <Link to="/home">Read More</Link>
                       </div>
                     </div>
@@ -163,7 +163,7 @@ class IndexPosts extends Component {
                   <div class="card-footer border border-white bg-white">
                     <div className="row">
                       <div className="col-6"></div>
-                      <div className="col-5 text-right ">
+                      <div className="col-6 text-right ">
                         <Link to="/python_mcqs">Read More</Link>
                       </div>
                     </div>

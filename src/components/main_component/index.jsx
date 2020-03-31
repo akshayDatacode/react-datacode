@@ -5,14 +5,7 @@ import HeaderBannerSection from "./HeaderBannerSection";
 import CarouselComponent from "./CarouselComponent";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import {
-  fab,
-  faCodepen,
-  faDashcube,
-  faHtml5,
-  faJava,
-  faFirstOrder
-} from "@fortawesome/free-brands-svg-icons";
+import FooterComponentUpperper from "../footer_component/FooterComponentUpper";
 import {
   faChessQueen,
   faListOl,
@@ -124,9 +117,11 @@ class MainComponent extends Component {
                     Datacode All ok Machis hoti to duniya ko ang laga deta
                   </div>
                   <center>
-                    <button className="btn btn-lg btn-primary m-2">
-                      Getting Start
-                    </button>
+                    <Link to="/index_interview_questioins">
+                      <button className="btn btn-lg btn-primary m-2">
+                        Getting Start
+                      </button>
+                    </Link>
                   </center>
                 </div>
               </div>
@@ -244,7 +239,7 @@ class MainComponent extends Component {
                     <div className="row">
                       <div className="col-4"></div>
                       <div className="col text-right ">
-                        <Link to="/home">Read More</Link>
+                        <Link to="/index_books">Read More</Link>
                       </div>
                     </div>
                   </div>
@@ -272,6 +267,7 @@ class MainComponent extends Component {
             </div>
           </div>
         </div>
+        <FooterComponentUpperper />
       </>
     );
   }
