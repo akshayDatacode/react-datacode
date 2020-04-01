@@ -25,36 +25,36 @@ class FooterComponent extends Component {
                   </h6>
                 </div>
 
-                <div className="col-md-6 col-lg-7 text-center text-md-right">
+                <div className="col-md-6 col-lg-6 text-center text-md-right">
                   <a href="https://www.facebook.com/Datacode.in/" cl>
                     <FontAwesomeIcon
                       icon={faFacebookSquare}
-                      size="3x"
-                      color="white"
+                      size="2x"
+                      color="sky blue"
                       className="m-2"
                     />
                   </a>
                   <a href="https://www.facebook.com/Datacode.in/">
                     <FontAwesomeIcon
                       icon={faInstagram}
-                      size="3x"
-                      color="white"
+                      size="2x"
+                      color="orange"
                       className="m-2"
                     />
                   </a>
                   <a href="https://www.facebook.com/Datacode.in/">
                     <FontAwesomeIcon
                       icon={faLinkedinIn}
-                      size="3x"
-                      color="white"
+                      size="2x"
+                      color="blue"
                       className="m-2"
                     />
                   </a>
                   <a href="https://www.facebook.com/Datacode.in/">
                     <FontAwesomeIcon
                       icon={faYoutube}
-                      size="3x"
-                      color="white"
+                      size="2x"
+                      color="red"
                       className="m-2"
                     />
                   </a>
@@ -143,16 +143,16 @@ class FooterComponent extends Component {
                   style={{ width: 60 }}
                 />
                 <p>
-                  <i class="fas fa-home mr-3"></i> New York, NY 10012, US
+                  New York, NY 10012, US
                 </p>
                 <p>
-                  <i class="fas fa-envelope mr-3"></i> info@example.com
+                  info@example.com
                 </p>
                 <p>
-                  <i class="fas fa-phone mr-3"></i> + 01 234 567 88
+                  + 01 234 567 88
                 </p>
                 <p>
-                  <i class="fas fa-print mr-3"></i> + 01 234 567 89
+                  + 01 234 567 89
                 </p>
               </div>
             </div>
@@ -162,7 +162,7 @@ class FooterComponent extends Component {
             © 2020 Copyright:
             <a class="dark-grey-text" href="https://mdbootstrap.com/">
               {" "}
-              MDBootstrap.com
+              Datacode.in
             </a>
           </div>
         </footer>
