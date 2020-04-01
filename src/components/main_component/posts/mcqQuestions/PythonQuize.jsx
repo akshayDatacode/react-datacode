@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import HeaderBannerSection from "../../HeaderBannerSection";
 import Quize from "./quize";
 import ScoreCard from "./scoreCard";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
 class PythonQuize extends Component {
   state = {
     isCorrect: false,
@@ -19,13 +21,14 @@ class PythonQuize extends Component {
       <>
         <HeaderBannerSection imgsource="pythonmcq.jpeg" />
         <div className="col-fluid d-block d-md-none">
+          <Link to="/python_quize_tests">Python Quize Test 1</Link>
           <ScoreCard count={this.state.count} />
         </div>
         <div class="container-fluid">
           <div className="row">
             <div className="col-1"></div>
             <div className="col-md-7 ">
-            <Quize
+              <Quize
                 quizeNo="1"
                 question="Which of the following is not a keyword?"
                 correctAnswer="Programming"
@@ -65,7 +68,7 @@ class PythonQuize extends Component {
                 v4="float(’12+34′)"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="5"
                 question="What are the values of the following Python expressions?                          
                 2**(3**2)
@@ -99,7 +102,7 @@ class PythonQuize extends Component {
                 v4="error"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="8"
                 question="What will be the output of the following Python code?
                 l=list('HELLO')
@@ -112,7 +115,7 @@ class PythonQuize extends Component {
                 v4="Junk value"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="9"
                 question="What will be the output of the following Python code snippet?
                 print('Ab!2'.swapcase())"
@@ -123,7 +126,6 @@ class PythonQuize extends Component {
                 v4="aB1@"
                 counter={this.counter}
               />
-
               <Quize
                 quizeNo="10"
                 question="What will be the output of the following Python code?
@@ -140,7 +142,7 @@ class PythonQuize extends Component {
                 v4="[13, 56, 17, [87], [45, 67]]"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="11"
                 question="Write a list comprehension equivalent for the Python code shown below.
                 for i in range(1, 101):
@@ -153,7 +155,7 @@ class PythonQuize extends Component {
                 v4="[i for i in range(1, 100) if int(i*0.5)=(i*0.5)]"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="12"
                 question="What will be the output of the following Python code?
                 A = [[1, 2, 3],
@@ -167,7 +169,7 @@ class PythonQuize extends Component {
                 v4="[1, 4, 7]"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="13"
                 question="Is the following Python code valid?
                 >>> a,b=1,2,3"
@@ -178,7 +180,7 @@ class PythonQuize extends Component {
                 v4="Yes, this is an example of tuple unpacking. a=1 and b=(2,3)"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="14"
                 question="If we have two sets, s1 and s2, and we want to check if all the elements of s1 are present in s2 or not, we can use the function:"
                 correctAnswer="s1.issuperset(s2)"
@@ -188,7 +190,7 @@ class PythonQuize extends Component {
                 v4="s1.isset(s2)"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="15"
                 question="What will be the output of the following Python code?
                 a={}
@@ -202,12 +204,12 @@ class PythonQuize extends Component {
                 v4="An exception is thrown"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="16"
                 question="What will be the output of the following Python function?
                 float('   -12345\n')  
                 
-                (Note that the number of blank spaces before the number is ‘5’)" 
+                (Note that the number of blank spaces before the number is ‘5’)"
                 correctAnswer="-12345.0"
                 v1="  -12345.0 (5 blank spaces before the number)"
                 v2="-12345.0"
@@ -215,7 +217,7 @@ class PythonQuize extends Component {
                 v4="-12345.000000000…. (infinite decimal places)"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="17"
                 question="What will be the output of the following Python code?
                 elements = [0, 1, 2]
@@ -229,7 +231,7 @@ class PythonQuize extends Component {
                 v4="none of the mentioned"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="18"
                 question="What will be the output of the following Python code?
                 import sys
@@ -242,7 +244,7 @@ class PythonQuize extends Component {
                 v4="Error"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="19"
                 question="What will be the output of the following Python code?
                 import datetime
@@ -255,8 +257,7 @@ class PythonQuize extends Component {
                 v4="06-18-2017"
                 counter={this.counter}
               />
-            
-            <Quize
+              <Quize
                 quizeNo="20"
                 question="Which of the following is the use of id() function in python?"
                 correctAnswer="Id returns the identity of the object"
@@ -266,7 +267,7 @@ class PythonQuize extends Component {
                 v4=" None of the mentioned"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="21"
                 question=" What is the output of the code shown below?
                 import math
@@ -278,8 +279,7 @@ class PythonQuize extends Component {
                 v4="[‘3.1’, ‘3.14’, ‘3.142’, ‘3.1416’, ‘3.14159’]"
                 counter={this.counter}
               />
-            
-            <Quize
+              <Quize
                 quizeNo="22"
                 question="What is the output of the code shown below?
 
@@ -292,7 +292,7 @@ class PythonQuize extends Component {
                 v4="Error"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="23"
                 question="What is the output of the following piece of code when executed in the python shell?
 
@@ -306,8 +306,7 @@ class PythonQuize extends Component {
                 v4="{1,4,5}"
                 counter={this.counter}
               />
-            
-            <Quize
+              <Quize
                 quizeNo="24"
                 question="What is the output of the code shown below?
 
@@ -321,7 +320,7 @@ class PythonQuize extends Component {
                 v4="ErrorError"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="25"
                 question="Suppose i is 5 and j is 4, i + j is same as"
                 correctAnswer="i.__add__(j)"
@@ -331,7 +330,7 @@ class PythonQuize extends Component {
                 v4="i.__ADD(j)"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="26"
                 question="What is the output of the code shown below?
 
@@ -345,7 +344,7 @@ class PythonQuize extends Component {
                 v4="Address of l1"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="27"
                 question="What is the output of the code shown below?
 
@@ -357,7 +356,7 @@ class PythonQuize extends Component {
                 v4="No output"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="28"
                 question="Which of these is a private data field?
 
@@ -374,7 +373,7 @@ class PythonQuize extends Component {
                 v4="__d__"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="29"
                 question="What is the output of the code shown below?
 
@@ -390,7 +389,7 @@ class PythonQuize extends Component {
                 v4="No output"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="30"
                 question="What is the value of this expression:
 
@@ -402,7 +401,7 @@ class PythonQuize extends Component {
                 v4="0b10000b1000"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="31"
                 question="What is the output of the code shown below?
 
@@ -417,7 +416,7 @@ class PythonQuize extends Component {
                 v4="error"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="32"
                 question="Python allows string slicing. What is the output of below code:
 
@@ -430,7 +429,7 @@ class PythonQuize extends Component {
                 v4="None of these"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="33"
                 question="What does the following code print?
                 lst = []
@@ -447,7 +446,7 @@ class PythonQuize extends Component {
                 v4="[[10, 30, 20], [15, 6]]"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="34"
                 question="What is the output of the following code?
 
@@ -480,7 +479,7 @@ class PythonQuize extends Component {
                 I got decorated"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="35"
                 question="What is the more pythonic way to use getters and setters?"
                 correctAnswer="@property"
@@ -490,7 +489,7 @@ class PythonQuize extends Component {
                 v4="@property"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="36"
                 question="What is the output of the following program?.
 
@@ -504,7 +503,7 @@ class PythonQuize extends Component {
                 v4="error"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="37"
                 question="Choose the correct option with reference to below Python code?.
 
@@ -525,7 +524,7 @@ class PythonQuize extends Component {
                 "
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="38"
                 question="Which of the following is False with respect Python code?.
 
@@ -546,7 +545,7 @@ class PythonQuize extends Component {
                 v4="None of the above"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="39"
                 question="Which of the following is correct?.
 
@@ -563,7 +562,7 @@ class PythonQuize extends Component {
                 "
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="40"
                 question=" What will be the output of following Python code?.
 
@@ -577,7 +576,7 @@ class PythonQuize extends Component {
                 v4="It will throw an error as there are two 0 while creating the set."
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="41"
                 question="What will the be the result of below Python code?.
 
@@ -595,7 +594,7 @@ class PythonQuize extends Component {
                 v4="It will throw an error as same element is added twice"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="42"
                 question="Which of the following will delete key_value pair for key='tiger' in dictionary?.
 
@@ -607,7 +606,7 @@ class PythonQuize extends Component {
                 v4="del(dic.['tiger'])"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="43"
                 question="Which of the following options will not result in an error when performed on tuples in Python where tupl=(5,2,7,0,3)?."
                 correctAnswer="tupl1=tupl+tupl"
@@ -617,7 +616,7 @@ class PythonQuize extends Component {
                 v4="tupl.sort()"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="44"
                 question="Which of the following is the property of variable argument count?."
                 correctAnswer="More than one argument can be used while calling the function."
@@ -627,7 +626,7 @@ class PythonQuize extends Component {
                 v4="None of these"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="45"
                 question="What will be the output of the following Python code?.
 
@@ -643,7 +642,7 @@ class PythonQuize extends Component {
                 v4="Error"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="46"
                 question="What will be output of this expression:.
 
@@ -655,7 +654,7 @@ class PythonQuize extends Component {
                 v4="pq12"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="47"
                 question="What will be the output of the following code snippet?
                 class Sales:
@@ -672,7 +671,7 @@ class PythonQuize extends Component {
                 v4="None of the above"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="48"
                 question="Which of the following statements are correct about the given code snippet?
                 class A:
@@ -696,7 +695,7 @@ class PythonQuize extends Component {
                 v4="The data field “j” cannot be accessed by object b."
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="49"
                 question=" Which of the following statements can be used to check, whether an object “obj” is an instance of class A or not?"
                 correctAnswer="isinstance(obj, A)"
@@ -706,7 +705,7 @@ class PythonQuize extends Component {
                 v4=" isinstance(A, obj)"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="50"
                 question="Which of the following is the output of the below Python code?
 
@@ -727,9 +726,8 @@ class PythonQuize extends Component {
                 v4="The program has an error because x is private and cannot be access outside of the class."
                 counter={this.counter}
               />
-
               <h1> C mcq </h1>
-                <Quize
+              <Quize
                 quizeNo="1"
                 question="Which of the following is not a valid variable name declaration?"
                 correctAnswer="int 3_a;"
@@ -739,7 +737,7 @@ class PythonQuize extends Component {
                 v4=" int _3a"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="2"
                 question="Which of the following is not a valid C variable name?"
                 correctAnswer="int $main;"
@@ -749,7 +747,7 @@ class PythonQuize extends Component {
                 v4="int $main;"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="3"
                 question="What will be the output of the following C code?
 
@@ -771,7 +769,7 @@ class PythonQuize extends Component {
                 v4="The program will compile and print FAIL for 5 times"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="4"
                 question="Which of the following is a User-defined data type?"
                 correctAnswer=" all of the mentioned"
@@ -781,7 +779,7 @@ class PythonQuize extends Component {
                 v4=" all of the mentioned"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="5"
                 question="What will be the output of the following C code?
 
@@ -802,7 +800,7 @@ class PythonQuize extends Component {
                 v4="error"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="6"
                 question="What will be the output of the following C code on a 32-bit machine?
 
@@ -823,7 +821,7 @@ class PythonQuize extends Component {
                 v4="p and q are 2 and 8"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="7"
                 question="Which of the following is not a pointer declaration?"
                 correctAnswer="char a;"
@@ -833,7 +831,7 @@ class PythonQuize extends Component {
                 v4="char a;"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="8"
                 question="What will be the output of the following C code?
 
@@ -851,7 +849,7 @@ class PythonQuize extends Component {
                 v4="4.4"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="9"
                 question="What will be the output of the following C code?
 
@@ -869,7 +867,7 @@ class PythonQuize extends Component {
                 v4="Undefined behaviour"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="10"
                 question="What will be the output of the following C code?
 
@@ -887,7 +885,7 @@ class PythonQuize extends Component {
                 v4="Implementation defined"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="11"
                 question="2. What will be the output of the following C code considering the size of a short int is 2, char is 1 and int is 4 bytes?
 
@@ -906,7 +904,7 @@ class PythonQuize extends Component {
                 v4="2, 2, 8"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="12"
                 question="When do you need to use type-conversions?"
                 correctAnswer="All of the mentioned"
@@ -916,7 +914,7 @@ class PythonQuize extends Component {
                 v4="All of the mentioned"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="13"
                 question="What will be the output of the following C code?
 
@@ -934,7 +932,7 @@ class PythonQuize extends Component {
                 v4="a = 2, b = 2"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="14"
                 question=" What will be the output of the following C code?
 
@@ -953,7 +951,7 @@ class PythonQuize extends Component {
                 v4="2 3 4"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="15"
                 question="What will be the output of the following C code?
 
@@ -972,7 +970,7 @@ class PythonQuize extends Component {
                 v4="Run time error"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="16"
                 question="The following C code can be rewritten as _______
 
@@ -988,7 +986,7 @@ class PythonQuize extends Component {
                 v4="All of the mentioned"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="17"
                 question=" What will be the output of the following C code?
 
@@ -1006,7 +1004,7 @@ class PythonQuize extends Component {
                 v4="Nothing"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="18"
                 question=" What will be the output of the following C code?
 
@@ -1024,7 +1022,7 @@ class PythonQuize extends Component {
                 v4=" Some garbage value"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="19"
                 question="What will be the output of the following C code?
 
@@ -1047,7 +1045,7 @@ class PythonQuize extends Component {
                 v4="8"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="20"
                 question="What will be the output of the following C code?
 
@@ -1070,7 +1068,7 @@ class PythonQuize extends Component {
                 counter={this.counter}
               />
               <h1> javasript mcq question</h1>
-                <Quize
+              <Quize
                 quizeNo="1"
                 question="JavaScript is ______ Side Scripting Language."
                 correctAnswer="Browser
@@ -1085,7 +1083,7 @@ class PythonQuize extends Component {
                 "
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="2"
                 question="JavaScript is designed for following purpose -"
                 correctAnswer="To add interactivity to HTML Pages.
@@ -1100,22 +1098,20 @@ class PythonQuize extends Component {
                 "
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="3"
                 question="JavaScript is can be written -"
                 correctAnswer="Both 1 and 2 "
                 v1="directly into HTML pages
                 "
-                
                 v2="directly into JS file and included into HTML
                 "
                 v3="Both 1 and 2 "
                 v4="None of these
                 "
-                
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="4"
                 question="Variable can hold ________ value at a time"
                 correctAnswer="Single
@@ -1130,7 +1126,7 @@ class PythonQuize extends Component {
                 "
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="5"
                 question="Integer Variable is declared using following syntax in JavaScript.
                 "
@@ -1146,7 +1142,7 @@ class PythonQuize extends Component {
                 "
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="6"
                 question="We can declare ___________ at a time. Select most appropriate option.
                 "
@@ -1162,7 +1158,7 @@ class PythonQuize extends Component {
                 "
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="7"
                 question="Assignment Operators is following type of operator ______________.
                 "
@@ -1178,7 +1174,7 @@ class PythonQuize extends Component {
                 "
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="8"
                 question="'+=' operator can operate on following data values.
                 "
@@ -1194,7 +1190,7 @@ class PythonQuize extends Component {
                 "
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="9"
                 question="JavaScript contains a _________________ that assigns a value to a variable based on some condition."
                 correctAnswer="Conditional operator
@@ -1209,7 +1205,7 @@ class PythonQuize extends Component {
                 "
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="10"
                 question="Guess the ternary operator used in the following example !!!
                 marks = (mark<35)?'Fail':'Pass';"
@@ -1224,7 +1220,7 @@ class PythonQuize extends Component {
                 "
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="11"
                 question="What will be the output of the following ?
                 <script type='text/javascript'>
@@ -1243,7 +1239,7 @@ class PythonQuize extends Component {
                 "
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="12"
                 question="+Infinity in JS gets added with +Infinity then output of the code will be -
                 "
@@ -1258,7 +1254,7 @@ class PythonQuize extends Component {
                 v4="none of the above"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="13"
                 question="What will be the output of the following JavaScript code?
 
@@ -1273,7 +1269,7 @@ class PythonQuize extends Component {
                 v4="false true"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="14"
                 question="What is the observation made in the following JavaScript code?
 
@@ -1287,7 +1283,7 @@ class PythonQuize extends Component {
                 v4="Skips the defined & existent elements"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="15"
                 question="What convenience does the following JavaScript code snippet provide?
 
@@ -1299,7 +1295,7 @@ class PythonQuize extends Component {
                 v4="Shorthand expression"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="16"
                 question="Which of the following are the necessary events currently?"
                 correctAnswer="Onclick"
@@ -1309,7 +1305,7 @@ class PythonQuize extends Component {
                 v4="Onclick"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="17"
                 question="Which is the function used to retrieve a value?"
                 correctAnswer="getItem()"
@@ -1319,7 +1315,7 @@ class PythonQuize extends Component {
                 v4="retrieveItem()"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="18"
                 question="What will the following JavaScript code snippet work? If not, what will be the error?
 
@@ -1335,7 +1331,7 @@ class PythonQuize extends Component {
                 v4="No, this will result in a runtime error with the message “Cannot use Linked List”"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="19"
                 question=" What will be the output of the following JavaScript code?
 
@@ -1353,7 +1349,7 @@ class PythonQuize extends Component {
                 v4="0"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="20"
                 question="What does the value 2 of the WebSocket attribute Socket.readyState indicate?"
                 correctAnswer="Handshake connection"
@@ -1363,9 +1359,8 @@ class PythonQuize extends Component {
                 v4="Established connection and communication is possible"
                 counter={this.counter}
               />
-
               <h1> HTML Quiz</h1>
-                <Quize
+              <Quize
                 quizeNo="1"
                 question="Which of the following prints bold letters in traditional HTML?
                 i. <B>Go boldly</B>
@@ -1379,7 +1374,7 @@ iv. <b>Go boldly</b>"
                 v4="both iv and i "
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="2"
                 question=" What application can one create even before the introduction of HTML5?"
                 correctAnswer="Forms"
@@ -1389,7 +1384,7 @@ iv. <b>Go boldly</b>"
                 v4=" Browser based games"
                 counter={this.counter}
               />
-                <Quize
+              <Quize
                 quizeNo="3"
                 question="In HTML Audio/Video DOM, __________ sets or returns whether the audio/video should be loaded when the page loads."
                 correctAnswer="preload"
@@ -1399,7 +1394,7 @@ iv. <b>Go boldly</b>"
                 v4="controller"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="4"
                 question="Which of the following is not a HTML5 tag?
 "
@@ -1410,7 +1405,7 @@ iv. <b>Go boldly</b>"
                 v4="<slider>"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="5"
                 question="Which of the following property is common in all drag events?"
                 correctAnswer="dataTransfer"
@@ -1420,7 +1415,7 @@ iv. <b>Go boldly</b>"
                 v4="dragenter"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="6"
                 question="Which tag is used to defines multiple media resources for media elements audio and video?"
                 correctAnswer="<source>"
@@ -1430,8 +1425,7 @@ iv. <b>Go boldly</b>"
                 v4="<video>"
                 counter={this.counter}
               />
-
-<Quize
+              <Quize
                 quizeNo="7"
                 question="What is the default type of ‘type’ attribute of <input> element?"
                 correctAnswer="Text"
@@ -1441,7 +1435,7 @@ iv. <b>Go boldly</b>"
                 v4="Special Characters"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="8"
                 question="Which attribute is used with <select> element?"
                 correctAnswer="multiple"
@@ -1451,7 +1445,7 @@ iv. <b>Go boldly</b>"
                 v4="value"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="9"
                 question=" Which element is used for grouping together related elements?"
                 correctAnswer="<div>"
@@ -1461,7 +1455,7 @@ iv. <b>Go boldly</b>"
                 v4="<header>"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="10"
                 question="How many standard color names does HTML supports?"
                 correctAnswer="140"
@@ -1471,9 +1465,8 @@ iv. <b>Go boldly</b>"
                 v4="90"
                 counter={this.counter}
               />
-
               <h1> CSS</h1>
-               <Quize
+              <Quize
                 quizeNo="1"
                 question="CSS stands for __________"
                 correctAnswer="Cascading Style Sheets"
@@ -1483,7 +1476,7 @@ iv. <b>Go boldly</b>"
                 v4="Cascading Style Sheets"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="2"
                 question="In CSS, “font-size” can be called as ________"
                 correctAnswer="Property-Name"
@@ -1493,7 +1486,7 @@ iv. <b>Go boldly</b>"
                 v4="Property-Name"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="3"
                 question="Which of the following tag is used to embed css in html page?"
                 correctAnswer=" <style>"
@@ -1503,7 +1496,7 @@ iv. <b>Go boldly</b>"
                 v4=" <!DOCTYPE html>"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="4"
                 question="Which of the following function adjust the brightness of an element’s color, for use by the filter property?"
                 correctAnswer="brightness()"
@@ -1513,7 +1506,7 @@ iv. <b>Go boldly</b>"
                 v4="brightness()"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="5"
                 question="Identify the CSS property defining bottom-left corner shape of the border?"
                 correctAnswer="border-bottom-left-radius"
@@ -1523,7 +1516,7 @@ iv. <b>Go boldly</b>"
                 v4="border-left-radius"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="6"
                 question="Which of the following specifies what parts of an element’s content are skipped over when applying any text decoration?"
                 correctAnswer="text-decoration-skip"
@@ -1533,7 +1526,7 @@ iv. <b>Go boldly</b>"
                 v4="text-decoration-skip"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="7"
                 question="Choose the option that correctly specifies the output of the following CSS.
 
@@ -1549,7 +1542,7 @@ iv. <b>Go boldly</b>"
                 "
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="8"
                 question="Which of the following property specifies what line decorations, if any, are added to the text?"
                 correctAnswer="text-decoration-line"
@@ -1559,7 +1552,7 @@ iv. <b>Go boldly</b>"
                 v4="text-style-decoration"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="9"
                 question="Which of the following property controls the horizontal overflow of a block or inline block?"
                 correctAnswer="overflow-x"
@@ -1569,7 +1562,7 @@ iv. <b>Go boldly</b>"
                 v4="overflow-y"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="10"
                 question="Which property specifies the painting area of the background?"
                 correctAnswer="background-clip"
@@ -1579,8 +1572,8 @@ iv. <b>Go boldly</b>"
                 v4="background-origin"
                 counter={this.counter}
               />
-              <h1> Bootstrap  quiz</h1>
-               <Quize
+              <h1> Bootstrap quiz</h1>
+              <Quize
                 quizeNo="1"
                 question=" Bootstrap’s global default line-height"
                 correctAnswer="1.428"
@@ -1590,8 +1583,7 @@ iv. <b>Go boldly</b>"
                 v4=" 1.8"
                 counter={this.counter}
               />
-
-<Quize
+              <Quize
                 quizeNo="2"
                 question="Which of the following is correct about bootstrap wells?"
                 correctAnswer="Both of the above"
@@ -1601,7 +1593,7 @@ iv. <b>Go boldly</b>"
                 v4="None of the above"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="3"
                 question="  Glyphicons is mainly used for?"
                 correctAnswer=""
@@ -1611,7 +1603,7 @@ iv. <b>Go boldly</b>"
                 v4="  providing different icons"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="4"
                 question="Which of the following class styles a table as a nice basic table with stripes on rows? "
                 correctAnswer=".table-striped"
@@ -1621,7 +1613,7 @@ iv. <b>Go boldly</b>"
                 v4=" .table-hover "
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="5"
                 question=" What layout is used for providing 100% width in Bootstrap? "
                 correctAnswer=" Fluid layout"
@@ -1631,7 +1623,7 @@ iv. <b>Go boldly</b>"
                 v4="None of the above "
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="6"
                 question="  In Bootstrap we can add for"
                 correctAnswer="Proper Rendering and Zooming in mobile"
@@ -1641,7 +1633,7 @@ iv. <b>Go boldly</b>"
                 v4="None "
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="7"
                 question="Which of the following class makes thumbnail image "
                 correctAnswer=".img-thumbnail"
@@ -1651,7 +1643,7 @@ iv. <b>Go boldly</b>"
                 v4=".img-thumbnail "
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="8"
                 question=" Which of the following bootstrap style helps to combine sets of more complex components?"
                 correctAnswer=".btn-toolbar"
@@ -1661,7 +1653,7 @@ iv. <b>Go boldly</b>"
                 v4=" .btn-group-vertical "
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="9"
                 question=" Which plugin is used to create a modal window?"
                 correctAnswer="modal"
@@ -1671,7 +1663,7 @@ iv. <b>Go boldly</b>"
                 v4="popup "
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="10"
                 question="The .container class provides "
                 correctAnswer="Fixed width container"
@@ -1681,9 +1673,8 @@ iv. <b>Go boldly</b>"
                 v4=" To create a Form"
                 counter={this.counter}
               />
-
               <h1> React quiz</h1>
-               <Quize
+              <Quize
                 quizeNo="1"
                 question="React is a ________ "
                 correctAnswer="Javascript library"
@@ -1693,7 +1684,7 @@ iv. <b>Go boldly</b>"
                 v4="None of above "
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="2"
                 question="ReactJS covers _________ "
                 correctAnswer="User Interface layer in an application"
@@ -1703,7 +1694,7 @@ iv. <b>Go boldly</b>"
                 v4=" None of above"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="3"
                 question=" ReactJS uses _____ to increase performance"
                 correctAnswer="Virtual DOM"
@@ -1713,7 +1704,7 @@ iv. <b>Go boldly</b>"
                 v4=" None of above"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="4"
                 question="What will be the output following 
 
@@ -1738,7 +1729,7 @@ iv. <b>Go boldly</b>"
                 v4=" Error"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="5"
                 question="Number of elements, a valid react component can return  "
                 correctAnswer="1"
@@ -1748,7 +1739,7 @@ iv. <b>Go boldly</b>"
                 v4=" 4"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="6"
                 question=" State in react is________"
                 correctAnswer="Both of above"
@@ -1760,7 +1751,7 @@ iv. <b>Go boldly</b>"
                 v4="None of above "
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="7"
                 question="props in react can________ "
                 correctAnswer="Not be changed in the component"
@@ -1770,7 +1761,7 @@ iv. <b>Go boldly</b>"
                 v4=" None of above"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="8"
                 question=" Keys are given to a list of elements in react. These keys should be "
                 correctAnswer="Unique among the siblings only"
@@ -1780,7 +1771,7 @@ iv. <b>Go boldly</b>"
                 v4=" None of above"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="9"
                 question="For controlled components in react "
                 correctAnswer="Source of truth is component state"
@@ -1790,7 +1781,7 @@ iv. <b>Go boldly</b>"
                 v4="None of above "
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="10"
                 question=" In which directory react components are saved?"
                 correctAnswer="inside js/components/"
@@ -1800,9 +1791,8 @@ iv. <b>Go boldly</b>"
                 v4="inside js/components/ "
                 counter={this.counter}
               />
-
               <h1>C++</h1>
-               <Quize
+              <Quize
                 quizeNo="1"
                 question="Wrapping data and its related functionality into a single entity is known as _____________ "
                 correctAnswer=" Encapsulation"
@@ -1812,7 +1802,7 @@ iv. <b>Go boldly</b>"
                 v4=" Modularity"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="2"
                 question="What is virtual inheritance? "
                 correctAnswer="C++ technique to avoid multiple copies of the base class into children/derived class"
@@ -1822,7 +1812,7 @@ iv. <b>Go boldly</b>"
                 v4="C++ technique to ensure that a private member of the base class can be accessed somehow "
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="3"
                 question="What will be the output of the following C++ code?
 
@@ -1850,7 +1840,7 @@ iv. <b>Go boldly</b>"
                 v4="Segmentation fault "
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="4"
                 question="What does ‘\a’ escape code represent? "
                 correctAnswer="alert
@@ -1862,7 +1852,7 @@ iv. <b>Go boldly</b>"
                 v4="form feed "
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="5"
                 question=" What happens if the following code is compiled on both C and C++?
 
@@ -1884,7 +1874,7 @@ iv. <b>Go boldly</b>"
                 v4="  The program gives an error in case of both C and C++"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="6"
                 question="  What is the value of the bool?
 
@@ -1896,7 +1886,7 @@ iv. <b>Go boldly</b>"
                 v4=" 2"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="7"
                 question="Given the variables p, q are of char type and r, s, t are of int type. Select the right statement?
 
@@ -1909,7 +1899,7 @@ iv. <b>Go boldly</b>"
                 v4="both 1 and 2 are false "
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="8"
                 question="What is the range of the floating point numbers? "
                 correctAnswer="-3.4E+38 to +3.4E+38"
@@ -1919,7 +1909,7 @@ iv. <b>Go boldly</b>"
                 v4="-3.4E+38 to +3.4E+32 "
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="9"
                 question="What will happen in the following C++ code snippet?
 
@@ -1934,7 +1924,7 @@ iv. <b>Go boldly</b>"
                  "
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="10"
                 question=" What will be the output of the following C++ code?
 
@@ -1959,7 +1949,7 @@ iv. <b>Go boldly</b>"
                 counter={this.counter}
               />
               <h1>Java quiz</h1>
-               <Quize
+              <Quize
                 quizeNo="1"
                 question="What is the range of short data type in Java? "
                 correctAnswer="-32768 to 32767"
@@ -1969,7 +1959,7 @@ iv. <b>Go boldly</b>"
                 v4="  None of the mentioned"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="2"
                 question="Which of the following are legal lines of Java code?
 
@@ -1984,7 +1974,7 @@ iv. <b>Go boldly</b>"
                 v4="All statements are correct "
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="3"
                 question=". What will be the output of the following Java program?
 
@@ -2006,7 +1996,7 @@ iv. <b>Go boldly</b>"
                 v4="None of the mentioned "
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="4"
                 question="  What will be the output of the following Java program?
 
@@ -2025,7 +2015,7 @@ iv. <b>Go boldly</b>"
                 v4="64 "
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="5"
                 question=" Which of these is an incorrect array declaration?"
                 correctAnswer="int arr[] = int [5] new"
@@ -2035,7 +2025,7 @@ iv. <b>Go boldly</b>"
                 v4="int arr[] = int [5] new "
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="6"
                 question=" What will be the output of the following Java code?
 
@@ -2048,7 +2038,7 @@ iv. <b>Go boldly</b>"
                 v4=" Class name@ hashcode in hexadecimal form"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="7"
                 question="What is the type of variable ‘b’ and ‘d’ in the following Java snippet?
 
@@ -2061,7 +2051,7 @@ iv. <b>Go boldly</b>"
                 v4=" ‘d’ is int variable; ‘b’ is int array"
                 counter={this.counter}
               />
-               <Quize
+              <Quize
                 quizeNo="8"
                 question="What is it called if an object has its own lifecycle and there is no owner? "
                 correctAnswer="Association"
@@ -2070,394 +2060,396 @@ iv. <b>Go boldly</b>"
                 v3="Encapsulation"
                 v4=" Association"
                 counter={this.counter}
-              /> <Quize
-              quizeNo="9"
-              question="Which of these is correct way of inheriting class A by class B? "
-              correctAnswer="class B extends A {}"
-              v1="class B + class A {}"
-              v2="class B inherits class A {}"
-              v3="class B extends A {}"
-              v4=" class B extends class A {}"
-              counter={this.counter}
-            />
-             <Quize
-              quizeNo="10"
-              question="Which of these is an incorrect statement? "
-              correctAnswer="StringBuffer class is used to store string in a buffer for later use"
-              v1=" String objects are immutable, they cannot be changed"
-              v2="String object can point to some other reference of String variable"
-              v3="StringBuffer class is used to store string in a buffer for later use"
-              v4=" None of the mentioned"
-              counter={this.counter}
-            />
-            <h1>Django</h1>
-             <Quize
-              quizeNo="1"
-              question="What is the Django shortcut method to more easily render an html response? "
-              correctAnswer="render_to_response"
-              v1="render_to_html"
-              v2="render_to_response"
-              v3="response_render"
-              v4=" render"
-              counter={this.counter}
-            />
-             <Quize
-              quizeNo="2"
-              question="By using django.contrib.humanize, you can use the following filter in your template to display the number 3 as three. "
-              correctAnswer="apnumber"
-              v1="apnumber"
-              v2="intcomma"
-              v3="intword"
-              v4=" ordinal"
-              counter={this.counter}
-            />
-            <Quize
-              quizeNo="3"
-              question="How do you concatenate two QuerySets into one list? "
-              correctAnswer="from itertools import chain	result = list(chain(query_set_1, query_set_2))"
-              v1="result = list(query_set_1 | query_set_2)"
-              v2="from itertools import chain	result = list(chain(query_set_1, query_set_2))"
-              v3="from django.db.models import Q result = Q(query_set_1) | Q(query_set_1)"
-              v4="result = query_set_1 + query_set_2
+              />{" "}
+              <Quize
+                quizeNo="9"
+                question="Which of these is correct way of inheriting class A by class B? "
+                correctAnswer="class B extends A {}"
+                v1="class B + class A {}"
+                v2="class B inherits class A {}"
+                v3="class B extends A {}"
+                v4=" class B extends class A {}"
+                counter={this.counter}
+              />
+              <Quize
+                quizeNo="10"
+                question="Which of these is an incorrect statement? "
+                correctAnswer="StringBuffer class is used to store string in a buffer for later use"
+                v1=" String objects are immutable, they cannot be changed"
+                v2="String object can point to some other reference of String variable"
+                v3="StringBuffer class is used to store string in a buffer for later use"
+                v4=" None of the mentioned"
+                counter={this.counter}
+              />
+              <h1>Django</h1>
+              <Quize
+                quizeNo="1"
+                question="What is the Django shortcut method to more easily render an html response? "
+                correctAnswer="render_to_response"
+                v1="render_to_html"
+                v2="render_to_response"
+                v3="response_render"
+                v4=" render"
+                counter={this.counter}
+              />
+              <Quize
+                quizeNo="2"
+                question="By using django.contrib.humanize, you can use the following filter in your template to display the number 3 as three. "
+                correctAnswer="apnumber"
+                v1="apnumber"
+                v2="intcomma"
+                v3="intword"
+                v4=" ordinal"
+                counter={this.counter}
+              />
+              <Quize
+                quizeNo="3"
+                question="How do you concatenate two QuerySets into one list? "
+                correctAnswer="from itertools import chain	result = list(chain(query_set_1, query_set_2))"
+                v1="result = list(query_set_1 | query_set_2)"
+                v2="from itertools import chain	result = list(chain(query_set_1, query_set_2))"
+                v3="from django.db.models import Q result = Q(query_set_1) | Q(query_set_1)"
+                v4="result = query_set_1 + query_set_2
               "
-              counter={this.counter}
-            />
-             <Quize
-              quizeNo="4"
-              question="What is the Django command to start a new app named ‘users’ in an existing project? "
-              correctAnswer="manage.py startapp users"
-              v1="manage.py –newapp users"
-              v2="manage.py newapp users"
-              v3="manage.py –startapp users"
-              v4="manage.py startapp users "
-              counter={this.counter}
-            />
-            <Quize
-              quizeNo="5"
-              question="What are the features available in Django web framework? "
-              correctAnswer="All of the above"
-              v1="Admin Interface (CRUD)"
-              v2="Templating"
-              v3="Form handling"
-              v4=" All of the above"
-              counter={this.counter}
-            />
-             <Quize
-              quizeNo="6"
-              question="  The architecture of Django consists of?"
-              correctAnswer="All of these"
-              v1="Models"
-              v2=" Views"
-              v3="Templates"
-              v4="All of these "
-              counter={this.counter}
-            />
-            <Quize
-              quizeNo="7"
-              question="What is the purpose of settings.py? "
-              correctAnswer="To configure settings for the Django project"
-              v1="To configure settings for the Django project"
-              v2="To configure settings for an app"
-              v3="To set the date and time on the server"
-              v4=" To sync the database schema"
-              counter={this.counter}
-            />
-             <Quize
-              quizeNo="8"
-              question="What are the caching strategies in Django? "
-              correctAnswer="Both A and B"
-              v1="File sytem caching"
-              v2="In-memory caching"
-              v3="Both A and B"
-              v4=" None "
-              counter={this.counter}
-            />
-            <Quize
-              quizeNo="9"
-              question="In Django how would you retrieve all the ‘User’ records from a given database? "
-              correctAnswer="User.objects.all()"
-              v1="User.objects.all()"
-              v2="Users.objects.all()"
-              v3="User.all_records()"
-              v4="User.object.all() "
-              counter={this.counter}
-            />
-             <Quize
-              quizeNo="10"
-              question="What is the most easiest, fastest, and most stable deployment choice in most cases with Django? "
-              correctAnswer="mod_wsgi"
-              v1="FastCGI"
-              v2="mod_wsgi"
-              v3="SCGI"
-              v4="AJP
+                counter={this.counter}
+              />
+              <Quize
+                quizeNo="4"
+                question="What is the Django command to start a new app named ‘users’ in an existing project? "
+                correctAnswer="manage.py startapp users"
+                v1="manage.py –newapp users"
+                v2="manage.py newapp users"
+                v3="manage.py –startapp users"
+                v4="manage.py startapp users "
+                counter={this.counter}
+              />
+              <Quize
+                quizeNo="5"
+                question="What are the features available in Django web framework? "
+                correctAnswer="All of the above"
+                v1="Admin Interface (CRUD)"
+                v2="Templating"
+                v3="Form handling"
+                v4=" All of the above"
+                counter={this.counter}
+              />
+              <Quize
+                quizeNo="6"
+                question="  The architecture of Django consists of?"
+                correctAnswer="All of these"
+                v1="Models"
+                v2=" Views"
+                v3="Templates"
+                v4="All of these "
+                counter={this.counter}
+              />
+              <Quize
+                quizeNo="7"
+                question="What is the purpose of settings.py? "
+                correctAnswer="To configure settings for the Django project"
+                v1="To configure settings for the Django project"
+                v2="To configure settings for an app"
+                v3="To set the date and time on the server"
+                v4=" To sync the database schema"
+                counter={this.counter}
+              />
+              <Quize
+                quizeNo="8"
+                question="What are the caching strategies in Django? "
+                correctAnswer="Both A and B"
+                v1="File sytem caching"
+                v2="In-memory caching"
+                v3="Both A and B"
+                v4=" None "
+                counter={this.counter}
+              />
+              <Quize
+                quizeNo="9"
+                question="In Django how would you retrieve all the ‘User’ records from a given database? "
+                correctAnswer="User.objects.all()"
+                v1="User.objects.all()"
+                v2="Users.objects.all()"
+                v3="User.all_records()"
+                v4="User.object.all() "
+                counter={this.counter}
+              />
+              <Quize
+                quizeNo="10"
+                question="What is the most easiest, fastest, and most stable deployment choice in most cases with Django? "
+                correctAnswer="mod_wsgi"
+                v1="FastCGI"
+                v2="mod_wsgi"
+                v3="SCGI"
+                v4="AJP
               "
-              counter={this.counter}
-            />
+                counter={this.counter}
+              />
               <h1>Dbms quiz</h1>
-             <Quize
-              quizeNo="1"
-              question="Database __________ which is the logical design of the database, and the database _______ which is a snapshot of the data in the database at a given instant in time. "
-              correctAnswer="Schema, Instance"
-              v1="Instance, Schema"
-              v2="Relation, Schema"
-              v3="Relation, Domain"
-              v4="Schema, Instance "
-              counter={this.counter}
-            />
-             <Quize
-              quizeNo="2"
-              question="The tuples of the relations can be of ________ order. "
-              correctAnswer="Any"
-              v1="Any"
-              v2="Same"
-              v3=" Sorted"
-              v4="Constant "
-              counter={this.counter}
-            />
-            <Quize
-              quizeNo="3"
-              question="Which one of the following is a set of one or more attributes taken collectively to uniquely identify a record? "
-              correctAnswer="Super key"
-              v1="Candidate key"
-              v2="Sub key"
-              v3="Super key"
-              v4="Foreign key "
-              counter={this.counter}
-            />
-             <Quize
-              quizeNo="4"
-              question="Which one of the following attribute can be taken as a primary key? "
-              correctAnswer="Id"
-              v1="Name"
-              v2="Street"
-              v3="Id"
-              v4="Department "
-              counter={this.counter}
-            />
-            <Quize
-              quizeNo="5"
-              question="Student(ID, name, dept name, tot_cred)
+              <Quize
+                quizeNo="1"
+                question="Database __________ which is the logical design of the database, and the database _______ which is a snapshot of the data in the database at a given instant in time. "
+                correctAnswer="Schema, Instance"
+                v1="Instance, Schema"
+                v2="Relation, Schema"
+                v3="Relation, Domain"
+                v4="Schema, Instance "
+                counter={this.counter}
+              />
+              <Quize
+                quizeNo="2"
+                question="The tuples of the relations can be of ________ order. "
+                correctAnswer="Any"
+                v1="Any"
+                v2="Same"
+                v3=" Sorted"
+                v4="Constant "
+                counter={this.counter}
+              />
+              <Quize
+                quizeNo="3"
+                question="Which one of the following is a set of one or more attributes taken collectively to uniquely identify a record? "
+                correctAnswer="Super key"
+                v1="Candidate key"
+                v2="Sub key"
+                v3="Super key"
+                v4="Foreign key "
+                counter={this.counter}
+              />
+              <Quize
+                quizeNo="4"
+                question="Which one of the following attribute can be taken as a primary key? "
+                correctAnswer="Id"
+                v1="Name"
+                v2="Street"
+                v3="Id"
+                v4="Department "
+                counter={this.counter}
+              />
+              <Quize
+                quizeNo="5"
+                question="Student(ID, name, dept name, tot_cred)
               In this query which attributes form the primary key? "
-              correctAnswer="ID"
-              v1="Name"
-              v2="Dept"
-              v3="Tot_cred"
-              v4="ID "
-              counter={this.counter}
-            />
-             <Quize
-              quizeNo="6"
-              question="The _______operation performs a set union of two “similarly structured” tables "
-              correctAnswer="Union"
-              v1="Union"
-              v2="Join"
-              v3="Product"
-              v4="Intersect "
-              counter={this.counter}
-            />
-            <Quize
-              quizeNo="7"
-              question="SELECT name ____ instructor name, course id
+                correctAnswer="ID"
+                v1="Name"
+                v2="Dept"
+                v3="Tot_cred"
+                v4="ID "
+                counter={this.counter}
+              />
+              <Quize
+                quizeNo="6"
+                question="The _______operation performs a set union of two “similarly structured” tables "
+                correctAnswer="Union"
+                v1="Union"
+                v2="Join"
+                v3="Product"
+                v4="Intersect "
+                counter={this.counter}
+              />
+              <Quize
+                quizeNo="7"
+                question="SELECT name ____ instructor name, course id
               FROM instructor, teaches
               WHERE instructor.ID= teaches.ID;
               Which keyword must be used here to rename the field name? "
-              correctAnswer="As"
-              v1="From"
-              v2="Rename"
-              v3="As"
-              v4="Join "
-              counter={this.counter}
-            />
-             <Quize
-              quizeNo="8"
-              question="SELECT * FROM employee WHERE dept_name='Comp Sci';
-              In the SQL given above there is an error . Identify the error. "
-              correctAnswer="'Comp Sci'"
-              v1="Dept_name"
-              v2="Employee"
-              v3="'Comp Sci'"
-              v4=" From "
-              counter={this.counter}
-            />
-            <Quize
-              quizeNo="9"
-              question=" In SQL the spaces at the end of the string are removed by _______ function. "
-              correctAnswer="Trim"
-              v1="Upper"
-              v2="String"
-              v3="Lower"
-              v4="Trim "
-              counter={this.counter}
-            />
-             <Quize
-              quizeNo="10"
-              question="_____ operator is used for appending two strings. "
-              correctAnswer="||"
-              v1=" &"
-              v2="%"
-              v3="||"
-              v4=" _"
-              counter={this.counter}
-            />
-              <h1>Git quiz</h1>
-             <Quize
-              quizeNo="1"
-              question="What's the git command that downloads your repository from GitHub to your computer?
-
-              "
-              correctAnswer="git clone
-              "
-              v1="git push "
-              v2="git fork
-              "
-              v3="git clone
-               "
-              v4="git commit
-              "
-              counter={this.counter}
-            />
-             <Quize
-              quizeNo="2"
-              question="How do you create a copy of a lab under your own GitHub account so that you can solve the lab?
-
-              "
-              correctAnswer="Forking it via the GitHub interface.
-              "
-              v1="Forking it via the GitHub interface.
-              "
-              v2="git fork
-              "
-              v3="git clone
-              "
-              v4=" git pull-request
-              "
-              counter={this.counter}
-            />
-            <Quize
-              quizeNo="3"
-              question=" What's the opposite of git clone, instead of downloading your code from GitHub, uploads your changes and code back to GitHub?
-
-               "
-              correctAnswer="git push
-              "
-              v1="git push
-              "
-              v2="git add
-              "
-              v3="git upload
-              "
-              v4="git status
-              "
-              counter={this.counter}
-            />
-             <Quize
-              quizeNo="4"
-              question="How do you check the state of your local git repository since your last commit?
-
-              "
-              correctAnswer="git status
-              "
-              v1="git check
-              "
-              v2="git status
-              "
-              v3="git commit
-              "
-              v4=" git diff
-              "
-              counter={this.counter}
-            />
-            <Quize
-              quizeNo="5"
-              question="How do you stage files for a commit?
-
-               "
-              correctAnswer="git add
-              "
-              v1="git stage
-              "
-              v2="git commit
-              "
-              v3="git add
-              "
-              v4="git reset
-              "
-              counter={this.counter}
-            />
-             <Quize
-              quizeNo="6"
-              question=" How do you save the current state of your code into the git version control?
-
-              "
-              correctAnswer="By committing the staged changes with git commit
-              "
-              v1="By committing the staged changes with git commit
-              "
-              v2="By adding all changes and staging them with git stage
-              "
-              v3="By adding all changes and staging them with git add
-              "
-              v4="By creating a new commit with git init
-              "
-              counter={this.counter}
-            />
-            <Quize
-              quizeNo="7"
-              question=" "
-              correctAnswer=""
-              v1=""
-              v2=""
-              v3=""
-              v4=" "
-              counter={this.counter}
-            />
-             <Quize
-              quizeNo="8"
-              question="What's a shortcut to staging all the changes you have?
-
-              "
-              correctAnswer="git add .
-              "
-              v1="git commit add .
-              "
-              v2="git commit .
-              "
-              v3="git push -am 'Message'
-              "
-              v4="git add .
-              "  
+                correctAnswer="As"
+                v1="From"
+                v2="Rename"
+                v3="As"
+                v4="Join "
+                counter={this.counter}
               />
-               <Quize
-              quizeNo="9"
-              question="How do you supply a commit message to a commit?
+              <Quize
+                quizeNo="8"
+                question="SELECT * FROM employee WHERE dept_name='Comp Sci';
+              In the SQL given above there is an error . Identify the error. "
+                correctAnswer="'Comp Sci'"
+                v1="Dept_name"
+                v2="Employee"
+                v3="'Comp Sci'"
+                v4=" From "
+                counter={this.counter}
+              />
+              <Quize
+                quizeNo="9"
+                question=" In SQL the spaces at the end of the string are removed by _______ function. "
+                correctAnswer="Trim"
+                v1="Upper"
+                v2="String"
+                v3="Lower"
+                v4="Trim "
+                counter={this.counter}
+              />
+              <Quize
+                quizeNo="10"
+                question="_____ operator is used for appending two strings. "
+                correctAnswer="||"
+                v1=" &"
+                v2="%"
+                v3="||"
+                v4=" _"
+                counter={this.counter}
+              />
+              <h1>Git quiz</h1>
+              <Quize
+                quizeNo="1"
+                question="What's the git command that downloads your repository from GitHub to your computer?
 
               "
-              correctAnswer=""
-              v1="git message 'I'm coding'
+                correctAnswer="git clone
               "
-              v2="git add 'I'm coding'
+                v1="git push "
+                v2="git fork
               "
-              v3="git commit 'I'm coding'
+                v3="git clone
+               "
+                v4="git commit
               "
-              v4="git commit -m 'I'm coding'
+                counter={this.counter}
+              />
+              <Quize
+                quizeNo="2"
+                question="How do you create a copy of a lab under your own GitHub account so that you can solve the lab?
+
               "
-              counter={this.counter}
-            />
-             <Quize
-              quizeNo="10"
-              question="How do you submit a solution to Learn? "
-              correctAnswer=""
-              v1="git pull-request
+                correctAnswer="Forking it via the GitHub interface.
               "
-              v2="git submit
+                v1="Forking it via the GitHub interface.
               "
-              v3="learn submit
+                v2="git fork
               "
-              v4="git commit -am 'Done with Lab'
-              "  
+                v3="git clone
+              "
+                v4=" git pull-request
+              "
+                counter={this.counter}
+              />
+              <Quize
+                quizeNo="3"
+                question=" What's the opposite of git clone, instead of downloading your code from GitHub, uploads your changes and code back to GitHub?
+
+               "
+                correctAnswer="git push
+              "
+                v1="git push
+              "
+                v2="git add
+              "
+                v3="git upload
+              "
+                v4="git status
+              "
+                counter={this.counter}
+              />
+              <Quize
+                quizeNo="4"
+                question="How do you check the state of your local git repository since your last commit?
+
+              "
+                correctAnswer="git status
+              "
+                v1="git check
+              "
+                v2="git status
+              "
+                v3="git commit
+              "
+                v4=" git diff
+              "
+                counter={this.counter}
+              />
+              <Quize
+                quizeNo="5"
+                question="How do you stage files for a commit?
+
+               "
+                correctAnswer="git add
+              "
+                v1="git stage
+              "
+                v2="git commit
+              "
+                v3="git add
+              "
+                v4="git reset
+              "
+                counter={this.counter}
+              />
+              <Quize
+                quizeNo="6"
+                question=" How do you save the current state of your code into the git version control?
+
+              "
+                correctAnswer="By committing the staged changes with git commit
+              "
+                v1="By committing the staged changes with git commit
+              "
+                v2="By adding all changes and staging them with git stage
+              "
+                v3="By adding all changes and staging them with git add
+              "
+                v4="By creating a new commit with git init
+              "
+                counter={this.counter}
+              />
+              <Quize
+                quizeNo="7"
+                question=" "
+                correctAnswer=""
+                v1=""
+                v2=""
+                v3=""
+                v4=" "
+                counter={this.counter}
+              />
+              <Quize
+                quizeNo="8"
+                question="What's a shortcut to staging all the changes you have?
+
+              "
+                correctAnswer="git add .
+              "
+                v1="git commit add .
+              "
+                v2="git commit .
+              "
+                v3="git push -am 'Message'
+              "
+                v4="git add .
+              "
+              />
+              <Quize
+                quizeNo="9"
+                question="How do you supply a commit message to a commit?
+
+              "
+                correctAnswer=""
+                v1="git message 'I'm coding'
+              "
+                v2="git add 'I'm coding'
+              "
+                v3="git commit 'I'm coding'
+              "
+                v4="git commit -m 'I'm coding'
+              "
+                counter={this.counter}
+              />
+              <Quize
+                quizeNo="10"
+                question="How do you submit a solution to Learn? "
+                correctAnswer=""
+                v1="git pull-request
+              "
+                v2="git submit
+              "
+                v3="learn submit
+              "
+                v4="git commit -am 'Done with Lab'
+              "
               />
             </div>
             <div className="col-4 d-none d-sm-block">
+              <Link to="/python_quize_tests">Python Quize Tests</Link>
               <ScoreCard count={this.state.count} />
             </div>
           </div>

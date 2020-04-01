@@ -1,20 +1,25 @@
 import React, { Component } from "react";
-class ScoreCard extends Component {
-  state = {};
-  render() {
-    return (
-      <>
-        <div className="card mt-5">
-          <div className="card-header bg-success text-white font-weight-bold">
-            Total Score
-          </div>
-          <div className="card-body ">
-            <h1 className="display-1 text-center">{this.props.count}</h1>
-          </div>
-        </div>
-      </>
-    );
-  }
-}
+import { Modal } from "react-bootstrap";
+const ScoreCard = props => {
+  return (
+    <>
+      <Modal
+        show={props.show}
+        size="sm"
+        onHide={props.handleClose}
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title>Score Card</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <h4 className="text-center">Your Total Score</h4>
+          <h1 className="display-1 text-center"> {props.count}</h1>
+        </Modal.Body>
+      </Modal>
+    </>
+  );
+};
 
 export default ScoreCard;
