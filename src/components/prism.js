@@ -1529,8 +1529,7 @@ Prism.languages.py = Prism.languages.python;
   }
 
   function applyHash() {
-    var hash = hash.slice(1);
-
+    var hash = window.location.hash.slice(0, 1);
     // Remove pre-existing temporary lines
     $$(".temporary.line-highlight").forEach(function(line) {
       line.parentNode.removeChild(line);
