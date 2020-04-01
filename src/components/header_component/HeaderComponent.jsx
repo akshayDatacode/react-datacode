@@ -14,20 +14,27 @@ class HeaderComponent extends Component {
           collapseOnSelect
           fixed="top"
           bg="dark"
-          expand="md"
+          expand="lg"
           variant="dark "
         >
-          <Navbar.Brand href="/react-datacode/#/">Datacode.in</Navbar.Brand>
+          <Navbar.Brand
+            collapseOnSelect="false"
+            aria-controls="responsive-navbar-nav"
+          >
+            <Nav.Link href="/react-datacode/#/" className="text-white h3 p-0">
+              Datacode.in
+            </Nav.Link>
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="mr-auro">
+            <Nav>
               <Nav.Link href="/react-datacode/#/home">
                 <FontAwesomeIcon icon={faHome} /> Home
               </Nav.Link>
               <a href="/aboutus">
                 <FontAwesomeIcon icon={faAddressCard} /> About us
               </a>
-              <NavDropdown title="Technologies" id="basic-nav-dropdown">
+              <NavDropdown title="Technologies" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="/react-datacode/#/dbms_interview_question">
                   DBMS
                 </NavDropdown.Item>
