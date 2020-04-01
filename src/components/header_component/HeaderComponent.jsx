@@ -6,14 +6,21 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 class HeaderComponent extends Component {
   state = {};
+
   render() {
     return (
       <>
-        <Navbar fixed="top" bg="dark" expand="md" variant="dark ">
+        <Navbar
+          collapseOnSelect
+          fixed="top"
+          bg="dark"
+          expand="md"
+          variant="dark "
+        >
           <Navbar.Brand href="/react-datacode/#/">Datacode.in</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="mr-auro">
               <Nav.Link href="/react-datacode/#/home">
                 <FontAwesomeIcon icon={faHome} /> Home
               </Nav.Link>
