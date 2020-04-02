@@ -26,7 +26,7 @@ class PrismCode extends Component {
     return (
       <pre className={!plugins ? "" : plugins.join(" ")}>
         <code ref={this.ref} className={`language-${language}`}>
-          {code.trim()}
+          {code}
         </code>
       </pre>
     );

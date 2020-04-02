@@ -44,7 +44,7 @@ class HeaderComponent extends Component {
                 </NavDropdown.Item>
 
                 <NavDropdown.Item>
-                  <Link to="/articles">Articles</Link>
+                  <Link to="/index_articles">Articles</Link>
                 </NavDropdown.Item>
 
                 <NavDropdown.Divider />

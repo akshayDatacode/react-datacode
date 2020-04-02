@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import { Accordion, Card, Button } from "react-bootstrap";
+import PrismCode from "../../../PrismCode";
+
 class Quize extends Component {
   state = {
     isClicked: false,
     status: "",
-    correctAns: ""
+    correctAns: "",
+    code: ""
   };
-
   handleOption = event => {
     if (event.target.value == this.props.correctAnswer) {
       this.setState({ isClicked: true, status: "correct", correctAns: " " });
@@ -22,23 +24,36 @@ class Quize extends Component {
   getColorChange = () => {
     let classes = "";
     if (this.state.status == "correct") {
-      classes = "card-header bg-success";
+      classes = "card-header bg-success p-0 ";
     }
     if (this.state.status == "wrong") {
-      classes = "bg-danger";
+      classes = "bg-danger p-1";
     }
     return classes;
   };
   render() {
+    let code = this.props.code;
+
     return (
       <>
         <div className="card-fluid text-dark mt-2 mb-4 shadow">
           {this.state.status == "correct" && (
-            <div className={this.getColorChange()}>{this.state.status}</div>
+            <div className={this.getColorChange()}>
+              <h6 className="text-weight-bold text-white ml-2 pt-2">
+                {this.state.status}
+              </h6>
+            </div>
           )}{" "}
           <div className="card-body">
             <div className="p-2 border-left border-primary">
               <h5 className="text-left ml-2">{this.props.question}</h5>
+              {this.props.code && (
+                <PrismCode
+                  code={code}
+                  language={this.props.language}
+                  plugins={["line-numbers"]}
+                />
+              )}
             </div>
 
             {!this.state.isClicked && (
@@ -92,10 +107,10 @@ class Quize extends Component {
                   <Accordion.Toggle
                     as={Button}
                     variant="button"
-                    className="btn btn-primary"
+                    className="btn btn-primary ml-2 p-1"
                     eventKey="0"
                   >
-                    Show Correct Answer
+                    Check Answer
                   </Accordion.Toggle>
                 </Card.Footer>
                 <Accordion.Collapse eventKey="0">

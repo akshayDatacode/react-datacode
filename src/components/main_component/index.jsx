@@ -174,15 +174,14 @@ class MainComponent extends Component {
                   <div class="card-body">
                     <h5 class="card-title">We Write Codes</h5>
                     <p class="card-text">
-                      We Love to Code and this is the best way to express our
-                      love to Computer Science Wolrd.
+                      Read Our Technical Blogs for Beginners By Experts
                     </p>
                   </div>
                   <div class="card-footer border border-white bg-white">
                     <div className="row">
                       <div className="col-4"></div>
                       <div className="col text-right ">
-                        <Link to="/python_mcqs">Read More</Link>
+                        <Link to="/index_articles">Read More</Link>
                       </div>
                     </div>
                   </div>

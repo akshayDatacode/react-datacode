@@ -39,6 +39,7 @@ import CMCQ1 from "../components/main_component/posts/mcqQuestions/c_mcqs/CMCQ1"
 // Java MCQ Routing
 import IndexJavaMCQ from "../components/main_component/posts/mcqQuestions/java_mcqs/IndexJavaMCQ";
 import JavaMCQ1 from "../components/main_component/posts/mcqQuestions/java_mcqs/JavaMCQ1";
+import ProgrammingLanguagesBlog from "../components/main_component/aticles/Programming_Languages_Blog";
 
 class AppRouters extends Component {
   state = {};
@@ -49,14 +50,17 @@ class AppRouters extends Component {
           {/* Navigarion Routing */}
           <Route exact path="/" component={MainComponent} />
           <Route path="/home" component={HomeComponent} />
-          <Route path="/articles" component={IndexArticles} />
           <Route path="/aboutus" component={AboutUs} />
+
           {/* End ______________ */}
+
+          {/* Starting Articles */}
+          <Route path="/index_articles" component={IndexArticles} />
+          <Route path="/prog_lan_blog" component={ProgrammingLanguagesBlog} />
+          {/* Ending Article */}
 
           {/* Starting Index MCQs */}
           <Route exact path="/index_mcqs" component={IndexMcqQuestions} />
-
-          {/* Ending Index Mcqs */}
 
           {/* Starting Python MCQs */}
           <Route exact path="/index_python_mcqs" component={IndexPythonMCQ} />
