@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/react-datacode/static/css/main.2749690b.chunk.css",
-    "main.js": "/react-datacode/static/js/main.ad8f4ec7.chunk.js",
-    "main.js.map": "/react-datacode/static/js/main.ad8f4ec7.chunk.js.map",
+    "main.js": "/react-datacode/static/js/main.c1150ed3.chunk.js",
+    "main.js.map": "/react-datacode/static/js/main.c1150ed3.chunk.js.map",
     "runtime-main.js": "/react-datacode/static/js/runtime-main.4d2e2bcd.js",
     "runtime-main.js.map": "/react-datacode/static/js/runtime-main.4d2e2bcd.js.map",
     "static/css/2.89f067aa.chunk.css": "/react-datacode/static/css/2.89f067aa.chunk.css",
-    "static/js/2.390650f3.chunk.js": "/react-datacode/static/js/2.390650f3.chunk.js",
-    "static/js/2.390650f3.chunk.js.map": "/react-datacode/static/js/2.390650f3.chunk.js.map",
+    "static/js/2.13fe30fe.chunk.js": "/react-datacode/static/js/2.13fe30fe.chunk.js",
+    "static/js/2.13fe30fe.chunk.js.map": "/react-datacode/static/js/2.13fe30fe.chunk.js.map",
     "index.html": "/react-datacode/index.html",
-    "precache-manifest.6e8c0f5c3dd98fe5848eadbc9d1858b5.js": "/react-datacode/precache-manifest.6e8c0f5c3dd98fe5848eadbc9d1858b5.js",
+    "precache-manifest.b7eb897f40a393391ab493ca90fbfc96.js": "/react-datacode/precache-manifest.b7eb897f40a393391ab493ca90fbfc96.js",
     "service-worker.js": "/react-datacode/service-worker.js",
     "static/css/2.89f067aa.chunk.css.map": "/react-datacode/static/css/2.89f067aa.chunk.css.map",
     "static/css/main.2749690b.chunk.css.map": "/react-datacode/static/css/main.2749690b.chunk.css.map",
-    "static/js/2.390650f3.chunk.js.LICENSE.txt": "/react-datacode/static/js/2.390650f3.chunk.js.LICENSE.txt",
+    "static/js/2.13fe30fe.chunk.js.LICENSE.txt": "/react-datacode/static/js/2.13fe30fe.chunk.js.LICENSE.txt",
     "static/media/Cover Photo (3).png": "/react-datacode/static/media/Cover Photo (3).6bc137af.png",
     "static/media/Green Disease Prevention Instagram Post.png": "/react-datacode/static/media/Green Disease Prevention Instagram Post.ee3b12ec.png",
     "static/media/Shootpy_W Cover Page (1).jpg": "/react-datacode/static/media/Shootpy_W Cover Page (1).39eabcb7.jpg",
@@ -28,9 +28,11 @@
     "static/media/headermain.jpeg": "/react-datacode/static/media/headermain.7527ed34.jpeg",
     "static/media/indexcover1.jpeg": "/react-datacode/static/media/indexcover1.3a570b82.jpeg",
     "static/media/indexcover2.jpeg": "/react-datacode/static/media/indexcover2.d657c63c.jpeg",
+    "static/media/java_mcqs.jpeg": "/react-datacode/static/media/java_mcqs.419fda51.jpeg",
     "static/media/oops1.jpeg.png": "/react-datacode/static/media/oops1.jpeg.c2d14b11.png",
     "static/media/programming_boooks.jpeg": "/react-datacode/static/media/programming_boooks.f5e5cba6.jpeg",
     "static/media/programming_practices.jpeg": "/react-datacode/static/media/programming_practices.3a7c54ac.jpeg",
+    "static/media/python_mcqs.jpeg": "/react-datacode/static/media/python_mcqs.3f0b9a3b.jpeg",
     "static/media/python_programming.jpeg": "/react-datacode/static/media/python_programming.a0c67178.jpeg",
     "static/media/pythonmcq.jpeg": "/react-datacode/static/media/pythonmcq.429f9e69.jpeg",
     "static/media/pythontech.jpeg": "/react-datacode/static/media/pythontech.48a04521.jpeg",
@@ -43,8 +45,8 @@
   "entrypoints": [
     "static/js/runtime-main.4d2e2bcd.js",
     "static/css/2.89f067aa.chunk.css",
-    "static/js/2.390650f3.chunk.js",
+    "static/js/2.13fe30fe.chunk.js",
     "static/css/main.2749690b.chunk.css",
-    "static/js/main.ad8f4ec7.chunk.js"
+    "static/js/main.c1150ed3.chunk.js"
   ]
 }

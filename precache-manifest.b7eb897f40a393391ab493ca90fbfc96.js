@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8c894a52808a78e49a09ebe7b9eedf07",
+    "revision": "0d80b8ffa6a541d71d6ec56c7a7c0298",
     "url": "/react-datacode/index.html"
   },
   {
-    "revision": "a93eefe678535926caeb",
+    "revision": "aa43801d4b85f55d7e9a",
     "url": "/react-datacode/static/css/2.89f067aa.chunk.css"
   },
   {
-    "revision": "e998a29498d0470b4ff8",
+    "revision": "43fcc75b22457852178a",
     "url": "/react-datacode/static/css/main.2749690b.chunk.css"
   },
   {
-    "revision": "a93eefe678535926caeb",
-    "url": "/react-datacode/static/js/2.390650f3.chunk.js"
+    "revision": "aa43801d4b85f55d7e9a",
+    "url": "/react-datacode/static/js/2.13fe30fe.chunk.js"
   },
   {
     "revision": "ae54f939c6e84f9ec4d4c4cd8100d77f",
-    "url": "/react-datacode/static/js/2.390650f3.chunk.js.LICENSE.txt"
+    "url": "/react-datacode/static/js/2.13fe30fe.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e998a29498d0470b4ff8",
-    "url": "/react-datacode/static/js/main.ad8f4ec7.chunk.js"
+    "revision": "43fcc75b22457852178a",
+    "url": "/react-datacode/static/js/main.c1150ed3.chunk.js"
   },
   {
     "revision": "b68bea75d65b55994766",
@@ -84,6 +84,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-datacode/static/media/indexcover2.d657c63c.jpeg"
   },
   {
+    "revision": "419fda51f47bb1c1e79badee223839e3",
+    "url": "/react-datacode/static/media/java_mcqs.419fda51.jpeg"
+  },
+  {
     "revision": "c2d14b11dc654d3e4eac809598d6244f",
     "url": "/react-datacode/static/media/oops1.jpeg.c2d14b11.png"
   },
@@ -94,6 +98,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3a7c54ac3b52ad0104eb6c8d83228674",
     "url": "/react-datacode/static/media/programming_practices.3a7c54ac.jpeg"
+  },
+  {
+    "revision": "3f0b9a3b75585f2f600399fdb2e1509f",
+    "url": "/react-datacode/static/media/python_mcqs.3f0b9a3b.jpeg"
   },
   {
     "revision": "a0c67178f3fa27b7bc316040c592ce2f",
