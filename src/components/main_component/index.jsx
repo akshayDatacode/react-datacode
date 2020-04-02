@@ -15,8 +15,11 @@ import {
   faTerminal,
   faBookReader,
   faBookOpen,
-  faFileCode
+  faFileCode,
+  faUserTimes,
+  faTimesCircle
 } from "@fortawesome/free-solid-svg-icons";
+import { faConnectdevelop } from "@fortawesome/free-brands-svg-icons";
 
 class MainComponent extends Component {
   state = {};
@@ -31,10 +34,10 @@ class MainComponent extends Component {
               <div class="card-deck mt-3">
                 <div class="card border border-white">
                   <center>
-                    <FontAwesomeIcon icon={faTerminal} size="8x" />
+                    <FontAwesomeIcon icon={faConnectdevelop} size="8x" />
                   </center>
                   <div class="card-body">
-                    <h5 class="card-title">We Write Codes</h5>
+                    <h5 class="card-title">Technical Quize Tests</h5>
                     <p class="card-text">
                       We Love to Code and this is the best way to express our
                       love to Computer Science Wolrd.
@@ -44,7 +47,7 @@ class MainComponent extends Component {
                     <div className="row">
                       <div className="col-6"></div>
                       <div className="col-5 text-right ">
-                        <Link to="/home">Read More</Link>
+                        <Link to="/index_quize_tests">Read More</Link>
                       </div>
                     </div>
                   </div>
@@ -64,7 +67,7 @@ class MainComponent extends Component {
                     <div className="row">
                       <div className="col-6"></div>
                       <div className="col-5 text-right ">
-                        <Link to="/home">Read More</Link>
+                        <Link to="/index_interview_questioins">Read More</Link>
                       </div>
                     </div>
                   </div>
@@ -86,7 +89,7 @@ class MainComponent extends Component {
                     <div className="row">
                       <div className="col-6"></div>
                       <div className="col-5 text-right ">
-                        <Link to="/home">Read More</Link>
+                        <Link to="/index_mcqs">Read More</Link>
                       </div>
                     </div>
                   </div>

@@ -5,7 +5,7 @@ class RightSideSection extends Component {
   render() {
     return (
       <>
-        <div className="container-fluid text-center text-md-center mb-5 ">
+        <div className="container-fluid text-center text-md-center mb-5 p-5">
           <div class="card border border-white mt-5">
             <img
               className=" card-img-top mx-auto img-fluid img-circle d-block mt-5"

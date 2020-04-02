@@ -16,7 +16,7 @@ class HomeComponent extends Component {
           <div className="col-md-8 p-0">
             <Indexposts />
           </div>
-          <div className="col-md-3">
+          <div className="col-md-3 ">
             <RightSideSection />
           </div>
         </div>
