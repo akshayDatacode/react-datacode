@@ -17,12 +17,16 @@ import {
   faBookOpen,
   faFileCode,
   faUserTimes,
-  faTimesCircle
+  faTimesCircle,
+  faTools
 } from "@fortawesome/free-solid-svg-icons";
 import { faConnectdevelop } from "@fortawesome/free-brands-svg-icons";
 
 class MainComponent extends Component {
   state = {};
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <>
@@ -33,9 +37,15 @@ class MainComponent extends Component {
             <div className="col">
               <div class="card-deck mt-3">
                 <div class="card border border-white">
-                  <center>
-                    <FontAwesomeIcon icon={faConnectdevelop} size="8x" />
-                  </center>
+                  <Link to="/index_quize_tests">
+                    <center>
+                      <FontAwesomeIcon
+                        icon={faConnectdevelop}
+                        color="skyblue"
+                        size="8x"
+                      />
+                    </center>
+                  </Link>
                   <div class="card-body">
                     <h5 class="card-title">Technical Quize Tests</h5>
                     <p class="card-text">
@@ -53,9 +63,15 @@ class MainComponent extends Component {
                   </div>
                 </div>
                 <div class="card border border-white">
-                  <center>
-                    <FontAwesomeIcon icon={faUsers} size="10x" />
-                  </center>
+                  <Link to="/index_interview_questioins" activeClass="active">
+                    <center>
+                      <FontAwesomeIcon
+                        icon={faUsers}
+                        color="indigo"
+                        size="8x"
+                      />
+                    </center>
+                  </Link>
                   <div class="card-body">
                     <h5 class="card-title">Programming Interview FAQs</h5>
                     <p class="card-text">
@@ -73,9 +89,15 @@ class MainComponent extends Component {
                   </div>
                 </div>
                 <div class="card border border-white">
-                  <center>
-                    <FontAwesomeIcon icon={faListAlt} size="10x" />
-                  </center>
+                  <Link to="/index_mcqs">
+                    <center>
+                      <FontAwesomeIcon
+                        icon={faListAlt}
+                        color="green"
+                        size="8x"
+                      />
+                    </center>
+                  </Link>
                   <div class="card-body">
                     <h5 class="card-title"> Programming MCQs Practice</h5>
                     <p class="card-text">
@@ -113,7 +135,7 @@ class MainComponent extends Component {
             <div className="col-md-6 text-center">
               <div className="card border border-white bg-white">
                 <div clsssName="card-header border border-white bg-white ">
-                  <h1 className="text-center p-2 display-1">We Write Code</h1>
+                  <h1 className="text-center p-2 display-2">We Write Code</h1>
                 </div>
                 <div className="card-body border border-white bg-white">
                   <div className="card-title">
@@ -132,12 +154,12 @@ class MainComponent extends Component {
           </div>
         </div>
 
-        <div className="container-fluid p-0 ">
+        <div className="container-fluid p-0 mt-5">
           <div className="row m-2">
             <div className="col-md-6 text-center">
               <div className="card border border-white bg-white">
                 <div clsssName="card-header border border-white bg-white ">
-                  <h1 className="text-center p-2 display-1">Start Practice</h1>
+                  <h1 className="text-center p-2 display-2">Start Practice</h1>
                 </div>
                 <div className="card-body border border-white bg-white">
                   <div className="card-title">
@@ -208,10 +230,10 @@ class MainComponent extends Component {
                 </div>
                 <div class="card border border-white">
                   <center>
-                    <FontAwesomeIcon icon={faListAlt} size="8x" />
+                    <FontAwesomeIcon icon={faTools} size="8x" />
                   </center>
                   <div class="card-body">
-                    <h5 class="card-title"> Programming MCQs Practice</h5>
+                    <h5 class="card-title"> Technologies </h5>
                     <p class="card-text">
                       This is a wider card with supporting text below as a
                       natural lead-in to additional content. This card has eve
@@ -221,7 +243,7 @@ class MainComponent extends Component {
                     <div className="row">
                       <div className="col-4"></div>
                       <div className="col text-right ">
-                        <Link to="/home">Read More</Link>
+                        <Link to="/index_technologies">Read More</Link>
                       </div>
                     </div>
                   </div>

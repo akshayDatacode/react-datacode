@@ -40,6 +40,17 @@ import CMCQ1 from "../components/main_component/posts/mcqQuestions/c_mcqs/CMCQ1"
 import IndexJavaMCQ from "../components/main_component/posts/mcqQuestions/java_mcqs/IndexJavaMCQ";
 import JavaMCQ1 from "../components/main_component/posts/mcqQuestions/java_mcqs/JavaMCQ1";
 import ProgrammingLanguagesBlog from "../components/main_component/aticles/Programming_Languages_Blog";
+// Technogies
+import IndexTechnologies from "../components/main_component/technologies/IndexTechnologies";
+import Python from "../components/main_component/technologies/Python";
+import C from "../components/main_component/technologies/C";
+import Java from "../components/main_component/technologies/Java";
+import JS from "../components/main_component/technologies/JS";
+import DataStructure from "../components/main_component/technologies/DataStructure";
+import HTML from "../components/main_component/technologies/HTML";
+import DBMS from "../components/main_component/technologies/DBMS";
+import SQL from "../components/main_component/technologies/SQL";
+import OOPs from "../components/main_component/technologies/OOPs";
 
 class AppRouters extends Component {
   state = {};
@@ -142,6 +153,23 @@ class AppRouters extends Component {
           <Route exact path="/index_books" component={IndexBooks} />
           <Route exact path="/python_books" component={PythonBooks} />
           {/* Ending Book Routing */}
+
+          {/* Starting Technologies */}
+          <Route
+            exact
+            path="/index_technologies"
+            component={IndexTechnologies}
+          />
+          <Route exact path="/python" component={Python} />
+          <Route exact path="/c" component={C} />
+          <Route exact path="/java" component={Java} />
+          <Route exact path="/js" component={JS} />
+          <Route exact path="/datastructure" component={DataStructure} />
+          <Route exact path="/html" component={HTML} />
+          <Route exact path="/dbms" component={DBMS} />
+          <Route exact path="/sql" component={SQL} />
+          <Route exact path="/oops" component={OOPs} />
+          {/* Ending Technologies */}
         </Switch>
       </>
     );

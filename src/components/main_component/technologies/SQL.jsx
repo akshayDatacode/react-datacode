@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-class IndexProgrammingQuestions extends Component {
+class SQL extends Component {
   state = {};
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -7,10 +7,10 @@ class IndexProgrammingQuestions extends Component {
   render() {
     return (
       <>
-        <h1>Index Programming Questions</h1>
+        <h1>SQL Home Page</h1>
       </>
     );
   }
 }
 
-export default IndexProgrammingQuestions;
+export default SQL;

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { animateScroll as scroll } from "react-scroll";
 import {
   faPython,
   faJava,
@@ -12,6 +13,8 @@ import {
   faNodeJs
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
+
 class FooterComponentUpper extends Component {
   state = {};
   render() {
@@ -24,14 +27,16 @@ class FooterComponentUpper extends Component {
             </div>
             <div className="card-deck mt-2">
               <div className="card">
-                <div className="row">
-                  <div className="col-4 ml-4 p-1">
-                    <FontAwesomeIcon icon={faPython} size="2x" />
+                <Link to="python" activeClass="active" smooth={true}>
+                  <div className="row">
+                    <div className="col-4 ml-4 p-1">
+                      <FontAwesomeIcon icon={faPython} color="blue" size="2x" />
+                    </div>
+                    <div className="col mt-1 pt-1">
+                      <span className="">Python</span>
+                    </div>
                   </div>
-                  <div className="col mt-1 pt-1">
-                    <span className="">Python</span>
-                  </div>
-                </div>
+                </Link>
               </div>
               <div className="card">
                 <div className="row">
@@ -64,27 +69,35 @@ class FooterComponentUpper extends Component {
                 </div>
               </div>
               <div className="card">
-                <div className="row">
-                  <div className="col-4 ml-4 p-1">
-                    <FontAwesomeIcon icon={faDatabase} size="2x" />
+                <Link to="sql">
+                  <div className="row">
+                    <div className="col-4 ml-4 p-1">
+                      <FontAwesomeIcon
+                        icon={faDatabase}
+                        color="red"
+                        size="2x"
+                      />
+                    </div>
+                    <div className="col mt-1 pt-1">
+                      <span className="">SQL</span>
+                    </div>
                   </div>
-                  <div className="col mt-1 pt-1">
-                    <span className="">SQL</span>
-                  </div>
-                </div>
+                </Link>
               </div>
             </div>
             {/* Card Deck Row 2  */}
             <div className="card-deck mt-2 mb-2">
               <div className="card">
-                <div className="row">
-                  <div className="col-4 ml-4 p-1">
-                    <FontAwesomeIcon icon={faJava} size="2x" />
+                <Link to="java">
+                  <div className="row">
+                    <div className="col-4 ml-4 p-1">
+                      <FontAwesomeIcon icon={faJava} color="blue" size="2x" />
+                    </div>
+                    <div className="col mt-1 pt-1">
+                      <span className="">Java</span>
+                    </div>
                   </div>
-                  <div className="col mt-1 pt-1">
-                    <span className="">Java</span>
-                  </div>
-                </div>
+                </Link>
               </div>
               <div className="card">
                 <div className="row">
@@ -97,24 +110,36 @@ class FooterComponentUpper extends Component {
                 </div>
               </div>
               <div className="card">
-                <div className="row">
-                  <div className="col-4 ml-4 p-1">
-                    <FontAwesomeIcon icon={faJsSquare} size="2x" />
+                <Link to="js">
+                  <div className="row">
+                    <div className="col-4 ml-4 p-1">
+                      <FontAwesomeIcon
+                        icon={faJsSquare}
+                        color="magenta"
+                        size="2x"
+                      />
+                    </div>
+                    <div className="col mt-1 pt-1">
+                      <span className="">JS</span>
+                    </div>
                   </div>
-                  <div className="col mt-1 pt-1">
-                    <span className="">JS</span>
-                  </div>
-                </div>
+                </Link>
               </div>
               <div className="card">
-                <div className="row">
-                  <div className="col-4 ml-4 p-1">
-                    <FontAwesomeIcon icon={faHtml5} size="2x" />
+                <Link to="html">
+                  <div className="row">
+                    <div className="col-4 ml-4 p-1">
+                      <FontAwesomeIcon
+                        icon={faHtml5}
+                        color="orange"
+                        size="2x"
+                      />
+                    </div>
+                    <div className="col mt-1 pt-1">
+                      <span className="">HTML</span>
+                    </div>
                   </div>
-                  <div className="col mt-1 pt-1">
-                    <span className="">HTML</span>
-                  </div>
-                </div>
+                </Link>
               </div>
               <div className="card">
                 <div className="row">

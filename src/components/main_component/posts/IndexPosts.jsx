@@ -13,6 +13,7 @@ import {
 
 class IndexPosts extends Component {
   state = {};
+
   render() {
     return (
       <>

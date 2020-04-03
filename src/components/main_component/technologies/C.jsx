@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-class IndexProgrammingQuestions extends Component {
+class C extends Component {
   state = {};
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -7,10 +7,10 @@ class IndexProgrammingQuestions extends Component {
   render() {
     return (
       <>
-        <h1>Index Programming Questions</h1>
+        <h1>C Programming Base Page</h1>
       </>
     );
   }
 }
 
-export default IndexProgrammingQuestions;
+export default C;

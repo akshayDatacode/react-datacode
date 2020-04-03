@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 class IndexInterviewQuestions extends Component {
   state = {};
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <>

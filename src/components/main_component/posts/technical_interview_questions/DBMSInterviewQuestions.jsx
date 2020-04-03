@@ -3,6 +3,9 @@ import QuestionCard from "./QuestionCard";
 import RightSideSection from "../../../right_section/RightSideSection";
 class DBMSInterviewQuestions extends Component {
   state = {};
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <>

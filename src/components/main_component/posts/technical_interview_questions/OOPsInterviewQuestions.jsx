@@ -3,6 +3,9 @@ import RightSideSection from "../../../right_section/RightSideSection";
 import QuestionCard from "./QuestionCard";
 class OOPsInterviewQuestions extends Component {
   state = {};
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <>

@@ -27,6 +27,14 @@ npm install --save prism-react-renderer
 /====================FOr Git Pages
 npm install gh-pages --save
 
+/====for Smooth Scroller =====
+npm install react-scroll
+https://stackoverflow.com/questions/33188994/scroll-to-the-top-of-the-page-after-render-in-react-js
+solution
+componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
 // Study For Code Editor Plugin
 
 https://prismjs.com/#plugins

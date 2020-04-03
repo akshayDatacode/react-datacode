@@ -13,7 +13,9 @@ class CMCQ1 extends Component {
     count: 0,
     status: ""
   };
-
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   counter = count => {
     this.setState({ count: this.state.count + 1 });
   };

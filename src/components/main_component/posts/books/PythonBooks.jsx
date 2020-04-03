@@ -6,7 +6,9 @@ import PrismCode from "../../../PrismCode";
 
 class PythonBooks extends Component {
   state = {};
-
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <>
