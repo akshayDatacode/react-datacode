@@ -15,6 +15,11 @@ https://raquelmsmith.com/blog/how-to-deploy-create-react-app-to-github-pages/
  react-bootstrap : - 
  npm intall react-bootstrap bootstrap 
 
+/ for discuss plugin---------------
+datacode-in.disqus.com
+npm install disqus-react --save
+ npm install react-disqus-comments
+
 npm install react-responsive-carousel
 
 //====for Code Editor Plugin----------
@@ -41,3 +46,9 @@ https://prismjs.com/#plugins
 
 
 https://betterstack.dev/blog/code-highlighting-in-react-using-prismjs/#heading-install-and-configure-prismjs
+
+
+
+
+// Referals for Interview Questions Site
+https://www.edureka.co/blog/interview-questions/python-interview-questions/

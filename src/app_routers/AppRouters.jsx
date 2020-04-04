@@ -52,6 +52,11 @@ import DBMS from "../components/main_component/technologies/DBMS";
 import SQL from "../components/main_component/technologies/SQL";
 import OOPs from "../components/main_component/technologies/OOPs";
 
+// Index Programming Questions
+
+import IndexProgrammingQuestions from "../components/main_component/posts/programming_questions/IndexProgrammingQuestions";
+import PythonPgramQuestions from "../components/main_component/posts/programming_questions/PythonPgramQuestions";
+
 class AppRouters extends Component {
   state = {};
   render() {
@@ -169,6 +174,20 @@ class AppRouters extends Component {
           <Route exact path="/dbms" component={DBMS} />
           <Route exact path="/sql" component={SQL} />
           <Route exact path="/oops" component={OOPs} />
+          {/* Ending Technologies */}
+
+          {/* Starting Technologies */}
+          <Route
+            exact
+            path="/index_programming_questions"
+            component={IndexProgrammingQuestions}
+          />
+          <Route
+            exact
+            path="/python_programming_questions"
+            component={PythonPgramQuestions}
+          />
+
           {/* Ending Technologies */}
         </Switch>
       </>

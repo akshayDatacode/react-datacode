@@ -6,9 +6,9 @@ import {
   faLinkedinIn,
   faYoutube,
   faInstagram,
-  faMailchimp
+  faMailchimp,
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faHeart } from "@fortawesome/free-solid-svg-icons";
 import { Container } from "react-bootstrap";
 class FooterComponent extends Component {
   state = {};
@@ -17,9 +17,9 @@ class FooterComponent extends Component {
       <>
         <footer className=" bg-dark text-white page-footer font-small blue-grey lighten-5">
           <div className="bg-dark">
-            <div className="container">
+            <div className="container-fluid">
               <div className="row py-4 d-flex align-items-center bg-dark">
-                <div className="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                <div className="col-md-6 col-lg-5 text-center text-md-left mb-2 mb-md-0">
                   <h6 className="mb-0">
                     Get connected with us on social networks!
                   </h6>
@@ -29,33 +29,33 @@ class FooterComponent extends Component {
                   <a href="https://www.facebook.com/Datacode.in/" cl>
                     <FontAwesomeIcon
                       icon={faFacebookSquare}
-                      size="2x"
-                      color="sky blue"
-                      className="m-2"
+                      size="3x"
+                      color="white"
+                      className="m-3"
                     />
                   </a>
                   <a href="https://www.facebook.com/Datacode.in/">
                     <FontAwesomeIcon
                       icon={faInstagram}
-                      size="2x"
-                      color="orange"
-                      className="m-2"
+                      size="3x"
+                      color="white"
+                      className="m-3"
                     />
                   </a>
                   <a href="https://www.facebook.com/Datacode.in/">
                     <FontAwesomeIcon
                       icon={faLinkedinIn}
-                      size="2x"
-                      color="blue"
-                      className="m-2"
+                      size="3x"
+                      color="white"
+                      className="m-3"
                     />
                   </a>
                   <a href="https://www.facebook.com/Datacode.in/">
                     <FontAwesomeIcon
                       icon={faYoutube}
-                      size="2x"
-                      color="red"
-                      className="m-2"
+                      size="3x"
+                      color="white"
+                      className="m-3"
                     />
                   </a>
                 </div>
@@ -63,43 +63,40 @@ class FooterComponent extends Component {
             </div>
           </div>
 
-          <div className="container text-center text-md-left mt-5 ">
+          <div className="container text-center text-md-left ">
             <div className="row mt-3 dark-grey-text">
               <div className="col-md-3 col-lg-4 col-xl-3 mb-4">
-                <h6 className="text-uppercase font-weight-bold">
-                  Company name
-                </h6>
+                <h6 className="text-uppercase font-weight-bold">Datacode.in</h6>
                 <hr
                   class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto"
-                  style={{ width: 60 }}
+                  style={{ width: 100 }}
                 />
+
                 <p>
-                  Here you can use rows and columns to organize your footer
-                  content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit.
+                  We Present to you a Online Learning Community. Where you can
+                  Explore your Learning Path and also the get latest and Best
+                  online learning Content over the Internet
                 </p>
               </div>
               <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                <h6 className="text-uppercase font-weight-bold">Products</h6>
+                <h6 className="text-uppercase font-weight-bold">
+                  Community Partners
+                </h6>
                 <hr
                   className="teal accent-3 mb-4 mt-0 d-inline-block mx-auto"
                   style={{ width: 60 }}
                 />
                 <p>
                   <a class="dark-grey-text" href="#!">
-                    MDBootstrap
+                    Facebook Developer Circle, Indore
                   </a>
                 </p>
                 <p>
                   <a class="dark-grey-text" href="#!">
-                    MDWordPress
+                    Mozila Community ,Indore
                   </a>
                 </p>
-                <p>
-                  <a class="dark-grey-text" href="#!">
-                    BrandFlow
-                  </a>
-                </p>
+
                 <p>
                   <a class="dark-grey-text" href="#!">
                     Bootstrap Angular
@@ -139,32 +136,33 @@ class FooterComponent extends Component {
               <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                 <h6 className="text-uppercase font-weight-bold">Contact</h6>
                 <hr
-                  class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto"
+                  class="teal accent-3 mb-3 mt-0 d-inline-block mx-auto"
                   style={{ width: 60 }}
                 />
                 <p>
-                  New York, NY 10012, US
+                  <FontAwesomeIcon
+                    icon={faEnvelope}
+                    color="white"
+                    className="mr-2"
+                  />
+                  datacode.in@gmail.com
                 </p>
-                <p>
-                  info@example.com
-                </p>
-                <p>
-                  + 01 234 567 88
-                </p>
-                <p>
-                  + 01 234 567 89
-                </p>
+                <p></p>
               </div>
             </div>
           </div>
-
           <div className="footer-copyright text-center text-black-50 py-3 bg-dark">
-            © 2020 Copyright:
-            <a class="dark-grey-text" href="https://mdbootstrap.com/">
-              {" "}
-              Datacode.in
+            <a class="text-light" href="https://datacode.in/">
+              Made with <FontAwesomeIcon icon={faHeart} size="2x" color="red" />{" "}
+              by Datacode Team
             </a>
           </div>
+          {/* <div className="footer-copyright text-center text-black-50 py-3 bg-dark">
+            © 2020 Copyright:
+            <a class="text-light" href="https://datacode.in/">
+              Datacode.in
+            </a>
+          </div> */}
         </footer>
       </>
     );

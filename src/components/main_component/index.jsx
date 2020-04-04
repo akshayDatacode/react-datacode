@@ -18,7 +18,7 @@ import {
   faFileCode,
   faUserTimes,
   faTimesCircle,
-  faTools
+  faTools,
 } from "@fortawesome/free-solid-svg-icons";
 import { faConnectdevelop } from "@fortawesome/free-brands-svg-icons";
 
@@ -32,9 +32,9 @@ class MainComponent extends Component {
       <>
         <CarouselComponent />
 
-        <div className="container-fluid">
+        <div className="container-fluid p-0">
           <div className="row">
-            <div className="col">
+            <div className="col p-0">
               <div class="card-deck mt-3">
                 <div class="card border border-white">
                   <Link to="/index_quize_tests">
@@ -187,7 +187,7 @@ class MainComponent extends Component {
         {/* ... starting Lower Cards -5  .........................................*/}
         <div className="container-fluid ">
           <div className="row">
-            <div className="col">
+            <div className="col p-0">
               <div class="card-deck mt-5 p-2">
                 <div class="card border border-white">
                   <center>
@@ -282,7 +282,7 @@ class MainComponent extends Component {
                     <div className="row">
                       <div className="col-4"></div>
                       <div className="col text-right ">
-                        <Link to="/home">Read More</Link>
+                        <Link to="/index_programming_questions">Read More</Link>
                       </div>
                     </div>
                   </div>

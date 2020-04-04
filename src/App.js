@@ -11,7 +11,7 @@ const App = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="row">
-            <div className="col-md col-sm mb-5">
+            <div className="col-md col-sm mb-4">
               <IndexHeader />
             </div>
           </div>

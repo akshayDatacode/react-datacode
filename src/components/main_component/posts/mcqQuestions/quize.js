@@ -7,9 +7,9 @@ class Quize extends Component {
     isClicked: false,
     status: "",
     correctAns: "",
-    code: ""
+    code: "",
   };
-  handleOption = event => {
+  handleOption = (event) => {
     if (event.target.value == this.props.correctAnswer) {
       this.setState({ isClicked: true, status: "correct", correctAns: " " });
       this.props.counter();
@@ -17,7 +17,7 @@ class Quize extends Component {
       this.setState({
         isClicked: true,
         status: "wrong",
-        correctAns: this.props.correctAnswer
+        correctAns: this.props.correctAnswer,
       });
     }
   };
@@ -58,7 +58,7 @@ class Quize extends Component {
 
             {!this.state.isClicked && (
               <>
-                <ul class="list-group list-group-flush">
+                <ul className="list-group list-group-flush">
                   <li className="list-group-item">
                     <input
                       type="radio"

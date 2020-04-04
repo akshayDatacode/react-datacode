@@ -11,12 +11,13 @@ class CMCQ1 extends Component {
     isCorrect: false,
     isClicked: false,
     count: 0,
-    status: ""
+    status: "",
   };
   componentDidMount() {
     window.scrollTo(0, 0);
   }
-  counter = count => {
+
+  counter = (count) => {
     this.setState({ count: this.state.count + 1 });
   };
 
