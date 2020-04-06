@@ -5,12 +5,12 @@ class QuestionCard extends Component {
   render() {
     return (
       <>
-        <div className="card mb-3 shadow border border-white">
-          <div className="card-header text-white bg-primary">
+        <div className="card border border-light rounded shadow-sm mt-3">
+          <div className="card-header text-dark ">
             <h5>{this.props.question}</h5>
           </div>
           <div className="card-body ">
-            <p>{this.props.answer}</p>
+            <h6 className="text-secondary">{this.props.answer}</h6>
           </div>
         </div>
       </>

@@ -18,6 +18,9 @@ class IndexMcqQuestions extends Component {
         <Link to="/index_java_mcqs">
           <h6>Java MCQs Questions</h6>
         </Link>
+        <Link to="/index_js_mcqs">
+          <h6>JavaScript MCQs Questions</h6>
+        </Link>
       </>
     );
   }

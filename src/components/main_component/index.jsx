@@ -19,6 +19,7 @@ import {
   faUserTimes,
   faTimesCircle,
   faTools,
+  faNewspaper,
 } from "@fortawesome/free-solid-svg-icons";
 import { faConnectdevelop } from "@fortawesome/free-brands-svg-icons";
 
@@ -46,8 +47,8 @@ class MainComponent extends Component {
                       />
                     </center>
                   </Link>
-                  <div class="card-body">
-                    <h5 class="card-title">Technical Quize Tests</h5>
+                  <div class="card-body text-center">
+                    <h5 class="card-title ">Technical Quize Tests</h5>
                     <p class="card-text">
                       We Love to Code and this is the best way to express our
                       love to Computer Science Wolrd.
@@ -57,7 +58,11 @@ class MainComponent extends Component {
                     <div className="row">
                       <div className="col-6"></div>
                       <div className="col-5 text-right ">
-                        <Link to="/index_quize_tests">Read More</Link>
+                        <Link to="/index_quize_tests">
+                          <h6 className="btn border border-secondary">
+                            Read More
+                          </h6>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -83,7 +88,11 @@ class MainComponent extends Component {
                     <div className="row">
                       <div className="col-6"></div>
                       <div className="col-5 text-right ">
-                        <Link to="/index_interview_questioins">Read More</Link>
+                        <Link to="/index_interview_questioins">
+                          <h6 className="btn border border-secondary">
+                            Read More
+                          </h6>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -111,7 +120,11 @@ class MainComponent extends Component {
                     <div className="row">
                       <div className="col-6"></div>
                       <div className="col-5 text-right ">
-                        <Link to="/index_mcqs">Read More</Link>
+                        <Link to="/index_mcqs">
+                          <h6 className="btn border border-secondary text-weight-bold">
+                            Read More
+                          </h6>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -135,7 +148,7 @@ class MainComponent extends Component {
             <div className="col-md-6 text-center">
               <div className="card border border-white bg-white">
                 <div clsssName="card-header border border-white bg-white ">
-                  <h1 className="text-center p-2 display-2">We Write Code</h1>
+                  <h1 className="text-center p-2 display-4">We Write Code</h1>
                 </div>
                 <div className="card-body border border-white bg-white">
                   <div className="card-title">
@@ -159,7 +172,7 @@ class MainComponent extends Component {
             <div className="col-md-6 text-center">
               <div className="card border border-white bg-white">
                 <div clsssName="card-header border border-white bg-white ">
-                  <h1 className="text-center p-2 display-2">Start Practice</h1>
+                  <h1 className="text-center p-2 display-4">Start Practice</h1>
                 </div>
                 <div className="card-body border border-white bg-white">
                   <div className="card-title">
@@ -191,10 +204,14 @@ class MainComponent extends Component {
               <div class="card-deck mt-5 p-2">
                 <div class="card border border-white">
                   <center>
-                    <FontAwesomeIcon icon={faTerminal} size="8x" />
+                    <FontAwesomeIcon
+                      icon={faNewspaper}
+                      size="8x"
+                      color="gold"
+                    />
                   </center>
                   <div class="card-body">
-                    <h5 class="card-title">We Write Codes</h5>
+                    <h5 class="card-title">Communnity Blogs</h5>
                     <p class="card-text">
                       Read Our Technical Blogs for Beginners By Experts
                     </p>
@@ -203,17 +220,23 @@ class MainComponent extends Component {
                     <div className="row">
                       <div className="col-4"></div>
                       <div className="col text-right ">
-                        <Link to="/index_articles">Read More</Link>
+                        <Link to="/index_articles">
+                          <h6 className="btn btn-default border border-light text-secondary">
+                            Read More
+                          </h6>
+                        </Link>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="card border border-white">
                   <center>
-                    <FontAwesomeIcon icon={faUsers} size="8x" />
+                    <FontAwesomeIcon icon={faUsers} size="8x" color="orange" />
                   </center>
                   <div class="card-body">
-                    <h5 class="card-title">Programming Interview FAQs</h5>
+                    <h5 class="card-title text-secondary">
+                      Weekly Code Challange
+                    </h5>
                     <p class="card-text">
                       This card has supporting text below as a natural lead-in
                       to additional content.dfdfldfldfldkfldkfldkfldkfdlkfdlfkdl
@@ -223,14 +246,18 @@ class MainComponent extends Component {
                     <div className="row">
                       <div className="col-4"></div>
                       <div className="col text-right ">
-                        <Link to="/home">Read More</Link>
+                        <Link to="/index_code_challange">
+                          <h6 className="btn btn-default border border-light text-secondary">
+                            Read More
+                          </h6>
+                        </Link>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="card border border-white">
                   <center>
-                    <FontAwesomeIcon icon={faTools} size="8x" />
+                    <FontAwesomeIcon icon={faTools} size="8x" color="gray" />
                   </center>
                   <div class="card-body">
                     <h5 class="card-title"> Technologies </h5>
@@ -243,14 +270,22 @@ class MainComponent extends Component {
                     <div className="row">
                       <div className="col-4"></div>
                       <div className="col text-right ">
-                        <Link to="/index_technologies">Read More</Link>
+                        <Link to="/index_technologies">
+                          <h6 className="btn btn-default border border-light text-secondary">
+                            Read More
+                          </h6>
+                        </Link>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="card border border-white">
                   <center>
-                    <FontAwesomeIcon icon={faBookOpen} size="8x" />
+                    <FontAwesomeIcon
+                      icon={faBookOpen}
+                      size="8x"
+                      color="green"
+                    />
                   </center>
                   <div class="card-body">
                     <h5 class="card-title">Books</h5>
@@ -263,7 +298,11 @@ class MainComponent extends Component {
                     <div className="row">
                       <div className="col-4"></div>
                       <div className="col text-right ">
-                        <Link to="/index_books">Read More</Link>
+                        <Link to="/index_books">
+                          <h6 className="btn btn-default border border-light text-secondary">
+                            Read More
+                          </h6>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -282,7 +321,11 @@ class MainComponent extends Component {
                     <div className="row">
                       <div className="col-4"></div>
                       <div className="col text-right ">
-                        <Link to="/index_programming_questions">Read More</Link>
+                        <Link to="/index_programming_questions">
+                          <h6 className="btn btn-default border border-light text-secondary">
+                            Read More
+                          </h6>
+                        </Link>
                       </div>
                     </div>
                   </div>

@@ -7,12 +7,12 @@ class PythonPgramQuestions extends Component {
   render() {
     return (
       <>
-        <div className="container-fluids">
+        <div className="container-fluids bg-light">
           <div className="row">
-            <div className="col">
+            <div className="col bg-light">
               <div className="card bg-success">
                 <div className="card-body p-2">
-                  <h1 className="card-title text-light display-5 ">
+                  <h1 className="card-title text-light display-5">
                     Python Programming Examples Question
                   </h1>
                 </div>
@@ -20,7 +20,7 @@ class PythonPgramQuestions extends Component {
             </div>
           </div>
           <div className="row">
-            <div className="col-3 d-none d-sm-block">
+            <div className="col-3 d-none d-sm-block bg-light mt-4">
               <ul class="list-group list-group-flush">
                 <li className="list-group-item">Introduction</li>
                 <li className="list-group-item">Data Type</li>
@@ -37,7 +37,7 @@ class PythonPgramQuestions extends Component {
                 <li className="list-group-item">Python</li>
               </ul>
             </div>
-            <div className="col-md-6 mt-5">
+            <div className="col-md-5 mt-5 bg-light">
               <ProgramCard
                 link="https://www.geeksforgeeks.org/python-program-to-add-two-numbers/"
                 heading="Python program to add two numbers"
@@ -55,7 +55,7 @@ class PythonPgramQuestions extends Component {
                 heading="Python Program for compound interest"
               />
             </div>
-            <div className="col-md-3 mt-4">
+            <div className="col-md-4 mt-4 bg-light">
               <RecommendPost
                 imgsource="python_mcqs.jpeg"
                 RecPostHading="Python MCQs Questions"

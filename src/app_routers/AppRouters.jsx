@@ -2,7 +2,10 @@ import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
 import MainComponent from "../components/main_component";
 import HomeComponent from "../components/main_component/HomeComponent";
+
 import IndexArticles from "../components/main_component/aticles/IndexArticles";
+import ProgrammingLanguagesBlog from "../components/main_component/aticles/programming_article/Programming_Languages_Blog";
+
 import AboutUs from "../components/header_component/AboutUs";
 // Interview Routinig
 import IndexInterviewQuestions from "../components/main_component/posts/technical_interview_questions/IndexInterviewQuestions";
@@ -36,10 +39,15 @@ import PythonMCQ1 from "../components/main_component/posts/mcqQuestions/python_m
 // CMCQs Routing
 import IndexCMCQ from "../components/main_component/posts/mcqQuestions/c_mcqs/IndexCMCQ";
 import CMCQ1 from "../components/main_component/posts/mcqQuestions/c_mcqs/CMCQ1";
+
 // Java MCQ Routing
 import IndexJavaMCQ from "../components/main_component/posts/mcqQuestions/java_mcqs/IndexJavaMCQ";
 import JavaMCQ1 from "../components/main_component/posts/mcqQuestions/java_mcqs/JavaMCQ1";
-import ProgrammingLanguagesBlog from "../components/main_component/aticles/Programming_Languages_Blog";
+
+// JavaScript MCQs
+import IndexJSMCQ from "../components/main_component/posts/mcqQuestions/javascript_mcqs/IndexJSMCQ";
+import JSMCQ1 from "../components/main_component/posts/mcqQuestions/javascript_mcqs/JSMCQ1";
+
 // Technogies
 import IndexTechnologies from "../components/main_component/technologies/IndexTechnologies";
 import Python from "../components/main_component/technologies/Python";
@@ -56,6 +64,13 @@ import OOPs from "../components/main_component/technologies/OOPs";
 
 import IndexProgrammingQuestions from "../components/main_component/posts/programming_questions/IndexProgrammingQuestions";
 import PythonPgramQuestions from "../components/main_component/posts/programming_questions/PythonPgramQuestions";
+// Index Evens
+import IndexEvent from "../components/main_component/events/IndexEvent";
+// index CodeChallange
+import IndexCodeChallange from "../components/main_component/code_challange/IndexCodeChallange";
+import CodeChallangeWeek2 from "../components/main_component/code_challange/CodeChallangeWeek2";
+import CodeChallangeWeek1 from "../components/main_component/code_challange/CodeChallangeWeek1";
+import PythonInterviewQuestions from "../components/main_component/posts/technical_interview_questions/PythonInterviewQuestions";
 
 class AppRouters extends Component {
   state = {};
@@ -88,10 +103,15 @@ class AppRouters extends Component {
           <Route exact path="/c_mcq_1" component={CMCQ1} />
           {/* Ending C MCQs */}
 
-          {/* Starting Python MCQs */}
+          {/* Starting Java MCQs */}
           <Route exact path="/index_java_mcqs" component={IndexJavaMCQ} />
           <Route exact path="/java_mcq_1" component={JavaMCQ1} />
-          {/* Ending Python MCQS */}
+          {/* Ending Java MCQS */}
+
+          {/* Starting JavaScript MCQs */}
+          <Route exact path="/index_js_mcqs" component={IndexJSMCQ} />
+          <Route exact path="/js_mcq_1" component={JSMCQ1} />
+          {/* Ending JavaScript MCQS */}
 
           {/* Index Quize Tests Routing */}
 
@@ -152,6 +172,11 @@ class AppRouters extends Component {
             path="/oops_interview_question"
             component={OOPsInterviewQuestions}
           />
+          <Route
+            path="/python_interview_question"
+            component={PythonInterviewQuestions}
+          />
+
           {/* Einding Interview Routing */}
 
           {/* Book Routing */}
@@ -176,7 +201,7 @@ class AppRouters extends Component {
           <Route exact path="/oops" component={OOPs} />
           {/* Ending Technologies */}
 
-          {/* Starting Technologies */}
+          {/* Starting Programming Questions */}
           <Route
             exact
             path="/index_programming_questions"
@@ -188,7 +213,29 @@ class AppRouters extends Component {
             component={PythonPgramQuestions}
           />
 
-          {/* Ending Technologies */}
+          {/* Ending Programming Questions  */}
+
+          {/* Starting Event PAge */}
+          <Route exact path="/index_events" component={IndexEvent} />
+          {/* Ending Event PAge */}
+
+          {/* Starting COde Challange PAge */}
+          <Route
+            exact
+            path="/index_code_challange"
+            component={IndexCodeChallange}
+          />
+          <Route
+            exact
+            path="/code_challange_week_1"
+            component={CodeChallangeWeek1}
+          />
+          <Route
+            exact
+            path="/code_challange_week_2"
+            component={CodeChallangeWeek2}
+          />
+          {/* Ending COde Challange PAge */}
         </Switch>
       </>
     );

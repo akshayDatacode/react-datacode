@@ -14,17 +14,9 @@ class CarouselComponent extends Component {
                 src={require("../../assets/images/webcover1.jpeg")}
                 alt="First slide"
               />
-              <div className="card-img-overlay d-block d-md-none p-1">
-                <h3>Datacode.in</h3>
-                <p>We Write Codes</p>
-                <Link to="/home">
-                  <div className="btn btn-xs btn-default border border-black mt-0 ">
-                    Getting Started
-                  </div>
-                </Link>
-              </div>
+
               <div className="card-img-overlay d-none d-md-block">
-                <h1 className="display-1 mt-5">DataCode.in</h1>
+                <h1 className="display-1 mt-5 text-weight-bold">DataCode.in</h1>
                 <p>We Write Codes</p>
                 <Link to="/home">
                   <div className="btn btn-lg btn-primary mt-5">
@@ -42,17 +34,11 @@ class CarouselComponent extends Component {
                 src={require("../../assets/images/webcover3.jpeg")}
                 alt="First slide"
               />
-              <div className="card-img-overlay d-block d-md-none p-1">
-                <h3>Datacode.in</h3>
-                <p>We Write Codes</p>
-                <Link to="/home">
-                  <div className="btn btn-xs btn-default border border-black mt-0 ">
-                    Start Practice
-                  </div>
-                </Link>
-              </div>
+
               <div className="card-img-overlay d-none d-md-block">
-                <h1 className="display-1 mt-5">DataCode.in</h1>
+                <h1 className="h1 display-1 mt-5 text-weight-bold">
+                  DataCode.in
+                </h1>
                 <p>We Write Codes</p>
                 <Link to="/home">
                   <div className="btn btn-lg btn-warning mt-5">
@@ -69,17 +55,9 @@ class CarouselComponent extends Component {
                 src={require("../../assets/images/webcover2.jpeg")}
                 alt="First slide"
               />
-              <div className="card-img-overlay d-block d-md-none p-1">
-                <h3>Datacode.in</h3>
-                <p>We Write Codes</p>
-                <Link to="/home">
-                  <div className="btn btn-xs btn-default border border-black mt-0 ">
-                    Register Now
-                  </div>
-                </Link>
-              </div>
+
               <div className="card-img-overlay d-none d-md-block">
-                <h1 className="display-1 mt-5">DataCode.in</h1>
+                <h1 className="display-1 mt-5 text-weight-bold">DataCode.in</h1>
                 <p>We Write Codes</p>
                 <Link to="/home">
                   <div className="btn btn-lg btn-success mt-5">

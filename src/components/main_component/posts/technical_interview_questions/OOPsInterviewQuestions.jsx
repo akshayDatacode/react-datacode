@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import RightSideSection from "../../../right_section/RightSideSection";
 import QuestionCard from "./QuestionCard";
+import RecommendPost from "../../../right_section/RecommendPost";
 class OOPsInterviewQuestions extends Component {
   state = {};
   componentDidMount() {
@@ -12,10 +13,10 @@ class OOPsInterviewQuestions extends Component {
         <div className="container-fluids">
           <div className="row">
             <div className="col">
-              <div className="card bg-success">
+              <div className="card bg-primary">
                 <div className="card-body">
-                  <h1 className="card-title text-light display-3 ">
-                    OOPs Interview Question
+                  <h1 className="card-title text-light display-5 ">
+                    DBMS Interview Question
                   </h1>
                 </div>
               </div>
@@ -23,41 +24,36 @@ class OOPsInterviewQuestions extends Component {
           </div>
           <div className="row mt-5">
             <div className="col-md-1"></div>
-            <div className="col-md-8">
-              <QuestionCard
-                question="What is Interview Questions"
-                answer="The answer of each question is came from interview question"
-              />
-              <QuestionCard
-                question="What is Interview Questions"
-                answer="The answer of each question is came from interview question"
-              />
-              <QuestionCard
-                question="What is Interview Questions"
-                answer="The answer of each question is came from interview question"
-              />
-              <QuestionCard
-                question="What is Interview Questions"
-                answer="The answer of each question is came from interview question"
-              />
-              <QuestionCard
-                question="What is Interview Questions"
-                answer="The answer of each question is came from interview question"
-              />
-              <QuestionCard
-                question="What is Interview Questions"
-                answer="The answer of each question is came from interview question"
-              />
-              <QuestionCard
-                question="What is Interview Questions"
-                answer="The answer of each question is came from interview question"
-              />
-              <QuestionCard
-                question="What is Interview Questions"
-                answer="The answer of each question is came from interview question"
-              />
+            <div className="col-md-7">
+              
             </div>
-            <div className="col-md-3">
+            <div className="col-md-4 mt-5">
+              <h5 className="mb-4">Other Learning Resources</h5>
+              <RecommendPost
+                imgsource="indexcover1.jpeg"
+                RecPostHading="Interview Heading"
+              />
+              <RecommendPost
+                imgsource="indexcover1.jpeg"
+                RecPostHading="Interview Heading"
+              />
+              <RecommendPost
+                imgsource="indexcover1.jpeg"
+                RecPostHading="Interview Heading"
+              />
+              <RecommendPost
+                imgsource="indexcover1.jpeg"
+                RecPostHading="Interview Heading"
+              />
+              <RecommendPost
+                imgsource="indexcover1.jpeg"
+                RecPostHading="Interview Heading"
+              />
+              <RecommendPost
+                imgsource="indexcover1.jpeg"
+                RecPostHading="Interview Heading"
+              />
+
               <RightSideSection />
             </div>
           </div>

@@ -13,6 +13,9 @@ class CMCQ1 extends Component {
     count: 0,
     status: "",
   };
+  d = () => {
+    window.location.reload();
+  };
   componentDidMount() {
     window.scrollTo(0, 0);
   }
@@ -392,9 +395,7 @@ void foo()
               </div>
             </div>
             <div className="col-md-4">
-              <RightSideSection />
-
-              <h5 className="mb-3">Recommend for you</h5>
+              <h5 className="mb-3">Recommended for you</h5>
               <RecommendPost
                 imgsource="python_mcqs.jpeg"
                 RecPostHading="Python MCQs Questions"
@@ -410,6 +411,7 @@ void foo()
                 RecPostHading="Programminig Quize Test"
                 link="/index_quize_tests"
               />
+              <RightSideSection />
             </div>
           </div>
         </div>

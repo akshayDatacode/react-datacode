@@ -22,9 +22,12 @@ class RightSideSection extends Component {
               </p>
             </div>
             <div class="card-footer border border-white bg-white text-center">
-              <Link to="/home" className="btn btn-info font-weight-bold">
+              <a
+                href="https://www.facebook.com/Datacode.in/"
+                className="btn btn-info font-weight-bold"
+              >
                 Join us
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -45,9 +48,12 @@ class RightSideSection extends Component {
               </p>
             </div>
             <div class="card-footer border border-white bg-white text-center">
-              <Link to="/home" className="btn btn-info font-weight-bold">
+              <a
+                href="https://www.facebook.com/Datacode.in/"
+                className="btn btn-info font-weight-bold"
+              >
                 Join us
-              </Link>
+              </a>
             </div>
           </div>
         </div>

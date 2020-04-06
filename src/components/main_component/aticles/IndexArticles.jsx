@@ -9,8 +9,8 @@ class IndexArticles extends Component {
   render() {
     return (
       <>
-        <HeaderBannerSection imgsource="pythontech.jpeg" />
         <Link to="/prog_lan_blog"> Programming Languages Blog</Link>
+        
       </>
     );
   }

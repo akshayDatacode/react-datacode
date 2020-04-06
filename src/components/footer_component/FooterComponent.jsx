@@ -17,7 +17,7 @@ class FooterComponent extends Component {
       <>
         <footer className=" bg-dark text-white page-footer font-small blue-grey lighten-5">
           <div className="bg-dark">
-            <div className="container-fluid">
+            <div className="container">
               <div className="row py-4 d-flex align-items-center bg-dark">
                 <div className="col-md-6 col-lg-5 text-center text-md-left mb-2 mb-md-0">
                   <h6 className="mb-0">
@@ -87,7 +87,10 @@ class FooterComponent extends Component {
                   style={{ width: 60 }}
                 />
                 <p>
-                  <a class="dark-grey-text" href="#!">
+                  <a
+                    class="dark-grey-text"
+                    href="https://www.facebook.com/groups/DevCIndore"
+                  >
                     Facebook Developer Circle, Indore
                   </a>
                 </p>

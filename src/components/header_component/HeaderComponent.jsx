@@ -1,7 +1,12 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { fab } from "@fortawesome/free-brands-svg-icons";
-import { faHome, faAddressCard } from "@fortawesome/free-solid-svg-icons";
+import { fab, faMeetup } from "@fortawesome/free-brands-svg-icons";
+import {
+  faHome,
+  faAddressCard,
+  faClipboardList,
+  faNewspaper,
+} from "@fortawesome/free-solid-svg-icons";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 class HeaderComponent extends Component {
@@ -31,27 +36,33 @@ class HeaderComponent extends Component {
               <Nav.Link href="/react-datacode/#/home">
                 <FontAwesomeIcon icon={faHome} /> Home
               </Nav.Link>
-              <a href="/aboutus">
-                <FontAwesomeIcon icon={faAddressCard} /> About us
-              </a>
-              <NavDropdown title="Technologies" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="/react-datacode/#/dbms_interview_question">
-                  DBMS
+              <Nav.Link href="/react-datacode/#/index_articles">
+                <FontAwesomeIcon icon={faNewspaper} /> Blogs
+              </Nav.Link>
+
+              <NavDropdown title="Learning" id="collasible-nav-dropdown">
+                <NavDropdown.Item href="/react-datacode/#/index_technologies">
+                  Technologies
                 </NavDropdown.Item>
 
-                <NavDropdown.Item href="/react-datacode/#/python_mcqs">
-                  Python MCQs
+                <NavDropdown.Item href="/react-datacode/#/index_code_challange">
+                  Code Challange
                 </NavDropdown.Item>
 
                 <NavDropdown.Item>
-                  <Link to="/index_articles">Articles</Link>
+                  <Link to="/index_interview_questioins">
+                    Placment Preparation
+                  </Link>
                 </NavDropdown.Item>
 
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/action/3.100">
-                  Separated link
+                <NavDropdown.Item>
+                  <Link to="/index_quize_tests">Programming Tests</Link>
                 </NavDropdown.Item>
               </NavDropdown>
+              <Nav.Link href="/react-datacode/#/index_events">
+                <FontAwesomeIcon icon={faClipboardList} /> Events
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>

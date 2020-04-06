@@ -15,6 +15,9 @@ class IndexInterviewQuestions extends Component {
         <Link to="/oops_interview_question">
           <h6>OOPs Interview Questions</h6>
         </Link>
+        <Link to="/python_interview_question">
+          <h6>Python Interview Questions</h6>
+        </Link>
       </>
     );
   }
