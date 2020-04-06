@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import HeaderBannerSection from "../../HeaderBannerSection";
 import RightSideSection from "../../../right_section/RightSideSection";
+import PostCard from "../../PostCard";
+import ArticlePostCard from "../ArticlePostCard";
 class ProgrammingLanguagesBlog extends Component {
   state = {};
   componentDidMount() {
@@ -12,63 +14,32 @@ class ProgrammingLanguagesBlog extends Component {
         <div className="container-fluid ">
           <div className="row">
             <div className="col-md-1 p-0 m-0"></div>
-            <div className="col-md-8 p-0 ">
-              <div className="card border border-secondary">
-                <HeaderBannerSection imgsource="pythontech.jpeg" />
-
-                <div className="row">
-                  <div className="col">
-                    <h1 className="text-secondary col-sm-h1 m-3">
-                      Programming Languages Blog
-                    </h1>
-                    <div className="card-body">
-                      <p className="text-left">
-                        Computer programming is the process of designing and
-                        building an executable computer program to accomplish a
-                        specific computing result. Programming involves tasks
-                        such as: analysis, generating algorithms, profiling
-                        algorithms' accuracy and resource consumption, and the
-                        implementation of algorithms in a chosen programming
-                        language (commonly referred to as coding).[1][2] The
-                        source code of a program is written in one or more
-                        languages that are intelligible to programmers, rather
-                        than machine code, which is directly executed by the
-                        central processing unit. The purpose of programming is
-                        to find a sequence of instructions that will automate
-                        the performance of a task (which can be as complex as an
-                        operating system) on a computer, often for solving a
-                        given problem. The process of programming thus often
-                        requires expertise in several different subjects,
-                        including knowledge of the application domain,
-                        specialized algorithms, and formal logic.
-                      </p>
-                      <br />
-                      <p className="text-left">
-                        Computer programming is the process of designing and
-                        building an executable computer program to accomplish a
-                        specific computing result. Programming involves tasks
-                        such as: analysis, generating algorithms, profiling
-                        algorithms' accuracy and resource consumption, and the
-                        implementation of requires expertise in several
-                        different subjects, including knowledge of the
-                        application domain, specialized algorithms, and formal
-                        logic.
-                      </p>
-                      <br />
-                      <p className="text-left">
-                        Computer programming is the process of designing and
-                        building an executable computer program to accomplish a
-                        specific computing result. Programming involves tasks
-                        such as: analysis, generating algorithms, profiling
-                        algorithms' accuracy and resource consumption, and the
-                        implementation of requires expertise in several
-                        different subjects, including knowledge of the
-                        application domain, specialized algorithms, and formal
-                        logic.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+            <div className="col-md-8 p-0 mt-4">
+              <h2 className="text-center mb-4">Programming Community Blogs</h2>
+              <div className="card-deck m-2">
+                <ArticlePostCard
+                  imgsource="programming_boooks.jpeg"
+                  tag="JavaScript"
+                  title="Learn JavaScript concepts by building a random quote generator"
+                  paragraph="Learning JavaScript is fun. But What's the point if you are not building stuff with it. So in this article,"
+                  link="https://thenextbigwriter.tech/learn-javascript-concepts-by-building-a-random-quote-generator-ck8fmvz6j014qyys1i204knru"
+                />
+                <ArticlePostCard
+                  imgsource="programming_boooks.jpeg"
+                  tag="JavaScript"
+                  title="What is `this` inside foo.bar()?"
+                  paragraph="Calling a method directly works as expected.
+                  But when we pass a method as callback, it loses"
+                  link="https://blog.bendtherul.es/what-is-this-inside-foobar-ck8dzlitm01atxjs1322jz9a2"
+                />
+                <ArticlePostCard
+                  imgsource="programming_boooks.jpeg"
+                  tag="JavaScript"
+                  title="Web Design Blog"
+                  paragraph="We Love to Code and this is the best way to express our
+                  love to Computer Science Wolrd."
+                  link="/webdesign_blog"
+                />
               </div>
             </div>
             <div className="col-md-3 ">

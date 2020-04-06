@@ -2,9 +2,10 @@ import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
 import MainComponent from "../components/main_component";
 import HomeComponent from "../components/main_component/HomeComponent";
-
+// Articles
 import IndexArticles from "../components/main_component/aticles/IndexArticles";
 import ProgrammingLanguagesBlog from "../components/main_component/aticles/programming_article/Programming_Languages_Blog";
+import WebDesignBlog from "../components/main_component/aticles/webdesign_article/WebDesignBlog";
 
 import AboutUs from "../components/header_component/AboutUs";
 // Interview Routinig
@@ -71,6 +72,7 @@ import IndexCodeChallange from "../components/main_component/code_challange/Inde
 import CodeChallangeWeek2 from "../components/main_component/code_challange/CodeChallangeWeek2";
 import CodeChallangeWeek1 from "../components/main_component/code_challange/CodeChallangeWeek1";
 import PythonInterviewQuestions from "../components/main_component/posts/technical_interview_questions/PythonInterviewQuestions";
+import EventGallary from "../components/main_component/events/EventGallary";
 
 class AppRouters extends Component {
   state = {};
@@ -88,6 +90,8 @@ class AppRouters extends Component {
           {/* Starting Articles */}
           <Route path="/index_articles" component={IndexArticles} />
           <Route path="/prog_lan_blog" component={ProgrammingLanguagesBlog} />
+          <Route path="/webdesign_blog" component={WebDesignBlog} />
+
           {/* Ending Article */}
 
           {/* Starting Index MCQs */}
@@ -217,6 +221,7 @@ class AppRouters extends Component {
 
           {/* Starting Event PAge */}
           <Route exact path="/index_events" component={IndexEvent} />
+          <Route exact path="/events_gallary" component={EventGallary} />
           {/* Ending Event PAge */}
 
           {/* Starting COde Challange PAge */}
