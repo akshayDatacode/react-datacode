@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "35204a783d4137d7de8285d80aae1c58",
+    "revision": "32a0c9d577f41f343d42a7402d2c5160",
     "url": "/react-datacode/index.html"
   },
   {
-    "revision": "a864146c43f00da5860c",
+    "revision": "ed7e42062b314f1cfa3c",
     "url": "/react-datacode/static/css/2.89f067aa.chunk.css"
   },
   {
-    "revision": "d74ad6c2eefa4fd53327",
+    "revision": "f28c52738e39db199db7",
     "url": "/react-datacode/static/css/main.2749690b.chunk.css"
   },
   {
-    "revision": "a864146c43f00da5860c",
-    "url": "/react-datacode/static/js/2.475d6096.chunk.js"
+    "revision": "ed7e42062b314f1cfa3c",
+    "url": "/react-datacode/static/js/2.7cc25495.chunk.js"
   },
   {
     "revision": "ae54f939c6e84f9ec4d4c4cd8100d77f",
-    "url": "/react-datacode/static/js/2.475d6096.chunk.js.LICENSE.txt"
+    "url": "/react-datacode/static/js/2.7cc25495.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d74ad6c2eefa4fd53327",
-    "url": "/react-datacode/static/js/main.0f709d43.chunk.js"
+    "revision": "f28c52738e39db199db7",
+    "url": "/react-datacode/static/js/main.c03e6894.chunk.js"
   },
   {
     "revision": "b68bea75d65b55994766",
@@ -154,6 +154,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b3c2e11089a5f0103b53c19736366591",
     "url": "/react-datacode/static/media/dsa_programming_questions.b3c2e110.jpeg"
+  },
+  {
+    "revision": "07a66ffe69c6e9d0a90d464b6d555a41",
+    "url": "/react-datacode/static/media/event.07a66ffe.jpeg"
+  },
+  {
+    "revision": "f6300d0652d01396048c0ea00a5ab930",
+    "url": "/react-datacode/static/media/eventcover1.f6300d06.jpeg"
   },
   {
     "revision": "e03defd019c51307e7db7aa9f0a9affc",
