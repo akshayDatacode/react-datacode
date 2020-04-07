@@ -12,7 +12,14 @@ import {
   faAngular,
   faNodeJs,
 } from "@fortawesome/free-brands-svg-icons";
-import { faDatabase } from "@fortawesome/free-solid-svg-icons";
+import {
+  faDatabase,
+  faExchangeAlt,
+  faUserClock,
+  faUserFriends,
+  faLaptopCode,
+  faListAlt,
+} from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 class FooterComponentUpper extends Component {
@@ -21,12 +28,81 @@ class FooterComponentUpper extends Component {
     return (
       <>
         <div className="container-fluid p-0">
-          <div className="row border border-primary">
-            <div className=" border border-primary col-sm col-md-8 ">
-              <div className="card mt-2 p-2 text-left bg-warning">
-                <h4>Trending Technology</h4>
+          <div className="row">
+            <div className="col-sm col-md-4 ">
+              <h5 className="test-secondary align-middle ">Categories</h5>
+              <hr
+                class="teal accent-3 mb-3 mt-0 d-inline-block mx-auto"
+                style={{ width: 100 }}
+              />
+              <div className="row text-center">
+                <div className="col">
+                  <div className="row">
+                    <div className="col-6">
+                      <Link to="/index_quize_tests">
+                        <FontAwesomeIcon
+                          icon={faUserClock}
+                          color="gray"
+                          size="4x"
+                        />
+                        <p className="mt-1 text-secondary">
+                          Technical Quize Test
+                        </p>
+                      </Link>
+                    </div>
+
+                    <div className="col-6">
+                      <Link to="/index_interview_questioins">
+                        <FontAwesomeIcon
+                          icon={faUserFriends}
+                          color="gray"
+                          size="4x"
+                        />
+                        <p className="mt-1 text-secondary">
+                          Interview Preparations
+                        </p>
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="row mt-3">
+                    <div className="col-6">
+                      <Link to="/index_code_challange">
+                        <FontAwesomeIcon
+                          icon={faLaptopCode}
+                          color="gray"
+                          size="4x"
+                        />
+                        <p className="mt-1 text-secondary">
+                          Programming Code Challanges
+                        </p>
+                      </Link>
+                    </div>
+                    <div className="col-6">
+                      <Link to="/index_mcqs">
+                        <FontAwesomeIcon
+                          icon={faListAlt}
+                          color="gray"
+                          size="4x"
+                        />
+                        <p className="mt-1 text-secondary">
+                          Programming MCQs Practices
+                        </p>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="card-deck mt-2">
+            </div>
+            <div className="col-sm col-md-8 mt-3 ">
+              <h5 className="test-secondary align-middle">
+                Trending Technology
+              </h5>
+              <hr
+                class="teal accent-3 mb-3 mt-0 d-inline-block mx-auto"
+                style={{ width: 190 }}
+              />
+
+              <div className="card-deck">
                 <div className="card">
                   <Link to="python" activeClass="active" smooth={true}>
                     <div className="row">
@@ -157,9 +233,6 @@ class FooterComponentUpper extends Component {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className=" border border-danger col-sm col-md-4 p-0">
-              <h6> Daily posts</h6>
             </div>
           </div>
         </div>

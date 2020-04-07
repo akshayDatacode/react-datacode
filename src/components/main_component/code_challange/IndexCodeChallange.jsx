@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import RecommendPost from "../../right_section/RecommendPost";
 import RightSideSection from "../../right_section/RightSideSection";
 import { Link } from "react-router-dom";
+import FooterComponentUpper from "../../footer_component/FooterComponentUpper";
 
 class IndexCodeChallange extends Component {
   state = {};
@@ -71,6 +72,9 @@ class IndexCodeChallange extends Component {
               />
             </div>
           </div>
+        </div>
+        <div className="container-fluid mt-5">
+          <FooterComponentUpper />
         </div>
       </>
     );

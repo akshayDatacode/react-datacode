@@ -3,16 +3,21 @@ import HeaderBannerSection from "../../../../HeaderBannerSection";
 import QuizeTest from "../quizeTest";
 import ScoreCard from "../../scoreCard";
 import { Button, Modal } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import FooterComponentUpper from "../../../../../footer_component/FooterComponentUpper";
 class PythonQuizeTest1 extends Component {
   state = {
     isCorrect: false,
     isClicked: false,
     count: 0,
     status: "",
-    show: false
+    show: false,
   };
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
 
-  counter = count => {
+  counter = (count) => {
     this.setState({ count: this.state.count + 1 });
   };
 
@@ -31,9 +36,17 @@ class PythonQuizeTest1 extends Component {
     return (
       <>
         <HeaderBannerSection imgsource="pythonmcq.jpeg" />
-        <h1>Python Quize Test 1</h1>
 
         <div class="container-fluid">
+          <Link to="/home" className="badge badge-primary mr-1">
+            Home >
+          </Link>
+          <Link to="/index_quize_tests" className="badge badge-warning mr-1">
+            Quize Test >
+          </Link>
+          <Link to="/python_quize_tests" className="badge badge-success mr-1">
+            Python Quize >
+          </Link>
           <div className="row">
             <div className="col-1"></div>
             <div className="col-md-7 ">
@@ -80,16 +93,20 @@ class PythonQuizeTest1 extends Component {
             </div>
           </div>
         </div>
-
-        <Button variant="primary" onClick={this.handleShow}>
-          Show Score
-        </Button>
+        <div className="text-center">
+          <Button variant="primary" onClick={this.handleShow}>
+            Show Score
+          </Button>
+        </div>
         <ScoreCard
           handleShow={this.handleShow}
           handleClose={this.handleClose}
           show={this.state.show}
           count={this.state.count}
         />
+        <div className="container-fluid mt-5">
+          <FooterComponentUpper />
+        </div>
       </>
     );
   }

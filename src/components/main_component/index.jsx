@@ -1,27 +1,19 @@
 import React, { Component } from "react";
-import { Carousel } from "react-bootstrap";
-import Indexposts from "./posts/IndexPosts";
-import HeaderBannerSection from "./HeaderBannerSection";
 import CarouselComponent from "./CarouselComponent";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import FooterComponentUpperper from "../footer_component/FooterComponentUpper";
+
 import {
-  faChessQueen,
-  faListOl,
   faListAlt,
-  faUser,
   faUsers,
-  faTerminal,
-  faBookReader,
   faBookOpen,
   faFileCode,
-  faUserTimes,
-  faTimesCircle,
   faTools,
   faNewspaper,
+  faUserClock,
+  faLaptopCode,
 } from "@fortawesome/free-solid-svg-icons";
-import { faConnectdevelop } from "@fortawesome/free-brands-svg-icons";
+import FooterComponentUpper from "../footer_component/FooterComponentUpper";
 
 class MainComponent extends Component {
   state = {};
@@ -32,7 +24,6 @@ class MainComponent extends Component {
     return (
       <>
         <CarouselComponent />
-
         <div className="container-fluid p-0">
           <div className="row">
             <div className="col p-0">
@@ -41,7 +32,7 @@ class MainComponent extends Component {
                   <Link to="/index_quize_tests">
                     <center>
                       <FontAwesomeIcon
-                        icon={faConnectdevelop}
+                        icon={faUserClock}
                         color="skyblue"
                         size="8x"
                       />
@@ -134,7 +125,6 @@ class MainComponent extends Component {
           </div>
         </div>
         {/* >>>>>>>>>>>>>>>>>>>>>>>>>>>First -3  Cards Ending  ...............*/}
-
         {/* Images Start */}
         <div className="container-fluid p-0 ">
           <div className="row m-2">
@@ -166,7 +156,6 @@ class MainComponent extends Component {
             </div>
           </div>
         </div>
-
         <div className="container-fluid p-0 mt-5">
           <div className="row m-2">
             <div className="col-md-6 text-center">
@@ -196,7 +185,6 @@ class MainComponent extends Component {
           </div>
         </div>
         {/* IMages End */}
-
         {/* ... starting Lower Cards -5  .........................................*/}
         <div className="container-fluid ">
           <div className="row">
@@ -231,7 +219,11 @@ class MainComponent extends Component {
                 </div>
                 <div class="card border border-white">
                   <center>
-                    <FontAwesomeIcon icon={faUsers} size="8x" color="orange" />
+                    <FontAwesomeIcon
+                      icon={faLaptopCode}
+                      size="8x"
+                      color="orange"
+                    />
                   </center>
                   <div class="card-body">
                     <h5 class="card-title text-secondary">
@@ -334,7 +326,9 @@ class MainComponent extends Component {
             </div>
           </div>
         </div>
-        <FooterComponentUpperper />
+        <div className="container-fluid">
+          <FooterComponentUpper />
+        </div>
       </>
     );
   }

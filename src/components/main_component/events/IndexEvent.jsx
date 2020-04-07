@@ -2,9 +2,13 @@ import React, { Component } from "react";
 import CarouselEvent from "./CarouselEvent";
 import EventCard from "./EventCard";
 import RightSideSection from "../../right_section/RightSideSection";
+import FooterComponentUpper from "../../footer_component/FooterComponentUpper";
 
 class IndexEvent extends Component {
   state = {};
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <>
@@ -33,6 +37,9 @@ class IndexEvent extends Component {
           <div className="col-md-3">
             <RightSideSection />
           </div>
+        </div>
+        <div className="container-fluid mt-5">
+          <FooterComponentUpper />
         </div>
       </>
     );

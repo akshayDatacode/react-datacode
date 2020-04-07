@@ -3,6 +3,7 @@ import HeaderBannerSection from "../HeaderBannerSection";
 import { Link } from "react-router-dom";
 import PostCard from "../PostCard";
 import RightSideSection from "../../right_section/RightSideSection";
+import FooterComponentUpper from "../../footer_component/FooterComponentUpper";
 class IndexArticles extends Component {
   state = {};
   componentDidMount() {
@@ -15,6 +16,12 @@ class IndexArticles extends Component {
           <div className="col-1"></div>
           <div className="col-md-8 mt-4">
             <h2 className="text-center mb-4">Community Blogs</h2>
+            <Link to="/home" className="badge badge-primary mr-1">
+              Home >
+            </Link>
+            <Link to="/index_articles" className="badge badge-warning mr-1">
+              Blogs >
+            </Link>
             <div className="card-deck m-2">
               <PostCard
                 imgsource="programming_boooks.jpeg"
@@ -42,6 +49,9 @@ class IndexArticles extends Component {
           <div className="col-md-3">
             <RightSideSection />
           </div>
+        </div>
+        <div className="container-fluid mt-5">
+          <FooterComponentUpper />
         </div>
       </>
     );

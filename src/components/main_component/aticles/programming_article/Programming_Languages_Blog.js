@@ -3,6 +3,7 @@ import HeaderBannerSection from "../../HeaderBannerSection";
 import RightSideSection from "../../../right_section/RightSideSection";
 import PostCard from "../../PostCard";
 import ArticlePostCard from "../ArticlePostCard";
+import { Link } from "react-router-dom";
 class ProgrammingLanguagesBlog extends Component {
   state = {};
   componentDidMount() {
@@ -16,6 +17,12 @@ class ProgrammingLanguagesBlog extends Component {
             <div className="col-md-1 p-0 m-0"></div>
             <div className="col-md-8 p-0 mt-4">
               <h2 className="text-center mb-4">Programming Community Blogs</h2>
+              <Link to="/home" className="badge badge-primary mr-1">
+                Home >
+              </Link>
+              <Link to="/index_articles" className="badge badge-warning mr-1">
+                Blogs >
+              </Link>
               <div className="card-deck m-2">
                 <ArticlePostCard
                   imgsource="programming_boooks.jpeg"

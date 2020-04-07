@@ -4,6 +4,9 @@ import ProgramCard from "./ProgramCard";
 import RecommendPost from "../../../right_section/RecommendPost";
 class PythonPgramQuestions extends Component {
   state = {};
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <>
