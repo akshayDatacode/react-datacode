@@ -22,9 +22,6 @@ class HomeComponent extends Component {
             <RightSideSection />
           </div>
         </div>
-        <div className="container-fluid">
-          <FooterComponentUpper />
-        </div>
       </>
     );
   }

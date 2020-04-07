@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import AppRouters from "./app_routers/AppRouters";
 import IndexFooter from "./components/footer_component/indexFooter";
 import IndexHeader from "./components/header_component/IndexHeader";
+import FooterComponentUpper from "./components/footer_component/FooterComponentUpper";
 
 const App = () => {
   return (
@@ -22,6 +23,11 @@ const App = () => {
         <div className="row  mt-5 mb-2 p-0 ">
           <div className="col">
             <AppRouters />
+          </div>
+        </div>
+        <div className="row  mt-5 mb-2 p-0 ">
+          <div className="col">
+            <FooterComponentUpper />
           </div>
         </div>
       </div>

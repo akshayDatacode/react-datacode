@@ -49,15 +49,13 @@ class HeaderComponent extends Component {
                   Code Challange
                 </NavDropdown.Item>
 
-                <NavDropdown.Item>
-                  <Link to="/index_interview_questioins">
-                    Placment Preparation
-                  </Link>
+                <NavDropdown.Item href="/react-datacode/#/index_interview_questioins">
+                  Placment Preparation
                 </NavDropdown.Item>
 
                 <NavDropdown.Divider />
-                <NavDropdown.Item>
-                  <Link to="/index_quize_tests">Programming Tests</Link>
+                <NavDropdown.Item href="/react-datacode/#/index_quize_tests">
+                  Programming Tests
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link href="/react-datacode/#/index_events">

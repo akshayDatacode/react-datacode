@@ -326,9 +326,6 @@ class MainComponent extends Component {
             </div>
           </div>
         </div>
-        <div className="container-fluid">
-          <FooterComponentUpper />
-        </div>
       </>
     );
   }

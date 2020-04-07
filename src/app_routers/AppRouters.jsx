@@ -12,6 +12,18 @@ import AboutUs from "../components/header_component/AboutUs";
 import IndexInterviewQuestions from "../components/main_component/posts/technical_interview_questions/IndexInterviewQuestions";
 import DBMSInterviewQuestions from "../components/main_component/posts/technical_interview_questions/DBMSInterviewQuestions";
 import OOPsInterviewQuestions from "../components/main_component/posts/technical_interview_questions/OOPsInterviewQuestions";
+import CInterviewQuestions from "../components/main_component/posts/technical_interview_questions/CInterviewQuestions";
+import CppInterviewQuestions from "../components/main_component/posts/technical_interview_questions/C++InterviewQuestions";
+import CloudComputingInterviewQuestions from "../components/main_component/posts/technical_interview_questions/CloudComputingInterviewQuestions";
+import CNInterviewQuestions from "../components/main_component/posts/technical_interview_questions/CNInterviewQuestions";
+import DataStructureInterviewQuestions from "../components/main_component/posts/technical_interview_questions/DataStructureInterviewQuestions";
+import JavaInterviewQuestions from "../components/main_component/posts/technical_interview_questions/JavaInterviewQuestions";
+import OSInterviewQuestions from "../components/main_component/posts/technical_interview_questions/OSInterviewQuestions";
+import RDBMSInterviewQuestions from "../components/main_component/posts/technical_interview_questions/RDBMSInterviewQuestions";
+import SDLCInterviewQuestions from "../components/main_component/posts/technical_interview_questions/SDLCInterviewQuestions";
+import SQLInterviewQuestions from "../components/main_component/posts/technical_interview_questions/SQLInterviewQuestions";
+import TestingInterviewQuestions from "../components/main_component/posts/technical_interview_questions/TestingInterviewQuestions";
+
 // Books Routing
 import IndexBooks from "../components/main_component/posts/books/IndexBooks";
 import PythonBooks from "../components/main_component/posts/books/PythonBooks";
@@ -179,6 +191,47 @@ class AppRouters extends Component {
           <Route
             path="/python_interview_question"
             component={PythonInterviewQuestions}
+          />
+          <Route path="/c_interview_question" component={CInterviewQuestions} />
+          <Route
+            path="/cpp_interview_question"
+            component={CppInterviewQuestions}
+          />
+          <Route
+            path="/cloud_computing_interview_question"
+            component={CloudComputingInterviewQuestions}
+          />
+          <Route
+            path="/cn_interview_question"
+            component={CNInterviewQuestions}
+          />
+          <Route
+            path="/datastructre_interview_question"
+            component={DataStructureInterviewQuestions}
+          />
+          <Route
+            path="/java_interview_question"
+            component={JavaInterviewQuestions}
+          />
+          <Route
+            path="/os_interview_question"
+            component={OSInterviewQuestions}
+          />
+          <Route
+            path="/rdbms_interview_question"
+            component={RDBMSInterviewQuestions}
+          />
+          <Route
+            path="/sdlc_interview_question"
+            component={SDLCInterviewQuestions}
+          />
+          <Route
+            path="/sql_interview_question"
+            component={SQLInterviewQuestions}
+          />
+          <Route
+            path="/testing_interview_question"
+            component={TestingInterviewQuestions}
           />
 
           {/* Einding Interview Routing */}

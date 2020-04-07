@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import QuestionCard from "./QuestionCard";
 import RightSideSection from "../../../right_section/RightSideSection";
 import RecommendPost from "../../../right_section/RecommendPost";
+import { Link } from "react-router-dom";
+
 class DBMSInterviewQuestions extends Component {
   state = {};
   componentDidMount() {
@@ -22,9 +24,18 @@ class DBMSInterviewQuestions extends Component {
               </div>
             </div>
           </div>
-          <div className="row mt-5">
+          <div className="row mt-5 mb-5">
             <div className="col-md-1"></div>
-            <div className="col-md-7">
+            <div className="col-md-7 ">
+              <Link to="/home" className="badge badge-primary mr-1">
+                Home >
+              </Link>
+              <Link
+                to="/index_interview_questioins"
+                className="badge badge-warning mr-1"
+              >
+                Interview Questions >
+              </Link>
               <QuestionCard
                 question={`Q1) What is DBMS used for?`}
                 answer={`DBMS, commonly known as Database Management System, 

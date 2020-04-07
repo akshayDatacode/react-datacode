@@ -50,9 +50,6 @@ class IndexArticles extends Component {
             <RightSideSection />
           </div>
         </div>
-        <div className="container-fluid mt-5">
-          <FooterComponentUpper />
-        </div>
       </>
     );
   }
