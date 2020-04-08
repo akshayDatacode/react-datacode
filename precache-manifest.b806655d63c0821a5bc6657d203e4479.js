@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e1a0eca0f1cea695f870d655e94da436",
+    "revision": "875ea182c807f69775a69c61a2d3b118",
     "url": "/index.html"
   },
   {
-    "revision": "216c6e4e5be032647a29",
+    "revision": "32e9880d632af82ebbf6",
     "url": "/static/css/2.89f067aa.chunk.css"
   },
   {
-    "revision": "71195c65727069e8e9a3",
+    "revision": "43443ad7f5e6b17bcff3",
     "url": "/static/css/main.2749690b.chunk.css"
   },
   {
-    "revision": "216c6e4e5be032647a29",
-    "url": "/static/js/2.269756ba.chunk.js"
+    "revision": "32e9880d632af82ebbf6",
+    "url": "/static/js/2.986d03d7.chunk.js"
   },
   {
     "revision": "ae54f939c6e84f9ec4d4c4cd8100d77f",
-    "url": "/static/js/2.269756ba.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.986d03d7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "71195c65727069e8e9a3",
-    "url": "/static/js/main.5a5bcf54.chunk.js"
+    "revision": "43443ad7f5e6b17bcff3",
+    "url": "/static/js/main.e86b78d9.chunk.js"
   },
   {
     "revision": "ba88f149e390315adcbe",
@@ -112,6 +112,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/c_programming_question.932dfd69.jpeg"
   },
   {
+    "revision": "824a5bd332f76639571b6424d038cf74",
+    "url": "/static/media/code_challange.824a5bd3.jpeg"
+  },
+  {
     "revision": "17a6aab685d1ff492666d9c503f8579a",
     "url": "/static/media/coder1.17a6aab6.jpeg"
   },
@@ -170,6 +174,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "65be296cbafe6cfeb7dfbc9ac397c6f8",
     "url": "/static/media/html.65be296c.jpeg"
+  },
+  {
+    "revision": "d558b2dae1a85a5b9bb2898d07aa319a",
+    "url": "/static/media/index_mcqs.d558b2da.jpeg"
   },
   {
     "revision": "3a570b828f518460b65553ba29e7fac0",

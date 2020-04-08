@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.2749690b.chunk.css",
-    "main.js": "/static/js/main.5a5bcf54.chunk.js",
-    "main.js.map": "/static/js/main.5a5bcf54.chunk.js.map",
+    "main.js": "/static/js/main.e86b78d9.chunk.js",
+    "main.js.map": "/static/js/main.e86b78d9.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4a1f94a7.js",
     "runtime-main.js.map": "/static/js/runtime-main.4a1f94a7.js.map",
     "static/css/2.89f067aa.chunk.css": "/static/css/2.89f067aa.chunk.css",
-    "static/js/2.269756ba.chunk.js": "/static/js/2.269756ba.chunk.js",
-    "static/js/2.269756ba.chunk.js.map": "/static/js/2.269756ba.chunk.js.map",
+    "static/js/2.986d03d7.chunk.js": "/static/js/2.986d03d7.chunk.js",
+    "static/js/2.986d03d7.chunk.js.map": "/static/js/2.986d03d7.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.2d1d15a35dd03ae5ab4cc5c662c49716.js": "/precache-manifest.2d1d15a35dd03ae5ab4cc5c662c49716.js",
+    "precache-manifest.b806655d63c0821a5bc6657d203e4479.js": "/precache-manifest.b806655d63c0821a5bc6657d203e4479.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.89f067aa.chunk.css.map": "/static/css/2.89f067aa.chunk.css.map",
     "static/css/main.2749690b.chunk.css.map": "/static/css/main.2749690b.chunk.css.map",
-    "static/js/2.269756ba.chunk.js.LICENSE.txt": "/static/js/2.269756ba.chunk.js.LICENSE.txt",
+    "static/js/2.986d03d7.chunk.js.LICENSE.txt": "/static/js/2.986d03d7.chunk.js.LICENSE.txt",
     "static/media/Cover Photo (3).png": "/static/media/Cover Photo (3).6bc137af.png",
     "static/media/Green Disease Prevention Instagram Post.png": "/static/media/Green Disease Prevention Instagram Post.ee3b12ec.png",
     "static/media/Shootpy_W Cover Page (1).jpg": "/static/media/Shootpy_W Cover Page (1).39eabcb7.jpg",
@@ -35,6 +35,7 @@
     "static/media/WhatsApp Image 2020-04-05 at 12.30.38 PM (9).jpeg": "/static/media/WhatsApp Image 2020-04-05 at 12.30.38 PM (9).83d70f9f.jpeg",
     "static/media/c_programming.jpeg": "/static/media/c_programming.d172a813.jpeg",
     "static/media/c_programming_question.jpeg": "/static/media/c_programming_question.932dfd69.jpeg",
+    "static/media/code_challange.jpeg": "/static/media/code_challange.824a5bd3.jpeg",
     "static/media/coder1.jpeg": "/static/media/coder1.17a6aab6.jpeg",
     "static/media/cprogramming_practice_question.jpeg": "/static/media/cprogramming_practice_question.0554f507.jpeg",
     "static/media/css.jpeg": "/static/media/css.861c575c.jpeg",
@@ -50,6 +51,7 @@
     "static/media/header2.jpeg": "/static/media/header2.014ae370.jpeg",
     "static/media/headermain.jpeg": "/static/media/headermain.7527ed34.jpeg",
     "static/media/html.jpeg": "/static/media/html.65be296c.jpeg",
+    "static/media/index_mcqs.jpeg": "/static/media/index_mcqs.d558b2da.jpeg",
     "static/media/indexcover1.jpeg": "/static/media/indexcover1.3a570b82.jpeg",
     "static/media/indexcover2.jpeg": "/static/media/indexcover2.d657c63c.jpeg",
     "static/media/java_mcqs.jpeg": "/static/media/java_mcqs.419fda51.jpeg",
@@ -74,8 +76,8 @@
   "entrypoints": [
     "static/js/runtime-main.4a1f94a7.js",
     "static/css/2.89f067aa.chunk.css",
-    "static/js/2.269756ba.chunk.js",
+    "static/js/2.986d03d7.chunk.js",
     "static/css/main.2749690b.chunk.css",
-    "static/js/main.5a5bcf54.chunk.js"
+    "static/js/main.e86b78d9.chunk.js"
   ]
 }
