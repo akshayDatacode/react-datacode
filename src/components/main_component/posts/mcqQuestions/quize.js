@@ -105,9 +105,7 @@ class Quize extends Component {
               <Card>
                 <Card.Footer className={this.getColorChange()}>
                   <Accordion.Toggle
-                    as={Button}
-                    variant="button"
-                    className="btn btn-primary ml-2 p-1"
+                    className="btn btn-link ml-2 p-1 text-white"
                     eventKey="0"
                   >
                     Check Answer

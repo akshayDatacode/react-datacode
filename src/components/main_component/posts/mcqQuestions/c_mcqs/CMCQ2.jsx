@@ -6,12 +6,15 @@ import Quize from "../quize";
 import RightSideSection from "../../../../right_section/RightSideSection";
 import RecommendPost from "../../../../right_section/RecommendPost";
 
-class CMCQ1 extends Component {
+class CMCQ2 extends Component {
   state = {
     isCorrect: false,
     isClicked: false,
     count: 0,
     status: "",
+  };
+  d = () => {
+    window.location.reload();
   };
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -34,7 +37,7 @@ class CMCQ1 extends Component {
             <div className="col-md-7 ">
               <div className="row mt-2">
                 <div className="col">
-                  <h2 className="text-secondary">C Programming MCQs Set 1</h2>
+                  <h2 className="text-secondary">C Programming MCQs Set 2</h2>
                 </div>
               </div>
               <div className="row">
@@ -48,164 +51,6 @@ class CMCQ1 extends Component {
                   C-MCQs >
                 </Link>
                 <div className="col">
-                  <Quize
-                    quizeNo="1"
-                    question="Which of the following is not a valid variable name declaration?"
-                    correctAnswer="int 3_a;"
-                    v1="int _a3;"
-                    v2="int a_3;"
-                    v3="int 3_a;"
-                    v4=" int _3a"
-                    counter={this.counter}
-                  />
-                  <Quize
-                    quizeNo="2"
-                    question="Which of the following is not a valid C variable name?"
-                    correctAnswer="int $main;"
-                    v1="int number;"
-                    v2="float rate;"
-                    v3="int variable_count;"
-                    v4="int $main;"
-                    counter={this.counter}
-                  />
-                  <Quize
-                    quizeNo="3"
-                    language="c"
-                    question="What will be the output of the following C code?"
-                    code={`#include <stdio.h>
-int main()
-{
-  int a[5] = {1, 2, 3, 4, 5};
-  int i;
-  for (i = 0; i < 5; i++)
-    if ((char)a[i] == '5')
-      printf('%d', a[i]);
-    else
-      printf('FAIL');
-}`}
-                    correctAnswer="The program will compile and print FAIL for 5 times"
-                    v1="The compiler will flag an error"
-                    v2="The program will compile and print the output 5"
-                    v3="The program will compile and print the ASCII value of 5"
-                    v4="The program will compile and print FAIL for 5 times"
-                    counter={this.counter}
-                  />
-                  <Quize
-                    quizeNo="4"
-                    question="Which of the following is a User-defined data type?"
-                    correctAnswer=" all of the mentioned"
-                    v1="typedef int Boolean;"
-                    v2="typedef enum {Mon, Tue, Wed, Thu, Fri} Workdays;"
-                    v3="struct {char name[10], int age};"
-                    v4=" all of the mentioned"
-                    counter={this.counter}
-                  />
-                  <Quize
-                    quizeNo="5"
-                    language="c"
-                    question="What will be the output of the following C code?"
-                    code={`#include <stdio.h>
-int main()
-{
-    float f1 = 0.1;
-    if (f1 == 0.1f)
-        printf('equal');
-    else
-        printf('not equal');
-}`}
-                    correctAnswer="equal"
-                    v1="equal"
-                    v2="not equal"
-                    v3="output depends on compiler"
-                    v4="error"
-                    counter={this.counter}
-                  />
-                  <Quize
-                    quizeNo="6"
-                    language="c"
-                    question="What will be the output of the following C code on a 32-bit machine?"
-                    code={`#include <stdio.h>
-int main()
-{
-  int x = 10000;
-  double y = 56;
-  int *p = &x;
-  double *q = &y;
-  printf('p and q are %d and %d', sizeof(p), sizeof(q));
-  return 0;
-}
-`}
-                    correctAnswer="p and q are 4 and 4"
-                    v1="p and q are 4 and 4"
-                    v2="compiler error"
-                    v3=" p and q are 4 and 8"
-                    v4="p and q are 2 and 8"
-                    counter={this.counter}
-                  />
-                  <Quize
-                    quizeNo="7"
-                    question="Which of the following is not a pointer declaration?"
-                    correctAnswer="char a;"
-                    v1="char a[10];"
-                    v2="char a[] = {‘1’, ‘2’, ‘3’, ‘4’};"
-                    v3="char *str;"
-                    v4="char a;"
-                    counter={this.counter}
-                  />
-                  <Quize
-                    quizeNo="8"
-                    language="c"
-                    question="What will be the output of the following C code?"
-                    code={`#include <stdio.h>
-void main()
-{
-int k = 4;
-float k = 4;
-printf('%d', k)
-}`}
-                    correctAnswer=" Compile time error"
-                    v1=" Compile time error"
-                    v2="4"
-                    v3=" 4.0000000"
-                    v4="4.4"
-                    counter={this.counter}
-                  />
-                  <Quize
-                    quizeNo="9"
-                    language="c"
-                    question="What will be the output of the following C code?"
-                    code={`#include <stdio.h>
-void main()
-{
-    int a = 3;
-    int b = ++a + a++ + --a;
-    printf('Value of b is %d', b);
-}`}
-                    correctAnswer="Undefined behaviour"
-                    v1="Value of x is 12"
-                    v2="Value of x is 13"
-                    v3="Value of x is 10"
-                    v4="Undefined behaviour"
-                    counter={this.counter}
-                  />
-                  <Quize
-                    quizeNo="10"
-                    language="c"
-                    question="What will be the output of the following C code?"
-                    code={`#include <stdio.h>
-int main()
-{
-    int i = -3;
-    int k = i % 2;
-    printf('%d', k);
-}`}
-                    correctAnswer="-1"
-                    v1="Compile time error"
-                    v2="-1"
-                    v3="1"
-                    v4="Implementation defined"
-                    counter={this.counter}
-                  />
                   <Quize
                     quizeNo="11"
                     language="c"
@@ -417,4 +262,4 @@ void foo()
   }
 }
 
-export default CMCQ1;
+export default CMCQ2;

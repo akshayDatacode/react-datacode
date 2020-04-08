@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import PostCard from "../../PostCard";
+import RightSideSection from "../../../right_section/RightSideSection";
+
 class IndexMcqQuestions extends Component {
   state = {};
   componentDidMount() {
@@ -8,19 +11,115 @@ class IndexMcqQuestions extends Component {
   render() {
     return (
       <>
-        <h1>Index Mcq Questions</h1>
-        <Link to="/index_python_mcqs">
-          <h6>Python MCQs Questions</h6>
-        </Link>
-        <Link to="/index_c_mcqs">
-          <h6>C MCQs Questions</h6>
-        </Link>
-        <Link to="/index_java_mcqs">
-          <h6>Java MCQs Questions</h6>
-        </Link>
-        <Link to="/index_js_mcqs">
-          <h6>JavaScript MCQs Questions</h6>
-        </Link>
+        <div className="row">
+          <div className="col-1"></div>
+          <div className="col-md-8 mt-4">
+            <h2 className="text-center mb-4">
+              Technical MCQs Practice Question
+            </h2>
+            <Link to="/home" className="badge badge-primary mr-1">
+              Home >
+            </Link>
+            <Link to="/index_articles" className="badge badge-warning mr-1">
+              Blogs >
+            </Link>
+            <div className="card-deck m-2">
+              <PostCard
+                imgsource="index_mcqs.jpeg"
+                title="Python MCQs Questions"
+                paragraph="We Love to Code and this is the best way to express our
+                  love to Computer Science Wolrd."
+                link="/index_python_mcqs"
+              />
+              <PostCard
+                imgsource="index_mcqs.jpeg"
+                title="C Programming MCQs Questions"
+                paragraph="We Love to Code and this is the best way to express our
+                  love to Computer Science Wolrd."
+                link="/index_c_mcqs"
+              />
+              <PostCard
+                imgsource="index_mcqs.jpeg"
+                title="C++ MCQs Questions"
+                paragraph="We Love to Code and this is the best way to express our
+                  love to Computer Science Wolrd."
+                link="/index_cpp_mcqs"
+              />
+            </div>
+            <div className="card-deck m-2">
+              <PostCard
+                imgsource="index_mcqs.jpeg"
+                title="Java MCQs Questions"
+                paragraph="We Love to Code and this is the best way to express our
+                  love to Computer Science Wolrd."
+                link="/index_java_mcqs"
+              />
+              <PostCard
+                imgsource="index_mcqs.jpeg"
+                title="JavaScript MCQs Questions"
+                paragraph="We Love to Code and this is the best way to express our
+                  love to Computer Science Wolrd."
+                link="/index_js_mcqs"
+              />
+              <PostCard
+                imgsource="index_mcqs.jpeg"
+                title="DBMS MCQs Questions"
+                paragraph="We Love to Code and this is the best way to express our
+                  love to Computer Science Wolrd."
+                link="/index_dbms_mcqs"
+              />
+            </div>
+            <div className="card-deck m-2">
+              <PostCard
+                imgsource="index_mcqs.jpeg"
+                title="HTML MCQs Questions"
+                paragraph="We Love to Code and this is the best way to express our
+                  love to Computer Science Wolrd."
+                link="/index_html_mcqs"
+              />
+              <PostCard
+                imgsource="index_mcqs.jpeg"
+                title="CSS MCQs Questions"
+                paragraph="We Love to Code and this is the best way to express our
+                  love to Computer Science Wolrd."
+                link="/index_css_mcqs"
+              />
+              <PostCard
+                imgsource="index_mcqs.jpeg"
+                title="BootStrap MCQs Questions"
+                paragraph="We Love to Code and this is the best way to express our
+                  love to Computer Science Wolrd."
+                link="/index_bootstrap_mcqs"
+              />
+            </div>
+            <div className="card-deck m-2">
+              <PostCard
+                imgsource="index_mcqs.jpeg"
+                title="React MCQs Questions"
+                paragraph="We Love to Code and this is the best way to express our
+                  love to Computer Science Wolrd."
+                link="/index_react_mcqs"
+              />
+              <PostCard
+                imgsource="index_mcqs.jpeg"
+                title="Django MCQs Questions"
+                paragraph="We Love to Code and this is the best way to express our
+                  love to Computer Science Wolrd."
+                link="/index_django_mcqs"
+              />
+              <PostCard
+                imgsource="index_mcqs.jpeg"
+                title="Git MCQs Questions"
+                paragraph="We Love to Code and this is the best way to express our
+                  love to Computer Science Wolrd."
+                link="/index_git_mcqs"
+              />
+            </div>
+          </div>
+          <div className="col-md-3">
+            <RightSideSection />
+          </div>
+        </div>
       </>
     );
   }

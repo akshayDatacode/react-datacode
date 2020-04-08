@@ -26,15 +26,15 @@ class MainComponent extends Component {
         <CarouselComponent />
         <div className="container-fluid p-0">
           <div className="row">
-            <div className="col p-0">
-              <div class="card-deck mt-3">
+            <div className="col">
+              <div class="card-deck mt-5">
                 <div class="card border border-white">
                   <Link to="/index_quize_tests">
                     <center>
                       <FontAwesomeIcon
                         icon={faUserClock}
                         color="skyblue"
-                        size="8x"
+                        size="6x"
                       />
                     </center>
                   </Link>
@@ -45,17 +45,12 @@ class MainComponent extends Component {
                       love to Computer Science Wolrd.
                     </p>
                   </div>
-                  <div class="card-footer border border-white bg-white">
-                    <div className="row">
-                      <div className="col-6"></div>
-                      <div className="col-5 text-right ">
-                        <Link to="/index_quize_tests">
-                          <h6 className="btn border border-secondary">
-                            Read More
-                          </h6>
-                        </Link>
-                      </div>
-                    </div>
+                  <div class="card-footer border border-white bg-white text-center">
+                    <Link to="/index_quize_tests">
+                      <h6 className="btn border border-secondary ">
+                        Read More
+                      </h6>
+                    </Link>
                   </div>
                 </div>
                 <div class="card border border-white">
@@ -64,28 +59,21 @@ class MainComponent extends Component {
                       <FontAwesomeIcon
                         icon={faUsers}
                         color="indigo"
-                        size="8x"
+                        size="6x"
                       />
                     </center>
                   </Link>
-                  <div class="card-body">
+                  <div class="card-body text-center">
                     <h5 class="card-title">Programming Interview FAQs</h5>
                     <p class="card-text">
                       This card has supporting text below as a natural lead-in
-                      to additional content.dfdfldfldfldkfldkfldkfldkfdlkfdlfkdl
+                      to additional
                     </p>
                   </div>
-                  <div class="card-footer border border-white bg-white">
-                    <div className="row">
-                      <div className="col-6"></div>
-                      <div className="col-5 text-right ">
-                        <Link to="/index_interview_questioins">
-                          <h6 className="btn border border-secondary">
-                            Read More
-                          </h6>
-                        </Link>
-                      </div>
-                    </div>
+                  <div class="card-footer border border-white bg-white text-center">
+                    <Link to="/index_interview_questioins">
+                      <h6 className="btn border border-secondary">Read More</h6>
+                    </Link>
                   </div>
                 </div>
                 <div class="card border border-white">
@@ -94,30 +82,23 @@ class MainComponent extends Component {
                       <FontAwesomeIcon
                         icon={faListAlt}
                         color="green"
-                        size="8x"
+                        size="6x"
                       />
                     </center>
                   </Link>
-                  <div class="card-body">
+                  <div class="card-body text-center">
                     <h5 class="card-title"> Programming MCQs Practice</h5>
                     <p class="card-text">
                       This is a wider card with supporting text below as a
-                      natural lead-in to additional content. This card has even
-                      longer content than the first to show that equal height
-                      action.
+                      natural lead-in
                     </p>
                   </div>
-                  <div class="card-footer border border-white bg-white">
-                    <div className="row">
-                      <div className="col-6"></div>
-                      <div className="col-5 text-right ">
-                        <Link to="/index_mcqs">
-                          <h6 className="btn border border-secondary text-weight-bold">
-                            Read More
-                          </h6>
-                        </Link>
-                      </div>
-                    </div>
+                  <div class="card-footer border border-white bg-white text-center">
+                    <Link to="/index_mcqs">
+                      <h6 className="btn border border-secondary text-weight-bold">
+                        Read More
+                      </h6>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -126,7 +107,7 @@ class MainComponent extends Component {
         </div>
         {/* >>>>>>>>>>>>>>>>>>>>>>>>>>>First -3  Cards Ending  ...............*/}
         {/* Images Start */}
-        <div className="container-fluid p-0 ">
+        <div className="container-fluid p-0 mt-5">
           <div className="row m-2">
             <div className="col-md-6">
               <img
@@ -194,7 +175,7 @@ class MainComponent extends Component {
                   <center>
                     <FontAwesomeIcon
                       icon={faNewspaper}
-                      size="8x"
+                      size="5x"
                       color="gold"
                     />
                   </center>
@@ -221,7 +202,7 @@ class MainComponent extends Component {
                   <center>
                     <FontAwesomeIcon
                       icon={faLaptopCode}
-                      size="8x"
+                      size="5x"
                       color="orange"
                     />
                   </center>
@@ -249,7 +230,7 @@ class MainComponent extends Component {
                 </div>
                 <div class="card border border-white">
                   <center>
-                    <FontAwesomeIcon icon={faTools} size="8x" color="gray" />
+                    <FontAwesomeIcon icon={faTools} size="5x" color="gray" />
                   </center>
                   <div class="card-body">
                     <h5 class="card-title"> Technologies </h5>
@@ -275,7 +256,7 @@ class MainComponent extends Component {
                   <center>
                     <FontAwesomeIcon
                       icon={faBookOpen}
-                      size="8x"
+                      size="5x"
                       color="green"
                     />
                   </center>
@@ -301,7 +282,7 @@ class MainComponent extends Component {
                 </div>
                 <div class="card border border-white">
                   <center>
-                    <FontAwesomeIcon icon={faFileCode} size="8x" />
+                    <FontAwesomeIcon icon={faFileCode} size="5x" />
                   </center>
                   <div class="card-body">
                     <h5 class="card-title"> Programming Practice CODE</h5>

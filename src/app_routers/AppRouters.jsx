@@ -48,11 +48,15 @@ import IndexMcqQuestions from "../components/main_component/posts/mcqQuestions/I
 // Python MCQ Routing
 import IndexPythonMCQ from "../components/main_component/posts/mcqQuestions/python_mcqs/IndexPythonMCQ";
 import PythonMCQ1 from "../components/main_component/posts/mcqQuestions/python_mcqs/PythonMCQ";
+import PythonMCQ2 from "../components/main_component/posts/mcqQuestions/python_mcqs/PythonMCQ2";
+import PythonMCQ3 from "../components/main_component/posts/mcqQuestions/python_mcqs/PythonMCQ3";
+import PythonMCQ4 from "../components/main_component/posts/mcqQuestions/python_mcqs/PythonMCQ4";
+import PythonMCQ5 from "../components/main_component/posts/mcqQuestions/python_mcqs/PythonMCQ5";
 
 // CMCQs Routing
 import IndexCMCQ from "../components/main_component/posts/mcqQuestions/c_mcqs/IndexCMCQ";
 import CMCQ1 from "../components/main_component/posts/mcqQuestions/c_mcqs/CMCQ1";
-
+import CMCQ2 from "../components/main_component/posts/mcqQuestions/c_mcqs/CMCQ2";
 // Java MCQ Routing
 import IndexJavaMCQ from "../components/main_component/posts/mcqQuestions/java_mcqs/IndexJavaMCQ";
 import JavaMCQ1 from "../components/main_component/posts/mcqQuestions/java_mcqs/JavaMCQ1";
@@ -60,7 +64,31 @@ import JavaMCQ1 from "../components/main_component/posts/mcqQuestions/java_mcqs/
 // JavaScript MCQs
 import IndexJSMCQ from "../components/main_component/posts/mcqQuestions/javascript_mcqs/IndexJSMCQ";
 import JSMCQ1 from "../components/main_component/posts/mcqQuestions/javascript_mcqs/JSMCQ1";
-
+import JSMCQ2 from "../components/main_component/posts/mcqQuestions/javascript_mcqs/JSMCQ2";
+// React MCQs
+import IndexReactMCQ from "../components/main_component/posts/mcqQuestions/react_mcqs/IndexReactMCQ";
+import ReactMCQ1 from "../components/main_component/posts/mcqQuestions/react_mcqs/ReactMCQ1";
+// Cpp Mcqs
+import IndexCppMCQ from "../components/main_component/posts/mcqQuestions/cpp_mcqs/IndexCppMCQ";
+import CppMCQ1 from "../components/main_component/posts/mcqQuestions/cpp_mcqs/CppMCQ1";
+// Css Mcqs
+import IndexCssMCQ from "../components/main_component/posts/mcqQuestions/css_mcqs/IndexCssMCQ";
+import CssMCQ1 from "../components/main_component/posts/mcqQuestions/css_mcqs/CssMCQ1";
+// Html Mcqs
+import IndexHtmlMCQ from "../components/main_component/posts/mcqQuestions/html_mcqs/IndexHtmlMCQ";
+import HtmlMCQ1 from "../components/main_component/posts/mcqQuestions/html_mcqs/HtmlMCQ1";
+// Bootstrap MCqs
+import IndexBootstrapMCQ from "../components/main_component/posts/mcqQuestions/bootstrap_mcqs/IndexBootStrapMCQ";
+import BootStrapMCQ1 from "../components/main_component/posts/mcqQuestions/bootstrap_mcqs/BootStrapMCQ1";
+// DBMS MCQs
+import IndexDBMSMCQ from "../components/main_component/posts/mcqQuestions/dbms_mcqs/IndexDBMSMCQ";
+import DBMSMCQ1 from "../components/main_component/posts/mcqQuestions/dbms_mcqs/DBMSMCQ1";
+// Django MCQs
+import IndexDjangoMCQ from "../components/main_component/posts/mcqQuestions/django_mcqs/IndexDjangoMCQ";
+import DjangoMCQ1 from "../components/main_component/posts/mcqQuestions/django_mcqs/DjangoMCQ1";
+// Git MCQs
+import IndexGitMCQ from "../components/main_component/posts/mcqQuestions/git_mcqs/IndexGitMCQ";
+import GitMCQ1 from "../components/main_component/posts/mcqQuestions/git_mcqs/GitMCQ1";
 // Technogies
 import IndexTechnologies from "../components/main_component/technologies/IndexTechnologies";
 import Python from "../components/main_component/technologies/Python";
@@ -112,11 +140,17 @@ class AppRouters extends Component {
           {/* Starting Python MCQs */}
           <Route exact path="/index_python_mcqs" component={IndexPythonMCQ} />
           <Route exact path="/python_mcq_1" component={PythonMCQ1} />
+          <Route exact path="/python_mcq_2" component={PythonMCQ2} />
+          <Route exact path="/python_mcq_3" component={PythonMCQ3} />
+          <Route exact path="/python_mcq_4" component={PythonMCQ4} />
+          <Route exact path="/python_mcq_5" component={PythonMCQ5} />
+
           {/* Ending Python MCQS */}
 
           {/* Starting C MCQs */}
           <Route exact path="/index_c_mcqs" component={IndexCMCQ} />
           <Route exact path="/c_mcq_1" component={CMCQ1} />
+          <Route exact path="/c_mcq_2" component={CMCQ2} />
           {/* Ending C MCQs */}
 
           {/* Starting Java MCQs */}
@@ -127,7 +161,62 @@ class AppRouters extends Component {
           {/* Starting JavaScript MCQs */}
           <Route exact path="/index_js_mcqs" component={IndexJSMCQ} />
           <Route exact path="/js_mcq_1" component={JSMCQ1} />
+          <Route exact path="/js_mcq_2" component={JSMCQ2} />
           {/* Ending JavaScript MCQS */}
+
+          {/* Starting Cpp MCQs */}
+          <Route exact path="/index_cpp_mcqs" component={IndexCppMCQ} />
+          <Route exact path="/cpp_mcq_1" component={CppMCQ1} />
+          {/* Ending  MCQS */}
+
+          {/* Starting Css MCQs */}
+          <Route exact path="/index_css_mcqs" component={IndexCssMCQ} />
+          <Route exact path="/css_mcq_1" component={CssMCQ1} />
+          {/* Ending Css MCQS */}
+
+          {/* Starting Html MCQs */}
+          <Route exact path="/index_html_mcqs" component={IndexHtmlMCQ} />
+          <Route exact path="/html_mcq_1" component={HtmlMCQ1} />
+          {/* Ending  Html MCQS */}
+
+          {/* Starting BootStrap MCQs */}
+          <Route
+            exact
+            path="/index_bootstrap_mcqs"
+            component={IndexBootstrapMCQ}
+          />
+          <Route exact path="/bootstrap_mcq_1" component={BootStrapMCQ1} />
+          {/* Ending BootStrap MCQS */}
+
+          {/* Starting Dbms MCQs */}
+          <Route exact path="/index_dbms_mcqs" component={IndexDBMSMCQ} />
+          <Route exact path="/dbms_mcq_1" component={DBMSMCQ1} />
+          {/* Ending DBMS MCQS */}
+
+          {/* Starting Django MCQs */}
+          <Route exact path="/index_django_mcqs" component={IndexDjangoMCQ} />
+          <Route exact path="/django_mcq_1" component={DjangoMCQ1} />
+          {/* Ending Django MCQS */}
+
+          {/* Starting Git MCQs */}
+          <Route exact path="/index_git_mcqs" component={IndexGitMCQ} />
+          <Route exact path="/git_mcq_1" component={GitMCQ1} />
+          {/* Ending Git MCQS */}
+
+          {/* Starting React MCQs */}
+          <Route exact path="/index_react_mcqs" component={IndexReactMCQ} />
+          <Route exact path="/react_mcq_1" component={ReactMCQ1} />
+          {/* Ending React MCQS */}
+
+          {/* Starting  MCQs */}
+          <Route exact path="/index_js_mcqs" component={IndexJSMCQ} />
+          <Route exact path="/js_mcq_1" component={JSMCQ1} />
+          {/* Ending  MCQS */}
+
+          {/* Starting  MCQs */}
+          <Route exact path="/index_js_mcqs" component={IndexJSMCQ} />
+          <Route exact path="/js_mcq_1" component={JSMCQ1} />
+          {/* Ending  MCQS */}
 
           {/* Index Quize Tests Routing */}
 

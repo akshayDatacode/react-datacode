@@ -8,8 +8,13 @@ class IndexJSMCQ extends Component {
   render() {
     return (
       <>
-        <h1>Index JS MCQ</h1>
-        <Link to="js_mcq_1"> Java Script MCQ Set 1</Link>
+        <h1 className="text-secondary text-center">JS MCQ</h1>
+        <Link to="js_mcq_1">
+          <h6>Java Script MCQ Set 1</h6>
+        </Link>
+        <Link to="js_mcq_2">
+          <h6>Java Script MCQ Set 2</h6>
+        </Link>
       </>
     );
   }

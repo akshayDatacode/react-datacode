@@ -17,7 +17,9 @@ class IndexCodeChallange extends Component {
             <div className="col ">
               <div className="card bg-info">
                 <div className="card-body p-2">
-                  <h1 className="card-title text-light">Code Challange Week</h1>
+                  <h1 className="card-title text-light text-center">
+                    Code Challange Week
+                  </h1>
                 </div>
               </div>
             </div>
@@ -26,30 +28,32 @@ class IndexCodeChallange extends Component {
             <div className="col-md-3 d-none d-sm-block  mt-4">
               <ul class="list-group list-group-flush">
                 <Link to="code_challange_week_1">
-                  <button className="list-group-item">
-                    Code Challange Week #1
-                  </button>
+                  <div className=" btn btn-primary">Code Challange Week #1</div>
                 </Link>
                 <Link to="code_challange_week_2">
-                  <button className=" btn list-group-item">
+                  <div className=" btn btn-primary mt-2">
                     Code Challange Week #2
-                  </button>
+                  </div>
                 </Link>
               </ul>
             </div>
-            <div className="col-md-5 mt-5 ">HEllo</div>
+            <div className="col-md-5 mt-5 ">
+              <img
+                className=" card-img-top mx-auto img-fluid img-circle d-block"
+                src={require("../../../assets/images/code_challange.jpeg")}
+                alt="avatar"
+              />
+            </div>
 
-            <div className="col-md-3 d-block d-md-none  mt-4">
+            <div className="col-md-3 d-block d-md-none  mt-4 text-center">
               <ul class="list-group list-group-flush">
                 <Link to="code_challange_week_1">
-                  <button className="list-group-item">
-                    Code Challange Week #1
-                  </button>
+                  <div className=" btn btn-primary">Code Challange Week #1</div>
                 </Link>
                 <Link to="code_challange_week_2">
-                  <button className="list-group-item">
+                  <div className=" btn btn-primary mt-2">
                     Code Challange Week #2
-                  </button>
+                  </div>
                 </Link>
               </ul>
             </div>
