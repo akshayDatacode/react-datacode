@@ -9,7 +9,7 @@ import {
   faMailchimp,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faHeart } from "@fortawesome/free-solid-svg-icons";
-import { Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 class FooterComponent extends Component {
   state = {};
   render() {
@@ -115,19 +115,19 @@ class FooterComponent extends Component {
                   style={{ width: 60 }}
                 />
                 <p>
-                  <a className="dark-grey-text" href="#!">
-                    Your Account
-                  </a>
+                  <Link className="dark-grey-text" to="/index_events">
+                    Events
+                  </Link>
                 </p>
                 <p>
-                  <a className="dark-grey-text" href="#!">
-                    Become an Affiliate
-                  </a>
+                  <Link className="dark-grey-text" to="/index_quize_tests">
+                    Quize Test
+                  </Link>
                 </p>
                 <p>
-                  <a className="dark-grey-text" href="#!">
-                    Shipping Rates
-                  </a>
+                  <Link className="dark-grey-text" to="/index_code_challange">
+                    Weekly Code Challange
+                  </Link>
                 </p>
                 <p>
                   <a className="dark-grey-text" href="#!">

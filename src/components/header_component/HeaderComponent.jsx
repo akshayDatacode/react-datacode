@@ -1,6 +1,12 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { fab, faMeetup } from "@fortawesome/free-brands-svg-icons";
+import {
+  fab,
+  faMeetup,
+  faFacebook,
+  faInstagram,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 import {
   faHome,
   faAddressCard,
@@ -32,7 +38,7 @@ class HeaderComponent extends Component {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav>
+            <Nav className="mr-auto">
               <Nav.Link href="/react-datacode/#/home">
                 <FontAwesomeIcon icon={faHome} /> Home
               </Nav.Link>
@@ -61,6 +67,29 @@ class HeaderComponent extends Component {
               <Nav.Link href="/react-datacode/#/index_events">
                 <FontAwesomeIcon icon={faClipboardList} /> Events
               </Nav.Link>
+            </Nav>
+            <NavDropdown.Divider />
+            <Nav>
+              <Nav.Item>
+                <a
+                  href="https://www.facebook.com/Datacode.in"
+                  className="text-white mr-3"
+                >
+                  <FontAwesomeIcon icon={faFacebook} size="2x" />
+                </a>
+                <a
+                  href="https://www.facebook.com/Datacode.in"
+                  className="text-white mr-3"
+                >
+                  <FontAwesomeIcon icon={faInstagram} size="2x" />
+                </a>
+                <a
+                  href="https://www.facebook.com/Datacode.in"
+                  className="text-white mr-3"
+                >
+                  <FontAwesomeIcon icon={faTwitter} size="2x" />
+                </a>
+              </Nav.Item>
             </Nav>
           </Navbar.Collapse>
         </Navbar>

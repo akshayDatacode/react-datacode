@@ -3,6 +3,7 @@ import RecommendPost from "../../right_section/RecommendPost";
 import RightSideSection from "../../right_section/RightSideSection";
 import { Link } from "react-router-dom";
 import FooterComponentUpper from "../../footer_component/FooterComponentUpper";
+import CodeChallangeShowCard from "./CodeChallangeShowCard";
 
 class IndexCodeChallange extends Component {
   state = {};
@@ -26,18 +27,23 @@ class IndexCodeChallange extends Component {
           </div>
           <div className="row">
             <div className="col-md-3 d-none d-sm-block  mt-4">
-              <ul class="list-group list-group-flush">
-                <Link to="code_challange_week_1">
-                  <div className=" btn btn-primary">Code Challange Week #1</div>
-                </Link>
-                <Link to="code_challange_week_2">
-                  <div className=" btn btn-primary mt-2">
-                    Code Challange Week #2
-                  </div>
-                </Link>
-              </ul>
+              <CodeChallangeShowCard
+                imgsource="code_challange_1.jpeg"
+                link="code_challange_week_1"
+                title="Code Challange Week #1"
+              />
+              <CodeChallangeShowCard
+                imgsource="code_challange_2.jpeg"
+                link="code_challange_week_2"
+                title="Code Challange Week #2"
+              />
+              <CodeChallangeShowCard
+                imgsource="code_challange_3.jpeg"
+                link="code_challange_week_1"
+                title="Code Challange Week #3"
+              />
             </div>
-            <div className="col-md-5 mt-5 ">
+            <div className="col-md-5 mt-3 ">
               <img
                 className=" card-img-top mx-auto img-fluid img-circle d-block"
                 src={require("../../../assets/images/code_challange.jpeg")}
@@ -46,16 +52,21 @@ class IndexCodeChallange extends Component {
             </div>
 
             <div className="col-md-3 d-block d-md-none  mt-4 text-center">
-              <ul class="list-group list-group-flush">
-                <Link to="code_challange_week_1">
-                  <div className=" btn btn-primary">Code Challange Week #1</div>
-                </Link>
-                <Link to="code_challange_week_2">
-                  <div className=" btn btn-primary mt-2">
-                    Code Challange Week #2
-                  </div>
-                </Link>
-              </ul>
+              <CodeChallangeShowCard
+                imgsource="code_challange_3.jpeg"
+                link="/code_challange_week_1"
+                title="Code Challange Week #1"
+              />
+              <CodeChallangeShowCard
+                imgsource="code_challange_3.jpeg"
+                link="/code_challange_week_1"
+                title="Code Challange Week #2"
+              />
+              <CodeChallangeShowCard
+                imgsource="code_challange_3.jpeg"
+                link="/code_challange_week_1"
+                title="Code Challange Week #3"
+              />
             </div>
 
             <div className="col-md-4 mt-4 ">
@@ -76,9 +87,6 @@ class IndexCodeChallange extends Component {
               />
             </div>
           </div>
-        </div>
-        <div className="container-fluid mt-5">
-          <FooterComponentUpper />
         </div>
       </>
     );

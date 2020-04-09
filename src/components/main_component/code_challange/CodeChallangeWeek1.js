@@ -24,21 +24,14 @@ class CodeChallangeWeek1 extends Component {
               </div>
             </div>
           </div>
+          <Link to="/home" className="badge badge-primary mr-1">
+            Home >
+          </Link>
+          <Link to="/index_code_challange" className="badge badge-warning mr-1">
+            Code Challange
+          </Link>
           <div className="row">
-            <div className="col-3 d-none d-sm-block  mt-4">
-              <ul class="list-group list-group-flush">
-                <Link to="code_challange_week_1">
-                  <button className="list-group-item bg-primary text-light">
-                    Code Challange Week #1
-                  </button>
-                </Link>
-                <Link to="code_challange_week_2">
-                  <button className=" btn list-group-item">
-                    Code Challange Week #2
-                  </button>
-                </Link>
-              </ul>
-            </div>
+            <div className="col-3 d-none d-sm-block  mt-4"></div>
             <div className="col-md-5 mt-5 ">
               <CodeChallangeFram
                 questionNO={`<Code Challange Problem # 1 >`}

@@ -25,14 +25,14 @@ class ProgrammingLanguagesBlog extends Component {
               </Link>
               <div className="card-deck m-2">
                 <ArticlePostCard
-                  imgsource="programming_boooks.jpeg"
+                  imgsource="js.jpeg"
                   tag="JavaScript"
                   title="Learn JavaScript concepts by building a random quote generator"
                   paragraph="Learning JavaScript is fun. But What's the point if you are not building stuff with it. So in this article,"
                   link="https://thenextbigwriter.tech/learn-javascript-concepts-by-building-a-random-quote-generator-ck8fmvz6j014qyys1i204knru"
                 />
                 <ArticlePostCard
-                  imgsource="programming_boooks.jpeg"
+                  imgsource="js.jpeg"
                   tag="JavaScript"
                   title="What is `this` inside foo.bar()?"
                   paragraph="Calling a method directly works as expected.
@@ -40,7 +40,7 @@ class ProgrammingLanguagesBlog extends Component {
                   link="https://blog.bendtherul.es/what-is-this-inside-foobar-ck8dzlitm01atxjs1322jz9a2"
                 />
                 <ArticlePostCard
-                  imgsource="programming_boooks.jpeg"
+                  imgsource="js.jpeg"
                   tag="JavaScript"
                   title="Web Design Blog"
                   paragraph="We Love to Code and this is the best way to express our

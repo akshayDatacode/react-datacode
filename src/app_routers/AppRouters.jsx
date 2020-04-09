@@ -6,6 +6,7 @@ import HomeComponent from "../components/main_component/HomeComponent";
 import IndexArticles from "../components/main_component/aticles/IndexArticles";
 import ProgrammingLanguagesBlog from "../components/main_component/aticles/programming_article/Programming_Languages_Blog";
 import WebDesignBlog from "../components/main_component/aticles/webdesign_article/WebDesignBlog";
+import MachineLearningBlog from "../components/main_component/aticles/machine_learning_article/MachineLearningBlog";
 
 import AboutUs from "../components/header_component/AboutUs";
 // Interview Routinig
@@ -131,6 +132,10 @@ class AppRouters extends Component {
           <Route path="/index_articles" component={IndexArticles} />
           <Route path="/prog_lan_blog" component={ProgrammingLanguagesBlog} />
           <Route path="/webdesign_blog" component={WebDesignBlog} />
+          <Route
+            path="/machine_learning_blog"
+            component={MachineLearningBlog}
+          />
 
           {/* Ending Article */}
 

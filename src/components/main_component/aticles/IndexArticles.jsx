@@ -3,7 +3,9 @@ import HeaderBannerSection from "../HeaderBannerSection";
 import { Link } from "react-router-dom";
 import PostCard from "../PostCard";
 import RightSideSection from "../../right_section/RightSideSection";
-import FooterComponentUpper from "../../footer_component/FooterComponentUpper";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+
 class IndexArticles extends Component {
   state = {};
   componentDidMount() {
@@ -12,36 +14,32 @@ class IndexArticles extends Component {
   render() {
     return (
       <>
+        {/* Card Code */}
+        <HeaderBannerSection imgsource="blog.jpeg" />
         <div className="row">
           <div className="col-1"></div>
           <div className="col-md-8 mt-4">
             <h2 className="text-center mb-4">Community Blogs</h2>
             <Link to="/home" className="badge badge-primary mr-1">
-              Home >
+              <FontAwesomeIcon icon={faHome} size="2x" />
             </Link>
             <Link to="/index_articles" className="badge badge-warning mr-1">
               Blogs >
             </Link>
             <div className="card-deck m-2">
               <PostCard
-                imgsource="programming_boooks.jpeg"
+                imgsource="programming_blog.jpeg"
                 title="Programming Languages Blogs"
-                paragraph="We Love to Code and this is the best way to express our
-                  love to Computer Science Wolrd."
                 link="/prog_lan_blog"
               />
               <PostCard
-                imgsource="programming_boooks.jpeg"
+                imgsource="web_blog.jpeg"
                 title="Web Design Blogs"
-                paragraph="We Love to Code and this is the best way to express our
-                  love to Computer Science Wolrd."
                 link="/webdesign_blog"
               />
               <PostCard
-                imgsource="programming_boooks.jpeg"
+                imgsource="machine_blog.jpeg"
                 title="Machine Learning Blogs"
-                paragraph="We Love to Code and this is the best way to express our
-                  love to Computer Science Wolrd."
                 link="/machine_learning_blog"
               />
             </div>

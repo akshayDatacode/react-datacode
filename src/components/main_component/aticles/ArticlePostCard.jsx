@@ -22,9 +22,7 @@ class ArticlePostCard extends Component {
             <div className="row">
               <div className="col text-right">
                 <a href={this.props.link}>
-                  <h6 className="btn btn-default border border-secondary text-secondary">
-                    Read More
-                  </h6>
+                  <h6 className="text-secondary">Read More</h6>
                 </a>
               </div>
             </div>

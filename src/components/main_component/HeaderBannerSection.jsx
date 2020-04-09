@@ -7,12 +7,13 @@ class HeaderBannerSection extends Component {
       <>
         {/* Card Code */}
 
-        <Card className="bg-dark text-white">
-          <Card.Img
+        <div className="card text-white border border-white">
+          <img
+            className=" card-img-top mx-auto img-fluid img-circle d-block"
             src={require("../../assets/images/" + this.props.imgsource)}
-            alt="Card image"
+            alt="avatar"
           />
-        </Card>
+        </div>
       </>
     );
   }

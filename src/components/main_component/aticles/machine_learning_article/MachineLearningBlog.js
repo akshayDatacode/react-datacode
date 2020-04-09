@@ -4,7 +4,7 @@ import RightSideSection from "../../../right_section/RightSideSection";
 import PostCard from "../../PostCard";
 import { Link } from "react-router-dom";
 
-class ProgrammingLanguagesBlog extends Component {
+class MachineLearningBlog extends Component {
   state = {};
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -16,7 +16,9 @@ class ProgrammingLanguagesBlog extends Component {
           <div className="row">
             <div className="col-md-1 p-0 m-0"></div>
             <div className="col-md-8 p-0 mt-4">
-              <h2 className="text-center mb-4">Web Design Community Blogs</h2>
+              <h2 className="text-center mb-4">
+                Machine Learning Community Blogs
+              </h2>
               <Link to="/home" className="badge badge-primary mr-1">
                 Home >
               </Link>
@@ -103,4 +105,4 @@ class ProgrammingLanguagesBlog extends Component {
   }
 }
 
-export default ProgrammingLanguagesBlog;
+export default MachineLearningBlog;
