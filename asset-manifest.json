@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.2749690b.chunk.css",
-    "main.js": "/static/js/main.e86b78d9.chunk.js",
-    "main.js.map": "/static/js/main.e86b78d9.chunk.js.map",
+    "main.js": "/static/js/main.314afe6c.chunk.js",
+    "main.js.map": "/static/js/main.314afe6c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4a1f94a7.js",
     "runtime-main.js.map": "/static/js/runtime-main.4a1f94a7.js.map",
     "static/css/2.89f067aa.chunk.css": "/static/css/2.89f067aa.chunk.css",
-    "static/js/2.986d03d7.chunk.js": "/static/js/2.986d03d7.chunk.js",
-    "static/js/2.986d03d7.chunk.js.map": "/static/js/2.986d03d7.chunk.js.map",
+    "static/js/2.4aa83f8e.chunk.js": "/static/js/2.4aa83f8e.chunk.js",
+    "static/js/2.4aa83f8e.chunk.js.map": "/static/js/2.4aa83f8e.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b806655d63c0821a5bc6657d203e4479.js": "/precache-manifest.b806655d63c0821a5bc6657d203e4479.js",
+    "precache-manifest.d3fc7ae13c222b2218edc35c39d548fd.js": "/precache-manifest.d3fc7ae13c222b2218edc35c39d548fd.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.89f067aa.chunk.css.map": "/static/css/2.89f067aa.chunk.css.map",
     "static/css/main.2749690b.chunk.css.map": "/static/css/main.2749690b.chunk.css.map",
-    "static/js/2.986d03d7.chunk.js.LICENSE.txt": "/static/js/2.986d03d7.chunk.js.LICENSE.txt",
+    "static/js/2.4aa83f8e.chunk.js.LICENSE.txt": "/static/js/2.4aa83f8e.chunk.js.LICENSE.txt",
     "static/media/Cover Photo (3).png": "/static/media/Cover Photo (3).6bc137af.png",
     "static/media/Green Disease Prevention Instagram Post.png": "/static/media/Green Disease Prevention Instagram Post.ee3b12ec.png",
     "static/media/Shootpy_W Cover Page (1).jpg": "/static/media/Shootpy_W Cover Page (1).39eabcb7.jpg",
@@ -33,9 +33,12 @@
     "static/media/WhatsApp Image 2020-04-05 at 12.30.38 PM (7).jpeg": "/static/media/WhatsApp Image 2020-04-05 at 12.30.38 PM (7).83d0c314.jpeg",
     "static/media/WhatsApp Image 2020-04-05 at 12.30.38 PM (8).jpeg": "/static/media/WhatsApp Image 2020-04-05 at 12.30.38 PM (8).46d0659a.jpeg",
     "static/media/WhatsApp Image 2020-04-05 at 12.30.38 PM (9).jpeg": "/static/media/WhatsApp Image 2020-04-05 at 12.30.38 PM (9).83d70f9f.jpeg",
+    "static/media/blog.jpeg": "/static/media/blog.8b88ce41.jpeg",
     "static/media/c_programming.jpeg": "/static/media/c_programming.d172a813.jpeg",
     "static/media/c_programming_question.jpeg": "/static/media/c_programming_question.932dfd69.jpeg",
     "static/media/code_challange.jpeg": "/static/media/code_challange.824a5bd3.jpeg",
+    "static/media/code_challange_1.jpeg": "/static/media/code_challange_1.b66d1f7b.jpeg",
+    "static/media/code_challange_2.jpeg": "/static/media/code_challange_2.c2e4bf23.jpeg",
     "static/media/coder1.jpeg": "/static/media/coder1.17a6aab6.jpeg",
     "static/media/cprogramming_practice_question.jpeg": "/static/media/cprogramming_practice_question.0554f507.jpeg",
     "static/media/css.jpeg": "/static/media/css.861c575c.jpeg",
@@ -58,7 +61,10 @@
     "static/media/java_programming.jpeg": "/static/media/java_programming.0fd7c8dd.jpeg",
     "static/media/java_programming_question.jpeg": "/static/media/java_programming_question.3483b153.jpeg",
     "static/media/javascript.jpeg": "/static/media/javascript.bec69259.jpeg",
+    "static/media/js.jpeg": "/static/media/js.97cad496.jpeg",
+    "static/media/machine_blog.jpeg": "/static/media/machine_blog.50ab2ca5.jpeg",
     "static/media/oops_interview_question.jpeg": "/static/media/oops_interview_question.a2af45cd.jpeg",
+    "static/media/programming_blog.jpeg": "/static/media/programming_blog.770d5ca0.jpeg",
     "static/media/programming_boooks.jpeg": "/static/media/programming_boooks.f5e5cba6.jpeg",
     "static/media/programming_practices.jpeg": "/static/media/programming_practices.3a7c54ac.jpeg",
     "static/media/python_mcqs.jpeg": "/static/media/python_mcqs.3f0b9a3b.jpeg",
@@ -69,6 +75,7 @@
     "static/media/sql_interview_question.jpeg": "/static/media/sql_interview_question.ae7240c0.jpeg",
     "static/media/tech.png": "/static/media/tech.ae6a7be8.png",
     "static/media/technical_interview_questions.jpeg": "/static/media/technical_interview_questions.58291e4f.jpeg",
+    "static/media/web_blog.jpeg": "/static/media/web_blog.6c49b2fe.jpeg",
     "static/media/webcover1.jpeg": "/static/media/webcover1.6477a0de.jpeg",
     "static/media/webcover2.jpeg": "/static/media/webcover2.c11e0a58.jpeg",
     "static/media/webcover3.jpeg": "/static/media/webcover3.f49f705f.jpeg"
@@ -76,8 +83,8 @@
   "entrypoints": [
     "static/js/runtime-main.4a1f94a7.js",
     "static/css/2.89f067aa.chunk.css",
-    "static/js/2.986d03d7.chunk.js",
+    "static/js/2.4aa83f8e.chunk.js",
     "static/css/main.2749690b.chunk.css",
-    "static/js/main.e86b78d9.chunk.js"
+    "static/js/main.314afe6c.chunk.js"
   ]
 }
