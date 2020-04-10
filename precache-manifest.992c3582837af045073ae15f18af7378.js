@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b6d26d3562f2dad5ee85371961ca3af8",
+    "revision": "7880e364f81b3985cab3b777d718b393",
     "url": "/index.html"
   },
   {
-    "revision": "949245a4c8b77343c84c",
+    "revision": "4dbaaece32e368762d5c",
     "url": "/static/css/2.89f067aa.chunk.css"
   },
   {
-    "revision": "63dec6318432b5d4e4e2",
+    "revision": "4232ba17b0a4c42585e1",
     "url": "/static/css/main.2749690b.chunk.css"
   },
   {
-    "revision": "949245a4c8b77343c84c",
-    "url": "/static/js/2.4aa83f8e.chunk.js"
+    "revision": "4dbaaece32e368762d5c",
+    "url": "/static/js/2.cf5db4c1.chunk.js"
   },
   {
     "revision": "ae54f939c6e84f9ec4d4c4cd8100d77f",
-    "url": "/static/js/2.4aa83f8e.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.cf5db4c1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "63dec6318432b5d4e4e2",
-    "url": "/static/js/main.314afe6c.chunk.js"
+    "revision": "4232ba17b0a4c42585e1",
+    "url": "/static/js/main.b0b9cf93.chunk.js"
   },
   {
     "revision": "ba88f149e390315adcbe",
@@ -54,10 +54,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "00f9bad2dfeb7f396a6c17cb0a7d775d",
     "url": "/static/media/WhatsApp Image 2020-04-05 at 12.30.38 PM (16).00f9bad2.jpeg"
-  },
-  {
-    "revision": "bb0317bd5bc722998d5f67559bf6ccfa",
-    "url": "/static/media/WhatsApp Image 2020-04-05 at 12.30.38 PM (17).bb0317bd.jpeg"
   },
   {
     "revision": "3f0b9a3b75585f2f600399fdb2e1509f",
@@ -158,6 +154,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "78cb0203ba5f313e0292e7ee1735e3d1",
     "url": "/static/media/ds1.jpg.78cb0203.png"
+  },
+  {
+    "revision": "bb0317bd5bc722998d5f67559bf6ccfa",
+    "url": "/static/media/ds_mcqs.bb0317bd.jpeg"
   },
   {
     "revision": "b3c2e11089a5f0103b53c19736366591",

@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.2749690b.chunk.css",
-    "main.js": "/static/js/main.314afe6c.chunk.js",
-    "main.js.map": "/static/js/main.314afe6c.chunk.js.map",
+    "main.js": "/static/js/main.b0b9cf93.chunk.js",
+    "main.js.map": "/static/js/main.b0b9cf93.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4a1f94a7.js",
     "runtime-main.js.map": "/static/js/runtime-main.4a1f94a7.js.map",
     "static/css/2.89f067aa.chunk.css": "/static/css/2.89f067aa.chunk.css",
-    "static/js/2.4aa83f8e.chunk.js": "/static/js/2.4aa83f8e.chunk.js",
-    "static/js/2.4aa83f8e.chunk.js.map": "/static/js/2.4aa83f8e.chunk.js.map",
+    "static/js/2.cf5db4c1.chunk.js": "/static/js/2.cf5db4c1.chunk.js",
+    "static/js/2.cf5db4c1.chunk.js.map": "/static/js/2.cf5db4c1.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.d3fc7ae13c222b2218edc35c39d548fd.js": "/precache-manifest.d3fc7ae13c222b2218edc35c39d548fd.js",
+    "precache-manifest.992c3582837af045073ae15f18af7378.js": "/precache-manifest.992c3582837af045073ae15f18af7378.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.89f067aa.chunk.css.map": "/static/css/2.89f067aa.chunk.css.map",
     "static/css/main.2749690b.chunk.css.map": "/static/css/main.2749690b.chunk.css.map",
-    "static/js/2.4aa83f8e.chunk.js.LICENSE.txt": "/static/js/2.4aa83f8e.chunk.js.LICENSE.txt",
+    "static/js/2.cf5db4c1.chunk.js.LICENSE.txt": "/static/js/2.cf5db4c1.chunk.js.LICENSE.txt",
     "static/media/Cover Photo (3).png": "/static/media/Cover Photo (3).6bc137af.png",
     "static/media/Green Disease Prevention Instagram Post.png": "/static/media/Green Disease Prevention Instagram Post.ee3b12ec.png",
     "static/media/Shootpy_W Cover Page (1).jpg": "/static/media/Shootpy_W Cover Page (1).39eabcb7.jpg",
@@ -21,7 +21,6 @@
     "static/media/WhatsApp Image 2020-04-05 at 12.30.38 PM (14).jpeg": "/static/media/WhatsApp Image 2020-04-05 at 12.30.38 PM (14).f35cdf18.jpeg",
     "static/media/WhatsApp Image 2020-04-05 at 12.30.38 PM (15).jpeg": "/static/media/WhatsApp Image 2020-04-05 at 12.30.38 PM (15).415ca3dc.jpeg",
     "static/media/WhatsApp Image 2020-04-05 at 12.30.38 PM (16).jpeg": "/static/media/WhatsApp Image 2020-04-05 at 12.30.38 PM (16).00f9bad2.jpeg",
-    "static/media/WhatsApp Image 2020-04-05 at 12.30.38 PM (17).jpeg": "/static/media/WhatsApp Image 2020-04-05 at 12.30.38 PM (17).bb0317bd.jpeg",
     "static/media/WhatsApp Image 2020-04-05 at 12.30.38 PM (19).jpeg": "/static/media/WhatsApp Image 2020-04-05 at 12.30.38 PM (19).3f0b9a3b.jpeg",
     "static/media/WhatsApp Image 2020-04-05 at 12.30.38 PM (2).jpeg": "/static/media/WhatsApp Image 2020-04-05 at 12.30.38 PM (2).fef51995.jpeg",
     "static/media/WhatsApp Image 2020-04-05 at 12.30.38 PM (20).jpeg": "/static/media/WhatsApp Image 2020-04-05 at 12.30.38 PM (20).7d6a05ae.jpeg",
@@ -47,6 +46,7 @@
     "static/media/dbms_interview_question.jpeg": "/static/media/dbms_interview_question.9ba517de.jpeg",
     "static/media/dbms_interview_question.jpeg.jpeg": "/static/media/dbms_interview_question.jpeg.84a2e6ad.jpeg",
     "static/media/ds1.jpg.png": "/static/media/ds1.jpg.78cb0203.png",
+    "static/media/ds_mcqs.jpeg": "/static/media/ds_mcqs.bb0317bd.jpeg",
     "static/media/dsa_programming_questions.jpeg": "/static/media/dsa_programming_questions.b3c2e110.jpeg",
     "static/media/event.jpeg": "/static/media/event.07a66ffe.jpeg",
     "static/media/eventcover1.jpeg": "/static/media/eventcover1.f6300d06.jpeg",
@@ -83,8 +83,8 @@
   "entrypoints": [
     "static/js/runtime-main.4a1f94a7.js",
     "static/css/2.89f067aa.chunk.css",
-    "static/js/2.4aa83f8e.chunk.js",
+    "static/js/2.cf5db4c1.chunk.js",
     "static/css/main.2749690b.chunk.css",
-    "static/js/main.314afe6c.chunk.js"
+    "static/js/main.b0b9cf93.chunk.js"
   ]
 }
