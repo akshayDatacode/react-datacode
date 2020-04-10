@@ -35,7 +35,7 @@ class FooterComponentUpper extends Component {
         <div className="container-fluid p-0">
           <div className="row">
             <div className="col-sm col text-center ">
-              <h2 className="text-secondary align-middle ">Categories</h2>
+              <h4 className="text-secondary align-middle ">Categories</h4>
               <hr
                 class="teal accent-3 mb-3 mt-0 d-inline-block mx-auto"
                 style={{ width: 100 }}
@@ -48,7 +48,7 @@ class FooterComponentUpper extends Component {
                         <FontAwesomeIcon
                           icon={faUserClock}
                           color="skyblue"
-                          size="4x"
+                          size="2x"
                         />
                         <p className="mt-1 text-secondary">
                           Technical Quize Test
@@ -61,7 +61,7 @@ class FooterComponentUpper extends Component {
                         <FontAwesomeIcon
                           icon={faUserFriends}
                           color="skyblue"
-                          size="4x"
+                          size="2x"
                         />
                         <p className="mt-1 text-secondary">
                           Interview Preparations
@@ -73,7 +73,7 @@ class FooterComponentUpper extends Component {
                         <FontAwesomeIcon
                           icon={faNewspaper}
                           color="skyblue"
-                          size="4x"
+                          size="2x"
                         />
                         <p className="mt-1 text-secondary">Community Blogs </p>
                       </Link>
@@ -85,7 +85,7 @@ class FooterComponentUpper extends Component {
                         <FontAwesomeIcon
                           icon={faLaptopCode}
                           color="skyblue"
-                          size="4x"
+                          size="2x"
                         />
                         <p className="mt-1 text-secondary">
                           Programming Code Challanges
@@ -97,7 +97,7 @@ class FooterComponentUpper extends Component {
                         <FontAwesomeIcon
                           icon={faListAlt}
                           color="skyblue"
-                          size="4x"
+                          size="2x"
                         />
                         <p className="mt-1 text-secondary">
                           Programming MCQs Practices
@@ -109,7 +109,7 @@ class FooterComponentUpper extends Component {
                         <FontAwesomeIcon
                           icon={faTools}
                           color="skyblue"
-                          size="4x"
+                          size="2x"
                         />
                         <p className="mt-1 text-secondary">Technologies</p>
                       </Link>
@@ -121,7 +121,7 @@ class FooterComponentUpper extends Component {
           </div>
           <div className="row">
             <div className="col-sm col-md mt-3 text-center ">
-              <h2 className="text-secondary ">Trending For Learning</h2>
+              <h3 className="text-secondary ">Trending For Learning</h3>
               <hr
                 class="teal accent-3 mb-3 mt-0 d-inline-block mx-auto"
                 style={{ width: 190 }}

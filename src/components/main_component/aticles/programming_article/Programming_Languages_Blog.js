@@ -42,7 +42,7 @@ class ProgrammingLanguagesBlog extends Component {
                   link="https://blog.bendtherul.es/what-is-this-inside-foobar-ck8dzlitm01atxjs1322jz9a2"
                 />
                 <ArticlePostCard
-                  imgsource="js.jpeg"
+                  imgsource="python_learning_blog.jpeg"
                   tag1="python"
                   tag2="python 101"
                   title="Python 101 – Working with Strings"
@@ -80,7 +80,7 @@ class ProgrammingLanguagesBlog extends Component {
 
               <div className="card-deck m-2">
                 <ArticlePostCard
-                  imgsource="js.jpeg"
+                  imgsource="python_learning_blog.jpeg"
                   tag1="python"
                   tag2="instagram"
                   tag3="chatbot"
@@ -89,7 +89,7 @@ class ProgrammingLanguagesBlog extends Component {
                   link="https://realpython.com/instagram-bot-python-instapy/"
                 />
                 <ArticlePostCard
-                  imgsource="js.jpeg"
+                  imgsource="python_learning_blog.jpeg"
                   tag1="python"
                   tag2="maps"
                   title="Creating Beautiful Maps with Python Beyond the defaults"
@@ -97,7 +97,7 @@ class ProgrammingLanguagesBlog extends Component {
                   link="https://towardsdatascience.com/creating-beautiful-maps-with-python-beyond-the-defaults-c92593ccf2cc"
                 />
                 <ArticlePostCard
-                  imgsource="js.jpeg"
+                  imgsource="python_learning_blog.jpeg"
                   tag1="python"
                   tag2="clean code"
                   title="Nine simple steps for better-looking python code"
@@ -108,7 +108,7 @@ class ProgrammingLanguagesBlog extends Component {
 
               <div className="card-deck m-2">
                 <ArticlePostCard
-                  imgsource="js.jpeg"
+                  imgsource="python_learning_blog.jpeg"
                   tag1="python"
                   tag2="developer"
                   title="8 must have Skills to be Successful Python Developer"
@@ -116,7 +116,7 @@ class ProgrammingLanguagesBlog extends Component {
                   link="https://thepythonguru.com/8-must-have-skills-to-be-successful-python-developer/"
                 />
                 <ArticlePostCard
-                  imgsource="js.jpeg"
+                  imgsource="python_learning_blog.jpeg"
                   tag1="python"
                   tag2="emails"
                   title="Sending Emails in Python - Tutorial with Code Examples"
@@ -174,7 +174,6 @@ class ProgrammingLanguagesBlog extends Component {
                   tag1="datastructure"
                   tag2="Algorithms"
                   title="How you can change the world by learning Data Structures and Algorithms"
-                  
                   paragraph="As a developer, you have the power to change the world! You can write programs that enable new technologies. For instance, develop software to find an earlier diagnosis of diseases."
                   link="https://adrianmejia.com/how-you-can-change-the-world-learning-data-structures-algorithms-free-online-course-tutorial/"
                 />
@@ -213,10 +212,9 @@ class ProgrammingLanguagesBlog extends Component {
                   paragraph="Right now we all ar or should be on some sort of lockdown..."
                   link="https://medium.com/super-jump/vr-games-to-play-in-lockdown-3d11079b59c5"
                 />
-              
               </div>
               <div className="card-deck m-2">
-              <ArticlePostCard
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="AR"
                   tag2="Design"
@@ -224,7 +222,7 @@ class ProgrammingLanguagesBlog extends Component {
                   paragraph="Reality-bending AR lenses imagined by a new generation of designers are redefining our relationships with our digital selves"
                   link="https://medium.com/aiga-eye-on-design/how-the-fantastical-futuristic-art-of-ar-face-filters-is-subverting-traditional-notions-of-beauty-b2ab1041ed68"
                 />
-                   <ArticlePostCard
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="  UIKit"
                   tag2="SwiftUI"
@@ -233,7 +231,7 @@ class ProgrammingLanguagesBlog extends Component {
                   "
                   link="https://medium.com/better-programming/how-to-access-the-uikit-components-under-swiftui-objects-4a808568014a"
                 />
-                   <ArticlePostCard
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="Swift"
                   tag2="array"
@@ -241,9 +239,9 @@ class ProgrammingLanguagesBlog extends Component {
                   paragraph="Arrays in swift are collection of data, but these can be sorted with both sort() and sorted()"
                   link="https://medium.com/swlh/sorting-an-array-in-swift-9f67b4a24c95"
                 />
-                </div>
-                <div className="card-deck m-2">
-              <ArticlePostCard
+              </div>
+              <div className="card-deck m-2">
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="frontend"
                   tag2="backend"
@@ -251,7 +249,7 @@ class ProgrammingLanguagesBlog extends Component {
                   paragraph="You have heard of web developers – these are individuals who specialize in developing World Wide Web applications"
                   link="https://thepythonguru.com/whats-the-difference-between-front-end-back-end-and-full-stack-developer/"
                 />
-                   <ArticlePostCard
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="email"
                   tag2="privacy"
@@ -259,7 +257,7 @@ class ProgrammingLanguagesBlog extends Component {
                   paragraph="I used and do some research of your own."
                   link="https://pythontips.com/2018/12/01/email-security-privacy/"
                 />
-                   <ArticlePostCard
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="linux"
                   tag2="flask"
@@ -268,9 +266,9 @@ class ProgrammingLanguagesBlog extends Component {
                   paragraph="using Red Hat Enterprise Linux 8 application streams in containers is preferable to using software collections on RHEL 7. "
                   link="https://developers.redhat.com/blog/2019/09/12/develop-with-flask-and-python-3-in-a-container-on-red-hat-enterprise-linux/"
                 />
-                </div>
-                <div className="card-deck m-2">
-              <ArticlePostCard
+              </div>
+              <div className="card-deck m-2">
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="raspberry pi"
                   tag2="python"
@@ -278,7 +276,7 @@ class ProgrammingLanguagesBlog extends Component {
                   paragraph="that code creates a souvenir photo by superimposing the Coderland logo, a date stamp, and a message on top"
                   link="https://developers.redhat.com/blog/2019/06/03/how-to-build-a-raspberry-pi-photo-booth/"
                 />
-                   <ArticlePostCard
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="python"
                   tag2="functions"
@@ -287,7 +285,7 @@ class ProgrammingLanguagesBlog extends Component {
                   "
                   link="https://medium.com/python4you/python-functions-defaults-explained-ee962c7c6f7a"
                 />
-                   <ArticlePostCard
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="talking cars"
                   tag2="python"
@@ -295,9 +293,9 @@ class ProgrammingLanguagesBlog extends Component {
                   paragraph="Modern cars have become mobile computer systems with many small computers running "
                   link="https://talkpython.fm/episodes/show/255/talking-to-cars-with-python"
                 />
-                </div>
-                <div className="card-deck m-2">
-              <ArticlePostCard
+              </div>
+              <div className="card-deck m-2">
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="hibernate"
                   tag2="java"
@@ -305,7 +303,7 @@ class ProgrammingLanguagesBlog extends Component {
                   paragraph="The LazyInitializationException is one of the most common exceptions when working with Hibernate."
                   link="https://thoughts-on-java.org/blog/"
                 />
-                   <ArticlePostCard
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="java"
                   tag2="expectation"
@@ -313,7 +311,7 @@ class ProgrammingLanguagesBlog extends Component {
                   paragraph="When working with Java Reflection API, it is common to encounter java.lang.reflect.InvocationTargetException."
                   link="https://www.baeldung.com/java-lang-reflect-invocationtargetexception"
                 />
-                   <ArticlePostCard
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="SQL"
                   tag2="inner join"
@@ -321,9 +319,9 @@ class ProgrammingLanguagesBlog extends Component {
                   paragraph="In this article, we are going to see how the INNER JOIN works in SQL, and how you.."
                   link="https://vladmihalcea.com/sql-inner-join/"
                 />
-                </div>
-                <div className="card-deck m-2">
-              <ArticlePostCard
+              </div>
+              <div className="card-deck m-2">
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="JPA"
                   tag2="xml"
@@ -331,7 +329,7 @@ class ProgrammingLanguagesBlog extends Component {
                   paragraph="In this article, I’m going to explain what is the purpose of the JPA persistence.xml "
                   link="https://vladmihalcea.com/jpa-persistence-xml/"
                 />
-                   <ArticlePostCard
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="java"
                   tag2="json"
@@ -339,7 +337,7 @@ class ProgrammingLanguagesBlog extends Component {
                   paragraph="In this article, show you how the new Java Text Blocks can help you increase the readability of JPQL, SQL queries, or JSON string values."
                   link="https://vladmihalcea.com/multiline-string-java-text-blocks/"
                 />
-                   <ArticlePostCard
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="GIT"
                   tag2="GUI"
@@ -347,10 +345,10 @@ class ProgrammingLanguagesBlog extends Component {
                   paragraph="Git is a version control system for tracking file changes. Usually used in a team environment, especially among programmers,"
                   link="https://dev.to/shijiezhou/top-10-best-gui-git-client-for-developer-1gel"
                 />
-                </div>
+              </div>
 
-                <div className="card-deck m-2">
-              <ArticlePostCard
+              <div className="card-deck m-2">
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="facebook"
                   tag2="data"
@@ -358,7 +356,7 @@ class ProgrammingLanguagesBlog extends Component {
                   paragraph="Over the past year, an open source framework has been developed. Today, we are announcing a new tool on Facebook that allows "
                   link="https://engineering.fb.com/security/data-transfer-project/"
                 />
-                   <ArticlePostCard
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="programming languag"
                   tag2="c++"
@@ -366,7 +364,7 @@ class ProgrammingLanguagesBlog extends Component {
                   paragraph="In this series, we will develop a new scripting language and describe that process step by step."
                   link="https://www.toptal.com/c-plus-plus/creating-programming-language-in-c-"
                 />
-                   <ArticlePostCard
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="Ruby on Rails"
                   tag2="apps"
@@ -374,10 +372,10 @@ class ProgrammingLanguagesBlog extends Component {
                   paragraph="Tests are supposed to help keep apps from being flaky. But once in a while, tests themselves can become flaky—even the most straightforward ones. "
                   link="https://www.toptal.com/ruby-on-rails/timestamp-truncation-rails-activerecord-tale"
                 />
-                </div>
+              </div>
 
-                <div className="card-deck m-2">
-              <ArticlePostCard
+              <div className="card-deck m-2">
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="Programming"
                   tag2="scripting"
@@ -385,7 +383,7 @@ class ProgrammingLanguagesBlog extends Component {
                   paragraph="A programming language is a language used to write set of instructions to perform a task or to get an output from it,"
                   link="https://www.thecrazyprogrammer.com/2020/03/difference-between-programming-language-and-scripting-language.html"
                 />
-                   <ArticlePostCard
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="Computer science"
                   tag2="women"
@@ -393,7 +391,7 @@ class ProgrammingLanguagesBlog extends Component {
                   paragraph="It is widely accepted that women play a key role in our lives. Women are mothers and the modern female entrepreneur is ubiquitous,"
                   link="https://www.thecrazyprogrammer.com/2020/02/why-are-there-so-few-women-in-computer-science.html"
                 />
-                   <ArticlePostCard
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="Flutter"
                   tag2="API"
@@ -401,10 +399,10 @@ class ProgrammingLanguagesBlog extends Component {
                   paragraph="In this tutorial, you’ll learn how to make asynchronous network requests and handle the responses in a Flutter app"
                   link="https://www.raywenderlich.com/5896601-flutter-networking-tutorial-getting-started"
                 />
-                </div>
+              </div>
 
-                <div className="card-deck m-2">
-              <ArticlePostCard
+              <div className="card-deck m-2">
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="Bubbles"
                   tag2="Android"
@@ -412,7 +410,7 @@ class ProgrammingLanguagesBlog extends Component {
                   paragraph="In this Bubbles for Android 10 tutorial, you’ll learn how to use the Bubble API"
                   link="raywenderlich.com/8220197-bubbles-tutorial-for-android-10-getting-started"
                 />
-                   <ArticlePostCard
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="Android"
                   tag2="kotlin"
@@ -420,7 +418,7 @@ class ProgrammingLanguagesBlog extends Component {
                   paragraph="In this tutorial, you’ll get started with Android networking by creating a simple app"
                   link="https://www.raywenderlich.com/6994782-android-networking-with-kotlin-tutorial-getting-started"
                 />
-                   <ArticlePostCard
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="Java"
                   tag2="Basics"
@@ -428,10 +426,10 @@ class ProgrammingLanguagesBlog extends Component {
                   paragraph="This may sound unintuitive for some, as it's common for lectures to showcase the difference between"
                   link="https://stackabuse.com/does-java-pass-by-reference-or-pass-by-value/"
                 />
-                </div>
+              </div>
 
-                <div className="card-deck m-2">
-              <ArticlePostCard
+              <div className="card-deck m-2">
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="Linux"
                   tag2="swift"
@@ -439,7 +437,7 @@ class ProgrammingLanguagesBlog extends Component {
                   paragraph="In this tutorial you’ll discover everything you need to start developing Swift on Linux. "
                   link="https://www.raywenderlich.com/8325890-a-complete-guide-to-swift-development-on-linux"
                 />
-                   <ArticlePostCard
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="java"
                   tag2="proxy"
@@ -447,7 +445,7 @@ class ProgrammingLanguagesBlog extends Component {
                   paragraph="The Proxy Design Pattern is a design pattern belonging to the set of structural patterns."
                   link="https://stackabuse.com/the-proxy-design-pattern-in-java/"
                 />
-                   <ArticlePostCard
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="Git "
                   tag2="Rbase and merge"
@@ -455,9 +453,9 @@ class ProgrammingLanguagesBlog extends Component {
                   paragraph="Git rebase and git merge have similar purpose, that is to integrate a commit made in a branch to another branch."
                   link="https://medium.com/a-technologists-pov/git-rebase-vs-git-merge-b2a299ab43c0"
                 />
-                </div>
-                <div className="card-deck m-2">
-              <ArticlePostCard
+              </div>
+              <div className="card-deck m-2">
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="Google Pay"
                   tag2="App"
@@ -466,7 +464,7 @@ class ProgrammingLanguagesBlog extends Component {
                   Start accepting payments through GPay"
                   link="https://medium.com/better-programming/how-to-integrate-google-pay-into-your-existing-android-app-d75b269cd623"
                 />
-                   <ArticlePostCard
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="APP"
                   tag2="nlp"
@@ -475,7 +473,7 @@ class ProgrammingLanguagesBlog extends Component {
                   paragraph="It is often necessary to analyze texts and detect whether they have a positive, negative, or neutral tone. "
                   link="https://rapidapi.com/blog/build-sentiment-analysis-app/"
                 />
-                   <ArticlePostCard
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="datascience"
                   tag2="python"
@@ -483,9 +481,9 @@ class ProgrammingLanguagesBlog extends Component {
                   paragraph="This post is attempting to enlighten you about the most useful and popular Python libraries used by data scientists"
                   link="https://www.techbeamers.com/top-python-libraries-data-science/"
                 />
-                </div>
-                <div className="card-deck m-2">
-              <ArticlePostCard
+              </div>
+              <div className="card-deck m-2">
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1=""
                   tag2=""
@@ -493,7 +491,7 @@ class ProgrammingLanguagesBlog extends Component {
                   paragraph="One interesting aspect of working at Mozilla is that Firefox lives in a mercurial repository"
                   link="https://davidwalsh.name/detect-git-directory"
                 />
-                   <ArticlePostCard
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1=""
                   tag2=""
@@ -501,7 +499,7 @@ class ProgrammingLanguagesBlog extends Component {
                   paragraph="For many of us, git and GitHub play a huge role in our development workflows. Whenever we have a tool that we need to use often, "
                   link="https://davidwalsh.name/5-essential-git-commands-and-utilities"
                 />
-                   <ArticlePostCard
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="MangoDB"
                   tag2="Altas"
@@ -509,16 +507,16 @@ class ProgrammingLanguagesBlog extends Component {
                   paragraph="Today Data plays a major role in every corner of the IT industry.  Hence we need a place to store the data in a secure place for further utilization. "
                   link="https://onlineitguru.com/blogger/what-is-mongo-db-atlas"
                 />
-                </div>
-                <div className="card-deck m-2">
-              <ArticlePostCard
+              </div>
+              <div className="card-deck m-2">
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="MySQL"
                   title="MySQL Create User with Password"
                   paragraph="This tutorial explains how to create a user with password in MySQL. We’ll use the MySQL Create User command and describe it "
                   link="https://www.techbeamers.com/mysql-create-user/"
                 />
-                   <ArticlePostCard
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="clientHeight"
                   tag2="offsetHeight"
@@ -526,144 +524,144 @@ class ProgrammingLanguagesBlog extends Component {
                   paragraph="You can use the clientHeight property to measure the inner height of an element, including padding."
                   link="https://www.encodedna.com/javascript/difference-between-clientheight-and-offsetheight.htm"
                 />
-                   <ArticlePostCard
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="UML"
                   title="Architecture of UML"
                   paragraph="A model is a way to represent a system. To envision a system, we will build several models.   "
                   link="Architecture of UML"
                 />
-                </div>
-<h1>Documentation</h1>
-                <div className="card-deck m-2">
-              <ArticlePostCard
+              </div>
+              <h1>Documentation</h1>
+              <div className="card-deck m-2">
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="React native"
                   title="React native documentation"
                   paragraph="Welcome to the very start of your React Native journey! If you're looking for environment setup instructions, "
                   link="https://reactnative.dev/docs/getting-started"
                 />
-                   <ArticlePostCard
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="Node js "
                   title="Node js Documentation"
                   paragraph="There are several types of documentation available on this website"
                   link="https://nodejs.org/en/docs/"
                 />
-                   <ArticlePostCard
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="Swift"
                   title="Swift Documentation"
                   paragraph="You can use the resources on this page as documentation for the Swift language.  "
                   link="https://swift.org/documentation/"
                 />
-                </div>
+              </div>
 
-                <div className="card-deck m-2">
-              <ArticlePostCard
+              <div className="card-deck m-2">
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="Flutter"
                   title="Flutter Documentation"
                   paragraph="To install and run Flutter, your development environment must meet these minimum requirements:"
                   link="https://flutter.dev/docs"
                 />
-                   <ArticlePostCard
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="Android"
                   title="Documentation for android developers"
                   paragraph="Whether you're building for Android handsets, Wear OS by Google, Android TV, Android Auto, or Android Things,"
                   link="https://developer.android.com/docs"
                 />
-                   <ArticlePostCard
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="datascience"
                   title="Welcome to datascience’s documentation!"
                   paragraph="The datascience package was written for use in Berkeley’s DS 8 course and contains useful functionality "
                   link="http://data8.org/datascience/"
                 />
-                </div>
+              </div>
 
-                <div className="card-deck m-2">
-              <ArticlePostCard
+              <div className="card-deck m-2">
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="Bootstrap"
                   title="Bootstrap Documentation"
                   paragraph="Get started with Bootstrap, the world’s most popular framework for building responsive, mobile-first sites, with"
                   link="https://getbootstrap.com/docs/4.1/getting-started/introduction/"
                 />
-                   <ArticlePostCard
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="Django"
                   title="Django documentation"
                   paragraph="Everything you need to know about Django. "
                   link="https://docs.djangoproject.com/en/3.0/"
                 />
-                   <ArticlePostCard
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="Java"
                   title="Java Documentation"
                   paragraph="Whether you are working on a new cutting edge app or simply ramping up on new technology, Java documentation has all the information "
                   link="https://docs.oracle.com/en/java/"
                 />
-                </div>
+              </div>
 
-                <div className="card-deck m-2">
-              <ArticlePostCard
+              <div className="card-deck m-2">
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="C"
                   title="C Programming Language"
                   paragraph="The interface of C standard library is defined by the following collection of headers."
                   link="https://devdocs.io/c/"
                 />
-                   <ArticlePostCard
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="C++"
                   title="C++ Programming Language"
                   paragraph="The interface of C++ standard library is defined by the following collection of headers."
                   link="https://devdocs.io/cpp/"
                 />
-                   <ArticlePostCard
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="Javascript"
                   title="JavaScript"
                   paragraph=" This part of the JavaScript section on MDN serves as a repository of facts about the JavaScript language"
                   link="https://devdocs.io/javascript/"
                 />
-                </div>
+              </div>
 
-                <div className="card-deck m-2">
-              <ArticlePostCard
+              <div className="card-deck m-2">
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="HTML"
                   title="HTML: Hypertext Markup Language"
                   paragraph="HTML (HyperText Markup Language) is the most basic building block of the Web. "
                   link="https://developer.mozilla.org/en-US/docs/Web/HTML"
                 />
-                   <ArticlePostCard
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="CSS"
                   title="CSS: Cascading Style Sheets"
                   paragraph="Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML"
                   link="https://developer.mozilla.org/en-US/docs/Web/CSS"
                 />
-                   <ArticlePostCard
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="DBMS"
                   title="Database Documentation"
                   paragraph="Oracle provides a range of industry-leading on-premises and cloud-based solutions to meet the data management requirements  "
                   link="https://docs.oracle.com/en/database/"
                 />
-                </div>
+              </div>
 
-                <div className="card-deck m-2">
-              <ArticlePostCard
+              <div className="card-deck m-2">
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="sql"
                   title="Microsoft SQL documentation"
                   paragraph="Learn how to use Azure SQL Services and SQL Server to manage your database needs, both on-premises and in the cloud."
                   link="https://docs.microsoft.com/en-us/sql/?view=sql-server-ver15"
                 />
-                   <ArticlePostCard
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="Python"
                   title="Python 3.8.2 documentation"
@@ -672,14 +670,14 @@ class ProgrammingLanguagesBlog extends Component {
                   "
                   link="https://docs.python.org/3/"
                 />
-                   <ArticlePostCard
+                <ArticlePostCard
                   imgsource="js.jpeg"
                   tag1="Reactjs"
                   title="getting started with react"
                   paragraph="React is a JavaScript library for building user interfaces. Learn what React is all about on our homepage or in the tutorial. "
                   link="https://reactjs.org/docs/getting-started.html"
                 />
-                </div>
+              </div>
             </div>
             <div className="col-md-3 ">
               <RightSideSection />
