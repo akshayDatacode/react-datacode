@@ -14,7 +14,11 @@ class ArticlePostCard extends Component {
           />
 
           <div class="card-body">
-            <h6 className="text-right text-primary">{this.props.tag}</h6>
+            <h6 className="text-right text-primary">{this.props.tag1}</h6>
+            <h6 className="text-right text-primary">{this.props.tag2}</h6>
+            <h6 className="text-right text-primary">{this.props.tag3}</h6>
+
+
             <h6 class="card-title text-secondary">{this.props.title}</h6>
             <p class="card-text">{this.props.paragraph}</p>
           </div>
