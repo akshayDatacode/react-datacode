@@ -532,6 +532,102 @@ class ProgrammingLanguagesBlog extends Component {
                   link="Architecture of UML"
                 />
               </div>
+
+              <h1>DBMS</h1>
+              <div className="card-deck m-2">
+                <ArticlePostCard
+                  imgsource="js.jpeg"
+                  tag1="SQL"
+                  title="SQL EXISTS and NOT EXISTS"
+                  paragraph="Although the EXISTS operator has been available since SQL:86, the very first edition of the SQL Standard, I found that there are still many application developers "
+                  link="https://vladmihalcea.com/sql-exists/"
+                />
+                <ArticlePostCard
+                  imgsource="js.jpeg"
+                  tag1="joins"
+                  title="SQL CROSS JOIN – A Beginner’s Guide"
+                  paragraph="For our poker card game application, we have created the ranks and suits database tables:"
+                  link="https://vladmihalcea.com/sql-cross-join/"
+                />
+                <ArticlePostCard
+                  imgsource="js.jpeg"
+                  tag1="DBMS"
+                  title="What is a DBMS? Database Management Systems Explained"
+                  paragraph="The term ‘database’ is defined as any collection of electronic records that can be processed to produce useful information. The data can be accessed, modified, managed, controlled and organized"
+                  link="https://www.bmc.com/blogs/dbms-database-management-systems/"
+                />
+              </div>
+
+              <div className="card-deck m-2">
+                <ArticlePostCard
+                  imgsource="js.jpeg"
+                  tag1="DBMS"
+                  title="Database Management System (DBMS) Basic Concepts"
+                  paragraph="A model is a representation of reality, ‘real world’ objects and events, and their associations. It is an abstraction that concentrates on the essential,"
+                  link="http://dbmsbasics.blogspot.com/"
+                />
+                <ArticlePostCard
+                  imgsource="js.jpeg"
+                  tag1="DBMS"
+                  title="Creating or Altering an Objects with a Single Statement"
+                  paragraph="Do you get tired of having your CREATE PROCEDURE statement failing if the stored procedure already exists?"
+                  link="https://www.databasejournal.com/features/mssql/creating-or-altering-an-objects-with-a-single-statement.html"
+                />
+                <ArticlePostCard
+                  imgsource="js.jpeg"
+                  tag1=".NET"
+                  tag2="DBMS"
+
+                  title="Connecting to a MySQL Database in .NET"
+                  paragraph=".NET is great and provides a ton of tools for working with databases and data sources. There are times though that a data source may not be inherently supported. In a case such as MySQL you may not see the MySQL connection options when creating binding sources or data sources for your project.
+
+                  What do you do then?"
+                  link="https://www.databasejournal.com/features/mysql/connecting-to-a-mysql-database-in-.net.html"
+                />
+              </div>
+
+              <div className="card-deck m-2">
+                <ArticlePostCard
+                  imgsource="js.jpeg"
+                  tag1="firebase"
+                  title="Introduction to Firebase"
+                  paragraph="Firebase is a Cloud-hosted, NoSQL database that uses a document-model. It can be horizontally scaled while letting you store and synchronize data in real-time among users"
+                  link="https://www.databasejournal.com/features/mysql/introduction-to-firebase.html"
+                />
+                <ArticlePostCard
+                  imgsource="js.jpeg"
+                  tag1="SQL"
+                  title="Migrate SQL workloads to the cloud with confidence"
+                  paragraph="Wouldn’t it be great if you could see how a workload will perform in a new environment before migrating a database to the cloud? Then you could fix any queries "
+                  link="https://cloudblogs.microsoft.com/sqlserver/2020/03/31/migrate-sql-workloads-to-the-cloud-with-confidence/"
+                />
+                <ArticlePostCard
+                  imgsource="js.jpeg"
+                  tag1="Server"
+                  title="SQL SERVER – Fixing Freezing Activity Monitor"
+                  paragraph="The other day I had a very interesting experience while working with my client on Comprehensive Database Performance Health Check. While doing performance tuning"
+                  link="https://blog.sqlauthority.com/2020/04/08/sql-server-fixing-freezing-activity-monitor/"
+                />
+              </div>
+
+              <div className="card-deck m-2">
+                <ArticlePostCard
+                  imgsource="js.jpeg"
+                  tag1="MangoDB"
+                  title="MongoDB Compass – Missing a Schema Section"
+                  paragraph="While working on SQL Server Comprehensive Database Performance Health Check, with a client who uses many different SQL and NoSQL databases. "
+                  link="https://blog.sqlauthority.com/2020/04/04/mongodb-compass-missing-a-schema-section/"
+                />
+                <ArticlePostCard
+                  imgsource="js.jpeg"
+                  tag1="datagrip"
+                  title="Top 9 SQL Features of DataGrip You Have to Know"
+                  paragraph="DataGrip is a universal tool for dealing with databases. It supports PostgreSQL, MySQL, SQL Server, Oracle, and many other databases."
+                  link="https://blog.jetbrains.com/datagrip/2019/03/11/top-9-sql-features-of-datagrip-you-have-to-know/?rdt_cid=2968134998835665122&utm_campaign=ww_en_dc_datagrip_subreddit&utm_content=Var1_card&utm_medium=cpc&utm_source=reddit"
+                />
+             
+              </div>
+              
               <h1>Documentation</h1>
               <div className="card-deck m-2">
                 <ArticlePostCard
@@ -678,6 +774,8 @@ class ProgrammingLanguagesBlog extends Component {
                   link="https://reactjs.org/docs/getting-started.html"
                 />
               </div>
+
+
             </div>
             <div className="col-md-3 ">
               <RightSideSection />
