@@ -1,42 +1,34 @@
 import React, { Component } from "react";
 import { Carousel } from "react-bootstrap";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
 class CarouselComponent extends Component {
   state = {};
   render() {
     return (
       <>
-        <Carousel>
+        <Carousel indicators={false}>
           <Carousel.Item>
-            <div className="card text-center ">
+            <div className="card text-center border border-white">
               <img
                 className=" card-img d-block w-100"
-                src={require("../../assets/images/webcover1.jpeg")}
+                src={require("../../assets/images/datacodeheader1.jpeg")}
                 alt="First slide"
               />
-
-              <div className="card-img-overlay d-none d-md-block">
-                <h1 className="display-1 mt-5 text-weight-bold">DataCode.in</h1>
-                <p>We Write Codes</p>
-                <Link to="/home">
-                  <div className="btn btn-lg btn-primary mt-5">
-                    Getting Started
-                  </div>
-                </Link>
-              </div>
+              <div className="card-img-overlay d-none d-md-block"></div>
             </div>
           </Carousel.Item>
 
           <Carousel.Item>
-            <div className="card text-center">
+            <div className="card text-center border border-white">
               <img
                 className=" card-img d-block w-100"
-                src={require("../../assets/images/webcover3.jpeg")}
+                src={require("../../assets/images/datacodeheader2.jpeg")}
                 alt="First slide"
               />
 
               <div className="card-img-overlay d-none d-md-block">
-                <h1 className="h1 display-1 mt-5 text-weight-bold">
+                <h1 className="h1 display-1 mt-5  ml-5 text-weight-bold">
                   DataCode.in
                 </h1>
                 <p>We Write Codes</p>
@@ -49,10 +41,10 @@ class CarouselComponent extends Component {
             </div>
           </Carousel.Item>
           <Carousel.Item>
-            <div className="card text-center">
+            <div className="card text-center border border-white">
               <img
                 className=" card-img d-block w-100"
-                src={require("../../assets/images/webcover2.jpeg")}
+                src={require("../../assets/images/datacodeheader3.jpeg")}
                 alt="First slide"
               />
 

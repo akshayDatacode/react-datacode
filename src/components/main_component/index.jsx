@@ -108,27 +108,33 @@ class MainComponent extends Component {
         {/* >>>>>>>>>>>>>>>>>>>>>>>>>>>First -3  Cards Ending  ...............*/}
         {/* Images Start */}
         <div className="container-fluid p-0 mt-5">
-          <div className="row m-2">
+          <div className="row">
             <div className="col-md-6">
               <img
                 className=" card-img-top mx-auto img-fluid img-circle d-block"
-                src={require("../../assets/images/indexcover1.jpeg")}
+                src={require("../../assets/images/cover3.jpeg")}
                 alt="avatar"
               />
             </div>
             <div className="col-md-6 text-center">
               <div className="card border border-white bg-white">
                 <div clsssName="card-header border border-white bg-white ">
-                  <h1 className="text-center p-2 display-4">We Write Code</h1>
+                  <h1 className="text-center p-4 display-4 mt-5">
+                    Free Learning Material
+                  </h1>
                 </div>
                 <div className="card-body border border-white bg-white">
-                  <div className="card-title">
-                    Datacode All ok Machis hoti to duniya ko ang laga deta
+                  <div className="card-title text-primary">
+                    <h3>
+                      Datacode Provides you the Best Learning Content of your
+                      faviorate Technologies to Improve your Skills and Make
+                      your Learning Easy and Quicke
+                    </h3>
                   </div>
                   <center>
                     <Link to="/index_interview_questioins">
-                      <button className="btn btn-lg btn-primary m-2">
-                        Getting Start
+                      <button className="btn btn-lg btn-primary mt-5">
+                        Start Learning
                       </button>
                     </Link>
                   </center>
@@ -138,19 +144,25 @@ class MainComponent extends Component {
           </div>
         </div>
         <div className="container-fluid p-0 mt-5">
-          <div className="row m-2">
+          <div className="row">
             <div className="col-md-6 text-center">
               <div className="card border border-white bg-white">
                 <div clsssName="card-header border border-white bg-white ">
-                  <h1 className="text-center p-2 display-4">Start Practice</h1>
+                  <h1 className="text-center p-5 display-4">
+                    Learn From the Best Sources
+                  </h1>
                 </div>
                 <div className="card-body border border-white bg-white">
-                  <div className="card-title">
-                    Datacode All ok Machis hoti to duniya ko ang laga deta
+                  <div className="card-title text-center text-secondary">
+                    <h3>
+                      Datacode Collected the Best Learning Resources for
+                      Beginners to make the track more easy and helps to grow
+                      the technical skills.
+                    </h3>
                   </div>
                   <center>
                     <button className="btn btn-lg btn-warning m-2">
-                      Start Learning
+                      Explore Content
                     </button>
                   </center>
                 </div>
@@ -159,7 +171,7 @@ class MainComponent extends Component {
             <div className="col-md-6">
               <img
                 className=" card-img-top mx-auto img-fluid img-circle d-block"
-                src={require("../../assets/images/indexcover2.jpeg")}
+                src={require("../../assets/images/cover4.jpeg")}
                 alt="avatar"
               />
             </div>
