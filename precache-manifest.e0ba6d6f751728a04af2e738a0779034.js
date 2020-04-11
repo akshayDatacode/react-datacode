@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7880e364f81b3985cab3b777d718b393",
+    "revision": "e5689be46752b4bb3ed75c0856c5ed67",
     "url": "/index.html"
   },
   {
-    "revision": "4dbaaece32e368762d5c",
+    "revision": "347a8ffd8cfb759d6a47",
     "url": "/static/css/2.89f067aa.chunk.css"
   },
   {
-    "revision": "4232ba17b0a4c42585e1",
+    "revision": "5328b0bc5ea1bea869f8",
     "url": "/static/css/main.2749690b.chunk.css"
   },
   {
-    "revision": "4dbaaece32e368762d5c",
-    "url": "/static/js/2.cf5db4c1.chunk.js"
+    "revision": "347a8ffd8cfb759d6a47",
+    "url": "/static/js/2.a83cb835.chunk.js"
   },
   {
     "revision": "ae54f939c6e84f9ec4d4c4cd8100d77f",
-    "url": "/static/js/2.cf5db4c1.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.a83cb835.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4232ba17b0a4c42585e1",
-    "url": "/static/js/main.b0b9cf93.chunk.js"
+    "revision": "5328b0bc5ea1bea869f8",
+    "url": "/static/js/main.a68a4c72.chunk.js"
   },
   {
     "revision": "ba88f149e390315adcbe",
@@ -128,12 +128,32 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/coder1.17a6aab6.jpeg"
   },
   {
+    "revision": "b89de2b679beb0e2b7cbae5f994b7320",
+    "url": "/static/media/cover3.b89de2b6.jpeg"
+  },
+  {
+    "revision": "e72ed110b6b7979b17c4f28e9e166eae",
+    "url": "/static/media/cover4.e72ed110.jpeg"
+  },
+  {
     "revision": "0554f5070f329307ffdd7b06ad1a0781",
     "url": "/static/media/cprogramming_practice_question.0554f507.jpeg"
   },
   {
     "revision": "861c575ce3691f7e346ea90f79e5dc4c",
     "url": "/static/media/css.861c575c.jpeg"
+  },
+  {
+    "revision": "6a3682a9cb2114f8fa21758a82ff9ccc",
+    "url": "/static/media/datacodeheader1.6a3682a9.jpeg"
+  },
+  {
+    "revision": "860e3e16f7f899796c7fbdf9bfb2c5c1",
+    "url": "/static/media/datacodeheader2.860e3e16.jpeg"
+  },
+  {
+    "revision": "30e1351cb52a6a9a41352d8013c3d0ba",
+    "url": "/static/media/datacodeheader3.30e1351c.jpeg"
   },
   {
     "revision": "bd748d1d96be11a3de6252357849bbe4",
@@ -238,6 +258,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3a7c54ac3b52ad0104eb6c8d83228674",
     "url": "/static/media/programming_practices.3a7c54ac.jpeg"
+  },
+  {
+    "revision": "8cbf5fcf0aa73a802e8c906211ee0953",
+    "url": "/static/media/python_learning_blog.8cbf5fcf.jpeg"
   },
   {
     "revision": "3f0b9a3b75585f2f600399fdb2e1509f",

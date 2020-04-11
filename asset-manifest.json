@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.2749690b.chunk.css",
-    "main.js": "/static/js/main.b0b9cf93.chunk.js",
-    "main.js.map": "/static/js/main.b0b9cf93.chunk.js.map",
+    "main.js": "/static/js/main.a68a4c72.chunk.js",
+    "main.js.map": "/static/js/main.a68a4c72.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4a1f94a7.js",
     "runtime-main.js.map": "/static/js/runtime-main.4a1f94a7.js.map",
     "static/css/2.89f067aa.chunk.css": "/static/css/2.89f067aa.chunk.css",
-    "static/js/2.cf5db4c1.chunk.js": "/static/js/2.cf5db4c1.chunk.js",
-    "static/js/2.cf5db4c1.chunk.js.map": "/static/js/2.cf5db4c1.chunk.js.map",
+    "static/js/2.a83cb835.chunk.js": "/static/js/2.a83cb835.chunk.js",
+    "static/js/2.a83cb835.chunk.js.map": "/static/js/2.a83cb835.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.992c3582837af045073ae15f18af7378.js": "/precache-manifest.992c3582837af045073ae15f18af7378.js",
+    "precache-manifest.e0ba6d6f751728a04af2e738a0779034.js": "/precache-manifest.e0ba6d6f751728a04af2e738a0779034.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.89f067aa.chunk.css.map": "/static/css/2.89f067aa.chunk.css.map",
     "static/css/main.2749690b.chunk.css.map": "/static/css/main.2749690b.chunk.css.map",
-    "static/js/2.cf5db4c1.chunk.js.LICENSE.txt": "/static/js/2.cf5db4c1.chunk.js.LICENSE.txt",
+    "static/js/2.a83cb835.chunk.js.LICENSE.txt": "/static/js/2.a83cb835.chunk.js.LICENSE.txt",
     "static/media/Cover Photo (3).png": "/static/media/Cover Photo (3).6bc137af.png",
     "static/media/Green Disease Prevention Instagram Post.png": "/static/media/Green Disease Prevention Instagram Post.ee3b12ec.png",
     "static/media/Shootpy_W Cover Page (1).jpg": "/static/media/Shootpy_W Cover Page (1).39eabcb7.jpg",
@@ -39,8 +39,13 @@
     "static/media/code_challange_1.jpeg": "/static/media/code_challange_1.b66d1f7b.jpeg",
     "static/media/code_challange_2.jpeg": "/static/media/code_challange_2.c2e4bf23.jpeg",
     "static/media/coder1.jpeg": "/static/media/coder1.17a6aab6.jpeg",
+    "static/media/cover3.jpeg": "/static/media/cover3.b89de2b6.jpeg",
+    "static/media/cover4.jpeg": "/static/media/cover4.e72ed110.jpeg",
     "static/media/cprogramming_practice_question.jpeg": "/static/media/cprogramming_practice_question.0554f507.jpeg",
     "static/media/css.jpeg": "/static/media/css.861c575c.jpeg",
+    "static/media/datacodeheader1.jpeg": "/static/media/datacodeheader1.6a3682a9.jpeg",
+    "static/media/datacodeheader2.jpeg": "/static/media/datacodeheader2.860e3e16.jpeg",
+    "static/media/datacodeheader3.jpeg": "/static/media/datacodeheader3.30e1351c.jpeg",
     "static/media/datacodelogo.jpeg": "/static/media/datacodelogo.bd748d1d.jpeg",
     "static/media/datastructure.jpeg": "/static/media/datastructure.3e2d8a95.jpeg",
     "static/media/dbms_interview_question.jpeg": "/static/media/dbms_interview_question.9ba517de.jpeg",
@@ -67,6 +72,7 @@
     "static/media/programming_blog.jpeg": "/static/media/programming_blog.770d5ca0.jpeg",
     "static/media/programming_boooks.jpeg": "/static/media/programming_boooks.f5e5cba6.jpeg",
     "static/media/programming_practices.jpeg": "/static/media/programming_practices.3a7c54ac.jpeg",
+    "static/media/python_learning_blog.jpeg": "/static/media/python_learning_blog.8cbf5fcf.jpeg",
     "static/media/python_mcqs.jpeg": "/static/media/python_mcqs.3f0b9a3b.jpeg",
     "static/media/python_programming.jpeg": "/static/media/python_programming.a0c67178.jpeg",
     "static/media/python_programming_question.jpeg": "/static/media/python_programming_question.9a800e56.jpeg",
@@ -83,8 +89,8 @@
   "entrypoints": [
     "static/js/runtime-main.4a1f94a7.js",
     "static/css/2.89f067aa.chunk.css",
-    "static/js/2.cf5db4c1.chunk.js",
+    "static/js/2.a83cb835.chunk.js",
     "static/css/main.2749690b.chunk.css",
-    "static/js/main.b0b9cf93.chunk.js"
+    "static/js/main.a68a4c72.chunk.js"
   ]
 }
