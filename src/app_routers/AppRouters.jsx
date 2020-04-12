@@ -106,6 +106,11 @@ import OOPs from "../components/main_component/technologies/OOPs";
 
 import IndexProgrammingQuestions from "../components/main_component/posts/programming_questions/IndexProgrammingQuestions";
 import PythonPgramQuestions from "../components/main_component/posts/programming_questions/PythonPgramQuestions";
+import JavaPgramQuestions from "../components/main_component/posts/programming_questions/JavaPgramQuestions";
+import CPgramQuestions from "../components/main_component/posts/programming_questions/CPgramQuestions";
+import JavascriptPgramQuestions from "../components/main_component/posts/programming_questions/JavascriptPgramQuestions";
+import DatastructurePgramQuestions from "../components/main_component/posts/programming_questions/DatastructurePgramQuestions";
+
 // Index Evens
 import IndexEvent from "../components/main_component/events/IndexEvent";
 // index CodeChallange
@@ -362,6 +367,26 @@ class AppRouters extends Component {
             exact
             path="/python_programming_questions"
             component={PythonPgramQuestions}
+          />
+          <Route
+            exact
+            path="/java_programming_questions"
+            component={JavaPgramQuestions}
+          />
+          <Route
+            exact
+            path="/c_programming_questions"
+            component={CPgramQuestions}
+          />
+          <Route
+            exact
+            path="/javascript_programming_questions"
+            component={JavascriptPgramQuestions}
+          />
+          <Route
+            exact
+            path="/datastructure_programming_questions"
+            component={DatastructurePgramQuestions}
           />
 
           {/* Ending Programming Questions  */}
