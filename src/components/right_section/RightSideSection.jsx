@@ -17,8 +17,7 @@ class RightSideSection extends Component {
             <div class="card-body text-center">
               <h5 class="card-title">Datacode Learning Community</h5>
               <p class="card-text">
-                We Love to Code and this is the best way to express our love to
-                Computer Science Wolrd
+                Datacode is a Online Learning Community to find and share the best learning courses and tutorials.
               </p>
             </div>
             <div class="card-footer border border-white bg-white text-center">

@@ -15,9 +15,13 @@ class RoadMapCard extends Component {
             </div>
             <div className="col">
               <h6>{this.props.title}</h6>
-              <div className="badge badge-success">{this.props.tag1}</div>
-              <div className="badge badge-danger">{this.props.tag2}</div>
-              <div className="badge badge-primary">{this.props.tag3}</div>
+
+              <snap className="badge badge-success">{this.props.tag1}</snap>
+              <snap className="ml-2 badge badge-danger">{this.props.tag2}</snap>
+              <snap className="ml-2 badge badge-primary">
+                {this.props.tag3}
+              </snap>
+              <snap className="ml-3 text-secondary">{this.props.source}</snap>
               <div>
                 <a href={this.props.link}>
                   <h6>Start Learning</h6>
