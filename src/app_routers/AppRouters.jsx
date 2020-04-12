@@ -2,13 +2,43 @@ import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
 import MainComponent from "../components/main_component";
 import HomeComponent from "../components/main_component/HomeComponent";
+import AboutUs from "../components/header_component/AboutUs";
+
 // Articles
 import IndexArticles from "../components/main_component/aticles/IndexArticles";
+// Progrmminng blogs
 import ProgrammingLanguagesBlog from "../components/main_component/aticles/programming_article/Programming_Languages_Blog";
-import WebDesignBlog from "../components/main_component/aticles/webdesign_article/WebDesignBlog";
-import MachineLearningBlog from "../components/main_component/aticles/machine_learning_article/MachineLearningBlog";
+import ProgrammingBlog2 from "../components/main_component/aticles/programming_article/ProgrammingBlog2";
+import ProgrammingBlog3 from "../components/main_component/aticles/programming_article/ProgrammingBlog3";
+import ProgrammingBlog4 from "../components/main_component/aticles/programming_article/ProgrammingBlog4";
+import ProgrammingBlog5 from "../components/main_component/aticles/programming_article/ProgrammingBlog5";
+import ProgrammingBlog6 from "../components/main_component/aticles/programming_article/ProgrammingBlog6";
+import ProgrammingBlog7 from "../components/main_component/aticles/programming_article/ProgrammingBlog7";
+import ProgrammingBlog8 from "../components/main_component/aticles/programming_article/ProgrammingBlog8";
+import ProgrammingBlog9 from "../components/main_component/aticles/programming_article/ProgrammingBlog9";
 
-import AboutUs from "../components/header_component/AboutUs";
+// Machine learning Blogs
+import MachineLearningBlog from "../components/main_component/aticles/machine_learning_article/MachineLearningBlog";
+//WebDesign Blog Pagination
+import WebDesignBlog from "../components/main_component/aticles/webdesign_article/WebDesignBlog";
+import WebDesignBlog2 from "../components/main_component/aticles/webdesign_article/WebDesignBlog2";
+import WebDesignBlog3 from "../components/main_component/aticles/webdesign_article/WebDesignBlog3";
+import WebDesignBlog4 from "../components/main_component/aticles/webdesign_article/WebDesignBlog4";
+import WebDesignBlog5 from "../components/main_component/aticles/webdesign_article/WebDesignBlog5";
+import WebDesignBlog6 from "../components/main_component/aticles/webdesign_article/WebDesignBlog6";
+import WebDesignBlog7 from "../components/main_component/aticles/webdesign_article/WebDesignBlog7";
+
+// Documentation Blogs
+import DocumentationBlog from "../components/main_component/aticles/documentation/DocumentationBlog";
+import DocumentationBlog2 from "../components/main_component/aticles/documentation/DocumentationBlog2";
+import DocumentationBlog3 from "../components/main_component/aticles/documentation/DocumentationBlog3";
+import DocumentationBlog4 from "../components/main_component/aticles/documentation/DocumentationBlog4";
+
+// DBMS Blogs
+import DBMSBlog from "../components/main_component/aticles/dbms_article/DBMSBlog";
+import DBMSBlog2 from "../components/main_component/aticles/dbms_article/DBMSBlog2";
+import DBMSBlog3 from "../components/main_component/aticles/dbms_article/DBMSBlog3";
+
 // Interview Routinig
 import IndexInterviewQuestions from "../components/main_component/posts/technical_interview_questions/IndexInterviewQuestions";
 import DBMSInterviewQuestions from "../components/main_component/posts/technical_interview_questions/DBMSInterviewQuestions";
@@ -136,11 +166,39 @@ class AppRouters extends Component {
           {/* Starting Articles */}
           <Route path="/index_articles" component={IndexArticles} />
           <Route path="/prog_lan_blog" component={ProgrammingLanguagesBlog} />
+          <Route path="/prog_lan_blog2" component={ProgrammingBlog2} />
+          <Route path="/prog_lan_blog3" component={ProgrammingBlog3} />
+          <Route path="/prog_lan_blog4" component={ProgrammingBlog4} />
+          <Route path="/prog_lan_blog5" component={ProgrammingBlog5} />
+          <Route path="/prog_lan_blog6" component={ProgrammingBlog6} />
+          <Route path="/prog_lan_blog7" component={ProgrammingBlog7} />
+          <Route path="/prog_lan_blog8" component={ProgrammingBlog8} />
+          <Route path="/prog_lan_blog9" component={ProgrammingBlog9} />
+          {/* Web Blog */}
           <Route path="/webdesign_blog" component={WebDesignBlog} />
+          <Route path="/webdesign_blog2" component={WebDesignBlog2} />
+          <Route path="/webdesign_blog3" component={WebDesignBlog3} />
+          <Route path="/webdesign_blog4" component={WebDesignBlog4} />
+          <Route path="/webdesign_blog5" component={WebDesignBlog5} />
+          <Route path="/webdesign_blog6" component={WebDesignBlog6} />
+          <Route path="/webdesign_blog7" component={WebDesignBlog7} />
+
+          {/*Machine BLogs  */}
           <Route
             path="/machine_learning_blog"
             component={MachineLearningBlog}
           />
+
+          {/* DBMS Blogs */}
+          <Route path="/dbms_blog" component={DBMSBlog} />
+          <Route path="/dbms_blog2" component={DBMSBlog2} />
+          <Route path="/dbms_blog3" component={DBMSBlog3} />
+
+          {/* Documentation Blog */}
+          <Route path="/documentation_blog" component={DocumentationBlog} />
+          <Route path="/documentation_blog2" component={DocumentationBlog2} />
+          <Route path="/documentation_blog3" component={DocumentationBlog3} />
+          <Route path="/documentation_blog4" component={DocumentationBlog4} />
 
           {/* Ending Article */}
 

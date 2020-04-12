@@ -6,7 +6,7 @@ import ArticlePostCard from "../ArticlePostCard";
 
 import { Link } from "react-router-dom";
 
-class WebDesignBlog extends Component {
+class ProgrammingLanguagesBlog extends Component {
   state = {};
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -52,45 +52,13 @@ class WebDesignBlog extends Component {
                     link="https://www.webfx.com/blog/web-design/how-fast-should-my-website-be/"
                   />
                 </div>
-                <div className="card-deck m-2">
-                  <ArticlePostCard
-                    imgsource="js.jpeg"
-                    tag1="color"
-                    tag2="website"
-                    title="7 Color Palette Generators that Will Make Your Brand Pop"
-                    paragraph="As of January 2019, there were over 1 billion websites in the world (and counting!). In this veritable landslide of code,"
-                    link="https://webresourcesdepot.com/color-palette-generators-that-will-make-your-brand-pop/"
-                  />
-                  <ArticlePostCard
-                    imgsource="js.jpeg"
-                    tag1="Video"
-                    tag2="CSS"
-                    title="Tinkering with Video on Mobile"
-                    paragraph="Of course, you can just chuck video on YouTube or whatever and get good video handling for nothing. But YouTube isn’t always right "
-                    link="https://css-tricks.com/180-tinkering-with-video-on-mobile/"
-                  />
-                  <ArticlePostCard
-                    imgsource="js.jpeg"
-                    tag1="HTML"
-                    tag2="CSS"
-                    tag3="javascript"
-                    title="Web Design 101: How HTML, CSS, and JavaScript Work"
-                    paragraph="To someone who's never coded before, the concept of creating a website from scratch -- layout, design, and all -- can seem really intimidating."
-                    link="https://blog.hubspot.com/marketing/web-design-html-css-javascript"
-                  />
-                </div>
               </div>
               <div className="row justify-content-center mt-3">
                 <nav>
                   <ul class="pagination justify-content-center">
-                    <li class="page-item active">
-                      <Link class="page-link" to="/webdesign_blog">
-                        1
-                      </Link>
-                    </li>
-                    <li class="page-item ">
-                      <Link class="page-link" to="/webdesign_blog2">
-                        2
+                    <li class="page-item">
+                      <Link class="page-link" to="/webdesign_blog4">
+                        Prev
                       </Link>
                     </li>
                     <li class="page-item">
@@ -98,18 +66,28 @@ class WebDesignBlog extends Component {
                         3
                       </Link>
                     </li>
-                    <li class="page-item">
+                    <li class="page-item ">
                       <Link class="page-link" to="/webdesign_blog4">
                         4
                       </Link>
                     </li>
-                    <li class="page-item">
+                    <li class="page-item active">
                       <Link class="page-link" to="/webdesign_blog5">
                         5
                       </Link>
                     </li>
+                    <li class="page-item ">
+                      <Link class="page-link" to="/webdesign_blog6">
+                        6
+                      </Link>
+                    </li>
+                    <li class="page-item ">
+                      <Link class="page-link" to="/webdesign_blog7">
+                        7
+                      </Link>
+                    </li>
                     <li class="page-item">
-                      <Link class="page-link" to="/webdesign_blog2">
+                      <Link class="page-link" to="/webdesign_blog6">
                         Next
                       </Link>
                     </li>
@@ -128,4 +106,4 @@ class WebDesignBlog extends Component {
   }
 }
 
-export default WebDesignBlog;
+export default ProgrammingLanguagesBlog;

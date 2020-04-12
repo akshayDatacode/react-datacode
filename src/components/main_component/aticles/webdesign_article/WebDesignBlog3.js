@@ -6,7 +6,7 @@ import ArticlePostCard from "../ArticlePostCard";
 
 import { Link } from "react-router-dom";
 
-class WebDesignBlog extends Component {
+class WebDesignBlog3 extends Component {
   state = {};
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -29,61 +29,65 @@ class WebDesignBlog extends Component {
                 <div className="card-deck m-2">
                   <ArticlePostCard
                     imgsource="js.jpeg"
-                    tag1="Node js"
-                    tag2="api"
-                    title="How to Use SSL/TLS with Node.js"
-                    paragraph="In 2020, there’s no reason for your website not to use HTTPS. Visitors expect it, Google uses it as a ranking factor and browser makers will happily name and shame those sites not using it."
-                    link="https://www.sitepoint.com/how-to-use-ssltls-with-node-js/"
+                    tag1="React"
+                    tag2="folder"
+                    title="React Folder Structure in 5 Steps"
+                    paragraph="How to structure large React apps into folders and files is a highly opinionated topic. I struggled for a while writing about this subject,"
+                    link="https://www.robinwieruch.de/react-folder-structure"
                   />
                   <ArticlePostCard
                     imgsource="js.jpeg"
-                    tag1="javasript"
-                    tag2="nodejs"
-                    title="Five Ways to Lazy Load Images for Better Website Performance"
-                    paragraph="With images being among the most popular type of content on the web, page load time on websites can easily become an issue."
-                    link="https://www.sitepoint.com/five-techniques-lazy-load-images-website-performance/?utm_source=rss"
+                    tag1="express.js"
+                    tag2="node.js"
+                    title="How to setup Express.js in Node.js"
+                    paragraph="Express.js is the most popular choice when it comes to building web applications with Node.js. "
+                    link="robinwieruch.de/node-js-express-tutorial"
                   />
                   <ArticlePostCard
                     imgsource="js.jpeg"
-                    tag1="website"
-                    tag2="html"
-                    title="How Fast Should My Website Be? [+7 Tips for Speeding Up Your Site]"
-                    paragraph="Did you know that for every second faster your website loads, you increase conversions by 7%?"
-                    link="https://www.webfx.com/blog/web-design/how-fast-should-my-website-be/"
+                    tag1="firebase"
+                    tag2="react"
+                    title="A Firebase in React Tutorial for Beginners [2019]"
+                    paragraph="This comprehensive tutorial walks you through a real-world application using React and Firebase. React is used to display applications"
+                    link="https://www.robinwieruch.de/complete-firebase-authentication-react-tutorial"
                   />
                 </div>
                 <div className="card-deck m-2">
                   <ArticlePostCard
                     imgsource="js.jpeg"
-                    tag1="color"
-                    tag2="website"
-                    title="7 Color Palette Generators that Will Make Your Brand Pop"
-                    paragraph="As of January 2019, there were over 1 billion websites in the world (and counting!). In this veritable landslide of code,"
-                    link="https://webresourcesdepot.com/color-palette-generators-that-will-make-your-brand-pop/"
+                    tag1="fundamentals"
+                    tag2="react"
+                    title="The Road to React [Book 2020]"
+                    paragraph="The Road to React teaches the fundamentals of React. You will build a real-world application in plain React without complicated tooling. "
+                    link="https://www.robinwieruch.de/the-road-to-learn-react"
                   />
                   <ArticlePostCard
                     imgsource="js.jpeg"
-                    tag1="Video"
-                    tag2="CSS"
-                    title="Tinkering with Video on Mobile"
-                    paragraph="Of course, you can just chuck video on YouTube or whatever and get good video handling for nothing. But YouTube isn’t always right "
-                    link="https://css-tricks.com/180-tinkering-with-video-on-mobile/"
+                    tag1="wordpress"
+                    tag2="blogs"
+                    title="How to Start a WordPress Blog the RIGHT WAY in 7 Easy Steps (2020)"
+                    paragraph="Do you want to start a WordPress blog the right way? We know that starting a blog can be a terrifying thought specially when you are not geeky."
+                    link="https://www.wpbeginner.com/start-a-wordpress-blog/"
                   />
                   <ArticlePostCard
                     imgsource="js.jpeg"
-                    tag1="HTML"
-                    tag2="CSS"
-                    tag3="javascript"
-                    title="Web Design 101: How HTML, CSS, and JavaScript Work"
-                    paragraph="To someone who's never coded before, the concept of creating a website from scratch -- layout, design, and all -- can seem really intimidating."
-                    link="https://blog.hubspot.com/marketing/web-design-html-css-javascript"
+                    tag1="wordpress"
+                    tag2="issues"
+                    title="How to Fix Common Image Issues in WordPress"
+                    paragraph="WordPress comes with some pretty neat tools to manage and edit images. You can easily upload images, align them, and even edit them inside WordPress."
+                    link="https://www.wpbeginner.com/beginners-guide/how-to-fix-common-image-issues-in-wordpress/"
                   />
                 </div>
               </div>
               <div className="row justify-content-center mt-3">
                 <nav>
                   <ul class="pagination justify-content-center">
-                    <li class="page-item active">
+                    <li class="page-item ">
+                      <Link class="page-link" to="/webdesign_blog2">
+                        Prev
+                      </Link>
+                    </li>
+                    <li class="page-item ">
                       <Link class="page-link" to="/webdesign_blog">
                         1
                       </Link>
@@ -93,7 +97,7 @@ class WebDesignBlog extends Component {
                         2
                       </Link>
                     </li>
-                    <li class="page-item">
+                    <li class="page-item active">
                       <Link class="page-link" to="/webdesign_blog3">
                         3
                       </Link>
@@ -109,7 +113,7 @@ class WebDesignBlog extends Component {
                       </Link>
                     </li>
                     <li class="page-item">
-                      <Link class="page-link" to="/webdesign_blog2">
+                      <Link class="page-link" to="/webdesign_blog4">
                         Next
                       </Link>
                     </li>
@@ -128,4 +132,4 @@ class WebDesignBlog extends Component {
   }
 }
 
-export default WebDesignBlog;
+export default WebDesignBlog3;

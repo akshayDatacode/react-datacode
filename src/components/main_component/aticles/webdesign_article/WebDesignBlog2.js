@@ -6,7 +6,7 @@ import ArticlePostCard from "../ArticlePostCard";
 
 import { Link } from "react-router-dom";
 
-class WebDesignBlog extends Component {
+class ProgrammingLanguagesBlog extends Component {
   state = {};
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -29,71 +29,75 @@ class WebDesignBlog extends Component {
                 <div className="card-deck m-2">
                   <ArticlePostCard
                     imgsource="js.jpeg"
-                    tag1="Node js"
-                    tag2="api"
-                    title="How to Use SSL/TLS with Node.js"
-                    paragraph="In 2020, there’s no reason for your website not to use HTTPS. Visitors expect it, Google uses it as a ranking factor and browser makers will happily name and shame those sites not using it."
-                    link="https://www.sitepoint.com/how-to-use-ssltls-with-node-js/"
+                    tag1="React"
+                    tag2="Reactjs"
+                    title="A Quick Tour Through a React Component Lifecycle"
+                    paragraph="When a component is created in React, a very intricate lifecycle is created as well. But not to worry! "
+                    link="https://levelup.gitconnected.com/a-quick-tour-through-a-react-component-lifecycle-ff3610bb97b9"
                   />
                   <ArticlePostCard
                     imgsource="js.jpeg"
-                    tag1="javasript"
-                    tag2="nodejs"
-                    title="Five Ways to Lazy Load Images for Better Website Performance"
-                    paragraph="With images being among the most popular type of content on the web, page load time on websites can easily become an issue."
-                    link="https://www.sitepoint.com/five-techniques-lazy-load-images-website-performance/?utm_source=rss"
+                    tag1="Javascript"
+                    tag2="functions"
+                    title="JavaScript Best Practices — Declarations and Functions"
+                    paragraph="Javascript is a very forgiving language. its's easy to write code that runs but has mistakes in it. "
+                    link="https://medium.com/@hohanga/javascript-best-practices-declarations-and-functions-a690689c106e"
                   />
                   <ArticlePostCard
                     imgsource="js.jpeg"
-                    tag1="website"
-                    tag2="html"
-                    title="How Fast Should My Website Be? [+7 Tips for Speeding Up Your Site]"
-                    paragraph="Did you know that for every second faster your website loads, you increase conversions by 7%?"
-                    link="https://www.webfx.com/blog/web-design/how-fast-should-my-website-be/"
+                    tag1="graphics"
+                    tag2="design"
+                    title="Goodbye, Clean Code"
+                    paragraph="But it was repetitive. Each shape (such as a rectangle or an oval) had a different set of handles, and dragging each handle in different directions affected the shape’"
+                    link="https://overreacted.io/goodbye-clean-code/"
                   />
                 </div>
                 <div className="card-deck m-2">
                   <ArticlePostCard
                     imgsource="js.jpeg"
-                    tag1="color"
-                    tag2="website"
-                    title="7 Color Palette Generators that Will Make Your Brand Pop"
-                    paragraph="As of January 2019, there were over 1 billion websites in the world (and counting!). In this veritable landslide of code,"
-                    link="https://webresourcesdepot.com/color-palette-generators-that-will-make-your-brand-pop/"
+                    tag1="javascript"
+                    tag2="interview"
+                    title="What Is JavaScript Made Of?"
+                    paragraph="Even though I could build websites with frameworks, something was missing. I dreaded JavaScript job interviews"
+                    link="https://overreacted.io/what-is-javascript-made-of/"
                   />
                   <ArticlePostCard
                     imgsource="js.jpeg"
-                    tag1="Video"
-                    tag2="CSS"
-                    title="Tinkering with Video on Mobile"
-                    paragraph="Of course, you can just chuck video on YouTube or whatever and get good video handling for nothing. But YouTube isn’t always right "
-                    link="https://css-tricks.com/180-tinkering-with-video-on-mobile/"
+                    tag1="react"
+                    tag2="hooks"
+                    title="State Management in Pure React with Hooks: useEffect"
+                    paragraph="Hooks are the new features added to the React API. They let you use state and other React features in the functional component."
+                    link="https://dev.to/bipinrajbhar/state-management-in-pure-react-with-hooks-useeffect-5bn6"
                   />
                   <ArticlePostCard
                     imgsource="js.jpeg"
-                    tag1="HTML"
-                    tag2="CSS"
-                    tag3="javascript"
-                    title="Web Design 101: How HTML, CSS, and JavaScript Work"
-                    paragraph="To someone who's never coded before, the concept of creating a website from scratch -- layout, design, and all -- can seem really intimidating."
-                    link="https://blog.hubspot.com/marketing/web-design-html-css-javascript"
+                    tag1="devtool"
+                    tag2="webdesign"
+                    title="9 ways to level up your browser devtool skills"
+                    paragraph="This is a list of amazing things that browsers can help you with while developing web applications."
+                    link="https://dev.to/sendilkumarn/level-up-your-browser-skills-8gh"
                   />
                 </div>
               </div>
               <div className="row justify-content-center mt-3">
                 <nav>
                   <ul class="pagination justify-content-center">
-                    <li class="page-item active">
+                    <li class="page-item ">
+                      <Link class="page-link" to="/webdesign_blog">
+                        Prev
+                      </Link>
+                    </li>
+                    <li class="page-item">
                       <Link class="page-link" to="/webdesign_blog">
                         1
                       </Link>
                     </li>
-                    <li class="page-item ">
+                    <li class="page-item active">
                       <Link class="page-link" to="/webdesign_blog2">
                         2
                       </Link>
                     </li>
-                    <li class="page-item">
+                    <li class="page-item ">
                       <Link class="page-link" to="/webdesign_blog3">
                         3
                       </Link>
@@ -109,7 +113,7 @@ class WebDesignBlog extends Component {
                       </Link>
                     </li>
                     <li class="page-item">
-                      <Link class="page-link" to="/webdesign_blog2">
+                      <Link class="page-link" to="/webdesign_blog3">
                         Next
                       </Link>
                     </li>
@@ -128,4 +132,4 @@ class WebDesignBlog extends Component {
   }
 }
 
-export default WebDesignBlog;
+export default ProgrammingLanguagesBlog;
