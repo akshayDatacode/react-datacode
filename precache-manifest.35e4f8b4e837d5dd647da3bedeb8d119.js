@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5c61ba826845be1e38f4264d81003f91",
+    "revision": "2c2e873279453bdb775f6c677b95c94c",
     "url": "/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.89f067aa.chunk.css"
   },
   {
-    "revision": "154d328e9c38c8b8bad4",
+    "revision": "75948b76a4e7e933b14d",
     "url": "/static/css/main.2749690b.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.b4130667.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "154d328e9c38c8b8bad4",
-    "url": "/static/js/main.c2c29285.chunk.js"
+    "revision": "75948b76a4e7e933b14d",
+    "url": "/static/js/main.038bbc1a.chunk.js"
   },
   {
     "revision": "ba88f149e390315adcbe",
@@ -46,10 +46,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f35cdf18c60ba4221ee981250abe4bae",
     "url": "/static/media/WhatsApp Image 2020-04-05 at 12.30.38 PM (14).f35cdf18.jpeg"
-  },
-  {
-    "revision": "415ca3dce83baae0180929c026fcb1b9",
-    "url": "/static/media/WhatsApp Image 2020-04-05 at 12.30.38 PM (15).415ca3dc.jpeg"
   },
   {
     "revision": "00f9bad2dfeb7f396a6c17cb0a7d775d",
@@ -258,6 +254,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3a7c54ac3b52ad0104eb6c8d83228674",
     "url": "/static/media/programming_practices.3a7c54ac.jpeg"
+  },
+  {
+    "revision": "415ca3dce83baae0180929c026fcb1b9",
+    "url": "/static/media/python_interview_question.415ca3dc.jpeg"
   },
   {
     "revision": "8cbf5fcf0aa73a802e8c906211ee0953",
