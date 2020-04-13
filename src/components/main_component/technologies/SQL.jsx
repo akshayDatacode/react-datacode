@@ -212,15 +212,34 @@ class SQL extends Component {
             </h2>
             <RecommendPost
               imgsource="python_mcqs.jpeg"
-              RecPostHading="Python MCQs Questions"
-              link="/index_python_mcqs"
+              RecPostHading="SQL MCQs"
+              link="/index_mcqs"
             />
             <RecommendPost
-              imgsource="python_mcqs.jpeg"
-              RecPostHading="Python MCQs Questions"
-              link="/index_python_mcqs"
+              imgsource="python_interview_question.jpeg"
+              RecPostHading="SQL Interview Questions"
+              link="/sql_interview_question"
             />
-            <RightSideSection />
+            <RecommendPost
+              imgsource="python_programming_question.jpeg"
+              RecPostHading="SQL Programming Questions"
+              link="/index_programming_questions"
+            />
+            <RecommendPost
+              imgsource="python_programming_question.jpeg"
+              RecPostHading="SQL Quize Test"
+              link="/index_quize_tests"
+            />
+            <RecommendPost
+              imgsource="python_learning_blog.jpeg"
+              RecPostHading="SQL Programming Blogs"
+              link="/dbms_blog"
+            />
+            <RecommendPost
+              imgsource="code_challange.jpeg"
+              RecPostHading="Weekly Code Challanges"
+              link="/index_code_challange"
+            />
           </div>
         </div>
       </>
