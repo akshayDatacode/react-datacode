@@ -154,7 +154,7 @@ class Python extends Component {
             </h3>
             <RecommendPost
               imgsource="python_mcqs.jpeg"
-              RecPostHading="Python MCQs Questions"
+              RecPostHading="Python MCQs"
               link="/index_python_mcqs"
             />
             <RecommendPost
