@@ -202,13 +202,33 @@ class HTML extends Component {
             </h2>
             <RecommendPost
               imgsource="python_mcqs.jpeg"
-              RecPostHading="Python MCQs Questions"
-              link="/index_python_mcqs"
+              RecPostHading="HTML MCQs"
+              link="/index_html_mcqs"
             />
             <RecommendPost
-              imgsource="python_mcqs.jpeg"
-              RecPostHading="Python MCQs Questions"
-              link="/index_python_mcqs"
+              imgsource="python_interview_question.jpeg"
+              RecPostHading="HTML Interview Questions"
+              link="/python_interview_question"
+            />
+            <RecommendPost
+              imgsource="python_programming_question.jpeg"
+              RecPostHading="HTML Programming Questions"
+              link="/python_programming_questions"
+            />
+            <RecommendPost
+              imgsource="python_programming_question.jpeg"
+              RecPostHading="Python Quize Test"
+              link="/python_quize_tests"
+            />
+            <RecommendPost
+              imgsource="python_learning_blog.jpeg"
+              RecPostHading="HTML Programming Blogs"
+              link="/webdesign_blog"
+            />
+            <RecommendPost
+              imgsource="code_challange.jpeg"
+              RecPostHading="Weekly Code Challanges"
+              link="/index_code_challange"
             />
             <RightSideSection />
           </div>
