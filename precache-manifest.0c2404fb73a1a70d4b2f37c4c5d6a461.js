@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7daeba5587c3460b8cdd684ede09bfdf",
+    "revision": "e965ab4238660785f8f1f2732de0180a",
     "url": "/index.html"
   },
   {
-    "revision": "51478a9ab8591ed54f0a",
+    "revision": "edd4193ddc505ffdfd2b",
     "url": "/static/css/2.89f067aa.chunk.css"
   },
   {
-    "revision": "b39327ac3b70a4353c7b",
+    "revision": "fed2f618dcad78a4f399",
     "url": "/static/css/main.2749690b.chunk.css"
   },
   {
-    "revision": "51478a9ab8591ed54f0a",
-    "url": "/static/js/2.b4130667.chunk.js"
+    "revision": "edd4193ddc505ffdfd2b",
+    "url": "/static/js/2.a0de28a9.chunk.js"
   },
   {
     "revision": "ae54f939c6e84f9ec4d4c4cd8100d77f",
-    "url": "/static/js/2.b4130667.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.a0de28a9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b39327ac3b70a4353c7b",
-    "url": "/static/js/main.8b663ba2.chunk.js"
+    "revision": "fed2f618dcad78a4f399",
+    "url": "/static/js/main.6793bc8b.chunk.js"
   },
   {
     "revision": "ba88f149e390315adcbe",
@@ -38,18 +38,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "39eabcb71339d36994fb545af35d2c9c",
     "url": "/static/media/Shootpy_W Cover Page (1).39eabcb7.jpg"
-  },
-  {
-    "revision": "4abb558df96f01ecff8996a741c3a0f0",
-    "url": "/static/media/WhatsApp Image 2020-04-05 at 12.30.38 PM (13).4abb558d.jpeg"
-  },
-  {
-    "revision": "f35cdf18c60ba4221ee981250abe4bae",
-    "url": "/static/media/WhatsApp Image 2020-04-05 at 12.30.38 PM (14).f35cdf18.jpeg"
-  },
-  {
-    "revision": "00f9bad2dfeb7f396a6c17cb0a7d775d",
-    "url": "/static/media/WhatsApp Image 2020-04-05 at 12.30.38 PM (16).00f9bad2.jpeg"
   },
   {
     "revision": "3f0b9a3b75585f2f600399fdb2e1509f",
@@ -98,6 +86,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8b88ce41d2028e8c2467e9e58362ed40",
     "url": "/static/media/blog.8b88ce41.jpeg"
+  },
+  {
+    "revision": "4abb558df96f01ecff8996a741c3a0f0",
+    "url": "/static/media/c_interview_question.4abb558d.jpeg"
   },
   {
     "revision": "d172a81333d8fd7c1a7c207bb0b11343",
@@ -160,6 +152,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/datastructure.3e2d8a95.jpeg"
   },
   {
+    "revision": "00f9bad2dfeb7f396a6c17cb0a7d775d",
+    "url": "/static/media/datastructure_interview_question.00f9bad2.jpeg"
+  },
+  {
     "revision": "9ba517de405f4dba9c4c5e985915754d",
     "url": "/static/media/dbms_interview_question.9ba517de.jpeg"
   },
@@ -214,6 +210,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d657c63ccf22fa6c5b96a727d73d6f29",
     "url": "/static/media/indexcover2.d657c63c.jpeg"
+  },
+  {
+    "revision": "f35cdf18c60ba4221ee981250abe4bae",
+    "url": "/static/media/java_interview_question.f35cdf18.jpeg"
   },
   {
     "revision": "419fda51f47bb1c1e79badee223839e3",
