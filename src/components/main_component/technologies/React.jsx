@@ -204,13 +204,33 @@ class ReactJS extends Component {
             </h2>
             <RecommendPost
               imgsource="python_mcqs.jpeg"
-              RecPostHading="Python MCQs Questions"
-              link="/index_python_mcqs"
+              RecPostHading="React MCQs"
+              link="/index_react_mcqs"
             />
             <RecommendPost
-              imgsource="python_mcqs.jpeg"
-              RecPostHading="Python MCQs Questions"
-              link="/index_python_mcqs"
+              imgsource="python_interview_question.jpeg"
+              RecPostHading="React Interview Questions"
+              link="/index_interview_questioins"
+            />
+            <RecommendPost
+              imgsource="python_programming_question.jpeg"
+              RecPostHading="React Programming Questions"
+              link="/index_programming_questions"
+            />
+            <RecommendPost
+              imgsource="python_programming_question.jpeg"
+              RecPostHading="React Quize Test"
+              link="/index_quize_tests"
+            />
+            <RecommendPost
+              imgsource="python_learning_blog.jpeg"
+              RecPostHading="React Programming Blogs"
+              link="/webdesign_blog"
+            />
+            <RecommendPost
+              imgsource="code_challange.jpeg"
+              RecPostHading="Weekly Code Challanges"
+              link="/index_code_challange"
             />
             <RightSideSection />
           </div>
