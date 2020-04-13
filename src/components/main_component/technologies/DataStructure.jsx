@@ -193,19 +193,39 @@ class DataStructure extends Component {
             />
           </div>
           <div className="col-md-4 mt-md-5 ">
-            <h2 className="text-center text-secondary mt-2 mb-3">
+            <h3 className="text-center text-secondary mt-2 mb-3">
               <FontAwesomeIcon icon={faBook} size="1x" className="mr-2" />
               DataStructure Learning
-            </h2>
+            </h3>
             <RecommendPost
               imgsource="python_mcqs.jpeg"
-              RecPostHading=" MCQs Questions"
+              RecPostHading="DataStructure MCQs"
               link="/index_python_mcqs"
             />
             <RecommendPost
-              imgsource="python_mcqs.jpeg"
-              RecPostHading="Python MCQs Questions"
-              link="/index_python_mcqs"
+              imgsource="python_interview_question.jpeg"
+              RecPostHading="Datastructure Interview Questions"
+              link="/datastructre_interview_question"
+            />
+            <RecommendPost
+              imgsource="python_programming_question.jpeg"
+              RecPostHading=" Datastructure Programming Questions"
+              link="/datastructure_programming_questions"
+            />
+            <RecommendPost
+              imgsource="python_programming_question.jpeg"
+              RecPostHading="Datastructure Quize Test"
+              link="/python_quize_tests"
+            />
+            <RecommendPost
+              imgsource="python_learning_blog.jpeg"
+              RecPostHading="Datastructure Blogs"
+              link="/prog_lan_blog"
+            />
+            <RecommendPost
+              imgsource="code_challange.jpeg"
+              RecPostHading="Weekly Code Challanges"
+              link="/index_code_challange"
             />
             <RightSideSection />
           </div>
