@@ -131,6 +131,9 @@ import HTML from "../components/main_component/technologies/HTML";
 import DBMS from "../components/main_component/technologies/DBMS";
 import SQL from "../components/main_component/technologies/SQL";
 import OOPs from "../components/main_component/technologies/OOPs";
+import Angular from "../components/main_component/technologies/Angular";
+import ReactJS from "../components/main_component/technologies/React";
+import Android from "../components/main_component/technologies/Android";
 
 // Index Programming Questions
 
@@ -413,6 +416,9 @@ class AppRouters extends Component {
           <Route exact path="/dbms" component={DBMS} />
           <Route exact path="/sql" component={SQL} />
           <Route exact path="/oops" component={OOPs} />
+          <Route exact path="/angular" component={Angular} />
+          <Route exact path="/react" component={ReactJS} />
+          <Route exact path="/android" component={Android} />
           {/* Ending Technologies */}
 
           {/* Starting Programming Questions */}

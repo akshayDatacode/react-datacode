@@ -12,6 +12,15 @@ import {
   faAddressCard,
   faClipboardList,
   faNewspaper,
+  faTools,
+  faLaptopCode,
+  faUserAstronaut,
+  faUserTie,
+  faUsersCog,
+  faFileCode,
+  faCheckCircle,
+  faPills,
+  faThList,
 } from "@fortawesome/free-solid-svg-icons";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
@@ -48,20 +57,29 @@ class HeaderComponent extends Component {
 
               <NavDropdown title="Learning" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="/react-datacode/#/index_technologies">
+                  <FontAwesomeIcon icon={faTools} className="mr-2" />
                   Technologies
                 </NavDropdown.Item>
-
+                <NavDropdown.Item href="/react-datacode/#/index_mcqs">
+                  <FontAwesomeIcon icon={faThList} className="mr-2" />
+                  Programming MCQs
+                </NavDropdown.Item>
                 <NavDropdown.Item href="/react-datacode/#/index_code_challange">
+                  <FontAwesomeIcon icon={faLaptopCode} className="mr-2" />
                   Code Challange
                 </NavDropdown.Item>
 
                 <NavDropdown.Item href="/react-datacode/#/index_interview_questioins">
+                  <FontAwesomeIcon icon={faUserTie} className="mr-2" />
                   Placment Preparation
                 </NavDropdown.Item>
-
-                <NavDropdown.Divider />
                 <NavDropdown.Item href="/react-datacode/#/index_quize_tests">
+                  <FontAwesomeIcon icon={faUsersCog} className="mr-2" />
                   Programming Tests
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/react-datacode/#/index_programming_questions">
+                  <FontAwesomeIcon icon={faFileCode} className="mr-2" />
+                  Programming Questions
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link href="/react-datacode/#/index_events">

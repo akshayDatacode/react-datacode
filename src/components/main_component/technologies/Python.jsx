@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import RightSideSection from "../../right_section/RightSideSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faBookDead, faBook } from "@fortawesome/free-solid-svg-icons";
 import PostCard from "../PostCard";
 import RecommendPost from "../../right_section/RecommendPost";
 import RoadMapCard from "./RoadMapCard";
@@ -149,6 +149,7 @@ class Python extends Component {
           </div>
           <div className="col-md-4 mt-md-5 ">
             <h3 className="text-center text-secondary mt-2 mb-3">
+              <FontAwesomeIcon icon={faBook} size="1x" className="mr-2" />
               Python Learning
             </h3>
             <RecommendPost
@@ -165,6 +166,21 @@ class Python extends Component {
               imgsource="python_programming_question.jpeg"
               RecPostHading="Python Programming Questions"
               link="/python_programming_questions"
+            />
+            <RecommendPost
+              imgsource="python_programming_question.jpeg"
+              RecPostHading="Python Quize Test"
+              link="/python_quize_tests"
+            />
+            <RecommendPost
+              imgsource="python_learning_blog.jpeg"
+              RecPostHading="Python Programming Blogs"
+              link="/prog_lan_blog"
+            />
+            <RecommendPost
+              imgsource="code_challange.jpeg"
+              RecPostHading="Weekly Code Challanges"
+              link="/index_code_challange"
             />
             <RightSideSection />
           </div>

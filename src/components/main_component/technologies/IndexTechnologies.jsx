@@ -87,7 +87,7 @@ class IndexTechnologies extends Component {
                 </Link>
               </div>
               <div className="card text-center p-2">
-                <Link to="/python">
+                <Link to="/dbms">
                   <center>
                     <FontAwesomeIcon icon={faDatabase} size="4x" />
                   </center>
@@ -121,7 +121,7 @@ class IndexTechnologies extends Component {
                 </Link>
               </div>
               <div className="card text-center p-2">
-                <Link to="/python">
+                <Link to="/css">
                   <center>
                     <FontAwesomeIcon icon={faCss3} size="4x" />
                   </center>
@@ -155,7 +155,7 @@ class IndexTechnologies extends Component {
                 </Link>
               </div>
               <div className="card text-center p-2">
-                <Link to="/python">
+                <Link to="/angular">
                   <center>
                     <FontAwesomeIcon icon={faAngular} size="4x" />
                   </center>
@@ -163,7 +163,7 @@ class IndexTechnologies extends Component {
                 </Link>
               </div>
               <div className="card text-center p-2">
-                <Link to="java">
+                <Link to="/react">
                   <center>
                     <FontAwesomeIcon icon={faReact} size="4x" />
                   </center>
@@ -197,7 +197,7 @@ class IndexTechnologies extends Component {
                 </Link>
               </div>
               <div className="card text-center p-2">
-                <Link to="java">
+                <Link to="/android">
                   <center>
                     <FontAwesomeIcon icon={faAndroid} size="4x" />
                   </center>

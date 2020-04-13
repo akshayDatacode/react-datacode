@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import RightSideSection from "../../right_section/RightSideSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faBook } from "@fortawesome/free-solid-svg-icons";
 import PostCard from "../PostCard";
 import RecommendPost from "../../right_section/RecommendPost";
 import RoadMapCard from "./RoadMapCard";
@@ -18,7 +18,9 @@ class JS extends Component {
         <div className="row">
           <div className="col-1"></div>
           <div className="col-md-7 mt-4">
-            <h1 className="text-center mb-4 display-4">JS Learning RoaMap</h1>
+            <h1 className="text-center mb-4 display-5">
+              Find the Best JavaScript Programming Courses & Tutorials
+            </h1>
             <Link to="/home" className="badge badge-primary mr-1">
               <FontAwesomeIcon icon={faHome} size="2x" />
             </Link>
@@ -33,21 +35,21 @@ class JS extends Component {
               tag2="book"
               link="https://eloquentjavascript.net/"
             />
-              <RoadMapCard
+            <RoadMapCard
               imgsource="programming_blog.jpeg"
               source="javascript.info"
               title="The JavaScript Tutorial "
               tag1="Free"
               link="https://javascript.info/"
             />
-              <RoadMapCard
+            <RoadMapCard
               imgsource="programming_blog.jpeg"
               source="developer.mozilla.org)"
               title="Mozilla Developer Network Javascript Guide"
               tag1="Free"
               link="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
             />
-              <RoadMapCard
+            <RoadMapCard
               imgsource="programming_blog.jpeg"
               source="(learn.freecodecamp.org)"
               title="Introduction to JavaScript"
@@ -56,14 +58,14 @@ class JS extends Component {
               tag3="Exercises/Practice-programs"
               link="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/"
             />
-              <RoadMapCard
+            <RoadMapCard
               imgsource="programming_blog.jpeg"
               source="(javascript30.com)"
               title="Build 30 things in 30 days with 30 tutorials "
               tag1="Free"
               link="https://javascript30.com/"
             />
-              <RoadMapCard
+            <RoadMapCard
               imgsource="programming_blog.jpeg"
               source="(addyosmani.com)"
               title="Learning JavaScript Design Patterns"
@@ -71,7 +73,7 @@ class JS extends Component {
               tag2="Advanced"
               link="https://addyosmani.com/resources/essentialjsdesignpatterns/book/"
             />
-              <RoadMapCard
+            <RoadMapCard
               imgsource="programming_blog.jpeg"
               source="(youtube.com)"
               title="JavaScript Tutorial for Beginners"
@@ -80,7 +82,7 @@ class JS extends Component {
               tag3="JavaScript"
               link="https://www.youtube.com/watch?v=W6NZfCO5SIk"
             />
-              <RoadMapCard
+            <RoadMapCard
               imgsource="programming_blog.jpeg"
               source="(scrimba.com)"
               title="Introduction to JavaScript"
@@ -89,14 +91,14 @@ class JS extends Component {
               tag3="Video"
               link="https://scrimba.com/g/gintrotojavascript"
             />
-              <RoadMapCard
+            <RoadMapCard
               imgsource="programming_blog.jpeg"
               source="(learnjavascript.online)"
               title="Learn JavaScript"
               tag1="Free"
               link="https://learnjavascript.online/"
             />
-              <RoadMapCard
+            <RoadMapCard
               imgsource="programming_blog.jpeg"
               source="(read.humanjavascript.com)"
               title="Human JavaScript"
@@ -104,7 +106,7 @@ class JS extends Component {
               tag2="Free"
               link="http://read.humanjavascript.com/"
             />
-              <RoadMapCard
+            <RoadMapCard
               imgsource="programming_blog.jpeg"
               source="(udemy.com)"
               title="The Complete JavaScript Course 2019: Build Real Projects!"
@@ -113,7 +115,7 @@ class JS extends Component {
               tag3="Exercises/Practice-programs"
               link="https://www.udemy.com/course/the-complete-javascript-course/?LSNPUBID=jU79Zysihs4&ranEAID=jU79Zysihs4&ranMID=39197&ranSiteID=jU79Zysihs4-e16r9DevJZS86cGg056RoA"
             />
-              <RoadMapCard
+            <RoadMapCard
               imgsource="programming_blog.jpeg"
               source="(manning.com)"
               title="Secrets of the JavaScript Ninja, Second Edition"
@@ -122,7 +124,7 @@ class JS extends Component {
               tag3="Beginner"
               link="https://www.manning.com/books/secrets-of-the-javascript-ninja-second-edition"
             />
-              <RoadMapCard
+            <RoadMapCard
               imgsource="programming_blog.jpeg"
               source="(udemy.com)"
               title="JavaScript: Understanding the Weird Parts"
@@ -130,7 +132,7 @@ class JS extends Component {
               tag2="Advanced"
               link="https://www.udemy.com/course/understand-javascript/?LSNPUBID=jU79Zysihs4&ranEAID=jU79Zysihs4&ranMID=39197&ranSiteID=jU79Zysihs4-cF65CwTU716CMXej.R7U8w"
             />
-              <RoadMapCard
+            <RoadMapCard
               imgsource="programming_blog.jpeg"
               source="(codecademy.com)"
               title="Learn JavaScript with Codecademy"
@@ -139,7 +141,7 @@ class JS extends Component {
               tag3="Exercises/Practice-programs"
               link="https://www.codecademy.com/learn/paths/web-development"
             />
-              <RoadMapCard
+            <RoadMapCard
               imgsource="programming_blog.jpeg"
               source="(udemy.com)"
               title="Modern JavaScript From The Beginning"
@@ -148,7 +150,7 @@ class JS extends Component {
               tag3="Beginner"
               link="https://www.udemy.com/course/modern-javascript-from-the-beginning/?LSNPUBID=jU79Zysihs4&ranEAID=jU79Zysihs4&ranMID=39197&ranSiteID=jU79Zysihs4-GqMzJzSo9vyaZJIXjC4HrQ"
             />
-              <RoadMapCard
+            <RoadMapCard
               imgsource="programming_blog.jpeg"
               source="(udemy.com)"
               title="Advanced JavaScript Concepts"
@@ -156,7 +158,7 @@ class JS extends Component {
               tag3="Advanced"
               link="https://www.udemy.com/course/advanced-javascript-concepts/?LSNPUBID=jU79Zysihs4&ranEAID=jU79Zysihs4&ranMID=39197&ranSiteID=jU79Zysihs4-qKLxLOz0qrWaA9IgzwJ5Gw"
             />
-              <RoadMapCard
+            <RoadMapCard
               imgsource="programming_blog.jpeg"
               source="(pluralsight.com)"
               title="Explore and Master Chrome DevTools"
@@ -164,7 +166,7 @@ class JS extends Component {
               tag2="Video"
               link="https://www.pluralsight.com/browse/software-development?clickid=X6R3A1ylNxyOUDBwUx0Mo3QwUkixrPTkKSFQRA0&irgwc=1&mpid=1419154&utm_source=impactradius&utm_medium=digital_affiliate&utm_campaign=1419154&aid=7010a000001xAKZAA2"
             />
-              <RoadMapCard
+            <RoadMapCard
               imgsource="programming_blog.jpeg"
               source="(manning.com)"
               title="The Joy of JavaScript"
@@ -173,7 +175,7 @@ class JS extends Component {
               tag3="Beginner"
               link="https://www.manning.com/books/the-joy-of-javascript"
             />
-              <RoadMapCard
+            <RoadMapCard
               imgsource="programming_blog.jpeg"
               source="(pluralsight.com)"
               title="JavaScript From Scratch"
@@ -182,7 +184,7 @@ class JS extends Component {
               tag3="Beginner"
               link="https://www.pluralsight.com/courses/javascript-from-scratch?clickid=X6R3A1ylNxyOUDBwUx0Mo3QwUkixrKSgKSAPwo0&irgwc=1&mpid=1419154&utm_source=impactradius&utm_medium=digital_affiliate&utm_campaign=1419154&aid=7010a000001xAKZAA2"
             />
-              <RoadMapCard
+            <RoadMapCard
               imgsource="programming_blog.jpeg"
               source="(lynda.com)"
               title="Learning Full-Stack JavaScript Development: MongoDB, Node, and React"
@@ -194,6 +196,7 @@ class JS extends Component {
           </div>
           <div className="col-md-4 mt-md-5 ">
             <h2 className="text-center text-secondary mt-2 mb-3">
+              <FontAwesomeIcon icon={faBook} size="1x" className="mr-2" />
               Javascript Learning
             </h2>
             <RecommendPost

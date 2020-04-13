@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import RightSideSection from "../../right_section/RightSideSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faBook } from "@fortawesome/free-solid-svg-icons";
 import RecommendPost from "../../right_section/RecommendPost";
 import RoadMapCard from "./RoadMapCard";
 
@@ -17,7 +17,9 @@ class HTML extends Component {
         <div className="row">
           <div className="col-1"></div>
           <div className="col-md-7 mt-4">
-            <h1 className="text-center mb-4 display-4">HTML Learning RoaMap</h1>
+            <h1 className="text-center mb-4 display-5">
+              Find the Best HTML Courses & Tutorials
+            </h1>
             <Link to="/home" className="badge badge-primary mr-1">
               <FontAwesomeIcon icon={faHome} size="2x" />
             </Link>
@@ -62,7 +64,7 @@ class HTML extends Component {
               imgsource="programming_blog.jpeg"
               title="HTML Beginner Tutorial"
               source="(htmldog.com)"
-              tag1="Free" 
+              tag1="Free"
               link="http://htmldog.com/guides/html/"
             />
             <RoadMapCard
@@ -192,11 +194,11 @@ class HTML extends Component {
               tag3="Beginner"
               link="https://www.udemy.com/course/web-development-essentials-for-absolute-beginners/?ranMID=39197&ranEAID=jU79Zysihs4&ranSiteID=jU79Zysihs4-G_HK7jmbJY4I2luGuXiGOg&LSNPUBID=jU79Zysihs4"
             />
-             
           </div>
           <div className="col-md-4 mt-md-5 ">
             <h2 className="text-center text-secondary mt-2 mb-3">
-              Python Learning
+              <FontAwesomeIcon icon={faBook} size="1x" className="mr-2" />
+              HTML Learning
             </h2>
             <RecommendPost
               imgsource="python_mcqs.jpeg"

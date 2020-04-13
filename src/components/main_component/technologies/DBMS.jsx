@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import RightSideSection from "../../right_section/RightSideSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faBook } from "@fortawesome/free-solid-svg-icons";
 import PostCard from "../PostCard";
 import RecommendPost from "../../right_section/RecommendPost";
 import RoadMapCard from "./RoadMapCard";
@@ -18,7 +18,9 @@ class DBMS extends Component {
         <div className="row">
           <div className="col-1"></div>
           <div className="col-md-7 mt-4">
-            <h1 className="text-center mb-4 display-4">DBMS Learning RoaMap</h1>
+            <h1 className="text-center mb-4 display-5">
+              Find the Best DBMS Courses & Tutorials
+            </h1>
             <Link to="/home" className="badge badge-primary mr-1">
               <FontAwesomeIcon icon={faHome} size="2x" />
             </Link>
@@ -34,7 +36,8 @@ class DBMS extends Component {
           </div>
           <div className="col-md-4 mt-md-5 ">
             <h2 className="text-center text-secondary mt-2 mb-3">
-              Python Learning
+              <FontAwesomeIcon icon={faBook} size="1x" className="mr-2" />
+              DBMS Learning
             </h2>
             <RecommendPost
               imgsource="python_mcqs.jpeg"
