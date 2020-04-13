@@ -203,13 +203,33 @@ class Android extends Component {
             </h2>
             <RecommendPost
               imgsource="python_mcqs.jpeg"
-              RecPostHading="Python MCQs Questions"
-              link="/index_python_mcqs"
+              RecPostHading="Python MCQs"
+              link="/index_mcqs"
             />
             <RecommendPost
-              imgsource="python_mcqs.jpeg"
-              RecPostHading="Python MCQs Questions"
-              link="/index_python_mcqs"
+              imgsource="python_interview_question.jpeg"
+              RecPostHading="Android Interview Questions"
+              link="/index_interview_questioins"
+            />
+            <RecommendPost
+              imgsource="python_programming_question.jpeg"
+              RecPostHading="Android Programming Questions"
+              link="/index_programming_questions"
+            />
+            <RecommendPost
+              imgsource="python_programming_question.jpeg"
+              RecPostHading="Android Quize Test"
+              link="/index_quize_tests"
+            />
+            <RecommendPost
+              imgsource="python_learning_blog.jpeg"
+              RecPostHading="Android Programming Blogs"
+              link="/prog_lan_blog"
+            />
+            <RecommendPost
+              imgsource="code_challange.jpeg"
+              RecPostHading="Weekly Code Challanges"
+              link="/index_code_challange"
             />
             <RightSideSection />
           </div>
