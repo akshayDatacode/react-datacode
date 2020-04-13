@@ -195,13 +195,33 @@ class Java extends Component {
             </h2>
             <RecommendPost
               imgsource="python_mcqs.jpeg"
-              RecPostHading="Java MCQs Questions"
-              link="/index_java_mcqs"
+              RecPostHading="Java MCQs"
+              link="/index_java_mcqss"
             />
             <RecommendPost
-              imgsource="python_mcqs.jpeg"
-              RecPostHading="Python MCQs Questions"
-              link="/index_java_mcqs"
+              imgsource="python_interview_question.jpeg"
+              RecPostHading="Java Interview Questions"
+              link="/java_interview_question"
+            />
+            <RecommendPost
+              imgsource="python_programming_question.jpeg"
+              RecPostHading="Java Programming Questions"
+              link="/java_programming_questions"
+            />
+            <RecommendPost
+              imgsource="python_programming_question.jpeg"
+              RecPostHading="Python Quize Test"
+              link="/python_quize_tests"
+            />
+            <RecommendPost
+              imgsource="python_learning_blog.jpeg"
+              RecPostHading="Java Programming Blogs"
+              link="/prog_lan_blog"
+            />
+            <RecommendPost
+              imgsource="code_challange.jpeg"
+              RecPostHading="Weekly Code Challanges"
+              link="/index_code_challange"
             />
             <RightSideSection />
           </div>
