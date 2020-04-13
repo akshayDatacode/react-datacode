@@ -27,6 +27,7 @@ import {
   faSwift,
   faAndroid,
 } from "@fortawesome/free-brands-svg-icons";
+import TechnologiesCardCarousel from "./TechnologiesCardCarousel";
 class IndexTechnologies extends Component {
   state = {};
   componentDidMount() {
@@ -246,6 +247,8 @@ class IndexTechnologies extends Component {
                 </Link>
               </div>
             </div>
+            <h4 className="text-secondary mt-5">For More Community Blogs</h4>
+            <TechnologiesCardCarousel />
           </div>
           <div className="col-md-3">
             <RightSideSection />

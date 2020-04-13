@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faCopyright } from "@fortawesome/free-solid-svg-icons";
 import RightSideSection from "../../../../right_section/RightSideSection";
 import { faPython, faJava } from "@fortawesome/free-brands-svg-icons";
+import MCQTestCardCarousel from "./MCQTestCardCarousel";
 class IndexQuizeTests extends Component {
   state = {};
   componentDidMount() {
@@ -202,7 +203,10 @@ class IndexQuizeTests extends Component {
                 </div>
               </div>
             </div>
+            <h4 className="text-secondary mt-3">For More Quize Tests</h4>
+            <MCQTestCardCarousel />
           </div>
+
           <div className="col-md-3">
             <RightSideSection />
           </div>

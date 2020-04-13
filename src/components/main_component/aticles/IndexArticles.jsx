@@ -6,6 +6,7 @@ import RightSideSection from "../../right_section/RightSideSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import RecommendPost from "../../right_section/RecommendPost";
+import ArticleCardCarousel from "./ArticleCardCarousel";
 
 class IndexArticles extends Component {
   state = {};
@@ -62,6 +63,8 @@ class IndexArticles extends Component {
                   link="/machine_learning_blog"
                 />
               </div>
+              <h4 className="text-secondary mt-3">For More Community Blogs</h4>
+              <ArticleCardCarousel />
             </div>
             <div className="col-md-4">
               <h5 className="mb-3">Recommended for you</h5>

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import PostCard from "../../PostCard";
 import RightSideSection from "../../../right_section/RightSideSection";
+import InterviewQuestionCardCarousel from "./InterviewQuestionCardCarousel";
 class IndexInterviewQuestions extends Component {
   state = {};
   componentDidMount() {
@@ -119,6 +120,10 @@ class IndexInterviewQuestions extends Component {
                 link="/sdlc_interview_question"
               />
             </div>
+            <h4 className="text-secondary mt-3">
+              For More Placment Preparation
+            </h4>
+            <InterviewQuestionCardCarousel />
           </div>
           <div className="col-md-3">
             <RightSideSection />

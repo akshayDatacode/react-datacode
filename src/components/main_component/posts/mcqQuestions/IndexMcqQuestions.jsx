@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import PostCard from "../../PostCard";
 import RightSideSection from "../../../right_section/RightSideSection";
+import MCQCardCarousel from "./MCQCardCarousel";
 
 class IndexMcqQuestions extends Component {
   state = {};
@@ -23,6 +24,7 @@ class IndexMcqQuestions extends Component {
             <Link to="/index_articles" className="badge badge-warning mr-1">
               Blogs >
             </Link>
+
             <div className="card-deck m-2">
               <PostCard
                 imgsource="index_mcqs.jpeg"
@@ -115,6 +117,8 @@ class IndexMcqQuestions extends Component {
                 link="/index_git_mcqs"
               />
             </div>
+            <h4 className="text-secondary mt-3">For More MCQs Practice</h4>
+            <MCQCardCarousel />
           </div>
           <div className="col-md-3">
             <RightSideSection />

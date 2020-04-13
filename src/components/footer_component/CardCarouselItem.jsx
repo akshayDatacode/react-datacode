@@ -6,16 +6,20 @@ class CardCarouselItem extends Component {
   render() {
     return (
       <>
-        <div className="card text-center p-2 ">
+        <div className="card text-center">
           <img
             className=" card-img-top mx-auto img-fluid img-circle d-block"
             src={require("../../assets/images/" + this.props.imgsource)}
             alt="avatar"
           />
-          <h6 className="text-left">{this.props.title}</h6>
-          <Link to={this.props.link}>
-            <div className="btn btn-primary">Start Learning</div>
-          </Link>
+          <h6 className="text-center mt-2">{this.props.title}</h6>
+          <div className="card-footer">
+            <Link to={this.props.link}>
+              <div className="btn btn-primary btn-lg btn-block p-0">
+                <h6 className="mt-1">Start Learning</h6>
+              </div>
+            </Link>
+          </div>
         </div>
       </>
     );

@@ -1,21 +1,8 @@
 import React, { Component } from "react";
 import { Carousel } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faPython,
-  faJava,
-  faPhp,
-  faJsSquare,
-  faHtml5,
-  faCss3,
-  faReact,
-  faAngular,
-  faNodeJs,
-} from "@fortawesome/free-brands-svg-icons";
-import CardCarouselItem from "./CardCarouselItem";
+import CardCarouselItem from "../../footer_component/CardCarouselItem";
 
-class CardCarousel extends Component {
+class EventCardCarousel extends Component {
   state = {};
   render() {
     return (
@@ -24,7 +11,7 @@ class CardCarousel extends Component {
         <div className="mb-5 d-none d-sm-block">
           <Carousel indicators={false}>
             <Carousel.Item>
-              <div className="card-deck">
+              <div className="card-deck ">
                 <CardCarouselItem
                   imgsource="code_challange.jpeg"
                   title="weekly Code Challange"
@@ -40,30 +27,10 @@ class CardCarousel extends Component {
                   title="Community Web Blogs"
                   link="/webdesign_blog"
                 />
-                <CardCarouselItem
-                  imgsource="technical_interview_questions.jpeg"
-                  title="Technical Interview Questions"
-                  link="/index_interview_questioins"
-                />
-                <CardCarouselItem
-                  imgsource="python_programming.jpeg"
-                  title="Python Programming"
-                  link="/python"
-                />
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div className="card-deck">
-                <CardCarouselItem
-                  imgsource="python_programming_question.jpeg"
-                  title="Python Programming Questions"
-                  link="/python_programming_questions"
-                />
-                <CardCarouselItem
-                  imgsource="code_challange.jpeg"
-                  title="weekly Code Challange"
-                  link="/index_code_challange"
-                />
                 <CardCarouselItem
                   imgsource="code_challange.jpeg"
                   title="weekly Code Challange"
@@ -83,16 +50,6 @@ class CardCarousel extends Component {
             </Carousel.Item>
             <Carousel.Item>
               <div className="card-deck">
-                <CardCarouselItem
-                  imgsource="code_challange.jpeg"
-                  title="weekly Code Challange"
-                  link="/index_code_challange"
-                />
-                <CardCarouselItem
-                  imgsource="code_challange.jpeg"
-                  title="weekly Code Challange"
-                  link="/index_code_challange"
-                />
                 <CardCarouselItem
                   imgsource="code_challange.jpeg"
                   title="weekly Code Challange"
@@ -172,4 +129,4 @@ class CardCarousel extends Component {
   }
 }
 
-export default CardCarousel;
+export default EventCardCarousel;

@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import RecommendPost from "../../right_section/RecommendPost";
-import RightSideSection from "../../right_section/RightSideSection";
-import { Link } from "react-router-dom";
-import FooterComponentUpper from "../../footer_component/FooterComponentUpper";
 import CodeChallangeShowCard from "./CodeChallangeShowCard";
+import CodeChallangeCardCarousel from "./CodeChallangeCardCarousel";
 
 class IndexCodeChallange extends Component {
   state = {};
@@ -50,7 +48,7 @@ class IndexCodeChallange extends Component {
                 alt="avatar"
               />
             </div>
-
+            {/* Mobile */}
             <div className="col-md-3 d-block d-md-none  mt-4 text-center">
               <CodeChallangeShowCard
                 imgsource="code_challange_3.jpeg"
