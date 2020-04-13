@@ -203,13 +203,33 @@ class C extends Component {
             </h2>
             <RecommendPost
               imgsource="python_mcqs.jpeg"
-              RecPostHading="Python MCQs Questions"
-              link="/index_python_mcqs"
+              RecPostHading="C MCQs"
+              link="/index_c_mcqs"
             />
             <RecommendPost
-              imgsource="python_mcqs.jpeg"
-              RecPostHading="Python MCQs Questions"
-              link="/index_python_mcqs"
+              imgsource="python_interview_question.jpeg"
+              RecPostHading="C Interview Questions"
+              link="/c_interview_question"
+            />
+            <RecommendPost
+              imgsource="python_programming_question.jpeg"
+              RecPostHading="C Programming Questions"
+              link="/c_programming_questions"
+            />
+            <RecommendPost
+              imgsource="python_programming_question.jpeg"
+              RecPostHading="C Quize Test"
+              link="/c_quizes_tests"
+            />
+            <RecommendPost
+              imgsource="python_learning_blog.jpeg"
+              RecPostHading="C Programming Blogs"
+              link="/prog_lan_blog"
+            />
+            <RecommendPost
+              imgsource="code_challange.jpeg"
+              RecPostHading="Weekly Code Challanges"
+              link="/index_code_challange"
             />
             <RightSideSection />
           </div>
