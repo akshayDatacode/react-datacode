@@ -32,8 +32,8 @@ class AndroidMCQ1 extends Component {
           <Link to="/index_mcqs" className="badge badge-warning mr-1">
             Programming MCQs >{" "}
           </Link>
-          <Link to="/index_cpp_mcqs" className="badge badge-success mr-1">
-            C++ MCQs >
+          <Link to="/index_android_mcqs" className="badge badge-success mr-1">
+          Android MCQs >
           </Link>
           <ScoreCard count={this.state.count} />
         </div>
@@ -43,160 +43,124 @@ class AndroidMCQ1 extends Component {
             <div className="col-md-7 ">
               <div className="row mt-2 text-center">
                 <div className="col">
-                  <h2 className="text-secondary">Cpp MCQs Set 1</h2>
+                  <h2 className="text-secondary">Android MCQs Set 1</h2>
                 </div>
               </div>
               <div className="row">
                 <div className="col">
                   <Quize
                     quizeNo="1"
-                    question="Wrapping data and its related functionality into a single entity is known as _____________ "
-                    correctAnswer=" Encapsulation"
-                    v1="Abstraction"
-                    v2=" Encapsulation"
-                    v3=" Polymorphism"
-                    v4=" Modularity"
+                    question="Q 1 - How to pass the data between activities in Android?
+
+                    "
+                    correctAnswer=" Intent"
+                    v1=" Intent"
+                    v2=" Content Provider"
+                    v3="Broadcast receiver"
+                    v4="None of the Above"
                     counter={this.counter}
                   />
                   <Quize
                     quizeNo="2"
-                    question="What is virtual inheritance? "
-                    correctAnswer="C++ technique to avoid multiple copies of the base class into children/derived class"
-                    v1="C++ technique to avoid multiple copies of the base class into children/derived class"
-                    v2="C++ technique to avoid multiple inheritances of classes"
-                    v3="C++ technique to enhance multiple inheritance"
-                    v4="C++ technique to ensure that a private member of the base class can be accessed somehow "
+                    question="How many sizes are supported by Android? "
+                    correctAnswer=""
+                    v1="Android supported all sizes"
+                    v2="Android does not support all sizes
+
+                    "
+                    v3=" supports small,normal, large and extra-large sizes
+
+                    "
+                    v4="Size is undefined in android"
                     counter={this.counter}
                   />
                   <Quize
                     quizeNo="3"
-                    question="What will be the output of the following C++ code?"
-                    language="c++"
-                    code={`#include <iostream>
-using namespace std;
-class A{
-public:
-   A(){
-    cout<<'Constructor called';
-      }
-  ~A(){
-    cout<<'Destructor called';
-      }
-};
-int main(int argc, char const *argv[])
-{
-  A *a = new A[5];
-  delete a;
-  return 0;
-}`}
-                    correctAnswer="Segmentation fault"
-                    v1="“Constructor called” five times and then “Destructor called” five times"
-                    v2="“Constructor called” five times and then “Destructor called” once"
-                    v3="Error"
-                    v4="Segmentation fault "
+                    question="What are the return values of onStartCommand() in android services? "
+                    correctAnswer=" All of the above"
+                    v1="START_STICKY"
+                    v2="START_NOT_STICKY"
+                    v3=" START_REDELIVER_INTENT"
+                    v4=" All of the above"
                     counter={this.counter}
                   />
                   <Quize
                     quizeNo="4"
-                    question="What does ‘\a’ escape code represent? "
-                    correctAnswer="alert"
-                    v1="alert"
-                    v2="backslash"
-                    v3="tab"
-                    v4="form feed "
+                    question="How to upgrade SQlite the database from a lower version to higher version in android SQlite? "
+                    correctAnswer="Using helper Class"
+                    v1="Using helper Class"
+                    v2="Using cursor"
+                    v3="Using intent"
+                    v4="None of the above"
                     counter={this.counter}
                   />
                   <Quize
                     quizeNo="5"
-                    question=" What happens if the following code is compiled on both C and C++?"
-                    language="C++"
-                    code={`#include<stdio.h>
-struct STRUCT
-{
-private:
-  int a;
-};
-int main()
-{
-  printf('%d\n', (int)sizeof(struct STRUCT));
-  return 0;
-}`}
-                    correctAnswer="The program gives an error in case of C but runs perfectly in case of C++"
-                    v1="The program runs fine and both prints output “HELLO THIS IS STRUCTURE”"
-                    v2="The program gives an error in case of C but runs perfectly in case of C++"
-                    v3="The program gives an error in case of C++ but runs perfectly in case of C"
-                    v4="  The program gives an error in case of both C and C++"
+                    question=" How to get current location in android? "
+                    correctAnswer="A & B"
+                    v1="Using with GPRS"
+                    v2="Using location provider"
+                    v3="A & B"
+                    v4=" SQlite"
                     counter={this.counter}
                   />
                   <Quize
                     quizeNo="6"
-                    question="  What is the value of the bool?"
-                    language="C++"
-                    code={`bool is_int(789.54)`}
-                    correctAnswer="False"
-                    v1="True"
-                    v2="False"
-                    v3="1"
-                    v4=" 2"
+                    question=" What is ADB in android? "
+                    correctAnswer="Android Debug Bridge"
+                    v1="Image tool"
+                    v2="Development tool"
+                    v3="Android Debug Bridge"
+                    v4="None of the above."
                     counter={this.counter}
                   />
                   <Quize
                     quizeNo="7"
-                    question="Given the variables p, q are of char type and r, s, t are of int type. Select the right statement?"
-                    language="C++"
-                    code={`1. t = (r * s) / (r + s);
-2. t = (p * q) / (r + s);`}
-                    correctAnswer="both 1 and 2 are true"
-                    v1="1 is true but 2 is false"
-                    v2="1 is false and 2 is true"
-                    v3="both 1 and 2 are true"
-                    v4="both 1 and 2 are false "
+                    question="What is JSON in android? "
+                    correctAnswer=" Java Script Object Notation"
+                    v1="Java Script Object Native"
+                    v2="Java Script Oriented Notation"
+                    v3=" Java Script Object Notation"
+                    v4="None of the Above"
                     counter={this.counter}
                   />
                   <Quize
                     quizeNo="8"
-                    question="What is the range of the floating point numbers? "
-                    correctAnswer="-3.4E+38 to +3.4E+38"
-                    v1="-3.4E+38 to +3.4E+38"
-                    v2="-3.4E+38 to +3.4E+34"
-                    v3="-3.4E+38 to +3.4E+36"
-                    v4="-3.4E+38 to +3.4E+32 "
+                    question="What are the JSON elements in android? "
+                    correctAnswer="Number, string, boolean, null, array, and object
+
+                    "
+                    v1="integer, boolean
+
+                    "
+                    v2=" boolean"
+                    v3=" null"
+                    v4="Number, string, boolean, null, array, and object
+
+                    "
                     counter={this.counter}
                   />
                   <Quize
                     quizeNo="9"
-                    question="What will happen in the following C++ code snippet?"
-                    language="C++"
-                    code={`int a = 100, b = 200;
-int *p = and a, *q = &b;
-p = q;`}
-                    correctAnswer="p now points to b"
-                    v1="b is assigned to a"
-                    v2="p now points to b"
-                    v3="a is assigned to b"
-                    v4="q now points to a"
+                    question=" Why don't we give MIN SDK as 1 in android? "
+                    correctAnswer="Android deprecated version"
+                    v1="Android deprecated version"
+                    v2="There is no value for 1"
+                    v3="Android doesn't allow min version 1"
+                    v4="None of the above"
                     counter={this.counter}
                   />
                   <Quize
                     quizeNo="10"
-                    question=" What will be the output of the following C++ code?"
-                    language="C++"
-                    code={`#include <iostream>
-using namespace std;
-int main()
-{
-    int a = 5, b = 10, c = 15;
-    int *arr[ ] = {&a, &b, &c};
-    cout << arr[1];
-    return 0;
-}`}
-                    correctAnswer="it will return some random number"
-                    v1="5"
-                    v2="10"
-                    v3="15"
-                    v4="it will return some random number"
+                    question="What is off-line synchronization in android? "
+                    correctAnswer=""
+                    v1="Synchronization with internet"
+                    v2=" Background synchronization"
+                    v3=" Synchronization without internet"
+                    v4="None of the above"
                     counter={this.counter}
                   />
+                  
                 </div>
               </div>
             </div>
