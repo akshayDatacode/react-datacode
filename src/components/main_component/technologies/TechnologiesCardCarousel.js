@@ -13,14 +13,14 @@ class TechnologiesCardCarousel extends Component {
             <Carousel.Item>
               <div className="card-deck ">
                 <CardCarouselItem
+                  imgsource="c_programming.jpeg"
+                  title="C programming"
+                  link="/c"
+                />
+                <CardCarouselItem
                   imgsource="python_programming.jpeg"
                   title="Python Programming"
                   link="/python"
-                />
-                <CardCarouselItem
-                  imgsource="c_programming.jpeg"
-                  title="C Programming"
-                  link="/c"
                 />
                 <CardCarouselItem
                   imgsource="java_programming.jpeg"
@@ -43,8 +43,8 @@ class TechnologiesCardCarousel extends Component {
                 />
                 <CardCarouselItem
                   imgsource="css.jpeg"
-                  title="CSS"
-                  link="/css"
+                  title="Coming Soon..."
+                  link="/index_technologies"
                 />
               </div>
             </Carousel.Item>
@@ -64,6 +64,44 @@ class TechnologiesCardCarousel extends Component {
                   imgsource="code_challange.jpeg"
                   title="SQL"
                   link="/sql"
+                />
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className="card-deck">
+                <CardCarouselItem
+                  imgsource="datastructure.jpeg"
+                  title="Android"
+                  link="/android"
+                />
+                <CardCarouselItem
+                  imgsource="code_challange.jpeg"
+                  title="React"
+                  link="/react"
+                />
+                <CardCarouselItem
+                  imgsource="code_challange.jpeg"
+                  title="Angular"
+                  link="/angular"
+                />
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className="card-deck">
+                <CardCarouselItem
+                  imgsource="datastructure.jpeg"
+                  title="OOPS"
+                  link="/oops"
+                />
+                <CardCarouselItem
+                  imgsource="code_challange.jpeg"
+                  title=" Coming soon"
+                  link="/index_technologies"
+                />
+                <CardCarouselItem
+                  imgsource="code_challange.jpeg"
+                  title="Coming soon"
+                  link="/index_technologies"
                 />
               </div>
             </Carousel.Item>
@@ -109,7 +147,7 @@ class TechnologiesCardCarousel extends Component {
               />
             </Carousel.Item>
             <Carousel.Item>
-              <CardCarouselItem imgsource="css.jpeg" title="CSS" link="/css" />
+              <CardCarouselItem imgsource="css.jpeg" title="Coming soon" link="/index_technologies" />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
@@ -137,6 +175,27 @@ class TechnologiesCardCarousel extends Component {
                 imgsource="datastructure.jpeg"
                 title="OOPs"
                 link="/oops"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <CardCarouselItem
+                imgsource="datastructure.jpeg"
+                title="Android"
+                link="/android"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <CardCarouselItem
+                imgsource="datastructure.jpeg"
+                title="React"
+                link="/react"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <CardCarouselItem
+                imgsource="datastructure.jpeg"
+                title="Angular"
+                link="/angular"
               />
             </Carousel.Item>
           </Carousel>
