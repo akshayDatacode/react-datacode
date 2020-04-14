@@ -120,6 +120,47 @@ class IndexInterviewQuestions extends Component {
                 link="/sdlc_interview_question"
               />
             </div>
+            <div className="card-deck m-2">
+              <PostCard
+                imgsource="technical_interview_questions.jpeg"
+                title="HTML Interview Questions"
+                paragraph="We Love to Code and this is the best way to "
+                link="/html_interview_question"
+              />
+              <PostCard
+                imgsource="technical_interview_questions.jpeg"
+                title="JavaScript Interview Questions"
+                paragraph="We Love to Code and this "
+                link="/js_interview_question"
+              />
+              <PostCard
+                imgsource="technical_interview_questions.jpeg"
+                title="REACT Interview Questions"
+                paragraph="We Love to Code and this is the best"
+                link="/react_interview_question"
+              />
+            </div>
+            <div className="card-deck m-2">
+              <PostCard
+                imgsource="technical_interview_questions.jpeg"
+                title="Angular Interview Questions"
+                paragraph="We Love to Code and this is the best way to "
+                link="/angular_interview_question"
+              />
+              <PostCard
+                imgsource="technical_interview_questions.jpeg"
+                title="Android Interview Questions"
+                paragraph="We Love to Code and this "
+                link="/android_interview_question"
+              />
+              <PostCard
+                imgsource="technical_interview_questions.jpeg"
+                title="Upcoming"
+                paragraph="We Love to Code and this is the best"
+                link="/react_interview_question"
+              />
+            </div>
+
             <h4 className="text-secondary mt-3">
               For More Placment Preparation
             </h4>

@@ -4,6 +4,9 @@ import RecommendPost from "../../../right_section/RecommendPost";
 import RightSideSection from "../../../right_section/RightSideSection";
 class PythonInterviewQuestions extends Component {
   state = {};
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <>

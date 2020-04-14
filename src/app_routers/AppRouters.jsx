@@ -54,6 +54,11 @@ import RDBMSInterviewQuestions from "../components/main_component/posts/technica
 import SDLCInterviewQuestions from "../components/main_component/posts/technical_interview_questions/SDLCInterviewQuestions";
 import SQLInterviewQuestions from "../components/main_component/posts/technical_interview_questions/SQLInterviewQuestions";
 import TestingInterviewQuestions from "../components/main_component/posts/technical_interview_questions/TestingInterviewQuestions";
+import HtmlInterviewQuestions from "../components/main_component/posts/technical_interview_questions/HtmlInterviewQuestions";
+import JSInterviewQuestions from "../components/main_component/posts/technical_interview_questions/JSInterviewQuestions";
+import AngularInterviewQuestions from "../components/main_component/posts/technical_interview_questions/AngularInterviewQuestions";
+import ReactInterviewQuestions from "../components/main_component/posts/technical_interview_questions/ReactInterviewQuestions";
+import AndroidInterviewQuestions from "../components/main_component/posts/technical_interview_questions/AndroidInterviewQuestions";
 
 // Books Routing
 import IndexBooks from "../components/main_component/posts/books/IndexBooks";
@@ -415,6 +420,26 @@ class AppRouters extends Component {
           <Route
             path="/testing_interview_question"
             component={TestingInterviewQuestions}
+          />
+          <Route
+            path="/html_interview_question"
+            component={HtmlInterviewQuestions}
+          />
+          <Route
+            path="/js_interview_question"
+            component={JSInterviewQuestions}
+          />
+          <Route
+            path="/angular_interview_question"
+            component={AngularInterviewQuestions}
+          />
+          <Route
+            path="/react_interview_question"
+            component={ReactInterviewQuestions}
+          />
+          <Route
+            path="/android_interview_question"
+            component={AndroidInterviewQuestions}
           />
 
           {/* Einding Interview Routing */}

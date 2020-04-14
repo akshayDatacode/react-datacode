@@ -140,7 +140,7 @@ class IndexMcqQuestions extends Component {
                 link="/index_ds_mcqs"
               />
             </div>
-            <h4 className="text-secondary mt-3">For More MCQs Practice</h4>
+
             <div className="card-deck m-2">
               <PostCard
                 imgsource="index_mcqs.jpeg"
@@ -164,6 +164,7 @@ class IndexMcqQuestions extends Component {
                 link="/index_mcqs"
               />
             </div>
+            <h4 className="text-secondary mt-3">For More MCQs Practice</h4>
             <MCQCardCarousel />
           </div>
           <div className="col-md-3">

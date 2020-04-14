@@ -16,7 +16,7 @@ class JavascriptPgramQuestions extends Component {
               <div className="card">
                 <div className="card-body p-2">
                   <h1 className="card-title display-5">
-                    Java Programming Examples Question
+                    JavaScript Programming Examples Question
                   </h1>
                 </div>
               </div>
