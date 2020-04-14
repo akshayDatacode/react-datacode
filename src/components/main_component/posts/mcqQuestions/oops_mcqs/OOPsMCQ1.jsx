@@ -32,8 +32,8 @@ class OOPsMCQ1 extends Component {
           <Link to="/index_mcqs" className="badge badge-warning mr-1">
             Programming MCQs >{" "}
           </Link>
-          <Link to="/index_cpp_mcqs" className="badge badge-success mr-1">
-            C++ MCQs >
+          <Link to="/index_oops_mcqs" className="badge badge-success mr-1">
+          OOPS MCQs >
           </Link>
           <ScoreCard count={this.state.count} />
         </div>
@@ -43,160 +43,113 @@ class OOPsMCQ1 extends Component {
             <div className="col-md-7 ">
               <div className="row mt-2 text-center">
                 <div className="col">
-                  <h2 className="text-secondary">Cpp MCQs Set 1</h2>
+                  <h2 className="text-secondary">OOPS MCQs Set 1</h2>
                 </div>
               </div>
               <div className="row">
                 <div className="col">
                   <Quize
                     quizeNo="1"
-                    question="Wrapping data and its related functionality into a single entity is known as _____________ "
-                    correctAnswer=" Encapsulation"
-                    v1="Abstraction"
-                    v2=" Encapsulation"
-                    v3=" Polymorphism"
-                    v4=" Modularity"
+                    question="Which is not feature of OOP in general definitions? "
+                    correctAnswer="Duplicate/Redundant data"
+                    v1="Code reusability"
+                    v2="Modularity"
+                    v3="Duplicate/Redundant data"
+                    v4="Efficient Code"
                     counter={this.counter}
                   />
-                  <Quize
-                    quizeNo="2"
-                    question="What is virtual inheritance? "
-                    correctAnswer="C++ technique to avoid multiple copies of the base class into children/derived class"
-                    v1="C++ technique to avoid multiple copies of the base class into children/derived class"
-                    v2="C++ technique to avoid multiple inheritances of classes"
-                    v3="C++ technique to enhance multiple inheritance"
-                    v4="C++ technique to ensure that a private member of the base class can be accessed somehow "
+                   <Quize
+                    quizeNo="1"
+                    question="Which of the following is not type of class? "
+                    correctAnswer="Start Class"
+                    v1="Abstract Class"
+                    v2="Final Class"
+                    v3="Start Class"
+                    v4="String Class"
                     counter={this.counter}
                   />
-                  <Quize
-                    quizeNo="3"
-                    question="What will be the output of the following C++ code?"
-                    language="c++"
-                    code={`#include <iostream>
-using namespace std;
-class A{
-public:
-   A(){
-    cout<<'Constructor called';
-      }
-  ~A(){
-    cout<<'Destructor called';
-      }
-};
-int main(int argc, char const *argv[])
-{
-  A *a = new A[5];
-  delete a;
-  return 0;
-}`}
-                    correctAnswer="Segmentation fault"
-                    v1="“Constructor called” five times and then “Destructor called” five times"
-                    v2="“Constructor called” five times and then “Destructor called” once"
-                    v3="Error"
-                    v4="Segmentation fault "
+                   <Quize
+                    quizeNo="1"
+                    question="Which definition best describes an object? "
+                    correctAnswer="Instance of a class"
+                    v1="Instance of a class"
+                    v2="Instance of itself"
+                    v3="Child of a class"
+                    v4="Overview of a class
+                    "
                     counter={this.counter}
                   />
-                  <Quize
-                    quizeNo="4"
-                    question="What does ‘\a’ escape code represent? "
-                    correctAnswer="alert"
-                    v1="alert"
-                    v2="backslash"
-                    v3="tab"
-                    v4="form feed "
+                   <Quize
+                    quizeNo="1"
+                    question="Which feature of OOP indicates code reusability? "
+                    correctAnswer="Inheritance"
+                    v1="Encapsulation"
+                    v2="Inheritance"
+                    v3="Abstraction"
+                    v4="Polymorphism"
                     counter={this.counter}
                   />
-                  <Quize
-                    quizeNo="5"
-                    question=" What happens if the following code is compiled on both C and C++?"
-                    language="C++"
-                    code={`#include<stdio.h>
-struct STRUCT
-{
-private:
-  int a;
-};
-int main()
-{
-  printf('%d\n', (int)sizeof(struct STRUCT));
-  return 0;
-}`}
-                    correctAnswer="The program gives an error in case of C but runs perfectly in case of C++"
-                    v1="The program runs fine and both prints output “HELLO THIS IS STRUCTURE”"
-                    v2="The program gives an error in case of C but runs perfectly in case of C++"
-                    v3="The program gives an error in case of C++ but runs perfectly in case of C"
-                    v4="  The program gives an error in case of both C and C++"
+                   <Quize
+                    quizeNo="1"
+                    question="What do you call the languages that support classes but not polymorphism? "
+                    correctAnswer=" Object-based language"
+                    v1="Class based language"
+                    v2="Procedure Oriented language"
+                    v3=" Object-based language"
+                    v4="If classes are supported, polymorphism will always be supported"
                     counter={this.counter}
                   />
-                  <Quize
-                    quizeNo="6"
-                    question="  What is the value of the bool?"
-                    language="C++"
-                    code={`bool is_int(789.54)`}
-                    correctAnswer="False"
-                    v1="True"
-                    v2="False"
-                    v3="1"
-                    v4=" 2"
+                   <Quize
+                    quizeNo="1"
+                    question="If data members are private, what can we do to access them from the class object? "
+                    correctAnswer=" Create public member functions to access those data members"
+                    v1=" Create public member functions to access those data members"
+                    v2="Create private member functions to access those data members"
+                    v3="Create protected member functions to access those data members"
+                    v4="Private data members can never be accessed from outside the classFind which of the following uses encapsulation?"
                     counter={this.counter}
                   />
-                  <Quize
-                    quizeNo="7"
-                    question="Given the variables p, q are of char type and r, s, t are of int type. Select the right statement?"
-                    language="C++"
-                    code={`1. t = (r * s) / (r + s);
-2. t = (p * q) / (r + s);`}
-                    correctAnswer="both 1 and 2 are true"
-                    v1="1 is true but 2 is false"
-                    v2="1 is false and 2 is true"
-                    v3="both 1 and 2 are true"
-                    v4="both 1 and 2 are false "
+                   <Quize
+                    quizeNo="1"
+                    question="Find which of the following uses encapsulation? "
+                    correctAnswer="class student{int a; public: void disp(){ cout<<a;} };"
+                    v1="void main(){ int a; void fun( int a=10; cout<<a); fun(); }"
+                    v2="class student{ int a; public: int b;};"
+                    v3="class student{int a; public: void disp(){ cout<<a;} };"
+                    v4="struct topper{ char name[10]; public : int marks; }"
                     counter={this.counter}
                   />
-                  <Quize
-                    quizeNo="8"
-                    question="What is the range of the floating point numbers? "
-                    correctAnswer="-3.4E+38 to +3.4E+38"
-                    v1="-3.4E+38 to +3.4E+38"
-                    v2="-3.4E+38 to +3.4E+34"
-                    v3="-3.4E+38 to +3.4E+36"
-                    v4="-3.4E+38 to +3.4E+32 "
+                   <Quize
+                    quizeNo="1"
+                    question="Hiding the implementation complexity can ____________ "
+                    correctAnswer="Make the programming easy"
+                    v1="Make the programming easy"
+                    v2="Make the programming complex"
+                    v3="Provide more number of features"
+                    v4="Provide better features"
                     counter={this.counter}
                   />
-                  <Quize
-                    quizeNo="9"
-                    question="What will happen in the following C++ code snippet?"
-                    language="C++"
-                    code={`int a = 100, b = 200;
-int *p = and a, *q = &b;
-p = q;`}
-                    correctAnswer="p now points to b"
-                    v1="b is assigned to a"
-                    v2="p now points to b"
-                    v3="a is assigned to b"
-                    v4="q now points to a"
+                   <Quize
+                    quizeNo="1"
+                    question="Which among the following is not a necessary condition for constructors? "
+                    correctAnswer="It must contain a definition body"
+                    v1="Its name must be same as that of class"
+                    v2="It must not have any return type"
+                    v3="It must contain a definition body"
+                    v4="It can contains arguments"
                     counter={this.counter}
                   />
-                  <Quize
-                    quizeNo="10"
-                    question=" What will be the output of the following C++ code?"
-                    language="C++"
-                    code={`#include <iostream>
-using namespace std;
-int main()
-{
-    int a = 5, b = 10, c = 15;
-    int *arr[ ] = {&a, &b, &c};
-    cout << arr[1];
-    return 0;
-}`}
-                    correctAnswer="it will return some random number"
-                    v1="5"
-                    v2="10"
-                    v3="15"
-                    v4="it will return some random number"
+                   <Quize
+                    quizeNo="1"
+                    question="How many types of constructors are available for use in general (with respect to parameters)? "
+                    correctAnswer="2"
+                    v1="2"
+                    v2="3"
+                    v3="4"
+                    v4="5"
                     counter={this.counter}
                   />
+                 
                 </div>
               </div>
             </div>
