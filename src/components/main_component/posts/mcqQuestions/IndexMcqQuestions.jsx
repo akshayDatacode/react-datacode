@@ -117,7 +117,53 @@ class IndexMcqQuestions extends Component {
                 link="/index_git_mcqs"
               />
             </div>
+            <div className="card-deck m-2">
+              <PostCard
+                imgsource="index_mcqs.jpeg"
+                title="Android MCQs Questions"
+                paragraph="We Love to Code and this is the best way to express our
+                  love to Computer Science Wolrd."
+                link="/index_android_mcqs"
+              />
+              <PostCard
+                imgsource="index_mcqs.jpeg"
+                title="SQL MCQs Questions"
+                paragraph="We Love to Code and this is the best way to express our
+                  love to Computer Science Wolrd."
+                link="/index_sql_mcqs"
+              />
+              <PostCard
+                imgsource="index_mcqs.jpeg"
+                title="DS MCQs Questions"
+                paragraph="We Love to Code and this is the best way to express our
+                  love to Computer Science Wolrd."
+                link="/index_ds_mcqs"
+              />
+            </div>
             <h4 className="text-secondary mt-3">For More MCQs Practice</h4>
+            <div className="card-deck m-2">
+              <PostCard
+                imgsource="index_mcqs.jpeg"
+                title="OOPs MCQs Questions"
+                paragraph="We Love to Code and this is the best way to express our
+                  love to Computer Science Wolrd."
+                link="/index_oops_mcqs"
+              />
+              <PostCard
+                imgsource="index_mcqs.jpeg"
+                title="Blank"
+                paragraph="We Love to Code and this is the best way to express our
+                  love to Computer Science Wolrd."
+                link="/index_mcqs"
+              />
+              <PostCard
+                imgsource="index_mcqs.jpeg"
+                title="Blank"
+                paragraph="We Love to Code and this is the best way to express our
+                  love to Computer Science Wolrd."
+                link="/index_mcqs"
+              />
+            </div>
             <MCQCardCarousel />
           </div>
           <div className="col-md-3">

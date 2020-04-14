@@ -120,6 +120,19 @@ import DjangoMCQ1 from "../components/main_component/posts/mcqQuestions/django_m
 // Git MCQs
 import IndexGitMCQ from "../components/main_component/posts/mcqQuestions/git_mcqs/IndexGitMCQ";
 import GitMCQ1 from "../components/main_component/posts/mcqQuestions/git_mcqs/GitMCQ1";
+// DS MCQs
+import IndexDSMCQ from "../components/main_component/posts/mcqQuestions/ds_mcqs/IndexDSMCQ";
+import DSMCQ1 from "../components/main_component/posts/mcqQuestions/ds_mcqs/DSMCQ1";
+// Android MCQs
+import IndexAndroidMCQ from "../components/main_component/posts/mcqQuestions/android_mcqs/IndexAndroidMCQ";
+import AndroidMCQ1 from "../components/main_component/posts/mcqQuestions/android_mcqs/AndroidMCQ1";
+// SQL MCQs
+import IndexSQLMCQ from "../components/main_component/posts/mcqQuestions/sql_mcqs/IndexSQLMCQ";
+import SQLMCQ1 from "../components/main_component/posts/mcqQuestions/sql_mcqs/SQLMCQ1";
+// OOPs MCQs
+import IndexOOPsMCQ from "../components/main_component/posts/mcqQuestions/oops_mcqs/IndexOOPsMCQ";
+import OOPsMCQ1 from "../components/main_component/posts/mcqQuestions/oops_mcqs/OOPsMCQ1";
+
 // Technogies
 import IndexTechnologies from "../components/main_component/technologies/IndexTechnologies";
 import Python from "../components/main_component/technologies/Python";
@@ -279,15 +292,25 @@ class AppRouters extends Component {
           <Route exact path="/react_mcq_1" component={ReactMCQ1} />
           {/* Ending React MCQS */}
 
-          {/* Starting  MCQs */}
-          <Route exact path="/index_js_mcqs" component={IndexJSMCQ} />
-          <Route exact path="/js_mcq_1" component={JSMCQ1} />
-          {/* Ending  MCQS */}
+          {/* Starting DS MCQs */}
+          <Route exact path="/index_ds_mcqs" component={IndexDSMCQ} />
+          <Route exact path="/ds_mcq_1" component={DSMCQ1} />
+          {/* Ending DS MCQS */}
 
-          {/* Starting  MCQs */}
-          <Route exact path="/index_js_mcqs" component={IndexJSMCQ} />
-          <Route exact path="/js_mcq_1" component={JSMCQ1} />
-          {/* Ending  MCQS */}
+          {/* Starting Android MCQs */}
+          <Route exact path="/index_android_mcqs" component={IndexAndroidMCQ} />
+          <Route exact path="/android_mcq_1" component={AndroidMCQ1} />
+          {/* Ending Android MCQS */}
+
+          {/* Starting SQL  MCQs */}
+          <Route exact path="/index_sql_mcqs" component={IndexSQLMCQ} />
+          <Route exact path="/sql_mcq_1" component={SQLMCQ1} />
+          {/* Ending SQL MCQS */}
+
+          {/* Starting OOPs  MCQs */}
+          <Route exact path="/index_oops_mcqs" component={IndexOOPsMCQ} />
+          <Route exact path="/oops_mcq_1" component={OOPsMCQ1} />
+          {/* Ending OOPs MCQS */}
 
           {/* Index Quize Tests Routing */}
 
