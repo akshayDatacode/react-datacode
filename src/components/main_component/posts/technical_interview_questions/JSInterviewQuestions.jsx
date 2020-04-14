@@ -27,17 +27,93 @@ class JSInterviewQuestions extends Component {
 
             <div className="col-md-7">
               <QuestionCard
-                question={`1) What is Python? What are the benefits of using Python?`}
-                answer={`Python is a programming language with objects, modules, threads, exceptions and automatic memory management. The benefits of pythons are that it is simple and easy, portable, extensible, built-in data structure and it is open source.`}
+                question={`1. What is JavaScript?
+
+                `}
+                answer={`JavaScript is a client-side as well as server side scripting language that can be inserted into HTML pages and is understood by web browsers. JavaScript is also an Object based Programming language
+
+                  `}
               />
               <QuestionCard
-                question={`2) What is PEP 8?`}
-                answer={`PEP 8 is a coding convention, a set of recommendation, about how to write your Python code more readable.`}
+                question={`2. Enumerate the differences between Java and JavaScript?
+
+                `}
+                answer={`Java is a complete programming language. In contrast, JavaScript is a coded program that can be introduced to HTML pages. These two languages are not at all inter-dependent and are designed for the different intent. Java is an object - oriented programming (OOPS) or structured programming language like C++ or C whereas JavaScript is a client-side scripting language.
+
+                `}
               />
-              <QuestionCard
-                question={`3) What is pickling and unpickling?
-             `}
-                answer={`Pickle module accepts any Python object and converts it into a string representation and dumps it into a file by using dump function, this process is called pickling. While the process of retrieving original Python objects from the stored string representation is called unpickling.`}
+               <QuestionCard
+                question={`3. What are JavaScript Data Types?
+
+                `}
+                answer={`Following are the JavaScript Data types:
+
+                Number
+                String
+                Boolean
+                Object
+                Undefined`}
+              />
+               <QuestionCard
+                question={`4. What is the use of isNaN function?
+
+                `}
+                answer={`isNan function returns true if the argument is not a number otherwise it is false.
+
+                `}
+              />
+               <QuestionCard
+                question={`5. Between JavaScript and an ASP script, which is faster?
+
+                `}
+                answer={`JavaScript is faster. JavaScript is a client-side language and thus it does not need the assistance of the web server to execute. On the other hand, ASP is a server-side language and hence is always slower than JavaScript. Javascript now is also a server side language (nodejs).
+
+                `}
+              />
+               <QuestionCard
+                question={`6. What is negative infinity?
+
+                `}
+                answer={`Negative Infinity is a number in JavaScript which can be derived by dividing negative number by zero.
+
+                `}
+              />
+               <QuestionCard
+                question={`7. Is it possible to break JavaScript Code into several lines?
+
+                `}
+                answer={`Breaking within a string statement can be done by the use of a backslash, '\', at the end of the first line
+                And if you change to a new line when not within a string statement, then javaScript ignores break in line.
+
+
+                
+                `}
+              />
+               <QuestionCard
+                question={`8. Which company developed JavaScript?
+
+                `}
+                answer={`Netscape is the software company who developed JavaScript.
+
+                `}
+              />
+               <QuestionCard
+                question={`9. What are undeclared and undefined variables?
+
+                `}
+                answer={`Undeclared variables are those that do not exist in a program and are not declared. If the program tries to read the value of an undeclared variable, then a runtime error is encountered.
+
+                Undefined variables are those that are declared in the program but have not been given any value. If the program tries to read the value of an undefined variable, an undefined value is returned.
+
+`}
+              />
+               <QuestionCard
+                question={`10. What is a prompt box?
+
+                `}
+                answer={`A prompt box is a box which allows the user to enter input by providing a text box. Label and box will be provided to enter the text or number.
+
+                `}
               />
             </div>
             <div className="col-md-4 mt-5">
