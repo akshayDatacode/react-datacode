@@ -1,11 +1,15 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faUsersCog } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHome,
+  faCopyright,
+  faUserCog,
+  faUsersCog,
+} from "@fortawesome/free-solid-svg-icons";
 import RightSideSection from "../../../../../right_section/RightSideSection";
 import QuizeShowCard from "../QuizeShowCard";
-
-class IndexCQuizeTests extends Component {
+class IndexReactQuizeTests extends Component {
   state = {};
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -16,7 +20,7 @@ class IndexCQuizeTests extends Component {
         <div className="row">
           <div className="col-1"></div>
           <div className="col-md-8 mt-4">
-            <h2 className="text-center mb-4">C Programming Quize Test</h2>
+            <h2 className="text-center mb-4">React Quize Test</h2>
             <Link to="/home" className="badge badge-primary mr-1 mb-3">
               <FontAwesomeIcon icon={faHome} size="2x" />
             </Link>
@@ -30,22 +34,22 @@ class IndexCQuizeTests extends Component {
 
             <div className="card-deck mb-5">
               <QuizeShowCard
-                title="C Programming Quize Set 1"
+                title="React Quize Set 1"
                 level="Beginner"
                 imgsource="ds_mcqs.jpeg"
-                link="c_quize_test_1"
+                link="react_quize_test_1"
               />
               <QuizeShowCard
-                title="C Programming Quize Set 1"
+                title="React Quize Set 1"
                 level="Medium"
                 imgsource="ds_mcqs.jpeg"
-                link="c_quize_test_2"
+                link="react_quize_test_2"
               />
               <QuizeShowCard
-                title="C Programming Quize Set 1"
+                title="React Quize Set 1"
                 level="Advance"
                 imgsource="ds_mcqs.jpeg"
-                link="c_quize_test_3"
+                link="react_quize_test_3"
               />
             </div>
           </div>
@@ -58,4 +62,4 @@ class IndexCQuizeTests extends Component {
   }
 }
 
-export default IndexCQuizeTests;
+export default IndexReactQuizeTests;

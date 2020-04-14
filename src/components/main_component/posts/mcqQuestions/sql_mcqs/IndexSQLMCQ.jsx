@@ -4,6 +4,7 @@ import RightSideSection from "../../../../right_section/RightSideSection";
 import McqsShowCard from "../McqsShowCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faListAlt, faHome } from "@fortawesome/free-solid-svg-icons";
+
 class IndexSQLMCQ extends Component {
   state = {};
   componentDidMount() {

@@ -79,6 +79,77 @@ import CQuizeTest1 from "../components/main_component/posts/mcqQuestions/quize_t
 import CQuizeTest2 from "../components/main_component/posts/mcqQuestions/quize_test/c_quizes_tests/CQuizeTest2";
 import CQuizeTest3 from "../components/main_component/posts/mcqQuestions/quize_test/c_quizes_tests/CQuizeTest3";
 import CQuizeTest4 from "../components/main_component/posts/mcqQuestions/quize_test/c_quizes_tests/CQuizeTest4";
+
+// java Quize Test
+import IndexJavaQuizeTests from "../components/main_component/posts/mcqQuestions/quize_test/java_quizes_tests/IndexJavaQuizeTests";
+import JavaQuizeTest1 from "../components/main_component/posts/mcqQuestions/quize_test/java_quizes_tests/JavaQuizeTest1";
+import JavaQuizeTest2 from "../components/main_component/posts/mcqQuestions/quize_test/java_quizes_tests/JavaQuizeTest2";
+import JavaQuizeTest3 from "../components/main_component/posts/mcqQuestions/quize_test/java_quizes_tests/JavaQuizeTest3";
+import JavaQuizeTest4 from "../components/main_component/posts/mcqQuestions/quize_test/java_quizes_tests/JavaQuizeTest4";
+
+// JS Quize Test
+import IndexJSQuizeTests from "../components/main_component/posts/mcqQuestions/quize_test/js_quizes_tests/IndexJSQuizeTests";
+import JSQuizeTest1 from "../components/main_component/posts/mcqQuestions/quize_test/js_quizes_tests/JSQuizeTest1";
+import JSQuizeTest2 from "../components/main_component/posts/mcqQuestions/quize_test/js_quizes_tests/JSQuizeTest2";
+import JSQuizeTest3 from "../components/main_component/posts/mcqQuestions/quize_test/js_quizes_tests/JSQuizeTest3";
+import JSQuizeTest4 from "../components/main_component/posts/mcqQuestions/quize_test/js_quizes_tests/JSQuizeTest4";
+
+// DataStructure Quize Test
+import IndexDSQuizeTests from "../components/main_component/posts/mcqQuestions/quize_test/ds_quizes_tests/IndexDSQuizeTests";
+import DSQuizeTest1 from "../components/main_component/posts/mcqQuestions/quize_test/ds_quizes_tests/DSQuizeTest1";
+import DSQuizeTest2 from "../components/main_component/posts/mcqQuestions/quize_test/ds_quizes_tests/DSQuizeTest2";
+import DSQuizeTest3 from "../components/main_component/posts/mcqQuestions/quize_test/ds_quizes_tests/DSQuizeTest3";
+import DSQuizeTest4 from "../components/main_component/posts/mcqQuestions/quize_test/ds_quizes_tests/DSQuizeTest4";
+
+// Html Quize Test
+import IndexHtmlQuizeTests from "../components/main_component/posts/mcqQuestions/quize_test/html_quizes_tests/IndexHtmlQuizeTests";
+import HtmlQuizeTest1 from "../components/main_component/posts/mcqQuestions/quize_test/html_quizes_tests/HtmlQuizeTest1";
+import HtmlQuizeTest2 from "../components/main_component/posts/mcqQuestions/quize_test/html_quizes_tests/HtmlQuizeTest2";
+import HtmlQuizeTest3 from "../components/main_component/posts/mcqQuestions/quize_test/html_quizes_tests/HtmlQuizeTest3";
+import HtmlQuizeTest4 from "../components/main_component/posts/mcqQuestions/quize_test/html_quizes_tests/HtmlQuizeTest4";
+
+// SQL Quize Test
+import IndexSQLQuizeTests from "../components/main_component/posts/mcqQuestions/quize_test/sql_quizes_tests/IndexSQLQuizeTests";
+import SQLQuizeTest1 from "../components/main_component/posts/mcqQuestions/quize_test/sql_quizes_tests/SQLQuizeTest1";
+import SQLQuizeTest2 from "../components/main_component/posts/mcqQuestions/quize_test/sql_quizes_tests/SQLQuizeTest2";
+import SQLQuizeTest3 from "../components/main_component/posts/mcqQuestions/quize_test/sql_quizes_tests/SQLQuizeTest3";
+import SQLQuizeTest4 from "../components/main_component/posts/mcqQuestions/quize_test/sql_quizes_tests/SQLQuizeTest4";
+
+// DBMS Quize Test
+import IndexDBMSQuizeTests from "../components/main_component/posts/mcqQuestions/quize_test/dbms_quizes_tests/IndexDBMSQuizeTests";
+import DBMSQuizeTest1 from "../components/main_component/posts/mcqQuestions/quize_test/dbms_quizes_tests/DBMSQuizeTest1";
+import DBMSQuizeTest2 from "../components/main_component/posts/mcqQuestions/quize_test/dbms_quizes_tests/DBMSQuizeTest2";
+import DBMSQuizeTest3 from "../components/main_component/posts/mcqQuestions/quize_test/dbms_quizes_tests/DBMSQuizeTest3";
+import DBMSQuizeTest4 from "../components/main_component/posts/mcqQuestions/quize_test/dbms_quizes_tests/DBMSQuizeTest4";
+
+// OOPs Quize Test
+import IndexOOPsQuizeTests from "../components/main_component/posts/mcqQuestions/quize_test/oops_quizes_tests/IndexOOPsQuizeTests";
+import OOPsQuizeTest1 from "../components/main_component/posts/mcqQuestions/quize_test/oops_quizes_tests/OOPsQuizeTest1";
+import OOPsQuizeTest2 from "../components/main_component/posts/mcqQuestions/quize_test/oops_quizes_tests/OOPsQuizeTest2";
+import OOPsQuizeTest3 from "../components/main_component/posts/mcqQuestions/quize_test/oops_quizes_tests/OOPsQuizeTest3";
+import OOPsQuizeTest4 from "../components/main_component/posts/mcqQuestions/quize_test/oops_quizes_tests/OOPsQuizeTest4";
+
+// Angular Quize Test
+import IndexAngularQuizeTests from "../components/main_component/posts/mcqQuestions/quize_test/angular_quizes_tests/IndexAngularQuizeTests";
+import AngularQuizeTest1 from "../components/main_component/posts/mcqQuestions/quize_test/angular_quizes_tests/AngularQuizeTest1";
+import AngularQuizeTest2 from "../components/main_component/posts/mcqQuestions/quize_test/angular_quizes_tests/AngularQuizeTest2";
+import AngularQuizeTest3 from "../components/main_component/posts/mcqQuestions/quize_test/angular_quizes_tests/AngularQuizeTest3";
+import AngularQuizeTest4 from "../components/main_component/posts/mcqQuestions/quize_test/angular_quizes_tests/AngularQuizeTest4";
+
+// React Quize Test
+import IndexReactQuizeTests from "../components/main_component/posts/mcqQuestions/quize_test/react_quizes_tests/IndexReactQuizeTests";
+import ReactQuizeTest1 from "../components/main_component/posts/mcqQuestions/quize_test/react_quizes_tests/ReactQuizeTest1";
+import ReactQuizeTest2 from "../components/main_component/posts/mcqQuestions/quize_test/react_quizes_tests/ReactQuizeTest2";
+import ReactQuizeTest3 from "../components/main_component/posts/mcqQuestions/quize_test/react_quizes_tests/ReactQuizeTest3";
+import ReactQuizeTest4 from "../components/main_component/posts/mcqQuestions/quize_test/react_quizes_tests/ReactQuizeTest4";
+
+// Android Quize Test
+import IndexAndroidQuizeTests from "../components/main_component/posts/mcqQuestions/quize_test/android_quizes_tests/IndexAndroidQuizeTests";
+import AndroidQuizeTest1 from "../components/main_component/posts/mcqQuestions/quize_test/android_quizes_tests/AndroidQuizeTest1";
+import AndroidQuizeTest2 from "../components/main_component/posts/mcqQuestions/quize_test/android_quizes_tests/AndroidQuizeTest2";
+import AndroidQuizeTest3 from "../components/main_component/posts/mcqQuestions/quize_test/android_quizes_tests/AndroidQuizeTest3";
+import AndroidQuizeTest4 from "../components/main_component/posts/mcqQuestions/quize_test/android_quizes_tests/AndroidQuizeTest4";
+
 // Index MCQ
 import IndexMcqQuestions from "../components/main_component/posts/mcqQuestions/IndexMcqQuestions";
 // Python MCQ Routing
@@ -360,6 +431,136 @@ class AppRouters extends Component {
           />
 
           {/* Enging Python Quize Test Routing */}
+
+          {/*Android  Quize Test Routing */}
+          <Route
+            exact
+            path="/android_quize_tests"
+            component={IndexAndroidQuizeTests}
+          />
+          <Route
+            exact
+            path="/android_quize_test_1"
+            component={AndroidQuizeTest1}
+          />
+          <Route
+            exact
+            path="/android_quize_test_2"
+            component={AndroidQuizeTest2}
+          />
+          <Route
+            exact
+            path="/android_quize_test_3"
+            component={AndroidQuizeTest3}
+          />
+          <Route
+            exact
+            path="/android_quize_test_4"
+            component={AndroidQuizeTest4}
+          />
+
+          {/*Angular  Quize Test Routing */}
+          <Route
+            exact
+            path="/angular_quize_tests"
+            component={IndexAngularQuizeTests}
+          />
+          <Route
+            exact
+            path="/angular_quize_test_1"
+            component={AngularQuizeTest1}
+          />
+          <Route
+            exact
+            path="/angular_quize_test_2"
+            component={AngularQuizeTest2}
+          />
+          <Route
+            exact
+            path="/angular_quize_test_3"
+            component={AngularQuizeTest3}
+          />
+          <Route
+            exact
+            path="/angular_quize_test_4"
+            component={AngularQuizeTest4}
+          />
+
+          {/*React  Quize Test Routing */}
+          <Route
+            exact
+            path="/react_quize_tests"
+            component={IndexReactQuizeTests}
+          />
+          <Route exact path="/react_quize_test_1" component={ReactQuizeTest1} />
+          <Route exact path="/react_quize_test_2" component={ReactQuizeTest2} />
+          <Route exact path="/react_quize_test_3" component={ReactQuizeTest3} />
+          <Route exact path="/react_quize_test_4" component={ReactQuizeTest4} />
+
+          {/*SQL  Quize Test Routing */}
+          <Route exact path="/sql_quize_tests" component={IndexSQLQuizeTests} />
+          <Route exact path="/sql_quize_test_1" component={SQLQuizeTest1} />
+          <Route exact path="/sql_quize_test_2" component={SQLQuizeTest2} />
+          <Route exact path="/sql_quize_test_3" component={SQLQuizeTest3} />
+          <Route exact path="/sql_quize_test_4" component={SQLQuizeTest4} />
+
+          {/*OOPs  Quize Test Routing */}
+          <Route
+            exact
+            path="/oops_quize_tests"
+            component={IndexOOPsQuizeTests}
+          />
+          <Route exact path="/oops_quize_test_1" component={OOPsQuizeTest1} />
+          <Route exact path="/oops_quize_test_2" component={OOPsQuizeTest2} />
+          <Route exact path="/oops_quize_test_3" component={OOPsQuizeTest3} />
+          <Route exact path="/oops_quize_test_4" component={OOPsQuizeTest4} />
+
+          {/*JavaScript  Quize Test Routing */}
+          <Route exact path="/js_quize_tests" component={IndexJSQuizeTests} />
+          <Route exact path="/js_quize_test_1" component={JSQuizeTest1} />
+          <Route exact path="/js_quize_test_2" component={JSQuizeTest2} />
+          <Route exact path="/js_quize_test_3" component={JSQuizeTest3} />
+          <Route exact path="/js_quize_test_4" component={JSQuizeTest4} />
+
+          {/*Java  Quize Test Routing */}
+          <Route
+            exact
+            path="/java_quize_tests"
+            component={IndexJavaQuizeTests}
+          />
+          <Route exact path="/java_quize_test_1" component={JavaQuizeTest1} />
+          <Route exact path="/java_quize_test_2" component={JavaQuizeTest2} />
+          <Route exact path="/java_quize_test_3" component={JavaQuizeTest3} />
+          <Route exact path="/java_quize_test_4" component={JavaQuizeTest4} />
+
+          {/*html  Quize Test Routing */}
+          <Route
+            exact
+            path="/html_quize_tests"
+            component={IndexHtmlQuizeTests}
+          />
+          <Route exact path="/html_quize_test_1" component={HtmlQuizeTest1} />
+          <Route exact path="/html_quize_test_2" component={HtmlQuizeTest2} />
+          <Route exact path="/html_quize_test_3" component={HtmlQuizeTest3} />
+          <Route exact path="/html_quize_test_4" component={HtmlQuizeTest4} />
+
+          {/*ds  Quize Test Routing */}
+          <Route exact path="/ds_quize_tests" component={IndexDSQuizeTests} />
+          <Route exact path="/ds_quize_test_1" component={DSQuizeTest1} />
+          <Route exact path="/ds_quize_test_2" component={DSQuizeTest2} />
+          <Route exact path="/ds_quize_test_3" component={DSQuizeTest3} />
+          <Route exact path="/ds_quize_test_4" component={DSQuizeTest4} />
+
+          {/*dbms  Quize Test Routing */}
+          <Route
+            exact
+            path="/dbms_quize_tests"
+            component={IndexDBMSQuizeTests}
+          />
+          <Route exact path="/dbms_quize_test_1" component={DBMSQuizeTest1} />
+          <Route exact path="/dbms_quize_test_2" component={DBMSQuizeTest2} />
+          <Route exact path="/dbms_quize_test_3" component={DBMSQuizeTest3} />
+          <Route exact path="/dbms_quize_test_4" component={DBMSQuizeTest4} />
 
           {/* Starting Interview Routing */}
 

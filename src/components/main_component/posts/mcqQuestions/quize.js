@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Accordion, Card, Button } from "react-bootstrap";
+import { Accordion, Card } from "react-bootstrap";
 import PrismCode from "../../../PrismCode";
 
 class Quize extends Component {
@@ -43,7 +43,7 @@ class Quize extends Component {
                 {this.state.status}
               </h6>
             </div>
-          )}{" "}
+          )}
           <div className="card-body">
             <div className="p-2 border-left border-primary">
               <h5 className="text-left ml-2">{this.props.question}</h5>

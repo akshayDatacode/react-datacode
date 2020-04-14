@@ -1,11 +1,16 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faUsersCog } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHome,
+  faCopyright,
+  faUserCog,
+  faUsersCog,
+} from "@fortawesome/free-solid-svg-icons";
 import RightSideSection from "../../../../../right_section/RightSideSection";
 import QuizeShowCard from "../QuizeShowCard";
 
-class IndexCQuizeTests extends Component {
+class IndexSQLQuizeTests extends Component {
   state = {};
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -30,22 +35,22 @@ class IndexCQuizeTests extends Component {
 
             <div className="card-deck mb-5">
               <QuizeShowCard
-                title="C Programming Quize Set 1"
+                title="SQL Quize Set 1"
                 level="Beginner"
                 imgsource="ds_mcqs.jpeg"
-                link="c_quize_test_1"
+                link="sql_quize_test_1"
               />
               <QuizeShowCard
-                title="C Programming Quize Set 1"
+                title="SQL Quize Set 1"
                 level="Medium"
                 imgsource="ds_mcqs.jpeg"
-                link="c_quize_test_2"
+                link="sql_quize_test_2"
               />
               <QuizeShowCard
-                title="C Programming Quize Set 1"
+                title="SQL Quize Set 1"
                 level="Advance"
                 imgsource="ds_mcqs.jpeg"
-                link="c_quize_test_3"
+                link="sql_quize_test_3"
               />
             </div>
           </div>
@@ -58,4 +63,4 @@ class IndexCQuizeTests extends Component {
   }
 }
 
-export default IndexCQuizeTests;
+export default IndexSQLQuizeTests;
