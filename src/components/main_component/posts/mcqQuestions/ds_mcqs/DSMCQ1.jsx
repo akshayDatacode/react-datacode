@@ -32,8 +32,8 @@ class DSMCQ1 extends Component {
           <Link to="/index_mcqs" className="badge badge-warning mr-1">
             Programming MCQs >{" "}
           </Link>
-          <Link to="/index_cpp_mcqs" className="badge badge-success mr-1">
-            C++ MCQs >
+          <Link to="/index_ds_mcqs" className="badge badge-success mr-1">
+          Datastructure MCQs >
           </Link>
           <ScoreCard count={this.state.count} />
         </div>
@@ -43,160 +43,154 @@ class DSMCQ1 extends Component {
             <div className="col-md-7 ">
               <div className="row mt-2 text-center">
                 <div className="col">
-                  <h2 className="text-secondary">Cpp MCQs Set 1</h2>
+                  <h2 className="text-secondary"> Datastructure MCQs Set 1</h2>
                 </div>
               </div>
               <div className="row">
                 <div className="col">
                   <Quize
                     quizeNo="1"
-                    question="Wrapping data and its related functionality into a single entity is known as _____________ "
-                    correctAnswer=" Encapsulation"
-                    v1="Abstraction"
-                    v2=" Encapsulation"
-                    v3=" Polymorphism"
-                    v4=" Modularity"
+                    question="Which of these best describes an array?
+                    "
+                    correctAnswer="Container of objects of similar types "
+                    v1="A data structure that shows a hierarchical behaviour"
+                    v2="Container of objects of similar types "
+                    v3="Arrays are immutable once initialised
+                  "
+                    v4="Array is not a data structure"
                     counter={this.counter}
                   />
-                  <Quize
+                   <Quize
                     quizeNo="2"
-                    question="What is virtual inheritance? "
-                    correctAnswer="C++ technique to avoid multiple copies of the base class into children/derived class"
-                    v1="C++ technique to avoid multiple copies of the base class into children/derived class"
-                    v2="C++ technique to avoid multiple inheritances of classes"
-                    v3="C++ technique to enhance multiple inheritance"
-                    v4="C++ technique to ensure that a private member of the base class can be accessed somehow "
+                    question="Process of inserting an element in stack is called ____________
+                    "
+                    correctAnswer="Push "
+                    v1="Create"
+                    v2="Evaluation "
+                    v3="Push"
+                    v4=" Pop"
                     counter={this.counter}
                   />
-                  <Quize
+                   <Quize
                     quizeNo="3"
-                    question="What will be the output of the following C++ code?"
-                    language="c++"
-                    code={`#include <iostream>
-using namespace std;
-class A{
-public:
-   A(){
-    cout<<'Constructor called';
-      }
-  ~A(){
-    cout<<'Destructor called';
-      }
-};
-int main(int argc, char const *argv[])
-{
-  A *a = new A[5];
-  delete a;
-  return 0;
-}`}
-                    correctAnswer="Segmentation fault"
-                    v1="“Constructor called” five times and then “Destructor called” five times"
-                    v2="“Constructor called” five times and then “Destructor called” once"
-                    v3="Error"
-                    v4="Segmentation fault "
+                    question="The postfix form of the expression (A+ B)*(C*D- E)*F / G is?"
+                    correctAnswer="AB + CD* E – *F *G / "
+                    v1="AB+ CD*E – FG /**"
+                    v2=" AB + CD* E – F **G / "
+                    v3="AB + CD* E – *F *G /"
+                    v4="AB + CDE * – * F *G /"
                     counter={this.counter}
                   />
-                  <Quize
+                   <Quize
                     quizeNo="4"
-                    question="What does ‘\a’ escape code represent? "
-                    correctAnswer="alert"
-                    v1="alert"
-                    v2="backslash"
-                    v3="tab"
-                    v4="form feed "
+                    question=" The result of evaluating the postfix expression 5, 4, 6, +, *, 4, 9, 3, /, +, * is?"
+                    correctAnswer="350 "
+                    v1="350"
+                    v2="600 "
+                    v3="650"
+                    v4="588"
                     counter={this.counter}
                   />
-                  <Quize
+                   <Quize
                     quizeNo="5"
-                    question=" What happens if the following code is compiled on both C and C++?"
-                    language="C++"
-                    code={`#include<stdio.h>
-struct STRUCT
-{
-private:
-  int a;
-};
-int main()
-{
-  printf('%d\n', (int)sizeof(struct STRUCT));
-  return 0;
-}`}
-                    correctAnswer="The program gives an error in case of C but runs perfectly in case of C++"
-                    v1="The program runs fine and both prints output “HELLO THIS IS STRUCTURE”"
-                    v2="The program gives an error in case of C but runs perfectly in case of C++"
-                    v3="The program gives an error in case of C++ but runs perfectly in case of C"
-                    v4="  The program gives an error in case of both C and C++"
+                    question="If the elements “A”, “B”, “C” and “D” are placed in a queue and are deleted one at a time, in what order will they be removed?"
+                    correctAnswer=" ABCD "
+                    v1=" ABCD"
+                    v2=" DCBA "
+                    v3="DCAB"
+                    v4="ABDC"
                     counter={this.counter}
                   />
-                  <Quize
+                   <Quize
                     quizeNo="6"
-                    question="  What is the value of the bool?"
-                    language="C++"
-                    code={`bool is_int(789.54)`}
-                    correctAnswer="False"
-                    v1="True"
-                    v2="False"
-                    v3="1"
-                    v4=" 2"
-                    counter={this.counter}
-                  />
-                  <Quize
-                    quizeNo="7"
-                    question="Given the variables p, q are of char type and r, s, t are of int type. Select the right statement?"
-                    language="C++"
-                    code={`1. t = (r * s) / (r + s);
-2. t = (p * q) / (r + s);`}
-                    correctAnswer="both 1 and 2 are true"
-                    v1="1 is true but 2 is false"
-                    v2="1 is false and 2 is true"
-                    v3="both 1 and 2 are true"
-                    v4="both 1 and 2 are false "
-                    counter={this.counter}
-                  />
-                  <Quize
-                    quizeNo="8"
-                    question="What is the range of the floating point numbers? "
-                    correctAnswer="-3.4E+38 to +3.4E+38"
-                    v1="-3.4E+38 to +3.4E+38"
-                    v2="-3.4E+38 to +3.4E+34"
-                    v3="-3.4E+38 to +3.4E+36"
-                    v4="-3.4E+38 to +3.4E+32 "
-                    counter={this.counter}
-                  />
-                  <Quize
-                    quizeNo="9"
-                    question="What will happen in the following C++ code snippet?"
-                    language="C++"
-                    code={`int a = 100, b = 200;
-int *p = and a, *q = &b;
-p = q;`}
-                    correctAnswer="p now points to b"
-                    v1="b is assigned to a"
-                    v2="p now points to b"
-                    v3="a is assigned to b"
-                    v4="q now points to a"
-                    counter={this.counter}
-                  />
-                  <Quize
-                    quizeNo="10"
-                    question=" What will be the output of the following C++ code?"
-                    language="C++"
-                    code={`#include <iostream>
-using namespace std;
-int main()
+                    question="Consider the following definition in c programming language"
+                    code={`struct node
 {
-    int a = 5, b = 10, c = 15;
-    int *arr[ ] = {&a, &b, &c};
-    cout << arr[1];
-    return 0;
-}`}
-                    correctAnswer="it will return some random number"
-                    v1="5"
-                    v2="10"
-                    v3="15"
-                    v4="it will return some random number"
+  int data;
+  struct node * next;
+}
+  typedef struct node NODE;
+  NODE *ptr;`}
+                    correctAnswer=" ptr = (NODE*)malloc(sizeof(NODE)); "
+                    v1="ptr = (NODE*)malloc(NODE);"
+                    v2="ptr = (NODE*)malloc(sizeof(NODE*)); "
+                    v3="ptr = (NODE)malloc(sizeof(NODE));"
+                    v4=" ptr = (NODE*)malloc(sizeof(NODE));"
                     counter={this.counter}
                   />
+                   <Quize
+                    quizeNo="7"
+                    question="What does the following function do for a given Linked List with first node as head?"
+                    code={`void fun1(struct node* head)
+{
+if(head == NULL)
+return;
+fun1(head->next);
+printf("%d  ", head->data);
+}`}
+                    correctAnswer="Prints all nodes of linked list in reverse order "
+                    v1="Prints all nodes of linked lists"
+                    v2="Prints all nodes of linked list in reverse order "
+                    v3="Prints alternate nodes of Linked List"
+                    v4="Prints alternate nodes in reverse order"
+                    counter={this.counter}
+                  />
+                   <Quize
+                    quizeNo="8"
+                    question="The following function reverse() is supposed to reverse a singly linked list. There is one line missing at the end of the function. What should be added in place of “/*ADD A STATEMENT HERE*/”, so that the function correctly reverses a linked list."
+                    code={`/* Link list node */
+struct node
+{
+ int data;
+struct node* next;
+};
+                     
+/* head_ref is a double pointer which points to head (or start) pointer 
+of linked list */
+static void reverse(struct node** head_ref)
+{
+ struct node* prev   = NULL;
+ struct node* current = *head_ref;
+ struct node* next;
+ while (current != NULL)
+{
+  next  = current->next;  
+  current->next = prev;   
+  prev = current;
+  current = next;
+}
+  /*ADD A STATEMENT HERE*/
+}`                   }
+                   
+                    correctAnswer="*head_ref = prev; "
+                    v1="*head_ref = current;"
+                    v2="*head_ref = prev; "
+                    v3="*head_ref = next;"
+                    v4="*head_ref = NULL;"
+                    counter={this.counter}
+                  />
+                   <Quize
+                    
+                    quizeNo="9"
+                    question="What is the space complexity for deleting a linked list?"
+                    correctAnswer=" O(1) "
+                    v1=" O(1)"
+                    v2="O(n) "
+                    v3="Either O(1) or O(n)"
+                    v4="O(logn)"
+                    counter={this.counter}
+                  />
+                   <Quize
+                    quizeNo="10"
+                    question="Which of the following is false about a doubly linked list?"
+                    correctAnswer=" "
+                    v1="We can navigate in both the directions"
+                    v2="It requires more space than a singly linked list "
+                    v3="The insertion and deletion of a node take a bit longer"
+                    v4="Implementing a doubly linked list is easier than singly linked list"
+                    counter={this.counter}
+                  />
+                 
                 </div>
               </div>
             </div>
