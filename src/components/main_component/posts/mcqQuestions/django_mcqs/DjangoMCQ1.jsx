@@ -32,8 +32,8 @@ class DjangoMCQ1 extends Component {
           <Link to="/index_mcqs" className="badge badge-warning mr-1">
             Programming MCQs >{" "}
           </Link>
-          <Link to="/index_c_mcqs" className="badge badge-success mr-1">
-            C-MCQs >
+          <Link to="/index_django_mcqs" className="badge badge-success mr-1">
+            Django-MCQs >
           </Link>
           <ScoreCard count={this.state.count} />
         </div>
