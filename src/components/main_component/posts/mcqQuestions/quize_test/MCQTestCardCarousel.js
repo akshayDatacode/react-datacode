@@ -14,59 +14,41 @@ class MCQTestCardCarousel extends Component {
               <div className="card-deck ">
                 <CardCarouselItem
                   imgsource="code_challange.jpeg"
-                  title="weekly Code Challange"
-                  link="/index_code_challange"
+                  title="Python quiz test"
+                  link="/python_quize_tests"
                 />
                 <CardCarouselItem
                   imgsource="event.jpeg"
-                  title="Event and Conference"
-                  link="/index_event"
+                  title="C quiz test"
+                  link="/c_quize_tests"
                 />
                 <CardCarouselItem
                   imgsource="web_blog.jpeg"
-                  title="Community Web Blogs"
-                  link="/webdesign_blog"
+                  title="Coming Soon...."
+                  link="/index_quize_tests"
                 />
               </div>
             </Carousel.Item>
             <Carousel.Item>
-              <div className="card-deck">
+              <div className="card-deck ">
                 <CardCarouselItem
-                  imgsource="code_challange.jpeg"
-                  title="weekly Code Challange"
-                  link="/index_code_challange"
+                  imgsource="web_blog.jpeg"
+                  title="Coming Soon...."
+                  link="/index_quize_tests"
                 />
                 <CardCarouselItem
-                  imgsource="code_challange.jpeg"
-                  title="weekly Code Challange"
-                  link="/index_code_challange"
+                 imgsource="web_blog.jpeg"
+                 title="Coming Soon...."
+                 link="/index_quize_tests"
                 />
                 <CardCarouselItem
-                  imgsource="code_challange.jpeg"
-                  title="weekly Code Challange"
-                  link="/index_code_challange"
-                />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div className="card-deck">
-                <CardCarouselItem
-                  imgsource="code_challange.jpeg"
-                  title="weekly Code Challange"
-                  link="/index_code_challange"
-                />
-                <CardCarouselItem
-                  imgsource="code_challange.jpeg"
-                  title="weekly Code Challange"
-                  link="/index_code_challange"
-                />
-                <CardCarouselItem
-                  imgsource="code_challange.jpeg"
-                  title="weekly Code Challange"
-                  link="/index_code_challange"
+                  imgsource="web_blog.jpeg"
+                  title="Coming Soon...."
+                  link="/index_quize_tests"
                 />
               </div>
             </Carousel.Item>
+            
           </Carousel>
         </div>
 
@@ -76,52 +58,46 @@ class MCQTestCardCarousel extends Component {
             <Carousel.Item>
               <CardCarouselItem
                 imgsource="code_challange.jpeg"
-                title="weekly Code Challange"
-                link="/index_code_challange"
+                title="Python quiz test"
+                link="/python_quize_tests"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="event.jpeg"
-                title="Event and Conference"
-                link="/index_event"
+               imgsource="event.jpeg"
+               title="C quiz test"
+               link="/c_quize_tests"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
                 imgsource="web_blog.jpeg"
-                title="Community Web Blogs"
-                link="/webdesign_blog"
+                title="Coming Soon...."
+                link="/index_quize_tests"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="technical_interview_questions.jpeg"
-                title="Technical Interview Questions"
-                link="/index_interview_questioins"
+                imgsource="web_blog.jpeg"
+                title="Coming Soon...."
+                link="/index_quize_tests"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="python_programming.jpeg"
-                title="Python Programming"
-                link="/python"
+                imgsource="web_blog.jpeg"
+                title="Coming Soon...."
+                link="/index_quize_tests"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="ds_mcqs.jpeg"
-                title="DataStructure MCQs"
-                link="/index_mcqs"
+               imgsource="web_blog.jpeg"
+               title="Coming Soon...."
+               link="/index_quize_tests"
               />
             </Carousel.Item>
-            <Carousel.Item>
-              <CardCarouselItem
-                imgsource="python_programming_question.jpeg"
-                title="Python Programming Questions"
-                link="/python_programming_questions"
-              />
-            </Carousel.Item>
+            
           </Carousel>
         </div>
       </>
