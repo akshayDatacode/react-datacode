@@ -14,18 +14,18 @@ class ProgrammingQuestionCardCarousel extends Component {
               <div className="card-deck ">
                 <CardCarouselItem
                   imgsource="code_challange.jpeg"
-                  title="weekly Code Challange"
-                  link="/index_code_challange"
+                  title="C programming questions"
+                  link="/c_programming_questions"
                 />
                 <CardCarouselItem
                   imgsource="event.jpeg"
-                  title="Event and Conference"
-                  link="/index_event"
+                  title="Datastructure Programming Questions"
+                  link="/datastructure_programming_questions"
                 />
                 <CardCarouselItem
                   imgsource="web_blog.jpeg"
-                  title="Community Web Blogs"
-                  link="/webdesign_blog"
+                  title="Java Programming Questions"
+                  link="/java_programming_questions"
                 />
               </div>
             </Carousel.Item>
@@ -33,40 +33,22 @@ class ProgrammingQuestionCardCarousel extends Component {
               <div className="card-deck">
                 <CardCarouselItem
                   imgsource="code_challange.jpeg"
-                  title="weekly Code Challange"
-                  link="/index_code_challange"
+                  title="Javascript Programming Questions"
+                  link="/javascript_programming_questions"
                 />
                 <CardCarouselItem
                   imgsource="code_challange.jpeg"
-                  title="weekly Code Challange"
-                  link="/index_code_challange"
+                  title="Python Programming Questions"
+                  link="/python_programming_questions"
                 />
                 <CardCarouselItem
                   imgsource="code_challange.jpeg"
-                  title="weekly Code Challange"
-                  link="/index_code_challange"
+                  title="Coming soon.."
+                  link="/index_programming_questions"
                 />
               </div>
             </Carousel.Item>
-            <Carousel.Item>
-              <div className="card-deck">
-                <CardCarouselItem
-                  imgsource="code_challange.jpeg"
-                  title="weekly Code Challange"
-                  link="/index_code_challange"
-                />
-                <CardCarouselItem
-                  imgsource="code_challange.jpeg"
-                  title="weekly Code Challange"
-                  link="/index_code_challange"
-                />
-                <CardCarouselItem
-                  imgsource="code_challange.jpeg"
-                  title="weekly Code Challange"
-                  link="/index_code_challange"
-                />
-              </div>
-            </Carousel.Item>
+           
           </Carousel>
         </div>
 
@@ -75,30 +57,30 @@ class ProgrammingQuestionCardCarousel extends Component {
           <Carousel indicators={false}>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="code_challange.jpeg"
-                title="weekly Code Challange"
-                link="/index_code_challange"
+                 imgsource="code_challange.jpeg"
+                 title="C programming questions"
+                 link="/c_programming_questions"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
                 imgsource="event.jpeg"
-                title="Event and Conference"
-                link="/index_event"
+                title="Datastructure Programming Questions"
+                link="/datastructure_programming_questions"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
                 imgsource="web_blog.jpeg"
-                title="Community Web Blogs"
-                link="/webdesign_blog"
+                title="Java Programming Questions"
+                link="/java_programming_questions"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="technical_interview_questions.jpeg"
-                title="Technical Interview Questions"
-                link="/index_interview_questioins"
+                imgsource="code_challange.jpeg"
+                title="Javascript Programming Questions"
+                link="/javascript_programming_questions"
               />
             </Carousel.Item>
             <Carousel.Item>
@@ -110,16 +92,16 @@ class ProgrammingQuestionCardCarousel extends Component {
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="ds_mcqs.jpeg"
-                title="DataStructure MCQs"
-                link="/index_mcqs"
+                imgsource="code_challange.jpeg"
+                title="Python Programming Questions"
+                link="/python_programming_questions"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="python_programming_question.jpeg"
-                title="Python Programming Questions"
-                link="/python_programming_questions"
+                imgsource="code_challange.jpeg"
+                title="Coming soon.."
+                link="/index_programming_questions"
               />
             </Carousel.Item>
           </Carousel>
