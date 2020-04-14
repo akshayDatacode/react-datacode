@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b6064b17314bda185dbc7b31d1d95776",
+    "revision": "e312c54c7c232c291df62a95d6b9ea9c",
     "url": "/index.html"
   },
   {
-    "revision": "dc3051226bb8c2ff1523",
+    "revision": "dce9aa8ee14269ee0c75",
     "url": "/static/css/2.89f067aa.chunk.css"
   },
   {
-    "revision": "50930e99017c488be10c",
+    "revision": "7a110e59eb1eb9a01cd3",
     "url": "/static/css/main.2749690b.chunk.css"
   },
   {
-    "revision": "dc3051226bb8c2ff1523",
-    "url": "/static/js/2.61068535.chunk.js"
+    "revision": "dce9aa8ee14269ee0c75",
+    "url": "/static/js/2.4f9381db.chunk.js"
   },
   {
     "revision": "ae54f939c6e84f9ec4d4c4cd8100d77f",
-    "url": "/static/js/2.61068535.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.4f9381db.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "50930e99017c488be10c",
-    "url": "/static/js/main.8b7d2f27.chunk.js"
+    "revision": "7a110e59eb1eb9a01cd3",
+    "url": "/static/js/main.a1218dc5.chunk.js"
   },
   {
     "revision": "ba88f149e390315adcbe",
@@ -84,6 +84,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/WhatsApp Image 2020-04-05 at 12.30.38 PM (9).83d70f9f.jpeg"
   },
   {
+    "revision": "0a030bf685c49145412302704763d891",
+    "url": "/static/media/WhatsApp Image 2020-04-14 at 10.30.58 PM (1).0a030bf6.jpeg"
+  },
+  {
+    "revision": "66c3909996e0ec51a56800e7e6fc5b8f",
+    "url": "/static/media/WhatsApp Image 2020-04-14 at 10.30.58 PM (2).66c39099.jpeg"
+  },
+  {
     "revision": "8b88ce41d2028e8c2467e9e58362ed40",
     "url": "/static/media/blog.8b88ce41.jpeg"
   },
@@ -98,6 +106,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "932dfd69c86a9b283d0b4a14a4a28c16",
     "url": "/static/media/c_programming_question.932dfd69.jpeg"
+  },
+  {
+    "revision": "cab65fde04ec22e0bfcb2a2a44c90728",
+    "url": "/static/media/c_quize_test.cab65fde.jpeg"
   },
   {
     "revision": "824a5bd332f76639571b6424d038cf74",
@@ -130,6 +142,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "861c575ce3691f7e346ea90f79e5dc4c",
     "url": "/static/media/css.861c575c.jpeg"
+  },
+  {
+    "revision": "05f98ced3865fde259c127ff52a349af",
+    "url": "/static/media/data_web.05f98ced.jpeg"
   },
   {
     "revision": "6a3682a9cb2114f8fa21758a82ff9ccc",
@@ -184,6 +200,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/eventcover1.f6300d06.jpeg"
   },
   {
+    "revision": "25b3d015c01eb87bb274bd8b094e54f8",
+    "url": "/static/media/firebase.25b3d015.jpeg"
+  },
+  {
+    "revision": "9af6cd11fafd2ccf284aa0571373a5c9",
+    "url": "/static/media/firebase_react.9af6cd11.jpeg"
+  },
+  {
     "revision": "e03defd019c51307e7db7aa9f0a9affc",
     "url": "/static/media/h2.e03defd0.jpeg"
   },
@@ -216,6 +240,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/java_interview_question.f35cdf18.jpeg"
   },
   {
+    "revision": "0360c5c369398918715886f35c479441",
+    "url": "/static/media/java_learning_blogs.0360c5c3.jpeg"
+  },
+  {
     "revision": "419fda51f47bb1c1e79badee223839e3",
     "url": "/static/media/java_mcqs.419fda51.jpeg"
   },
@@ -228,6 +256,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/java_programming_question.3483b153.jpeg"
   },
   {
+    "revision": "74b618a15b4015b3a0d895c9344dd95c",
+    "url": "/static/media/java_quize_test.74b618a1.jpeg"
+  },
+  {
     "revision": "bec692599d4e91e774b5d180c129fef5",
     "url": "/static/media/javascript.bec69259.jpeg"
   },
@@ -236,8 +268,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/js.97cad496.jpeg"
   },
   {
+    "revision": "14031d5aa64b27623ae20986f9120819",
+    "url": "/static/media/js_function.14031d5a.jpeg"
+  },
+  {
+    "revision": "d0ddbefb9f38cc93c639499cce56fbfb",
+    "url": "/static/media/js_learning_blogs.d0ddbefb.jpeg"
+  },
+  {
     "revision": "50ab2ca53a788732357ba287425ea185",
     "url": "/static/media/machine_blog.50ab2ca5.jpeg"
+  },
+  {
+    "revision": "de98d24aa748af38d99b7549c82b0a92",
+    "url": "/static/media/node.de98d24a.jpeg"
+  },
+  {
+    "revision": "cf450fdb9b21bc231d46daae04750d51",
+    "url": "/static/media/node_express.cf450fdb.jpeg"
+  },
+  {
+    "revision": "c99f81fe69e72204b2f14da55bb3d322",
+    "url": "/static/media/online_tutorials.c99f81fe.jpeg"
   },
   {
     "revision": "a2af45cd2dc997397fce15298192adb9",
@@ -254,6 +306,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3a7c54ac3b52ad0104eb6c8d83228674",
     "url": "/static/media/programming_practices.3a7c54ac.jpeg"
+  },
+  {
+    "revision": "048757a3c5b7db8abd60cede1fbc156f",
+    "url": "/static/media/programming_quize_test.048757a3.jpeg"
   },
   {
     "revision": "415ca3dce83baae0180929c026fcb1b9",
@@ -276,6 +332,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/python_programming_question.9a800e56.jpeg"
   },
   {
+    "revision": "f1996c15babfb74a0375b537dd71b14f",
+    "url": "/static/media/python_quize_test.f1996c15.jpeg"
+  },
+  {
     "revision": "429f9e69c23535a032da5438e12daf81",
     "url": "/static/media/pythonmcq.429f9e69.jpeg"
   },
@@ -284,12 +344,36 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/pythontech.48a04521.jpeg"
   },
   {
+    "revision": "db81b082197d6a87c57f1ab9f053ca60",
+    "url": "/static/media/react.db81b082.jpeg"
+  },
+  {
+    "revision": "d7dcb259bb5dc1e25045177d17a10efb",
+    "url": "/static/media/react_js_node_redux.d7dcb259.jpeg"
+  },
+  {
+    "revision": "df51fe84a2dd44e4b0f45b524af27288",
+    "url": "/static/media/react_node.df51fe84.jpeg"
+  },
+  {
+    "revision": "4ce3247e6d003ad97957d3034bebfbab",
+    "url": "/static/media/rest_api_node.4ce3247e.jpeg"
+  },
+  {
     "revision": "ae7240c04c122b6e9d976f7826b1973f",
     "url": "/static/media/sql_interview_question.ae7240c0.jpeg"
   },
   {
+    "revision": "e060b13154bdaabd057316304cc54b15",
+    "url": "/static/media/start_learning_togethr.e060b131.jpeg"
+  },
+  {
     "revision": "ae6a7be82eb8f079f86e90d7df399ba2",
     "url": "/static/media/tech.ae6a7be8.png"
+  },
+  {
+    "revision": "cbd3e9c87543274017ef25e3578b650a",
+    "url": "/static/media/tech_docs.cbd3e9c8.jpeg"
   },
   {
     "revision": "58291e4fe9c302a989cf9a7f45ea1b95",
@@ -298,6 +382,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6c49b2fef84607c7570bf4c58d6718d8",
     "url": "/static/media/web_blog.6c49b2fe.jpeg"
+  },
+  {
+    "revision": "027dce371f867962160aa85181d365df",
+    "url": "/static/media/web_building.027dce37.jpeg"
+  },
+  {
+    "revision": "9e80455b5634ac2a658a6969ef145933",
+    "url": "/static/media/web_css.9e80455b.jpeg"
+  },
+  {
+    "revision": "e3a6f6b6d2b79863ded8d38be4fc33a7",
+    "url": "/static/media/web_do_dont.e3a6f6b6.jpeg"
+  },
+  {
+    "revision": "c7656d938c2385ffaa8ce53684b28d26",
+    "url": "/static/media/web_tool.c7656d93.jpeg"
   },
   {
     "revision": "6477a0de9e6ec8a1714495af71bfbb12",
@@ -310,5 +410,17 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f49f705f2d4f07281cab880962a8667b",
     "url": "/static/media/webcover3.f49f705f.jpeg"
+  },
+  {
+    "revision": "7ba1a448732137b197daad19c7937fcd",
+    "url": "/static/media/webdesign.7ba1a448.jpeg"
+  },
+  {
+    "revision": "2a1cd2de199d0086971cbbda0b9d9cac",
+    "url": "/static/media/wed_design.2a1cd2de.jpeg"
+  },
+  {
+    "revision": "2d706f13f60a2fcf8e09cb168a61963e",
+    "url": "/static/media/wordpress.2d706f13.jpeg"
   }
 ]);
