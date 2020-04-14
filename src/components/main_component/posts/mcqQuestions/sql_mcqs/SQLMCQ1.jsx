@@ -32,8 +32,8 @@ class SQLMCQ1 extends Component {
           <Link to="/index_mcqs" className="badge badge-warning mr-1">
             Programming MCQs >{" "}
           </Link>
-          <Link to="/index_cpp_mcqs" className="badge badge-success mr-1">
-            C++ MCQs >
+          <Link to="/index_sql_mcqs" className="badge badge-success mr-1">
+          SQL MCQs >
           </Link>
           <ScoreCard count={this.state.count} />
         </div>
@@ -43,160 +43,114 @@ class SQLMCQ1 extends Component {
             <div className="col-md-7 ">
               <div className="row mt-2 text-center">
                 <div className="col">
-                  <h2 className="text-secondary">Cpp MCQs Set 1</h2>
+                  <h2 className="text-secondary">SQL MCQs Set 1</h2>
                 </div>
               </div>
               <div className="row">
                 <div className="col">
                   <Quize
                     quizeNo="1"
-                    question="Wrapping data and its related functionality into a single entity is known as _____________ "
-                    correctAnswer=" Encapsulation"
-                    v1="Abstraction"
-                    v2=" Encapsulation"
-                    v3=" Polymorphism"
-                    v4=" Modularity"
+                    question="Which SQL function is used to count the number of rows in a SQL query?"
+                    correctAnswer="COUNT(*)"
+                    v1="COUNT()"
+                    v2="NUMBER()"
+                    v3="SUM()"
+                    v4="COUNT(*)"
                     counter={this.counter}
                   />
                   <Quize
-                    quizeNo="2"
-                    question="What is virtual inheritance? "
-                    correctAnswer="C++ technique to avoid multiple copies of the base class into children/derived class"
-                    v1="C++ technique to avoid multiple copies of the base class into children/derived class"
-                    v2="C++ technique to avoid multiple inheritances of classes"
-                    v3="C++ technique to enhance multiple inheritance"
-                    v4="C++ technique to ensure that a private member of the base class can be accessed somehow "
+                    quizeNo="1"
+                    question=" Which of the following SQL clauses is used to DELETE tuples from a database table?"
+                    correctAnswer="DELETE"
+                    v1="DELETE"
+                    v2="REMOVE"
+                    v3="DROP"
+                    v4=" CLEAR"
                     counter={this.counter}
                   />
                   <Quize
-                    quizeNo="3"
-                    question="What will be the output of the following C++ code?"
-                    language="c++"
-                    code={`#include <iostream>
-using namespace std;
-class A{
-public:
-   A(){
-    cout<<'Constructor called';
-      }
-  ~A(){
-    cout<<'Destructor called';
-      }
-};
-int main(int argc, char const *argv[])
-{
-  A *a = new A[5];
-  delete a;
-  return 0;
-}`}
-                    correctAnswer="Segmentation fault"
-                    v1="“Constructor called” five times and then “Destructor called” five times"
-                    v2="“Constructor called” five times and then “Destructor called” once"
-                    v3="Error"
-                    v4="Segmentation fault "
+                    quizeNo="1"
+                    question="With SQL, how do you select all the records from a table named “Persons” where the value of the column “FirstName” ends with an “a”?"
+                    correctAnswer="SELECT * FROM Persons WHERE FirstName LIKE ‘%a’"
+                    v1="SELECT * FROM Persons WHERE FirstName=’a’"
+                    v2="SELECT * FROM Persons WHERE FirstName LIKE ‘a%’"
+                    v3="SELECT * FROM Persons WHERE FirstName LIKE ‘%a’"
+                    v4="SELECT * FROM Persons WHERE FirstName=’%a%’"
                     counter={this.counter}
                   />
                   <Quize
-                    quizeNo="4"
-                    question="What does ‘\a’ escape code represent? "
-                    correctAnswer="alert"
-                    v1="alert"
-                    v2="backslash"
-                    v3="tab"
-                    v4="form feed "
+                    quizeNo="1"
+                    question="With SQL, how can you return all the records from a table named “Persons” sorted descending by “FirstName”?"
+                    correctAnswer="SELECT * FROM Persons ORDER BY FirstName DESC"
+                    v1="SELECT * FROM Persons SORT BY ‘FirstName’ DESC"
+                    v2="SELECT * FROM Persons ORDER FirstName DESC"
+                    v3="SELECT * FROM Persons SORT ‘FirstName’ DESC"
+                    v4="SELECT * FROM Persons ORDER BY FirstName DESC"
                     counter={this.counter}
                   />
                   <Quize
-                    quizeNo="5"
-                    question=" What happens if the following code is compiled on both C and C++?"
-                    language="C++"
-                    code={`#include<stdio.h>
-struct STRUCT
-{
-private:
-  int a;
-};
-int main()
-{
-  printf('%d\n', (int)sizeof(struct STRUCT));
-  return 0;
-}`}
-                    correctAnswer="The program gives an error in case of C but runs perfectly in case of C++"
-                    v1="The program runs fine and both prints output “HELLO THIS IS STRUCTURE”"
-                    v2="The program gives an error in case of C but runs perfectly in case of C++"
-                    v3="The program gives an error in case of C++ but runs perfectly in case of C"
-                    v4="  The program gives an error in case of both C and C++"
+                    quizeNo="1"
+                    question="Which of the following command makes the updates performed by the transaction permanent in the database?"
+                    correctAnswer="COMMIT"
+                    v1="ROLLBACK"
+                    v2="COMMIT"
+                    v3="TRUNCATE"
+                    v4=" DELETE"
                     counter={this.counter}
                   />
                   <Quize
-                    quizeNo="6"
-                    question="  What is the value of the bool?"
-                    language="C++"
-                    code={`bool is_int(789.54)`}
-                    correctAnswer="False"
-                    v1="True"
-                    v2="False"
-                    v3="1"
-                    v4=" 2"
+                    quizeNo="1"
+                    question="SQL query to find the temperature in increasing order of all cities."
+                    correctAnswer=" SELECT city, temperature FROM weather ORDER BY city"
+                    v1="SELECT city FROM weather ORDER BY temperature"
+                    v2="SELECT city, temperature FROM weather"
+                    v3="SELECT city, temperature FROM weather ORDER BY temperature"
+                    v4=" SELECT city, temperature FROM weather ORDER BY city"
                     counter={this.counter}
                   />
                   <Quize
-                    quizeNo="7"
-                    question="Given the variables p, q are of char type and r, s, t are of int type. Select the right statement?"
-                    language="C++"
-                    code={`1. t = (r * s) / (r + s);
-2. t = (p * q) / (r + s);`}
-                    correctAnswer="both 1 and 2 are true"
-                    v1="1 is true but 2 is false"
-                    v2="1 is false and 2 is true"
-                    v3="both 1 and 2 are true"
-                    v4="both 1 and 2 are false "
+                    quizeNo="1"
+                    question="What type of join is needed when you wish to include rows that do not have matching values?"
+                    correctAnswer=" Outer join"
+                    v1="Equi-join"
+                    v2="Natural join"
+                    v3=" Outer join"
+                    v4="All of the Mentioned"
                     counter={this.counter}
                   />
                   <Quize
-                    quizeNo="8"
-                    question="What is the range of the floating point numbers? "
-                    correctAnswer="-3.4E+38 to +3.4E+38"
-                    v1="-3.4E+38 to +3.4E+38"
-                    v2="-3.4E+38 to +3.4E+34"
-                    v3="-3.4E+38 to +3.4E+36"
-                    v4="-3.4E+38 to +3.4E+32 "
+                    quizeNo="1"
+                    question="Which of the following is one of the basic approaches for joining tables?"
+                    correctAnswer=""
+                    v1="Subqueries"
+                    v2="Union Join"
+                    v3="Natural join"
+                    v4="All of the Mentioned"
                     counter={this.counter}
                   />
                   <Quize
-                    quizeNo="9"
-                    question="What will happen in the following C++ code snippet?"
-                    language="C++"
-                    code={`int a = 100, b = 200;
-int *p = and a, *q = &b;
-p = q;`}
-                    correctAnswer="p now points to b"
-                    v1="b is assigned to a"
-                    v2="p now points to b"
-                    v3="a is assigned to b"
-                    v4="q now points to a"
+                    quizeNo="1"
+                    question="What is a view?
+                    "
+                    correctAnswer="A view is a virtual table which results of executing a pre-compiled query"
+                    v1="A view is a special stored procedure executed when certain event occurs"
+                    v2="A view is a database diagram"
+                    v3="A view is a virtual table which results of executing a pre-compiled query"
+                    v4="None of the Mentioned"
                     counter={this.counter}
                   />
                   <Quize
-                    quizeNo="10"
-                    question=" What will be the output of the following C++ code?"
-                    language="C++"
-                    code={`#include <iostream>
-using namespace std;
-int main()
-{
-    int a = 5, b = 10, c = 15;
-    int *arr[ ] = {&a, &b, &c};
-    cout << arr[1];
-    return 0;
-}`}
-                    correctAnswer="it will return some random number"
-                    v1="5"
-                    v2="10"
-                    v3="15"
-                    v4="it will return some random number"
+                    quizeNo="1"
+                    question="Which of the following is not a limitation of view?"
+                    correctAnswer="Index Created on View Used Often"
+                    v1="ORDER BY Does Not Work"
+                    v2="Index Created on View Used Often"
+                    v3="Cross Database Queries Not Allowed in Indexed View"
+                    v4="Adding Column is Expensive by Joining Table Outside View"
                     counter={this.counter}
                   />
+                  
+                  
                 </div>
               </div>
             </div>
