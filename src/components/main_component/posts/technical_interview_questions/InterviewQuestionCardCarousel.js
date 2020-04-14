@@ -105,6 +105,44 @@ class InterviewQuestionCardCarousel extends Component {
                 />
               </div>
             </Carousel.Item>
+            <Carousel.Item>
+              <div className="card-deck">
+                <CardCarouselItem
+                  imgsource="technical_interview_questions.jpeg"
+                  title="Android Interview Questions"
+                  link="/android_interview_question"
+                />
+                <CardCarouselItem
+                  imgsource="technical_interview_questions.jpeg"
+                  title="HTML Interview Questions"
+                  link="/html_interview_question"
+                />
+                <CardCarouselItem
+                  imgsource="technical_interview_questions.jpeg"
+                  title="Javascript Interview Questions"
+                  link="/js_interview_question"
+                />
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className="card-deck">
+                <CardCarouselItem
+                  imgsource="technical_interview_questions.jpeg"
+                  title="React Interview Questions"
+                  link="/react_interview_question"
+                />
+                <CardCarouselItem
+                  imgsource="technical_interview_questions.jpeg"
+                  title="Angular Interview Questions"
+                  link="/angular_interview_question"
+                />
+                <CardCarouselItem
+                  imgsource="technical_interview_questions.jpeg"
+                  title="Coming soon.."
+                  link="/index_interview_questioins"
+                />
+              </div>
+            </Carousel.Item>
           </Carousel>
         </div>
 
@@ -214,6 +252,41 @@ class InterviewQuestionCardCarousel extends Component {
                 imgsource="technical_interview_questions.jpeg"
                 title="Testing Interview Questions"
                 link="/testing_interview_question"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <CardCarouselItem
+                imgsource="technical_interview_questions.jpeg"
+                title="Android Questions"
+                link="/android_interview_question"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <CardCarouselItem
+                imgsource="technical_interview_questions.jpeg"
+                title="HTML Interview Questions"
+                link="/html_interview_question"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <CardCarouselItem
+                imgsource="technical_interview_questions.jpeg"
+                title="Javascript Interview Questions"
+                link="/js_interview_question"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <CardCarouselItem
+                imgsource="technical_interview_questions.jpeg"
+                title="React Interview Questions"
+                link="/react_interview_question"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <CardCarouselItem
+                imgsource="technical_interview_questions.jpeg"
+                title="Angular Interview Questions"
+                link="/angular_interview_question"
               />
             </Carousel.Item>
           </Carousel>
