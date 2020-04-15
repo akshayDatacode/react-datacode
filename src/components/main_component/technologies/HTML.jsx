@@ -27,7 +27,7 @@ class HTML extends Component {
               Technologies >
             </Link>
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="html_tutorial.jpeg"
               title="30 Days To Learn HTML + CSS Course"
               source="(youtube.com)"
               tag1="Free"
@@ -35,7 +35,7 @@ class HTML extends Component {
               link="https://www.youtube.com/playlist?list=PLgGbWId6zgaWZkPFI4Sc9QXDmmOWa1v5F"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="html_tutorial.jpeg"
               title="HTML/CSS: Making webpages"
               source="(khanacademy.org)"
               tag1="Free"
@@ -44,7 +44,7 @@ class HTML extends Component {
               "
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="html_tutorial.jpeg"
               title="Introduction to HTML5"
               source="(coursera.org)"
               tag1="Free"
@@ -52,7 +52,7 @@ class HTML extends Component {
               link="https://click.linksynergy.com/deeplink?id=jU79Zysihs4&mid=40328&murl=https://www.coursera.org/learn/html"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="html_tutorial.jpeg"
               title="Learn HTML & CSS in 14 days"
               source="(ilovecoding.org)"
               tag1="Free"
@@ -61,14 +61,14 @@ class HTML extends Component {
               link="https://ilovecoding.org/courses/htmlcss2"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="html_tutorial.jpeg"
               title="HTML Beginner Tutorial"
               source="(htmldog.com)"
               tag1="Free"
               link="http://htmldog.com/guides/html/"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="html_tutorial.jpeg"
               title="HTML5 Tutorials Playlist"
               source="(youtube.com)"
               tag1="Free"
@@ -76,14 +76,14 @@ class HTML extends Component {
               link="https://www.youtube.com/playlist?list=PL081AC329706B2953"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="html_tutorial.jpeg"
               title="HTML(5) Tutorial by W3Schools"
               source="(w3schools.com)"
               tag1="Free"
               link="https://www.w3schools.com/HTML/"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="html_tutorial.jpeg"
               title="HTML Tutorial"
               source="(tutorialandexample.com)"
               tag1="Free"
@@ -91,7 +91,7 @@ class HTML extends Component {
               link="https://www.tutorialandexample.com/html-tutorial"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="html_tutorial.jpeg"
               title="Comprehensive HTML 5 Tutorial"
               source="(bitdegree.org)"
               tag1="Free"
@@ -100,7 +100,7 @@ class HTML extends Component {
               link="http://bitdegree.org/course/html5-tutorial"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="html_tutorial.jpeg"
               title="Interactive Coding for Beginners: What is CSS, HTML & Web Development"
               source="(bitdegree.org)"
               tag1="Free"
@@ -109,7 +109,7 @@ class HTML extends Component {
               link="https://www.bitdegree.org/course/coding-for-beginners-space-doggos"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="html_tutorial.jpeg"
               title="Build Responsive Real World Websites with HTML5 and CSS3"
               source="(udemy.com)"
               tag1="Paid"
@@ -118,7 +118,7 @@ class HTML extends Component {
               link="https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/?LSNPUBID=jU79Zysihs4&ranEAID=jU79Zysihs4&ranMID=39197&ranSiteID=jU79Zysihs4-XIPta3zI2cl1bb8TJD9.fQ"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="html_tutorial.jpeg"
               title="Introduction to HTML"
               source="(codecademy.com)"
               tag1="Paid"
@@ -126,7 +126,7 @@ class HTML extends Component {
               link="https://click.linksynergy.com/deeplink?id=jU79Zysihs4&mid=44188&murl=https://www.codecademy.com/learn/learn-html"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="html_tutorial.jpeg"
               title="Projects in HTML5"
               source="(udemy.com)"
               tag1="Paid"
@@ -135,7 +135,7 @@ class HTML extends Component {
               link="https://www.udemy.com/course/projects-in-html5/?LSNPUBID=jU79Zysihs4&ranEAID=jU79Zysihs4&ranMID=39197&ranSiteID=jU79Zysihs4-EHTZqyCvMrlODrJdORdTMg"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="html_tutorial.jpeg"
               title="Real World Coding in HTML & CSS"
               source="(udemy.com)"
               tag1="Paid"
@@ -144,7 +144,7 @@ class HTML extends Component {
               link="https://www.udemy.com/course/web-design-for-beginners-real-world-coding-in-html-css/?LSNPUBID=jU79Zysihs4&ranEAID=jU79Zysihs4&ranMID=39197&ranSiteID=jU79Zysihs4-IHkT7RhWAN2hyRwayiKSEg"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="html_tutorial.jpeg"
               title="HTML Fundamentals"
               source="(pluralsight.com)"
               tag1="Paid"
@@ -153,7 +153,7 @@ class HTML extends Component {
               link="https://www.pluralsight.com/courses/html-fundamentals?clickid=X6R3A1ylNxyOUDBwUx0Mo3QwUkixobQgKSFq1Y0&irgwc=1&mpid=1419154&utm_source=impactradius&utm_medium=digital_affiliate&utm_campaign=1419154&aid=7010a000001xAKZAA2"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="html_tutorial.jpeg"
               title="A Nicer Way To Learn About HTML & CSS"
               source="(htmlandcssbook.com)"
               tag1="Paid"
@@ -162,14 +162,14 @@ class HTML extends Component {
               link="http://www.htmlandcssbook.com/"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="html_tutorial.jpeg"
               title="Learn HTML5"
               source="(pluralsight.com)"
               tag1="Paid"
               link="https://www.pluralsight.com/paths/html5?clickid=X6R3A1ylNxyOUDBwUx0Mo3QwUkixobXgKSFq1Y0&irgwc=1&mpid=1419154&utm_source=impactradius&utm_medium=digital_affiliate&utm_campaign=1419154&aid=7010a000001xAKZAA2"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="html_tutorial.jpeg"
               title="HTML QuickStart Guide"
               source="(clydebankmedia.com)"
               tag1="Paid"
@@ -178,7 +178,7 @@ class HTML extends Component {
               link="https://www.clydebankmedia.com/product/html-quickstart-guide"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="html_tutorial.jpeg"
               title="Front-end Training in Practicum"
               source="(practicum.yandex.com)"
               tag1="Paid"
@@ -186,7 +186,7 @@ class HTML extends Component {
               link="https://practicum.yandex.com/web"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="html_tutorial.jpeg"
               title="Web Development Essentials for Absolute Beginners"
               source="(udemy.com)"
               tag1="Paid"

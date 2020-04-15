@@ -31,15 +31,15 @@ class ArticleCardCarousel extends Component {
             </Carousel.Item>
             <Carousel.Item>
               <div className="card-deck">
-              <CardCarouselItem
-                  imgsource="programming_blog.jpeg"
-                  title="Programming Languages Blogs"
-                  link="/prog_lan_blog"
+                <CardCarouselItem
+                  imgsource="data_web.jpeg"
+                  title="DBMS Blogs"
+                  link="/dbms_blog"
                 />
                 <CardCarouselItem
-                  imgsource="web_blog.jpeg"
-                  title="Web Design Blogs"
-                  link="/webdesign_blog"
+                  imgsource="tech_docs.jpeg"
+                  title="Tech Documentation"
+                  link="/documentation_blog"
                 />
                 <CardCarouselItem
                   imgsource="machine_blog.jpeg"
@@ -48,7 +48,6 @@ class ArticleCardCarousel extends Component {
                 />
               </div>
             </Carousel.Item>
-           
           </Carousel>
         </div>
 
@@ -78,16 +77,16 @@ class ArticleCardCarousel extends Component {
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="programming_blog.jpeg"
-                title="Programming Languages Blogs"
-                link="/prog_lan_blog"
+                imgsource="data_web.jpeg"
+                title="DBMS Blogs"
+                link="/dbms_blog"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="web_blog.jpeg"
-                title="Web Design Blogs"
-                link="/webdesign_blog"
+                imgsource="tech_docs.jpeg"
+                title="Tech Documentation"
+                link="/documentation_blog"
               />
             </Carousel.Item>
             <Carousel.Item>
@@ -97,7 +96,6 @@ class ArticleCardCarousel extends Component {
                 link="/machine_learning_blog"
               />
             </Carousel.Item>
-         
           </Carousel>
         </div>
       </>

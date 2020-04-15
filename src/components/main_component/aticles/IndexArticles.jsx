@@ -48,12 +48,12 @@ class IndexArticles extends Component {
               </div>
               <div className="card-deck m-2">
                 <PostCard
-                  imgsource="programming_blog.jpeg"
+                  imgsource="data_web.jpeg"
                   title="DBMS Blogs"
                   link="/dbms_blog"
                 />
                 <PostCard
-                  imgsource="web_blog.jpeg"
+                  imgsource="tech_docs.jpeg"
                   title="Documentation Blogs"
                   link="/documentation_blog"
                 />

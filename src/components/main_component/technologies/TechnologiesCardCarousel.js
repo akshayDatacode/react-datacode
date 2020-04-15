@@ -75,12 +75,12 @@ class TechnologiesCardCarousel extends Component {
                   link="/android"
                 />
                 <CardCarouselItem
-                  imgsource="code_challange.jpeg"
+                  imgsource="react.jpeg"
                   title="React"
                   link="/react"
                 />
                 <CardCarouselItem
-                  imgsource="code_challange.jpeg"
+                  imgsource="react.jpeg"
                   title="Angular"
                   link="/angular"
                 />
@@ -147,7 +147,11 @@ class TechnologiesCardCarousel extends Component {
               />
             </Carousel.Item>
             <Carousel.Item>
-              <CardCarouselItem imgsource="css.jpeg" title="Coming soon" link="/index_technologies" />
+              <CardCarouselItem
+                imgsource="css.jpeg"
+                title="Coming soon"
+                link="/index_technologies"
+              />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
@@ -186,14 +190,14 @@ class TechnologiesCardCarousel extends Component {
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="datastructure.jpeg"
+                imgsource="react.jpeg"
                 title="React"
                 link="/react"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="datastructure.jpeg"
+                imgsource="react.jpeg"
                 title="Angular"
                 link="/angular"
               />

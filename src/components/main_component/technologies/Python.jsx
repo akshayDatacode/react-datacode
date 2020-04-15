@@ -28,14 +28,14 @@ class Python extends Component {
               Technologies >
             </Link>
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="python_tutorial.jpeg"
               source="(google.com)"
               title="Google Python Class For Beginners"
               tag1="Free"
               link="https://developers.google.com/edu/python/"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="python_tutorial.jpeg"
               source="(mva.microsoft.com)"
               title="Introduction to Programming with Python"
               tag1="Free"
@@ -43,7 +43,7 @@ class Python extends Component {
               link="https://docs.microsoft.com/en-in/learn/"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="python_tutorial.jpeg"
               source="(pymbook.readthedocs.io)"
               title="Python for You and Me"
               tag1="Free"
@@ -52,14 +52,14 @@ class Python extends Component {
               link="https://pymbook.readthedocs.io/en/latest/index.html"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="python_tutorial.jpeg"
               source="(python.swroopch.com)"
               title="A Byte of Python"
               tag1="Free"
               link="https://python.swaroopch.com/"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="python_tutorial.jpeg"
               source="(freecodecamp.org)"
               title="Learning Python: From Zero to Hero"
               tag1="Free"
@@ -68,7 +68,7 @@ class Python extends Component {
               link="https://www.freecodecamp.org/news/learning-python-from-zero-to-hero-120ea540b567/"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="python_tutorial.jpeg"
               source="(automatetheboringstuff.com)"
               title="Automate the Boring Stuff with Python"
               tag1="Free"
@@ -76,7 +76,7 @@ class Python extends Component {
               link="http://automatetheboringstuff.com/"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="python_tutorial.jpeg"
               source="(greenteapress.com)"
               title="Think Python"
               tag1="Free"
@@ -85,7 +85,7 @@ class Python extends Component {
               link="https://greenteapress.com/wp/think-python-2e/?ref=hackr.io"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="python_tutorial.jpeg"
               source="(simplilearn.com)"
               title="Python Programming | Python Programming For Beginners | Python Programming Tutorial | Simplilearn"
               tag1="video"
@@ -94,7 +94,7 @@ class Python extends Component {
               link="https://www.youtube.com/watch?v=-mr-gtL1-n0&"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="python_tutorial.jpeg"
               source="(practicepython.org)"
               title="Practice Python"
               tag1="Free"
@@ -103,7 +103,7 @@ class Python extends Component {
               link="http://www.practicepython.org/"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="python_tutorial.jpeg"
               source="(labex.io)"
               title="Intro to Python"
               tag1="Free"
@@ -112,7 +112,7 @@ class Python extends Component {
               link="https://labex.io/courses/10"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="python_tutorial.jpeg"
               source="(eduonix.com)"
               title="Learn Python Programming From Scratch"
               tag1="Free"
@@ -121,7 +121,7 @@ class Python extends Component {
               link="https://www.eduonix.com/courses/Software-Development/Learn-Python-programming-From-Scratch"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="python_tutorial.jpeg"
               source="(diveintopython3.net)"
               title="Dive Into Python 3"
               tag1="Free"
@@ -129,7 +129,7 @@ class Python extends Component {
               link="https://diveintopython3.net/"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="python_tutorial.jpeg"
               source="(udemy.com)"
               title="Introduction To Python Programming"
               tag1="Free"
@@ -138,7 +138,7 @@ class Python extends Component {
               link="https://www.udemy.com/course/pythonforbeginnersintro/?LSNPUBID=jU79Zysihs4&ranEAID=jU79Zysihs4&ranMID=39197&ranSiteID=jU79Zysihs4-W1g_hz76sE9f0HFReMbHJg0"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="python_tutorial.jpeg"
               source="(thepythonguru.com)"
               title="Python tutorials for beginners"
               tag1="Free"

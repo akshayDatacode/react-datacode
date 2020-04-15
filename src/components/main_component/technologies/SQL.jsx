@@ -28,21 +28,21 @@ class SQL extends Component {
               Technologies >
             </Link>
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="sql_tutorial.jpeg"
               title="SQLBolt"
               source="(sqlbolt.com)"
               tag1="Free"
               link="https://sqlbolt.com/"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="sql_tutorial.jpeg"
               title="A beginners guide to thinking in SQL"
               source="(sohamkamani.com)"
               tag1="Free"
               link="https://www.sohamkamani.com/blog/2016/07/07/a-beginners-guide-to-sql/"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="sql_tutorial.jpeg"
               title="SQL basics by Khan Academy"
               source="(khanacademy.org)"
               tag1="Free"
@@ -50,7 +50,7 @@ class SQL extends Component {
               link="https://www.khanacademy.org/computing/computer-programming/sql#sql-basics"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="sql_tutorial.jpeg"
               title="The SQL Tutorial for Data Analysis"
               source="(community.modeanalytics.com)"
               tag1="Free"
@@ -58,14 +58,14 @@ class SQL extends Component {
               link="https://community.modeanalytics.com/sql/tutorial/introduction-to-sql"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="sql_tutorial.jpeg"
               title="SQL Tutorial by Tutorials Point"
               source="(tutorialspoint.com)"
               tag1="Free"
               link="https://www.tutorialspoint.com/sql/sql_tutorial.pdf"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="sql_tutorial.jpeg"
               title="Intro to SQL for Data Science"
               source="(datacamp.com)"
               tag1="Free"
@@ -74,14 +74,14 @@ class SQL extends Component {
               link="https://www.datacamp.com/courses/introduction-to-sql/"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="sql_tutorial.jpeg"
               title="A Visual Explanation of SQL Joins"
               source="(blog.codinghorror.com)"
               tag1="Free"
               link="https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="sql_tutorial.jpeg"
               title="PL/SQL Tutorial"
               source="(oracletutorial.com)"
               tag1="Free"
@@ -90,7 +90,7 @@ class SQL extends Component {
               link="http://oracletutorial.com/plsql-tutorial"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="sql_tutorial.jpeg"
               title="PL/SQL Tutorial"
               source="(javatpoint.com)"
               tag1="Free"
@@ -99,7 +99,7 @@ class SQL extends Component {
               link="https://www.javatpoint.com/pl-sql-tutorial"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="sql_tutorial.jpeg"
               title="SQL - Full Course for Beginners"
               source="(youtube.com)"
               tag1="Free"
@@ -108,7 +108,7 @@ class SQL extends Component {
               link="https://www.youtube.com/watch?v=HXV3zeQKqGY&t=12839s"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="sql_tutorial.jpeg"
               title="The Complete SQL Bootcamp"
               source="(udemy.com)"
               tag1="Paid"
@@ -117,7 +117,7 @@ class SQL extends Component {
               link="https://click.linksynergy.com/deeplink?id=jU79Zysihs4&mid=39197&murl=https://www.udemy.com/the-complete-sql-bootcamp/"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="sql_tutorial.jpeg"
               title="Learn SQL from Scratch"
               source="(codecademy.com)"
               tag1="Paid"
@@ -126,7 +126,7 @@ class SQL extends Component {
               link="https://www.codecademy.com/learn/paths/analyze-data-with-sql"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="sql_tutorial.jpeg"
               title="SQL Essential Training"
               source="(linkedin.com)"
               tag1="Paid"
@@ -134,7 +134,7 @@ class SQL extends Component {
               link="https://www.linkedin.com/learning/sql-essential-training-2?src=aff-lilpar&veh=aff_src.aff-lilpar_c.partners_pkw.1419154_plc.Hackr.io_pcrid.449670_learning&trk=aff_src.aff-lilpar_c.partners_pkw.1419154_plc.Hackr.io_pcrid.449670_learning&clickid=X6R3A1ylNxyOUDBwUx0Mo3QwUkixoL3YKSFq1Y0&irgwc=1"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="sql_tutorial.jpeg"
               title="SQL for Newbies: Data Analysis for Beginners"
               source="(udemy.com)"
               tag1="Paid"
@@ -143,7 +143,7 @@ class SQL extends Component {
               link="https://click.linksynergy.com/deeplink?id=jU79Zysihs4&mid=39197&murl=https://www.udemy.com/sql-for-newbs/"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="sql_tutorial.jpeg"
               title="Introduction to SQL"
               source="(pluralsight.com)"
               tag1="Paid"
@@ -152,7 +152,7 @@ class SQL extends Component {
               link="https://www.pluralsight.com/courses/introduction-to-sql?clickid=X6R3A1ylNxyOUDBwUx0Mo3QwUkixoLQoKSFq1Y0&irgwc=1&mpid=1419154&utm_source=impactradius&utm_medium=digital_affiliate&utm_campaign=1419154&aid=7010a000001xAKZAA2"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="sql_tutorial.jpeg"
               title="SQL for Data Science"
               source="(coursera.org)"
               tag1="Paid"
@@ -161,7 +161,7 @@ class SQL extends Component {
               link="https://click.linksynergy.com/deeplink?id=jU79Zysihs4&mid=40328&murl=https://www.coursera.org/learn/sql-for-data-science"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="sql_tutorial.jpeg"
               title="SQL for Data Science"
               source="(coursera.org)"
               tag1="Paid"
@@ -170,7 +170,7 @@ class SQL extends Component {
               link="https://click.linksynergy.com/deeplink?id=jU79Zysihs4&mid=40328&murl=https://www.coursera.org/learn/sql-for-data-science"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="sql_tutorial.jpeg"
               title="Learn SQL the Hard Way"
               source="(learncodethehardway.org)"
               tag1="Paid"
@@ -178,7 +178,7 @@ class SQL extends Component {
               link="https://learncodethehardway.org/sql/"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="sql_tutorial.jpeg"
               title="The Complete MySQL Bootcamp: From SQL Beginner to Expert"
               source="(udemy.com)"
               tag1="Paid"
@@ -187,7 +187,7 @@ class SQL extends Component {
               link="https://click.linksynergy.com/deeplink?id=jU79Zysihs4&mid=39197&murl=https://www.udemy.com/course/the-complete-mysql-bootcamp-from-sql-beginner-to-expert"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="sql_tutorial.jpeg"
               title="SQL & PostgreSQL for Beginners"
               source="(udemy.com)"
               tag1="Paid"
@@ -196,7 +196,7 @@ class SQL extends Component {
               link="https://www.udemy.com/course/sql-and-postgresql-for-beginners/?ranMID=39197&ranEAID=jU79Zysihs4&ranSiteID=jU79Zysihs4-HjlVl0AU7OLeRs9igAeeHQ&LSNPUBID=jU79Zysihs4"
             />
             <RoadMapCard
-              imgsource="programming_blog.jpeg"
+              imgsource="sql_tutorial.jpeg"
               title="SQL QuickStart Guide"
               source="(clydebankmedia.com)"
               tag1="Paid"
@@ -213,7 +213,7 @@ class SQL extends Component {
             <RecommendPost
               imgsource="python_mcqs.jpeg"
               RecPostHading="SQL MCQs"
-              link="/index_mcqs"
+              link="/index_sql_mcqs"
             />
             <RecommendPost
               imgsource="python_interview_question.jpeg"
