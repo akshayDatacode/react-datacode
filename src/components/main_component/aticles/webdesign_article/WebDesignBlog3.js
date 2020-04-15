@@ -28,7 +28,7 @@ class WebDesignBlog3 extends Component {
               <div className="row">
                 <div className="card-deck m-2">
                   <ArticlePostCard
-                    imgsource="js.jpeg"
+                    imgsource="react.jpeg"
                     tag1="React"
                     tag2="folder"
                     title="React Folder Structure in 5 Steps"
@@ -36,7 +36,7 @@ class WebDesignBlog3 extends Component {
                     link="https://www.robinwieruch.de/react-folder-structure"
                   />
                   <ArticlePostCard
-                    imgsource="js.jpeg"
+                    imgsource="node_express.jpeg"
                     tag1="express.js"
                     tag2="node.js"
                     title="How to setup Express.js in Node.js"
@@ -44,7 +44,7 @@ class WebDesignBlog3 extends Component {
                     link="robinwieruch.de/node-js-express-tutorial"
                   />
                   <ArticlePostCard
-                    imgsource="js.jpeg"
+                    imgsource="firebase_react.jpeg"
                     tag1="firebase"
                     tag2="react"
                     title="A Firebase in React Tutorial for Beginners [2019]"

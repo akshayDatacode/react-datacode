@@ -13,17 +13,17 @@ class MCQCardCarousel extends Component {
             <Carousel.Item>
               <div className="card-deck ">
                 <CardCarouselItem
-                  imgsource="code_challange.jpeg"
+                  imgsource="python_mcq.jpeg"
                   title="Python MCQ's"
                   link="/index_python_mcqs"
                 />
                 <CardCarouselItem
-                  imgsource="event.jpeg"
+                  imgsource="c_mcq.jpeg"
                   title="C MCQ's"
                   link="/index_c_mcqs"
                 />
                 <CardCarouselItem
-                  imgsource="web_blog.jpeg"
+                  imgsource="java_mcq.jpeg"
                   title="Java MCQ's"
                   link="/index_java_mcqs"
                 />
@@ -32,17 +32,17 @@ class MCQCardCarousel extends Component {
             <Carousel.Item>
               <div className="card-deck">
                 <CardCarouselItem
-                  imgsource="code_challange.jpeg"
+                  imgsource="cpp_mcq.jpeg"
                   title="C++ MCQ's"
                   link="/index_cpp_mcqs"
                 />
                 <CardCarouselItem
-                  imgsource="code_challange.jpeg"
+                  imgsource="dbms_mcq.jpeg"
                   title="DBMS MCQ's"
                   link="/index_dbms_mcqs"
                 />
                 <CardCarouselItem
-                  imgsource="code_challange.jpeg"
+                  imgsource="html_mcq.jpeg"
                   title="HTML MCQ's"
                   link="/index_html_mcqs"
                 />
@@ -51,17 +51,17 @@ class MCQCardCarousel extends Component {
             <Carousel.Item>
               <div className="card-deck">
                 <CardCarouselItem
-                  imgsource="code_challange.jpeg"
+                  imgsource="css_mcq.jpeg"
                   title="CSS MCQ's"
                   link="/index_css_mcqs"
                 />
                 <CardCarouselItem
-                  imgsource="code_challange.jpeg"
+                  imgsource="android_mcq.jpeg"
                   title="Android MCQ's"
                   link="/index_android_mcqs"
                 />
                 <CardCarouselItem
-                  imgsource="code_challange.jpeg"
+                  imgsource="ds_mcq.jpeg"
                   title="Datastructure MCQ's"
                   link="/index_ds_mcqs"
                 />
@@ -70,17 +70,17 @@ class MCQCardCarousel extends Component {
             <Carousel.Item>
               <div className="card-deck">
                 <CardCarouselItem
-                  imgsource="code_challange.jpeg"
+                  imgsource="bootstrap_mcq.jpeg"
                   title="Bootstrap MCQ's"
                   link="/index_bootstrap_mcqs"
                 />
                 <CardCarouselItem
-                  imgsource="code_challange.jpeg"
+                  imgsource="django_mcq.jpeg"
                   title="Django MCQ's"
                   link="/index_django_mcqs"
                 />
                 <CardCarouselItem
-                  imgsource="code_challange.jpeg"
+                  imgsource="git_mcq.jpeg"
                   title="GIT MCQ's"
                   link="/index_git_mcqs"
                 />
@@ -89,17 +89,17 @@ class MCQCardCarousel extends Component {
             <Carousel.Item>
               <div className="card-deck">
                 <CardCarouselItem
-                  imgsource="code_challange.jpeg"
+                  imgsource="js_mcq.jpeg"
                   title="Javasript MCQ's"
                   link="/index_js_mcqs"
                 />
                 <CardCarouselItem
-                  imgsource="code_challange.jpeg"
+                  imgsource="oops_mcq.jpeg"
                   title="OOPS MCQ's"
                   link="/index_oops_mcqs"
                 />
                 <CardCarouselItem
-                  imgsource="code_challange.jpeg"
+                  imgsource="react_mcq.jpeg"
                   title="React MCQ's"
                   link="/index_react_mcqs"
                 />
@@ -108,23 +108,22 @@ class MCQCardCarousel extends Component {
             <Carousel.Item>
               <div className="card-deck">
                 <CardCarouselItem
-                  imgsource="code_challange.jpeg"
+                  imgsource="sql_mcq.jpeg"
                   title="SQL MCQ's"
                   link="/index_sql_mcqs"
                 />
                 <CardCarouselItem
-                  imgsource="code_challange.jpeg"
-                  title="OOPS MCQ's"
-                  link="/index_oops_mcqs"
+                  imgsource="angular_mcq.jpeg"
+                  title="Angular MCQs Coming Soon"
+                  link="/index_mcqs"
                 />
                 <CardCarouselItem
-                  imgsource="code_challange.jpeg"
+                  imgsource="react_mcq.jpeg"
                   title="React MCQ's"
                   link="/index_react_mcqs"
                 />
               </div>
             </Carousel.Item>
-
           </Carousel>
         </div>
 
@@ -133,112 +132,119 @@ class MCQCardCarousel extends Component {
           <Carousel indicators={false}>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="code_challange.jpeg"
+                imgsource="c_mcq.jpeg"
                 title="C MCQ's"
                 link="/index_c_mcqs"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="event.jpeg"
-                title=" C ++ MCQ's"
+                imgsource="cpp_mcq.jpeg"
+                title=" C++ MCQ's"
                 link="/index_cpp_mcqs"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="web_blog.jpeg"
+                imgsource="python_mcq.jpeg"
                 title="Python MCQ's"
                 link="/index_python_mcqs"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="technical_interview_questions.jpeg"
+                imgsource="java_mcq.jpeg"
                 title="Java MCQ's"
                 link="/index_java_mcqs"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="python_programming.jpeg"
+                imgsource="html_mcq.jpeg"
                 title="HTML MCQ's "
                 link="/index_html_mcqs"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="ds_mcqs.jpeg"
+                imgsource="css_mcq.jpeg"
                 title="CSS MCQs"
                 link="/index_css_mcqs"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="python_programming_question.jpeg"
+                imgsource="bootstrap_mcq.jpeg"
                 title="Bootstrap MCQ's"
                 link="/index_bootstrap_mcqs"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="python_programming_question.jpeg"
+                imgsource="js_mcq.jpeg"
                 title="Javascript MCQ's"
                 link="/index_js_mcqs"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="python_programming_question.jpeg"
+                imgsource="react_mcq.jpeg"
                 title="React MCQ's"
                 link="/index_react_mcqs"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="python_programming_question.jpeg"
+                imgsource="angular_mcq.jpeg"
+                title="Angular MCQs Coming Soon"
+                link="/index_mcqs"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <CardCarouselItem
+                imgsource="django_mcq.jpeg"
                 title="Django MCQ's "
                 link="/index_django_mcqs"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="python_programming_question.jpeg"
+                imgsource="ds_mcq.jpeg"
                 title="Data Structure MCQ's"
                 link="/index_ds_mcqs"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="python_programming_question.jpeg"
+                imgsource="oops_mcq.jpeg"
                 title="OOPS MCQ's"
                 link="/index_oops_mcqs"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="python_programming_question.jpeg"
+                imgsource="sql_mcq.jpeg"
                 title="SQL MCQ's "
                 link="/index_sql_mcqs"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="python_programming_question.jpeg"
+                imgsource="dbms_mcq.jpeg"
                 title="DBMS MCQ's"
                 link="/index_dbms_mcqs"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="python_programming_question.jpeg"
+                imgsource="android_mcq.jpeg"
                 title="Android MCQ's"
                 link="/index_android_mcqs"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="python_programming_question.jpeg"
+                imgsource="git_mcq.jpeg"
                 title="Git MCQ's"
                 link="/index_git_mcqs"
               />

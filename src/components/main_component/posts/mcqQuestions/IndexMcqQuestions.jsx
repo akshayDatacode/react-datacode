@@ -27,21 +27,21 @@ class IndexMcqQuestions extends Component {
 
             <div className="card-deck m-2">
               <PostCard
-                imgsource="index_mcqs.jpeg"
+                imgsource="python_mcq.jpeg"
                 title="Python MCQs Questions"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
                 link="/index_python_mcqs"
               />
               <PostCard
-                imgsource="index_mcqs.jpeg"
+                imgsource="c_mcq.jpeg"
                 title="C Programming MCQs Questions"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
                 link="/index_c_mcqs"
               />
               <PostCard
-                imgsource="index_mcqs.jpeg"
+                imgsource="cpp_mcq.jpeg"
                 title="C++ MCQs Questions"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
@@ -50,21 +50,21 @@ class IndexMcqQuestions extends Component {
             </div>
             <div className="card-deck m-2">
               <PostCard
-                imgsource="index_mcqs.jpeg"
+                imgsource="java_mcq.jpeg"
                 title="Java MCQs Questions"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
                 link="/index_java_mcqs"
               />
               <PostCard
-                imgsource="index_mcqs.jpeg"
+                imgsource="js_mcq.jpeg"
                 title="JavaScript MCQs Questions"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
                 link="/index_js_mcqs"
               />
               <PostCard
-                imgsource="index_mcqs.jpeg"
+                imgsource="dbms_mcq.jpeg"
                 title="DBMS MCQs Questions"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
@@ -73,21 +73,21 @@ class IndexMcqQuestions extends Component {
             </div>
             <div className="card-deck m-2">
               <PostCard
-                imgsource="index_mcqs.jpeg"
+                imgsource="html_mcq.jpeg"
                 title="HTML MCQs Questions"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
                 link="/index_html_mcqs"
               />
               <PostCard
-                imgsource="index_mcqs.jpeg"
+                imgsource="css_mcq.jpeg"
                 title="CSS MCQs Questions"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
                 link="/index_css_mcqs"
               />
               <PostCard
-                imgsource="index_mcqs.jpeg"
+                imgsource="bootstrap_mcq.jpeg"
                 title="BootStrap MCQs Questions"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
@@ -96,21 +96,21 @@ class IndexMcqQuestions extends Component {
             </div>
             <div className="card-deck m-2">
               <PostCard
-                imgsource="index_mcqs.jpeg"
+                imgsource="react_mcq.jpeg"
                 title="React MCQs Questions"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
                 link="/index_react_mcqs"
               />
               <PostCard
-                imgsource="index_mcqs.jpeg"
+                imgsource="django_mcq.jpeg"
                 title="Django MCQs Questions"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
                 link="/index_django_mcqs"
               />
               <PostCard
-                imgsource="index_mcqs.jpeg"
+                imgsource="git_mcq.jpeg"
                 title="Git MCQs Questions"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
@@ -119,21 +119,21 @@ class IndexMcqQuestions extends Component {
             </div>
             <div className="card-deck m-2">
               <PostCard
-                imgsource="index_mcqs.jpeg"
+                imgsource="android_mcq.jpeg"
                 title="Android MCQs Questions"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
                 link="/index_android_mcqs"
               />
               <PostCard
-                imgsource="index_mcqs.jpeg"
+                imgsource="sql_mcq.jpeg"
                 title="SQL MCQs Questions"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
                 link="/index_sql_mcqs"
               />
               <PostCard
-                imgsource="index_mcqs.jpeg"
+                imgsource="ds_mcq.jpeg"
                 title="DS MCQs Questions"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
@@ -143,21 +143,21 @@ class IndexMcqQuestions extends Component {
 
             <div className="card-deck m-2">
               <PostCard
-                imgsource="index_mcqs.jpeg"
+                imgsource="oops_mcq.jpeg"
                 title="OOPs MCQs Questions"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
                 link="/index_oops_mcqs"
               />
               <PostCard
-                imgsource="index_mcqs.jpeg"
-                title="Blank"
+                imgsource="angular_mcq.jpeg"
+                title="Angular MCQs Coming Soon"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
-                link="/index_mcqs"
+                link="/index_angular_mcqs"
               />
               <PostCard
-                imgsource="index_mcqs.jpeg"
+                imgsource="c_mcq.jpeg"
                 title="Blank"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."

@@ -28,7 +28,7 @@ class ProgrammingLanguagesBlog extends Component {
               <div className="row">
                 <div className="card-deck m-2">
                   <ArticlePostCard
-                    imgsource="js.jpeg"
+                    imgsource="react.jpeg"
                     tag1="React"
                     tag2="Reactjs"
                     title="A Quick Tour Through a React Component Lifecycle"
@@ -36,7 +36,7 @@ class ProgrammingLanguagesBlog extends Component {
                     link="https://levelup.gitconnected.com/a-quick-tour-through-a-react-component-lifecycle-ff3610bb97b9"
                   />
                   <ArticlePostCard
-                    imgsource="js.jpeg"
+                    imgsource="js_function.jpeg"
                     tag1="Javascript"
                     tag2="functions"
                     title="JavaScript Best Practices — Declarations and Functions"
@@ -44,7 +44,7 @@ class ProgrammingLanguagesBlog extends Component {
                     link="https://medium.com/@hohanga/javascript-best-practices-declarations-and-functions-a690689c106e"
                   />
                   <ArticlePostCard
-                    imgsource="js.jpeg"
+                    imgsource="web_code.jpeg"
                     tag1="graphics"
                     tag2="design"
                     title="Goodbye, Clean Code"
@@ -54,7 +54,7 @@ class ProgrammingLanguagesBlog extends Component {
                 </div>
                 <div className="card-deck m-2">
                   <ArticlePostCard
-                    imgsource="js.jpeg"
+                    imgsource="js_learning_blogs.jpeg"
                     tag1="javascript"
                     tag2="interview"
                     title="What Is JavaScript Made Of?"
@@ -62,7 +62,7 @@ class ProgrammingLanguagesBlog extends Component {
                     link="https://overreacted.io/what-is-javascript-made-of/"
                   />
                   <ArticlePostCard
-                    imgsource="js.jpeg"
+                    imgsource="react.jpeg"
                     tag1="react"
                     tag2="hooks"
                     title="State Management in Pure React with Hooks: useEffect"
@@ -70,7 +70,7 @@ class ProgrammingLanguagesBlog extends Component {
                     link="https://dev.to/bipinrajbhar/state-management-in-pure-react-with-hooks-useeffect-5bn6"
                   />
                   <ArticlePostCard
-                    imgsource="js.jpeg"
+                    imgsource="web_tool.jpeg"
                     tag1="devtool"
                     tag2="webdesign"
                     title="9 ways to level up your browser devtool skills"

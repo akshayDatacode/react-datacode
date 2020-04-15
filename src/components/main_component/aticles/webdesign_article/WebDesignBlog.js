@@ -28,7 +28,7 @@ class WebDesignBlog extends Component {
               <div className="row">
                 <div className="card-deck m-2">
                   <ArticlePostCard
-                    imgsource="js.jpeg"
+                    imgsource="rest_api_node.jpeg"
                     tag1="Node js"
                     tag2="api"
                     title="How to Use SSL/TLS with Node.js"
@@ -36,7 +36,7 @@ class WebDesignBlog extends Component {
                     link="https://www.sitepoint.com/how-to-use-ssltls-with-node-js/"
                   />
                   <ArticlePostCard
-                    imgsource="js.jpeg"
+                    imgsource="node.jpeg"
                     tag1="javasript"
                     tag2="nodejs"
                     title="Five Ways to Lazy Load Images for Better Website Performance"
@@ -44,7 +44,7 @@ class WebDesignBlog extends Component {
                     link="https://www.sitepoint.com/five-techniques-lazy-load-images-website-performance/?utm_source=rss"
                   />
                   <ArticlePostCard
-                    imgsource="js.jpeg"
+                    imgsource="web_building.jpeg"
                     tag1="website"
                     tag2="html"
                     title="How Fast Should My Website Be? [+7 Tips for Speeding Up Your Site]"
@@ -54,7 +54,7 @@ class WebDesignBlog extends Component {
                 </div>
                 <div className="card-deck m-2">
                   <ArticlePostCard
-                    imgsource="js.jpeg"
+                    imgsource="webdesign.jpeg"
                     tag1="color"
                     tag2="website"
                     title="7 Color Palette Generators that Will Make Your Brand Pop"
@@ -62,7 +62,7 @@ class WebDesignBlog extends Component {
                     link="https://webresourcesdepot.com/color-palette-generators-that-will-make-your-brand-pop/"
                   />
                   <ArticlePostCard
-                    imgsource="js.jpeg"
+                    imgsource="web_video.jpeg"
                     tag1="Video"
                     tag2="CSS"
                     title="Tinkering with Video on Mobile"
@@ -70,7 +70,7 @@ class WebDesignBlog extends Component {
                     link="https://css-tricks.com/180-tinkering-with-video-on-mobile/"
                   />
                   <ArticlePostCard
-                    imgsource="js.jpeg"
+                    imgsource="web_design.jpeg"
                     tag1="HTML"
                     tag2="CSS"
                     tag3="javascript"

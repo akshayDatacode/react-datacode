@@ -208,6 +208,9 @@ import SQLMCQ1 from "../components/main_component/posts/mcqQuestions/sql_mcqs/SQ
 // OOPs MCQs
 import IndexOOPsMCQ from "../components/main_component/posts/mcqQuestions/oops_mcqs/IndexOOPsMCQ";
 import OOPsMCQ1 from "../components/main_component/posts/mcqQuestions/oops_mcqs/OOPsMCQ1";
+// Angular MCQs
+import IndexAngularMCQ from "../components/main_component/posts/mcqQuestions/angular_mcqs/IndexAngularMCQ";
+import AngularMCQ1 from "../components/main_component/posts/mcqQuestions/angular_mcqs/AngularMCQ1";
 
 // Technogies
 import IndexTechnologies from "../components/main_component/technologies/IndexTechnologies";
@@ -387,6 +390,11 @@ class AppRouters extends Component {
           <Route exact path="/index_oops_mcqs" component={IndexOOPsMCQ} />
           <Route exact path="/oops_mcq_1" component={OOPsMCQ1} />
           {/* Ending OOPs MCQS */}
+
+          {/* Starting angular  MCQs */}
+          <Route exact path="/index_angular_mcqs" component={IndexAngularMCQ} />
+          <Route exact path="/angular_mcq_1" component={AngularMCQ1} />
+          {/* Ending angular MCQS */}
 
           {/* Index Quize Tests Routing */}
 
