@@ -23,7 +23,7 @@ class RoadMapCard extends Component {
               </snap>
               <snap className="ml-3 text-secondary">{this.props.source}</snap>
               <div>
-                <a href={this.props.link}>
+                <a href={this.props.link} target="_blank">
                   <h6>Start Learning</h6>
                 </a>
               </div>
