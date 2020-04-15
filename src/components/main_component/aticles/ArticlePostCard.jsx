@@ -29,7 +29,7 @@ class ArticlePostCard extends Component {
           <div class="card-footer border border-white bg-white">
             <div className="row">
               <div className="col text-right">
-                <a href={this.props.link}>
+                <a href={this.props.link} target="_blank">
                   <h6 className="text-secondary">Read More</h6>
                 </a>
               </div>
