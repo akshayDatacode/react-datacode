@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "80fdb51ebc7cc885dbf66ac206e1bd1b",
+    "revision": "c409fd8c6ebd0706f4908761b79be4b7",
     "url": "/index.html"
   },
   {
-    "revision": "78cf59bde60fb82ccd37",
+    "revision": "8270d90cd031b0b08141",
     "url": "/static/css/2.89f067aa.chunk.css"
   },
   {
-    "revision": "4cc10eb972fef37b2691",
+    "revision": "911ac89e85ed4fa85b8a",
     "url": "/static/css/main.2749690b.chunk.css"
   },
   {
-    "revision": "78cf59bde60fb82ccd37",
-    "url": "/static/js/2.d2329e94.chunk.js"
+    "revision": "8270d90cd031b0b08141",
+    "url": "/static/js/2.630385cc.chunk.js"
   },
   {
     "revision": "ae54f939c6e84f9ec4d4c4cd8100d77f",
-    "url": "/static/js/2.d2329e94.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.630385cc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4cc10eb972fef37b2691",
-    "url": "/static/js/main.5448c90d.chunk.js"
+    "revision": "911ac89e85ed4fa85b8a",
+    "url": "/static/js/main.b70f7f1a.chunk.js"
   },
   {
     "revision": "ba88f149e390315adcbe",
@@ -100,6 +100,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/android_quize.6312c984.jpeg"
   },
   {
+    "revision": "0531dc154758e303da22f677ff25b916",
+    "url": "/static/media/android_tech.0531dc15.jpeg"
+  },
+  {
     "revision": "48e739af02f49564c3be51e7ee7a172e",
     "url": "/static/media/android_tutorial.48e739af.jpeg"
   },
@@ -118,6 +122,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b0796623a71b9ecb91a0f521929745ca",
     "url": "/static/media/angular_quize.b0796623.jpeg"
+  },
+  {
+    "revision": "d6e8cffa6e1d815133c7c9993db129f8",
+    "url": "/static/media/angular_tech.d6e8cffa.jpeg"
   },
   {
     "revision": "2f57cbe4b171a562b05b5933ab6026c5",
@@ -142,6 +150,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "7104339cc068410864ae37e735e55fe6",
     "url": "/static/media/bootstrap_quize.7104339c.jpeg"
+  },
+  {
+    "revision": "aa3a266f09eefde99dec0c17a94f8585",
+    "url": "/static/media/bootstrap_tech.aa3a266f.jpeg"
   },
   {
     "revision": "4abb558df96f01ecff8996a741c3a0f0",
@@ -170,6 +182,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "cab65fde04ec22e0bfcb2a2a44c90728",
     "url": "/static/media/c_quize_test.cab65fde.jpeg"
+  },
+  {
+    "revision": "bf1508ec9fe58eefbff0524b9dcf5a65",
+    "url": "/static/media/c_tech.bf1508ec.jpeg"
   },
   {
     "revision": "f32536dfccd8b06d6b349e68ca35102c",
@@ -224,6 +240,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/cpp_quize.92bbb7cc.jpeg"
   },
   {
+    "revision": "4e3e4bc8b4042e78ccce84691c48ac51",
+    "url": "/static/media/cpp_tech.4e3e4bc8.jpeg"
+  },
+  {
     "revision": "0554f5070f329307ffdd7b06ad1a0781",
     "url": "/static/media/cprogramming_practice_question.0554f507.jpeg"
   },
@@ -238,6 +258,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e4fcf06b8c05b794ee33c4fd80235269",
     "url": "/static/media/css_mcq.e4fcf06b.jpeg"
+  },
+  {
+    "revision": "2676c7c8b6ebe1c7be10470de69768c2",
+    "url": "/static/media/css_tech.2676c7c8.jpeg"
   },
   {
     "revision": "05f98ced3865fde259c127ff52a349af",
@@ -292,6 +316,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/dbms_quize.61ee6763.jpeg"
   },
   {
+    "revision": "ceae7e60879877b2d26a19e6924086ad",
+    "url": "/static/media/dbms_tech.ceae7e60.jpeg"
+  },
+  {
     "revision": "e3423bb1c75aa4f07a6cf3fc28b28f22",
     "url": "/static/media/dbms_tutorial.e3423bb1.jpeg"
   },
@@ -306,6 +334,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "81f02840b7666f52bc99ddbd09df78c4",
     "url": "/static/media/django_quize.81f02840.jpeg"
+  },
+  {
+    "revision": "0654a6df5347cc4db9c461cb1a55c0ec",
+    "url": "/static/media/django_tech.0654a6df.jpeg"
   },
   {
     "revision": "78cb0203ba5f313e0292e7ee1735e3d1",
@@ -326,6 +358,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "65a530e006cb91be5766561c5f39b4de",
     "url": "/static/media/ds_quize.65a530e0.jpeg"
+  },
+  {
+    "revision": "8035fa768377029b7c0fb7c050e1ad49",
+    "url": "/static/media/ds_tech.8035fa76.jpeg"
   },
   {
     "revision": "4ef56e456b10fad4aadc0ffa5243262f",
@@ -360,6 +396,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/git_quize.11a4b61b.jpeg"
   },
   {
+    "revision": "be0b1caca877af0b4d91acf4963ffbc9",
+    "url": "/static/media/git_tech.be0b1cac.jpeg"
+  },
+  {
     "revision": "e03defd019c51307e7db7aa9f0a9affc",
     "url": "/static/media/h2.e03defd0.jpeg"
   },
@@ -386,6 +426,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2d0552bb94ad5db1bfc7ea099c0f677c",
     "url": "/static/media/html_mcq.2d0552bb.jpeg"
+  },
+  {
+    "revision": "88a4c2165077a102e1d28d61e1ce63e8",
+    "url": "/static/media/html_tech.88a4c216.jpeg"
   },
   {
     "revision": "92c900c169b7ef069c64d7550cd6f788",
@@ -440,6 +484,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/java_quize_test.74b618a1.jpeg"
   },
   {
+    "revision": "a86921f88ca811561e4d14d5337b4716",
+    "url": "/static/media/java_tech.a86921f8.jpeg"
+  },
+  {
     "revision": "73f1ac1fc883151b9941abcbc58010b3",
     "url": "/static/media/java_tutorial.73f1ac1f.jpeg"
   },
@@ -470,6 +518,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "168296473cabc8d4fc5e2190c318969c",
     "url": "/static/media/js_quize.16829647.jpeg"
+  },
+  {
+    "revision": "724af9203132d0245341b0eabee068c9",
+    "url": "/static/media/js_tech.724af920.jpeg"
   },
   {
     "revision": "5b4a7a5c207841131964a6de44e4b4bf",
@@ -510,6 +562,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "222eeb684df5e7c8931995fb10e7bb57",
     "url": "/static/media/oops_quize.222eeb68.jpeg"
+  },
+  {
+    "revision": "4e5d2c8bc35e8de58a4bab374174b7e7",
+    "url": "/static/media/oops_tech.4e5d2c8b.jpeg"
   },
   {
     "revision": "c775277d2190ae376a5508e381ba1671",
@@ -568,6 +624,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/python_quize_test.f1996c15.jpeg"
   },
   {
+    "revision": "b3ccd037400f19eaf91807d39a794f7a",
+    "url": "/static/media/python_tech.b3ccd037.jpeg"
+  },
+  {
     "revision": "bfaa66e71bd5e8fb816080c97c3851be",
     "url": "/static/media/python_tutorial.bfaa66e7.jpeg"
   },
@@ -608,6 +668,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/react_quize.d48045af.jpeg"
   },
   {
+    "revision": "665ac0289e72fcbf89c36b0d6cddf4aa",
+    "url": "/static/media/react_tech.665ac028.jpeg"
+  },
+  {
     "revision": "1406570db4d0bcf3abf48223ce14dfbd",
     "url": "/static/media/react_tutorial.1406570d.jpeg"
   },
@@ -638,6 +702,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9a894bf8e81bf80cb9ad232d692a0c3f",
     "url": "/static/media/sql_quize.9a894bf8.jpeg"
+  },
+  {
+    "revision": "d5c2174ba98361da1297dc1726f15444",
+    "url": "/static/media/sql_tech.d5c2174b.jpeg"
   },
   {
     "revision": "7716d2e02ea39c55fcdfda619ff9b19f",
