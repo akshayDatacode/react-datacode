@@ -25,6 +25,7 @@ class RightSideSection extends Component {
               <a
                 href="https://www.facebook.com/Datacode.in/"
                 className="btn btn-info font-weight-bold"
+                target="_blank"
               >
                 Join us
               </a>
@@ -51,6 +52,7 @@ class RightSideSection extends Component {
               <a
                 href="https://www.facebook.com/Datacode.in/"
                 className="btn btn-info font-weight-bold"
+                target="_blank"
               >
                 Join us
               </a>

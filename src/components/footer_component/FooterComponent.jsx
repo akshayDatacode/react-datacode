@@ -6,10 +6,10 @@ import {
   faLinkedinIn,
   faYoutube,
   faInstagram,
-  faMailchimp,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faHeart } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+
 class FooterComponent extends Component {
   state = {};
   render() {
@@ -26,7 +26,10 @@ class FooterComponent extends Component {
                 </div>
 
                 <div className="col-md-6 col-lg-6 text-center text-md-right">
-                  <a href="https://www.facebook.com/Datacode.in/" cl>
+                  <a
+                    href="https://www.facebook.com/Datacode.in/"
+                    target="_blank"
+                  >
                     <FontAwesomeIcon
                       icon={faFacebookSquare}
                       size="3x"
@@ -34,7 +37,10 @@ class FooterComponent extends Component {
                       className="m-3"
                     />
                   </a>
-                  <a href="https://www.facebook.com/Datacode.in/">
+                  <a
+                    href="https://www.facebook.com/Datacode.in/"
+                    target="_blank"
+                  >
                     <FontAwesomeIcon
                       icon={faInstagram}
                       size="3x"
@@ -42,7 +48,10 @@ class FooterComponent extends Component {
                       className="m-3"
                     />
                   </a>
-                  <a href="https://www.facebook.com/Datacode.in/">
+                  <a
+                    href="https://www.facebook.com/Datacode.in/"
+                    target="_blank"
+                  >
                     <FontAwesomeIcon
                       icon={faLinkedinIn}
                       size="3x"
@@ -50,7 +59,10 @@ class FooterComponent extends Component {
                       className="m-3"
                     />
                   </a>
-                  <a href="https://www.facebook.com/Datacode.in/">
+                  <a
+                    href="https://www.facebook.com/Datacode.in/"
+                    target="_blank"
+                  >
                     <FontAwesomeIcon
                       icon={faYoutube}
                       size="3x"
@@ -90,18 +102,19 @@ class FooterComponent extends Component {
                   <a
                     class="dark-grey-text"
                     href="https://www.facebook.com/groups/DevCIndore"
+                    target="_blank"
                   >
                     Facebook Developer Circle, Indore
                   </a>
                 </p>
                 <p>
-                  <a class="dark-grey-text" href="#!">
+                  <a class="dark-grey-text" href="#!" target="_blank">
                     Mozila Community ,Indore
                   </a>
                 </p>
 
                 <p>
-                  <a class="dark-grey-text" href="#!">
+                  <a class="dark-grey-text" href="#!" target="_blank">
                     Bootstrap Angular
                   </a>
                 </p>

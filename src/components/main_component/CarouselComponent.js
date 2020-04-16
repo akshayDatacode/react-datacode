@@ -38,6 +38,13 @@ class CarouselComponent extends Component {
                   </div>
                 </Link>
               </div>
+              <div className="card-img-overlay d-block d-sm-none m-0 p-0 text-right">
+                <h2 className="text-weight-bold p-0 ">DataCode.in</h2>
+                <p>Find | Learn | Code</p>
+                <Link to="/home">
+                  <div className="btn btn-warning">Getting Start</div>
+                </Link>
+              </div>
             </div>
           </Carousel.Item>
           <Carousel.Item>
@@ -55,6 +62,13 @@ class CarouselComponent extends Component {
                   <div className="btn btn-lg btn-success mt-5">
                     Register Now
                   </div>
+                </Link>
+              </div>
+              <div className="card-img-overlay d-block d-sm-none m-0 p-0 text-left">
+                <h2 className="text-weight-bold p-0 ">DataCode.in</h2>
+                <p>Find | Learn | Code</p>
+                <Link to="/home">
+                  <div className="btn btn-success">Getting Start</div>
                 </Link>
               </div>
             </div>

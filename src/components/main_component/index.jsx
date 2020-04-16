@@ -14,6 +14,7 @@ import {
   faLaptopCode,
 } from "@fortawesome/free-solid-svg-icons";
 import FooterComponentUpper from "../footer_component/FooterComponentUpper";
+import { faConnectdevelop } from "@fortawesome/free-brands-svg-icons";
 
 class MainComponent extends Component {
   state = {};
@@ -267,13 +268,13 @@ class MainComponent extends Component {
                 <div class="card border border-white">
                   <center>
                     <FontAwesomeIcon
-                      icon={faBookOpen}
+                      icon={faConnectdevelop}
                       size="5x"
                       color="green"
                     />
                   </center>
                   <div class="card-body">
-                    <h5 class="card-title">Books</h5>
+                    <h5 class="card-title">Event & Contests</h5>
                     <p class="card-text">
                       This is a wider card with supporting text below as a
                       natural lead-in to additional content. .

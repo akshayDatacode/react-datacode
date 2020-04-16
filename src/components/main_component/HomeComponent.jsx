@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Indexposts from "./posts/IndexPosts";
 import HeaderBannerSection from "./HeaderBannerSection";
 import RightSideSection from "../right_section/RightSideSection";
-import FooterComponentUpper from "../footer_component/FooterComponentUpper";
+
 class HomeComponent extends Component {
   state = {};
   componentDidMount() {
@@ -11,7 +11,7 @@ class HomeComponent extends Component {
   render() {
     return (
       <>
-        <HeaderBannerSection imgsource="headermain.jpeg" />
+        <HeaderBannerSection imgsource="start_learning_together.jpeg" />
         {/* Index Posts */}
         <div className="row">
           <div className="col-md-1"></div>
