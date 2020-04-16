@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c204d2b5f1b9f6c428a54b3d8ee4138f",
+    "revision": "80fdb51ebc7cc885dbf66ac206e1bd1b",
     "url": "/index.html"
   },
   {
-    "revision": "9595c31b23f2d00653ed",
+    "revision": "78cf59bde60fb82ccd37",
     "url": "/static/css/2.89f067aa.chunk.css"
   },
   {
-    "revision": "0db2d420e4015a289de5",
+    "revision": "4cc10eb972fef37b2691",
     "url": "/static/css/main.2749690b.chunk.css"
   },
   {
-    "revision": "9595c31b23f2d00653ed",
-    "url": "/static/js/2.6f6c38fb.chunk.js"
+    "revision": "78cf59bde60fb82ccd37",
+    "url": "/static/js/2.d2329e94.chunk.js"
   },
   {
     "revision": "ae54f939c6e84f9ec4d4c4cd8100d77f",
-    "url": "/static/js/2.6f6c38fb.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.d2329e94.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0db2d420e4015a289de5",
-    "url": "/static/js/main.74896511.chunk.js"
+    "revision": "4cc10eb972fef37b2691",
+    "url": "/static/js/main.5448c90d.chunk.js"
   },
   {
     "revision": "ba88f149e390315adcbe",
@@ -88,6 +88,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/android.8fa047d4.jpeg"
   },
   {
+    "revision": "b466709521b67745b19b2d2f6463ca1b",
+    "url": "/static/media/android_interview_questions.b4667095.jpeg"
+  },
+  {
     "revision": "45712a80e0f63b35f728f027d694ed20",
     "url": "/static/media/android_mcq.45712a80.jpeg"
   },
@@ -102,6 +106,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c8cc4536adc7e98b69916d97cc9b1de3",
     "url": "/static/media/angular.c8cc4536.jpeg"
+  },
+  {
+    "revision": "9b1ad8ba33a0ef167688a55b497ed36c",
+    "url": "/static/media/angular_interview_questions.9b1ad8ba.jpeg"
   },
   {
     "revision": "9431ecad7ceda78adca5f716f67cf30f",
@@ -124,6 +132,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/blog.8b88ce41.jpeg"
   },
   {
+    "revision": "7293375f9f5fbf1fbd7674953d6573cf",
+    "url": "/static/media/bootstrap_interview_questions.7293375f.jpeg"
+  },
+  {
     "revision": "85b9a370416de3850c449daa39094fbe",
     "url": "/static/media/bootstrap_mcq.85b9a370.jpeg"
   },
@@ -134,6 +146,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4abb558df96f01ecff8996a741c3a0f0",
     "url": "/static/media/c_interview_question.4abb558d.jpeg"
+  },
+  {
+    "revision": "e23abd819801f476e381fcd0ccc8cc84",
+    "url": "/static/media/c_interview_questions.e23abd81.jpeg"
   },
   {
     "revision": "1e5329d1ccf9526eab915999a4b8c1f9",
@@ -158,6 +174,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f32536dfccd8b06d6b349e68ca35102c",
     "url": "/static/media/c_tutorial.f32536df.jpeg"
+  },
+  {
+    "revision": "ad182992e2c78cf34a682389f57b49bd",
+    "url": "/static/media/cloud_computing_interview_questions.ad182992.jpeg"
+  },
+  {
+    "revision": "8b9a3ea1454bcd9687f1aeec984d6101",
+    "url": "/static/media/cn_interview_questions.8b9a3ea1.jpeg"
   },
   {
     "revision": "824a5bd332f76639571b6424d038cf74",
@@ -188,6 +212,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/cover4.e72ed110.jpeg"
   },
   {
+    "revision": "955bb568c0a65e2efeb3b9096a6a43b4",
+    "url": "/static/media/cpp_interview_questions.955bb568.jpeg"
+  },
+  {
     "revision": "477d4ddb402351e00ddd500d4791df3b",
     "url": "/static/media/cpp_mcq.477d4ddb.jpeg"
   },
@@ -202,6 +230,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "861c575ce3691f7e346ea90f79e5dc4c",
     "url": "/static/media/css.861c575c.jpeg"
+  },
+  {
+    "revision": "74cbcaceaf13ffdad29f0b81e6b2931e",
+    "url": "/static/media/css_interview_questions.74cbcace.jpeg"
   },
   {
     "revision": "e4fcf06b8c05b794ee33c4fd80235269",
@@ -248,6 +280,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/dbms_interview_question.jpeg.84a2e6ad.jpeg"
   },
   {
+    "revision": "5ea3c9370ea2d39ecad6057c58a123a1",
+    "url": "/static/media/dbms_interview_questions.5ea3c937.jpeg"
+  },
+  {
     "revision": "d40612293d7e9eddee921155da559c5f",
     "url": "/static/media/dbms_mcq.d4061229.jpeg"
   },
@@ -260,6 +296,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/dbms_tutorial.e3423bb1.jpeg"
   },
   {
+    "revision": "9cf0ed9b63b09bee3275bf971323753d",
+    "url": "/static/media/django_interview_questions.9cf0ed9b.jpeg"
+  },
+  {
     "revision": "f1087597ac2125d0f8923cf05ad3d171",
     "url": "/static/media/django_mcq.f1087597.jpeg"
   },
@@ -270,6 +310,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "78cb0203ba5f313e0292e7ee1735e3d1",
     "url": "/static/media/ds1.jpg.78cb0203.png"
+  },
+  {
+    "revision": "6859e5a7c6e2a79b0bed98a72c8c1ae9",
+    "url": "/static/media/ds_interview_questions.6859e5a7.jpeg"
   },
   {
     "revision": "3145bbe6bbcb9d27699ef70be7ce7392",
@@ -336,6 +380,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/html_css_quize.5cfe4c1a.jpeg"
   },
   {
+    "revision": "ca398586bc396586383bc1b7e09f42b4",
+    "url": "/static/media/html_interview_questions.ca398586.jpeg"
+  },
+  {
     "revision": "2d0552bb94ad5db1bfc7ea099c0f677c",
     "url": "/static/media/html_mcq.2d0552bb.jpeg"
   },
@@ -358,6 +406,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f35cdf18c60ba4221ee981250abe4bae",
     "url": "/static/media/java_interview_question.f35cdf18.jpeg"
+  },
+  {
+    "revision": "a05b763a08f903d94077f36764a97b97",
+    "url": "/static/media/java_interview_questions.a05b763a.jpeg"
   },
   {
     "revision": "0360c5c369398918715886f35c479441",
@@ -404,6 +456,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/js_function.14031d5a.jpeg"
   },
   {
+    "revision": "077b50d2be4250951b6607b012dd9597",
+    "url": "/static/media/js_interview_questions.077b50d2.jpeg"
+  },
+  {
     "revision": "d0ddbefb9f38cc93c639499cce56fbfb",
     "url": "/static/media/js_learning_blogs.d0ddbefb.jpeg"
   },
@@ -444,12 +500,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/oops_interview_question.a2af45cd.jpeg"
   },
   {
+    "revision": "257543b6fd8baf950b85d713276fb335",
+    "url": "/static/media/oops_interview_questions.257543b6.jpeg"
+  },
+  {
     "revision": "0f754ec6df34de271bd03b19f649cc00",
     "url": "/static/media/oops_mcq.0f754ec6.jpeg"
   },
   {
     "revision": "222eeb684df5e7c8931995fb10e7bb57",
     "url": "/static/media/oops_quize.222eeb68.jpeg"
+  },
+  {
+    "revision": "c775277d2190ae376a5508e381ba1671",
+    "url": "/static/media/os_interview_questions.c775277d.jpeg"
   },
   {
     "revision": "770d5ca0c10e563f9ccc953718a01b9e",
@@ -470,6 +534,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "415ca3dce83baae0180929c026fcb1b9",
     "url": "/static/media/python_interview_question.415ca3dc.jpeg"
+  },
+  {
+    "revision": "f60e8f0746f2a6688df4fbe167c38eea",
+    "url": "/static/media/python_interview_questions.f60e8f07.jpeg"
   },
   {
     "revision": "8cbf5fcf0aa73a802e8c906211ee0953",
@@ -512,8 +580,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/pythontech.48a04521.jpeg"
   },
   {
+    "revision": "f19cdaa01883467303ddcbad5140342d",
+    "url": "/static/media/rdbms_interview_questions.f19cdaa0.jpeg"
+  },
+  {
     "revision": "db81b082197d6a87c57f1ab9f053ca60",
     "url": "/static/media/react.db81b082.jpeg"
+  },
+  {
+    "revision": "62d48834397a1bc787c483a97fe67c05",
+    "url": "/static/media/react_interview_questions.62d48834.jpeg"
   },
   {
     "revision": "d7dcb259bb5dc1e25045177d17a10efb",
@@ -540,12 +616,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/rest_api_node.4ce3247e.jpeg"
   },
   {
+    "revision": "b4cb76b39a2254534c00832d728a9487",
+    "url": "/static/media/sdlc_interview_questions.b4cb76b3.jpeg"
+  },
+  {
     "revision": "8c55a04009c4fb12a19082e134100a09",
     "url": "/static/media/sql.8c55a040.jpeg"
   },
   {
     "revision": "ae7240c04c122b6e9d976f7826b1973f",
     "url": "/static/media/sql_interview_question.ae7240c0.jpeg"
+  },
+  {
+    "revision": "eba77bbf45ba4f8a002fa5c2e1d78e21",
+    "url": "/static/media/sql_interview_questions.eba77bbf.jpeg"
   },
   {
     "revision": "80ad22f72b45703c02be2e5a0123bcb7",
@@ -574,6 +658,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "58291e4fe9c302a989cf9a7f45ea1b95",
     "url": "/static/media/technical_interview_questions.58291e4f.jpeg"
+  },
+  {
+    "revision": "eaa4de36ccbc871c8687973990bf222d",
+    "url": "/static/media/testing_interview_questions.eaa4de36.jpeg"
   },
   {
     "revision": "6c49b2fef84607c7570bf4c58d6718d8",
