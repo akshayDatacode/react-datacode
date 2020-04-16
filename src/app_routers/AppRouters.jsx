@@ -150,6 +150,25 @@ import AndroidQuizeTest2 from "../components/main_component/posts/mcqQuestions/q
 import AndroidQuizeTest3 from "../components/main_component/posts/mcqQuestions/quize_test/android_quizes_tests/AndroidQuizeTest3";
 import AndroidQuizeTest4 from "../components/main_component/posts/mcqQuestions/quize_test/android_quizes_tests/AndroidQuizeTest4";
 
+// Django Quize Test
+import IndexDjangoQuizeTests from "../components/main_component/posts/mcqQuestions/quize_test/django_quizes_tests/IndexDjangoQuizeTests";
+import DjangoQuizeTest1 from "../components/main_component/posts/mcqQuestions/quize_test/django_quizes_tests/DjangoQuizeTest1";
+import DjangoQuizeTest2 from "../components/main_component/posts/mcqQuestions/quize_test/django_quizes_tests/DjangoQuizeTest2";
+import DjangoQuizeTest3 from "../components/main_component/posts/mcqQuestions/quize_test/django_quizes_tests/DjangoQuizeTest3";
+import DjangoQuizeTest4 from "../components/main_component/posts/mcqQuestions/quize_test/django_quizes_tests/DjangoQuizeTest4";
+// Bootstrap Quize Test
+import IndexBootstrapQuizeTests from "../components/main_component/posts/mcqQuestions/quize_test/bootstrap_quizes_tests/IndexBootstrapQuizeTests";
+import BootstrapQuizeTest1 from "../components/main_component/posts/mcqQuestions/quize_test/bootstrap_quizes_tests/BootstrapQuizeTest1";
+import BootstrapQuizeTest2 from "../components/main_component/posts/mcqQuestions/quize_test/bootstrap_quizes_tests/BootstrapQuizeTest2";
+import BootstrapQuizeTest3 from "../components/main_component/posts/mcqQuestions/quize_test/bootstrap_quizes_tests/BootstrapQuizeTest3";
+import BootstrapQuizeTest4 from "../components/main_component/posts/mcqQuestions/quize_test/bootstrap_quizes_tests/BootstrapQuizeTest4";
+// Git Quize Test
+import IndexGitQuizeTests from "../components/main_component/posts/mcqQuestions/quize_test/git_quizes_tests/IndexGitQuizeTests";
+import GitQuizeTest1 from "../components/main_component/posts/mcqQuestions/quize_test/git_quizes_tests/GitQuizeTest1";
+import GitQuizeTest2 from "../components/main_component/posts/mcqQuestions/quize_test/git_quizes_tests/GitQuizeTest2";
+import GitQuizeTest3 from "../components/main_component/posts/mcqQuestions/quize_test/git_quizes_tests/GitQuizeTest3";
+import GitQuizeTest4 from "../components/main_component/posts/mcqQuestions/quize_test/git_quizes_tests/GitQuizeTest4";
+
 // Index MCQ
 import IndexMcqQuestions from "../components/main_component/posts/mcqQuestions/IndexMcqQuestions";
 // Python MCQ Routing
@@ -569,6 +588,66 @@ class AppRouters extends Component {
           <Route exact path="/dbms_quize_test_2" component={DBMSQuizeTest2} />
           <Route exact path="/dbms_quize_test_3" component={DBMSQuizeTest3} />
           <Route exact path="/dbms_quize_test_4" component={DBMSQuizeTest4} />
+
+          {/*bootstrap  Quize Test Routing */}
+          <Route
+            exact
+            path="/bootstrap_quize_tests"
+            component={IndexBootstrapQuizeTests}
+          />
+          <Route
+            exact
+            path="/bootstrap_quize_test_1"
+            component={BootstrapQuizeTest1}
+          />
+          <Route
+            exact
+            path="/bootstrap_quize_test_2"
+            component={BootstrapQuizeTest2}
+          />
+          <Route
+            exact
+            path="/bootstrap_quize_test_3"
+            component={BootstrapQuizeTest3}
+          />
+          <Route
+            exact
+            path="/bootstrap_quize_test_4"
+            component={BootstrapQuizeTest4}
+          />
+          {/*Django  Quize Test Routing */}
+          <Route
+            exact
+            path="/django_quize_tests"
+            component={IndexDjangoQuizeTests}
+          />
+          <Route
+            exact
+            path="/django_quize_test_1"
+            component={DjangoQuizeTest1}
+          />
+          <Route
+            exact
+            path="/django_quize_test_2"
+            component={DjangoQuizeTest2}
+          />
+          <Route
+            exact
+            path="/django_quize_test_3"
+            component={DjangoQuizeTest3}
+          />
+          <Route
+            exact
+            path="/django_quize_test_4"
+            component={DjangoQuizeTest4}
+          />
+
+          {/*Git  Quize Test Routing */}
+          <Route exact path="/Git_quize_tests" component={IndexGitQuizeTests} />
+          <Route exact path="/git_quize_test_1" component={GitQuizeTest1} />
+          <Route exact path="/git_quize_test_2" component={GitQuizeTest2} />
+          <Route exact path="/git_quize_test_3" component={GitQuizeTest3} />
+          <Route exact path="/git_quize_test_4" component={GitQuizeTest4} />
 
           {/* Starting Interview Routing */}
 

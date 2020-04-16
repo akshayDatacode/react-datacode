@@ -23,21 +23,21 @@ class IndexQuizeTests extends Component {
             </Link>
             <div className="card-deck mb-5">
               <PostCard
-                imgsource="c_quize_test.jpeg"
+                imgsource="c_quize.jpeg"
                 title="C Programming Quize Test"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
                 link="/c_quize_tests"
               />
               <PostCard
-                imgsource="python_quize_test.jpeg"
+                imgsource="python_quize.jpeg"
                 title="Python Programming Quize Test"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
                 link="/python_quize_tests"
               />
               <PostCard
-                imgsource="java_quize_test.jpeg"
+                imgsource="java_quize.jpeg"
                 title="Java Programming Quize Test"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
@@ -46,21 +46,21 @@ class IndexQuizeTests extends Component {
             </div>
             <div className="card-deck mb-5">
               <PostCard
-                imgsource="programming_quize_test.jpeg"
+                imgsource="html_css_quize.jpeg"
                 title="HTML & CSS Quize Test"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
                 link="/html_quize_tests"
               />
               <PostCard
-                imgsource="programming_quize_test.jpeg"
+                imgsource="js_quize.jpeg"
                 title="JavaScript Programming Quize Test"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
                 link="/js_quize_tests"
               />
               <PostCard
-                imgsource="programming_quize_test.jpeg"
+                imgsource="ds_quize.jpeg"
                 title="DataStructure Quize Test"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
@@ -69,21 +69,21 @@ class IndexQuizeTests extends Component {
             </div>
             <div className="card-deck mb-5">
               <PostCard
-                imgsource="programming_quize_test.jpeg"
+                imgsource="dbms_quize.jpeg"
                 title="DBMS Quize Test"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
                 link="/dbms_quize_tests"
               />
               <PostCard
-                imgsource="programming_quize_test.jpeg"
+                imgsource="sql_quize.jpeg"
                 title="SQL Quize Test"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
                 link="/sql_quize_tests"
               />
               <PostCard
-                imgsource="programming_quize_test.jpeg"
+                imgsource="oops_quize.jpeg"
                 title="OOPs Programming Quize Test"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
@@ -92,25 +92,48 @@ class IndexQuizeTests extends Component {
             </div>
             <div className="card-deck mb-5">
               <PostCard
-                imgsource="programming_quize_test.jpeg"
+                imgsource="angular_quize.jpeg"
                 title="Angular Quize Test"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
                 link="/angular_quize_tests"
               />
               <PostCard
-                imgsource="programming_quize_test.jpeg"
+                imgsource="react_quize.jpeg"
                 title="React Quize Test"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
                 link="/react_quize_tests"
               />
               <PostCard
-                imgsource="programming_quize_test.jpeg"
+                imgsource="android_quize.jpeg"
                 title="Android Programming Quize Test"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
                 link="/Android_quize_tests"
+              />
+            </div>
+            <div className="card-deck mb-5">
+              <PostCard
+                imgsource="django_quize.jpeg"
+                title="Django Quize Test"
+                paragraph="We Love to Code and this is the best way to express our
+                  love to Computer Science Wolrd."
+                link="/html_quize_tests"
+              />
+              <PostCard
+                imgsource="bootstrap_quize.jpeg"
+                title="Bootstrap Quize Test"
+                paragraph="We Love to Code and this is the best way to express our
+                  love to Computer Science Wolrd."
+                link="/bootstrap_quize_tests"
+              />
+              <PostCard
+                imgsource="git_quize.jpeg"
+                title="Git Quize Test"
+                paragraph="We Love to Code and this is the best way to express our
+                  love to Computer Science Wolrd."
+                link="/git_quize_tests"
               />
             </div>
             <h4 className="text-secondary mt-3">For More Quize Tests</h4>

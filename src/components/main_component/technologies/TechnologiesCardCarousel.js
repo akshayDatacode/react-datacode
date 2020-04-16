@@ -56,12 +56,12 @@ class TechnologiesCardCarousel extends Component {
                   link="/datastructure"
                 />
                 <CardCarouselItem
-                  imgsource="code_challange.jpeg"
+                  imgsource="dbms.jpeg"
                   title="DBMS"
                   link="/dbms"
                 />
                 <CardCarouselItem
-                  imgsource="code_challange.jpeg"
+                  imgsource="sql.jpeg"
                   title="SQL"
                   link="/sql"
                 />
@@ -70,7 +70,7 @@ class TechnologiesCardCarousel extends Component {
             <Carousel.Item>
               <div className="card-deck">
                 <CardCarouselItem
-                  imgsource="datastructure.jpeg"
+                  imgsource="android.jpeg"
                   title="Android"
                   link="/android"
                 />
@@ -80,7 +80,7 @@ class TechnologiesCardCarousel extends Component {
                   link="/react"
                 />
                 <CardCarouselItem
-                  imgsource="react.jpeg"
+                  imgsource="angular.jpeg"
                   title="Angular"
                   link="/angular"
                 />
@@ -89,17 +89,17 @@ class TechnologiesCardCarousel extends Component {
             <Carousel.Item>
               <div className="card-deck">
                 <CardCarouselItem
-                  imgsource="datastructure.jpeg"
+                  imgsource="oops.jpeg"
                   title="OOPS"
                   link="/oops"
                 />
                 <CardCarouselItem
-                  imgsource="code_challange.jpeg"
+                  imgsource="comming_soon.jpeg"
                   title=" Coming soon"
                   link="/index_technologies"
                 />
                 <CardCarouselItem
-                  imgsource="code_challange.jpeg"
+                  imgsource="comming_soon.jpeg"
                   title="Coming soon"
                   link="/index_technologies"
                 />

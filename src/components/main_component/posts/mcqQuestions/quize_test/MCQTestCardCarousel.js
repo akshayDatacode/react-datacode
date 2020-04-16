@@ -13,18 +13,18 @@ class MCQTestCardCarousel extends Component {
             <Carousel.Item>
               <div className="card-deck ">
                 <CardCarouselItem
-                  imgsource="code_challange.jpeg"
+                  imgsource="python_quize.jpeg"
                   title="Python quiz test"
                   link="/python_quize_tests"
                 />
                 <CardCarouselItem
-                  imgsource="event.jpeg"
+                  imgsource="c_quize.jpeg"
                   title="C quiz test"
                   link="/c_quize_tests"
                 />
                 <CardCarouselItem
-                  imgsource="web_blog.jpeg"
-                  title="Coming Soon...."
+                  imgsource="cpp_quize.jpeg"
+                  title="C++ Quize Test"
                   link="/index_quize_tests"
                 />
               </div>
@@ -32,14 +32,14 @@ class MCQTestCardCarousel extends Component {
             <Carousel.Item>
               <div className="card-deck ">
                 <CardCarouselItem
-                  imgsource="web_blog.jpeg"
-                  title="Coming Soon...."
+                  imgsource="java_quize.jpeg"
+                  title="Java Quize Test"
                   link="/index_quize_tests"
                 />
                 <CardCarouselItem
-                 imgsource="web_blog.jpeg"
-                 title="Coming Soon...."
-                 link="/index_quize_tests"
+                  imgsource="web_blog.jpeg"
+                  title="Coming Soon...."
+                  link="/index_quize_tests"
                 />
                 <CardCarouselItem
                   imgsource="web_blog.jpeg"
@@ -48,7 +48,6 @@ class MCQTestCardCarousel extends Component {
                 />
               </div>
             </Carousel.Item>
-            
           </Carousel>
         </div>
 
@@ -57,22 +56,22 @@ class MCQTestCardCarousel extends Component {
           <Carousel indicators={false}>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="code_challange.jpeg"
+                imgsource="python_quize.jpeg"
                 title="Python quiz test"
                 link="/python_quize_tests"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-               imgsource="event.jpeg"
-               title="C quiz test"
-               link="/c_quize_tests"
+                imgsource="c_quize.jpeg"
+                title="C Quize Test"
+                link="/c_quize_tests"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="web_blog.jpeg"
-                title="Coming Soon...."
+                imgsource="cpp_quize.jpeg"
+                title="C++ Quize Test"
                 link="/index_quize_tests"
               />
             </Carousel.Item>
@@ -92,12 +91,11 @@ class MCQTestCardCarousel extends Component {
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-               imgsource="web_blog.jpeg"
-               title="Coming Soon...."
-               link="/index_quize_tests"
+                imgsource="web_blog.jpeg"
+                title="Coming Soon...."
+                link="/index_quize_tests"
               />
             </Carousel.Item>
-            
           </Carousel>
         </div>
       </>
