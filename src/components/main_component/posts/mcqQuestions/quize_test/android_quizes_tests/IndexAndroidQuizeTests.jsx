@@ -36,19 +36,19 @@ class IndexAndroidQuizeTests extends Component {
               <QuizeShowCard
                 title="Android Programming Quize Set 1"
                 level="Beginner"
-                imgsource="ds_mcqs.jpeg"
+                imgsource="android_tech.jpeg"
                 link="android_quize_test_1"
               />
               <QuizeShowCard
                 title="Android Programming Quize Set 1"
                 level="Medium"
-                imgsource="ds_mcqs.jpeg"
+                imgsource="android_tech.jpeg"
                 link="android_quize_test_2"
               />
               <QuizeShowCard
                 title="Android Programming Quize Set 1"
                 level="Advance"
-                imgsource="ds_mcqs.jpeg"
+                imgsource="android_tech.jpeg"
                 link="android_quize_test_3"
               />
             </div>

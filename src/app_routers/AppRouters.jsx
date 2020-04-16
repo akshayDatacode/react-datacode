@@ -59,6 +59,8 @@ import JSInterviewQuestions from "../components/main_component/posts/technical_i
 import AngularInterviewQuestions from "../components/main_component/posts/technical_interview_questions/AngularInterviewQuestions";
 import ReactInterviewQuestions from "../components/main_component/posts/technical_interview_questions/ReactInterviewQuestions";
 import AndroidInterviewQuestions from "../components/main_component/posts/technical_interview_questions/AndroidInterviewQuestions";
+import BootstrapInterviewQuestions from "../components/main_component/posts/technical_interview_questions/BootstrapInterviewQuestions";
+import DjangoInterviewQuestions from "../components/main_component/posts/technical_interview_questions/DjangoInterviewQuestions";
 
 // Books Routing
 import IndexBooks from "../components/main_component/posts/books/IndexBooks";
@@ -728,6 +730,14 @@ class AppRouters extends Component {
           <Route
             path="/android_interview_question"
             component={AndroidInterviewQuestions}
+          />
+          <Route
+            path="/bootstrap_interview_question"
+            component={BootstrapInterviewQuestions}
+          />
+          <Route
+            path="/django_interview_question"
+            component={DjangoInterviewQuestions}
           />
 
           {/* Einding Interview Routing */}

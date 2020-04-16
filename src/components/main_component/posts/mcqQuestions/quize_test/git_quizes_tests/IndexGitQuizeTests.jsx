@@ -36,19 +36,19 @@ class IndexGitQuizeTests extends Component {
               <QuizeShowCard
                 title="Git Quize Set 1"
                 level="Beginner"
-                imgsource="ds_mcqs.jpeg"
+                imgsource="git_tech.jpeg"
                 link="git_quize_test_1"
               />
               <QuizeShowCard
                 title="Git Quize Set 1"
                 level="Medium"
-                imgsource="ds_mcqs.jpeg"
+                imgsource="git_tech.jpeg"
                 link="git_quize_test_2"
               />
               <QuizeShowCard
                 title="Git Quize Set 1"
                 level="Advance"
-                imgsource="ds_mcqs.jpeg"
+                imgsource="git_tech.jpeg"
                 link="git_quize_test_3"
               />
             </div>

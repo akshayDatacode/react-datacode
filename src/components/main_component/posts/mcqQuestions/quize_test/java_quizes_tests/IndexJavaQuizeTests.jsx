@@ -37,19 +37,19 @@ class IndexJavaQuizeTests extends Component {
               <QuizeShowCard
                 title="Java Programming Quize Set 1"
                 level="Beginner"
-                imgsource="ds_mcqs.jpeg"
+                imgsource="java_tech.jpeg"
                 link="java_quize_test_1"
               />
               <QuizeShowCard
                 title="Java Programming Quize Set 1"
                 level="Medium"
-                imgsource="ds_mcqs.jpeg"
+                imgsource="java_tech.jpeg"
                 link="java_quize_test_2"
               />
               <QuizeShowCard
                 title="Java Programming Quize Set 1"
                 level="Advance"
-                imgsource="ds_mcqs.jpeg"
+                imgsource="java_tech.jpeg"
                 link="java_quize_test_3"
               />
             </div>
