@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "26c43cc0b2fc272a418a9fa2187ebd60",
+    "revision": "c204d2b5f1b9f6c428a54b3d8ee4138f",
     "url": "/index.html"
   },
   {
-    "revision": "ae155a4f2f03676537e3",
+    "revision": "9595c31b23f2d00653ed",
     "url": "/static/css/2.89f067aa.chunk.css"
   },
   {
-    "revision": "88787e35a5dd1ff0b203",
+    "revision": "0db2d420e4015a289de5",
     "url": "/static/css/main.2749690b.chunk.css"
   },
   {
-    "revision": "ae155a4f2f03676537e3",
-    "url": "/static/js/2.c8b21f94.chunk.js"
+    "revision": "9595c31b23f2d00653ed",
+    "url": "/static/js/2.6f6c38fb.chunk.js"
   },
   {
     "revision": "ae54f939c6e84f9ec4d4c4cd8100d77f",
-    "url": "/static/js/2.c8b21f94.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.6f6c38fb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "88787e35a5dd1ff0b203",
-    "url": "/static/js/main.57e1324f.chunk.js"
+    "revision": "0db2d420e4015a289de5",
+    "url": "/static/js/main.74896511.chunk.js"
   },
   {
     "revision": "ba88f149e390315adcbe",
@@ -84,16 +84,32 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/WhatsApp Image 2020-04-05 at 12.30.38 PM (9).83d70f9f.jpeg"
   },
   {
+    "revision": "8fa047d45000af2bc3f17938fbdd178c",
+    "url": "/static/media/android.8fa047d4.jpeg"
+  },
+  {
     "revision": "45712a80e0f63b35f728f027d694ed20",
     "url": "/static/media/android_mcq.45712a80.jpeg"
+  },
+  {
+    "revision": "6312c98427752c4038923c65c69a0b0b",
+    "url": "/static/media/android_quize.6312c984.jpeg"
   },
   {
     "revision": "48e739af02f49564c3be51e7ee7a172e",
     "url": "/static/media/android_tutorial.48e739af.jpeg"
   },
   {
+    "revision": "c8cc4536adc7e98b69916d97cc9b1de3",
+    "url": "/static/media/angular.c8cc4536.jpeg"
+  },
+  {
     "revision": "9431ecad7ceda78adca5f716f67cf30f",
     "url": "/static/media/angular_mcq.9431ecad.jpeg"
+  },
+  {
+    "revision": "b0796623a71b9ecb91a0f521929745ca",
+    "url": "/static/media/angular_quize.b0796623.jpeg"
   },
   {
     "revision": "2f57cbe4b171a562b05b5933ab6026c5",
@@ -112,6 +128,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/bootstrap_mcq.85b9a370.jpeg"
   },
   {
+    "revision": "7104339cc068410864ae37e735e55fe6",
+    "url": "/static/media/bootstrap_quize.7104339c.jpeg"
+  },
+  {
     "revision": "4abb558df96f01ecff8996a741c3a0f0",
     "url": "/static/media/c_interview_question.4abb558d.jpeg"
   },
@@ -126,6 +146,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "932dfd69c86a9b283d0b4a14a4a28c16",
     "url": "/static/media/c_programming_question.932dfd69.jpeg"
+  },
+  {
+    "revision": "28ecd574cd2a86403bdff86aa1cdc603",
+    "url": "/static/media/c_quize.28ecd574.jpeg"
   },
   {
     "revision": "cab65fde04ec22e0bfcb2a2a44c90728",
@@ -152,6 +176,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/coder1.17a6aab6.jpeg"
   },
   {
+    "revision": "a9223a891215578a45272cfc4c4ced91",
+    "url": "/static/media/comming_soon.a9223a89.jpeg"
+  },
+  {
     "revision": "b89de2b679beb0e2b7cbae5f994b7320",
     "url": "/static/media/cover3.b89de2b6.jpeg"
   },
@@ -162,6 +190,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "477d4ddb402351e00ddd500d4791df3b",
     "url": "/static/media/cpp_mcq.477d4ddb.jpeg"
+  },
+  {
+    "revision": "92bbb7ccfbe79a723ddbdca99189eb86",
+    "url": "/static/media/cpp_quize.92bbb7cc.jpeg"
   },
   {
     "revision": "0554f5070f329307ffdd7b06ad1a0781",
@@ -204,6 +236,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/datastructure_interview_question.00f9bad2.jpeg"
   },
   {
+    "revision": "e934fdd47a37a7b27569c70b31ad55ca",
+    "url": "/static/media/dbms.e934fdd4.jpeg"
+  },
+  {
     "revision": "9ba517de405f4dba9c4c5e985915754d",
     "url": "/static/media/dbms_interview_question.9ba517de.jpeg"
   },
@@ -216,12 +252,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/dbms_mcq.d4061229.jpeg"
   },
   {
+    "revision": "61ee676332332f3ac9f8f4175d261785",
+    "url": "/static/media/dbms_quize.61ee6763.jpeg"
+  },
+  {
     "revision": "e3423bb1c75aa4f07a6cf3fc28b28f22",
     "url": "/static/media/dbms_tutorial.e3423bb1.jpeg"
   },
   {
     "revision": "f1087597ac2125d0f8923cf05ad3d171",
     "url": "/static/media/django_mcq.f1087597.jpeg"
+  },
+  {
+    "revision": "81f02840b7666f52bc99ddbd09df78c4",
+    "url": "/static/media/django_quize.81f02840.jpeg"
   },
   {
     "revision": "78cb0203ba5f313e0292e7ee1735e3d1",
@@ -234,6 +278,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "bb0317bd5bc722998d5f67559bf6ccfa",
     "url": "/static/media/ds_mcqs.bb0317bd.jpeg"
+  },
+  {
+    "revision": "65a530e006cb91be5766561c5f39b4de",
+    "url": "/static/media/ds_quize.65a530e0.jpeg"
   },
   {
     "revision": "4ef56e456b10fad4aadc0ffa5243262f",
@@ -264,6 +312,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/git_mcq.07fa7a72.jpeg"
   },
   {
+    "revision": "11a4b61bce3b91ee6a89947745be8830",
+    "url": "/static/media/git_quize.11a4b61b.jpeg"
+  },
+  {
     "revision": "e03defd019c51307e7db7aa9f0a9affc",
     "url": "/static/media/h2.e03defd0.jpeg"
   },
@@ -278,6 +330,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "65be296cbafe6cfeb7dfbc9ac397c6f8",
     "url": "/static/media/html.65be296c.jpeg"
+  },
+  {
+    "revision": "5cfe4c1acb8f94efc828d816226b6b70",
+    "url": "/static/media/html_css_quize.5cfe4c1a.jpeg"
   },
   {
     "revision": "2d0552bb94ad5db1bfc7ea099c0f677c",
@@ -324,6 +380,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/java_programming_question.3483b153.jpeg"
   },
   {
+    "revision": "96d9b0eac4b65be185498541710af36d",
+    "url": "/static/media/java_quize.96d9b0ea.jpeg"
+  },
+  {
     "revision": "74b618a15b4015b3a0d895c9344dd95c",
     "url": "/static/media/java_quize_test.74b618a1.jpeg"
   },
@@ -352,6 +412,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/js_mcq.563ac84d.jpeg"
   },
   {
+    "revision": "168296473cabc8d4fc5e2190c318969c",
+    "url": "/static/media/js_quize.16829647.jpeg"
+  },
+  {
     "revision": "5b4a7a5c207841131964a6de44e4b4bf",
     "url": "/static/media/js_tutorial.5b4a7a5c.jpeg"
   },
@@ -372,12 +436,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/online_tutorials.c99f81fe.jpeg"
   },
   {
+    "revision": "61fa814c49e032419b0cb3382f60ef06",
+    "url": "/static/media/oops.61fa814c.jpeg"
+  },
+  {
     "revision": "a2af45cd2dc997397fce15298192adb9",
     "url": "/static/media/oops_interview_question.a2af45cd.jpeg"
   },
   {
     "revision": "0f754ec6df34de271bd03b19f649cc00",
     "url": "/static/media/oops_mcq.0f754ec6.jpeg"
+  },
+  {
+    "revision": "222eeb684df5e7c8931995fb10e7bb57",
+    "url": "/static/media/oops_quize.222eeb68.jpeg"
   },
   {
     "revision": "770d5ca0c10e563f9ccc953718a01b9e",
@@ -420,6 +492,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/python_programming_question.9a800e56.jpeg"
   },
   {
+    "revision": "82e01ce2f755b2c88bdfa660918ae310",
+    "url": "/static/media/python_quize.82e01ce2.jpeg"
+  },
+  {
     "revision": "f1996c15babfb74a0375b537dd71b14f",
     "url": "/static/media/python_quize_test.f1996c15.jpeg"
   },
@@ -452,6 +528,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/react_node.df51fe84.jpeg"
   },
   {
+    "revision": "d48045aff0762703ae05e6146e9c4988",
+    "url": "/static/media/react_quize.d48045af.jpeg"
+  },
+  {
     "revision": "1406570db4d0bcf3abf48223ce14dfbd",
     "url": "/static/media/react_tutorial.1406570d.jpeg"
   },
@@ -460,12 +540,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/rest_api_node.4ce3247e.jpeg"
   },
   {
+    "revision": "8c55a04009c4fb12a19082e134100a09",
+    "url": "/static/media/sql.8c55a040.jpeg"
+  },
+  {
     "revision": "ae7240c04c122b6e9d976f7826b1973f",
     "url": "/static/media/sql_interview_question.ae7240c0.jpeg"
   },
   {
     "revision": "80ad22f72b45703c02be2e5a0123bcb7",
     "url": "/static/media/sql_mcq.80ad22f7.jpeg"
+  },
+  {
+    "revision": "9a894bf8e81bf80cb9ad232d692a0c3f",
+    "url": "/static/media/sql_quize.9a894bf8.jpeg"
   },
   {
     "revision": "7716d2e02ea39c55fcdfda619ff9b19f",
