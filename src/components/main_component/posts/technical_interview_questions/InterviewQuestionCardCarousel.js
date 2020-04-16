@@ -18,12 +18,12 @@ class InterviewQuestionCardCarousel extends Component {
                   link="/index_interview_questioins"
                 />
                 <CardCarouselItem
-                  imgsource="dbms_interview_question.jpeg"
+                  imgsource="dbms_interview_questions.jpeg"
                   title="DBMS Interview Questions"
                   link="/dbms_interview_questioin"
                 />
                 <CardCarouselItem
-                  imgsource="sql_interview_question.jpeg"
+                  imgsource="sql_interview_questions.jpeg"
                   title="SQL Interview Questions"
                   link="/sql_interview_questioin"
                 />
@@ -32,17 +32,17 @@ class InterviewQuestionCardCarousel extends Component {
             <Carousel.Item>
               <div className="card-deck">
                 <CardCarouselItem
-                  imgsource="oops_interview_question.jpeg"
+                  imgsource="oops_interview_questions.jpeg"
                   title="OOps Interview Questions"
                   link="/oops_interview_question"
                 />
                 <CardCarouselItem
-                  imgsource="datastructure_interview_question.jpeg"
+                  imgsource="ds_interview_questions.jpeg"
                   title="DataStructure Interview Questions"
                   link="/datastructre_interview_question"
                 />
                 <CardCarouselItem
-                  imgsource="python_interview_question.jpeg"
+                  imgsource="python_interview_questions.jpeg"
                   title="Python Interview Questions"
                   link="/python_interview_question"
                 />
@@ -51,17 +51,17 @@ class InterviewQuestionCardCarousel extends Component {
             <Carousel.Item>
               <div className="card-deck">
                 <CardCarouselItem
-                  imgsource="java_interview_question.jpeg"
+                  imgsource="java_interview_questions.jpeg"
                   title="Java Interview Questions"
                   link="/java_interview_question"
                 />
                 <CardCarouselItem
-                  imgsource="c_interview_question.jpeg"
+                  imgsource="c_interview_questions.jpeg"
                   title="C Interview Questions"
                   link="/c_interview_question"
                 />
                 <CardCarouselItem
-                  imgsource="technical_interview_questions.jpeg"
+                  imgsource="cpp_interview_questions.jpeg"
                   title="C++ Interview Questions"
                   link="/cpp_interview_question"
                 />
@@ -70,17 +70,17 @@ class InterviewQuestionCardCarousel extends Component {
             <Carousel.Item>
               <div className="card-deck">
                 <CardCarouselItem
-                  imgsource="technical_interview_questions.jpeg"
+                  imgsource="cloud_computing_interview_questions.jpeg"
                   title="Cloud Computing Interview Questions"
                   link="/cloud_computing_interview_question"
                 />
                 <CardCarouselItem
-                  imgsource="technical_interview_questions.jpeg"
+                  imgsource="cn_interview_questions.jpeg"
                   title="Computer Network Interview Questions"
                   link="/cn_interview_question"
                 />
                 <CardCarouselItem
-                  imgsource="technical_interview_questions.jpeg"
+                  imgsource="os_interview_questions.jpeg"
                   title="Operating System Interview Questions"
                   link="/os_interview_question"
                 />
@@ -89,17 +89,17 @@ class InterviewQuestionCardCarousel extends Component {
             <Carousel.Item>
               <div className="card-deck">
                 <CardCarouselItem
-                  imgsource="technical_interview_questions.jpeg"
+                  imgsource="rdbms_interview_questions.jpeg"
                   title="RDBMS Interview Questions"
                   link="/rdbms_interview_question"
                 />
                 <CardCarouselItem
-                  imgsource="technical_interview_questions.jpeg"
+                  imgsource="sdlc_interview_questions.jpeg"
                   title="SDLC Interview Questions"
                   link="/sdlc_interview_question"
                 />
                 <CardCarouselItem
-                  imgsource="technical_interview_questions.jpeg"
+                  imgsource="testing_interview_questions.jpeg"
                   title="Testing Interview Questions"
                   link="/testing_interview_question"
                 />
@@ -108,17 +108,17 @@ class InterviewQuestionCardCarousel extends Component {
             <Carousel.Item>
               <div className="card-deck">
                 <CardCarouselItem
-                  imgsource="technical_interview_questions.jpeg"
+                  imgsource="android_interview_questions.jpeg"
                   title="Android Interview Questions"
                   link="/android_interview_question"
                 />
                 <CardCarouselItem
-                  imgsource="technical_interview_questions.jpeg"
+                  imgsource="html_interview_questions.jpeg"
                   title="HTML Interview Questions"
                   link="/html_interview_question"
                 />
                 <CardCarouselItem
-                  imgsource="technical_interview_questions.jpeg"
+                  imgsource="js_interview_questions.jpeg"
                   title="Javascript Interview Questions"
                   link="/js_interview_question"
                 />
@@ -127,12 +127,12 @@ class InterviewQuestionCardCarousel extends Component {
             <Carousel.Item>
               <div className="card-deck">
                 <CardCarouselItem
-                  imgsource="technical_interview_questions.jpeg"
+                  imgsource="react_interview_questions.jpeg"
                   title="React Interview Questions"
                   link="/react_interview_question"
                 />
                 <CardCarouselItem
-                  imgsource="technical_interview_questions.jpeg"
+                  imgsource="angular_interview_questions.jpeg"
                   title="Angular Interview Questions"
                   link="/angular_interview_question"
                 />
@@ -140,6 +140,25 @@ class InterviewQuestionCardCarousel extends Component {
                   imgsource="technical_interview_questions.jpeg"
                   title="Coming soon.."
                   link="/index_interview_questioins"
+                />
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className="card-deck">
+                <CardCarouselItem
+                  imgsource="bootstrap_interview_questions.jpeg"
+                  title="Bootstrap Interview Questions"
+                  link="/bootstrap_interview_question"
+                />
+                <CardCarouselItem
+                  imgsource="django_interview_questions.jpeg"
+                  title="Django Interview Questions"
+                  link="/django_interview_question"
+                />
+                <CardCarouselItem
+                  imgsource="js_interview_questions.jpeg"
+                  title="Javascript Interview Questions"
+                  link="/js_interview_question"
                 />
               </div>
             </Carousel.Item>
@@ -158,135 +177,149 @@ class InterviewQuestionCardCarousel extends Component {
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="dbms_interview_question.jpeg"
+                imgsource="dbms_interview_questions.jpeg"
                 title="DBMS Interview Questions"
                 link="/dbms_interview_questioin"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="sql_interview_question.jpeg"
+                imgsource="sql_interview_questions.jpeg"
                 title="SQL Interview Questions"
                 link="/sql_interview_questioin"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="oops_interview_question.jpeg"
+                imgsource="oops_interview_questions.jpeg"
                 title="OOps Interview Questions"
                 link="/oops_interview_question"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="datastructure_interview_question.jpeg"
+                imgsource="ds_interview_questions.jpeg"
                 title="DataStructure Interview Questions"
                 link="/datastructre_interview_question"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="python_interview_question.jpeg"
+                imgsource="python_interview_questions.jpeg"
                 title="Python Interview Questions"
                 link="/python_interview_question"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="java_interview_question.jpeg"
+                imgsource="java_interview_questions.jpeg"
                 title="Java Interview Questions"
                 link="/java_interview_question"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="c_interview_question.jpeg"
+                imgsource="c_interview_questions.jpeg"
                 title="C Interview Questions"
                 link="/c_interview_question"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="technical_interview_questions.jpeg"
+                imgsource="cpp_interview_questions.jpeg"
                 title="C++ Interview Questions"
                 link="/cpp_interview_question"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="technical_interview_questions.jpeg"
+                imgsource="cloud_computing_interview_questions.jpeg"
                 title="Cloud Computing Interview Questions"
                 link="/cloud_computing_interview_question"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="technical_interview_questions.jpeg"
+                imgsource="cn_interview_questions.jpeg"
                 title="Computer Network Interview Questions"
                 link="/cn_interview_question"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="technical_interview_questions.jpeg"
+                imgsource="os_interview_questions.jpeg"
                 title="Operating System Interview Questions"
                 link="/os_interview_question"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="technical_interview_questions.jpeg"
+                imgsource="rdbms_interview_questions.jpeg"
                 title="RDBMS Interview Questions"
                 link="/rdbms_interview_question"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="technical_interview_questions.jpeg"
+                imgsource="sdlc_interview_questions.jpeg"
                 title="SDLC Interview Questions"
                 link="/sdlc_interview_question"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="technical_interview_questions.jpeg"
+                imgsource="testing_interview_questions.jpeg"
                 title="Testing Interview Questions"
                 link="/testing_interview_question"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="technical_interview_questions.jpeg"
+                imgsource="android_interview_questions.jpeg"
                 title="Android Questions"
                 link="/android_interview_question"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="technical_interview_questions.jpeg"
+                imgsource="html_interview_questions.jpeg"
                 title="HTML Interview Questions"
                 link="/html_interview_question"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="technical_interview_questions.jpeg"
+                imgsource="js_interview_questions.jpeg"
                 title="Javascript Interview Questions"
                 link="/js_interview_question"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="technical_interview_questions.jpeg"
+                imgsource="react_interview_questions.jpeg"
                 title="React Interview Questions"
                 link="/react_interview_question"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="technical_interview_questions.jpeg"
+                imgsource="angular_interview_questions.jpeg"
                 title="Angular Interview Questions"
                 link="/angular_interview_question"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <CardCarouselItem
+                imgsource="bootstrap_interview_questions.jpeg"
+                title="Bootstrap Interview Questions"
+                link="/bootstrap_interview_question"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <CardCarouselItem
+                imgsource="django_interview_questions.jpeg"
+                title="Django Interview Questions"
+                link="/django_interview_question"
               />
             </Carousel.Item>
           </Carousel>
