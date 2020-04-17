@@ -194,12 +194,12 @@ int []c, d;`}
               <RightSideSection />
               <h5 className="mb-3">Recommended for you</h5>
               <RecommendPost
-                imgsource="python_mcqs.jpeg"
+                imgsource="python_mcq.jpeg"
                 RecPostHading="Python MCQ Questions"
                 link="/index_python_mcqs"
               />
               <RecommendPost
-                imgsource="java_mcqs.jpeg"
+                imgsource="java_mcq.jpeg"
                 RecPostHading="Java MCQ Questions"
                 link="/index_java_mcqs"
               />
