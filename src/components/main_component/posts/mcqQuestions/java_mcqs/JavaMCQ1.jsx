@@ -38,13 +38,13 @@ class JavaMCQ1 extends Component {
                   <FontAwesomeIcon icon={faHome} size="1x" />
                 </Link>
                 <Link to="/index_mcqs" className="badge badge-warning mr-1">
-                  Programming MCQs >{" "}
+                  MCQs >>
                 </Link>
                 <Link
                   to="/index_java_mcqs"
                   className="badge badge-success mr-1"
                 >
-                  Java MCQs >
+                  Java MCQs >>
                 </Link>
               </div>
               <div className="row">
@@ -195,18 +195,23 @@ int []c, d;`}
               <h5 className="mb-3">Recommended for you</h5>
               <RecommendPost
                 imgsource="python_mcqs.jpeg"
-                RecPostHading="Python MCQs Questions"
+                RecPostHading="Python MCQ Questions"
                 link="/index_python_mcqs"
               />
               <RecommendPost
                 imgsource="java_mcqs.jpeg"
-                RecPostHading="Java MCQs Questions"
+                RecPostHading="Java MCQ Questions"
                 link="/index_java_mcqs"
               />
+               <RecommendPost
+                imgsource="c_mcq.jpeg"
+                RecPostHading="C MCQ Questions"
+                link="/index_c_mcqs"
+              />
               <RecommendPost
-                imgsource="datacodelogo.jpeg"
-                RecPostHading="Programminig Quize Test"
-                link="/index_quize_tests"
+                imgsource="js_mcq.jpeg"
+                RecPostHading="JavaSript MCQ Questions"
+                link="/index_js_mcqs"
               />
             </div>
           </div>
