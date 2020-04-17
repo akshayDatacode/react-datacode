@@ -41,10 +41,7 @@ class MainComponent extends Component {
                   </Link>
                   <div class="card-body text-center">
                     <h5 class="card-title ">Technical Quiz Tests</h5>
-                    <p class="card-text">
-                      We Love to Code and this is the best way to express our
-                      love to Computer Science Wolrd.
-                    </p>
+                    <p class="card-text">#LearnWithCommunity</p>
                   </div>
                   <div class="card-footer border border-white bg-white text-center">
                     <Link to="/index_quize_tests">
@@ -66,10 +63,7 @@ class MainComponent extends Component {
                   </Link>
                   <div class="card-body text-center">
                     <h5 class="card-title">Programming Interview FAQs</h5>
-                    <p class="card-text">
-                      This card has supporting text below as a natural lead-in
-                      to additional
-                    </p>
+                    <p class="card-text">#LearnWithCommunity</p>
                   </div>
                   <div class="card-footer border border-white bg-white text-center">
                     <Link to="/index_interview_questioins">
@@ -89,10 +83,7 @@ class MainComponent extends Component {
                   </Link>
                   <div class="card-body text-center">
                     <h5 class="card-title"> Programming MCQs Practice</h5>
-                    <p class="card-text">
-                      This is a wider card with supporting text below as a
-                      natural lead-in
-                    </p>
+                    <p class="card-text">#LearnWithCommunity</p>
                   </div>
                   <div class="card-footer border border-white bg-white text-center">
                     <Link to="/index_mcqs">
@@ -223,10 +214,7 @@ class MainComponent extends Component {
                     <h5 class="card-title text-secondary">
                       Weekly Code Challange
                     </h5>
-                    <p class="card-text">
-                      This card has supporting text below as a natural lead-in
-                      to additional content.dfdfldfldfldkfldkfldkfldkfdlkfdlfkdl
-                    </p>
+                    <p class="card-text">#LearnWithCommunity</p>
                   </div>
                   <div class="card-footer border border-white bg-white">
                     <div className="row">
@@ -247,10 +235,7 @@ class MainComponent extends Component {
                   </center>
                   <div class="card-body">
                     <h5 class="card-title"> Technologies </h5>
-                    <p class="card-text">
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content. This card has eve
-                    </p>
+                    <p class="card-text">#LearnWithCommunity</p>
                   </div>
                   <div class="card-footer border border-white bg-white">
                     <div className="row">
@@ -275,10 +260,7 @@ class MainComponent extends Component {
                   </center>
                   <div class="card-body">
                     <h5 class="card-title">Event & Contests</h5>
-                    <p class="card-text">
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content. .
-                    </p>
+                    <p class="card-text">#LearnWithCommunity</p>
                   </div>
                   <div class="card-footer border border-white bg-white">
                     <div className="row">
@@ -299,9 +281,7 @@ class MainComponent extends Component {
                   </center>
                   <div class="card-body">
                     <h5 class="card-title"> Programming Practice CODE</h5>
-                    <p class="card-text">
-                      This is a wider card equal height action.
-                    </p>
+                    <p class="card-text">#LearnWithCommunity</p>
                   </div>
                   <div class="card-footer border border-white bg-white">
                     <div className="row">
