@@ -35,19 +35,26 @@ class HeaderComponent extends Component {
           fixed="top"
           bg="dark"
           expand="lg"
-          variant="dark "
+          variant="dark"
+          className="m-0 p-0"
         >
           <Navbar.Brand
             collapseOnSelect="false"
             aria-controls="responsive-navbar-nav"
           >
-            <Nav.Link href="/react-datacode/#/" className="text-white h3 p-0">
+            <Nav.Link
+              href="/react-datacode/#/"
+              className="text-white h3 p-0 ml-3 mr-0 mt-0 mb-0"
+            >
               Datacode.in
             </Nav.Link>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+            className="mr-1"
+          />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="mr-auto">
+            <Nav className="mr-auto ml-2">
               <Nav.Link href="/react-datacode/#/home">
                 <FontAwesomeIcon icon={faHome} /> Home
               </Nav.Link>
@@ -88,7 +95,7 @@ class HeaderComponent extends Component {
             </Nav>
             <NavDropdown.Divider />
             <Nav>
-              <Nav.Item>
+              <Nav.Item className="ml-2 ">
                 <a
                   href="https://www.facebook.com/Datacode.in"
                   className="text-white mr-3"
