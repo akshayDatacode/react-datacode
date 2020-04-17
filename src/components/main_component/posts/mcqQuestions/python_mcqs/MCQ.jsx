@@ -24,6 +24,7 @@ class PythonMCQ3 extends Component {
   render() {
     return (
       <>
+      
         <HeaderBannerSection imgsource="pythonmcq.jpeg" />
         <div className="col-fluid ">
           <Link to="/home" className="badge badge-primary mr-1">
