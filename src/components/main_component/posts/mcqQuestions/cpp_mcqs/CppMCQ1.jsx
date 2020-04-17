@@ -6,6 +6,8 @@ import Quize from "../quize";
 import RightSideSection from "../../../../right_section/RightSideSection";
 import RecommendPost from "../../../../right_section/RecommendPost";
 import MCQCardCarousel from "../MCQCardCarousel";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome, faListAlt } from "@fortawesome/free-solid-svg-icons";
 
 class CppMCQ1 extends Component {
   state = {
@@ -33,13 +35,14 @@ class CppMCQ1 extends Component {
             <div className="col-md-7 ">
               <div className="col-fluid ">
                 <Link to="/home" className="badge badge-primary mr-1">
-                  Home >{" "}
+                               <FontAwesomeIcon icon={faHome} size="2x" />
+
                 </Link>
                 <Link to="/index_mcqs" className="badge badge-warning mr-1">
-                  Programming MCQs >{" "}
+                  MCQs >>
                 </Link>
                 <Link to="/index_cpp_mcqs" className="badge badge-success mr-1">
-                  C++ MCQs >
+                  C++ MCQs >>
                 </Link>
                 <ScoreCard count={this.state.count} />
               </div>
@@ -217,10 +220,11 @@ int main()
                 link="/index_java_mcqs"
               />
               <RecommendPost
-                imgsource="datacodelogo.jpeg"
-                RecPostHading="Programminig Quize Test"
-                link="/index_quize_tests"
+                imgsource="c_mcq.jpeg"
+                RecPostHading="C MCQs Questions"
+                link="/index_c_mcqs"
               />
+              
             </div>
           </div>
         </div>
