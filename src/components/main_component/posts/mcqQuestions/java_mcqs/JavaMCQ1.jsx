@@ -1,10 +1,13 @@
 import React, { Component } from "react";
-import HeaderBannerSection from "../../../HeaderBannerSection";
+import HeaderCard from "../../../HeaderCard";
 import { Link } from "react-router-dom";
 import ScoreCard from "../scoreCard";
 import Quize from "../quize";
 import RightSideSection from "../../../../right_section/RightSideSection";
 import RecommendPost from "../../../../right_section/RecommendPost";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import MCQCardCarousel from "../MCQCardCarousel";
 
 class JavaMCQ1 extends Component {
   state = {
@@ -24,28 +27,25 @@ class JavaMCQ1 extends Component {
   render() {
     return (
       <>
-        <HeaderBannerSection imgsource="pythonmcq.jpeg" />
-        <div className="col-fluid ">
-          <Link to="/home" className="badge badge-primary mr-1">
-            Home >{" "}
-          </Link>
-          <Link to="/index_mcqs" className="badge badge-warning mr-1">
-            Programming MCQs >{" "}
-          </Link>
-          <Link to="/index_java_mcqs" className="badge badge-success mr-1">
-            Java MCQs >
-          </Link>
-        </div>
+        <HeaderCard title="Java Programming MCQs Set 1" />
+
         <div class="container-fluid">
           <div className="row">
             <div className="col-1"></div>
             <div className="col-md-7 ">
-              <div className="row mt-2 text-center">
-                <div className="col">
-                  <h2 className="text-secondary">
-                    Java Programming MCQs Set 1
-                  </h2>
-                </div>
+              <div className="col-fluid ">
+                <Link to="/home" className="badge badge-primary mr-1">
+                  <FontAwesomeIcon icon={faHome} size="1x" />
+                </Link>
+                <Link to="/index_mcqs" className="badge badge-warning mr-1">
+                  Programming MCQs >{" "}
+                </Link>
+                <Link
+                  to="/index_java_mcqs"
+                  className="badge badge-success mr-1"
+                >
+                  Java MCQs >
+                </Link>
               </div>
               <div className="row">
                 <div className="col">
@@ -183,8 +183,15 @@ int []c, d;`}
                   />
                 </div>
               </div>
+              <div className="row">
+                <div className="col">
+                  <h4>For More MCQs Questions</h4>
+                  <MCQCardCarousel />
+                </div>
+              </div>
             </div>
             <div className="col-md-4">
+              <RightSideSection />
               <h5 className="mb-3">Recommended for you</h5>
               <RecommendPost
                 imgsource="python_mcqs.jpeg"
@@ -201,7 +208,6 @@ int []c, d;`}
                 RecPostHading="Programminig Quize Test"
                 link="/index_quize_tests"
               />
-              <RightSideSection />
             </div>
           </div>
         </div>

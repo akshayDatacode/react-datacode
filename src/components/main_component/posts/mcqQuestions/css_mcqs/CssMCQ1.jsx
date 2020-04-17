@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-import HeaderBannerSection from "../../../HeaderBannerSection";
+import HeaderCard from "../../../HeaderCard";
 import { Link } from "react-router-dom";
 import ScoreCard from "../scoreCard";
 import Quize from "../quize";
 import RightSideSection from "../../../../right_section/RightSideSection";
 import RecommendPost from "../../../../right_section/RecommendPost";
+import MCQCardCarousel from "../MCQCardCarousel";
 
 class CssMCQ1 extends Component {
   state = {
@@ -24,27 +25,23 @@ class CssMCQ1 extends Component {
   render() {
     return (
       <>
-        <HeaderBannerSection imgsource="pythonmcq.jpeg" />
-        <div className="col-fluid ">
-          <Link to="/home" className="badge badge-primary mr-1">
-            Home >{" "}
-          </Link>
-          <Link to="/index_mcqs" className="badge badge-warning mr-1">
-            Programming MCQs >{" "}
-          </Link>
-          <Link to="/index_css_mcqs" className="badge badge-success mr-1">
-            Css MCQs >
-          </Link>
-          <ScoreCard count={this.state.count} />
-        </div>
+        <HeaderCard title="Css MCQs Set 1" />
+
         <div class="container-fluid">
           <div className="row">
             <div className="col-1"></div>
             <div className="col-md-7 ">
-              <div className="row mt-2">
-                <div className="col">
-                  <h2 className="text-secondary">Css MCQs Set 1</h2>
-                </div>
+              <div className="col-fluid ">
+                <Link to="/home" className="badge badge-primary mr-1">
+                  Home >{" "}
+                </Link>
+                <Link to="/index_mcqs" className="badge badge-warning mr-1">
+                  Programming MCQs >{" "}
+                </Link>
+                <Link to="/index_css_mcqs" className="badge badge-success mr-1">
+                  Css MCQs >
+                </Link>
+                <ScoreCard count={this.state.count} />
               </div>
               <div className="row">
                 <div className="col">
@@ -156,8 +153,15 @@ class CssMCQ1 extends Component {
                   />
                 </div>
               </div>
+              <div className="row">
+                <div className="col">
+                  <h4>For More MCQs Questions</h4>
+                  <MCQCardCarousel />
+                </div>
+              </div>
             </div>
             <div className="col-md-4">
+              <RightSideSection />
               <h5 className="mb-3">Recommended for you</h5>
               <RecommendPost
                 imgsource="python_mcqs.jpeg"
@@ -174,7 +178,6 @@ class CssMCQ1 extends Component {
                 RecPostHading="Programminig Quize Test"
                 link="/index_quize_tests"
               />
-              <RightSideSection />
             </div>
           </div>
         </div>

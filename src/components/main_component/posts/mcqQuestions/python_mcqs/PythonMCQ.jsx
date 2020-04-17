@@ -43,14 +43,9 @@ class PythonMCQ extends Component {
             <div className="col-md-7 ">
               <div className="col-fluid mt-2 ml-2">
                 <Link to="/home" className="badge badge-primary mr-1">
-                  <FontAwesomeIcon icon={faHome} size="2x" />
+                  <FontAwesomeIcon icon={faHome} size="1x" />
                 </Link>
                 <Link to="/index_mcqs" className="badge badge-info  mr-1">
-                  <FontAwesomeIcon
-                    icon={faListAlt}
-                    size="2x"
-                    className="mr-1"
-                  />
                   MCQs
                 </Link>
                 <Link

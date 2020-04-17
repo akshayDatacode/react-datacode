@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import Quize from "../quize";
-import HeaderBannerSection from "../../../HeaderBannerSection";
+import HeaderCard from "../../../HeaderCard";
 import RecommendPost from "../../../../right_section/RecommendPost";
 import RightSideSection from "../../../../right_section/RightSideSection";
 import { Link } from "react-router-dom";
+import MCQCardCarousel from "../MCQCardCarousel";
 class JSMCQ1 extends Component {
   state = {
     isCorrect: false,
@@ -21,26 +22,22 @@ class JSMCQ1 extends Component {
   render() {
     return (
       <>
-        <HeaderBannerSection imgsource="pythonmcq.jpeg" />
-        <div className="col-fluid ">
-          <Link to="/home" className="badge badge-primary mr-1">
-            Home >{" "}
-          </Link>
-          <Link to="/index_mcqs" className="badge badge-warning mr-1">
-            Programming MCQs >{" "}
-          </Link>
-          <Link to="/index_js_mcqs" className="badge badge-success mr-1">
-            JS-MCQs >
-          </Link>
-        </div>
+        <HeaderCard title="JavaScript MCQs Set 1" />
+
         <div class="container-fluid">
           <div className="row">
             <div className="col-1"></div>
             <div className="col-md-7 ">
-              <div className="row mt-2 text-center">
-                <div className="col">
-                  <h2 className="text-secondary">JS Programming MCQs Set 1</h2>
-                </div>
+              <div className="col-fluid ">
+                <Link to="/home" className="badge badge-primary mr-1">
+                  Home >{" "}
+                </Link>
+                <Link to="/index_mcqs" className="badge badge-warning mr-1">
+                  Programming MCQs >{" "}
+                </Link>
+                <Link to="/index_js_mcqs" className="badge badge-success mr-1">
+                  JS-MCQs >
+                </Link>
               </div>
               <div className="row">
                 <div className="col">
@@ -154,10 +151,15 @@ class JSMCQ1 extends Component {
                   />
                 </div>
               </div>
+              <div className="row">
+                <div className="col">
+                  <h4>For More MCQs Questions</h4>
+                  <MCQCardCarousel />
+                </div>
+              </div>
             </div>
             <div className="col-md-4">
               <RightSideSection />
-
               <h5 className="mb-3">Recommend for you</h5>
               <RecommendPost
                 imgsource="python_mcqs.jpeg"

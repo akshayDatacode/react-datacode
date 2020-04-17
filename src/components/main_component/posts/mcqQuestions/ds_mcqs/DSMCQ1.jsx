@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-import HeaderBannerSection from "../../../HeaderBannerSection";
+import HeaderCard from "../../../HeaderCard";
 import { Link } from "react-router-dom";
 import ScoreCard from "../scoreCard";
 import Quize from "../quize";
 import RightSideSection from "../../../../right_section/RightSideSection";
 import RecommendPost from "../../../../right_section/RecommendPost";
+import MCQCardCarousel from "../MCQCardCarousel";
 
 class DSMCQ1 extends Component {
   state = {
@@ -24,27 +25,23 @@ class DSMCQ1 extends Component {
   render() {
     return (
       <>
-        <HeaderBannerSection imgsource="pythonmcq.jpeg" />
-        <div className="col-fluid ">
-          <Link to="/home" className="badge badge-primary mr-1">
-            Home >{" "}
-          </Link>
-          <Link to="/index_mcqs" className="badge badge-warning mr-1">
-            Programming MCQs >{" "}
-          </Link>
-          <Link to="/index_ds_mcqs" className="badge badge-success mr-1">
-          Datastructure MCQs >
-          </Link>
-          <ScoreCard count={this.state.count} />
-        </div>
+        <HeaderCard title="DataStructure MCQs Set 1" />
+
         <div class="container-fluid">
           <div className="row">
             <div className="col-1"></div>
             <div className="col-md-7 ">
-              <div className="row mt-2 text-center">
-                <div className="col">
-                  <h2 className="text-secondary"> Datastructure MCQs Set 1</h2>
-                </div>
+              <div className="col-fluid ">
+                <Link to="/home" className="badge badge-primary mr-1">
+                  Home >{" "}
+                </Link>
+                <Link to="/index_mcqs" className="badge badge-warning mr-1">
+                  Programming MCQs >{" "}
+                </Link>
+                <Link to="/index_ds_mcqs" className="badge badge-success mr-1">
+                  Datastructure MCQs >
+                </Link>
+                <ScoreCard count={this.state.count} />
               </div>
               <div className="row">
                 <div className="col">
@@ -60,7 +57,7 @@ class DSMCQ1 extends Component {
                     v4="Array is not a data structure"
                     counter={this.counter}
                   />
-                   <Quize
+                  <Quize
                     quizeNo="2"
                     question="Process of inserting an element in stack is called ____________
                     "
@@ -71,7 +68,7 @@ class DSMCQ1 extends Component {
                     v4=" Pop"
                     counter={this.counter}
                   />
-                   <Quize
+                  <Quize
                     quizeNo="3"
                     question="The postfix form of the expression (A+ B)*(C*D- E)*F / G is?"
                     correctAnswer="AB + CD* E – *F *G / "
@@ -81,7 +78,7 @@ class DSMCQ1 extends Component {
                     v4="AB + CDE * – * F *G /"
                     counter={this.counter}
                   />
-                   <Quize
+                  <Quize
                     quizeNo="4"
                     question=" The result of evaluating the postfix expression 5, 4, 6, +, *, 4, 9, 3, /, +, * is?"
                     correctAnswer="350 "
@@ -91,7 +88,7 @@ class DSMCQ1 extends Component {
                     v4="588"
                     counter={this.counter}
                   />
-                   <Quize
+                  <Quize
                     quizeNo="5"
                     question="If the elements “A”, “B”, “C” and “D” are placed in a queue and are deleted one at a time, in what order will they be removed?"
                     correctAnswer=" ABCD "
@@ -101,7 +98,7 @@ class DSMCQ1 extends Component {
                     v4="ABDC"
                     counter={this.counter}
                   />
-                   <Quize
+                  <Quize
                     quizeNo="6"
                     question="Consider the following definition in c programming language"
                     code={`struct node
@@ -118,7 +115,7 @@ class DSMCQ1 extends Component {
                     v4=" ptr = (NODE*)malloc(sizeof(NODE));"
                     counter={this.counter}
                   />
-                   <Quize
+                  <Quize
                     quizeNo="7"
                     question="What does the following function do for a given Linked List with first node as head?"
                     code={`void fun1(struct node* head)
@@ -135,7 +132,7 @@ printf("%d  ", head->data);
                     v4="Prints alternate nodes in reverse order"
                     counter={this.counter}
                   />
-                   <Quize
+                  <Quize
                     quizeNo="8"
                     question="The following function reverse() is supposed to reverse a singly linked list. There is one line missing at the end of the function. What should be added in place of “/*ADD A STATEMENT HERE*/”, so that the function correctly reverses a linked list."
                     code={`/* Link list node */
@@ -160,8 +157,7 @@ static void reverse(struct node** head_ref)
   current = next;
 }
   /*ADD A STATEMENT HERE*/
-}`                   }
-                   
+}`}
                     correctAnswer="*head_ref = prev; "
                     v1="*head_ref = current;"
                     v2="*head_ref = prev; "
@@ -169,8 +165,7 @@ static void reverse(struct node** head_ref)
                     v4="*head_ref = NULL;"
                     counter={this.counter}
                   />
-                   <Quize
-                    
+                  <Quize
                     quizeNo="9"
                     question="What is the space complexity for deleting a linked list?"
                     correctAnswer=" O(1) "
@@ -180,7 +175,7 @@ static void reverse(struct node** head_ref)
                     v4="O(logn)"
                     counter={this.counter}
                   />
-                   <Quize
+                  <Quize
                     quizeNo="10"
                     question="Which of the following is false about a doubly linked list?"
                     correctAnswer=" "
@@ -190,11 +185,17 @@ static void reverse(struct node** head_ref)
                     v4="Implementing a doubly linked list is easier than singly linked list"
                     counter={this.counter}
                   />
-                 
+                </div>
+              </div>
+              <div className="row">
+                <div className="col">
+                  <h4>For More MCQs Questions</h4>
+                  <MCQCardCarousel />
                 </div>
               </div>
             </div>
             <div className="col-md-4">
+              <RightSideSection />
               <h5 className="mb-3">Recommended for you</h5>
               <RecommendPost
                 imgsource="python_mcqs.jpeg"
@@ -211,7 +212,6 @@ static void reverse(struct node** head_ref)
                 RecPostHading="Programminig Quize Test"
                 link="/index_quize_tests"
               />
-              <RightSideSection />
             </div>
           </div>
         </div>

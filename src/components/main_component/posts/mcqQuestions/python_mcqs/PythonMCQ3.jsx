@@ -1,10 +1,12 @@
 import React, { Component } from "react";
-import HeaderBannerSection from "../../../HeaderBannerSection";
 import { Link } from "react-router-dom";
 import ScoreCard from "../scoreCard";
 import Quize from "../quize";
 import RightSideSection from "../../../../right_section/RightSideSection";
 import RecommendPost from "../../../../right_section/RecommendPost";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome, faListAlt } from "@fortawesome/free-solid-svg-icons";
+import MCQCardCarousel from "../MCQCardCarousel";
 
 class PythonMCQ3 extends Component {
   state = {
@@ -24,32 +26,40 @@ class PythonMCQ3 extends Component {
   render() {
     return (
       <>
-        <HeaderBannerSection imgsource="pythonmcq.jpeg" />
-
+        <div className="row">
+          <div className="col">
+            <div className="card bg-warning">
+              <div className="card-body p-2">
+                <h1 className="card-title text-dark m-0 p-0">
+                  Python MCQs Set 3
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="container-fluid">
           <div className="row">
             <div className="col-1"></div>
             <div className="col-md-7 ">
-              <div className="row mt-2">
-                <div className="col">
-                  <Link to="/home" className="badge badge-primary mr-1">
-                    Home >{" "}
-                  </Link>
-                  <Link to="/index_mcqs" className="badge badge-warning mr-1">
-                    Programming MCQs >{" "}
-                  </Link>
-                  <Link
-                    to="/index_python_mcqs"
-                    className="badge badge-success mr-1"
-                  >
-                    Python MCQs >
-                  </Link>
-                  <ScoreCard count={this.state.count} />
-
-                  <h2 className="text-secondary">
-                    Python Programming MCQs Set 3
-                  </h2>
-                </div>
+              <div className="col-fluid mt-2 ml-2">
+                <Link to="/home" className="badge badge-primary mr-1">
+                  <FontAwesomeIcon icon={faHome} size="2x" />
+                </Link>
+                <Link to="/index_mcqs" className="badge badge-info  mr-1">
+                  <FontAwesomeIcon
+                    icon={faListAlt}
+                    size="2x"
+                    className="mr-1"
+                  />
+                  MCQs
+                </Link>
+                <Link
+                  to="/index_python_mcqs"
+                  className="badge badge-success mr-1"
+                >
+                  Python MCQs
+                </Link>
+                <ScoreCard count={this.state.count} />
               </div>
               <div className="row">
                 <div className="col">
@@ -190,8 +200,15 @@ g=f(9)`}
                   />
                 </div>
               </div>
+              <div className="row">
+                <div className="col">
+                  <h4>For More MCQs Questions</h4>
+                  <MCQCardCarousel />
+                </div>
+              </div>
             </div>
             <div className="col-md-4">
+              <RightSideSection />
               <h5 className="mb-3">Recommended for you</h5>
               <RecommendPost
                 imgsource="python_mcqs.jpeg"
@@ -208,7 +225,6 @@ g=f(9)`}
                 RecPostHading="Programminig Quize Test"
                 link="/index_quize_tests"
               />
-              <RightSideSection />
             </div>
           </div>
         </div>

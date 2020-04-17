@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-import HeaderBannerSection from "../../../HeaderBannerSection";
+import HeaderCard from "../../../HeaderCard";
 import { Link } from "react-router-dom";
 import ScoreCard from "../scoreCard";
 import Quize from "../quize";
 import RightSideSection from "../../../../right_section/RightSideSection";
 import RecommendPost from "../../../../right_section/RecommendPost";
+import MCQCardCarousel from "../MCQCardCarousel";
 
 class OOPsMCQ1 extends Component {
   state = {
@@ -24,27 +25,26 @@ class OOPsMCQ1 extends Component {
   render() {
     return (
       <>
-        <HeaderBannerSection imgsource="pythonmcq.jpeg" />
-        <div className="col-fluid ">
-          <Link to="/home" className="badge badge-primary mr-1">
-            Home >{" "}
-          </Link>
-          <Link to="/index_mcqs" className="badge badge-warning mr-1">
-            Programming MCQs >{" "}
-          </Link>
-          <Link to="/index_oops_mcqs" className="badge badge-success mr-1">
-          OOPS MCQs >
-          </Link>
-          <ScoreCard count={this.state.count} />
-        </div>
+        <HeaderCard title="OOPs MCQs Set 1" />
+
         <div class="container-fluid">
           <div className="row">
             <div className="col-1"></div>
             <div className="col-md-7 ">
-              <div className="row mt-2 text-center">
-                <div className="col">
-                  <h2 className="text-secondary">OOPS MCQs Set 1</h2>
-                </div>
+              <div className="col-fluid ">
+                <Link to="/home" className="badge badge-primary mr-1">
+                  Home >{" "}
+                </Link>
+                <Link to="/index_mcqs" className="badge badge-warning mr-1">
+                  Programming MCQs >{" "}
+                </Link>
+                <Link
+                  to="/index_oops_mcqs"
+                  className="badge badge-success mr-1"
+                >
+                  OOPS MCQs >
+                </Link>
+                <ScoreCard count={this.state.count} />
               </div>
               <div className="row">
                 <div className="col">
@@ -58,7 +58,7 @@ class OOPsMCQ1 extends Component {
                     v4="Efficient Code"
                     counter={this.counter}
                   />
-                   <Quize
+                  <Quize
                     quizeNo="1"
                     question="Which of the following is not type of class? "
                     correctAnswer="Start Class"
@@ -68,7 +68,7 @@ class OOPsMCQ1 extends Component {
                     v4="String Class"
                     counter={this.counter}
                   />
-                   <Quize
+                  <Quize
                     quizeNo="1"
                     question="Which definition best describes an object? "
                     correctAnswer="Instance of a class"
@@ -79,7 +79,7 @@ class OOPsMCQ1 extends Component {
                     "
                     counter={this.counter}
                   />
-                   <Quize
+                  <Quize
                     quizeNo="1"
                     question="Which feature of OOP indicates code reusability? "
                     correctAnswer="Inheritance"
@@ -89,7 +89,7 @@ class OOPsMCQ1 extends Component {
                     v4="Polymorphism"
                     counter={this.counter}
                   />
-                   <Quize
+                  <Quize
                     quizeNo="1"
                     question="What do you call the languages that support classes but not polymorphism? "
                     correctAnswer=" Object-based language"
@@ -99,7 +99,7 @@ class OOPsMCQ1 extends Component {
                     v4="If classes are supported, polymorphism will always be supported"
                     counter={this.counter}
                   />
-                   <Quize
+                  <Quize
                     quizeNo="1"
                     question="If data members are private, what can we do to access them from the class object? "
                     correctAnswer=" Create public member functions to access those data members"
@@ -109,7 +109,7 @@ class OOPsMCQ1 extends Component {
                     v4="Private data members can never be accessed from outside the classFind which of the following uses encapsulation?"
                     counter={this.counter}
                   />
-                   <Quize
+                  <Quize
                     quizeNo="1"
                     question="Find which of the following uses encapsulation? "
                     correctAnswer="class student{int a; public: void disp(){ cout<<a;} };"
@@ -119,7 +119,7 @@ class OOPsMCQ1 extends Component {
                     v4="struct topper{ char name[10]; public : int marks; }"
                     counter={this.counter}
                   />
-                   <Quize
+                  <Quize
                     quizeNo="1"
                     question="Hiding the implementation complexity can ____________ "
                     correctAnswer="Make the programming easy"
@@ -129,7 +129,7 @@ class OOPsMCQ1 extends Component {
                     v4="Provide better features"
                     counter={this.counter}
                   />
-                   <Quize
+                  <Quize
                     quizeNo="1"
                     question="Which among the following is not a necessary condition for constructors? "
                     correctAnswer="It must contain a definition body"
@@ -139,7 +139,7 @@ class OOPsMCQ1 extends Component {
                     v4="It can contains arguments"
                     counter={this.counter}
                   />
-                   <Quize
+                  <Quize
                     quizeNo="1"
                     question="How many types of constructors are available for use in general (with respect to parameters)? "
                     correctAnswer="2"
@@ -149,11 +149,17 @@ class OOPsMCQ1 extends Component {
                     v4="5"
                     counter={this.counter}
                   />
-                 
+                </div>
+              </div>
+              <div className="row">
+                <div className="col">
+                  <h4>For More MCQs Questions</h4>
+                  <MCQCardCarousel />
                 </div>
               </div>
             </div>
             <div className="col-md-4">
+              <RightSideSection />
               <h5 className="mb-3">Recommended for you</h5>
               <RecommendPost
                 imgsource="python_mcqs.jpeg"
@@ -170,7 +176,6 @@ class OOPsMCQ1 extends Component {
                 RecPostHading="Programminig Quize Test"
                 link="/index_quize_tests"
               />
-              <RightSideSection />
             </div>
           </div>
         </div>

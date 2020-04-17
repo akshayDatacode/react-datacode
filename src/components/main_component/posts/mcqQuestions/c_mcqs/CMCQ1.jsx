@@ -5,6 +5,10 @@ import ScoreCard from "../scoreCard";
 import Quize from "../quize";
 import RightSideSection from "../../../../right_section/RightSideSection";
 import RecommendPost from "../../../../right_section/RecommendPost";
+import HeaderCard from "../../../../main_component/HeaderCard";
+import MCQCardCarousel from "../MCQCardCarousel";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 class CMCQ1 extends Component {
   state = {
@@ -24,7 +28,7 @@ class CMCQ1 extends Component {
   render() {
     return (
       <>
-        <HeaderBannerSection imgsource="pythonmcq.jpeg" />
+        <HeaderCard title="C Programming MCQs Set 1" />
         <div className="col-fluid ">
           <ScoreCard count={this.state.count} />
         </div>
@@ -32,17 +36,12 @@ class CMCQ1 extends Component {
           <div className="row">
             <div className="col-1"></div>
             <div className="col-md-7 ">
-              <div className="row mt-2">
-                <div className="col">
-                  <h2 className="text-secondary">C Programming MCQs Set 1</h2>
-                </div>
-              </div>
               <div className="row">
                 <Link to="/home" className="badge badge-primary mr-1">
-                  Home >{" "}
+                  <FontAwesomeIcon icon={faHome} size="1x" />
                 </Link>
                 <Link to="/index_mcqs" className="badge badge-warning mr-1">
-                  Programming MCQs >{" "}
+                  MCQs >{" "}
                 </Link>
                 <Link to="/index_c_mcqs" className="badge badge-success mr-1">
                   C-MCQs >
@@ -390,8 +389,15 @@ void foo()
                   />
                 </div>
               </div>
+              <div className="row">
+                <div className="col">
+                  <h4>For More MCQs Questions</h4>
+                  <MCQCardCarousel />
+                </div>
+              </div>
             </div>
             <div className="col-md-4">
+              <RightSideSection />
               <h5 className="mb-3">Recommended for you</h5>
               <RecommendPost
                 imgsource="python_mcqs.jpeg"
@@ -408,7 +414,6 @@ void foo()
                 RecPostHading="Programminig Quize Test"
                 link="/index_quize_tests"
               />
-              <RightSideSection />
             </div>
           </div>
         </div>

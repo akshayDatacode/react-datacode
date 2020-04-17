@@ -5,7 +5,7 @@ import ScoreCard from "../../scoreCard";
 import { Button, Modal } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import FooterComponentUpper from "../../../../../footer_component/FooterComponentUpper";
-class   CQuizeTest2 extends Component {
+class CQuizeTest2 extends Component {
   state = {
     isCorrect: false,
     isClicked: false,
@@ -52,6 +52,7 @@ class   CQuizeTest2 extends Component {
             <div className="col-md-7 ">
               <QuizeTest
                 quizeNo="1"
+                language="c"
                 question="What will happen if the below program is executed?"
                 code={`#include <stdio.h>
 int main()
@@ -71,6 +72,7 @@ int main()
 
               <QuizeTest
                 quizeNo="2"
+                language="c"
                 question="What is the output of this C code?"
                 code={`#include  <stdio.h>
 int main()
@@ -88,9 +90,10 @@ int main()
                 v4="None of the mentioned"
                 counter={this.counter}
               />
-              
+
               <QuizeTest
                 quizeNo="3"
+                language="c"
                 question="What is the output of this C code?"
                 code={`#include <stdio.h>
 int main()
@@ -107,9 +110,10 @@ int main()
                 v4="None of the mentioned"
                 counter={this.counter}
               />
-              
+
               <QuizeTest
                 quizeNo="4"
+                language="c"
                 question="What is the output of this C code?"
                 code={`#include <stdio.h>
 int main()
@@ -129,8 +133,9 @@ int main()
                 v4=" No output"
                 counter={this.counter}
               />
-                  <QuizeTest
+              <QuizeTest
                 quizeNo="5"
+                language="c"
                 question="What is the output of this C code?"
                 code={`#include <stdio.h>
 void main()
@@ -147,8 +152,9 @@ void main()
                 v4="Run time error"
                 counter={this.counter}
               />
-                  <QuizeTest
+              <QuizeTest
                 quizeNo="6"
+                language="c"
                 question="What is the output of this C code?"
                 code={`#include <stdio.h>
 struct student
@@ -168,9 +174,10 @@ void main()
                 v4="y"
                 counter={this.counter}
               />
-              
+
               <QuizeTest
                 quizeNo="7"
+                language="c"
                 question="What is the output of this C code?"
                 code={`#include <stdio.h>
 int main()
@@ -190,9 +197,10 @@ int main()
                 v4="Depends on the compiler"
                 counter={this.counter}
               />
-              
+
               <QuizeTest
                 quizeNo="8"
+                language="c"
                 question=" What is the output of the below c code?"
                 code={`int main()
 {
@@ -218,9 +226,10 @@ int main()
                 v4="Nothing"
                 counter={this.counter}
               />
-              
+
               <QuizeTest
                 quizeNo="9"
+                language="c"
                 question="What is the output of this C code?"
                 code={`int main(){
     int a=10;
@@ -238,9 +247,10 @@ int main()
                 v4="No output"
                 counter={this.counter}
               />
-              
+
               <QuizeTest
                 quizeNo="10"
+                language="c"
                 question="Output?"
                 code={`int main()
 {
@@ -261,10 +271,6 @@ int main()
                 v4="sizeof arri[] = 12 sizeof ptri = 4 sizeof arrc[] = 3 sizeof ptrc = 8"
                 counter={this.counter}
               />
-              
-              
-              
-             
             </div>
           </div>
         </div>
