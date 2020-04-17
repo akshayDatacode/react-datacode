@@ -5,6 +5,8 @@ import RecommendPost from "../../../../right_section/RecommendPost";
 import RightSideSection from "../../../../right_section/RightSideSection";
 import { Link } from "react-router-dom";
 import MCQCardCarousel from "../MCQCardCarousel";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faListAlt, faHome } from "@fortawesome/free-solid-svg-icons";
 class JSMCQ1 extends Component {
   state = {
     isCorrect: false,
@@ -30,13 +32,14 @@ class JSMCQ1 extends Component {
             <div className="col-md-7 ">
               <div className="col-fluid ">
                 <Link to="/home" className="badge badge-primary mr-1">
-                  Home >{" "}
+                <FontAwesomeIcon icon={faHome} size="1x" />
+
                 </Link>
                 <Link to="/index_mcqs" className="badge badge-warning mr-1">
-                  Programming MCQs >{" "}
+                  MCQs >>
                 </Link>
                 <Link to="/index_js_mcqs" className="badge badge-success mr-1">
-                  JS-MCQs >
+                  JS-MCQs >>
                 </Link>
               </div>
               <div className="row">
@@ -160,22 +163,28 @@ class JSMCQ1 extends Component {
             </div>
             <div className="col-md-4">
               <RightSideSection />
-              <h5 className="mb-3">Recommend for you</h5>
+              <h5 className="mb-3">Recommended for you</h5>
               <RecommendPost
-                imgsource="python_mcqs.jpeg"
+                imgsource="python_mcq.jpeg"
                 RecPostHading="Python MCQs Questions"
                 link="/index_python_mcqs"
               />
               <RecommendPost
-                imgsource="java_mcqs.jpeg"
+                imgsource="java_mcq.jpeg"
                 RecPostHading="Java MCQs Questions"
                 link="/index_java_mcqs"
               />
               <RecommendPost
-                imgsource="datacodelogo.jpeg"
-                RecPostHading="Programminig Quize Test"
-                link="/index_quize_tests"
+                imgsource="c_mcq.jpeg"
+                RecPostHading="C MCQs Questions"
+                link="/index_c_mcqs"
               />
+              <RecommendPost
+                imgsource="cpp_mcq.jpeg"
+                RecPostHading="C++ MCQs Questions"
+                link="/index_cpp_mcqs"
+              />
+             
             </div>
           </div>
         </div>
