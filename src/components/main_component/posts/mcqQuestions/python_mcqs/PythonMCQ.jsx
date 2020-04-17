@@ -189,25 +189,26 @@ print(a)`}
               <RightSideSection />
               <h4>Recommended for you</h4>
               <RecommendPost
-                imgsource="indexcover1.jpeg"
+                imgsource="python_mcq.jpeg"
                 RecPostHading="Python MCQs Set 2"
+                link="/python_mcq_2"
               />
               <RecommendPost
-                imgsource="indexcover1.jpeg"
+                imgsource="python_mcq.jpeg"
                 RecPostHading="Python MCQs Set 3"
+                link="/python_mcq_3"
               />
               <RecommendPost
-                imgsource="indexcover1.jpeg"
+                imgsource="python_mcq.jpeg"
                 RecPostHading="Python MCQs Set 4"
+                link="/python_mcq_4"
               />
               <RecommendPost
-                imgsource="indexcover1.jpeg"
+                imgsource="python_mcq.jpeg"
                 RecPostHading="Python MCQs Set 5"
+                link="/python_mcq_5"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="other tere hisab se dal dena"
-              />
+              
             </div>
           </div>
         </div>
