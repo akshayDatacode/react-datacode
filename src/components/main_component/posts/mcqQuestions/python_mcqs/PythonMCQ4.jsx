@@ -48,7 +48,7 @@ class PythonMCQ4 extends Component {
                   <FontAwesomeIcon icon={faHome} size="2x" />
                 </Link>
                 <Link to="/index_mcqs" className="badge badge-info  mr-1">
-                  MCQs >
+                  MCQs >>
                 </Link>
                 <Link
                   to="/index_python_mcqs"
@@ -225,19 +225,24 @@ print(set1)`}
               <RightSideSection />
               <h5 className="mb-3">Recommended for you</h5>
               <RecommendPost
-                imgsource="python_mcqs.jpeg"
-                RecPostHading="Python MCQs Questions"
-                link="/index_python_mcqs"
+                imgsource="python_mcq.jpeg"
+                RecPostHading="Python MCQs Set 1"
+                link="/python_mcq_1"
               />
               <RecommendPost
-                imgsource="java_mcqs.jpeg"
-                RecPostHading="Java MCQs Questions"
-                link="/index_java_mcqs"
+                imgsource="python_mcq.jpeg"
+                RecPostHading="Python MCQs Set 2"
+                link="/python_mcq_2"
               />
               <RecommendPost
-                imgsource="datacodelogo.jpeg"
-                RecPostHading="Programminig Quize Test"
-                link="/index_quize_tests"
+                imgsource="python_mcq.jpeg"
+                RecPostHading="Python MCQs Set 3"
+                link="/python_mcq_3"
+              />
+              <RecommendPost
+                imgsource="python_mcq.jpeg"
+                RecPostHading="Python MCQs Set 5"
+                link="/python_mcq_5"
               />
             </div>
           </div>
