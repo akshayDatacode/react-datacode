@@ -43,14 +43,14 @@ class CMCQ2 extends Component {
                   <FontAwesomeIcon icon={faHome} size="1x" />
                 </Link>
                 <Link to="/index_mcqs" className="badge badge-warning mr-1">
-                  Programming MCQs >{" "}
+                  MCQs >>{" "}
                 </Link>
                 <Link to="/index_c_mcqs" className="badge badge-success mr-1">
-                  C-MCQs >
+                  C-MCQs >>
                 </Link>
                 <div className="col">
                   <Quize
-                    quizeNo="11"
+                    quizeNo="1"
                     language="c"
                     question="What will be the output of the following C code considering the size of a short int is 2, char is 1 and int is 4 bytes?"
                     code={`#include <stdio.h>
@@ -244,6 +244,11 @@ void foo()
               <RightSideSection />
               <h5 className="mb-3">Recommended for you</h5>
               <RecommendPost
+                imgsource="c_mcq.jpeg"
+                RecPostHading="C MCQs Set 1"
+                link="/c_mcq_1"
+              />
+              <RecommendPost
                 imgsource="python_mcqs.jpeg"
                 RecPostHading="Python MCQs Questions"
                 link="/index_python_mcqs"
@@ -252,11 +257,6 @@ void foo()
                 imgsource="java_mcqs.jpeg"
                 RecPostHading="Java MCQs Questions"
                 link="/index_java_mcqs"
-              />
-              <RecommendPost
-                imgsource="datacodelogo.jpeg"
-                RecPostHading="Programminig Quize Test"
-                link="/index_quize_tests"
               />
             </div>
           </div>
