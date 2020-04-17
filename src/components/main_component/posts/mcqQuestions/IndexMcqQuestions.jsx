@@ -28,22 +28,19 @@ class IndexMcqQuestions extends Component {
               <PostCard
                 imgsource="python_mcq.jpeg"
                 title="Python MCQs Questions"
-                paragraph="We Love to Code and this is the best way to express our
-                  love to Computer Science Wolrd."
+                paragraph=" Python questions and answers focuses on all areas of Python subject covering most topics in Python. These topics are chosen from a collection of most authoritative and best reference books on Python. "
                 link="/index_python_mcqs"
               />
               <PostCard
                 imgsource="c_mcq.jpeg"
                 title="C Programming MCQs Questions"
-                paragraph="We Love to Code and this is the best way to express our
-                  love to Computer Science Wolrd."
+                paragraph="C questions and answers focuses on all areas of C subject covering most topics in C. These topics are chosen from a collection of most authoritative and best reference books on C. "
                 link="/index_c_mcqs"
               />
               <PostCard
                 imgsource="cpp_mcq.jpeg"
                 title="C++ MCQs Questions"
-                paragraph="We Love to Code and this is the best way to express our
-                  love to Computer Science Wolrd."
+                paragraph="C++ questions and answers focuses on all areas of C++ subject covering most topics in C++. These topics are chosen from a collection of most authoritative and best reference books on C++. "
                 link="/index_cpp_mcqs"
               />
             </div>
@@ -51,22 +48,19 @@ class IndexMcqQuestions extends Component {
               <PostCard
                 imgsource="java_mcq.jpeg"
                 title="Java MCQs Questions"
-                paragraph="We Love to Code and this is the best way to express our
-                  love to Computer Science Wolrd."
+                paragraph="Java questions and answers focuses on all areas of Java subject covering most topics in Java. These topics are chosen from a collection of most authoritative and best reference books on Java. "
                 link="/index_java_mcqs"
               />
               <PostCard
                 imgsource="js_mcq.jpeg"
                 title="JavaScript MCQs Questions"
-                paragraph="We Love to Code and this is the best way to express our
-                  love to Computer Science Wolrd."
+                paragraph="JavaScript questions and answers focuses on all areas of JavaScript subject covering most topics in JavaScript. These topics are chosen from a collection of most authoritative and best reference books on JavaScript. "
                 link="/index_js_mcqs"
               />
               <PostCard
                 imgsource="dbms_mcq.jpeg"
                 title="DBMS MCQs Questions"
-                paragraph="We Love to Code and this is the best way to express our
-                  love to Computer Science Wolrd."
+                paragraph="DBMS questions and answers focuses on all areas of DBMS subject covering most topics in DBMS. These topics are chosen from a collection of most authoritative and best reference books on DBMS."
                 link="/index_dbms_mcqs"
               />
             </div>
@@ -74,22 +68,19 @@ class IndexMcqQuestions extends Component {
               <PostCard
                 imgsource="html_mcq.jpeg"
                 title="HTML MCQs Questions"
-                paragraph="We Love to Code and this is the best way to express our
-                  love to Computer Science Wolrd."
+                paragraph="HTML questions and answers focuses on all areas of HTML subject covering most topics in HTML. These topics are chosen from a collection of most authoritative and best reference books on HTML."
                 link="/index_html_mcqs"
               />
               <PostCard
                 imgsource="css_mcq.jpeg"
                 title="CSS MCQs Questions"
-                paragraph="We Love to Code and this is the best way to express our
-                  love to Computer Science Wolrd."
+                paragraph="CSS questions and answers focuses on all areas of CSS subject covering most topics in CSS. These topics are chosen from a collection of most authoritative and best reference books on CSS."
                 link="/index_css_mcqs"
               />
               <PostCard
                 imgsource="bootstrap_mcq.jpeg"
                 title="BootStrap MCQs Questions"
-                paragraph="We Love to Code and this is the best way to express our
-                  love to Computer Science Wolrd."
+                paragraph="Bootstrap questions and answers focuses on all areas of Bootstrap subject covering most topics in Bootstrap. These topics are chosen from a collection of most authoritative and best reference books on Bootstrap."
                 link="/index_bootstrap_mcqs"
               />
             </div>
@@ -97,22 +88,19 @@ class IndexMcqQuestions extends Component {
               <PostCard
                 imgsource="react_mcq.jpeg"
                 title="React MCQs Questions"
-                paragraph="We Love to Code and this is the best way to express our
-                  love to Computer Science Wolrd."
+                paragraph="React questions and answers focuses on all areas of React subject covering most topics in React. These topics are chosen from a collection of most authoritative and best reference books on React."
                 link="/index_react_mcqs"
               />
               <PostCard
                 imgsource="django_mcq.jpeg"
                 title="Django MCQs Questions"
-                paragraph="We Love to Code and this is the best way to express our
-                  love to Computer Science Wolrd."
+                paragraph="Django questions and answers focuses on all areas of Django subject covering most topics in DJango. These topics are chosen from a collection of most authoritative and best reference books on Django."
                 link="/index_django_mcqs"
               />
               <PostCard
                 imgsource="git_mcq.jpeg"
                 title="Git MCQs Questions"
-                paragraph="We Love to Code and this is the best way to express our
-                  love to Computer Science Wolrd."
+                paragraph="Git questions and answers focuses on all areas of GIt covering most topics. These topics are chosen from a collection of most authoritative and best reference on Git."
                 link="/index_git_mcqs"
               />
             </div>
@@ -120,22 +108,19 @@ class IndexMcqQuestions extends Component {
               <PostCard
                 imgsource="android_mcq.jpeg"
                 title="Android MCQs Questions"
-                paragraph="We Love to Code and this is the best way to express our
-                  love to Computer Science Wolrd."
+                paragraph="Android questions and answers focuses on all areas of Android subject covering most topics in Android. These topics are chosen from a collection of most authoritative and best reference books on Android."
                 link="/index_android_mcqs"
               />
               <PostCard
                 imgsource="sql_mcq.jpeg"
                 title="SQL MCQs Questions"
-                paragraph="We Love to Code and this is the best way to express our
-                  love to Computer Science Wolrd."
+                paragraph="SQL questions and answers focuses on all areas of SQL subject covering most topics in SQL. These topics are chosen from a collection of most authoritative and best reference books on SQL."
                 link="/index_sql_mcqs"
               />
               <PostCard
                 imgsource="ds_mcq.jpeg"
                 title="DS MCQs Questions"
-                paragraph="We Love to Code and this is the best way to express our
-                  love to Computer Science Wolrd."
+                paragraph="DS questions and answers focuses on all areas of DS subject covering most topics in DS. These topics are chosen from a collection of most authoritative and best reference books on DS."
                 link="/index_ds_mcqs"
               />
             </div>
@@ -144,24 +129,16 @@ class IndexMcqQuestions extends Component {
               <PostCard
                 imgsource="oops_mcq.jpeg"
                 title="OOPs MCQs Questions"
-                paragraph="We Love to Code and this is the best way to express our
-                  love to Computer Science Wolrd."
+                paragraph="OOPS questions and answers focuses on all areas of OOPS subject covering most topics in OOPS. These topics are chosen from a collection of most authoritative and best reference books on OOPS."
                 link="/index_oops_mcqs"
               />
               <PostCard
                 imgsource="angular_mcq.jpeg"
                 title="Angular MCQs Coming Soon"
-                paragraph="We Love to Code and this is the best way to express our
-                  love to Computer Science Wolrd."
+                paragraph="Angular questions and answers focuses on all areas of Angular subject covering most topics in Angular. These topics are chosen from a collection of most authoritative and best reference books on Angular."
                 link="/index_angular_mcqs"
               />
-              <PostCard
-                imgsource="c_mcq.jpeg"
-                title="Blank"
-                paragraph="We Love to Code and this is the best way to express our
-                  love to Computer Science Wolrd."
-                link="/index_mcqs"
-              />
+            
             </div>
             <h4 className="text-secondary mt-3">For More MCQs Practice</h4>
             <MCQCardCarousel />
