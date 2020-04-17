@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import PostCard from "../../PostCard";
 import RightSideSection from "../../../right_section/RightSideSection";
 import MCQCardCarousel from "./MCQCardCarousel";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 class IndexMcqQuestions extends Component {
   state = {};
@@ -19,10 +21,7 @@ class IndexMcqQuestions extends Component {
               Technical MCQs Practice Question
             </h2>
             <Link to="/home" className="badge badge-primary mr-1">
-              Home >
-            </Link>
-            <Link to="/index_articles" className="badge badge-warning mr-1">
-              Blogs >
+              <FontAwesomeIcon icon={faHome} size="2x" />
             </Link>
 
             <div className="card-deck m-2">
