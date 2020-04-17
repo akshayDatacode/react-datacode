@@ -25,7 +25,7 @@ class IndexPosts extends Component {
               <InterviewQuestionsCardCarousel />
               <h4 className="text-secondary mt-3">Programming MCQs</h4>
               <MCQCardCarousel />
-              <h4 className="text-secondary mt-3">Quize Test</h4>
+              <h4 className="text-secondary mt-3">Quiz Test</h4>
               <MCQTestCardCarousel />
               <h4 className="text-secondary mt-3">Weekly Code Challanges</h4>
               <CodeChallangeCardCarousel />

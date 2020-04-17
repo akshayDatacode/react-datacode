@@ -40,7 +40,7 @@ class MainComponent extends Component {
                     </center>
                   </Link>
                   <div class="card-body text-center">
-                    <h5 class="card-title ">Technical Quize Tests</h5>
+                    <h5 class="card-title ">Technical Quiz Tests</h5>
                     <p class="card-text">
                       We Love to Code and this is the best way to express our
                       love to Computer Science Wolrd.

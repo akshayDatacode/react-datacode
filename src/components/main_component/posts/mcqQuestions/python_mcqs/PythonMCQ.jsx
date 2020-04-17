@@ -208,7 +208,6 @@ print(a)`}
                 RecPostHading="Python MCQs Set 5"
                 link="/python_mcq_5"
               />
-              
             </div>
           </div>
         </div>
