@@ -13,16 +13,25 @@ class IndexCssMCQ extends Component {
   render() {
     return (
       <>
+       <div className="row">
+          <div className="col">
+            <div className="card bg-warning">
+              <div className="card-body p-2">
+                <h1 className="card-title text-dark m-0 p-0">
+                  Css MCQs Sets
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="row">
           <div className="col-1"></div>
           <div className="col-md-8 mt-4">
-            <h2 className="text-center mb-4">CSS MCQs Practice Question</h2>
             <Link to="/home" className="badge badge-primary mr-1">
-              <FontAwesomeIcon icon={faHome} size="2x" />
+              <FontAwesomeIcon icon={faHome} size="1x" />
             </Link>
             <Link to="/index_mcqs" className="badge badge-warning mr-1 mb-4">
-              <FontAwesomeIcon icon={faListAlt} size="2x" />
-              MCQs
+              MCQs>>
             </Link>
 
             <div className="card-deck m-2">
