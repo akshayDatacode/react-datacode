@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.2749690b.chunk.css",
-    "main.js": "/static/js/main.7f5c177c.chunk.js",
-    "main.js.map": "/static/js/main.7f5c177c.chunk.js.map",
+    "main.js": "/static/js/main.347bb309.chunk.js",
+    "main.js.map": "/static/js/main.347bb309.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4a1f94a7.js",
     "runtime-main.js.map": "/static/js/runtime-main.4a1f94a7.js.map",
     "static/css/2.89f067aa.chunk.css": "/static/css/2.89f067aa.chunk.css",
-    "static/js/2.3944bbf0.chunk.js": "/static/js/2.3944bbf0.chunk.js",
-    "static/js/2.3944bbf0.chunk.js.map": "/static/js/2.3944bbf0.chunk.js.map",
+    "static/js/2.91af9f02.chunk.js": "/static/js/2.91af9f02.chunk.js",
+    "static/js/2.91af9f02.chunk.js.map": "/static/js/2.91af9f02.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.14dd721a1508fc41890aaea302b1ce9d.js": "/precache-manifest.14dd721a1508fc41890aaea302b1ce9d.js",
+    "precache-manifest.4fee93aaee785b7726dcc4dc876ae8ad.js": "/precache-manifest.4fee93aaee785b7726dcc4dc876ae8ad.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.89f067aa.chunk.css.map": "/static/css/2.89f067aa.chunk.css.map",
     "static/css/main.2749690b.chunk.css.map": "/static/css/main.2749690b.chunk.css.map",
-    "static/js/2.3944bbf0.chunk.js.LICENSE.txt": "/static/js/2.3944bbf0.chunk.js.LICENSE.txt",
+    "static/js/2.91af9f02.chunk.js.LICENSE.txt": "/static/js/2.91af9f02.chunk.js.LICENSE.txt",
     "static/media/Cover Photo (3).png": "/static/media/Cover Photo (3).6bc137af.png",
     "static/media/Green Disease Prevention Instagram Post.png": "/static/media/Green Disease Prevention Instagram Post.ee3b12ec.png",
     "static/media/Shootpy_W Cover Page (1).jpg": "/static/media/Shootpy_W Cover Page (1).39eabcb7.jpg",
@@ -116,6 +116,7 @@
     "static/media/html_mcq.jpeg": "/static/media/html_mcq.2d0552bb.jpeg",
     "static/media/html_tech.jpeg": "/static/media/html_tech.88a4c216.jpeg",
     "static/media/html_tutorial.jpeg": "/static/media/html_tutorial.92c900c1.jpeg",
+    "static/media/icon192.png": "/static/media/icon192.55920f37.png",
     "static/media/index_mcqs.jpeg": "/static/media/index_mcqs.d558b2da.jpeg",
     "static/media/indexcover1.jpeg": "/static/media/indexcover1.3a570b82.jpeg",
     "static/media/indexcover2.jpeg": "/static/media/indexcover2.d657c63c.jpeg",
@@ -207,8 +208,8 @@
   "entrypoints": [
     "static/js/runtime-main.4a1f94a7.js",
     "static/css/2.89f067aa.chunk.css",
-    "static/js/2.3944bbf0.chunk.js",
+    "static/js/2.91af9f02.chunk.js",
     "static/css/main.2749690b.chunk.css",
-    "static/js/main.7f5c177c.chunk.js"
+    "static/js/main.347bb309.chunk.js"
   ]
 }
