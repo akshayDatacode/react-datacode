@@ -13,7 +13,7 @@ class DjangoInterviewQuestions extends Component {
         <div className="container-fluids">
           <div className="row">
             <div className="col">
-              <div className="card bg-warning">
+              <div className="card bg-primary">
                 <div className="card-body">
                   <h1 className="card-title text-dark display-5 ">
                     Django Interview Question

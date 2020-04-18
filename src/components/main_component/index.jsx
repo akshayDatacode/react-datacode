@@ -35,7 +35,7 @@ class MainComponent extends Component {
                       <FontAwesomeIcon
                         icon={faUserClock}
                         color="skyblue"
-                        size="6x"
+                        size="4x"
                       />
                     </center>
                   </Link>
@@ -57,7 +57,7 @@ class MainComponent extends Component {
                       <FontAwesomeIcon
                         icon={faUsers}
                         color="indigo"
-                        size="6x"
+                        size="4x"
                       />
                     </center>
                   </Link>
@@ -77,7 +77,7 @@ class MainComponent extends Component {
                       <FontAwesomeIcon
                         icon={faListAlt}
                         color="green"
-                        size="6x"
+                        size="4x"
                       />
                     </center>
                   </Link>
@@ -111,21 +111,21 @@ class MainComponent extends Component {
             <div className="col-md-6 text-center">
               <div className="card border border-white bg-white">
                 <div clsssName="card-header border border-white bg-white ">
-                  <h1 className="text-center p-4 display-4 mt-5">
+                  <h1 className="text-center display-4 mt-5">
                     Free Learning Material
                   </h1>
                 </div>
                 <div className="card-body border border-white bg-white">
                   <div className="card-title text-primary">
-                    <h3>
+                    <h5 className="p-5">
                       Datacode Provides you the Best Learning Content of your
                       faviorate Technologies to Improve your Skills and Make
                       your Learning Easy and Quicke
-                    </h3>
+                    </h5>
                   </div>
                   <center>
-                    <Link to="/index_interview_questioins">
-                      <button className="btn btn-lg btn-primary mt-5">
+                    <Link to="/home">
+                      <button className="btn btn-lg btn-primary">
                         Start Learning
                       </button>
                     </Link>
@@ -140,22 +140,24 @@ class MainComponent extends Component {
             <div className="col-md-6 text-center">
               <div className="card border border-white bg-white">
                 <div clsssName="card-header border border-white bg-white ">
-                  <h1 className="text-center p-5 display-4">
+                  <h1 className="text-center display-4">
                     Learn From the Best Sources
                   </h1>
                 </div>
                 <div className="card-body border border-white bg-white">
                   <div className="card-title text-center text-secondary">
-                    <h3>
+                    <h5 className="p-5">
                       Datacode Collected the Best Learning Resources for
                       Beginners to make the track more easy and helps to grow
                       the technical skills.
-                    </h3>
+                    </h5>
                   </div>
                   <center>
-                    <button className="btn btn-lg btn-warning m-2">
-                      Explore Content
-                    </button>
+                    <Link to="/home">
+                      <button className="btn btn-lg btn-warning ">
+                        Explore Content
+                      </button>
+                    </Link>
                   </center>
                 </div>
               </div>
@@ -179,7 +181,7 @@ class MainComponent extends Component {
                   <center>
                     <FontAwesomeIcon
                       icon={faNewspaper}
-                      size="5x"
+                      size="4x"
                       color="gold"
                     />
                   </center>
@@ -206,7 +208,7 @@ class MainComponent extends Component {
                   <center>
                     <FontAwesomeIcon
                       icon={faLaptopCode}
-                      size="5x"
+                      size="4x"
                       color="orange"
                     />
                   </center>
@@ -231,7 +233,7 @@ class MainComponent extends Component {
                 </div>
                 <div class="card border border-white">
                   <center>
-                    <FontAwesomeIcon icon={faTools} size="5x" color="gray" />
+                    <FontAwesomeIcon icon={faTools} size="4x" color="gray" />
                   </center>
                   <div class="card-body">
                     <h5 class="card-title"> Technologies </h5>
@@ -254,7 +256,7 @@ class MainComponent extends Component {
                   <center>
                     <FontAwesomeIcon
                       icon={faConnectdevelop}
-                      size="5x"
+                      size="4x"
                       color="green"
                     />
                   </center>
@@ -277,7 +279,7 @@ class MainComponent extends Component {
                 </div>
                 <div class="card border border-white">
                   <center>
-                    <FontAwesomeIcon icon={faFileCode} size="5x" />
+                    <FontAwesomeIcon icon={faFileCode} size="4x" />
                   </center>
                   <div class="card-body">
                     <h5 class="card-title"> Programming Practice CODE</h5>
