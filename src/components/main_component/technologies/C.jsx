@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faBook } from "@fortawesome/free-solid-svg-icons";
 import RecommendPost from "../../right_section/RecommendPost";
 import RoadMapCard from "./RoadMapCard";
+import FbShare from "../FbShare";
 
 class C extends Component {
   state = {};
@@ -197,6 +198,7 @@ class C extends Component {
             />
           </div>
           <div className="col-md-4 mt-md-5 ">
+            <FbShare />
             <h2 className="text-center text-secondary mt-2 mb-3">
               <FontAwesomeIcon icon={faBook} size="1x" className="mr-2" />C
               Programming Learning
