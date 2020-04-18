@@ -6,6 +6,8 @@ import Quize from "../quize";
 import RightSideSection from "../../../../right_section/RightSideSection";
 import RecommendPost from "../../../../right_section/RecommendPost";
 import MCQCardCarousel from "../MCQCardCarousel";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome, faListAlt } from "@fortawesome/free-solid-svg-icons";
 
 class CssMCQ1 extends Component {
   state = {
@@ -32,14 +34,14 @@ class CssMCQ1 extends Component {
             <div className="col-1"></div>
             <div className="col-md-7 ">
               <div className="col-fluid ">
-                <Link to="/home" className="badge badge-primary mr-1">
-                  Home >{" "}
-                </Link>
+              <Link to="/home" className="badge badge-primary mr-1">
+              <FontAwesomeIcon icon={faHome} size="1x" />
+            </Link>
                 <Link to="/index_mcqs" className="badge badge-warning mr-1">
-                  Programming MCQs >{" "}
+                  MCQs >>
                 </Link>
                 <Link to="/index_css_mcqs" className="badge badge-success mr-1">
-                  Css MCQs >
+                  Css MCQs >>
                 </Link>
                 <ScoreCard count={this.state.count} />
               </div>
@@ -110,8 +112,8 @@ class CssMCQ1 extends Component {
                     question="Choose the option that correctly specifies the output of the following CSS."
                     language="css"
                     code={`span {
-  border: 1px solid red;
-        outline: green dotted thick;
+border: 1px solid red;
+outline: green dotted thick;
 }`}
                     correctAnswer=""
                     v1="All span elements will have a red border and a green dotted outline"
@@ -164,19 +166,19 @@ class CssMCQ1 extends Component {
               <RightSideSection />
               <h5 className="mb-3">Recommended for you</h5>
               <RecommendPost
-                imgsource="python_mcqs.jpeg"
-                RecPostHading="Python MCQs Questions"
-                link="/index_python_mcqs"
+                imgsource="html_mcq.jpeg"
+                RecPostHading="HTML MCQs Questions"
+                link="/index_html_mcqs"
               />
               <RecommendPost
-                imgsource="java_mcqs.jpeg"
-                RecPostHading="Java MCQs Questions"
+                imgsource="js_mcq.jpeg"
+                RecPostHading="JavaScript MCQs Questions"
                 link="/index_java_mcqs"
               />
-              <RecommendPost
-                imgsource="datacodelogo.jpeg"
-                RecPostHading="Programminig Quize Test"
-                link="/index_quize_tests"
+             <RecommendPost
+                imgsource="react_mcq.jpeg"
+                RecPostHading="React MCQs Questions"
+                link="/index_react_mcqs"
               />
             </div>
           </div>
