@@ -38,7 +38,7 @@ class FooterComponentUpper extends Component {
               <h4 className="text-secondary align-middle ">Categories</h4>
               <hr
                 class="teal accent-3 mb-3 mt-0 d-inline-block mx-auto"
-                style={{ width: 100 }}
+                style={{ width: 120 }}
               />
               <div className="row text-center">
                 <div className="col">
@@ -47,7 +47,7 @@ class FooterComponentUpper extends Component {
                       <Link to="/index_quize_tests">
                         <FontAwesomeIcon
                           icon={faUserClock}
-                          color="skyblue"
+                          color="aqua"
                           size="2x"
                         />
                         <p className="mt-1 text-secondary">
@@ -60,7 +60,7 @@ class FooterComponentUpper extends Component {
                       <Link to="/index_interview_questioins">
                         <FontAwesomeIcon
                           icon={faUserFriends}
-                          color="skyblue"
+                          color="aqua"
                           size="2x"
                         />
                         <p className="mt-1 text-secondary">
@@ -72,7 +72,7 @@ class FooterComponentUpper extends Component {
                       <Link to="/index_articles">
                         <FontAwesomeIcon
                           icon={faNewspaper}
-                          color="skyblue"
+                          color="aqua"
                           size="2x"
                         />
                         <p className="mt-1 text-secondary">Community Blogs </p>
@@ -84,7 +84,7 @@ class FooterComponentUpper extends Component {
                       <Link to="/index_code_challange">
                         <FontAwesomeIcon
                           icon={faLaptopCode}
-                          color="skyblue"
+                          color="aqua"
                           size="2x"
                         />
                         <p className="mt-1 text-secondary">
@@ -96,7 +96,7 @@ class FooterComponentUpper extends Component {
                       <Link to="/index_mcqs">
                         <FontAwesomeIcon
                           icon={faListAlt}
-                          color="skyblue"
+                          color="aqua"
                           size="2x"
                         />
                         <p className="mt-1 text-secondary">
@@ -108,7 +108,7 @@ class FooterComponentUpper extends Component {
                       <Link to="/index_technologies">
                         <FontAwesomeIcon
                           icon={faTools}
-                          color="skyblue"
+                          color="aqua"
                           size="2x"
                         />
                         <p className="mt-1 text-secondary">Technologies</p>
