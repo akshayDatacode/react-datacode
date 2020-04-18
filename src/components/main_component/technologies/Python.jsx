@@ -6,6 +6,7 @@ import { faHome, faBookDead, faBook } from "@fortawesome/free-solid-svg-icons";
 import PostCard from "../PostCard";
 import RecommendPost from "../../right_section/RecommendPost";
 import RoadMapCard from "./RoadMapCard";
+import { faPython } from "@fortawesome/free-brands-svg-icons";
 
 class Python extends Component {
   state = {};
@@ -148,17 +149,17 @@ class Python extends Component {
             />
           </div>
           <div className="col-md-4 mt-md-5 ">
-            <h3 className="text-center text-secondary mt-2 mb-3">
-              <FontAwesomeIcon icon={faBook} size="1x" className="mr-2" />
+            <h3 className="text-center text-primary mt-2 mb-3">
+              <FontAwesomeIcon icon={faPython} size="1x" className="mr-2" />
               Python Learning
             </h3>
             <RecommendPost
-              imgsource="python_mcqs.jpeg"
+              imgsource="python_mcq.jpeg"
               RecPostHading="Python MCQs"
               link="/index_python_mcqs"
             />
             <RecommendPost
-              imgsource="python_interview_question.jpeg"
+              imgsource="python_interview_questions.jpeg"
               RecPostHading="Python Interview Questions"
               link="/python_interview_question"
             />
@@ -168,7 +169,7 @@ class Python extends Component {
               link="/python_programming_questions"
             />
             <RecommendPost
-              imgsource="python_programming_question.jpeg"
+              imgsource="python_quize.jpeg"
               RecPostHading="Python Quize Test"
               link="/python_quize_tests"
             />

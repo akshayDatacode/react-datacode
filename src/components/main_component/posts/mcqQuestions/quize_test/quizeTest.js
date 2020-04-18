@@ -43,7 +43,7 @@ class QuizeTest extends Component {
               <div className="col-md-4 ml-3">
                 {" "}
                 <h6 className="pt-1 text-weight-bold ">
-                  Question :- {this.props.quizeNo} / 20
+                  Question :- {this.props.quizeNo} / 10
                 </h6>
               </div>
             </div>

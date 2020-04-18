@@ -13,42 +13,22 @@ class ProgrammingQuestionCardCarousel extends Component {
             <Carousel.Item>
               <div className="card-deck ">
                 <CardCarouselItem
-                  imgsource="code_challange.jpeg"
+                  imgsource="c_programming_question.jpeg"
                   title="C programming questions"
                   link="/c_programming_questions"
                 />
                 <CardCarouselItem
-                  imgsource="event.jpeg"
-                  title="Datastructure Programming Questions"
+                  imgsource="python_programming_question.jpeg"
+                  title="Python Programming Questions"
                   link="/datastructure_programming_questions"
                 />
                 <CardCarouselItem
-                  imgsource="web_blog.jpeg"
+                  imgsource="java_programming_question.jpeg"
                   title="Java Programming Questions"
                   link="/java_programming_questions"
                 />
               </div>
             </Carousel.Item>
-            <Carousel.Item>
-              <div className="card-deck">
-                <CardCarouselItem
-                  imgsource="code_challange.jpeg"
-                  title="Javascript Programming Questions"
-                  link="/javascript_programming_questions"
-                />
-                <CardCarouselItem
-                  imgsource="code_challange.jpeg"
-                  title="Python Programming Questions"
-                  link="/python_programming_questions"
-                />
-                <CardCarouselItem
-                  imgsource="code_challange.jpeg"
-                  title="Coming soon.."
-                  link="/index_programming_questions"
-                />
-              </div>
-            </Carousel.Item>
-           
           </Carousel>
         </div>
 
@@ -57,30 +37,17 @@ class ProgrammingQuestionCardCarousel extends Component {
           <Carousel indicators={false}>
             <Carousel.Item>
               <CardCarouselItem
-                 imgsource="code_challange.jpeg"
-                 title="C programming questions"
-                 link="/c_programming_questions"
+                imgsource="c_programming_question.jpeg"
+                title="C programming questions"
+                link="/c_programming_questions"
               />
             </Carousel.Item>
+
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="event.jpeg"
-                title="Datastructure Programming Questions"
-                link="/datastructure_programming_questions"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <CardCarouselItem
-                imgsource="web_blog.jpeg"
+                imgsource="java_programming_question.jpeg"
                 title="Java Programming Questions"
                 link="/java_programming_questions"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <CardCarouselItem
-                imgsource="code_challange.jpeg"
-                title="Javascript Programming Questions"
-                link="/javascript_programming_questions"
               />
             </Carousel.Item>
             <Carousel.Item>
@@ -88,20 +55,6 @@ class ProgrammingQuestionCardCarousel extends Component {
                 imgsource="python_programming.jpeg"
                 title="Python Programming"
                 link="/python"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <CardCarouselItem
-                imgsource="code_challange.jpeg"
-                title="Python Programming Questions"
-                link="/python_programming_questions"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <CardCarouselItem
-                imgsource="code_challange.jpeg"
-                title="Coming soon.."
-                link="/index_programming_questions"
               />
             </Carousel.Item>
           </Carousel>

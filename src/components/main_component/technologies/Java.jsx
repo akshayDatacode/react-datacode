@@ -6,6 +6,7 @@ import { faHome, faBook } from "@fortawesome/free-solid-svg-icons";
 import PostCard from "../PostCard";
 import RecommendPost from "../../right_section/RecommendPost";
 import RoadMapCard from "./RoadMapCard";
+import { faJava } from "@fortawesome/free-brands-svg-icons";
 
 class Java extends Component {
   state = {};
@@ -189,32 +190,32 @@ class Java extends Component {
             />
           </div>
           <div className="col-md-4 mt-md-5 ">
-            <h2 className="text-center text-secondary mt-2 mb-3">
-              <FontAwesomeIcon icon={faBook} size="1x" className="mr-2" />
+            <h2 className="text-center text-primary mt-2 mb-3">
+              <FontAwesomeIcon icon={faJava} size="1x" className="mr-2" />
               Java Learning
             </h2>
             <RecommendPost
-              imgsource="python_mcqs.jpeg"
+              imgsource="java_mcq.jpeg"
               RecPostHading="Java MCQs"
               link="/index_java_mcqss"
             />
             <RecommendPost
-              imgsource="python_interview_question.jpeg"
+              imgsource="java_interview_questions.jpeg"
               RecPostHading="Java Interview Questions"
               link="/java_interview_question"
             />
             <RecommendPost
-              imgsource="python_programming_question.jpeg"
+              imgsource="java_programming_question.jpeg"
               RecPostHading="Java Programming Questions"
               link="/java_programming_questions"
             />
             <RecommendPost
-              imgsource="python_programming_question.jpeg"
-              RecPostHading="Python Quize Test"
-              link="/python_quize_tests"
+              imgsource="java_quize.jpeg"
+              RecPostHading="Java Quize Test"
+              link="/java_quize_tests"
             />
             <RecommendPost
-              imgsource="python_learning_blog.jpeg"
+              imgsource="programming_blog.jpeg"
               RecPostHading="Java Programming Blogs"
               link="/prog_lan_blog"
             />

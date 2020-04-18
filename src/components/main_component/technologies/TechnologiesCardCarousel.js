@@ -149,7 +149,7 @@ class TechnologiesCardCarousel extends Component {
             <Carousel.Item>
               <CardCarouselItem
                 imgsource="css.jpeg"
-                title="Coming soon"
+                title="CSS"
                 link="/index_technologies"
               />
             </Carousel.Item>
@@ -162,28 +162,24 @@ class TechnologiesCardCarousel extends Component {
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="datastructure.jpeg"
+                imgsource="dbms.jpeg"
                 title="DBMS"
                 link="/dbms"
               />
             </Carousel.Item>
             <Carousel.Item>
-              <CardCarouselItem
-                imgsource="datastructure.jpeg"
-                title="SQL"
-                link="/sql"
-              />
+              <CardCarouselItem imgsource="sql.jpeg" title="SQL" link="/sql" />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="datastructure.jpeg"
+                imgsource="oops.jpeg"
                 title="OOPs"
                 link="/oops"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="datastructure.jpeg"
+                imgsource="android.jpeg"
                 title="Android"
                 link="/android"
               />
@@ -197,7 +193,7 @@ class TechnologiesCardCarousel extends Component {
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="react.jpeg"
+                imgsource="angular.jpeg"
                 title="Angular"
                 link="/angular"
               />

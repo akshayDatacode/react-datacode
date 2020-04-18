@@ -18,37 +18,17 @@ class CodeChallangeCardCarousel extends Component {
                   link="/index_code_challange"
                 />
                 <CardCarouselItem
-                  imgsource="event.jpeg"
-                  title="Code Challenge week-1"
-                  link="/code_challange_week_1"
-                />
-                <CardCarouselItem
-                  imgsource="web_blog.jpeg"
-                  title="Code Challenge week-2"
-                  link="/code_challange_week_2"
-                />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div className="card-deck">
-              <CardCarouselItem
                   imgsource="code_challange.jpeg"
-                  title="weekly Code Challange"
-                  link="/index_code_challange"
-                />
-                <CardCarouselItem
-                  imgsource="event.jpeg"
                   title="Code Challenge week-1"
                   link="/code_challange_week_1"
                 />
                 <CardCarouselItem
-                  imgsource="web_blog.jpeg"
+                  imgsource="code_challange.jpeg"
                   title="Code Challenge week-2"
                   link="/code_challange_week_2"
                 />
               </div>
             </Carousel.Item>
-           
           </Carousel>
         </div>
 
@@ -64,40 +44,18 @@ class CodeChallangeCardCarousel extends Component {
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="event.jpeg"
+                imgsource="code_challange.jpeg"
                 title="Code Challenge week-1"
                 link="/code_challange_week_1"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="web_blog.jpeg"
+                imgsource="code_challange.jpeg"
                 title="Code Challenge week-2"
                 link="/code_challange_week_2"
               />
             </Carousel.Item>
-            <Carousel.Item>
-              <CardCarouselItem
-                 imgsource="code_challange.jpeg"
-                 title="weekly Code Challange"
-                 link="/index_code_challange"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <CardCarouselItem
-                imgsource="event.jpeg"
-                title="Code Challenge week-1"
-                link="/code_challange_week_1"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <CardCarouselItem
-                imgsource="web_blog.jpeg"
-                title="Code Challenge week-2"
-                link="/code_challange_week_2"
-              />
-            </Carousel.Item>
-            
           </Carousel>
         </div>
       </>

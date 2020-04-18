@@ -247,7 +247,7 @@ class IndexTechnologies extends Component {
                 </Link>
               </div>
             </div>
-            <h4 className="text-secondary mt-5">For More Community Blogs</h4>
+            <h4 className="text-secondary mt-5">For More Technologies</h4>
             <TechnologiesCardCarousel />
           </div>
           <div className="col-md-3">

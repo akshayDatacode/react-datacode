@@ -119,16 +119,7 @@ class GitMCQ1 extends Component {
                     v4="By creating a new commit with git init"
                     counter={this.counter}
                   />
-                  <Quize
-                    quizeNo="7"
-                    question=" "
-                    correctAnswer=""
-                    v1=""
-                    v2=""
-                    v3=""
-                    v4=" "
-                    counter={this.counter}
-                  />
+
                   <Quize
                     quizeNo="8"
                     question="What's a shortcut to staging all the changes you have?"
