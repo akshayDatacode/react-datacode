@@ -12,20 +12,26 @@ class IndexDjangoMCQ extends Component {
   render() {
     return (
       <>
-        <h1>Index of Django MCQs</h1>
-        <Link to="/django_mcq_1">
-          <h6>Django MCQs Questions 1</h6>
-        </Link>
+       <div className="row">
+          <div className="col">
+            <div className="card bg-warning">
+              <div className="card-body p-2">
+                <h1 className="card-title text-dark m-0 p-0">
+                DJango MCQs Sets
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+       
         <div className="row">
           <div className="col-1"></div>
           <div className="col-md-8 mt-4">
-            <h2 className="text-center mb-4">Django MCQs Practice Question</h2>
             <Link to="/home" className="badge badge-primary mr-1">
-              <FontAwesomeIcon icon={faHome} size="2x" />
+              <FontAwesomeIcon icon={faHome} size="1x" />
             </Link>
             <Link to="/index_mcqs" className="badge badge-warning mr-1 mb-4">
-              <FontAwesomeIcon icon={faListAlt} size="2x" />
-              MCQs
+              MCQs>>
             </Link>
 
             <div className="card-deck m-2">
