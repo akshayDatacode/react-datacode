@@ -53,9 +53,10 @@ class MainComponent extends Component {
                   <div class="card-body text-left">
                     <h5 class="card-title ">Find</h5>
                     <p class="card-text">
-                      #LearnWithCommunity #LearnWithCommunity
-                      Hsdfdfdkfdfkdjfjkdfjdkfjdkfjdkfjdkfjdfkjdfkdjfkdjfkdfjdkfjdfkjdfkjdfkjd
-                      xfkdjfksj dfkjek dfkdfjk dkfjkc fdkfjd s
+                    From building websites to analyzing data, the choice is yours. 
+                    Find the best of the best courses to learn.
+
+                    
                     </p>
                   </div>
                   {/* <div class="card-footer border border-white bg-white text-center">
@@ -75,9 +76,9 @@ class MainComponent extends Component {
                   <div class="card-body text-left">
                     <h5 class="card-title">Learn</h5>
                     <p class="card-text">
-                      #LearnWithCommunity #LearnWithCommunity
-                      Hsdfdfdkfdfkdjfjkdfjdkfjdkfjdkfjdkfjdfkjdfkdjfkdjfkdfjdkfjdfkjdfkjdfkjd
-                      xfkdjfksj dfkjek dfkdfjk dkfjkc fdkfjd s
+                    Learn How to Code; Coding skills have never been more in-demand. 
+                    Learn everything you need to take your career to the next level. 
+             
                     </p>
                   </div>
                   {/* <div class="card-footer border border-white bg-white text-center">
@@ -99,10 +100,7 @@ class MainComponent extends Component {
                   <div class="card-body text-left">
                     <h5 class="card-title">Practice</h5>
                     <p class="card-text">
-                      #LearnWithCommunity
-                      Hsdfdfdkfdfkdjfjkdfjdkfjdkfjdkfjdkfjdfkjdfkdjfkdjfkdfjdkfjdfkjdfkjdfkjd
-                      xfkdjfksj dfkjek dfkdfjk dkfjkc fdkfjd s
-                    </p>
+                    Apply your learning with real-world projects and test your knowledge with tailor-made quizzes & MCQ's.                    </p>
                   </div>
                   {/* <div class="card-footer border border-white bg-white text-center">
                     <Link to="/index_mcqs">
@@ -135,9 +133,9 @@ class MainComponent extends Component {
                 <div className="card-body border border-white bg-white">
                   <div className="card-title text-primary text-left">
                     <h5 className="p-5">
-                      Datacode Provides you the Best Learning Content of your
-                      faviorate Technologies to Improve your Skills and Make
-                      your Learning Easy and Quicke
+                      Datacode Provides you the Best Learning Content from all over the world
+                      to Improve your Skills and Make
+                      your Learning Easy and Quick.
                     </h5>
                   </div>
 
@@ -161,9 +159,8 @@ class MainComponent extends Component {
                 <div className="card-body border border-white bg-white">
                   <div className="card-title text-left text-secondary">
                     <h5 className="p-5">
-                      Datacode Collected the Best Learning Resources for
-                      Beginners to make the track more easy and helps to grow
-                      the technical skills.
+                      Datacode Collected the Best Learning Resources. 
+                     Either one is at Beginners or at Advance level you find your track and learn from it.
                     </h5>
                   </div>
                   <center>
@@ -202,8 +199,8 @@ class MainComponent extends Component {
                     </center>
                   </Link>
                   <div class="card-body text-center">
-                    <h5 class="card-title ">Technical Quiz Tests</h5>
-                    <p class="card-text">#LearnWithCommunity</p>
+                    <h5 class="card-title ">Technical Tests</h5>
+                    <p class="card-text">Find the best Technical quizzes to test your Technical knowledge</p>
                   </div>
                   <div class="card-footer border border-white bg-white text-center">
                     <Link to="/index_quize_tests">
@@ -225,7 +222,8 @@ class MainComponent extends Component {
                   </Link>
                   <div class="card-body text-center">
                     <h5 class="card-title">Programming Interview FAQs</h5>
-                    <p class="card-text">#LearnWithCommunity</p>
+                    <p class="card-text"> Read example questions you'll be asked in a technical interview, 
+                    and read tips on the best ways to answer.</p>
                   </div>
                   <div class="card-footer border border-white bg-white text-center">
                     <Link to="/index_interview_questioins">
@@ -245,7 +243,7 @@ class MainComponent extends Component {
                   </Link>
                   <div class="card-body text-center">
                     <h5 class="card-title"> Programming MCQs Practice</h5>
-                    <p class="card-text">#LearnWithCommunity</p>
+                    <p class="card-text">Multiple choice questions of Multiple Technologies are useful for the campus placement & tests</p>
                   </div>
                   <div class="card-footer border border-white bg-white text-center">
                     <Link to="/index_mcqs">
@@ -276,7 +274,7 @@ class MainComponent extends Component {
                   <div class="card-body">
                     <h5 class="card-title">Communnity Blogs</h5>
                     <p class="card-text">
-                      Read Our Technical Blogs for Beginners By Experts
+                     Various Blogs on various Technologies
                     </p>
                   </div>
                   <div class="card-footer border border-white bg-white">
@@ -304,7 +302,7 @@ class MainComponent extends Component {
                     <h5 class="card-title text-secondary">
                       Weekly Code Challange
                     </h5>
-                    <p class="card-text">#LearnWithCommunity</p>
+                    <p class="card-text">Challange your coding skills with Weekly Code Challanges</p>
                   </div>
                   <div class="card-footer border border-white bg-white">
                     <div className="row">
@@ -325,7 +323,7 @@ class MainComponent extends Component {
                   </center>
                   <div class="card-body">
                     <h5 class="card-title"> Technologies </h5>
-                    <p class="card-text">#LearnWithCommunity</p>
+                    <p class="card-text">Learn your favorite technology from various articles, programming questions and more Collected for you</p>
                   </div>
                   <div class="card-footer border border-white bg-white">
                     <div className="row">
@@ -350,7 +348,7 @@ class MainComponent extends Component {
                   </center>
                   <div class="card-body">
                     <h5 class="card-title">Event & Contests</h5>
-                    <p class="card-text">#LearnWithCommunity</p>
+                    <p class="card-text">find the events and Contests hosted by us and be a part of it.</p>
                   </div>
                   <div class="card-footer border border-white bg-white">
                     <div className="row">
@@ -371,7 +369,7 @@ class MainComponent extends Component {
                   </center>
                   <div class="card-body">
                     <h5 class="card-title"> Programming Practice CODE</h5>
-                    <p class="card-text">#LearnWithCommunity</p>
+                    <p class="card-text">Sharpen your coding skills by finding the best programming questions meant only for you.</p>
                   </div>
                   <div class="card-footer border border-white bg-white">
                     <div className="row">
