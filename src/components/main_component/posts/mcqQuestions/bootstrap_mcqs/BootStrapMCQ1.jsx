@@ -6,6 +6,8 @@ import Quize from "../quize";
 import RightSideSection from "../../../../right_section/RightSideSection";
 import RecommendPost from "../../../../right_section/RecommendPost";
 import MCQCardCarousel from "../MCQCardCarousel";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faListAlt, faHome } from "@fortawesome/free-solid-svg-icons";
 
 class BootStrapMCQ1 extends Component {
   state = {
@@ -32,17 +34,17 @@ class BootStrapMCQ1 extends Component {
             <div className="col-1"></div>
             <div className="col-md-7 ">
               <div className="col-fluid ">
-                <Link to="/home" className="badge badge-primary mr-1">
-                  Home >{" "}
-                </Link>
+              <Link to="/home" className="badge badge-primary mr-1">
+              <FontAwesomeIcon icon={faHome} size="1x" />
+            </Link>
                 <Link to="/index_mcqs" className="badge badge-warning mr-1">
-                  Programming MCQs >{" "}
+                  MCQs >>
                 </Link>
                 <Link
                   to="/index_bootstrap_mcqs"
                   className="badge badge-success mr-1"
                 >
-                  Bootstrap MCQs >
+                  Bootstrap MCQs >>
                 </Link>
                 <ScoreCard count={this.state.count} />
               </div>
@@ -161,19 +163,19 @@ class BootStrapMCQ1 extends Component {
               <RightSideSection />
               <h5 className="mb-3">Recommended for you</h5>
               <RecommendPost
-                imgsource="python_mcqs.jpeg"
-                RecPostHading="Python MCQs Questions"
+                imgsource="css_mcq.jpeg"
+                RecPostHading="CSS MCQs Questions"
                 link="/index_python_mcqs"
               />
               <RecommendPost
-                imgsource="java_mcqs.jpeg"
-                RecPostHading="Java MCQs Questions"
-                link="/index_java_mcqs"
+                imgsource="js_mcq.jpeg"
+                RecPostHading="JavaScript MCQs Questions"
+                link="/index_js_mcqs"
               />
               <RecommendPost
-                imgsource="datacodelogo.jpeg"
-                RecPostHading="Programminig Quize Test"
-                link="/index_quize_tests"
+                imgsource="html_mcq.jpeg"
+                RecPostHading="HTML MCQs Questions"
+                link="/index_html_mcqs"
               />
             </div>
           </div>
