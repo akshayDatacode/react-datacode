@@ -21,6 +21,7 @@ import {
   faCheckCircle,
   faPills,
   faThList,
+  faChalkboardTeacher,
 } from "@fortawesome/free-solid-svg-icons";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
@@ -64,8 +65,11 @@ class HeaderComponent extends Component {
 
               <NavDropdown title="Learning" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="/react-datacode/#/index_technologies">
-                  <FontAwesomeIcon icon={faTools} className="mr-2" />
-                  Technologies
+                  <FontAwesomeIcon
+                    icon={faChalkboardTeacher}
+                    className="mr-2"
+                  />
+                  Tutorials & Courses
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/react-datacode/#/index_mcqs">
                   <FontAwesomeIcon icon={faThList} className="mr-2" />
