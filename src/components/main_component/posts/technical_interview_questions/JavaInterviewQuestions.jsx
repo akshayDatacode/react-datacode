@@ -3,6 +3,10 @@ import QuestionCard from "./QuestionCard";
 import RightSideSection from "../../../right_section/RightSideSection";
 import RecommendPost from "../../../right_section/RecommendPost";
 import { Link } from "react-router-dom";
+import RoadMapCard from "../../technologies/RoadMapCard";
+import InterviewQuestionCardCarousel from "./InterviewQuestionCardCarousel";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
 class JavaInterviewQuestions extends Component {
   state = {};
   componentDidMount() {
@@ -23,18 +27,20 @@ class JavaInterviewQuestions extends Component {
               </div>
             </div>
           </div>
-          <div className="row mt-5">
+          <div className="row mt-5 mb-5">
             <div className="col-md-1"></div>
-            <div className="col-md-7">
-              <Link to="/home" className="badge badge-primary mr-1">
-                Home >
-              </Link>
+            <div className="col-md-7 ">
+            <Link to="/home" className="badge badge-primary mr-1">
+                  <FontAwesomeIcon icon={faHome} size="1x" />
+                </Link>
               <Link
                 to="/index_interview_questioins"
                 className="badge badge-warning mr-1"
               >
-                Interview Questions >
+                Interview Questions >>
               </Link>
+              <div className="row mb-5">
+                <div className="col">
               <QuestionCard
                 question={`Q1. What are wrapper classes in Java?
              `}
@@ -113,32 +119,76 @@ class JavaInterviewQuestions extends Component {
              `}
               />
             </div>
+            </div>
+              
+              <div className="row">
+                <div className="col">
+                  <h4 className="text-primary">For More Technologies</h4>
+                  <InterviewQuestionCardCarousel />
+                </div>
+              </div>
+            </div>   
+
             <div className="col-md-4 mt-5">
               <h5 className="mb-4">Other Learning Resources</h5>
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+     <RoadMapCard
+                imgsource="java_tech.jpeg"
+                title="Real Java Questions & Answers | 300+ Java Interview Questions‎"
+                source="(educative.io)"
+                tag1="Java"
+                tag2="interview questions"
+                link="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwi7jpuwxffoAhWElI8KHfEOAXEYABAAGgJzYg&ohost=www.google.com&cid=CAESQOD2ELI1OeVeM2uhRVX4UGBpEzxWiKb36G3q6Iem23yECQXioimoXjuffyTC3t4x3CmYYILHq9GwfX-XvQBpLmE&sig=AOD64_1_refcl7p06Z3vOQe6qkDdn3t-FA&q=&ved=2ahUKEwjQzJSwxffoAhV4zjgGHcS6CPcQ0Qx6BAgQEAE&adurl="
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="java_tech.jpeg"
+                title="300 Core Java Interview Questions "
+                source="(javatpoint)"
+                tag1="Java "
+                tag2="interview question"
+                link="https://www.javatpoint.com/corejava-interview-questions"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="java_tech.jpeg"
+                title="Java Interview Questions"
+                source="( Tutorialspoint)"
+                tag1="Questions"
+                tag2="Java"
+                link="https://www.tutorialspoint.com/java/java_interview_questions.htm"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="java_tech.jpeg"
+                title="100+ Best Core Java Interview Questions & Answers in 2020"
+                source="(hackr.io)"
+                tag1=" java"
+                tag2="interview"
+                link="https://hackr.io/blog/java-interview-questions"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="java_tech.jpeg"
+                title="Top 50+ Core Java Interview Questions and Answers"
+                source="(software testing help)"
+                tag1="core Java "
+                tag2="Questions"
+                link="https://www.softwaretestinghelp.com/core-java-interview-questions/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="java_tech.jpeg"
+                title="Java Interview Questions "
+                source="(how to do in java)"
+                tag1="Preparation"
+                tag2=" Interview"
+                link="https://howtodoinjava.com/java-interview-questions/"
               />
+
+              <RoadMapCard
+                imgsource="java_tech.jpeg"
+                title=""
+                source="()"
+                tag1=""
+                tag2=""
+                link=""
+              />
+              
 
               <RightSideSection />
             </div>
