@@ -3,6 +3,11 @@ import QuestionCard from "./QuestionCard";
 import RightSideSection from "../../../right_section/RightSideSection";
 import RecommendPost from "../../../right_section/RecommendPost";
 import { Link } from "react-router-dom";
+import RoadMapCard from "../../technologies/RoadMapCard";
+import InterviewQuestionCardCarousel from "./InterviewQuestionCardCarousel";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+
 
 class CloudComputingInterviewQuestions extends Component {
   state = {};
@@ -24,18 +29,21 @@ class CloudComputingInterviewQuestions extends Component {
               </div>
             </div>
           </div>
-          <div className="row mt-5 mb-5">
+
+        <div className="row mt-5 mb-5">
             <div className="col-md-1"></div>
             <div className="col-md-7 ">
-              <Link to="/home" className="badge badge-primary mr-1">
-                Home >
-              </Link>
+            <Link to="/home" className="badge badge-primary mr-1">
+                  <FontAwesomeIcon icon={faHome} size="1x" />
+                </Link>
               <Link
                 to="/index_interview_questioins"
                 className="badge badge-warning mr-1"
               >
-                Interview Questions >
+                Interview Questions >>
               </Link>
+              <div className="row mb-5">
+                <div className="col">
               <QuestionCard
                 question={`1) What is cloud computing?
 `}
@@ -126,31 +134,64 @@ Software as a service (SaaS)::It provides the cloud applications to users direct
 `}
               />
             </div>
+            </div>
+              
+              <div className="row">
+                <div className="col">
+                  <h4 className="text-primary">For More Technologies</h4>
+                  <InterviewQuestionCardCarousel />
+                </div>
+              </div>
+            </div>   
+
             <div className="col-md-4 mt-5">
               <h5 className="mb-4">Other Learning Resources</h5>
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+             <RoadMapCard
+                imgsource="c_tech.jpeg"
+                title="Top Cloud Computing Interview Questions"
+                source="(intellipaat)"
+                tag1="Cloud Computing"
+                link="https://intellipaat.com/blog/interview-question/cloud-computing-interview-questions/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="c_tech.jpeg"
+                title="Cloud Computing Interview Questions & Answers (Fresher)"
+                source="(janbask)"
+                tag1="cloud"
+                tag2="interview"
+                link="https://www.janbasktraining.com/blog/cloud-computing-interview-questions-answers/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="c_tech.jpeg"
+                title="40 Latest Cloud Computing Interview Questions"
+                source="(data-flair.training)"
+                tag1=" Cloud"
+                tag2=" interview"
+                link="https://data-flair.training/blogs/cloud-computing-interview-questions/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="c_tech.jpeg"
+                title="TOP 250+ Cloud Computing Interview Questions and Answers "
+                source="(wisdomjobs)"
+                tag1="cloud"
+                tag2="Answer"
+                link="https://www.wisdomjobs.com/e-university/cloud-computing-interview-questions.html"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="c_tech.jpeg"
+                title="Top 50+ Cloud Computing Interview Questions 2020 "
+                source="(gangboard)"
+                tag1="Cloud"
+                tag2="Computing"
+                link="https://www.gangboard.com/blog/cloud-computing-interview-questions-and-answers"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="c_tech.jpeg"
+                title="Top 50 Frequently Asked Cloud Computing Interview Questions"
+                source="(ubuntupit)"
+                tag1="cloud computing"
+                tag2="interview questions"
+                link="https://www.ubuntupit.com/frequently-asked-cloud-computing-interview-questions/"
               />
 
               <RightSideSection />

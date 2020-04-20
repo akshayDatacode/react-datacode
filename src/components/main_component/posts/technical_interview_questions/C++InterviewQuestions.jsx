@@ -4,6 +4,11 @@ import RightSideSection from "../../../right_section/RightSideSection";
 import RecommendPost from "../../../right_section/RecommendPost";
 import FooterComponentUpper from "../../../footer_component/FooterComponentUpper";
 import { Link } from "react-router-dom";
+import RoadMapCard from "../../technologies/RoadMapCard";
+import InterviewQuestionCardCarousel from "./InterviewQuestionCardCarousel";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+
 class CppInterviewQuestions extends Component {
   state = {};
   componentDidMount() {
@@ -24,18 +29,20 @@ class CppInterviewQuestions extends Component {
               </div>
             </div>
           </div>
-          <div className="row mt-5">
+          <div className="row mt-5 mb-5">
             <div className="col-md-1"></div>
-            <div className="col-md-7">
-              <Link to="/home" className="badge badge-primary mr-1">
-                Home >
-              </Link>
+            <div className="col-md-7 ">
+            <Link to="/home" className="badge badge-primary mr-1">
+                  <FontAwesomeIcon icon={faHome} size="1x" />
+                </Link>
               <Link
                 to="/index_interview_questioins"
                 className="badge badge-warning mr-1"
               >
-                Interview Questions >
+                Interview Questions >>
               </Link>
+              <div className="row mb-5">
+                <div className="col">
               <QuestionCard
                 question={`Q #1) What is the basic structure of a C++ program?
 
@@ -242,33 +249,66 @@ class CppInterviewQuestions extends Component {
              assign 5 to variables a, b and c.`}
               />
             </div>
+            </div>
+              
+              <div className="row">
+                <div className="col">
+                  <h4 className="text-primary">For More Technologies</h4>
+                  <InterviewQuestionCardCarousel />
+                </div>
+              </div>
+            </div>    
+               
             <div className="col-md-4 mt-5">
               <h5 className="mb-4">Other Learning Resources</h5>
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="cpp_tech.jpeg"
+                title="50+ Best C++ Interview Questions & Answers in 2020"
+                source="(hackr.io)"
+                tag1="C++"
+                tag2="questions"
+                link="https://hackr.io/blog/cpp-interview-questions"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="cpp_tech.jpeg"
+                title="Commonly Asked C++ Interview Questions"
+                source="(geeksforgeeks)"
+                tag1="C++"
+                tag2="Questions"
+                link="https://www.geeksforgeeks.org/commonly-asked-c-interview-questions-set-1/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="cpp_tech.jpeg"
+                title="C++ Interview Questions"
+                source="(tutorialspoint)"
+                tag1="C++"
+                tag2="Interview"
+                link="https://www.tutorialspoint.com/cplusplus/cpp_interview_questions.htm"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="cpp_tech.jpeg"
+                title="Top 39 C++ Interview Questions"
+                source="(javatpoint)"
+                tag1="C++"
+                tag2="Questions"
+                link="https://www.javatpoint.com/cpp-interview-questions"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="cpp_tech.jpeg"
+                title="Top 24 C++ Interview Questions & Answers "
+                source="(guru99)"
+                tag1="C++"
+                tag2="Interview"
+                link="https://www.guru99.com/cpp-interview-questions.html"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="cpp_tech.jpeg"
+                title="24 Essential C++ Interview Questions and Answers"
+                source="(toptal)"
+                tag1="C++"
+                tag2="Questions"
+                link="https://www.toptal.com/c-plus-plus/interview-questions"
               />
-
               <RightSideSection />
             </div>
           </div>
