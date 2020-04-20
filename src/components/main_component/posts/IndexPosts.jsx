@@ -19,7 +19,7 @@ class IndexPosts extends Component {
         <div className="container-fluid mt-5">
           <div class="row ">
             <div className="col">
-              <h4 className="text-secondary mt-3">Technologies</h4>
+              <h4 className="text-secondary mt-3">Tutorials & Courses</h4>
               <TechnologiesCardCarousel />
               <h4 className="text-secondary mt-3">Interview Preparation</h4>
               <InterviewQuestionsCardCarousel />
