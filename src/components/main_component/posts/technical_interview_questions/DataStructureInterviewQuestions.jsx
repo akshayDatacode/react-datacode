@@ -128,6 +128,7 @@ Return the topmost element`}
 The expression "a + b" will be represented as "ab+" in postfix notation.`}
               />
               </div>
+            
               </div>
               
               <div className="row">
@@ -142,14 +143,14 @@ The expression "a + b" will be represented as "ab+" in postfix notation.`}
             <div className="col-md-4 mt-5">
               <h5 className="mb-4">Other Learning Resources</h5>
               <RoadMapCard
-                imgsource="dbms_tech.jpeg"
+                imgsource="ds_tech.jpeg"
                 title="Commonly Asked Data Structure Interview Questions "
                 source="(geeksforgeeks)"
                 tag1="interview-questions"
                 link="https://www.geeksforgeeks.org/commonly-asked-data-structure-interview-questions-set-1/"
               />
               <RoadMapCard
-                imgsource="dbms_tech.jpeg"
+                imgsource="ds_tech.jpeg"
                 title="Data Structure Interview Questions"
                 source="(javatpoint)"
                 tag1=" beginners"
@@ -157,7 +158,7 @@ The expression "a + b" will be represented as "ab+" in postfix notation.`}
                 link="https://www.javatpoint.com/data-structure-interview-questions"
               />
               <RoadMapCard
-                imgsource="dbms_tech.jpeg"
+                imgsource="ds_tech.jpeg"
                 title="20+ Most Asked Data Structures Interview Questions "
                 source="(faceprep)"
                 tag1=" Interview Questions"
@@ -165,7 +166,7 @@ The expression "a + b" will be represented as "ab+" in postfix notation.`}
                 link="https://www.faceprep.in/data-structures/data-structures-interview-questions/"
               />
               <RoadMapCard
-                imgsource="dbms_tech.jpeg"
+                imgsource="ds_tech.jpeg"
                 title="Top 50 Data Structure Interview Questions & Answers"
                 source="(guru99)"
                 tag1="Data structure"
@@ -173,7 +174,7 @@ The expression "a + b" will be represented as "ab+" in postfix notation.`}
                 link="https://career.guru99.com/top-50-data-structure-interview-questions/"
               />
               <RoadMapCard
-                imgsource="dbms_tech.jpeg"
+                imgsource="ds_tech.jpeg"
                 title="DSA Interview Questions"
                 source="(tutorials point)"
                 tag1="algorithms"
@@ -181,7 +182,7 @@ The expression "a + b" will be represented as "ab+" in postfix notation.`}
                 link="https://www.tutorialspoint.com/data_structures_algorithms/data_structures_algorithms_interview_questions.htm"
               />
               <RoadMapCard
-                imgsource="dbms_tech.jpeg"
+                imgsource="ds_tech.jpeg"
                 title="50+ Data Structure and Algorithms Interview Questions"
                 source="(hackernoon)"
                 tag1=" Interview Questions"
