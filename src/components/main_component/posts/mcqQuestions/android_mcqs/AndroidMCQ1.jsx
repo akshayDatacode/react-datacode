@@ -38,13 +38,13 @@ class AndroidMCQ1 extends Component {
                   <FontAwesomeIcon icon={faHome} size="1x" />
                 </Link>
                 <Link to="/index_mcqs" className="badge badge-warning mr-1">
-                  MCQs >
+                  MCQs >>
                 </Link>
                 <Link
                   to="/index_android_mcqs"
                   className="badge badge-success mr-1"
                 >
-                  Android MCQs >
+                  Android MCQs >>
                 </Link>
                 <ScoreCard count={this.state.count} />
               </div>
@@ -175,19 +175,19 @@ class AndroidMCQ1 extends Component {
               <RightSideSection />
               <h5 className="mb-3">Recommended for you</h5>
               <RecommendPost
-                imgsource="python_mcqs.jpeg"
+                imgsource="python_mcq.jpeg"
                 RecPostHading="Python MCQs Questions"
                 link="/index_python_mcqs"
               />
               <RecommendPost
-                imgsource="java_mcqs.jpeg"
+                imgsource="java_mcq.jpeg"
                 RecPostHading="Java MCQs Questions"
                 link="/index_java_mcqs"
               />
-              <RecommendPost
-                imgsource="datacodelogo.jpeg"
-                RecPostHading="Programminig Quize Test"
-                link="/index_quize_tests"
+             <RecommendPost
+                imgsource="c_mcq.jpeg"
+                RecPostHading="C MCQs Questions"
+                link="/index_c_mcqs"
               />
             </div>
           </div>
