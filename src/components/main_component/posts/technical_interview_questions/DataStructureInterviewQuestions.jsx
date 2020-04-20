@@ -3,6 +3,12 @@ import QuestionCard from "./QuestionCard";
 import RightSideSection from "../../../right_section/RightSideSection";
 import RecommendPost from "../../../right_section/RecommendPost";
 import { Link } from "react-router-dom";
+import RoadMapCard from "../../technologies/RoadMapCard";
+import InterviewQuestionCardCarousel from "./InterviewQuestionCardCarousel";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+
+
 
 class DataStructureInterviewQuestions extends Component {
   state = {};
@@ -27,15 +33,17 @@ class DataStructureInterviewQuestions extends Component {
           <div className="row mt-5 mb-5">
             <div className="col-md-1"></div>
             <div className="col-md-7 ">
-              <Link to="/home" className="badge badge-primary mr-1">
-                Home >
-              </Link>
+            <Link to="/home" className="badge badge-primary mr-1">
+                  <FontAwesomeIcon icon={faHome} size="1x" />
+                </Link>
               <Link
                 to="/index_interview_questioins"
                 className="badge badge-warning mr-1"
               >
-                Interview Questions >
+                Interview Questions >>
               </Link>
+              <div className="row mb-5">
+                <div className="col">
               <QuestionCard
                 question={`1) What is Data Structure? Explain.`}
                 answer={`The data structure is a way that specifies how to organize and manipulate the data. It also defines the relationship between them. Some examples of Data Structures are arrays, Linked List, Stack, Queue, etc. Data Structures are the central part of many computer science algorithms as they enable the programmers to handle the data in an efficient way
@@ -119,33 +127,68 @@ Return the topmost element`}
                 answer={`An expression in which operators follow the operands is known as postfix expression. The main benefit of this form is that there is no need to group sub-expressions in parentheses or to consider operator precedence.
 The expression "a + b" will be represented as "ab+" in postfix notation.`}
               />
-            </div>
+              </div>
+              </div>
+              
+              <div className="row">
+                <div className="col">
+                  <h4 className="text-primary">For More Technologies</h4>
+                  <InterviewQuestionCardCarousel />
+                </div>
+              </div>
+            </div>    
+               
+
             <div className="col-md-4 mt-5">
               <h5 className="mb-4">Other Learning Resources</h5>
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="dbms_tech.jpeg"
+                title="Commonly Asked Data Structure Interview Questions "
+                source="(geeksforgeeks)"
+                tag1="interview-questions"
+                link="https://www.geeksforgeeks.org/commonly-asked-data-structure-interview-questions-set-1/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="dbms_tech.jpeg"
+                title="Data Structure Interview Questions"
+                source="(javatpoint)"
+                tag1=" beginners"
+                tag2=" Interview Questions"
+                link="https://www.javatpoint.com/data-structure-interview-questions"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="dbms_tech.jpeg"
+                title="20+ Most Asked Data Structures Interview Questions "
+                source="(faceprep)"
+                tag1=" Interview Questions"
+                tag2="Answers"
+                link="https://www.faceprep.in/data-structures/data-structures-interview-questions/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="dbms_tech.jpeg"
+                title="Top 50 Data Structure Interview Questions & Answers"
+                source="(guru99)"
+                tag1="Data structure"
+                tag2="Questions"
+                link="https://career.guru99.com/top-50-data-structure-interview-questions/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="dbms_tech.jpeg"
+                title="DSA Interview Questions"
+                source="(tutorials point)"
+                tag1="algorithms"
+                tag2="structures"
+                link="https://www.tutorialspoint.com/data_structures_algorithms/data_structures_algorithms_interview_questions.htm"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="dbms_tech.jpeg"
+                title="50+ Data Structure and Algorithms Interview Questions"
+                source="(hackernoon)"
+                tag1=" Interview Questions"
+                tag2="Algorithms"
+                link="https://hackernoon.com/50-data-structure-and-algorithms-interview-questions-for-programmers-b4b1ac61f5b0"
               />
+              
 
               <RightSideSection />
             </div>
