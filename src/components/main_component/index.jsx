@@ -18,6 +18,7 @@ import {
   faSwatchbook,
   faBook,
   faPuzzlePiece,
+  faChalkboardTeacher,
 } from "@fortawesome/free-solid-svg-icons";
 import FooterComponentUpper from "../footer_component/FooterComponentUpper";
 import {
@@ -52,11 +53,9 @@ class MainComponent extends Component {
                   </Link>
                   <div class="card-body text-left">
                     <h5 class="card-title ">Find</h5>
-                    <p class="card-text">
-                    From building websites to analyzing data, the choice is yours. 
-                    Find the best of the best courses to learn.
-
-                    
+                    <p class="card-text text-secondary">
+                      From building websites to analyzing data, the choice is
+                      yours. Find the best of the best courses to learn.
                     </p>
                   </div>
                   {/* <div class="card-footer border border-white bg-white text-center">
@@ -75,10 +74,10 @@ class MainComponent extends Component {
                   </Link>
                   <div class="card-body text-left">
                     <h5 class="card-title">Learn</h5>
-                    <p class="card-text">
-                    Learn How to Code; Coding skills have never been more in-demand. 
-                    Learn everything you need to take your career to the next level. 
-             
+                    <p class="card-text text-secondary">
+                      Learn How to Code; Coding skills have never been more
+                      in-demand. Learn everything you need to take your career
+                      to the next level.
                     </p>
                   </div>
                   {/* <div class="card-footer border border-white bg-white text-center">
@@ -99,8 +98,10 @@ class MainComponent extends Component {
                   </Link>
                   <div class="card-body text-left">
                     <h5 class="card-title">Practice</h5>
-                    <p class="card-text">
-                    Apply your learning with real-world projects and test your knowledge with tailor-made quizzes & MCQ's.                    </p>
+                    <p class="card-text text-secondary">
+                      Apply your learning with real-world projects and test your
+                      knowledge with tailor-made quizzes & MCQ's.{" "}
+                    </p>
                   </div>
                   {/* <div class="card-footer border border-white bg-white text-center">
                     <Link to="/index_mcqs">
@@ -133,9 +134,9 @@ class MainComponent extends Component {
                 <div className="card-body border border-white bg-white">
                   <div className="card-title text-primary text-left">
                     <h5 className="p-5">
-                      Datacode Provides you the Best Learning Content from all over the world
-                      to Improve your Skills and Make
-                      your Learning Easy and Quick.
+                      Datacode Provides you the Best Learning Content from all
+                      over the world to Improve your Skills and Make your
+                      Learning Easy and Quick.
                     </h5>
                   </div>
 
@@ -159,8 +160,9 @@ class MainComponent extends Component {
                 <div className="card-body border border-white bg-white">
                   <div className="card-title text-left text-secondary">
                     <h5 className="p-5">
-                      Datacode Collected the Best Learning Resources. 
-                     Either one is at Beginners or at Advance level you find your track and learn from it.
+                      Datacode Collected the Best Learning Resources. Either one
+                      is at Beginners or at Advance level you find your track
+                      and learn from it.
                     </h5>
                   </div>
                   <center>
@@ -189,22 +191,45 @@ class MainComponent extends Component {
             <div className="col">
               <div class="card-deck mt-5">
                 <div class="card border border-white">
-                  <Link to="/index_quize_tests">
-                    <center>
-                      <FontAwesomeIcon
-                        icon={faUserClock}
-                        color="skyblue"
-                        size="4x"
-                      />
-                    </center>
-                  </Link>
-                  <div class="card-body text-center">
-                    <h5 class="card-title ">Technical Tests</h5>
-                    <p class="card-text">Find the best Technical quizzes to test your Technical knowledge</p>
+                  <center>
+                    <FontAwesomeIcon
+                      icon={faChalkboardTeacher}
+                      size="4x"
+                      color="indigo"
+                    />
+                  </center>
+                  <div class="card-body">
+                    <h5 class="card-title"> Tutorials & Courses </h5>
+                    <p class="card-text text-secondary">
+                      Learn your favorite technology from various articles,
+                      programming questions and more Collected for you
+                    </p>
                   </div>
                   <div class="card-footer border border-white bg-white text-center">
-                    <Link to="/index_quize_tests">
-                      <h6 className="btn border border-secondary ">
+                    <Link to="/index_technologies">
+                      <h6 className="btn btn-default border border-dark ">
+                        Read More
+                      </h6>
+                    </Link>
+                  </div>
+                </div>
+                <div class="card border border-white">
+                  <center>
+                    <FontAwesomeIcon
+                      icon={faNewspaper}
+                      size="4x"
+                      color="indigo"
+                    />
+                  </center>
+                  <div class="card-body">
+                    <h5 class="card-title">Communnity Blogs</h5>
+                    <p class="card-text text-secondary">
+                      Various Blogs on various Technologies
+                    </p>
+                  </div>
+                  <div class="card-footer border border-white bg-white text-center">
+                    <Link to="/index_articles">
+                      <h6 className="btn btn-default border border-dark ">
                         Read More
                       </h6>
                     </Link>
@@ -220,34 +245,38 @@ class MainComponent extends Component {
                       />
                     </center>
                   </Link>
-                  <div class="card-body text-center">
+                  <div class="card-body text-left">
                     <h5 class="card-title">Programming Interview FAQs</h5>
-                    <p class="card-text"> Read example questions you'll be asked in a technical interview, 
-                    and read tips on the best ways to answer.</p>
+                    <p class="card-text text-secondary">
+                      {" "}
+                      Read example questions you'll be asked in a technical
+                      interview, and read tips on the best ways to answer.
+                    </p>
                   </div>
                   <div class="card-footer border border-white bg-white text-center">
                     <Link to="/index_interview_questioins">
-                      <h6 className="btn border border-secondary">Read More</h6>
+                      <h6 className="btn border border-dark">Read More</h6>
                     </Link>
                   </div>
                 </div>
                 <div class="card border border-white">
-                  <Link to="/index_mcqs">
-                    <center>
-                      <FontAwesomeIcon
-                        icon={faListAlt}
-                        color="green"
-                        size="4x"
-                      />
-                    </center>
-                  </Link>
-                  <div class="card-body text-center">
-                    <h5 class="card-title"> Programming MCQs Practice</h5>
-                    <p class="card-text">Multiple choice questions of Multiple Technologies are useful for the campus placement & tests</p>
+                  <center>
+                    <FontAwesomeIcon
+                      icon={faFileCode}
+                      size="4x"
+                      color="indigo"
+                    />
+                  </center>
+                  <div class="card-body">
+                    <h5 class="card-title"> Programming Practice CODE</h5>
+                    <p class="card-text text-secondary">
+                      Sharpen your coding skills by finding the best programming
+                      questions meant only for you.
+                    </p>
                   </div>
                   <div class="card-footer border border-white bg-white text-center">
-                    <Link to="/index_mcqs">
-                      <h6 className="btn border border-secondary text-weight-bold">
+                    <Link to="/index_programming_questions">
+                      <h6 className="btn btn-default border border-dark ">
                         Read More
                       </h6>
                     </Link>
@@ -264,124 +293,100 @@ class MainComponent extends Component {
             <div className="col p-0">
               <div class="card-deck mt-5 p-2">
                 <div class="card border border-white">
-                  <center>
-                    <FontAwesomeIcon
-                      icon={faNewspaper}
-                      size="4x"
-                      color="gold"
-                    />
-                  </center>
-                  <div class="card-body">
-                    <h5 class="card-title">Communnity Blogs</h5>
-                    <p class="card-text">
-                     Various Blogs on various Technologies
+                  <Link to="/index_mcqs">
+                    <center>
+                      <FontAwesomeIcon
+                        icon={faListAlt}
+                        color="indigo"
+                        size="4x"
+                      />
+                    </center>
+                  </Link>
+                  <div class="card-body text-left">
+                    <h5 class="card-title"> Programming MCQs Practice</h5>
+                    <p class="card-text text-secondary">
+                      Multiple choice questions of Multiple Technologies are
+                      useful for the campus placement & tests
                     </p>
                   </div>
-                  <div class="card-footer border border-white bg-white">
-                    <div className="row">
-                      <div className="col-4"></div>
-                      <div className="col text-right ">
-                        <Link to="/index_articles">
-                          <h6 className="btn btn-default border border-light text-secondary">
-                            Read More
-                          </h6>
-                        </Link>
-                      </div>
-                    </div>
+                  <div class="card-footer border border-white bg-white text-center">
+                    <Link to="/index_mcqs">
+                      <h6 className="btn border border-secondary text-weight-bold">
+                        Read More
+                      </h6>
+                    </Link>
                   </div>
                 </div>
+                <div class="card border border-white">
+                  <Link to="/index_quize_tests">
+                    <center>
+                      <FontAwesomeIcon
+                        icon={faUserClock}
+                        color="indigo"
+                        size="4x"
+                      />
+                    </center>
+                  </Link>
+                  <div class="card-body text-left">
+                    <h5 class="card-title ">Technical MCQs Tests</h5>
+                    <p class="card-text text-secondary">
+                      Find the best Technical quizzes to test your Technical
+                      knowledge
+                    </p>
+                  </div>
+                  <div class="card-footer border border-white bg-white text-center">
+                    <Link to="/index_quize_tests">
+                      <h6 className="btn border border-secondary ">
+                        Read More
+                      </h6>
+                    </Link>
+                  </div>
+                </div>
+
                 <div class="card border border-white">
                   <center>
                     <FontAwesomeIcon
                       icon={faLaptopCode}
                       size="4x"
-                      color="orange"
+                      color="indigo"
                     />
                   </center>
                   <div class="card-body">
-                    <h5 class="card-title text-secondary">
-                      Weekly Code Challange
-                    </h5>
-                    <p class="card-text">Challange your coding skills with Weekly Code Challanges</p>
+                    <h5 class="card-title">Weekly Code Challange</h5>
+                    <p class="card-text text-secondary">
+                      Challange your coding skills with Weekly Code Challanges
+                    </p>
                   </div>
-                  <div class="card-footer border border-white bg-white">
-                    <div className="row">
-                      <div className="col-4"></div>
-                      <div className="col text-right ">
-                        <Link to="/index_code_challange">
-                          <h6 className="btn btn-default border border-light text-secondary">
-                            Read More
-                          </h6>
-                        </Link>
-                      </div>
-                    </div>
+                  <div class="card-footer border border-white bg-white text-center">
+                    <Link to="/index_code_challange">
+                      <h6 className="btn btn-default border border-dark ">
+                        Read More
+                      </h6>
+                    </Link>
                   </div>
                 </div>
-                <div class="card border border-white">
-                  <center>
-                    <FontAwesomeIcon icon={faTools} size="4x" color="gray" />
-                  </center>
-                  <div class="card-body">
-                    <h5 class="card-title"> Technologies </h5>
-                    <p class="card-text">Learn your favorite technology from various articles, programming questions and more Collected for you</p>
-                  </div>
-                  <div class="card-footer border border-white bg-white">
-                    <div className="row">
-                      <div className="col-4"></div>
-                      <div className="col text-right ">
-                        <Link to="/index_technologies">
-                          <h6 className="btn btn-default border border-light text-secondary">
-                            Read More
-                          </h6>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
                 <div class="card border border-white">
                   <center>
                     <FontAwesomeIcon
                       icon={faConnectdevelop}
                       size="4x"
-                      color="green"
+                      color="indigo"
                     />
                   </center>
                   <div class="card-body">
                     <h5 class="card-title">Event & Contests</h5>
-                    <p class="card-text">find the events and Contests hosted by us and be a part of it.</p>
+                    <p class="card-text text-secondary">
+                      find the events and Contests hosted by us and be a part of
+                      it.
+                    </p>
                   </div>
-                  <div class="card-footer border border-white bg-white">
-                    <div className="row">
-                      <div className="col-4"></div>
-                      <div className="col text-right ">
-                        <Link to="/index_books">
-                          <h6 className="btn btn-default border border-light text-secondary">
-                            Read More
-                          </h6>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card border border-white">
-                  <center>
-                    <FontAwesomeIcon icon={faFileCode} size="4x" />
-                  </center>
-                  <div class="card-body">
-                    <h5 class="card-title"> Programming Practice CODE</h5>
-                    <p class="card-text">Sharpen your coding skills by finding the best programming questions meant only for you.</p>
-                  </div>
-                  <div class="card-footer border border-white bg-white">
-                    <div className="row">
-                      <div className="col-4"></div>
-                      <div className="col text-right ">
-                        <Link to="/index_programming_questions">
-                          <h6 className="btn btn-default border border-light text-secondary">
-                            Read More
-                          </h6>
-                        </Link>
-                      </div>
-                    </div>
+                  <div class="card-footer border border-white bg-white text-center">
+                    <Link to="/index_books">
+                      <h6 className="btn btn-default border border-dark ">
+                        Read More
+                      </h6>
+                    </Link>
                   </div>
                 </div>
               </div>

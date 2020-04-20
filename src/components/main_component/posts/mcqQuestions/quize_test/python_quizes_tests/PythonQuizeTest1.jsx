@@ -35,7 +35,7 @@ class PythonQuizeTest1 extends Component {
   render() {
     return (
       <>
-        <HeaderBannerSection imgsource="pythonmcq.jpeg" />
+        <HeaderBannerSection imgsource="headerdark.jpeg" />
 
         <div class="container-fluid">
           <Link to="/home" className="badge badge-primary mr-1">
@@ -75,7 +75,7 @@ class PythonQuizeTest1 extends Component {
                 v4="Python can be used to generate dynamic web pages"
                 counter={this.counter}
               />
-              
+
               <QuizeTest
                 quizeNo="3"
                 question="What symbol can you use to comment out one line of code?"
@@ -86,7 +86,7 @@ class PythonQuizeTest1 extends Component {
                 v4="#"
                 counter={this.counter}
               />
-              
+
               <QuizeTest
                 quizeNo="4"
                 question="How do you create a variable “a” that is equal to 2?"
@@ -97,7 +97,7 @@ class PythonQuizeTest1 extends Component {
                 v4="variable a = 2"
                 counter={this.counter}
               />
-                  <QuizeTest
+              <QuizeTest
                 quizeNo="5"
                 question=" How would you cast the string variable “a” that is equal to “2” into the integer 2?"
                 correctAnswer="int(a)
@@ -108,7 +108,7 @@ class PythonQuizeTest1 extends Component {
                 v4="castToInteger(a)"
                 counter={this.counter}
               />
-                  <QuizeTest
+              <QuizeTest
                 quizeNo="6"
                 question="Which of the following is not a valid assignment operator?"
                 correctAnswer="X="
@@ -118,7 +118,7 @@ class PythonQuizeTest1 extends Component {
                 v4="X="
                 counter={this.counter}
               />
-              
+
               <QuizeTest
                 quizeNo="7"
                 question="Which one of the following is a valid Python if statement"
@@ -130,7 +130,7 @@ class PythonQuizeTest1 extends Component {
                 v4="if a >= 22"
                 counter={this.counter}
               />
-              
+
               <QuizeTest
                 quizeNo="8"
                 question="What keyword would you use to add an alternative condition to an if statement?"
@@ -141,7 +141,7 @@ class PythonQuizeTest1 extends Component {
                 v4=" None of the above"
                 counter={this.counter}
               />
-              
+
               <QuizeTest
                 quizeNo="9"
                 question="Which of the following is a valid way to start a function in Python?"
@@ -154,7 +154,7 @@ class PythonQuizeTest1 extends Component {
                 v4="function someFunction():"
                 counter={this.counter}
               />
-              
+
               <QuizeTest
                 quizeNo="10"
                 question="Which of the following is a valid for loop in Python?"
@@ -166,10 +166,6 @@ class PythonQuizeTest1 extends Component {
                 v4="for a in range(1,3):"
                 counter={this.counter}
               />
-              
-              
-              
-             
             </div>
           </div>
         </div>

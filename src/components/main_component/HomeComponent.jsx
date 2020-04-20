@@ -11,7 +11,7 @@ class HomeComponent extends Component {
   render() {
     return (
       <>
-        <HeaderBannerSection imgsource="start_learning_together.jpeg" />
+        <HeaderBannerSection imgsource="headerlight.jpeg" />
         {/* Index Posts */}
         <div className="row">
           <div className="col-md-1"></div>
