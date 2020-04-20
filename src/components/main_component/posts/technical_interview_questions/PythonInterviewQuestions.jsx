@@ -2,6 +2,11 @@ import React, { Component } from "react";
 import QuestionCard from "./QuestionCard";
 import RecommendPost from "../../../right_section/RecommendPost";
 import RightSideSection from "../../../right_section/RightSideSection";
+import { Link } from "react-router-dom";
+import RoadMapCard from "../../technologies/RoadMapCard";
+import InterviewQuestionCardCarousel from "./InterviewQuestionCardCarousel";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
 class PythonInterviewQuestions extends Component {
   state = {};
   componentDidMount() {
@@ -22,10 +27,20 @@ class PythonInterviewQuestions extends Component {
               </div>
             </div>
           </div>
-          <div className="row mt-5">
+          <div className="row mt-5 mb-5">
             <div className="col-md-1"></div>
-
-            <div className="col-md-7">
+            <div className="col-md-7 ">
+            <Link to="/home" className="badge badge-primary mr-1">
+                  <FontAwesomeIcon icon={faHome} size="1x" />
+                </Link>
+              <Link
+                to="/index_interview_questioins"
+                className="badge badge-warning mr-1"
+              >
+                Interview Questions >>
+              </Link>
+              <div className="row mb-5">
+                <div className="col">
               <QuestionCard
                 question={`1) What is Python? What are the benefits of using Python?`}
                 answer={`Python is a programming language with objects, modules, threads, exceptions and automatic memory management. The benefits of pythons are that it is simple and easy, portable, extensible, built-in data structure and it is open source.`}
@@ -91,33 +106,69 @@ class PythonInterviewQuestions extends Component {
              `}
               />
             </div>
+            </div>
+              
+              <div className="row">
+                <div className="col">
+                  <h4 className="text-primary">For More Technologies</h4>
+                  <InterviewQuestionCardCarousel />
+                </div>
+              </div>
+            </div>    
+               
+
+
             <div className="col-md-4 mt-5">
               <h5 className="mb-4">Other Learning Resources</h5>
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="python_tech.jpeg"
+                title="Python Interview Questions and Answers (2020)"
+                source="(interview bit)"
+                tag1="interview"
+                tag2="python"
+                link="https://www.interviewbit.com/python-interview-questions/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+               <RoadMapCard
+                imgsource="python_tech.jpeg"
+                title="Top 100 Python Interview Questions & Answers For 2020 ..."
+                source="(edureka)"
+                tag1="Python "
+                tag2="Interview Questions"
+                link="https://www.edureka.co/blog/interview-questions/python-interview-questions/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+               <RoadMapCard
+                imgsource="python_tech.jpeg"
+                title="150+ Python Interview Questions and Answers for Freshers"
+                source="(data-flair.training)"
+                tag1="Interview"
+                tag2=" Python"
+                link="https://data-flair.training/blogs/top-python-interview-questions-answer/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+               <RoadMapCard
+                imgsource="python_tech.jpeg"
+                title="Top 50+ Python Interview Questions "
+                source="(javatpoint)"
+                tag1=" Python"
+                tag2="interview questions"
+                link="https://www.javatpoint.com/python-interview-questions"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+               <RoadMapCard
+                imgsource="python_tech.jpeg"
+                title="53 Python Interview Questions and Answers"
+                source="(towards datascience)"
+                tag1="interview"
+                tag2="python"
+                link="https://towardsdatascience.com/53-python-interview-questions-and-answers-91fa311eec3f"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+                 <RoadMapCard
+                imgsource="python_tech.jpeg"
+                title="50 Top Python Interview Questions & Answers "
+                source="(hackr.io)"
+                tag1=" latest"
+                tag2="Questions"
+                link="https://hackr.io/blog/python-interview-questions"
               />
-
+             
               <RightSideSection />
             </div>
           </div>
