@@ -3,6 +3,10 @@ import RightSideSection from "../../../right_section/RightSideSection";
 import QuestionCard from "./QuestionCard";
 import RecommendPost from "../../../right_section/RecommendPost";
 import { Link } from "react-router-dom";
+import RoadMapCard from "../../technologies/RoadMapCard";
+import InterviewQuestionCardCarousel from "./InterviewQuestionCardCarousel";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 class OOPsInterviewQuestions extends Component {
   state = {};
@@ -28,18 +32,21 @@ class OOPsInterviewQuestions extends Component {
             <div className="col-md-1"></div>
             <div className="col-md-7">
             <Link to="/home" className="badge badge-primary mr-1">
-                Home >
-              </Link>
+                  <FontAwesomeIcon icon={faHome} size="1x" />
+                </Link>
               <Link
                 to="/index_interview_questioins"
                 className="badge badge-warning mr-1"
               >
-                Interview Questions >
+                Interview Questions >>
               </Link>
+              <div className="row mb-5">
+                <div className="col">
               <QuestionCard
                 question={`1. Can you explain the different types of Inheritance?`}
                 answer={`There are four main types of Inheritance in OOPS as listed below:
 
+                
                 • Single Inheritance: This includes one base class along with one derived class.
                 • Hierarchical Inheritance: This inheritance class includes one base class as well as multiple derived classes of the same base class.
                 • Multilevel Inheritance: This includes a class derived from a derived class.
@@ -206,32 +213,59 @@ class OOPsInterviewQuestions extends Component {
                 answer={`The main difference between Association and Dependency is in case of Association one class has an attribute or member variable of the other class type but in case of Dependency a method takes an argument of the other class type or a method has a local variable of the other class type.`}
               />
             </div>
+            </div>
+              
+              <div className="row">
+                <div className="col">
+                  <h4 className="text-primary">For More Technologies</h4>
+                  <InterviewQuestionCardCarousel />
+                </div>
+              </div>
+            </div>    
+               
             <div className="col-md-4 mt-5">
               <h5 className="mb-4">Other Learning Resources</h5>
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="oops_tech.jpeg"
+                title="OOPs Interview Questions"
+                source="(edureka)"
+                tag1="OOPs"
+                tag2="Interview Questions"
+                link="https://www.edureka.co/blog/interview-questions/oops-interview-questions/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+             <RoadMapCard
+                imgsource="oops_tech.jpeg"
+                title="Commonly Asked OOP Interview Questions "
+                source="(geeksforgeeks)"
+                tag1="Common"
+                tag2="OOP"
+                link="https://www.geeksforgeeks.org/commonly-asked-oop-interview-questions/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="oops_tech.jpeg"
+                title="Top 20+ OOPS Interview Questions and Answers in 2020"
+                source="(best interview question)"
+                tag1="oops interview"
+                tag2="answers"
+                link="https://www.bestinterviewquestion.com/oops-interview-questions"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="oops_tech.jpeg"
+                title="TOP 250+ OOPS Interview Questions and Answer"
+                source="(wisdom jobs)"
+                tag1=" OOPS"
+                tag2="Interview Questions"
+                link="https://www.wisdomjobs.com/e-university/oops-interview-questions.html"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="oops_tech.jpeg"
+                title="Top 30 OOPs Interview Questions "
+                source="(spring people)"
+                tag1="Top 30 "
+                tag2="OOP"
+                link="https://www.springpeople.com/blog/30-oops-interview-questions-and-answers-2018/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
-              />
+   
 
               <RightSideSection />
             </div>
