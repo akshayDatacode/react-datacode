@@ -180,15 +180,7 @@ class JavaInterviewQuestions extends Component {
                 link="https://howtodoinjava.com/java-interview-questions/"
               />
 
-              <RoadMapCard
-                imgsource="java_tech.jpeg"
-                title=""
-                source="()"
-                tag1=""
-                tag2=""
-                link=""
-              />
-              
+          
 
               <RightSideSection />
             </div>
