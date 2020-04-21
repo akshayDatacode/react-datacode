@@ -2,6 +2,11 @@ import React, { Component } from "react";
 import QuestionCard from "./QuestionCard";
 import RecommendPost from "../../../right_section/RecommendPost";
 import RightSideSection from "../../../right_section/RightSideSection";
+import { Link } from "react-router-dom";
+import RoadMapCard from "../../technologies/RoadMapCard";
+import InterviewQuestionCardCarousel from "./InterviewQuestionCardCarousel";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
 class ReactInterviewQuestions extends Component {
   state = {};
   componentDidMount() {
@@ -22,10 +27,20 @@ class ReactInterviewQuestions extends Component {
               </div>
             </div>
           </div>
-          <div className="row mt-5">
+          <div className="row mt-5 mb-5">
             <div className="col-md-1"></div>
-
-            <div className="col-md-7">
+            <div className="col-md-7 ">
+            <Link to="/home" className="badge badge-primary mr-1">
+                  <FontAwesomeIcon icon={faHome} size="1x" />
+                </Link>
+              <Link
+                to="/index_interview_questioins"
+                className="badge badge-warning mr-1"
+              >
+                Interview Questions >>
+              </Link>
+              <div className="row mb-5">
+                <div className="col">
               <QuestionCard
                 question={`1.  Differentiate between Real DOM and Virtual DOM.
                 `}
@@ -110,7 +125,7 @@ class ReactInterviewQuestions extends Component {
                 `}
               />
               <QuestionCard
-                question={`12. Explain the purpose of render() in React.
+                question={`10. Explain the purpose of render() in React.
                 `}
                 answer={`Each React component must have a render() mandatorily. It returns a single React element which is the representation of the native DOM component. If more than one HTML element needs to be rendered, then they must be grouped together inside one enclosing tag such as <form>, <group>,<div> etc. This function must be kept pure i.e., it must return the same result each time it is invoked.
 
@@ -119,31 +134,64 @@ class ReactInterviewQuestions extends Component {
      
      
             </div>
+            </div>
+              
+              <div className="row">
+                <div className="col">
+                  <h4 className="text-primary">For More Technologies</h4>
+                  <InterviewQuestionCardCarousel />
+                </div>
+              </div>
+            </div> 
             <div className="col-md-4 mt-5">
               <h5 className="mb-4">Other Learning Resources</h5>
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="react_tech.jpeg"
+                title="React Interview Questions & Answers "
+                source="(hackr.io)"
+                tag1="react"
+                tag2=" Interview Questions"
+                link="https://hackr.io/blog/react-interview-questions"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="react_tech.jpeg"
+                title="21 Essential React.js Interview Questions and Answers "
+                source="(toptal)"
+                tag1="react"
+                tag2=" Interview Questions"
+                link="https://www.toptal.com/react/interview-questions"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="react_tech.jpeg"
+                title="39+ Advanced React Interview Questions (SOLVED) "
+                source="(fullstack.cafe)"
+                tag1="react"
+                tag2=" Interview Questions"
+                link="https://www.fullstack.cafe/blog/react-js-interview-questions"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="react_tech.jpeg"
+                title="Top 50 React JS Interview Questions"
+                source="(mindmajix.com)"
+                tag1="react"
+                tag2=" Interview Questions"
+                link="https://mindmajix.com/reactjs-interview-questions"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="react_tech.jpeg"
+                title="React Interview Questions "
+                source="(tylermcginnis.com)"
+                tag1="react"
+                tag2=" Interview Questions"
+                link="https://tylermcginnis.com/react-interview-questions/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="react_tech.jpeg"
+                title="Frequently asked: React JS Interview Questions and Answers"
+                source="(medium.com)"
+                tag1="react"
+                tag2=" Interview Questions"
+                link="https://medium.com/@vigowebs/frequently-asked-react-js-interview-questions-and-answers-36f3dd99f486"
               />
 
               <RightSideSection />

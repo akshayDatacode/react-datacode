@@ -2,6 +2,12 @@ import React, { Component } from "react";
 import QuestionCard from "./QuestionCard";
 import RecommendPost from "../../../right_section/RecommendPost";
 import RightSideSection from "../../../right_section/RightSideSection";
+import { Link } from "react-router-dom";
+import RoadMapCard from "../../technologies/RoadMapCard";
+import InterviewQuestionCardCarousel from "./InterviewQuestionCardCarousel";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+
 class AngularInterviewQuestions extends Component {
   state = {};
   componentDidMount() {
@@ -22,10 +28,20 @@ class AngularInterviewQuestions extends Component {
               </div>
             </div>
           </div>
-          <div className="row mt-5">
+          <div className="row mt-5 mb-5">
             <div className="col-md-1"></div>
-
-            <div className="col-md-7">
+            <div className="col-md-7 ">
+            <Link to="/home" className="badge badge-primary mr-1">
+                  <FontAwesomeIcon icon={faHome} size="1x" />
+                </Link>
+              <Link
+                to="/index_interview_questioins"
+                className="badge badge-warning mr-1"
+              >
+                Interview Questions >>
+              </Link>
+              <div className="row mb-5">
+                <div className="col">
               <QuestionCard
                 question={`1) What is AngularJS?
 
@@ -131,33 +147,66 @@ class AngularInterviewQuestions extends Component {
               />
              
             </div>
+            </div>
+              
+              <div className="row">
+                <div className="col">
+                  <h4 className="text-primary">For More Technologies</h4>
+                  <InterviewQuestionCardCarousel />
+                </div>
+              </div>
+            </div>    
+
             <div className="col-md-4 mt-5">
               <h5 className="mb-4">Other Learning Resources</h5>
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+             <RoadMapCard
+                imgsource="angular_tech.jpeg"
+                title="Top 50 Angular Interview Questions & Answers"
+                source="(hackr.io/)"
+                tag1="angular"
+                tag2=" Interview Questions"
+                link="https://hackr.io/blog/angular-interview-questions"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+                <RoadMapCard
+                imgsource="angular_tech.jpeg"
+                title="Top Angular Interview Questions You Must Prepare For 2020"
+                source="(edureka)"
+                tag1="angular"
+                tag2=" Interview Questions"
+                link="https://www.edureka.co/blog/interview-questions/top-angularjs-interview-questions-2016/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+                <RoadMapCard
+                imgsource="angular_tech.jpeg"
+                title="40+ Top Angular 6 Interview Questions"
+                source="(best interview question)"
+                tag1="angular"
+                tag2=" Interview Questions"
+                link="https://www.bestinterviewquestion.com/angular-6-interview-questions"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+                <RoadMapCard
+                imgsource="angular_tech.jpeg"
+                title="26 Top Angular 8 Interview Questions And Answers"
+                source="(fullstack.cafe)"
+                tag1="angular"
+                tag2=" Interview Questions"
+                link="https://www.fullstack.cafe/blog/angular-8-interview-questions"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+                <RoadMapCard
+                imgsource="angular_tech.jpeg"
+                title="AngularJS Interview Questions"
+                source="(tutorialspoint)"
+                tag1="angular"
+                tag2=" Interview Questions"
+                link="https://www.tutorialspoint.com/angularjs/angularjs_interview_questions.htm"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+                <RoadMapCard
+                imgsource="angular_tech.jpeg"
+                title="Top 30 Interview Questions And Answers On Angular 5 "
+                source="(greycampus)"
+                tag1="angular"
+                tag2=" Interview Questions"
+                link="https://www.greycampus.com/blog/programming/top-30-interview-questions-and-answers-on-angular-5"
               />
-
               <RightSideSection />
             </div>
           </div>
