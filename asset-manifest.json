@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.2749690b.chunk.css",
-    "main.js": "/static/js/main.c5388f7d.chunk.js",
-    "main.js.map": "/static/js/main.c5388f7d.chunk.js.map",
+    "main.js": "/static/js/main.7d7498fa.chunk.js",
+    "main.js.map": "/static/js/main.7d7498fa.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4a1f94a7.js",
     "runtime-main.js.map": "/static/js/runtime-main.4a1f94a7.js.map",
     "static/css/2.89f067aa.chunk.css": "/static/css/2.89f067aa.chunk.css",
-    "static/js/2.3aa9ec63.chunk.js": "/static/js/2.3aa9ec63.chunk.js",
-    "static/js/2.3aa9ec63.chunk.js.map": "/static/js/2.3aa9ec63.chunk.js.map",
+    "static/js/2.be2bdbb3.chunk.js": "/static/js/2.be2bdbb3.chunk.js",
+    "static/js/2.be2bdbb3.chunk.js.map": "/static/js/2.be2bdbb3.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.3a3e583c540aaf6021f99d5c593b0cb0.js": "/precache-manifest.3a3e583c540aaf6021f99d5c593b0cb0.js",
+    "precache-manifest.66f561ecb2f6c3e9231ad09e51e5377c.js": "/precache-manifest.66f561ecb2f6c3e9231ad09e51e5377c.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.89f067aa.chunk.css.map": "/static/css/2.89f067aa.chunk.css.map",
     "static/css/main.2749690b.chunk.css.map": "/static/css/main.2749690b.chunk.css.map",
-    "static/js/2.3aa9ec63.chunk.js.LICENSE.txt": "/static/js/2.3aa9ec63.chunk.js.LICENSE.txt",
+    "static/js/2.be2bdbb3.chunk.js.LICENSE.txt": "/static/js/2.be2bdbb3.chunk.js.LICENSE.txt",
     "static/media/Cover Photo (3).png": "/static/media/Cover Photo (3).6bc137af.png",
     "static/media/Green Disease Prevention Instagram Post.png": "/static/media/Green Disease Prevention Instagram Post.ee3b12ec.png",
     "static/media/Shootpy_W Cover Page (1).jpg": "/static/media/Shootpy_W Cover Page (1).39eabcb7.jpg",
@@ -154,6 +154,7 @@
     "static/media/oops_quize.jpeg": "/static/media/oops_quize.222eeb68.jpeg",
     "static/media/oops_tech.jpeg": "/static/media/oops_tech.4e5d2c8b.jpeg",
     "static/media/os_interview_questions.jpeg": "/static/media/os_interview_questions.c775277d.jpeg",
+    "static/media/os_tech.jpeg": "/static/media/os_tech.f7f30a4d.jpeg",
     "static/media/programming_blog.jpeg": "/static/media/programming_blog.770d5ca0.jpeg",
     "static/media/programming_boooks.jpeg": "/static/media/programming_boooks.f5e5cba6.jpeg",
     "static/media/programming_practices.jpeg": "/static/media/programming_practices.3a7c54ac.jpeg",
@@ -172,6 +173,7 @@
     "static/media/pythonmcq.jpeg": "/static/media/pythonmcq.429f9e69.jpeg",
     "static/media/pythontech.jpeg": "/static/media/pythontech.48a04521.jpeg",
     "static/media/rdbms_interview_questions.jpeg": "/static/media/rdbms_interview_questions.f19cdaa0.jpeg",
+    "static/media/rdbms_tech.jpeg": "/static/media/rdbms_tech.73413115.jpeg",
     "static/media/react.jpeg": "/static/media/react.db81b082.jpeg",
     "static/media/react_interview_questions.jpeg": "/static/media/react_interview_questions.62d48834.jpeg",
     "static/media/react_js_node_redux.jpeg": "/static/media/react_js_node_redux.d7dcb259.jpeg",
@@ -211,8 +213,8 @@
   "entrypoints": [
     "static/js/runtime-main.4a1f94a7.js",
     "static/css/2.89f067aa.chunk.css",
-    "static/js/2.3aa9ec63.chunk.js",
+    "static/js/2.be2bdbb3.chunk.js",
     "static/css/main.2749690b.chunk.css",
-    "static/js/main.c5388f7d.chunk.js"
+    "static/js/main.7d7498fa.chunk.js"
   ]
 }

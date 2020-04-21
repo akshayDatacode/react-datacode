@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "204f099f2bac65cf0f289e91a7e3ba4a",
+    "revision": "1d6d7d6feab2abbaf68f6f5eef653bf6",
     "url": "/index.html"
   },
   {
-    "revision": "6f3b3254460f4cc74167",
+    "revision": "531c937c733e6a0ead50",
     "url": "/static/css/2.89f067aa.chunk.css"
   },
   {
-    "revision": "b7a52e00804cdc03f1a3",
+    "revision": "8be26897a2d126b3f0e4",
     "url": "/static/css/main.2749690b.chunk.css"
   },
   {
-    "revision": "6f3b3254460f4cc74167",
-    "url": "/static/js/2.3aa9ec63.chunk.js"
+    "revision": "531c937c733e6a0ead50",
+    "url": "/static/js/2.be2bdbb3.chunk.js"
   },
   {
     "revision": "ae54f939c6e84f9ec4d4c4cd8100d77f",
-    "url": "/static/js/2.3aa9ec63.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.be2bdbb3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b7a52e00804cdc03f1a3",
-    "url": "/static/js/main.c5388f7d.chunk.js"
+    "revision": "8be26897a2d126b3f0e4",
+    "url": "/static/js/main.7d7498fa.chunk.js"
   },
   {
     "revision": "ba88f149e390315adcbe",
@@ -588,6 +588,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/os_interview_questions.c775277d.jpeg"
   },
   {
+    "revision": "f7f30a4dc6f5456c37f46bd2be9c231d",
+    "url": "/static/media/os_tech.f7f30a4d.jpeg"
+  },
+  {
     "revision": "770d5ca0c10e563f9ccc953718a01b9e",
     "url": "/static/media/programming_blog.770d5ca0.jpeg"
   },
@@ -658,6 +662,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f19cdaa01883467303ddcbad5140342d",
     "url": "/static/media/rdbms_interview_questions.f19cdaa0.jpeg"
+  },
+  {
+    "revision": "7341311563e2c1869a38801150627c64",
+    "url": "/static/media/rdbms_tech.73413115.jpeg"
   },
   {
     "revision": "db81b082197d6a87c57f1ab9f053ca60",
