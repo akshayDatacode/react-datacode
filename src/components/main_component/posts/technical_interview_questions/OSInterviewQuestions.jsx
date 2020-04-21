@@ -139,42 +139,42 @@ Macro Kernel: Macro Kernel is a combination of micro and monolithic kernel.
             <div className="col-md-4 mt-5">
               <h5 className="mb-4">Other Learning Resources</h5>
               <RoadMapCard
-                imgsource="ds_tech.jpeg"
+                imgsource="os_tech.jpeg"
                 title="Commonly Asked Operating Systems Interview Questions "
                 source="(OS)"
                 tag1="interview-questions"
                 link="https://www.geeksforgeeks.org/commonly-asked-operating-systems-interview-questions-set-1/"
               />
              <RoadMapCard
-                imgsource="ds_tech.jpeg"
+                imgsource="os_tech.jpeg"
                 title="90 Operating System Interview Questions and Answers "
                 source="(careerride)"
                 tag1="interview-questions"
                 link="https://www.careerride.com/Operating-System-Interview-Questions.aspx"
               />
               <RoadMapCard
-                imgsource="ds_tech.jpeg"
+                imgsource="os_tech.jpeg"
                 title="Top 10 OS Interview Questions and Answers {Updated for 2020}"
                 source="(os)"
                 tag1="interview-questions"
                 link="https://www.educba.com/os-interview-questions/"
               />
               <RoadMapCard
-                imgsource="ds_tech.jpeg"
+                imgsource="os_tech.jpeg"
                 title="Operating Systems - Interview Questions and Answers "
                 source="(indiabix)"
                 tag1="interview-questions"
                 link="https://www.indiabix.com/technical/operating-systems/"
               />
               <RoadMapCard
-                imgsource="ds_tech.jpeg"
+                imgsource="os_tech.jpeg"
                 title="Top 40 Operating System Interview Questions & Answers"
                 source="(techgeekbuzz)"
                 tag1="interview-questions"
                 link="http://www.techgeekbuzz.com/os-interview-questions/"
               />
               <RoadMapCard
-                imgsource="ds_tech.jpeg"
+                imgsource="os_tech.jpeg"
                 title="OS Exams Questions with Answers "
                 source="(tutorials point)"
                 tag1="interview-questions"
