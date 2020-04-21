@@ -40,7 +40,7 @@ class MainComponent extends Component {
         <div className="container-fluid p-0">
           <div className="row">
             <div className="col">
-              <div class="card-deck mt-5 ml-5 mr-5 pr-5 pl-5">
+              <div class="card-deck mt-5 ml-md-5 mr-md-5 pr-md-5 pl-md-5">
                 <div class="card border border-white">
                   <Link to="/index_quize_tests">
                     <center>
