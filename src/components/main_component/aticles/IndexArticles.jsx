@@ -57,11 +57,6 @@ class IndexArticles extends Component {
                   title="Documentation Blogs"
                   link="/documentation_blog"
                 />
-                <PostCard
-                  imgsource="machine_blog.jpeg"
-                  title="Machine Learning Blogs"
-                  link="/machine_learning_blog"
-                />
               </div>
               <h4 className="text-secondary mt-3">For More Community Blogs</h4>
               <ArticleCardCarousel />
