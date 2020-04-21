@@ -3,6 +3,11 @@ import QuestionCard from "./QuestionCard";
 import RightSideSection from "../../../right_section/RightSideSection";
 import RecommendPost from "../../../right_section/RecommendPost";
 import { Link } from "react-router-dom";
+import RoadMapCard from "../../technologies/RoadMapCard";
+import InterviewQuestionCardCarousel from "./InterviewQuestionCardCarousel";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+
 
 class CNInterviewQuestions extends Component {
   state = {};
@@ -27,15 +32,17 @@ class CNInterviewQuestions extends Component {
           <div className="row mt-5 mb-5">
             <div className="col-md-1"></div>
             <div className="col-md-7 ">
-              <Link to="/home" className="badge badge-primary mr-1">
-                Home >
-              </Link>
+            <Link to="/home" className="badge badge-primary mr-1">
+                  <FontAwesomeIcon icon={faHome} size="1x" />
+                </Link>
               <Link
                 to="/index_interview_questioins"
                 className="badge badge-warning mr-1"
               >
-                Interview Questions >
+                Interview Questions >>
               </Link>
+              <div className="row mb-5">
+                <div className="col">
               <QuestionCard
                 question={`Q #1) What is a Network?`}
                 answer={`Answer: Network is defined as a set of devices connected to each other using a physical transmission medium.
@@ -123,33 +130,61 @@ For Example, A computer network is a group of computers connected with each othe
         In bi-directional communication, the HTTPs protocol encrypts the communication so that the tampering of the data gets avoided. With the help of an SSL certificate, it verifies if the requested server connection is a valid connection or not. HTTPs use TCP with port 443.`}
               />
             </div>
+            </div>
+              
+              <div className="row">
+                <div className="col">
+                  <h4 className="text-primary">For More Technologies</h4>
+                  <InterviewQuestionCardCarousel />
+                </div>
+              </div>
+            </div>    
+               
             <div className="col-md-4 mt-5">
               <h5 className="mb-4">Other Learning Resources</h5>
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="cn_tech.jpeg"
+                title="Top 47 Networking Interview Questions"
+                source="(javatpoint)"
+                tag1="Interview Questions"
+                link="https://www.javatpoint.com/networking-interview-questions"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+             <RoadMapCard
+                imgsource="cn_tech.jpeg"
+                title="Commonly asked Computer Networks Interview Questions"
+                source="()"
+                tag1="Networks"
+                tag2="Questions"
+                link="https://www.geeksforgeeks.org/commonly-asked-computer-networks-interview-questions-set-1/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+               <RoadMapCard
+                imgsource="cn_tech.jpeg"
+                title="Hardware and Networking Interview Questions & Answers"
+                source="(learning.naukri)"
+                tag1=" interview"
+                link="https://learning.naukri.com/articles/networking-interview-questions-answers/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+               <RoadMapCard
+                imgsource="cn_tech.jpeg"
+                title="TOP 250+ Networking Interview Questions and Answers "
+                source="(wisdom jobs)"
+                tag1="Computer Network"
+                link="https://www.wisdomjobs.com/e-university/networking-interview-questions.html"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+               <RoadMapCard
+                imgsource="cn_tech.jpeg"
+                title="10 Basic Interview Questions and Answers "
+                source="(tecmint)"
+                tag1="computer  network "
+                link="https://www.tecmint.com/networking-interview-questions/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+               <RoadMapCard
+                imgsource="cn_tech.jpeg"
+                title="Networking Interview Questions updated on Apr 2020"
+                source="(placement.freshersworld)"
+                tag1="network "
+                link="http://placement.freshersworld.com/networking-interview-questions/33121835176"
               />
-
               <RightSideSection />
             </div>
           </div>

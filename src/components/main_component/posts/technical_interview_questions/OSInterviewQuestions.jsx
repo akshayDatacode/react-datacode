@@ -3,6 +3,11 @@ import QuestionCard from "./QuestionCard";
 import RightSideSection from "../../../right_section/RightSideSection";
 import RecommendPost from "../../../right_section/RecommendPost";
 import { Link } from "react-router-dom";
+import RoadMapCard from "../../technologies/RoadMapCard";
+import InterviewQuestionCardCarousel from "./InterviewQuestionCardCarousel";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+
 
 class OSInterviewQuestions extends Component {
   state = {};
@@ -27,15 +32,17 @@ class OSInterviewQuestions extends Component {
           <div className="row mt-5 mb-5">
             <div className="col-md-1"></div>
             <div className="col-md-7 ">
-              <Link to="/home" className="badge badge-primary mr-1">
-                Home >
-              </Link>
+            <Link to="/home" className="badge badge-primary mr-1">
+                  <FontAwesomeIcon icon={faHome} size="1x" />
+                </Link>
               <Link
                 to="/index_interview_questioins"
                 className="badge badge-warning mr-1"
               >
-                Interview Questions >
+                Interview Questions >>
               </Link>
+              <div className="row mb-5">
+                <div className="col">
               <QuestionCard
                 question={`1) What is an operating system?
 `}
@@ -118,33 +125,62 @@ Macro Kernel: Macro Kernel is a combination of micro and monolithic kernel.
 `}
               />
             </div>
+
+            </div>
+              
+              <div className="row">
+                <div className="col">
+                  <h4 className="text-primary">For More Technologies</h4>
+                  <InterviewQuestionCardCarousel />
+                </div>
+              </div>
+            </div> 
+
             <div className="col-md-4 mt-5">
               <h5 className="mb-4">Other Learning Resources</h5>
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="ds_tech.jpeg"
+                title="Commonly Asked Operating Systems Interview Questions "
+                source="(OS)"
+                tag1="interview-questions"
+                link="https://www.geeksforgeeks.org/commonly-asked-operating-systems-interview-questions-set-1/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+             <RoadMapCard
+                imgsource="ds_tech.jpeg"
+                title="90 Operating System Interview Questions and Answers "
+                source="(careerride)"
+                tag1="interview-questions"
+                link="https://www.careerride.com/Operating-System-Interview-Questions.aspx"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="ds_tech.jpeg"
+                title="Top 10 OS Interview Questions and Answers {Updated for 2020}"
+                source="(os)"
+                tag1="interview-questions"
+                link="https://www.educba.com/os-interview-questions/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="ds_tech.jpeg"
+                title="Operating Systems - Interview Questions and Answers "
+                source="(indiabix)"
+                tag1="interview-questions"
+                link="https://www.indiabix.com/technical/operating-systems/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="ds_tech.jpeg"
+                title="Top 40 Operating System Interview Questions & Answers"
+                source="(techgeekbuzz)"
+                tag1="interview-questions"
+                link="http://www.techgeekbuzz.com/os-interview-questions/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="ds_tech.jpeg"
+                title="OS Exams Questions with Answers "
+                source="(tutorials point)"
+                tag1="interview-questions"
+                link="https://www.tutorialspoint.com/operating_system/os_exams_questions_answers.htm"
               />
-
+              
               <RightSideSection />
             </div>
           </div>
