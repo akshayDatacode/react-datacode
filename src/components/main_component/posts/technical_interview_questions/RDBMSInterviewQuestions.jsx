@@ -3,6 +3,10 @@ import QuestionCard from "./QuestionCard";
 import RightSideSection from "../../../right_section/RightSideSection";
 import RecommendPost from "../../../right_section/RecommendPost";
 import { Link } from "react-router-dom";
+import RoadMapCard from "../../technologies/RoadMapCard";
+import InterviewQuestionCardCarousel from "./InterviewQuestionCardCarousel";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 class RDBMSInterviewQuestions extends Component {
   state = {};
@@ -27,15 +31,17 @@ class RDBMSInterviewQuestions extends Component {
           <div className="row mt-5 mb-5">
             <div className="col-md-1"></div>
             <div className="col-md-7 ">
-              <Link to="/home" className="badge badge-primary mr-1">
-                Home >
-              </Link>
+            <Link to="/home" className="badge badge-primary mr-1">
+                  <FontAwesomeIcon icon={faHome} size="1x" />
+                </Link>
               <Link
                 to="/index_interview_questioins"
                 className="badge badge-warning mr-1"
               >
-                Interview Questions >
+                Interview Questions >>
               </Link>
+              <div className="row mb-5">
+                <div className="col">
               <QuestionCard
                 question={`1. What are the different features of an RDBMS?
 `}
@@ -121,31 +127,64 @@ class RDBMSInterviewQuestions extends Component {
                 answer={`Input-output, Security, Language Processing, Storage Management, Logging and Recovery, Distribution Control, Transaction Control, Memory Management.`}
               />
             </div>
+            </div>
+              <div className="row">
+                <div className="col">
+                  <h4 className="text-primary">For More Technologies</h4>
+                  <InterviewQuestionCardCarousel />
+                </div>
+              </div>
+            </div>
+
             <div className="col-md-4 mt-5">
               <h5 className="mb-4">Other Learning Resources</h5>
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+                <RoadMapCard
+                imgsource="rdbms_tech.jpeg"
+                title="Top 15+ rdbms interview questions and answers in 2020"
+                source="(bestinterviewquestion)"
+                tag1="rdbms"
+                tag2="interview "
+                link="https://www.bestinterviewquestion.com/rdbms-interview-questions"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="rdbms_tech.jpeg"
+                title="TOP 250+ RDBMS Interview Questions and Answers "
+                source="(wisdomjobs)"
+                tag1=" Interview "
+                tag2="RDBMS"
+                link="https://www.wisdomjobs.com/e-university/rdbms-interview-questions.html"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="rdbms_tech.jpeg"
+                title="Commonly asked RDBMS interview questions"
+                source="(geeksforgeeks)"
+                tag1="questions"
+                tag2="RDBMS"
+                link="https://www.geeksforgeeks.org/commonly-asked-dbms-interview-questions/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="rdbms_tech.jpeg"
+                title="RDBMS Interview Questions and Answers 2019 [UPDATED]"
+                source="(mytectra)"
+                tag1="interview"
+                tag2="RDBMS"
+                link="https://www.mytectra.com/interview-question/rdbms-interview-questions-and-answers-2019/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="rdbms_tech.jpeg"
+                title="RDBMS Interview Questions and Answers for Freshers"
+                source="(sanfoundry)"
+                tag1="Freshers"
+                tag2="interview-questions"
+                link="https://www.sanfoundry.com/rdbms-interview-questions-answers-freshers/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="rdbms_tech.jpeg"
+                title="RDBMS Questions and Answers "
+                source="(allindiaexams)"
+                tag1="RDBMS "
+                tag2="Questions"
+                link="http://www.allindiaexams.in/engineering/cse/dbms-multiple-choice-questions-and-answers/rdbms"
               />
 
               <RightSideSection />
