@@ -2,6 +2,12 @@ import React, { Component } from "react";
 import QuestionCard from "./QuestionCard";
 import RecommendPost from "../../../right_section/RecommendPost";
 import RightSideSection from "../../../right_section/RightSideSection";
+import { Link } from "react-router-dom";
+import RoadMapCard from "../../technologies/RoadMapCard";
+import InterviewQuestionCardCarousel from "./InterviewQuestionCardCarousel";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+
 class HtmlInterviewQuestions extends Component {
   state = {};
   componentDidMount() {
@@ -22,10 +28,20 @@ class HtmlInterviewQuestions extends Component {
               </div>
             </div>
           </div>
-          <div className="row mt-5">
+          <div className="row mt-5 mb-5">
             <div className="col-md-1"></div>
-
-            <div className="col-md-7">
+            <div className="col-md-7 ">
+            <Link to="/home" className="badge badge-primary mr-1">
+                  <FontAwesomeIcon icon={faHome} size="1x" />
+                </Link>
+              <Link
+                to="/index_interview_questioins"
+                className="badge badge-warning mr-1"
+              >
+                Interview Questions >>
+              </Link>
+              <div className="row mb-5">
+                <div className="col">
               <QuestionCard
                 question={`1) What is HTML?
                 `}
@@ -108,31 +124,65 @@ class HtmlInterviewQuestions extends Component {
                 `}
               />
             </div>
+            </div>
+              
+              <div className="row">
+                <div className="col">
+                  <h4 className="text-primary">For More Technologies</h4>
+                  <InterviewQuestionCardCarousel />
+                </div>
+              </div>
+            </div>    
+               
             <div className="col-md-4 mt-5">
               <h5 className="mb-4">Other Learning Resources</h5>
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="html_tech.jpeg"
+                title="Top 50 HTML Interview Questions and Answers "
+                source="(edureka)"
+                tag1="HTML"
+                tag2=" Interview Questions"
+                link="https://www.edureka.co/blog/interview-questions/top-50-html-interview-questions-and-answers/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+               <RoadMapCard
+                imgsource="html_tech.jpeg"
+                title="30 Top HTML Interview Questions and Answers"
+                source="(softwaretestinghelp)"
+                tag1="HTML"
+                tag2=" Interview Questions"
+                link="https://www.softwaretestinghelp.com/html-interview-questions/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+               <RoadMapCard
+                imgsource="html_tech.jpeg"
+                title="Top 60 HTML & HTML5 Interview Questions & Answers"
+                source="(guru99)"
+                tag1="HTML"
+                tag2=" Interview Questions"
+                link="https://career.guru99.com/top-50-html-interview-questions/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+               <RoadMapCard
+                imgsource="html_tech.jpeg"
+                title="35+ HTML Interview Questions"
+                source="(online interview questions)"
+                tag1="HTML"
+                tag2=" Interview Questions"
+                link="https://www.onlineinterviewquestions.com/html-interview-questions/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+               <RoadMapCard
+                imgsource="html_tech.jpeg"
+                title="Latest HTML interview questions for frontend web developers"
+                source="(techbeamers)"
+                tag1="HTML"
+                tag2=" Interview Questions"
+                link="https://www.techbeamers.com/latest-html-interview-questions/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+               <RoadMapCard
+                imgsource="html_tech.jpeg"
+                title="13 Most Helpful HTML Interview Questions & Best Answers"
+                source="(goskills)"
+                tag1="HTML"
+                tag2=" Interview Questions"
+                link="https://www.goskills.com/Development/Articles/HTML-interview-questions-answers"
               />
 
               <RightSideSection />

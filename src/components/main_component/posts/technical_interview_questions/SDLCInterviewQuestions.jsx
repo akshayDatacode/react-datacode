@@ -3,6 +3,10 @@ import QuestionCard from "./QuestionCard";
 import RightSideSection from "../../../right_section/RightSideSection";
 import RecommendPost from "../../../right_section/RecommendPost";
 import { Link } from "react-router-dom";
+import RoadMapCard from "../../technologies/RoadMapCard";
+import InterviewQuestionCardCarousel from "./InterviewQuestionCardCarousel";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 class SDLCInterviewQuestions extends Component {
   state = {};
@@ -27,15 +31,17 @@ class SDLCInterviewQuestions extends Component {
           <div className="row mt-5 mb-5">
             <div className="col-md-1"></div>
             <div className="col-md-7 ">
-              <Link to="/home" className="badge badge-primary mr-1">
-                Home >
-              </Link>
+            <Link to="/home" className="badge badge-primary mr-1">
+                  <FontAwesomeIcon icon={faHome} size="1x" />
+                </Link>
               <Link
                 to="/index_interview_questioins"
                 className="badge badge-warning mr-1"
               >
-                Interview Questions >
+                Interview Questions >>
               </Link>
+              <div className="row mb-5">
+                <div className="col">
               <QuestionCard
                 question={`Q1. What is SDLC and what is it used for?
 `}
@@ -112,31 +118,64 @@ System and Acceptance Testing
 Maintenance`}
               />
             </div>
+            </div>
+              <div className="row">
+                <div className="col">
+                  <h4 className="text-primary">For More Technologies</h4>
+                  <InterviewQuestionCardCarousel />
+                </div>
+              </div>
+            </div>
+
             <div className="col-md-4 mt-5">
               <h5 className="mb-4">Other Learning Resources</h5>
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="sdlc_tech.jpeg"
+                title="Read Best SDLC Interview Questions in 2020"
+                source="(online interview questions)"
+                tag1="SDLC"
+                tag2="Interview Questions"
+                link="https://www.onlineinterviewquestions.com/sdlc-interview-questions/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="sdlc_tech.jpeg"
+                title="Software Engineering Interview Questions "
+                source="(tutorialspoint)"
+                tag1="SDLC"
+                tag2="Interview Questions"
+                link="https://www.tutorialspoint.com/software_engineering/pdf/software_engineering_interview_questions.pdf"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="sdlc_tech.jpeg"
+                title="SDLC Interview Questions with Answers "
+                source="(complex sql)"
+                tag1="SDLC"
+                tag2="Interview Questions"
+                link="https://www.complexsql.com/sdlc-interview-questions/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="sdlc_tech.jpeg"
+                title="SDLC Interview Questions and Answers "
+                source="(gcreddy)"
+                tag1="SDLC"
+                tag2="Interview Questions"
+                link="https://www.gcreddy.com/2014/06/sdlc-interview-questions.html"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="sdlc_tech.jpeg"
+                title="SDLC Interview Questions and Answers "
+                source="(stechies)"
+                tag1="SDLC"
+                tag2="Interview Questions"
+                link="https://www.stechies.com/sdlc-interview-questions/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="sdlc_tech.jpeg"
+                title="SDLC Interview Questions and Answers"
+                source="(withoutbook)"
+                tag1="SDLC"
+                tag2="Interview Questions"
+                link="http://www.withoutbook.com/Technology.php?tech=61&subject=SDLC%20Interview%20Questions%20and%20Answers"
               />
 
               <RightSideSection />

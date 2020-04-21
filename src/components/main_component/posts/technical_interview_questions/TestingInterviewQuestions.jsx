@@ -3,6 +3,10 @@ import QuestionCard from "./QuestionCard";
 import RightSideSection from "../../../right_section/RightSideSection";
 import RecommendPost from "../../../right_section/RecommendPost";
 import { Link } from "react-router-dom";
+import RoadMapCard from "../../technologies/RoadMapCard";
+import InterviewQuestionCardCarousel from "./InterviewQuestionCardCarousel";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 class TestingInterviewQuestions extends Component {
   state = {};
@@ -27,15 +31,17 @@ class TestingInterviewQuestions extends Component {
           <div className="row mt-5 mb-5">
             <div className="col-md-1"></div>
             <div className="col-md-7 ">
-              <Link to="/home" className="badge badge-primary mr-1">
-                Home >
-              </Link>
+            <Link to="/home" className="badge badge-primary mr-1">
+                  <FontAwesomeIcon icon={faHome} size="1x" />
+                </Link>
               <Link
                 to="/index_interview_questioins"
                 className="badge badge-warning mr-1"
               >
-                Interview Questions >
+                Interview Questions >>
               </Link>
+              <div className="row mb-5">
+                <div className="col">
               <QuestionCard
                 question={`1. What is Software Testing?
 `}
@@ -97,31 +103,66 @@ class TestingInterviewQuestions extends Component {
         `}
               />
             </div>
+            </div>
+              
+              <div className="row">
+                <div className="col">
+                  <h4 className="text-primary">For More Technologies</h4>
+                  <InterviewQuestionCardCarousel />
+                </div>
+              </div>
+            </div>    
+               
+
             <div className="col-md-4 mt-5">
               <h5 className="mb-4">Other Learning Resources</h5>
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="ds_tech.jpeg"
+                title="Top 50 Manual Testing Interview Questions and Answers"
+                source="(edureka)"
+                tag1="Testing"
+                tag2=" Interview Questions"
+                link="https://www.edureka.co/blog/interview-questions/manual-testing-interview-questions/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+               <RoadMapCard
+                imgsource="ds_tech.jpeg"
+                title="Top 25 Functional Testing Interview Question and Answers"
+                source="(softwaretestinghelp)"
+                tag1="Testing"
+                tag2=" Interview Questions"
+                link="https://www.softwaretestinghelp.com/functional-testing-interview-questions/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+               <RoadMapCard
+                imgsource="ds_tech.jpeg"
+                title="Top 200 Software Testing Interview Questions"
+                source="(softwaretestinghelp)"
+                tag1="Testing"
+                tag2=" Interview Questions"
+                link="https://www.softwaretestinghelp.com/software-testing-interview-questions/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+               <RoadMapCard
+                imgsource="ds_tech.jpeg"
+                title="40 Top Manual Testing Interview Questions & Answers "
+                source="(hackr.io)"
+                tag1="Testing"
+                tag2=" Interview Questions"
+                link="https://hackr.io/blog/manual-testing-interview-questions"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+               <RoadMapCard
+                imgsource="ds_tech.jpeg"
+                title="Manual Testing Interview Question"
+                source="(techbeamers)"
+                tag1="Testing"
+                tag2=" Interview Questions"
+                link="https://www.techbeamers.com/manual-testing-interview-questions-experienced-qa/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+               <RoadMapCard
+                imgsource="ds_tech.jpeg"
+                title="100+ Manual Testing Interview Questions"
+                source="(artoftesting)"
+                tag1="Testing"
+                tag2=" Interview Questions"
+                link="https://artoftesting.com/manual-testing-interview-questions"
               />
 
               <RightSideSection />
