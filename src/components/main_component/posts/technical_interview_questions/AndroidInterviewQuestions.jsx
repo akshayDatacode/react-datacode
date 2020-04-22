@@ -2,6 +2,12 @@ import React, { Component } from "react";
 import QuestionCard from "./QuestionCard";
 import RecommendPost from "../../../right_section/RecommendPost";
 import RightSideSection from "../../../right_section/RightSideSection";
+import { Link } from "react-router-dom";
+import RoadMapCard from "../../technologies/RoadMapCard";
+import InterviewQuestionCardCarousel from "./InterviewQuestionCardCarousel";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+
 class AndroidInterviewQuestions extends Component {
   state = {};
   componentDidMount() {
@@ -22,10 +28,20 @@ class AndroidInterviewQuestions extends Component {
               </div>
             </div>
           </div>
-          <div className="row mt-5">
+          <div className="row mt-5 mb-5">
             <div className="col-md-1"></div>
-
-            <div className="col-md-7">
+            <div className="col-md-7 ">
+            <Link to="/home" className="badge badge-primary mr-1">
+                  <FontAwesomeIcon icon={faHome} size="1x" />
+                </Link>
+              <Link
+                to="/index_interview_questioins"
+                className="badge badge-warning mr-1"
+              >
+                Interview Questions >>
+              </Link>
+              <div className="row mb-5">
+                <div className="col">
               <QuestionCard
                 question={`1) What is Android?
                 `}
@@ -125,33 +141,66 @@ class AndroidInterviewQuestions extends Component {
                 `}
               />
             </div>
+            </div>
+              
+              <div className="row">
+                <div className="col">
+                  <h4 className="text-primary">For More Technologies</h4>
+                  <InterviewQuestionCardCarousel />
+                </div>
+              </div>
+            </div>    
+               
             <div className="col-md-4 mt-5">
               <h5 className="mb-4">Other Learning Resources</h5>
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="android_tech.jpeg"
+                title="50 Android Interview Questions & Answers"
+                source="(guru99)"
+                tag1="android"
+                tag2=" Interview Questions"
+                link="https://www.guru99.com/android-interview-questions.html"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="android_tech.jpeg"
+                title="Top 50 Android Interview Questions You Must Prepare "
+                source="(edureka)"
+                tag1="android"
+                tag2=" Interview Questions"
+                link="https://www.edureka.co/blog/interview-questions/top-android-interview-questions-for-beginners/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="android_tech.jpeg"
+                title="Top 35 Android Interview Questions and Answers"
+                source="(softwaretestinghelp)"
+                tag1="android"
+                tag2=" Interview Questions"
+                link="https://www.softwaretestinghelp.com/android-interview-questions/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="android_tech.jpeg"
+                title="Android Interview Questions"
+                source="(tutorialspoint)"
+                tag1="android"
+                tag2=" Interview Questions"
+                link="https://www.tutorialspoint.com/android/android_interview_questions.htm"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="android_tech.jpeg"
+                title="Android Interview Questions Cheat Sheet"
+                source="(android.jlelse.eu)"
+                tag1="android"
+                tag2=" Interview Questions"
+                link="https://android.jlelse.eu/android-interview-questions-cheat-sheet-96ea01c88def"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="android_tech.jpeg"
+                title="50 Top Android Interview Questions And Answers "
+                source="(hackr.io)"
+                tag1="android"
+                tag2=" Interview Questions"
+                link="https://hackr.io/blog/android-interview-questions"
               />
-
               <RightSideSection />
             </div>
           </div>

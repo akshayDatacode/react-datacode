@@ -46,25 +46,25 @@ class CQuizeTest2 extends Component {
             <div className="col-md-7 ">
               <div className="row">
                 <div className="col text-center mt-3 mb-3">
-                  <h2>C Quiz Test Medium</h2>
+                  <h2>C Quiz Test Intermediate</h2>
                 </div>
               </div>
               <div className="row">
                 <div className="col">
                   <Link to="/home" className="badge badge-primary mr-1">
-                    Home >
+                    Home >>
                   </Link>
                   <Link
                     to="/index_quize_tests"
                     className="badge badge-warning mr-1"
                   >
-                    Quiz Test >
+                    Quize Test >>
                   </Link>
                   <Link
                     to="/c_quize_tests"
                     className="badge badge-success mr-1"
                   >
-                    C Quiz >
+                    C Quiz >>
                   </Link>
                 </div>
               </div>
@@ -293,6 +293,7 @@ int main()
                   />
                 </div>
               </div>
+
               <div className="text-center mb-3">
                 <Button variant="primary" onClick={this.handleShow}>
                   Show Score
@@ -305,7 +306,7 @@ int main()
                 </div>
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 mt-md-4">
               <h4>Recommendation</h4>
               <RecommendPost
                 imgsource="python_mcqs.jpeg"

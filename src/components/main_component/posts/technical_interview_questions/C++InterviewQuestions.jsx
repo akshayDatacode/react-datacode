@@ -32,9 +32,9 @@ class CppInterviewQuestions extends Component {
           <div className="row mt-5 mb-5">
             <div className="col-md-1"></div>
             <div className="col-md-7 ">
-            <Link to="/home" className="badge badge-primary mr-1">
-                  <FontAwesomeIcon icon={faHome} size="1x" />
-                </Link>
+              <Link to="/home" className="badge badge-primary mr-1">
+                <FontAwesomeIcon icon={faHome} size="1x" />
+              </Link>
               <Link
                 to="/index_interview_questioins"
                 className="badge badge-warning mr-1"
@@ -43,11 +43,11 @@ class CppInterviewQuestions extends Component {
               </Link>
               <div className="row mb-5">
                 <div className="col">
-              <QuestionCard
-                question={`Q #1) What is the basic structure of a C++ program?
+                  <QuestionCard
+                    question={`Q #1) What is the basic structure of a C++ program?
 
              `}
-                answer={`The basic structure of a C++ program is shown below:
+                    answer={`The basic structure of a C++ program is shown below:
 
              #include<iostream.h>
              int main()
@@ -56,24 +56,24 @@ class CppInterviewQuestions extends Component {
                              return 0;
              }
              The first line`}
-              />
-              <QuestionCard
-                question={`Q #2) What are the Comments in C++?
+                  />
+                  <QuestionCard
+                    question={`Q #2) What are the Comments in C++?
 
              `}
-                answer={`Comments in C++ are simply a piece of source code ignored by the compiler. They are only helpful for a programmer to add a description or additional information about their source code.
+                    answer={`Comments in C++ are simply a piece of source code ignored by the compiler. They are only helpful for a programmer to add a description or additional information about their source code.
 
              In C++ there are two ways to add comments:
              
              //single-line comment
              /* block comment */
              The first type will discard everything after the compiler encounters “//”. In the second type, the compiler discards everything between “/*” and “*/”.`}
-              />
-              <QuestionCard
-                question={`Q #3) Difference between Declaration and Definition of a variable.
+                  />
+                  <QuestionCard
+                    question={`Q #3) Difference between Declaration and Definition of a variable.
 
              `}
-                answer={`Answer: The declaration of a variable is merely specifying the data type of a variable and the variable name. As a result of the declaration, we tell the compiler to reserve the space for a variable in the memory according to the data type specified.
+                    answer={`Answer: The declaration of a variable is merely specifying the data type of a variable and the variable name. As a result of the declaration, we tell the compiler to reserve the space for a variable in the memory according to the data type specified.
 
              Example:
              
@@ -91,12 +91,12 @@ class CppInterviewQuestions extends Component {
              C = ‘A’;
              
              These are valid definitions.`}
-              />
-              <QuestionCard
-                question={`Q #4) Comment on Local and Global scope of a variable.
+                  />
+                  <QuestionCard
+                    question={`Q #4) Comment on Local and Global scope of a variable.
 
              `}
-                answer={`Answer: The scope of a variable is defined as the extent of the program code within which the variable remains active i.e. it can be declared, defined or worked with.
+                    answer={`Answer: The scope of a variable is defined as the extent of the program code within which the variable remains active i.e. it can be declared, defined or worked with.
 
              There are two types of scope in C++:
              
@@ -112,12 +112,12 @@ class CppInterviewQuestions extends Component {
              ….. 
               
              }`}
-              />
-              <QuestionCard
-                question={`Q #5) What is the precedence when there are a Global variable and a Local variable in the program with the same name?
+                  />
+                  <QuestionCard
+                    question={`Q #5) What is the precedence when there are a Global variable and a Local variable in the program with the same name?
 
              `}
-                answer={`Answer: Whenever there is a local variable with the same name as that of a global variable, the compiler gives precedence to the local variable.
+                    answer={`Answer: Whenever there is a local variable with the same name as that of a global variable, the compiler gives precedence to the local variable.
 
              Example:
              
@@ -129,12 +129,12 @@ class CppInterviewQuestions extends Component {
               cout<<globalVar<<endl;
              }
              The output of the above code is 5. This is because, although both the variables have the same name, the compiler has given preference to the local scope.`}
-              />
-              <QuestionCard
-                question={`Q #6) When there are a Global variable and Local variable with the same name, how will you access the global variable?
+                  />
+                  <QuestionCard
+                    question={`Q #6) When there are a Global variable and Local variable with the same name, how will you access the global variable?
 
              `}
-                answer={`Answer: When there are two variables with the same name but different scope, i.e. one is a local variable and the other is a global variable, the compiler will give preference to a local variable.
+                    answer={`Answer: When there are two variables with the same name but different scope, i.e. one is a local variable and the other is a global variable, the compiler will give preference to a local variable.
 
              In order to access the global variable, we make use of a “scope resolution operator (::)”. Using this operator, we can access the value of the global variable.
              
@@ -153,23 +153,23 @@ class CppInterviewQuestions extends Component {
              Global Variable x = 10
              local Variable x= 2
              `}
-              />
-              <QuestionCard
-                question={`Q #7) How many ways are there to initialize an int with a Constant?
+                  />
+                  <QuestionCard
+                    question={`Q #7) How many ways are there to initialize an int with a Constant?
 
              `}
-                answer={`Answer: There are two ways:
+                    answer={`Answer: There are two ways:
 
              The first format uses traditional C notation.
              int result = 10;
              The second format uses the constructor notation.
              int result (10);`}
-              />
-              <QuestionCard
-                question={`Q #8) What is a Constant? Explain with an example.
+                  />
+                  <QuestionCard
+                    question={`Q #8) What is a Constant? Explain with an example.
 
              `}
-                answer={`Answer: A constant is an expression that has a fixed value. They can be divided into integer, decimal, floating-point, character or string constants depending on their data type.
+                    answer={`Answer: A constant is an expression that has a fixed value. They can be divided into integer, decimal, floating-point, character or string constants depending on their data type.
 
              Apart from the decimal, C++ also supports two more constants i.e. octal (to the base 8) and hexadecimal (to the base 16) constants.
              
@@ -182,12 +182,12 @@ class CppInterviewQuestions extends Component {
              ‘c’ //character constant
              “Hello, World” //string constant
              Note: When we have to represent a single character, we use single quotes and when we want to define a constant with more than one character, we use double-quotes.`}
-              />
-              <QuestionCard
-                question={`Q #9) How do you define/declare constants in C++?
+                  />
+                  <QuestionCard
+                    question={`Q #9) How do you define/declare constants in C++?
 
              `}
-                answer={`Answer: In C++, we can define our own constants using the #define preprocessor directive.
+                    answer={`Answer: In C++, we can define our own constants using the #define preprocessor directive.
 
              #define Identifier value
              
@@ -214,12 +214,12 @@ class CppInterviewQuestions extends Component {
              const zipcode = 411014;
              
              In the above examples, whenever the type of a constant is not specified, the C++ compiler defaults it to an integer type.`}
-              />
-              <QuestionCard
-                question={`Q #10) Comment on Assignment Operator in C++.
+                  />
+                  <QuestionCard
+                    question={`Q #10) Comment on Assignment Operator in C++.
 
              `}
-                answer={`Answer: Assignment operator in C++ is used to assign a value to another variable.
+                    answer={`Answer: Assignment operator in C++ is used to assign a value to another variable.
 
              a = 5;
              
@@ -247,18 +247,18 @@ class CppInterviewQuestions extends Component {
              a = b = c = 5;
              
              assign 5 to variables a, b and c.`}
-              />
-            </div>
-            </div>
-              
+                  />
+                </div>
+              </div>
+
               <div className="row">
                 <div className="col">
                   <h4 className="text-primary">For More Technologies</h4>
                   <InterviewQuestionCardCarousel />
                 </div>
               </div>
-            </div>    
-               
+            </div>
+
             <div className="col-md-4 mt-5">
               <h5 className="mb-4">Other Learning Resources</h5>
               <RoadMapCard

@@ -3,6 +3,10 @@ import QuestionCard from "./QuestionCard";
 import RightSideSection from "../../../right_section/RightSideSection";
 import RecommendPost from "../../../right_section/RecommendPost";
 import { Link } from "react-router-dom";
+import RoadMapCard from "../../technologies/RoadMapCard";
+import InterviewQuestionCardCarousel from "./InterviewQuestionCardCarousel";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 class SQLInterviewQuestions extends Component {
   state = {};
@@ -27,15 +31,17 @@ class SQLInterviewQuestions extends Component {
           <div className="row mt-5 mb-5">
             <div className="col-md-1"></div>
             <div className="col-md-7 ">
-              <Link to="/home" className="badge badge-primary mr-1">
-                Home >
-              </Link>
+            <Link to="/home" className="badge badge-primary mr-1">
+                  <FontAwesomeIcon icon={faHome} size="1x" />
+                </Link>
               <Link
                 to="/index_interview_questioins"
                 className="badge badge-warning mr-1"
               >
-                Interview Questions >
+                Interview Questions >>
               </Link>
+              <div className="row mb-5">
+                <div className="col">
               <QuestionCard
                 question={`1. What is SQL?`}
                 answer={`SQL stands for Structured Query Language , and it is used to communicate with the Database. This is a standard language used to perform tasks such as retrieval, updation, insertion and deletion of data from a database.
@@ -94,33 +100,59 @@ class SQLInterviewQuestions extends Component {
                 answer={`A view is a virtual table which consists of a subset of data contained in a table. Views are not virtually present, and it takes less space to store. View can have data of one or more tables combined, and it is depending on the relationship.`}
               />
             </div>
+            </div>
+              
+              <div className="row">
+                <div className="col">
+                  <h4 className="text-primary">For More Technologies</h4>
+                  <InterviewQuestionCardCarousel />
+                </div>
+              </div>
+            </div> 
             <div className="col-md-4 mt-5">
               <h5 className="mb-4">Other Learning Resources</h5>
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="sql_tech.jpeg"
+                title="SQL Interview Questions "
+                source="(javatpoint)"
+                tag1="sql"
+                tag2="Interview Questions"
+                link="https://www.javatpoint.com/sql-interview-questions"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+               <RoadMapCard
+                imgsource="sql_tech.jpeg"
+                title="50+ Top SQL Interview Questions & Answers in 2020"
+                source="(hackr.io)"
+                tag1="sql"
+                tag2="Interview Questions"
+                link="https://hackr.io/blog/top-sql-interview-questions"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+               <RoadMapCard
+                imgsource="sql_tech.jpeg"
+                title="SQL Interview Questions"
+                source="(geeksforgeeks)"
+                tag1="sql"
+                tag2="Interview Questions"
+                link="https://www.geeksforgeeks.org/sql-interview-questions/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+               <RoadMapCard
+                imgsource="sql_tech.jpeg"
+                title="Top 90 SQL Interview Questions and Answers (LATEST)"
+                source="(softwaretestinghelp)"
+                tag1="sql"
+                tag2="Interview Questions"
+                link="https://www.softwaretestinghelp.com/50-popular-sql-interview-questions-for-testers/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+               <RoadMapCard
+                imgsource="sql_tech.jpeg"
+                title="Top 90 SQL Interview Questions And Answers "
+                source="(mindmajix)"
+                tag1="sql"
+                tag2="Interview Questions"
+                link="https://mindmajix.com/sql-interview-questions"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
-              />
-
+  
+    
               <RightSideSection />
             </div>
           </div>

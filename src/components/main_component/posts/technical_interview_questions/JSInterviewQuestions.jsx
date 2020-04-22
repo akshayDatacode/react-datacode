@@ -2,6 +2,11 @@ import React, { Component } from "react";
 import QuestionCard from "./QuestionCard";
 import RecommendPost from "../../../right_section/RecommendPost";
 import RightSideSection from "../../../right_section/RightSideSection";
+import { Link } from "react-router-dom";
+import RoadMapCard from "../../technologies/RoadMapCard";
+import InterviewQuestionCardCarousel from "./InterviewQuestionCardCarousel";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
 class JSInterviewQuestions extends Component {
   state = {};
   componentDidMount() {
@@ -22,10 +27,20 @@ class JSInterviewQuestions extends Component {
               </div>
             </div>
           </div>
-          <div className="row mt-5">
+          <div className="row mt-5 mb-5">
             <div className="col-md-1"></div>
-
-            <div className="col-md-7">
+            <div className="col-md-7 ">
+            <Link to="/home" className="badge badge-primary mr-1">
+                  <FontAwesomeIcon icon={faHome} size="1x" />
+                </Link>
+              <Link
+                to="/index_interview_questioins"
+                className="badge badge-warning mr-1"
+              >
+                Interview Questions >>
+              </Link>
+              <div className="row mb-5">
+                <div className="col">
               <QuestionCard
                 question={`1. What is JavaScript?
 
@@ -116,31 +131,65 @@ class JSInterviewQuestions extends Component {
                 `}
               />
             </div>
+            </div>
+              
+              <div className="row">
+                <div className="col">
+                  <h4 className="text-primary">For More Technologies</h4>
+                  <InterviewQuestionCardCarousel />
+                </div>
+              </div>
+            </div>   
+
             <div className="col-md-4 mt-5">
               <h5 className="mb-4">Other Learning Resources</h5>
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+               <RoadMapCard
+                imgsource="js_tech.jpeg"
+                title="Top 50 JavaScript Interview Questions and Answers for 2020"
+                source="(edureka)"
+                tag1="js"
+                tag2="Interview Questions"
+                link="https://www.edureka.co/blog/interview-questions/javascript-interview-questions/"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+                <RoadMapCard
+                imgsource="js_tech.jpeg"
+                title="Top 50 JavaScript Interview Questions & Answers"
+                source="(hackr.io)"
+                tag1="javaScript"
+                tag2="Interview Questions"
+                link="https://hackr.io/blog/javascript-interview-questions"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+               <RoadMapCard
+                imgsource="js_tech.jpeg"
+                title="37 Essential JavaScript Interview Questions and Answers"
+                source="(toptal)"
+                tag1="js"
+                tag2="Interview Questions"
+                link="https://www.toptal.com/javascript/interview-questions"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="js_tech.jpeg"
+                title="JavaScript Interview Questions"
+                source="(javatpoint)"
+                tag1="javaScript"
+                tag2="Interview Questions"
+                link="https://www.javatpoint.com/javascript-interview-questions"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+               <RoadMapCard
+                imgsource="js_tech.jpeg"
+                title="70 JavaScript Interview Questions"
+                source="(dev.to)"
+                tag1="js"
+                tag2="Interview Questions"
+                link="https://dev.to/macmacky/70-javascript-interview-questions-5gfi"
               />
-              <RecommendPost
-                imgsource="indexcover1.jpeg"
-                RecPostHading="Interview Heading"
+              <RoadMapCard
+                imgsource="js_tech.jpeg"
+                title="Javascript Interview Questions "
+                source="(tutorialspoint)"
+                tag1="javaScript"
+                tag2="Interview Questions"
+                link="https://www.tutorialspoint.com/javascript/javascript_interview_questions.htm"
               />
 
               <RightSideSection />

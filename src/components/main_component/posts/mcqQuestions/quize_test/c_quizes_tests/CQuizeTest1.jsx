@@ -8,6 +8,7 @@ import FooterComponentUpper from "../../../../../footer_component/FooterComponen
 import RightSideSection from "../../../../../right_section/RightSideSection";
 import RecommendPost from "../../../../../right_section/RecommendPost";
 import MCQTestCardCarousel from "../MCQTestCardCarousel";
+
 class CQuizeTest1 extends Component {
   state = {
     isCorrect: false,
@@ -52,19 +53,19 @@ class CQuizeTest1 extends Component {
               <div className="row">
                 <div className="col">
                   <Link to="/home" className="badge badge-primary mr-1">
-                    Home >
+                    Home >>
                   </Link>
                   <Link
                     to="/index_quize_tests"
                     className="badge badge-warning mr-1"
                   >
-                    Quiz sTest >
+                    Quize Test >>
                   </Link>
                   <Link
-                    to="/python_quize_tests"
+                    to="/c_quize_tests"
                     className="badge badge-success mr-1"
                   >
-                    Python Quiz >
+                    C Quiz >>
                   </Link>
                 </div>
               </div>
@@ -211,7 +212,7 @@ int main()
                 </div>
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4  mt-md-4">
               <h4>Recommendation</h4>
               <RecommendPost
                 imgsource="python_mcqs.jpeg"
