@@ -8,9 +8,9 @@ class FbLikeShare extends Component {
       <>
         <FacebookProvider appId="682148765561455">
           <Like
-            href="https://www.datacode.in/?p=/react-datacode/#/"
-            colorScheme="dark"
-            showFaces
+            href={this.props.link}
+            layout="button_count"
+            size="large"
             share
           />
         </FacebookProvider>

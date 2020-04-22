@@ -7,6 +7,7 @@ import RoadMapCard from "../../technologies/RoadMapCard";
 import InterviewQuestionCardCarousel from "./InterviewQuestionCardCarousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
+import FbLikeShare from "../../../FbLikeShare";
 
 class DBMSInterviewQuestions extends Component {
   state = {};
@@ -24,6 +25,9 @@ class DBMSInterviewQuestions extends Component {
                   <h1 className="card-title text-light display-5 ">
                     DBMS Interview Question
                   </h1>
+                </div>
+                <div className="card-footer bg-light">
+                  <FbLikeShare like="https://www.datacode.in/?p=/react-datacode/#/index_interview_questioins" />
                 </div>
               </div>
             </div>

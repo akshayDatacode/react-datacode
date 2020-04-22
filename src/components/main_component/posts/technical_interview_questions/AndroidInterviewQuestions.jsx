@@ -7,7 +7,7 @@ import RoadMapCard from "../../technologies/RoadMapCard";
 import InterviewQuestionCardCarousel from "./InterviewQuestionCardCarousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
-import FbLikeShare from "../../FbLikeShare";
+import FbLikeShare from "../../../FbLikeShare";
 
 class AndroidInterviewQuestions extends Component {
   state = {};
@@ -25,9 +25,7 @@ class AndroidInterviewQuestions extends Component {
                   <h1 className="card-title text-dark display-5 ">
                     Android Interview Question
                   </h1>
-                </div>
-                <div className="card-footer">
-                  <FbLikeShare />
+                  <FbLikeShare link="https://www.datacode.in/?p=/react-datacode/#/android_interview_question" />
                 </div>
               </div>
             </div>
