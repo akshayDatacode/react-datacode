@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.2749690b.chunk.css",
-    "main.js": "/static/js/main.7d7498fa.chunk.js",
-    "main.js.map": "/static/js/main.7d7498fa.chunk.js.map",
+    "main.js": "/static/js/main.cb44d7ef.chunk.js",
+    "main.js.map": "/static/js/main.cb44d7ef.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4a1f94a7.js",
     "runtime-main.js.map": "/static/js/runtime-main.4a1f94a7.js.map",
     "static/css/2.89f067aa.chunk.css": "/static/css/2.89f067aa.chunk.css",
-    "static/js/2.be2bdbb3.chunk.js": "/static/js/2.be2bdbb3.chunk.js",
-    "static/js/2.be2bdbb3.chunk.js.map": "/static/js/2.be2bdbb3.chunk.js.map",
+    "static/js/2.17b835b8.chunk.js": "/static/js/2.17b835b8.chunk.js",
+    "static/js/2.17b835b8.chunk.js.map": "/static/js/2.17b835b8.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.66f561ecb2f6c3e9231ad09e51e5377c.js": "/precache-manifest.66f561ecb2f6c3e9231ad09e51e5377c.js",
+    "precache-manifest.d59c33e53d27d2eecae7aa6ec714f746.js": "/precache-manifest.d59c33e53d27d2eecae7aa6ec714f746.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.89f067aa.chunk.css.map": "/static/css/2.89f067aa.chunk.css.map",
     "static/css/main.2749690b.chunk.css.map": "/static/css/main.2749690b.chunk.css.map",
-    "static/js/2.be2bdbb3.chunk.js.LICENSE.txt": "/static/js/2.be2bdbb3.chunk.js.LICENSE.txt",
+    "static/js/2.17b835b8.chunk.js.LICENSE.txt": "/static/js/2.17b835b8.chunk.js.LICENSE.txt",
     "static/media/Cover Photo (3).png": "/static/media/Cover Photo (3).6bc137af.png",
     "static/media/Green Disease Prevention Instagram Post.png": "/static/media/Green Disease Prevention Instagram Post.ee3b12ec.png",
     "static/media/Shootpy_W Cover Page (1).jpg": "/static/media/Shootpy_W Cover Page (1).39eabcb7.jpg",
@@ -184,6 +184,7 @@
     "static/media/react_tutorial.jpeg": "/static/media/react_tutorial.1406570d.jpeg",
     "static/media/rest_api_node.jpeg": "/static/media/rest_api_node.4ce3247e.jpeg",
     "static/media/sdlc_interview_questions.jpeg": "/static/media/sdlc_interview_questions.b4cb76b3.jpeg",
+    "static/media/sdlc_tech.jpeg": "/static/media/sdlc_tech.647d36b6.jpeg",
     "static/media/sql.jpeg": "/static/media/sql.8c55a040.jpeg",
     "static/media/sql_interview_question.jpeg": "/static/media/sql_interview_question.ae7240c0.jpeg",
     "static/media/sql_interview_questions.jpeg": "/static/media/sql_interview_questions.eba77bbf.jpeg",
@@ -213,8 +214,8 @@
   "entrypoints": [
     "static/js/runtime-main.4a1f94a7.js",
     "static/css/2.89f067aa.chunk.css",
-    "static/js/2.be2bdbb3.chunk.js",
+    "static/js/2.17b835b8.chunk.js",
     "static/css/main.2749690b.chunk.css",
-    "static/js/main.7d7498fa.chunk.js"
+    "static/js/main.cb44d7ef.chunk.js"
   ]
 }
