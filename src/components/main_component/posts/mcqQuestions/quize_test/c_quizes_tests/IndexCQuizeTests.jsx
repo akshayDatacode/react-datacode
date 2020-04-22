@@ -37,7 +37,7 @@ class IndexCQuizeTests extends Component {
               />
               <QuizeShowCard
                 title="C Programming Quize Set 1"
-                level="Medium"
+                level="Intermediate"
                 imgsource="c_tech.jpeg"
                 link="c_quize_test_2"
               />

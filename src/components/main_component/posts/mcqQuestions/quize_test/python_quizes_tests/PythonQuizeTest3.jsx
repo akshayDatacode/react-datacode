@@ -52,19 +52,19 @@ class PythonQuizeTest3 extends Component {
               <div className="row">
                 <div className="col">
                   <Link to="/home" className="badge badge-primary mr-1">
-                    Home >
+                    Home >>
                   </Link>
                   <Link
                     to="/index_quize_tests"
                     className="badge badge-warning mr-1"
                   >
-                    Quiz sTest >
+                    Quizz Test >>
                   </Link>
                   <Link
                     to="/python_quize_tests"
                     className="badge badge-success mr-1"
                   >
-                    Python Quiz >
+                    Python Quiz >>
                   </Link>
                 </div>
               </div>
@@ -262,7 +262,7 @@ finally:
                 </div>
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 mt-md-4">
               <h4>Recommendation</h4>
               <RecommendPost
                 imgsource="python_mcqs.jpeg"

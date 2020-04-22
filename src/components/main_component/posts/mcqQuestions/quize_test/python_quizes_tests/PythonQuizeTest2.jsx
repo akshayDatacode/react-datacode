@@ -46,7 +46,7 @@ class PythonQuizeTest2 extends Component {
             <div className="col-md-7 ">
               <div className="row">
                 <div className="col text-center mt-3 mb-3">
-                  <h2>Python Quiz Test Medium</h2>
+                  <h2>Python Quiz Test Intermediate</h2>
                 </div>
               </div>
               <div className="row">
@@ -58,13 +58,13 @@ class PythonQuizeTest2 extends Component {
                     to="/index_quize_tests"
                     className="badge badge-warning mr-1"
                   >
-                    Quiz sTest >
+                    Quizz Test >>
                   </Link>
                   <Link
                     to="/python_quize_tests"
                     className="badge badge-success mr-1"
                   >
-                    Python Quiz >
+                    Python Quiz >>
                   </Link>
                 </div>
               </div>
@@ -194,7 +194,7 @@ class PythonQuizeTest2 extends Component {
                 </div>
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 mt-md-4">
               <h4>Recommendation</h4>
               <RecommendPost
                 imgsource="python_mcqs.jpeg"
