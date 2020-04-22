@@ -1,9 +1,34 @@
 import React, { Component } from "react";
-import QuestionCard from "./QuestionCard";
 import RecommendPost from "../../../right_section/RecommendPost";
 import RightSideSection from "../../../right_section/RightSideSection";
+import QuestionCard from "./QuestionCard";
+import FbShare from "../../FbShare";
+import FbLike from "../../../FbLikeShare";
 class DjangoInterviewQuestions extends Component {
-  state = {};
+  state = {
+    set: [
+      {
+        question: "Whats is Asjay",
+        answer: "Magic Boy",
+      },
+      {
+        question: "Whats is Asjay",
+        answer: "Magic Boy",
+      },
+      {
+        question: "Whats is Asjay",
+        answer: "Magic Boy",
+      },
+      {
+        question: "Whats is Asjay",
+        answer: "Magic Boy",
+      },
+      {
+        question: "Whats is Asjay",
+        answer: "Magic Boy",
+      },
+    ],
+  };
   componentDidMount() {
     window.scrollTo(0, 0);
   }
@@ -26,18 +51,12 @@ class DjangoInterviewQuestions extends Component {
             <div className="col-md-1"></div>
 
             <div className="col-md-7">
-              <QuestionCard
-                question={`3) Explain the Android application Architecture.
-                `}
-                answer={`Following is a list of components of Android application architecture:
-
-                1. Services: Used to perform background functionalities.
-                2. Intent: Used to perform the interconnection between activities and the data passing mechanism.
-                3. Resource Externalization: strings and graphics.
-                4. Notification: light, sound, icon, notification, dialog box and toast.
-                5. Content Providers: It will share the data between applications.
-                `}
-              />
+              {this.state.set.map((element) => (
+                <QuestionCard
+                  question={element.question}
+                  answer={element.answer}
+                />
+              ))}
             </div>
             <div className="col-md-4 mt-5">
               <h5 className="mb-4">Other Learning Resources</h5>

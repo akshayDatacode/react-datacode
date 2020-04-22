@@ -129,7 +129,6 @@ class AngularInterviewQuestions extends Component {
                 2. Data binding in angular templates
                 `}
               />
-             
             </div>
             <div className="col-md-4 mt-5">
               <h5 className="mb-4">Other Learning Resources</h5>
