@@ -7,7 +7,6 @@ import RoadMapCard from "../../technologies/RoadMapCard";
 import InterviewQuestionCardCarousel from "./InterviewQuestionCardCarousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
-import FbLikeShare from "../../../FbLikeShare";
 
 class DataStructureInterviewQuestions extends Component {
   state = {};
@@ -25,7 +24,6 @@ class DataStructureInterviewQuestions extends Component {
                   <h1 className="card-title text-light display-5 ">
                     DataStructure Interview Question
                   </h1>
-                  <FbLikeShare />
                 </div>
               </div>
             </div>
