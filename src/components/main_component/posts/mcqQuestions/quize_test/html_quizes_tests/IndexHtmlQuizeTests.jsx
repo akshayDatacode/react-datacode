@@ -41,13 +41,13 @@ class IndexHTMLQuizeTests extends Component {
                 link="html_quize_test_1"
               />
               <QuizeShowCard
-                title="HTML Quize Set 1"
-                level="Medium"
+                title="HTML Quize Set 2"
+                level="Intermediate"
                 imgsource="html_tech.jpeg"
                 link="html_quize_test_2"
               />
               <QuizeShowCard
-                title="HTML Quize Set 1"
+                title="HTML Quize Set 3"
                 level="Advance"
                 imgsource="html_tech.jpeg"
                 link="html_quize_test_3"
