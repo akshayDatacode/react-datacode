@@ -31,9 +31,9 @@ class DBMSInterviewQuestions extends Component {
           <div className="row mt-5 mb-5">
             <div className="col-md-1"></div>
             <div className="col-md-7 ">
-            <Link to="/home" className="badge badge-primary mr-1">
-                  <FontAwesomeIcon icon={faHome} size="1x" />
-                </Link>
+              <Link to="/home" className="badge badge-primary mr-1">
+                <FontAwesomeIcon icon={faHome} size="1x" />
+              </Link>
               <Link
                 to="/index_interview_questioins"
                 className="badge badge-warning mr-1"

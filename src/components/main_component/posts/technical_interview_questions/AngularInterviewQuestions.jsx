@@ -145,7 +145,6 @@ class AngularInterviewQuestions extends Component {
                 2. Data binding in angular templates
                 `}
               />
-             
             </div>
             </div>
               
