@@ -41,13 +41,13 @@ class IndexDBMSQuizeTests extends Component {
                 link="dbms_quize_test_1"
               />
               <QuizeShowCard
-                title="DBMS Quize Set 1"
-                level="Medium"
+                title="DBMS Quize Set 2"
+                level="Intermediate"
                 imgsource="dbms_tech.jpeg"
                 link="dbms_quize_test_2"
               />
               <QuizeShowCard
-                title="DBMS Quize Set 1"
+                title="DBMS Quize Set 3"
                 level="Advance"
                 imgsource="dbms_tech.jpeg"
                 link="dbms_quize_test_3"
