@@ -50,6 +50,9 @@ class MainComponent extends Component {
         <div className="container-fluid p-0">
           <div className="row">
             <div className="col">
+              <h2 className="text-center mt-5" style={{ color: "#072C71" }}>
+                What you'll find on Datacode.in
+              </h2>
               <div class="card-deck mt-5 ml-md-5 mr-md-5 pr-md-5 pl-md-5">
                 <div class="card border border-white ml-md-5 mr-md-5 pr-md-5 pl-md-5">
                   <Link to="/index_quize_tests">
@@ -62,7 +65,7 @@ class MainComponent extends Component {
                     </center>
                   </Link>
                   <div class="card-body text-left">
-                    <h5 class="card-title ">Find</h5>
+                    <h5 class="card-title ">Find Tutorials</h5>
                     <p class="card-text text-secondary">
                       From building websites to analyzing data, the choice is
                       yours. Find the best of the best courses to learn.
@@ -87,7 +90,7 @@ class MainComponent extends Component {
                     </center>
                   </Link>
                   <div class="card-body text-left">
-                    <h5 class="card-title">Learn</h5>
+                    <h5 class="card-title">Learn from Courses</h5>
                     <p class="card-text text-secondary">
                       Learn How to Code; Coding skills have never been more
                       in-demand. Learn everything you need to take your career
@@ -348,7 +351,10 @@ class MainComponent extends Component {
         </div>
         {/* >>>>>>>>>>>>>>>>>>>>>>>>>>>First -3  Cards Ending  ...............*/}
         {/* ... starting Lower Cards -5  .........................................*/}
-        <div className="container-fluid mt-5 bg-dark rounded pt-4">
+        <div
+          className="container-fluid mt-5 rounded pt-4"
+          style={{ backgroundColor: "#072C71" }}
+        >
           <div className="row">
             <div className="col p-0">
               <h4 className="text-center text-light">
@@ -374,7 +380,7 @@ class MainComponent extends Component {
                       <FontAwesomeIcon
                         icon={faTasks}
                         color="#072C71"
-                        size="6x"
+                        size="4x"
                       />
                     </center>
                   </Link>
@@ -399,7 +405,7 @@ class MainComponent extends Component {
                       <FontAwesomeIcon
                         icon={faUserClock}
                         color="#072C71"
-                        size="6x"
+                        size="4x"
                       />
                     </center>
                   </Link>
@@ -423,7 +429,7 @@ class MainComponent extends Component {
                   <center>
                     <FontAwesomeIcon
                       icon={faLaptopCode}
-                      size="6x"
+                      size="4x"
                       color="#072C71"
                     />
                   </center>
@@ -446,7 +452,7 @@ class MainComponent extends Component {
                   <center>
                     <FontAwesomeIcon
                       icon={faConnectdevelop}
-                      size="6x"
+                      size="4x"
                       color="#072C71"
                     />
                   </center>

@@ -221,9 +221,6 @@ class PythonQuizeTest2 extends Component {
           show={this.state.show}
           count={this.state.count}
         />
-        <div className="container-fluid mt-5">
-          <FooterComponentUpper />
-        </div>
       </>
     );
   }
