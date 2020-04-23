@@ -36,13 +36,13 @@ class IndexCQuizeTests extends Component {
                 link="c_quize_test_1"
               />
               <QuizeShowCard
-                title="C Programming Quize Set 1"
+                title="C Programming Quize Set 2"
                 level="Intermediate"
                 imgsource="c_tech.jpeg"
                 link="c_quize_test_2"
               />
               <QuizeShowCard
-                title="C Programming Quize Set 1"
+                title="C Programming Quize Set 3"
                 level="Advance"
                 imgsource="c_tech.jpeg"
                 link="c_quize_test_3"

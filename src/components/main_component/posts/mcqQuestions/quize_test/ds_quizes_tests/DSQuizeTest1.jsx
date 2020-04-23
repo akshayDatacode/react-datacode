@@ -76,10 +76,10 @@ class DSQuizeTest1 extends Component {
                 correctAnswer="parent nodes have values greater than or equal to their childs"
                 v1="parent nodes have values greater than or equal to their childs"
                 v2="parent nodes have values less than or equal to their childs"
-                v3="C - both statements are true
+                v3="both statements are true
 
                 "
-                v4="D - both statements are wrong
+                v4="both statements are wrong
 
                 "
                 counter={this.counter}
