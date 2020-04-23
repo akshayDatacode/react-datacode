@@ -14,7 +14,7 @@ class IndexInterviewQuestions extends Component {
         <div className="row">
           <div className="col-1"></div>
           <div className="col-md-8 mt-4">
-            <h2 className="text-center mb-4 text-secondary">
+            <h2 className="text-center mb-4x" style={{ color: "#133658" }}>
               Technical Interview Questions
             </h2>
             <Link to="/home" className="badge badge-primary mr-1">

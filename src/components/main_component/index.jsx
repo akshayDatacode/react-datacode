@@ -23,6 +23,10 @@ import {
   faSearchMinus,
   faPlus,
   faCartPlus,
+  faSlash,
+  faArrowRight,
+  faUserTie,
+  faTasks,
 } from "@fortawesome/free-solid-svg-icons";
 import FooterComponentUpper from "../footer_component/FooterComponentUpper";
 import {
@@ -229,7 +233,7 @@ class MainComponent extends Component {
 
         {/* First Row of Find and Learn */}
 
-        <div className="container-fluid p-0 mt-4">
+        <div className="container-fluid p-0 mt-5">
           <div className="row">
             <div className="col">
               <h3 className="text-center text-dark">
@@ -295,14 +299,14 @@ class MainComponent extends Component {
                   <Link to="/index_interview_questioins" activeClass="active">
                     <center>
                       <FontAwesomeIcon
-                        icon={faUsers}
+                        icon={faUserTie}
                         color="#072C71"
                         size="3x"
                       />
                     </center>
                   </Link>
                   <div class="card-body text-left">
-                    <h5 class="card-title">Programming Interview FAQs</h5>
+                    <h5 class="card-title">Interview Preparation</h5>
                     <p class="card-text text-secondary">
                       {" "}
                       Read example questions you'll be asked in a technical
@@ -344,26 +348,31 @@ class MainComponent extends Component {
         </div>
         {/* >>>>>>>>>>>>>>>>>>>>>>>>>>>First -3  Cards Ending  ...............*/}
         {/* ... starting Lower Cards -5  .........................................*/}
-        <div className="container-fluid mt-5 bg-secondary rounded pt-4">
+        <div className="container-fluid mt-5 bg-dark rounded pt-4">
           <div className="row">
             <div className="col p-0">
               <h4 className="text-center text-light">
                 {" "}
-                <FontAwesomeIcon icon={faPuzzlePiece} color="#072C71" />{" "}
+                <FontAwesomeIcon icon={faPuzzlePiece} color="#ABFF03" />{" "}
                 Practice{" "}
                 <FontAwesomeIcon
-                  icon={faPlus}
-                  color="orange"
+                  icon={faArrowRight}
+                  color="#B303FF"
                   className="mr-4 ml-3"
                 />
-                <FontAwesomeIcon icon={faTerminal} color="#072C71" /> Code
+                Code
+                <FontAwesomeIcon
+                  icon={faTerminal}
+                  color="#ABFF03"
+                  className="ml-2"
+                />
               </h4>
               <div class="card-deck mt-3 p-4">
                 <div class="card border border-white pt-3">
                   <Link to="/index_mcqs">
                     <center>
                       <FontAwesomeIcon
-                        icon={faListAlt}
+                        icon={faTasks}
                         color="#072C71"
                         size="6x"
                       />

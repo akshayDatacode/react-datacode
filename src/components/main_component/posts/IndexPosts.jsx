@@ -8,6 +8,20 @@ import ProgrammingQuestionsCardCarousel from "../posts/programming_questions/Pro
 import CodeChallangeCardCarousel from "../code_challange/CodeChallangeCardCarousel";
 import ArticleCardCarousel from "../aticles/ArticleCardCarousel";
 import EventCardCarousel from "../events/EventCardCarousel";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faChalkboardTeacher,
+  faUserTie,
+  faUserTimes,
+  faFileCode,
+  faListAlt,
+  faUserClock,
+  faLaptopCode,
+  faList,
+  faTasks,
+  faNewspaper,
+} from "@fortawesome/free-solid-svg-icons";
+import { faHackerNewsSquare } from "@fortawesome/free-brands-svg-icons";
 
 class IndexPosts extends Component {
   state = {};
@@ -19,23 +33,42 @@ class IndexPosts extends Component {
         <div className="container-fluid mt-5">
           <div class="row ">
             <div className="col">
-              <h4 className="text-secondary mt-3">Tutorials & Courses</h4>
+              <h4 className="mt-3" style={{ color: "#133658" }}>
+                <FontAwesomeIcon icon={faChalkboardTeacher} color="#133658" />{" "}
+                Tutorials & Courses
+              </h4>
               <TechnologiesCardCarousel />
-              <h4 className="text-secondary mt-3">Interview Preparation</h4>
+              <h4 className="mt-3" style={{ color: "#133658" }}>
+                <FontAwesomeIcon icon={faUserTie} color="#133658" /> Interview
+                Preparation
+              </h4>
               <InterviewQuestionsCardCarousel />
-              <h4 className="text-secondary mt-3">Programming MCQs</h4>
+              <h4 className="mt-3" style={{ color: "#133658" }}>
+                <FontAwesomeIcon icon={faTasks} color="#133658" /> Programming
+                MCQs
+              </h4>
               <MCQCardCarousel />
-              <h4 className="text-secondary mt-3">Programming Quiz Test</h4>
+              <h4 className="mt-3" style={{ color: "#133658" }}>
+                <FontAwesomeIcon icon={faUserClock} color="#133658" />{" "}
+                Programming Quiz Test
+              </h4>
               <MCQTestCardCarousel />
-              <h4 className="text-secondary mt-3">Weekly Code Challanges</h4>
+              <h4 className="mt-3" style={{ color: "#133658" }}>
+                <FontAwesomeIcon icon={faLaptopCode} color="#133658" /> Weekly
+                Code Challanges
+              </h4>
               <CodeChallangeCardCarousel />
-              <h4 className="text-secondary mt-3">
+              <h4 className="mt-3" style={{ color: "#133658" }}>
+                <FontAwesomeIcon icon={faFileCode} color="#133658" />{" "}
                 Programming Example Question
               </h4>
               <ProgrammingQuestionsCardCarousel />
-              <h4 className="text-secondary mt-3">Community Blogs</h4>
-              <ArticleCardCarousel />
-              {/* <h4 className="text-secondary mt-3">Events and Contests</h4>
+              <h4 className="mt-3" style={{ color: "#133658" }}>
+                <FontAwesomeIcon icon={faNewspaper} color="#133658" /> Community
+                Blogs
+              </h4>
+              <ArticleCardCarousel />{" "}
+              {/* <h4 className="mt-3"style={{ color: "#133658" }}>Events and Contests</h4>
               <EventCardCarousel /> */}
             </div>
           </div>

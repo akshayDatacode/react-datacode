@@ -20,7 +20,7 @@ class FooterComponent extends Component {
             <div className="container">
               <div className="row py-4 d-flex align-items-center bg-dark">
                 <div className="col-md-6 col-lg-5 text-center text-md-left mb-2 mb-md-0">
-                  <h6 className="mb-0">
+                  <h6 className="mb-0" style={{ color: "#04FFD5" }}>
                     Get connected with us on social networks!
                   </h6>
                 </div>
@@ -84,7 +84,7 @@ class FooterComponent extends Component {
                   style={{ width: 100 }}
                 />
 
-                <p>
+                <p style={{ color: "#7EC8F5" }}>
                   We Present to you a Online Learning Community. Where you can
                   Explore your Learning Path and also the get latest and Best
                   online learning Content over the Internet
