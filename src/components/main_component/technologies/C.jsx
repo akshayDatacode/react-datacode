@@ -6,6 +6,7 @@ import { faHome, faBook } from "@fortawesome/free-solid-svg-icons";
 import RecommendPost from "../../right_section/RecommendPost";
 import RoadMapCard from "./RoadMapCard";
 import FbShare from "../FbShare";
+import FbLikeShare from "../../FbLikeShare";
 
 class C extends Component {
   state = {};
@@ -18,7 +19,10 @@ class C extends Component {
         <div className="row">
           <div className="col-1"></div>
           <div className="col-md-7 mt-4">
-            <h2 className="text-center mb-4 display-5">
+            <h2
+              className="text-center mb-4 display-5"
+              style={{ color: "#072C71" }}
+            >
               Find the Best C Programming Courses & Tutorials
             </h2>
             <Link to="/home" className="badge badge-primary mr-1">
@@ -198,33 +202,36 @@ class C extends Component {
             />
           </div>
           <div className="col-md-4 mt-md-5 ">
-            <FbShare />
-            <h2 className="text-center text-secondary mt-2 mb-3">
+            <FbLikeShare />
+            <h3
+              className="text-center mt-2 mb-md-5 mb-2"
+              style={{ color: "#133658" }}
+            >
               <FontAwesomeIcon icon={faBook} size="1x" className="mr-2" />C
               Programming Learning
-            </h2>
+            </h3>
             <RecommendPost
-              imgsource="python_mcqs.jpeg"
+              imgsource="c_mcq.jpeg"
               RecPostHading="C MCQs"
               link="/index_c_mcqs"
             />
             <RecommendPost
-              imgsource="python_interview_question.jpeg"
+              imgsource="c_interview_questions.jpeg"
               RecPostHading="C Interview Questions"
               link="/c_interview_question"
             />
             <RecommendPost
-              imgsource="python_programming_question.jpeg"
+              imgsource="c_programming_question.jpeg"
               RecPostHading="C Programming Questions"
               link="/c_programming_questions"
             />
             <RecommendPost
-              imgsource="python_programming_question.jpeg"
+              imgsource="c_quize_test.jpeg"
               RecPostHading="C Quize Test"
               link="/c_quizes_tests"
             />
             <RecommendPost
-              imgsource="python_learning_blog.jpeg"
+              imgsource="programming_blog.jpeg"
               RecPostHading="C Programming Blogs"
               link="/prog_lan_blog"
             />

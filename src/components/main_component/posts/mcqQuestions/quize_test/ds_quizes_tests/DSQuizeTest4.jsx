@@ -72,11 +72,10 @@ class OOPsQuizeTest1 extends Component {
                 v4=""
                 counter={this.counter}
               />
-              
+
               <QuizeTest
                 quizeNo="3"
                 question=""
-            
                 correctAnswer=""
                 v1=""
                 v2=""
@@ -84,7 +83,7 @@ class OOPsQuizeTest1 extends Component {
                 v4=""
                 counter={this.counter}
               />
-              
+
               <QuizeTest
                 quizeNo="4"
                 question=""
@@ -95,10 +94,9 @@ class OOPsQuizeTest1 extends Component {
                 v4=""
                 counter={this.counter}
               />
-                  <QuizeTest
+              <QuizeTest
                 quizeNo="5"
                 question=""
-            
                 correctAnswer=""
                 v1=""
                 v2=""
@@ -106,7 +104,7 @@ class OOPsQuizeTest1 extends Component {
                 v4=""
                 counter={this.counter}
               />
-                  <QuizeTest
+              <QuizeTest
                 quizeNo="6"
                 question=""
                 correctAnswer=""
@@ -116,7 +114,7 @@ class OOPsQuizeTest1 extends Component {
                 v4=""
                 counter={this.counter}
               />
-              
+
               <QuizeTest
                 quizeNo="7"
                 question=""
@@ -127,7 +125,7 @@ class OOPsQuizeTest1 extends Component {
                 v4=""
                 counter={this.counter}
               />
-              
+
               <QuizeTest
                 quizeNo="8"
                 question=""
@@ -138,7 +136,7 @@ class OOPsQuizeTest1 extends Component {
                 v4=""
                 counter={this.counter}
               />
-              
+
               <QuizeTest
                 quizeNo="9"
                 question=""
@@ -149,7 +147,7 @@ class OOPsQuizeTest1 extends Component {
                 v4=""
                 counter={this.counter}
               />
-              
+
               <QuizeTest
                 quizeNo="10"
                 question=""
@@ -160,10 +158,6 @@ class OOPsQuizeTest1 extends Component {
                 v4=""
                 counter={this.counter}
               />
-              
-              
-              
-             
             </div>
           </div>
         </div>
@@ -178,9 +172,6 @@ class OOPsQuizeTest1 extends Component {
           show={this.state.show}
           count={this.state.count}
         />
-        <div className="container-fluid mt-5">
-          <FooterComponentUpper />
-        </div>
       </>
     );
   }

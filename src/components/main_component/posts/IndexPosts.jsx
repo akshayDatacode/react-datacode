@@ -30,7 +30,7 @@ class IndexPosts extends Component {
     return (
       <>
         {/* First 3 Post Cards */}
-        <div className="container-fluid mt-5">
+        <div className="container-fluid mt-md-5 mt-3">
           <div class="row ">
             <div className="col">
               <h4 className="mt-3" style={{ color: "#133658" }}>
