@@ -36,13 +36,13 @@ class IndexPythonQuizeTests extends Component {
                 link="python_quize_test_1"
               />
               <QuizeShowCard
-                title="Python Programming Quize Set 1"
+                title="Python Programming Quize Set 2"
                 level="Intermediate"
                 imgsource="python_tech.jpeg"
                 link="python_quize_test_2"
               />
               <QuizeShowCard
-                title="Python Programming Quize Set 1"
+                title="Python Programming Quize Set 3"
                 level="Advance"
                 imgsource="python_tech.jpeg"
                 link="python_quize_test_3"

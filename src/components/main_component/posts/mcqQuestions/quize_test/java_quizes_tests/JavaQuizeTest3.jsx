@@ -46,7 +46,7 @@ class JavaQuizeTest3 extends Component {
     <div className="col-md-7 ">
       <div className="row">
         <div className="col text-center mt-3 mb-3">
-          <h2>C Quiz Test Beginner</h2>
+          <h2>Java Quiz Test Advance</h2>
         </div>
       </div>
       <div className="row">
