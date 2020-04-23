@@ -15,10 +15,16 @@ class FooterComponent extends Component {
   render() {
     return (
       <>
-        <footer className=" bg-dark text-white page-footer font-small blue-grey lighten-5">
-          <div className="bg-dark">
+        <footer
+          style={{ backgroundColor: "#264767" }}
+          className="text-white page-footer font-small blue-grey lighten-5"
+        >
+          <div className="">
             <div className="container">
-              <div className="row py-4 d-flex align-items-center bg-dark">
+              <div
+                className="row py-4 d-flex align-items-center"
+                style={{ backgroundColor: "#264767" }}
+              >
                 <div className="col-md-6 col-lg-5 text-center text-md-left mb-2 mb-md-0">
                   <h6 className="mb-0" style={{ color: "#04FFD5" }}>
                     Get connected with us on social networks!

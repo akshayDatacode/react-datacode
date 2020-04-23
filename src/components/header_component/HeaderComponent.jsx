@@ -35,11 +35,11 @@ class HeaderComponent extends Component {
         <Navbar
           collapseOnSelect
           fixed="top"
-          bg="dark"
+          //bg="dark"
           expand="lg"
           variant="dark"
           className="m-0 p-0"
-          style={{ color: "#133658" }}
+          style={{ backgroundColor: "#072C71" }}
         >
           <Navbar.Brand
             collapseOnSelect="false"
