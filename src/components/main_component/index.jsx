@@ -22,6 +22,7 @@ import {
   faTerminal,
   faSearchMinus,
   faPlus,
+  faCartPlus,
 } from "@fortawesome/free-solid-svg-icons";
 import FooterComponentUpper from "../footer_component/FooterComponentUpper";
 import {
@@ -51,7 +52,7 @@ class MainComponent extends Component {
                     <center>
                       <FontAwesomeIcon
                         icon={faSearchengin}
-                        color="blue"
+                        color="#072C71"
                         size="4x"
                       />
                     </center>
@@ -74,7 +75,11 @@ class MainComponent extends Component {
                 <div class="card border border-white ml-md-5 mr-md-5 pr-md-5 pl-md-5">
                   <Link to="/index_interview_questioins" activeClass="active">
                     <center>
-                      <FontAwesomeIcon icon={faBook} color="blue" size="4x" />
+                      <FontAwesomeIcon
+                        icon={faBook}
+                        color="#072C71"
+                        size="4x"
+                      />
                     </center>
                   </Link>
                   <div class="card-body text-left">
@@ -101,7 +106,7 @@ class MainComponent extends Component {
                     <center>
                       <FontAwesomeIcon
                         icon={faPuzzlePiece}
-                        color="blue"
+                        color="#072C71"
                         size="4x"
                       />
                     </center>
@@ -126,7 +131,7 @@ class MainComponent extends Component {
                     <center>
                       <FontAwesomeIcon
                         icon={faTerminal}
-                        color="blue"
+                        color="#072C71"
                         size="4x"
                       />
                     </center>
@@ -134,8 +139,8 @@ class MainComponent extends Component {
                   <div class="card-body text-left">
                     <h5 class="card-title">Code</h5>
                     <p class="card-text text-secondary">
-                      Apply your learning with real-world projects and test your
-                      knowledge with tailor-made quizzes & MCQ's.{" "}
+                      Show your Practice with Code and Join the Contests and
+                      Hackathons to Sharpen your Skills
                     </p>
                   </div>
                   {/* <div class="card-footer border border-white bg-white text-center">
@@ -153,7 +158,7 @@ class MainComponent extends Component {
 
         {/* Images Start */}
         <div className="container-fluid p-0 mt-5">
-          <div className="row">
+          <div className="row mr-md-5 ml-md-5">
             <div className="col-md-6">
               <img
                 className=" card-img-top mx-auto img-fluid img-circle d-block"
@@ -186,7 +191,7 @@ class MainComponent extends Component {
           </div>
         </div>
         <div className="container-fluid p-0 mt-5">
-          <div className="row">
+          <div className="row mr-md-5 ml-md-5">
             <div className="col-md-6 text-center">
               <div className="card border border-white bg-white">
                 <div clsssName="card-header border border-white bg-white ">
@@ -227,19 +232,26 @@ class MainComponent extends Component {
         <div className="container-fluid p-0 mt-4">
           <div className="row">
             <div className="col">
-              <h3 className="text-center text-primary">
+              <h3 className="text-center text-dark">
                 {" "}
-                <FontAwesomeIcon icon={faSearchengin} /> Find{" "}
-                <FontAwesomeIcon icon={faDAndD} className="mr-4 ml-3" />
-                <FontAwesomeIcon icon={faBook} /> Learn
+                <FontAwesomeIcon
+                  icon={faSearchengin}
+                  color="#072C71"
+                /> Find{" "}
+                <FontAwesomeIcon
+                  icon={faDAndD}
+                  color="#072C71"
+                  className="mr-4 ml-3"
+                />
+                <FontAwesomeIcon icon={faBook} color="#072C71" /> Learn
               </h3>
               <div class="card-deck mt-5">
                 <div class="card border border-white">
                   <center>
                     <FontAwesomeIcon
                       icon={faChalkboardTeacher}
-                      size="4x"
-                      color="indigo"
+                      size="3x"
+                      color="#072C71"
                     />
                   </center>
                   <div class="card-body">
@@ -261,8 +273,8 @@ class MainComponent extends Component {
                   <center>
                     <FontAwesomeIcon
                       icon={faNewspaper}
-                      size="4x"
-                      color="indigo"
+                      size="3x"
+                      color="#072C71"
                     />
                   </center>
                   <div class="card-body">
@@ -284,8 +296,8 @@ class MainComponent extends Component {
                     <center>
                       <FontAwesomeIcon
                         icon={faUsers}
-                        color="indigo"
-                        size="4x"
+                        color="#072C71"
+                        size="3x"
                       />
                     </center>
                   </Link>
@@ -307,8 +319,8 @@ class MainComponent extends Component {
                   <center>
                     <FontAwesomeIcon
                       icon={faFileCode}
-                      size="4x"
-                      color="indigo"
+                      size="3x"
+                      color="#072C71"
                     />
                   </center>
                   <div class="card-body">
@@ -332,23 +344,28 @@ class MainComponent extends Component {
         </div>
         {/* >>>>>>>>>>>>>>>>>>>>>>>>>>>First -3  Cards Ending  ...............*/}
         {/* ... starting Lower Cards -5  .........................................*/}
-        <div className="container-fluid mt-5">
+        <div className="container-fluid mt-5 bg-secondary rounded pt-4">
           <div className="row">
             <div className="col p-0">
-              <h3 className="text-center text-primary">
+              <h4 className="text-center text-light">
                 {" "}
-                <FontAwesomeIcon icon={faPuzzlePiece} /> Practice{" "}
-                <FontAwesomeIcon icon={faDAndD} className="mr-4 ml-3" />
-                <FontAwesomeIcon icon={faTerminal} /> Code
-              </h3>
-              <div class="card-deck mt-4 p-2">
-                <div class="card border border-white">
+                <FontAwesomeIcon icon={faPuzzlePiece} color="#072C71" />{" "}
+                Practice{" "}
+                <FontAwesomeIcon
+                  icon={faPlus}
+                  color="orange"
+                  className="mr-4 ml-3"
+                />
+                <FontAwesomeIcon icon={faTerminal} color="#072C71" /> Code
+              </h4>
+              <div class="card-deck mt-3 p-4">
+                <div class="card border border-white pt-3">
                   <Link to="/index_mcqs">
                     <center>
                       <FontAwesomeIcon
                         icon={faListAlt}
-                        color="indigo"
-                        size="4x"
+                        color="#072C71"
+                        size="6x"
                       />
                     </center>
                   </Link>
@@ -367,13 +384,13 @@ class MainComponent extends Component {
                     </Link>
                   </div>
                 </div>
-                <div class="card border border-white">
+                <div class="card border border-white pt-3">
                   <Link to="/index_quize_tests">
                     <center>
                       <FontAwesomeIcon
                         icon={faUserClock}
-                        color="indigo"
-                        size="4x"
+                        color="#072C71"
+                        size="6x"
                       />
                     </center>
                   </Link>
@@ -393,12 +410,12 @@ class MainComponent extends Component {
                   </div>
                 </div>
 
-                <div class="card border border-white">
+                <div class="card border border-white pt-3">
                   <center>
                     <FontAwesomeIcon
                       icon={faLaptopCode}
-                      size="4x"
-                      color="indigo"
+                      size="6x"
+                      color="#072C71"
                     />
                   </center>
                   <div class="card-body">
@@ -416,12 +433,12 @@ class MainComponent extends Component {
                   </div>
                 </div>
 
-                <div class="card border border-white">
+                <div class="card border border-white pt-3">
                   <center>
                     <FontAwesomeIcon
                       icon={faConnectdevelop}
-                      size="4x"
-                      color="indigo"
+                      size="6x"
+                      color="#072C71"
                     />
                   </center>
                   <div class="card-body">
