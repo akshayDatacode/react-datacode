@@ -41,13 +41,13 @@ class IndexDSQuizeTests extends Component {
                 link="ds_quize_test_1"
               />
               <QuizeShowCard
-                title="DataStructure Quize Set 1"
-                level="Medium"
+                title="DataStructure Quize Set 2"
+                level="Intermediate"
                 imgsource="ds_tech.jpeg"
                 link="ds_quize_test_2"
               />
               <QuizeShowCard
-                title="DataStructure Quize Set 1"
+                title="DataStructure Quize Set 3"
                 level="Advance"
                 imgsource="ds_tech.jpeg"
                 link="ds_quize_test_3"

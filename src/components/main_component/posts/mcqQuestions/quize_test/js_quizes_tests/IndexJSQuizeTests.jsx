@@ -41,13 +41,13 @@ class IndexJSQuizeTests extends Component {
                 link="js_quize_test_1"
               />
               <QuizeShowCard
-                title="JavaScript Quize Set 1"
-                level="Medium"
+                title="JavaScript Quize Set 2"
+                level="Intermediate"
                 imgsource="js_tech.jpeg"
                 link="js_quize_test_2"
               />
               <QuizeShowCard
-                title="JavaScript Quize Set 1"
+                title="JavaScript Quize Set 3"
                 level="Advance"
                 imgsource="js_tech.jpeg"
                 link="js_quize_test_3"
