@@ -179,14 +179,14 @@ class InterviewQuestionCardCarousel extends Component {
               <CardCarouselItem
                 imgsource="dbms_interview_questions.jpeg"
                 title="DBMS Interview Questions"
-                link="/dbms_interview_questioin"
+                link="/dbms_interview_question"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
                 imgsource="sql_interview_questions.jpeg"
                 title="SQL Interview Questions"
-                link="/sql_interview_questioin"
+                link="/sql_interview_question"
               />
             </Carousel.Item>
             <Carousel.Item>

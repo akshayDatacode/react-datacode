@@ -19,6 +19,9 @@ import {
   faBook,
   faPuzzlePiece,
   faChalkboardTeacher,
+  faTerminal,
+  faSearchMinus,
+  faPlus,
 } from "@fortawesome/free-solid-svg-icons";
 import FooterComponentUpper from "../footer_component/FooterComponentUpper";
 import {
@@ -26,6 +29,8 @@ import {
   faSearchengin,
   faResearchgate,
   faCreativeCommonsSa,
+  faDAndD,
+  faDAndDBeyond,
 } from "@fortawesome/free-brands-svg-icons";
 
 class MainComponent extends Component {
@@ -41,7 +46,7 @@ class MainComponent extends Component {
           <div className="row">
             <div className="col">
               <div class="card-deck mt-5 ml-md-5 mr-md-5 pr-md-5 pl-md-5">
-                <div class="card border border-white">
+                <div class="card border border-white ml-md-5 mr-md-5 pr-md-5 pl-md-5">
                   <Link to="/index_quize_tests">
                     <center>
                       <FontAwesomeIcon
@@ -66,7 +71,7 @@ class MainComponent extends Component {
                     </Link>
                   </div> */}
                 </div>
-                <div class="card border border-white">
+                <div class="card border border-white ml-md-5 mr-md-5 pr-md-5 pl-md-5">
                   <Link to="/index_interview_questioins" activeClass="active">
                     <center>
                       <FontAwesomeIcon icon={faBook} color="blue" size="4x" />
@@ -86,7 +91,12 @@ class MainComponent extends Component {
                     </Link>
                   </div> */}
                 </div>
-                <div class="card border border-white">
+              </div>
+
+              {/* Second Row of intro */}
+
+              <div class="card-deck mt-5 ml-md-5 mr-md-5 pr-md-5 pl-md-5">
+                <div class="card border border-white ml-md-5 mr-md-5 pr-md-5 pl-md-5">
                   <Link to="/index_mcqs">
                     <center>
                       <FontAwesomeIcon
@@ -98,6 +108,31 @@ class MainComponent extends Component {
                   </Link>
                   <div class="card-body text-left">
                     <h5 class="card-title">Practice</h5>
+                    <p class="card-text text-secondary">
+                      Apply your learning with real-world projects and test your
+                      knowledge with tailor-made quizzes & MCQ's.{" "}
+                    </p>
+                  </div>
+                  {/* <div class="card-footer border border-white bg-white text-center">
+                    <Link to="/index_mcqs">
+                      <h6 className="btn border border-secondary text-weight-bold">
+                        Read More
+                      </h6>
+                    </Link>
+                  </div> */}
+                </div>
+                <div class="card border border-white ml-md-5 mr-md-5 pr-md-5 pl-md-5">
+                  <Link to="/index_mcqs">
+                    <center>
+                      <FontAwesomeIcon
+                        icon={faTerminal}
+                        color="blue"
+                        size="4x"
+                      />
+                    </center>
+                  </Link>
+                  <div class="card-body text-left">
+                    <h5 class="card-title">Code</h5>
                     <p class="card-text text-secondary">
                       Apply your learning with real-world projects and test your
                       knowledge with tailor-made quizzes & MCQ's.{" "}
@@ -186,9 +221,18 @@ class MainComponent extends Component {
         </div>
 
         {/* IMages End */}
-        <div className="container-fluid p-0">
+
+        {/* First Row of Find and Learn */}
+
+        <div className="container-fluid p-0 mt-4">
           <div className="row">
             <div className="col">
+              <h3 className="text-center text-primary">
+                {" "}
+                <FontAwesomeIcon icon={faSearchengin} /> Find{" "}
+                <FontAwesomeIcon icon={faDAndD} className="mr-4 ml-3" />
+                <FontAwesomeIcon icon={faBook} /> Learn
+              </h3>
               <div class="card-deck mt-5">
                 <div class="card border border-white">
                   <center>
@@ -288,10 +332,16 @@ class MainComponent extends Component {
         </div>
         {/* >>>>>>>>>>>>>>>>>>>>>>>>>>>First -3  Cards Ending  ...............*/}
         {/* ... starting Lower Cards -5  .........................................*/}
-        <div className="container-fluid ">
+        <div className="container-fluid mt-5">
           <div className="row">
             <div className="col p-0">
-              <div class="card-deck mt-5 p-2">
+              <h3 className="text-center text-primary">
+                {" "}
+                <FontAwesomeIcon icon={faPuzzlePiece} /> Practice{" "}
+                <FontAwesomeIcon icon={faDAndD} className="mr-4 ml-3" />
+                <FontAwesomeIcon icon={faTerminal} /> Code
+              </h3>
+              <div class="card-deck mt-4 p-2">
                 <div class="card border border-white">
                   <Link to="/index_mcqs">
                     <center>
