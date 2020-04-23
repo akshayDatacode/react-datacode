@@ -23,6 +23,8 @@ import {
   faSearchMinus,
   faPlus,
   faCartPlus,
+  faSlash,
+  faArrowRight,
 } from "@fortawesome/free-solid-svg-icons";
 import FooterComponentUpper from "../footer_component/FooterComponentUpper";
 import {
@@ -229,7 +231,7 @@ class MainComponent extends Component {
 
         {/* First Row of Find and Learn */}
 
-        <div className="container-fluid p-0 mt-4">
+        <div className="container-fluid p-0 mt-5">
           <div className="row">
             <div className="col">
               <h3 className="text-center text-dark">
@@ -344,19 +346,24 @@ class MainComponent extends Component {
         </div>
         {/* >>>>>>>>>>>>>>>>>>>>>>>>>>>First -3  Cards Ending  ...............*/}
         {/* ... starting Lower Cards -5  .........................................*/}
-        <div className="container-fluid mt-5 bg-secondary rounded pt-4">
+        <div className="container-fluid mt-5 bg-dark rounded pt-4">
           <div className="row">
             <div className="col p-0">
               <h4 className="text-center text-light">
                 {" "}
-                <FontAwesomeIcon icon={faPuzzlePiece} color="#072C71" />{" "}
+                <FontAwesomeIcon icon={faPuzzlePiece} color="#ABFF03" />{" "}
                 Practice{" "}
                 <FontAwesomeIcon
-                  icon={faPlus}
-                  color="orange"
+                  icon={faArrowRight}
+                  color="#B303FF"
                   className="mr-4 ml-3"
                 />
-                <FontAwesomeIcon icon={faTerminal} color="#072C71" /> Code
+                Code
+                <FontAwesomeIcon
+                  icon={faTerminal}
+                  color="#ABFF03"
+                  className="ml-2"
+                />
               </h4>
               <div class="card-deck mt-3 p-4">
                 <div class="card border border-white pt-3">
