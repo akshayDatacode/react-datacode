@@ -23,6 +23,8 @@ import {
   faBlog,
   faNewspaper,
   faTools,
+  faUserTie,
+  faTasks,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import CardCarousel from "./CardCarousel";
@@ -35,7 +37,9 @@ class FooterComponentUpper extends Component {
         <div className="container-fluid p-0">
           <div className="row">
             <div className="col-sm col text-center ">
-              <h4 className="text-secondary align-middle ">Categories</h4>
+              <h4 className="align-middle " style={{ color: "#133658" }}>
+                Categories
+              </h4>
               <hr
                 class="teal accent-3 mb-3 mt-0 d-inline-block mx-auto"
                 style={{ width: 120 }}
@@ -59,7 +63,7 @@ class FooterComponentUpper extends Component {
                     <div className="col-4">
                       <Link to="/index_interview_questioins">
                         <FontAwesomeIcon
-                          icon={faUserFriends}
+                          icon={faUserTie}
                           color="#036157"
                           size="2x"
                         />
@@ -95,7 +99,7 @@ class FooterComponentUpper extends Component {
                     <div className="col-4">
                       <Link to="/index_mcqs">
                         <FontAwesomeIcon
-                          icon={faListAlt}
+                          icon={faTasks}
                           color="#036157"
                           size="2x"
                         />
@@ -121,7 +125,7 @@ class FooterComponentUpper extends Component {
           </div>
           <div className="row">
             <div className="col-sm col-md mt-3 text-center ">
-              <h3 className="text-secondary ">Trending For Learning</h3>
+              <h3 style={{ color: "#133658" }}>Trending For Learning</h3>
               <hr
                 class="teal accent-3 mb-3 mt-0 d-inline-block mx-auto"
                 style={{ width: 190 }}

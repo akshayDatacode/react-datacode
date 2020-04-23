@@ -22,6 +22,7 @@ import {
   faPills,
   faThList,
   faChalkboardTeacher,
+  faTasks,
 } from "@fortawesome/free-solid-svg-icons";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
@@ -38,6 +39,7 @@ class HeaderComponent extends Component {
           expand="lg"
           variant="dark"
           className="m-0 p-0"
+          style={{ color: "#133658" }}
         >
           <Navbar.Brand
             collapseOnSelect="false"
@@ -45,14 +47,14 @@ class HeaderComponent extends Component {
           >
             <Nav.Link
               href="/react-datacode/#/"
-              className="text-white h3 p-0 ml-3 mr-0 mt-0 mb-0"
+              className="text-white h3 p-0 ml-3 mr-0 mt-0 mb-0 "
             >
               Datacode.in
             </Nav.Link>
           </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav"
-            className="mr-1"
+            className="mr-1 border-dark"
           />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto ml-2">
@@ -72,7 +74,7 @@ class HeaderComponent extends Component {
                   Tutorials & Courses
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/react-datacode/#/index_mcqs">
-                  <FontAwesomeIcon icon={faThList} className="mr-2" />
+                  <FontAwesomeIcon icon={faTasks} className="mr-2" />
                   Programming MCQs
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/react-datacode/#/index_code_challange">
@@ -82,11 +84,11 @@ class HeaderComponent extends Component {
 
                 <NavDropdown.Item href="/react-datacode/#/index_interview_questioins">
                   <FontAwesomeIcon icon={faUserTie} className="mr-2" />
-                  Placment Preparation
+                  Interview Preparation
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/react-datacode/#/index_quize_tests">
                   <FontAwesomeIcon icon={faUsersCog} className="mr-2" />
-                  Programming Tests
+                  Programming Quiz Tests
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/react-datacode/#/index_programming_questions">
                   <FontAwesomeIcon icon={faFileCode} className="mr-2" />

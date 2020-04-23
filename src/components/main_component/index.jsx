@@ -25,6 +25,8 @@ import {
   faCartPlus,
   faSlash,
   faArrowRight,
+  faUserTie,
+  faTasks,
 } from "@fortawesome/free-solid-svg-icons";
 import FooterComponentUpper from "../footer_component/FooterComponentUpper";
 import {
@@ -297,14 +299,14 @@ class MainComponent extends Component {
                   <Link to="/index_interview_questioins" activeClass="active">
                     <center>
                       <FontAwesomeIcon
-                        icon={faUsers}
+                        icon={faUserTie}
                         color="#072C71"
                         size="3x"
                       />
                     </center>
                   </Link>
                   <div class="card-body text-left">
-                    <h5 class="card-title">Programming Interview FAQs</h5>
+                    <h5 class="card-title">Interview Preparation</h5>
                     <p class="card-text text-secondary">
                       {" "}
                       Read example questions you'll be asked in a technical
@@ -370,7 +372,7 @@ class MainComponent extends Component {
                   <Link to="/index_mcqs">
                     <center>
                       <FontAwesomeIcon
-                        icon={faListAlt}
+                        icon={faTasks}
                         color="#072C71"
                         size="6x"
                       />
