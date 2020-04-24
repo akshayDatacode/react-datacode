@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4049ec70bd80c8f8c1578689a3dd403d",
+    "revision": "da7e268319f3645f110ea16bc53d5cf3",
     "url": "/index.html"
   },
   {
-    "revision": "bacab736411ce0e8ff30",
+    "revision": "a389a76d944cd3969e96",
     "url": "/static/css/2.89f067aa.chunk.css"
   },
   {
-    "revision": "ce4fc939671f3f1051c2",
+    "revision": "82328a0cdb13c71437e2",
     "url": "/static/css/main.2749690b.chunk.css"
   },
   {
-    "revision": "bacab736411ce0e8ff30",
-    "url": "/static/js/2.86273fcc.chunk.js"
+    "revision": "a389a76d944cd3969e96",
+    "url": "/static/js/2.ebe9b22a.chunk.js"
   },
   {
     "revision": "ae54f939c6e84f9ec4d4c4cd8100d77f",
-    "url": "/static/js/2.86273fcc.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.ebe9b22a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ce4fc939671f3f1051c2",
-    "url": "/static/js/main.1699e368.chunk.js"
+    "revision": "82328a0cdb13c71437e2",
+    "url": "/static/js/main.5ba03739.chunk.js"
   },
   {
     "revision": "ba88f149e390315adcbe",
@@ -216,12 +216,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/code_challange_2.c2e4bf23.jpeg"
   },
   {
+    "revision": "ab3de14eae8212c3203e2e08754caa4a",
+    "url": "/static/media/codecademy.ab3de14e.jpeg"
+  },
+  {
     "revision": "17a6aab685d1ff492666d9c503f8579a",
     "url": "/static/media/coder1.17a6aab6.jpeg"
   },
   {
     "revision": "a9223a891215578a45272cfc4c4ced91",
     "url": "/static/media/comming_soon.a9223a89.jpeg"
+  },
+  {
+    "revision": "719bf7d4bcb14bef6a10f9b48768e365",
+    "url": "/static/media/coursera.719bf7d4.jpeg"
   },
   {
     "revision": "b89de2b679beb0e2b7cbae5f994b7320",
@@ -390,6 +398,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9af6cd11fafd2ccf284aa0571373a5c9",
     "url": "/static/media/firebase_react.9af6cd11.jpeg"
+  },
+  {
+    "revision": "34b1c72f16a0cb4b730f571fa7adbb2d",
+    "url": "/static/media/freecodecamp.34b1c72f.jpeg"
   },
   {
     "revision": "07fa7a724573cd2b6d24c11feebe616f",
@@ -592,6 +604,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/os_tech.f7f30a4d.jpeg"
   },
   {
+    "revision": "269f069aa03c244812f77162de000820",
+    "url": "/static/media/pluralsight.269f069a.jpeg"
+  },
+  {
     "revision": "770d5ca0c10e563f9ccc953718a01b9e",
     "url": "/static/media/programming_blog.770d5ca0.jpeg"
   },
@@ -712,6 +728,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/sdlc_tech.647d36b6.jpeg"
   },
   {
+    "revision": "2e6e2be15e7ce10ea5cca80f23055011",
+    "url": "/static/media/sololearn.2e6e2be1.jpeg"
+  },
+  {
     "revision": "8c55a04009c4fb12a19082e134100a09",
     "url": "/static/media/sql.8c55a040.jpeg"
   },
@@ -758,6 +778,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "eaa4de36ccbc871c8687973990bf222d",
     "url": "/static/media/testing_interview_questions.eaa4de36.jpeg"
+  },
+  {
+    "revision": "dba016c3f4a5cab9599ee82de82ce95c",
+    "url": "/static/media/udacity.dba016c3.jpeg"
+  },
+  {
+    "revision": "0a8e1d00ff43937bfffaa8b8b5fab322",
+    "url": "/static/media/udemy.0a8e1d00.jpeg"
+  },
+  {
+    "revision": "c1f2197320940d7cdc062c063eda8682",
+    "url": "/static/media/w3school.c1f21973.jpeg"
   },
   {
     "revision": "6c49b2fef84607c7570bf4c58d6718d8",
@@ -810,5 +842,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2d706f13f60a2fcf8e09cb168a61963e",
     "url": "/static/media/wordpress.2d706f13.jpeg"
+  },
+  {
+    "revision": "461e6cd4bfb31730da3909599d0d46b9",
+    "url": "/static/media/youtube.461e6cd4.jpeg"
   }
 ]);
