@@ -27,7 +27,11 @@ class AndroidMCQ1 extends Component {
   render() {
     return (
       <>
-        <HeaderCard title="Android MCQs Set 1" />
+        <HeaderCard
+          title="Android MCQs Set 1"
+          color="#FF9B00"
+          textcolor="white"
+        />
 
         <div class="container-fluid">
           <div className="row">
@@ -184,7 +188,7 @@ class AndroidMCQ1 extends Component {
                 RecPostHading="Java MCQs Questions"
                 link="/index_java_mcqs"
               />
-             <RecommendPost
+              <RecommendPost
                 imgsource="c_mcq.jpeg"
                 RecPostHading="C MCQs Questions"
                 link="/index_c_mcqs"

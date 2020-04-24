@@ -27,16 +27,20 @@ class DSMCQ1 extends Component {
   render() {
     return (
       <>
-        <HeaderCard title="DataStructure MCQs Set 1" />
+        <HeaderCard
+          title="DataStructure MCQs Set 1"
+          color="#FF9B00"
+          textcolor="white"
+        />
 
         <div class="container-fluid">
           <div className="row">
             <div className="col-1"></div>
             <div className="col-md-7 ">
               <div className="col-fluid ">
-              <Link to="/home" className="badge badge-primary mr-1">
-              <FontAwesomeIcon icon={faHome} size="1x" />
-            </Link>
+                <Link to="/home" className="badge badge-primary mr-1">
+                  <FontAwesomeIcon icon={faHome} size="1x" />
+                </Link>
                 <Link to="/index_mcqs" className="badge badge-warning mr-1">
                   MCQs >>
                 </Link>

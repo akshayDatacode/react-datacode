@@ -32,7 +32,7 @@ class C extends Component {
               Technologies >
             </Link>
             <RoadMapCard
-              imgsource="c_tutorial.jpeg"
+              imgsource="youtube.jpeg"
               title="Introduction to pointers in C/C++"
               source="(youtube.com)"
               tag1="Free"
@@ -48,7 +48,7 @@ class C extends Component {
               link="https://www.learncpp.com/"
             />
             <RoadMapCard
-              imgsource="c_tutorial.jpeg"
+              imgsource="youtube.jpeg"
               title="Buckys C++ Programming Tutorials"
               source="(youtube.com)"
               tag1="Free"
@@ -64,7 +64,7 @@ class C extends Component {
               link="https://www.sololearn.com/Course/CPlusPlus/"
             />
             <RoadMapCard
-              imgsource="c_tutorial.jpeg"
+              imgsource="youtube.jpeg"
               title="C++ Tutorial"
               source="(youtube.com)"
               tag1="Free"
@@ -73,7 +73,7 @@ class C extends Component {
               link="https://www.youtube.com/playlist?list=PLGLfVvz_LVvQ9S8YSV0iDsuEU8v11yP9M"
             />
             <RoadMapCard
-              imgsource="c_tutorial.jpeg"
+              imgsource="youtube.jpeg"
               title="C++/Game Tutorials"
               source="(youtube.com)"
               tag1="Free"
@@ -82,7 +82,7 @@ class C extends Component {
               link="https://www.youtube.com/playlist?list=PLSPw4ASQYyynKPY0I-QFHK0iJTjnvNUys"
             />
             <RoadMapCard
-              imgsource="c_tutorial.jpeg"
+              imgsource="coursera.jpeg"
               title="C++ For C Programmers"
               source="(coursera.org)"
               tag1="Free"
@@ -90,7 +90,7 @@ class C extends Component {
               link="https://www.coursera.org/learn/c-plus-plus-a?ranMID=40328&ranEAID=jU79Zysihs4&ranSiteID=jU79Zysihs4-mOZIN.E.Fr4mLyGypMbyAg&siteID=jU79Zysihs4-mOZIN.E.Fr4mLyGypMbyAg&utm_content=10&utm_medium=partners&utm_source=linkshare&utm_campaign=jU79Zysihs4"
             />
             <RoadMapCard
-              imgsource="c_tutorial.jpeg"
+              imgsource="udacity.jpeg"
               title="C++ For Programmers"
               source="(udacity.com)"
               tag1="Free"
@@ -99,7 +99,7 @@ class C extends Component {
               link="https://www.udacity.com/course/c-for-programmers--ud210"
             />
             <RoadMapCard
-              imgsource="c_tutorial.jpeg"
+              imgsource="youtube.jpeg"
               title="Entire C++ language in one video"
               source="(youtube.com)"
               tag1="Free"
@@ -114,7 +114,7 @@ class C extends Component {
               link="http://www.icce.rug.nl/documents/cplusplus/"
             />
             <RoadMapCard
-              imgsource="c_tutorial.jpeg"
+              imgsource="udemy.jpeg"
               title="Beginning C++ Programming - From Beginner to Beyond"
               source="(udemy.com)"
               tag1="Paid"
@@ -123,7 +123,7 @@ class C extends Component {
               link="https://click.linksynergy.com/deeplink?id=jU79Zysihs4&mid=39197&murl=https://www.udemy.com/beginning-c-plus-plus-programming"
             />
             <RoadMapCard
-              imgsource="c_tutorial.jpeg"
+              imgsource="udemy.jpeg"
               title="Learn Advanced C++ Programming"
               source="(udemy.com)"
               tag1="Paid"
@@ -132,7 +132,7 @@ class C extends Component {
               link="https://click.linksynergy.com/deeplink?id=jU79Zysihs4&mid=39197&murl=https://www.udemy.com/learn-advanced-c-programming/"
             />
             <RoadMapCard
-              imgsource="c_tutorial.jpeg"
+              imgsource="udemy.jpeg"
               title="C++: From Beginner to Expert"
               source="(udemy.com)"
               tag1="Paid"
@@ -141,14 +141,14 @@ class C extends Component {
               link="https://www.udemy.com/course/video-course-c-from-beginner-to-expert/?LSNPUBID=jU79Zysihs4&ranEAID=jU79Zysihs4&ranMID=39197&ranSiteID=jU79Zysihs4-ZA2i.SGJOZUGuX7WMxkVTg"
             />
             <RoadMapCard
-              imgsource="c_tutorial.jpeg"
+              imgsource="pluralsight.jpeg"
               title="Learn C++"
               source="(pluralsight.com)"
               tag1="Paid"
               link="https://www.pluralsight.com/paths/c-plus-plus?clickid=X6R3A1ylNxyOUDBwUx0Mo3QwUkixoVSYKSCjWA0&irgwc=1&mpid=1419154&utm_source=impactradius&utm_medium=digital_affiliate&utm_campaign=1419154&aid=7010a000001xAKZAA2"
             />{" "}
             <RoadMapCard
-              imgsource="c_tutorial.jpeg"
+              imgsource="pluralsight.jpeg"
               title="C++ Advanced Topics"
               source="(pluralsight.com)"
               tag1="Paid"
@@ -157,7 +157,7 @@ class C extends Component {
               link="https://www.pluralsight.com/courses/adv-cpp?clickid=X6R3A1ylNxyOUDBwUx0Mo3QwUkixoXzwKSCjWA0&irgwc=1&mpid=1419154&utm_source=impactradius&utm_medium=digital_affiliate&utm_campaign=1419154&aid=7010a000001xAKZAA2"
             />
             <RoadMapCard
-              imgsource="c_tutorial.jpeg"
+              imgsource="udemy.jpeg"
               title="Learn C++ Programming -Beginner to Advance- Deep Dive in C++"
               source="(udemy.com)"
               tag1="Paid"
@@ -201,10 +201,10 @@ class C extends Component {
               link="https://www.educative.io/track/c-plus-plus-for-programmers"
             />
           </div>
-          <div className="col-md-4 mt-md-5 ">
+          <div className="col-md-4 mt-md-5 mt-3  ">
             <FbLikeShare />
             <h3
-              className="text-center mt-2 mb-md-5 mb-2"
+              className="text-center mt-4 mb-md-4 mb-3"
               style={{ color: "#133658" }}
             >
               <FontAwesomeIcon icon={faBook} size="1x" className="mr-2" />C
