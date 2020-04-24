@@ -27,19 +27,21 @@ class CarouselComponent extends Component {
                 alt="First slide"
               />
 
-              <div className="card-img-overlay d-none d-md-block">
-                <h1 className="h1 display-1 mt-5  ml-5 text-weight-bold">
-                  DataCode.in
-                </h1>
-                <p>We Write Codes</p>
-                <Link to="/home">
-                  <div className="btn btn-lg btn-warning mt-5">
-                    Start Practice
-                  </div>
-                </Link>
+              <div className="card-img-overlay d-none d-md-block text-right text-align-center ml-5 mr-1 pl-5 mr-1 mt-5 pr-1">
+                <h2 className="h1 display-5 m-5 pl-5 pr-0  text-weight-bold">
+                  Datacode helps people to provide Online Learning Tutorials and
+                  Courses from all over the Internet.
+                </h2>
+                <center>
+                  <Link to="/home">
+                    <button className="btn btn-lg btn-default border border-primary rounded-0 pl-5 pr-5 pt-3 pb-3">
+                      <h5 className="text-primary">Getting Started</h5>
+                    </button>
+                  </Link>
+                </center>
               </div>
               <div className="card-img-overlay d-block d-sm-none m-0 p-0 text-right">
-                <h2 className="text-weight-bold p-0 ">DataCode.in</h2>
+                <h2 className="text-weight-bold p-0 ">Free Learning</h2>
                 <p>Find | Learn | Code</p>
                 <Link to="/home">
                   <div className="btn btn-warning">Getting Start</div>
