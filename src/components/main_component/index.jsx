@@ -176,7 +176,7 @@ class MainComponent extends Component {
             <div className="col-md-6 text-center">
               <div className="card border border-white bg-white">
                 <div clsssName="card-header border border-white bg-white ">
-                  <h1 className="text-center mt-5">Free Learning Material</h1>
+                  <h1 className="text-center mt-5">Free Online Learning</h1>
                 </div>
                 <div className="card-body border border-white bg-white">
                   <div className="card-title text-primary text-left">

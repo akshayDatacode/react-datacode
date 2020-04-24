@@ -27,7 +27,7 @@ class DBMSMCQ1 extends Component {
   render() {
     return (
       <>
-        <HeaderCard title="DBMS MCQs Set 1" />
+        <HeaderCard title="DBMS MCQs Set 1" color="#FF9B00" textcolor="blue" />
 
         <div class="container-fluid">
           <div className="row">
@@ -35,7 +35,7 @@ class DBMSMCQ1 extends Component {
             <div className="col-md-7 ">
               <div className="col-fluid ">
                 <Link to="/home" className="badge badge-primary mr-1">
-                <FontAwesomeIcon icon={faHome} size="1x" />
+                  <FontAwesomeIcon icon={faHome} size="1x" />
                 </Link>
                 <Link to="/index_mcqs" className="badge badge-warning mr-1">
                   MCQs >>

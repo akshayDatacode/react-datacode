@@ -54,7 +54,7 @@ class HeaderComponent extends Component {
           </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="responsive-navbar-nav"
-            className="mr-1 border-dark"
+            className="mr-1 border-0"
           />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto ml-2">

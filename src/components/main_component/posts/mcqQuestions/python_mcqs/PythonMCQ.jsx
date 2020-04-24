@@ -7,6 +7,7 @@ import { faHome, faListAlt } from "@fortawesome/free-solid-svg-icons";
 import RightSideSection from "../../../../right_section/RightSideSection";
 import RecommendPost from "../../../../right_section/RecommendPost";
 import MCQCardCarousel from "../MCQCardCarousel";
+import HeaderCard from "../../../HeaderCard";
 
 class PythonMCQ extends Component {
   state = {
@@ -25,17 +26,11 @@ class PythonMCQ extends Component {
   render() {
     return (
       <>
-        <div className="row">
-          <div className="col">
-            <div className="card bg-warning">
-              <div className="card-body p-2">
-                <h1 className="card-title text-dark m-0 p-0">
-                  Python MCQs Set 1
-                </h1>
-              </div>
-            </div>
-          </div>
-        </div>
+        <HeaderCard
+          title="Python MCQs Set 1"
+          color="#FF9B00"
+          textcolor="black"
+        />
 
         <div class="container-fluid">
           <div className="row">
@@ -186,7 +181,6 @@ print(a)`}
               </div>
             </div>
             <div className="col-md-4 ">
-              <RightSideSection />
               <h4>Recommended for you</h4>
               <RecommendPost
                 imgsource="python_mcq.jpeg"
@@ -208,6 +202,7 @@ print(a)`}
                 RecPostHading="Python MCQs Set 5"
                 link="/python_mcq_5"
               />
+              <RightSideSection />
             </div>
           </div>
         </div>
