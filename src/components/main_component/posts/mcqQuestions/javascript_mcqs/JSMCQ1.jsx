@@ -24,7 +24,11 @@ class JSMCQ1 extends Component {
   render() {
     return (
       <>
-        <HeaderCard title="JavaScript MCQs Set 1" />
+         <HeaderCard
+          title="JavaScript MCQs Set 1"
+          color="#00FF00"
+          textcolor="black"
+        />
 
         <div class="container-fluid">
           <div className="row">
