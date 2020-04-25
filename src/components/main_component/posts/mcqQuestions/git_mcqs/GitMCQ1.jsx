@@ -138,21 +138,21 @@ class GitMCQ1 extends Component {
                   <Quize
                     quizeNo="9"
                     question="How do you supply a commit message to a commit?"
-                    correctAnswer=""
+                    correctAnswer="git commit -m 'I'm coding"
                     v1="git message 'I'm coding'"
                     v2="git add 'I'm coding'"
                     v3="git commit 'I'm coding'"
-                    v4="git commit -m 'I'm coding'"
+                    v4="git commit -m 'I'm coding"
                     counter={this.counter}
                   />
                   <Quize
                     quizeNo="10"
                     question="How do you submit a solution to Learn? "
-                    correctAnswer=""
+                    correctAnswer="learn submit"
                     v1="git pull-request"
                     v2="git submit"
                     v3="learn submit"
-                    v4="git commit -am 'Done with Lab'"
+                    v4="git commit -am 'Done with Lab"
                   />
                 </div>
               </div>
