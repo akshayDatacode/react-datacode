@@ -27,11 +27,13 @@ class DSMCQ1 extends Component {
   render() {
     return (
       <>
-        <HeaderCard
+        
+         <HeaderCard
           title="DataStructure MCQs Set 1"
-          color="#FF9B00"
-          textcolor="white"
+          color="#00FF00"
+          textcolor="black"
         />
+    
 
         <div class="container-fluid">
           <div className="row">

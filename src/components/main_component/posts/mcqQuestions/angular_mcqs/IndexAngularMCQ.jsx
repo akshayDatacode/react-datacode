@@ -4,6 +4,8 @@ import RightSideSection from "../../../../right_section/RightSideSection";
 import McqsShowCard from "../McqsShowCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faListAlt, faHome } from "@fortawesome/free-solid-svg-icons";
+import HeaderCard from "../../../HeaderCard";
+
 class IndexAngularMCQ extends Component {
   state = {};
   componentDidMount() {
@@ -12,17 +14,12 @@ class IndexAngularMCQ extends Component {
   render() {
     return (
       <>
-         <div className="row">
-          <div className="col">
-            <div className="card bg-warning">
-              <div className="card-body p-2">
-                <h1 className="card-title text-dark m-0 p-0">
-                Angular MCQs Sets
-                </h1>
-              </div>
-            </div>
-          </div>
-        </div>
+         <HeaderCard
+          title="Angular MCQs Sets"
+          color="#FFD700"
+          textcolor="black"
+        /> 
+
         <div className="row">
           <div className="col-1"></div>
           <div className="col-md-8 mt-4">

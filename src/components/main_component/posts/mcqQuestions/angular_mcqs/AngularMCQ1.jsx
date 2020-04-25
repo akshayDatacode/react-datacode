@@ -26,7 +26,11 @@ class AngularMCQ1 extends Component {
   render() {
     return (
       <>
-        <HeaderCard title="Angular MCQs Set 1" />
+      <HeaderCard
+          title="Angular MCQs Set 1"
+          color="#FFD700"
+          textcolor="black"
+        /> 
 
         <div class="container-fluid">
           <div className="row">

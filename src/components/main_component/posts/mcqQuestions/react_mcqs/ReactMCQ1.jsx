@@ -27,7 +27,11 @@ class ReactMCQ1 extends Component {
   render() {
     return (
       <>
-        <HeaderCard title="React MCQs Set 1" />
+      <HeaderCard
+          title="React MCQs Set 1"
+          color="#00FF00"
+          textcolor="black"
+        />
 
         <div class="container-fluid">
           <div className="row">

@@ -27,10 +27,10 @@ class AndroidMCQ1 extends Component {
   render() {
     return (
       <>
-        <HeaderCard
-          title="Android MCQs Set 1"
-          color="#FF9B00"
-          textcolor="white"
+          <HeaderCard
+          title="Android MCQ set 1"
+          color="#90EE90"
+          textcolor="black"
         />
 
         <div class="container-fluid">

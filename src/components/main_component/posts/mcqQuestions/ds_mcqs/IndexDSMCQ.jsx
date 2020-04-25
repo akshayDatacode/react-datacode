@@ -13,11 +13,12 @@ class IndexDSMCQ extends Component {
   render() {
     return (
       <>
-        <HeaderCard
+       <HeaderCard
           title="DataStructure MCQs"
-          color="#FF9B00"
-          textcolor="white"
+          color="#00FF00"
+          textcolor="black"
         />
+    
         <div className="row">
           <div className="col-1"></div>
           <div className="col-md-8 mt-4">

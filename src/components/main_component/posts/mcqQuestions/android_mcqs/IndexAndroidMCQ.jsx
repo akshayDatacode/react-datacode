@@ -13,7 +13,11 @@ class IndexSQLMCQ extends Component {
   render() {
     return (
       <>
-        <HeaderCard title="Android MCQs" color="#FF9B00" textcolor="white" />
+      <HeaderCard
+          title="Android MCQ sets"
+          color="#90EE90"
+          textcolor="black"
+        />
         <div className="row">
           <div className="col-1"></div>
           <div className="col-md-8 mt-4">

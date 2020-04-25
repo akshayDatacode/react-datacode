@@ -27,7 +27,11 @@ class OOPsMCQ1 extends Component {
   render() {
     return (
       <>
-        <HeaderCard title="OOPs MCQs Set 1" />
+      <HeaderCard
+          title="OOPS MCQs Set 1"
+          color="#FF9B00"
+          textcolor="black"
+        />
 
         <div class="container-fluid">
           <div className="row">

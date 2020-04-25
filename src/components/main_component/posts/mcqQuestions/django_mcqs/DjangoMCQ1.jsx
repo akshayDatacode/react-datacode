@@ -27,7 +27,11 @@ class DjangoMCQ1 extends Component {
   render() {
     return (
       <>
-        <HeaderCard title="Django MCQs Set 1" />
+        <HeaderCard
+          title="DJango MCQs Sets"
+          color="#FF9B00"
+          textcolor="black"
+        />
    
         <div class="container-fluid">
           <div className="row">

@@ -27,7 +27,11 @@ class GitMCQ1 extends Component {
   render() {
     return (
       <>
-        <HeaderCard title="Git MCQs Set 1" />
+        <HeaderCard
+          title="GIT MCQs Set 1"
+          color="#FFD700"
+          textcolor="black"
+        />
 
         <div class="container-fluid">
           <div className="row">

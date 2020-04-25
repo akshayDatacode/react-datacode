@@ -4,6 +4,8 @@ import McqsShowCard from "../McqsShowCard";
 import RightSideSection from "../../../../right_section/RightSideSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faListAlt, faHome } from "@fortawesome/free-solid-svg-icons";
+import HeaderCard from "../../../HeaderCard";
+
 class IndexDjangoMCQ extends Component {
   state = {};
   componentDidMount() {
@@ -12,17 +14,12 @@ class IndexDjangoMCQ extends Component {
   render() {
     return (
       <>
-       <div className="row">
-          <div className="col">
-            <div className="card bg-warning">
-              <div className="card-body p-2">
-                <h1 className="card-title text-dark m-0 p-0">
-                DJango MCQs Sets
-                </h1>
-              </div>
-            </div>
-          </div>
-        </div>
+       <HeaderCard
+          title="DJango MCQs Sets"
+          color="#FF9B00"
+          textcolor="black"
+        />
+      
        
         <div className="row">
           <div className="col-1"></div>
