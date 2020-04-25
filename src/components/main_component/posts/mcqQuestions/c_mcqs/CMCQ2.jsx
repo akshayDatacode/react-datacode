@@ -30,24 +30,32 @@ class CMCQ2 extends Component {
   render() {
     return (
       <>
-        <HeaderCard title="C Programming MCQs Set 2" />
-        <div className="col-fluid ">
-          <ScoreCard count={this.state.count} />
-        </div>
-        <div class="container-fluid">
+   <HeaderCard
+          title="C MCQs Set 2"
+          color="#FFD700"
+          textcolor="black"
+        />           
+       <div class="container-fluid">
           <div className="row">
             <div className="col-1"></div>
             <div className="col-md-7 ">
-              <div className="row">
+              <div className="col-fluid mt-2 ml-2">
                 <Link to="/home" className="badge badge-primary mr-1">
                   <FontAwesomeIcon icon={faHome} size="1x" />
                 </Link>
-                <Link to="/index_mcqs" className="badge badge-warning mr-1">
-                  MCQs >>{" "}
+                <Link to="/index_mcqs" className="badge badge-info  mr-1">
+                  
+                  MCQs >>
                 </Link>
-                <Link to="/index_c_mcqs" className="badge badge-success mr-1">
-                  C-MCQs >>
+                <Link
+                  to="/index_c_mcqs"
+                  className="badge badge-success mr-1"
+                >
+                  C MCQs >>
                 </Link>
+                <ScoreCard count={this.state.count} />
+              </div>
+              <div className="row">
                 <div className="col">
                   <Quize
                     quizeNo="1"
