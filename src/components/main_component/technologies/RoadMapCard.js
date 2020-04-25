@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { FacebookProvider, Like } from "react-facebook";
+
 class RoadMapCard extends Component {
   state = {};
   render() {
@@ -6,14 +8,25 @@ class RoadMapCard extends Component {
       <>
         <div className="card mt-3 p-2">
           <div className="row">
-            <div className="col-2 d-none d-sm-block">
+            {/* <div className="col-2 d-none d-sm-block">
               <img
                 className="card-img-top mx-auto img-fluid img-circle d-block"
                 src={require("../../../assets/images/" + this.props.imgsource)}
                 alt="avatar"
               />
+            </div> */}
+            <div className="col-3 border border-white col-md-1">
+              <div className="card m-0 p-0">
+                <FacebookProvider appId="682148765561455">
+                  <Like
+                    href={this.props.link}
+                    layout="box_count"
+                    size="large"
+                  />
+                </FacebookProvider>
+              </div>
             </div>
-            <div className="col">
+            <div className="col-9 ml-md-4">
               <h6>{this.props.title}</h6>
 
               <snap className="badge badge-success">{this.props.tag1}</snap>
