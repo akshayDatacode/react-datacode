@@ -40,165 +40,181 @@ class C extends Component {
               tag3="Beginner"
               link="https://www.youtube.com/playlist?list=PL2_aWCzGMAwLZp6LMUKI3cc7pgGsasm2_"
             />
-            <RoadMapCard
-              imgsource="c_tutorial.jpeg"
-              title="LearnCpp"
-              source="(learncpp.com)"
-              tag1="Free"
-              link="https://www.learncpp.com/"
-            />
-            <RoadMapCard
+             <RoadMapCard
               imgsource="youtube.jpeg"
-              title="Buckys C++ Programming Tutorials"
+              title="C Programming Tutorial | Programming Knowledge"
               source="(youtube.com)"
-              tag1="Free"
-              tag2="Video"
-              link="https://www.youtube.com/playlist?list=PLAE85DE8440AA6B83"
-            />
-            <RoadMapCard
-              imgsource="c_tutorial.jpeg"
-              title="C++ Tutorial"
-              source="(sololearn.com)"
               tag1="Free"
               tag2="Beginner"
-              link="https://www.sololearn.com/Course/CPlusPlus/"
+              tag3="Video"
+              link="https://www.youtube.com/watch?v=-CpG3oATGIs"
             />
-            <RoadMapCard
-              imgsource="youtube.jpeg"
-              title="C++ Tutorial"
-              source="(youtube.com)"
-              tag1="Free"
-              tag2="Video"
-              tag3="Beginner"
-              link="https://www.youtube.com/playlist?list=PLGLfVvz_LVvQ9S8YSV0iDsuEU8v11yP9M"
-            />
-            <RoadMapCard
-              imgsource="youtube.jpeg"
-              title="C++/Game Tutorials"
-              source="(youtube.com)"
-              tag1="Free"
-              tag2="Video"
-              tag3="Beginner"
-              link="https://www.youtube.com/playlist?list=PLSPw4ASQYyynKPY0I-QFHK0iJTjnvNUys"
-            />
-            <RoadMapCard
-              imgsource="coursera.jpeg"
-              title="C++ For C Programmers"
-              source="(coursera.org)"
-              tag1="Free"
-              tag2="Video"
-              link="https://www.coursera.org/learn/c-plus-plus-a?ranMID=40328&ranEAID=jU79Zysihs4&ranSiteID=jU79Zysihs4-mOZIN.E.Fr4mLyGypMbyAg&siteID=jU79Zysihs4-mOZIN.E.Fr4mLyGypMbyAg&utm_content=10&utm_medium=partners&utm_source=linkshare&utm_campaign=jU79Zysihs4"
-            />
-            <RoadMapCard
-              imgsource="udacity.jpeg"
-              title="C++ For Programmers"
-              source="(udacity.com)"
-              tag1="Free"
-              tag2="Video"
-              tag3="Beginner"
-              link="https://www.udacity.com/course/c-for-programmers--ud210"
-            />
-            <RoadMapCard
-              imgsource="youtube.jpeg"
-              title="Entire C++ language in one video"
-              source="(youtube.com)"
-              tag1="Free"
-              tag2="Video"
-              link="https://www.youtube.com/watch?v=Rub-JsjMhWY&hd=1"
-            />{" "}
-            <RoadMapCard
+             <RoadMapCard
               imgsource="c_tutorial.jpeg"
-              title="C++ Annotations"
-              source="(icce.rug.nl)"
+              title="A to Z of C "
+              source="(guideme.itgo.com)"
               tag1="Free"
-              link="http://www.icce.rug.nl/documents/cplusplus/"
-            />
-            <RoadMapCard
-              imgsource="udemy.jpeg"
-              title="Beginning C++ Programming - From Beginner to Beyond"
-              source="(udemy.com)"
-              tag1="Paid"
-              tag2="Video"
-              tag3="Beginner"
-              link="https://click.linksynergy.com/deeplink?id=jU79Zysihs4&mid=39197&murl=https://www.udemy.com/beginning-c-plus-plus-programming"
-            />
-            <RoadMapCard
-              imgsource="udemy.jpeg"
-              title="Learn Advanced C++ Programming"
-              source="(udemy.com)"
-              tag1="Paid"
-              tag2="Video"
-              tag3="Advanced"
-              link="https://click.linksynergy.com/deeplink?id=jU79Zysihs4&mid=39197&murl=https://www.udemy.com/learn-advanced-c-programming/"
-            />
-            <RoadMapCard
-              imgsource="udemy.jpeg"
-              title="C++: From Beginner to Expert"
-              source="(udemy.com)"
-              tag1="Paid"
-              tag2="Video"
-              tag3="Beginner"
-              link="https://www.udemy.com/course/video-course-c-from-beginner-to-expert/?LSNPUBID=jU79Zysihs4&ranEAID=jU79Zysihs4&ranMID=39197&ranSiteID=jU79Zysihs4-ZA2i.SGJOZUGuX7WMxkVTg"
-            />
-            <RoadMapCard
-              imgsource="pluralsight.jpeg"
-              title="Learn C++"
-              source="(pluralsight.com)"
-              tag1="Paid"
-              link="https://www.pluralsight.com/paths/c-plus-plus?clickid=X6R3A1ylNxyOUDBwUx0Mo3QwUkixoVSYKSCjWA0&irgwc=1&mpid=1419154&utm_source=impactradius&utm_medium=digital_affiliate&utm_campaign=1419154&aid=7010a000001xAKZAA2"
-            />{" "}
-            <RoadMapCard
-              imgsource="pluralsight.jpeg"
-              title="C++ Advanced Topics"
-              source="(pluralsight.com)"
-              tag1="Paid"
-              tag2="Video"
-              tag3="Advanced"
-              link="https://www.pluralsight.com/courses/adv-cpp?clickid=X6R3A1ylNxyOUDBwUx0Mo3QwUkixoXzwKSCjWA0&irgwc=1&mpid=1419154&utm_source=impactradius&utm_medium=digital_affiliate&utm_campaign=1419154&aid=7010a000001xAKZAA2"
-            />
-            <RoadMapCard
-              imgsource="udemy.jpeg"
-              title="Learn C++ Programming -Beginner to Advance- Deep Dive in C++"
-              source="(udemy.com)"
-              tag1="Paid"
-              tag2="Video"
-              tag3="Beginner"
-              link="https://click.linksynergy.com/deeplink?id=jU79Zysihs4&mid=39197&murl=https://www.udemy.com/cpp-deep-dive"
-            />
-            <RoadMapCard
-              imgsource="c_tutorial.jpeg"
-              title="C++ Concurrency in Action, Second Edition"
-              source="(manning.com)"
-              tag1="Paid"
               tag2="Book"
               tag3="Advanced"
-              link="https://www.manning.com/books/c-plus-plus-concurrency-in-action-second-edition"
+              link="http://guideme.itgo.com/atozofc/"
+            />
+             <RoadMapCard
+              imgsource="c_tutorial.jpeg"
+              title="C - Geeks for Geeks "
+              source="(geeksforgeeks.org)"
+              tag1="Free"
+              link="http://www.geeksforgeeks.org/c/"
+            />
+             <RoadMapCard
+              imgsource="c_tutorial.jpeg"
+              title="Essential C "
+              source="(cslibrary.stanford.edu)"
+              tag1="Free"
+              tag2="Beginner
+              "
+              tag3="Book"
+              link="http://cslibrary.stanford.edu/101/"
+            />
+             <RoadMapCard
+              imgsource="youtube.jpeg"
+              title="Learning to Program in C by Jonathan Engelsma "
+              source="(youtube.com)"
+              tag1="Free"
+              tag2="Video"
+              link="https://www.youtube.com/playlist?list=PLkB3phqR3X40reMCBYSoNUPbDvM4kybMs"
+            />
+             <RoadMapCard
+              imgsource="youtube.jpeg"
+              title="Programming in C "
+              source="(youtube.com)"
+              tag1="Free"
+              tag2="Video
+              "
+              tag3="Beginner"
+              link="https://www.youtube.com/playlist?list=PLttVir45Xxf6hncJ-wFvZuDzkTAj6k6vZ"
+            />
+             <RoadMapCard
+              imgsource="c_tutorial.jpeg"
+              title="Learn C & Build Your Own Lisp 
+              "
+              source="(buildyourownlisp.com)"
+              tag1="Free"
+              tag2="Book"
+              link="http://www.buildyourownlisp.com/contents"
+            />
+             <RoadMapCard
+              imgsource="c_tutorial.jpeg"
+              title="Pointers and Memory "
+              source="(cslibrary.stanford.edu)"
+              tag1="Free"
+              tag2="Beginner"
+              link="http://cslibrary.stanford.edu/102/"
+            />
+             <RoadMapCard
+              imgsource="c_tutorial.jpeg"
+              title="Learn the Basics of C Programming Language"
+              source="(eduonix.com)"
+              tag1="Free"
+              tag2="Beginner
+              "
+              tag3="Video"
+              link="https://www.eduonix.com/courses/Software-Development/Learn-the-Basics-of-C-Programming-Language"
             />
             <RoadMapCard
+              imgsource="udemy.jpeg"
+              title="Advanced C Programming: Pointers "
+              source="(udemy.com)"
+              tag1="Paid"
+              tag2="Video
+              "
+              tag3="Advanced"
+              link="https://click.linksynergy.com/deeplink?id=jU79Zysihs4&mid=39197&murl=https://www.udemy.com/advanced-c-programming-pointers/"
+            />
+               <RoadMapCard
+              imgsource="udemy.jpeg"
+              title="C Programming For Beginners "
+              source="(udemy.com)"
+              tag1="Paid"
+              tag2="Video
+              "
+              tag3="Beginner"
+              link="https://click.linksynergy.com/deeplink?id=jU79Zysihs4&mid=39197&murl=https://www.udemy.com/c-programming-for-beginners/"
+            />
+               <RoadMapCard
               imgsource="c_tutorial.jpeg"
-              title="C++ Programming for Non-C Programmers"
+              title="Learn C The Hard Way "
+              source="(learncodethehardway.org)"
+              tag1="Paid"
+              tag2="Book"
+              link="https://learncodethehardway.org/c/"
+            />
+               <RoadMapCard
+              imgsource="c_tutorial.jpeg"
+              title="C Programming with Linux "
+              source="(edx.org)"
+              tag1="Paid"
+              tag2="Beginner"
+              link="http://www.awin1.com/cread.php?awinmid=6798&awinaffid=428263&p=https://www.edx.org/professional-certificate/dartmouth-imtx-c-programming-with-linux"
+            />
+               <RoadMapCard
+              imgsource="c_tutorial.jpeg"
+              title="C Primer Plus "
+              source="(amazon)"
+              tag1="Paid"
+              tag2="Book
+              "
+              tag3="Beginner"
+              link="https://geni.us/WGP6h"
+            />
+               <RoadMapCard
+              imgsource="coursera.jpeg"
+              title="Introduction to Programming in C "
+              source="(coursera.org)"
+              tag1="Paid"
+              tag2="Video
+              "
+              tag3="Beginner"
+              link="https://click.linksynergy.com/deeplink?id=jU79Zysihs4&mid=40328&murl=https://www.coursera.org/specializations/c-programming"
+            />
+               <RoadMapCard
+              imgsource="c_tutorial.jpeg"
+              title="C Programming 101 "
+              source="(crashcourse.io)"
+              tag1="Paid"
+              tag2="Book
+              "
+              tag3="Beginner"
+              link="https://crashcourse.io/courses/c-programming-101"
+            />
+               <RoadMapCard
+              imgsource="c_tutorial.jpeg"
+              title="C Tutorials "
               source="(software-skills-training.com)"
               tag1="Paid"
-              tag2="Advanced"
-              link="http://software-skills-training.com/Courses/c++-programming.htm"
-            />
-            <RoadMapCard
-              imgsource="c_tutorial.jpeg"
-              title="Nicolai M. Josuttis: The C++ Standard Library, 2nd edition"
-              source="(cppstdlib.com)"
-              tag1="Paid"
-              tag2="Book"
-              tag3="Advanced"
-              link="http://www.cppstdlib.com/"
-            />
-            <RoadMapCard
-              imgsource="c_tutorial.jpeg"
-              title="C++ for Programmers"
-              source="(educative.io)"
-              tag1="Paid"
-              tag2="Video"
+              tag2="Video
+              "
               tag3="Beginner"
-              link="https://www.educative.io/track/c-plus-plus-for-programmers"
+              link="http://www.software-skills-training.com/courses.htm"
+            />
+               <RoadMapCard
+              imgsource="c_tutorial.jpeg"
+              title="Let Us C "
+              source="(amazon.in)"
+              tag1="Paid"
+              tag2="Book
+              "
+              tag3="Beginner"
+              link="https://www.amazon.in/Let-Us-C-Yashavant-Kanetkar/dp/8183331637/"
+            />
+               <RoadMapCard
+              imgsource="c_tutorial.jpeg"
+              title="C Programming Language "
+              source="(amazon.com)"
+              tag1="Paid"
+              tag2="Book
+              "
+              tag3="Beginner"
+              link="https://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628/"
             />
           </div>
           <div className="col-md-4 mt-md-5 mt-3  ">

@@ -39,7 +39,7 @@ class HeaderComponent extends Component {
           expand="lg"
           variant="dark"
           className="m-0 p-0"
-          style={{ backgroundColor: "#072C71" }}
+          style={{ backgroundColor: "#264767" }}
         >
           <Navbar.Brand
             collapseOnSelect="false"

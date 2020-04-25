@@ -237,6 +237,8 @@ import AngularMCQ1 from "../components/main_component/posts/mcqQuestions/angular
 import IndexTechnologies from "../components/main_component/technologies/IndexTechnologies";
 import Python from "../components/main_component/technologies/Python";
 import C from "../components/main_component/technologies/C";
+import Cpp from "../components/main_component/technologies/Cpp";
+
 import Java from "../components/main_component/technologies/Java";
 import JS from "../components/main_component/technologies/JS";
 import DataStructure from "../components/main_component/technologies/DataStructure";
@@ -755,6 +757,7 @@ class AppRouters extends Component {
           />
           <Route exact path="/python" component={Python} />
           <Route exact path="/c" component={C} />
+          <Route exact path="/cpp" component={Cpp} />
           <Route exact path="/java" component={Java} />
           <Route exact path="/js" component={JS} />
           <Route exact path="/datastructure" component={DataStructure} />
