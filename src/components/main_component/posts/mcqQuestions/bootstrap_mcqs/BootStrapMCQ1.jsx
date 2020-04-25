@@ -27,7 +27,11 @@ class BootStrapMCQ1 extends Component {
   render() {
     return (
       <>
-        <HeaderCard title="BootStrap MCQs Set 1" />
+      <HeaderCard
+          title="BootStrap MCQs Set 1"
+          color="#AFEEEE"
+          textcolor="black"
+        />
 
         <div class="container-fluid">
           <div className="row">

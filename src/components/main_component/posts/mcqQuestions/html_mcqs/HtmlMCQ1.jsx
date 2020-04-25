@@ -27,7 +27,12 @@ class HtmlMCQ1 extends Component {
   render() {
     return (
       <>
-        <HeaderCard title="HTML MCQs Set 1" />
+        <HeaderCard
+          title="HTML MCQs Set 1"
+          color="#FFD700"
+          textcolor="black"
+        />   
+
 
         <div class="container-fluid">
           <div className="row">
@@ -40,8 +45,8 @@ class HtmlMCQ1 extends Component {
                 <Link to="/index_mcqs" className="badge badge-warning mr-1">
                   MCQs >>
                 </Link>
-                <Link to="/index_c_mcqs" className="badge badge-success mr-1">
-                  C-MCQs >>
+                <Link to="/index_html_mcqs" className="badge badge-success mr-1">
+                  HTML MCQs >>
                 </Link>
                 <ScoreCard count={this.state.count} />
               </div>

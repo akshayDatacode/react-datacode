@@ -27,7 +27,11 @@ class CssMCQ1 extends Component {
   render() {
     return (
       <>
-        <HeaderCard title="Css MCQs Set 1" />
+       <HeaderCard
+          title="Css MCQs Set 1"
+          color="#90EE90"
+          textcolor="black"
+        />
 
         <div class="container-fluid">
           <div className="row">

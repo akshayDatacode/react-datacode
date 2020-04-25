@@ -4,6 +4,8 @@ import RightSideSection from "../../../../right_section/RightSideSection";
 import McqsShowCard from "../McqsShowCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faListAlt } from "@fortawesome/free-solid-svg-icons";
+import HeaderCard from "../../../HeaderCard";
+
 
 class IndexCssMCQ extends Component {
   state = {};
@@ -13,17 +15,12 @@ class IndexCssMCQ extends Component {
   render() {
     return (
       <>
-       <div className="row">
-          <div className="col">
-            <div className="card bg-warning">
-              <div className="card-body p-2">
-                <h1 className="card-title text-dark m-0 p-0">
-                  Css MCQs Sets
-                </h1>
-              </div>
-            </div>
-          </div>
-        </div>
+      <HeaderCard
+          title="Css MCQs Sets"
+          color="#90EE90"
+          textcolor="black"
+        />
+      
         <div className="row">
           <div className="col-1"></div>
           <div className="col-md-8 mt-4">

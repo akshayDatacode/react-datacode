@@ -4,6 +4,8 @@ import McqsShowCard from "../McqsShowCard";
 import RightSideSection from "../../../../right_section/RightSideSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faListAlt, faHome } from "@fortawesome/free-solid-svg-icons";
+import HeaderCard from "../../../HeaderCard";
+
 class IndexBootStrapMCQ extends Component {
   state = {};
   componentDidMount() {
@@ -12,23 +14,16 @@ class IndexBootStrapMCQ extends Component {
   render() {
     return (
       <>
-       <div className="row">
-          <div className="col">
-            <div className="card bg-warning">
-              <div className="card-body p-2">
-                <h1 className="card-title text-dark m-0 p-0">
-                Bootstrap MCQs Sets
-                </h1>
-              </div>
-            </div>
-          </div>
-        </div>
+       <HeaderCard
+          title="Bootstrap MCQs Sets"
+          color="#AFEEEE"
+          textcolor="black"
+        />
+       
         <div className="row">
           <div className="col-1"></div>
           <div className="col-md-8 mt-4">
-            <h2 className="text-center mb-4">
-              BootStrap MCQs Practice Question
-            </h2>
+            
             <Link to="/home" className="badge badge-primary mr-1">
               <FontAwesomeIcon icon={faHome} size="1x" />
             </Link>
