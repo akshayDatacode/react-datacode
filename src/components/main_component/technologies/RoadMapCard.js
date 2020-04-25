@@ -15,7 +15,7 @@ class RoadMapCard extends Component {
                 alt="avatar"
               />
             </div> */}
-            <div className="col-3 pr-0 col-md-1">
+            <div className="col-3 border border-white col-md-1">
               <div className="card m-0 p-0">
                 <FacebookProvider appId="682148765561455">
                   <Like
