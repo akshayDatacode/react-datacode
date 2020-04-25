@@ -7,6 +7,8 @@ import RecommendPost from "../../../../right_section/RecommendPost";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faListAlt } from "@fortawesome/free-solid-svg-icons";
 import MCQCardCarousel from "../MCQCardCarousel";
+import HeaderCard from "../../../HeaderCard";
+
 
 class PythonMCQ3 extends Component {
   state = {
@@ -26,24 +28,19 @@ class PythonMCQ3 extends Component {
   render() {
     return (
       <>
-        <div className="row">
-          <div className="col">
-            <div className="card bg-warning">
-              <div className="card-body p-2">
-                <h1 className="card-title text-dark m-0 p-0">
-                  Python MCQs Set 3
-                </h1>
-              </div>
-            </div>
-          </div>
-        </div>
+      <HeaderCard
+          title="Python MCQs Set 3"
+          color="#FF9B00"
+          textcolor="black"
+        />
+   
         <div class="container-fluid">
           <div className="row">
             <div className="col-1"></div>
             <div className="col-md-7 ">
               <div className="col-fluid mt-2 ml-2">
                 <Link to="/home" className="badge badge-primary mr-1">
-                  <FontAwesomeIcon icon={faHome} size="2x" />
+                  <FontAwesomeIcon icon={faHome} size="1x" />
                 </Link>
                 <Link to="/index_mcqs" className="badge badge-info  mr-1">
                  
@@ -53,7 +50,7 @@ class PythonMCQ3 extends Component {
                   to="/index_python_mcqs"
                   className="badge badge-success mr-1"
                 >
-                  Python MCQs
+                  Python MCQs >>
                 </Link>
                 <ScoreCard count={this.state.count} />
               </div>

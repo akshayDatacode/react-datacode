@@ -41,13 +41,13 @@ class PythonMCQ extends Component {
                   <FontAwesomeIcon icon={faHome} size="1x" />
                 </Link>
                 <Link to="/index_mcqs" className="badge badge-info  mr-1">
-                  MCQs
+                  MCQs >>
                 </Link>
                 <Link
                   to="/index_python_mcqs"
                   className="badge badge-success mr-1"
                 >
-                  Python MCQs
+                  Python MCQs >>
                 </Link>
                 <ScoreCard count={this.state.count} />
               </div>

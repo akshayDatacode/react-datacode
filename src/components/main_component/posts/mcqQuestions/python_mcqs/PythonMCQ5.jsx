@@ -6,9 +6,10 @@ import Quize from "../quize";
 import RightSideSection from "../../../../right_section/RightSideSection";
 import RecommendPost from "../../../../right_section/RecommendPost";
 import MCQCardCarousel from "../MCQCardCarousel";
-import HeaderCard from "../../../HeaderCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
+import HeaderCard from "../../../HeaderCard";
+
 
 class PythonMCQ5 extends Component {
   state = {
@@ -28,8 +29,11 @@ class PythonMCQ5 extends Component {
   render() {
     return (
       <>
-        <HeaderCard title="Python MCQs Set 5" />
-
+  <HeaderCard
+          title="Python MCQs Set 5"
+          color="#FF9B00"
+          textcolor="black"
+        />
        
         <div class="container-fluid">
           <div className="row">
@@ -37,7 +41,7 @@ class PythonMCQ5 extends Component {
             <div className="col-md-7 ">
               <div className="col-fluid mt-2 ml-2">
                 <Link to="/home" className="badge badge-primary mr-1">
-                  <FontAwesomeIcon icon={faHome} size="2x" />
+                  <FontAwesomeIcon icon={faHome} size="1x" />
                 </Link>
                 <Link to="/index_mcqs" className="badge badge-info  mr-1">
                   MCQs >>
@@ -46,7 +50,7 @@ class PythonMCQ5 extends Component {
                   to="/index_python_mcqs"
                   className="badge badge-success mr-1"
                 >
-                  Python MCQs
+                  Python MCQs >>
                 </Link>
                 <ScoreCard count={this.state.count} />
               </div>
