@@ -41,13 +41,13 @@ class IndexOOPsQuizeTests extends Component {
                 link="oops_quize_test_1"
               />
               <QuizeShowCard
-                title="OOPs Quize Set 1"
-                level="Medium"
+                title="OOPs Quize Set 2"
+                level="Intermediate"
                 imgsource="oops.jpeg"
                 link="oops_quize_test_2"
               />
               <QuizeShowCard
-                title="OOPs Quize Set 1"
+                title="OOPs Quize Set 3"
                 level="Advance"
                 imgsource="oops.jpeg"
                 link="oops_quize_test_3"
