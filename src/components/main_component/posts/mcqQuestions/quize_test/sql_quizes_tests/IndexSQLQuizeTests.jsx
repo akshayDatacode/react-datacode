@@ -21,7 +21,7 @@ class IndexSQLQuizeTests extends Component {
         <div className="row">
           <div className="col-1"></div>
           <div className="col-md-8 mt-4">
-            <h2 className="text-center mb-4">C Programming Quize Test</h2>
+            <h2 className="text-center mb-4">SQL Quize Test</h2>
             <Link to="/home" className="badge badge-primary mr-1 mb-3">
               <FontAwesomeIcon icon={faHome} size="2x" />
             </Link>
@@ -41,13 +41,13 @@ class IndexSQLQuizeTests extends Component {
                 link="sql_quize_test_1"
               />
               <QuizeShowCard
-                title="SQL Quize Set 1"
-                level="Medium"
+                title="SQL Quize Set 2"
+                level="Intermediate"
                 imgsource="sql_tech.jpeg"
                 link="sql_quize_test_2"
               />
               <QuizeShowCard
-                title="SQL Quize Set 1"
+                title="SQL Quize Set 3"
                 level="Advance"
                 imgsource="sql_tech.jpeg"
                 link="sql_quize_test_3"
