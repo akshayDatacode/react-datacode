@@ -44,7 +44,7 @@ class FooterComponent extends Component {
                     />
                   </a>
                   <a
-                    href="https://www.facebook.com/Datacode.in/"
+                    href="https://www.instagram.com/datacode.in/"
                     target="_blank"
                   >
                     <FontAwesomeIcon
@@ -55,7 +55,7 @@ class FooterComponent extends Component {
                     />
                   </a>
                   <a
-                    href="https://www.facebook.com/Datacode.in/"
+                    href="https://www.linkedin.com/company/datacode_in/"
                     target="_blank"
                   >
                     <FontAwesomeIcon
@@ -66,7 +66,7 @@ class FooterComponent extends Component {
                     />
                   </a>
                   <a
-                    href="https://www.facebook.com/Datacode.in/"
+                    href="https://www.youtube.com/channel/UCEnd8Limn06xmD6hLzaGxvA"
                     target="_blank"
                   >
                     <FontAwesomeIcon
@@ -87,7 +87,7 @@ class FooterComponent extends Component {
                 <h6 className="text-uppercase font-weight-bold">Datacode.in</h6>
                 <hr
                   class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto"
-                  style={{ width: 100 }}
+                  style={{ width: 100, backgroundColor: "yellow" }}
                 />
 
                 <p style={{ color: "#7EC8F5" }}>
@@ -102,7 +102,7 @@ class FooterComponent extends Component {
                 </h6>
                 <hr
                   className="teal accent-3 mb-4 mt-0 d-inline-block mx-auto"
-                  style={{ width: 60 }}
+                  style={{ width: 60, backgroundColor: "yellow" }}
                 />
                 <p>
                   <a
@@ -115,13 +115,7 @@ class FooterComponent extends Component {
                 </p>
                 <p>
                   <a class="dark-grey-text" href="#!" target="_blank">
-                    Mozila Community ,Indore
-                  </a>
-                </p>
-
-                <p>
-                  <a class="dark-grey-text" href="#!" target="_blank">
-                    Bootstrap Angular
+                    Mozila Community,Indore
                   </a>
                 </p>
               </div>
@@ -131,7 +125,7 @@ class FooterComponent extends Component {
                 </h6>
                 <hr
                   class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto"
-                  style={{ width: 60 }}
+                  style={{ width: 108, backgroundColor: "yellow" }}
                 />
                 <p>
                   <Link className="dark-grey-text" to="/index_events">
@@ -140,7 +134,7 @@ class FooterComponent extends Component {
                 </p>
                 <p>
                   <Link className="dark-grey-text" to="/index_quize_tests">
-                    Quize Test
+                    Quizz Test
                   </Link>
                 </p>
                 <p>
@@ -159,7 +153,7 @@ class FooterComponent extends Component {
                 <h6 className="text-uppercase font-weight-bold">Contact</h6>
                 <hr
                   class="teal accent-3 mb-3 mt-0 d-inline-block mx-auto"
-                  style={{ width: 60 }}
+                  style={{ width: 70, backgroundColor: "yellow" }}
                 />
                 <p>
                   <FontAwesomeIcon

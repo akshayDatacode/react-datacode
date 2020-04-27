@@ -14,17 +14,17 @@ class MCQTestCardCarousel extends Component {
               <div className="card-deck ">
                 <CardCarouselItem
                   imgsource="python_quize.jpeg"
-                  title="Python quiz test"
+                  title="Python Quiz Test"
                   link="/python_quize_tests"
                 />
                 <CardCarouselItem
                   imgsource="c_quize.jpeg"
-                  title="C quiz test"
+                  title="C Quiz Test"
                   link="/c_quize_tests"
                 />
                 <CardCarouselItem
                   imgsource="cpp_quize.jpeg"
-                  title="C++ Quize Test"
+                  title="C++ Quiz Test"
                   link="/cpp_quize_tests"
                 />
               </div>
@@ -33,17 +33,17 @@ class MCQTestCardCarousel extends Component {
               <div className="card-deck ">
                 <CardCarouselItem
                   imgsource="java_quize.jpeg"
-                  title="Java Quize Test"
+                  title="Java Quiz Test"
                   link="/java_quize_tests"
                 />
                 <CardCarouselItem
                   imgsource="js_quize.jpeg"
-                  title="JavaScript Quize Test"
+                  title="JavaScript Quiz Test"
                   link="/js_quize_tests"
                 />
                 <CardCarouselItem
                   imgsource="ds_quize.jpeg"
-                  title="Datasturcture Quize Test"
+                  title="Datasturcture Quiz Test"
                   link="/ds_quize_tests"
                 />
               </div>
@@ -52,17 +52,17 @@ class MCQTestCardCarousel extends Component {
               <div className="card-deck ">
                 <CardCarouselItem
                   imgsource="dbms_quize.jpeg"
-                  title="DBMS Quize Test"
+                  title="DBMS Quiz Test"
                   link="/dbms_quize_tests"
                 />
                 <CardCarouselItem
                   imgsource="sql_quize.jpeg"
-                  title="SQL Quize Test"
+                  title="SQL Quiz Test"
                   link="/sql_quize_tests"
                 />
                 <CardCarouselItem
                   imgsource="oops_quize.jpeg"
-                  title="OOPs Quize Test"
+                  title="OOPs Quiz Test"
                   link="/oops_quize_tests"
                 />
               </div>
@@ -71,17 +71,17 @@ class MCQTestCardCarousel extends Component {
               <div className="card-deck ">
                 <CardCarouselItem
                   imgsource="html_css_quize.jpeg"
-                  title="Html & CSS  Quize Test"
+                  title="Html & CSS  Quiz Test"
                   link="/html_quize_tests"
                 />
                 <CardCarouselItem
                   imgsource="angular_quize.jpeg"
-                  title="Angular Quize Test"
+                  title="Angular Quiz Test"
                   link="/angular_quize_tests"
                 />
                 <CardCarouselItem
                   imgsource="react_quize.jpeg"
-                  title="React Quize Test"
+                  title="React Quiz Test"
                   link="/react_quize_tests"
                 />
               </div>
@@ -90,17 +90,17 @@ class MCQTestCardCarousel extends Component {
               <div className="card-deck ">
                 <CardCarouselItem
                   imgsource="android_quize.jpeg"
-                  title="Android Quize Test"
+                  title="Android Quiz Test"
                   link="/android_quize_tests"
                 />
                 <CardCarouselItem
                   imgsource="django_quize.jpeg"
-                  title="Django Quize Test"
+                  title="Django Quiz Test"
                   link="/django_quize_tests"
                 />
                 <CardCarouselItem
                   imgsource="git_quize.jpeg"
-                  title="Git Quize Test"
+                  title="Git Quiz Test"
                   link="/git_quize_tests"
                 />
               </div>
@@ -114,105 +114,105 @@ class MCQTestCardCarousel extends Component {
             <Carousel.Item>
               <CardCarouselItem
                 imgsource="python_quize.jpeg"
-                title="Python quiz test"
+                title="Python Quiz Test"
                 link="/python_quize_tests"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
                 imgsource="c_quize.jpeg"
-                title="C Quize Test"
+                title="C Quiz Test"
                 link="/c_quize_tests"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
                 imgsource="cpp_quize.jpeg"
-                title="C++ Quize Test"
+                title="C++ Quiz Test"
                 link="/cpp_quize_tests"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
                 imgsource="java_quize.jpeg"
-                title="Java Quize Test"
+                title="Java Quiz Test"
                 link="/java_quize_tests"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
                 imgsource="js_quize.jpeg"
-                title="Js Quize Test"
+                title="Js Quiz Test"
                 link="/js_quize_tests"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
                 imgsource="ds_quize.jpeg"
-                title="DataStructure Quize Test"
+                title="DataStructure Quiz Test"
                 link="/ds_quize_tests"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
                 imgsource="dbms_quize.jpeg"
-                title="Dbms Quize Test"
+                title="Dbms Quiz Test"
                 link="/dbms_quize_tests"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
                 imgsource="sql_quize.jpeg"
-                title="Sql Quize Test"
+                title="Sql Quiz Test"
                 link="/sql_quize_tests"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
                 imgsource="oops_quize.jpeg"
-                title="OOPs Quize Test"
+                title="OOPs Quiz Test"
                 link="/oops_quize_tests"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
                 imgsource="html_css_quize.jpeg"
-                title="Html & CSS Quize Test"
+                title="Html & CSS Quiz Test"
                 link="/html_quize_tests"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
                 imgsource="android_quize.jpeg"
-                title="Android Quize Test"
+                title="Android Quiz Test"
                 link="/android_quize_tests"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
                 imgsource="react_quize.jpeg"
-                title="React Quize Test"
+                title="React Quiz Test"
                 link="/react_quize_tests"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
                 imgsource="angular_quize.jpeg"
-                title="Angular Quize Test"
+                title="Angular Quiz Test"
                 link="/angular_quize_tests"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
                 imgsource="django_quize.jpeg"
-                title="Django Quize Test"
+                title="Django Quiz Test"
                 link="/django_quize_tests"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
                 imgsource="django_quize.jpeg"
-                title="Django Quize Test"
+                title="Django Quiz Test"
                 link="/django_quize_tests"
               />
             </Carousel.Item>

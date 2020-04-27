@@ -7,7 +7,7 @@ class RoadMapCard extends Component {
     return (
       <>
         <div className="card mt-3 p-2">
-          <div className="row">
+          <div className="row pl-0 pr-0 ml-0 mr-0">
             {/* <div className="col-2 d-none d-sm-block">
               <img
                 className="card-img-top mx-auto img-fluid img-circle d-block"
@@ -15,8 +15,8 @@ class RoadMapCard extends Component {
                 alt="avatar"
               />
             </div> */}
-            <div className="col-3 border border-white col-md-1">
-              <div className="card m-0 p-0">
+            <div className="col-3 border border-white col-md-1 m-0 p-0">
+              <div className="card m-0 p-0 border border-white">
                 <FacebookProvider appId="682148765561455">
                   <Like
                     href={this.props.link}
@@ -26,8 +26,8 @@ class RoadMapCard extends Component {
                 </FacebookProvider>
               </div>
             </div>
-            <div className="col-9 ml-md-4">
-              <h6>{this.props.title}</h6>
+            <div className="col-9 ml-md-5">
+              <h6 style={{ color: "#072C71" }}>{this.props.title}</h6>
 
               <snap className="badge badge-success">{this.props.tag1}</snap>
               <snap className="ml-2 badge badge-danger">{this.props.tag2}</snap>

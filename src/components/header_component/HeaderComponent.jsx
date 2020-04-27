@@ -23,6 +23,7 @@ import {
   faThList,
   faChalkboardTeacher,
   faTasks,
+  faBookOpen,
 } from "@fortawesome/free-solid-svg-icons";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
@@ -35,7 +36,6 @@ class HeaderComponent extends Component {
         <Navbar
           collapseOnSelect
           fixed="top"
-          //bg="dark"
           expand="lg"
           variant="dark"
           className="m-0 p-0"
@@ -58,14 +58,21 @@ class HeaderComponent extends Component {
           />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto ml-2">
-              <Nav.Link href="/react-datacode/#/home">
+              <Nav.Link
+                href="/react-datacode/#/home"
+                style={{ color: "#06CB6C" }}
+              >
                 <FontAwesomeIcon icon={faHome} /> Home
               </Nav.Link>
-              <Nav.Link href="/react-datacode/#/index_articles">
-                <FontAwesomeIcon icon={faNewspaper} /> Blogs
-              </Nav.Link>
 
-              <NavDropdown title="Learning" id="collasible-nav-dropdown">
+              <NavDropdown
+                title={
+                  <span className="my-auto" style={{ color: "#06CB6C" }}>
+                    <FontAwesomeIcon icon={faBookOpen} /> Learn
+                  </span>
+                }
+                id="collasible-nav-dropdown"
+              >
                 <NavDropdown.Item href="/react-datacode/#/index_technologies">
                   <FontAwesomeIcon
                     icon={faChalkboardTeacher}
@@ -95,7 +102,16 @@ class HeaderComponent extends Component {
                   Programming Questions
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="/react-datacode/#/index_events">
+              <Nav.Link
+                href="/react-datacode/#/index_articles"
+                style={{ color: "#06CB6C" }}
+              >
+                <FontAwesomeIcon icon={faNewspaper} /> Blogs
+              </Nav.Link>
+              <Nav.Link
+                href="/react-datacode/#/index_events"
+                style={{ color: "#06CB6C" }}
+              >
                 <FontAwesomeIcon icon={faClipboardList} /> Events
               </Nav.Link>
             </Nav>

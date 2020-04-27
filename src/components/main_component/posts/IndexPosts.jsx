@@ -21,7 +21,7 @@ import {
   faTasks,
   faNewspaper,
 } from "@fortawesome/free-solid-svg-icons";
-import { faHackerNewsSquare } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 class IndexPosts extends Component {
   state = {};
@@ -33,43 +33,61 @@ class IndexPosts extends Component {
         <div className="container-fluid mt-md-5 mt-3">
           <div class="row ">
             <div className="col">
-              <h4 className="mt-3" style={{ color: "#133658" }}>
-                <FontAwesomeIcon icon={faChalkboardTeacher} color="#133658" />{" "}
-                Tutorials & Courses
-              </h4>
+              <Link to="/index_technologies">
+                <h4 className="mt-3" style={{ color: "#133658" }}>
+                  <FontAwesomeIcon icon={faChalkboardTeacher} color="#133658" />{" "}
+                  Tutorials & Courses
+                </h4>
+              </Link>
               <TechnologiesCardCarousel />
-              <h4 className="mt-3" style={{ color: "#133658" }}>
-                <FontAwesomeIcon icon={faUserTie} color="#133658" /> Interview
-                Preparation
-              </h4>
+              <Link to="/index_interview_questioins">
+                <h4 className="mt-3" style={{ color: "#133658" }}>
+                  <FontAwesomeIcon icon={faUserTie} color="#133658" /> Interview
+                  Preparation
+                </h4>
+              </Link>
               <InterviewQuestionsCardCarousel />
-              <h4 className="mt-3" style={{ color: "#133658" }}>
-                <FontAwesomeIcon icon={faTasks} color="#133658" /> Programming
-                MCQs
-              </h4>
+              <Link to="/index_mcqs">
+                <h4 className="mt-3" style={{ color: "#133658" }}>
+                  <FontAwesomeIcon icon={faTasks} color="#133658" /> Programming
+                  MCQs
+                </h4>
+              </Link>
               <MCQCardCarousel />
-              <h4 className="mt-3" style={{ color: "#133658" }}>
-                <FontAwesomeIcon icon={faUserClock} color="#133658" />{" "}
-                Programming Quiz Test
-              </h4>
+              <Link to="/index_quize_tests">
+                <h4 className="mt-3" style={{ color: "#133658" }}>
+                  <FontAwesomeIcon icon={faUserClock} color="#133658" />{" "}
+                  Programming Quiz Test
+                </h4>
+              </Link>
               <MCQTestCardCarousel />
-              <h4 className="mt-3" style={{ color: "#133658" }}>
-                <FontAwesomeIcon icon={faLaptopCode} color="#133658" /> Weekly
-                Code Challanges
-              </h4>
+              <Link to="/index_code_challange">
+                <h4 className="mt-3" style={{ color: "#133658" }}>
+                  <FontAwesomeIcon icon={faLaptopCode} color="#133658" /> Weekly
+                  Code Challanges
+                </h4>
+              </Link>
               <CodeChallangeCardCarousel />
-              <h4 className="mt-3" style={{ color: "#133658" }}>
-                <FontAwesomeIcon icon={faFileCode} color="#133658" />{" "}
-                Programming Example Question
-              </h4>
+              <Link to="/index_programming_questions">
+                <h4 className="mt-3" style={{ color: "#133658" }}>
+                  <FontAwesomeIcon icon={faFileCode} color="#133658" />{" "}
+                  Programming Example Question
+                </h4>
+              </Link>
               <ProgrammingQuestionsCardCarousel />
-              <h4 className="mt-3" style={{ color: "#133658" }}>
-                <FontAwesomeIcon icon={faNewspaper} color="#133658" /> Community
-                Blogs
-              </h4>
+              <Link to="/index_articles">
+                <h4 className="mt-3" style={{ color: "#133658" }}>
+                  <FontAwesomeIcon icon={faNewspaper} color="#133658" />{" "}
+                  Community Blogs
+                </h4>
+              </Link>
               <ArticleCardCarousel />{" "}
-              {/* <h4 className="mt-3"style={{ color: "#133658" }}>Events and Contests</h4>
-              <EventCardCarousel /> */}
+              {/* 
+              <Link to="/index_events">
+              <h4 className="mt-3"style={{ color: "#133658" }}>Events and Contests</h4>
+              <EventCardCarousel /> 
+              </Link>
+              */}
             </div>
           </div>
         </div>
