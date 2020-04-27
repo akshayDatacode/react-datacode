@@ -60,14 +60,14 @@ class HeaderComponent extends Component {
             <Nav className="mr-auto ml-2">
               <Nav.Link
                 href="/react-datacode/#/home"
-                style={{ color: "#06CB6C" }}
+                style={{ color: "#04FFD5" }}
               >
                 <FontAwesomeIcon icon={faHome} /> Home
               </Nav.Link>
 
               <NavDropdown
                 title={
-                  <span className="my-auto" style={{ color: "#06CB6C" }}>
+                  <span className="my-auto" style={{ color: "#04FFD5" }}>
                     <FontAwesomeIcon icon={faBookOpen} /> Learn
                   </span>
                 }
@@ -104,13 +104,13 @@ class HeaderComponent extends Component {
               </NavDropdown>
               <Nav.Link
                 href="/react-datacode/#/index_articles"
-                style={{ color: "#06CB6C" }}
+                style={{ color: "#04FFD5" }}
               >
                 <FontAwesomeIcon icon={faNewspaper} /> Blogs
               </Nav.Link>
               <Nav.Link
                 href="/react-datacode/#/index_events"
-                style={{ color: "#06CB6C" }}
+                style={{ color: "#04FFD5" }}
               >
                 <FontAwesomeIcon icon={faClipboardList} /> Events
               </Nav.Link>

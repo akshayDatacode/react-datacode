@@ -33,58 +33,174 @@ class IndexPosts extends Component {
         <div className="container-fluid mt-md-5 mt-3">
           <div class="row ">
             <div className="col">
-              <Link to="/index_technologies">
-                <h4 className="mt-3" style={{ color: "#133658" }}>
-                  <FontAwesomeIcon icon={faChalkboardTeacher} color="#133658" />{" "}
-                  Tutorials & Courses
-                </h4>
-              </Link>
+              <div
+                className="card mb-2 mt-3"
+                style={{ backgroundColor: "#AACBCF" }}
+              >
+                <div className="card-body">
+                  <Link to="/index_technologies">
+                    <h4 style={{ color: "#133658" }}>
+                      <FontAwesomeIcon
+                        icon={faChalkboardTeacher}
+                        color="#133658"
+                      />{" "}
+                      Tutorials & Courses
+                    </h4>
+                  </Link>
+                  <p>
+                    Learn New Technologies and Find how you can start your
+                    learning from the beginner level. Datacode collects for you
+                    in a very shorted order The Best Learning Tutorials and
+                    Courses as Free or Paid
+                  </p>
+                  <h4 className="text-center p-0 m-0 "> Find and Learn</h4>
+                </div>
+              </div>
               <TechnologiesCardCarousel />
-              <Link to="/index_interview_questioins">
-                <h4 className="mt-3" style={{ color: "#133658" }}>
-                  <FontAwesomeIcon icon={faUserTie} color="#133658" /> Interview
-                  Preparation
-                </h4>
-              </Link>
+              {/* Ending of Technologies  */}
+              {/* Starting Interview */}
+              <div
+                className="card mb-2 mt-3"
+                style={{ backgroundColor: "#F8DB65" }}
+              >
+                <div className="card-body">
+                  <Link to="/index_interview_questioins">
+                    <h4 style={{ color: "#133658" }}>
+                      <FontAwesomeIcon icon={faUserTie} color="#133658" />{" "}
+                      Interview Preparation
+                    </h4>
+                  </Link>
+                  <p>
+                    Learn New Technologies and Find how you can start your
+                    learning from the beginner level. Datacode collects for you
+                    in a very shorted order The Best Learning Tutorials and
+                    Courses as Free or Paid
+                  </p>
+                  <h4 className="text-center p-0 m-0 ">Get The Placment</h4>
+                </div>
+              </div>
               <InterviewQuestionsCardCarousel />
-              <Link to="/index_mcqs">
-                <h4 className="mt-3" style={{ color: "#133658" }}>
-                  <FontAwesomeIcon icon={faTasks} color="#133658" /> Programming
-                  MCQs
-                </h4>
-              </Link>
+              {/* Ending Interview */}
+              {/* Starting MCQs */}
+              <div
+                className="card mb-2 mt-3"
+                style={{ backgroundColor: "#AACBCF" }}
+              >
+                <div className="card-body">
+                  <Link to="/index_mcqs">
+                    <h4 style={{ color: "#133658" }}>
+                      <FontAwesomeIcon icon={faTasks} color="#133658" />{" "}
+                      Programming MCQs
+                    </h4>
+                  </Link>
+                  <p>
+                    Learn New Technologies and Find how you can start your
+                    learning from the beginner level. Datacode collects for you
+                    in a very shorted order The Best Learning Tutorials and
+                    Courses as Free or Paid
+                  </p>
+                  <h4 className="text-center p-0 m-0 ">Challange Your Logic</h4>
+                </div>
+              </div>
               <MCQCardCarousel />
-              <Link to="/index_quize_tests">
-                <h4 className="mt-3" style={{ color: "#133658" }}>
-                  <FontAwesomeIcon icon={faUserClock} color="#133658" />{" "}
-                  Programming Quiz Test
-                </h4>
-              </Link>
+              {/* Ending MCQs  */}
+              {/* Staring QUIZ */}
+              <div
+                className="card mb-2 mt-3"
+                style={{ backgroundColor: "#AACBCF" }}
+              >
+                <div className="card-body">
+                  <Link to="/index_quize_tests">
+                    <h4 style={{ color: "#133658" }}>
+                      <FontAwesomeIcon icon={faUserClock} color="#133658" />{" "}
+                      Programming Quiz Test
+                    </h4>
+                  </Link>
+                  <p>
+                    Learn New Technologies and Find how you can start your
+                    learning from the beginner level. Datacode collects for you
+                    in a very shorted order The Best Learning Tutorials and
+                    Courses as Free or Paid
+                  </p>
+                  <h4 className="text-center p-0 m-0 ">Test Your Practice</h4>
+                </div>
+              </div>
               <MCQTestCardCarousel />
-              <Link to="/index_code_challange">
-                <h4 className="mt-3" style={{ color: "#133658" }}>
-                  <FontAwesomeIcon icon={faLaptopCode} color="#133658" /> Weekly
-                  Code Challanges
-                </h4>
-              </Link>
+              {/* End Quiz Test */}
+              {/* Starting Code Challange */}
+              <div
+                className="card mb-2 mt-3"
+                style={{ backgroundColor: "#AACBCF" }}
+              >
+                <div className="card-body">
+                  <Link to="/index_code_challange">
+                    <h4 style={{ color: "#133658" }}>
+                      <FontAwesomeIcon icon={faLaptopCode} color="#133658" />{" "}
+                      Weekly Code Challanges
+                    </h4>
+                  </Link>
+                  <p>
+                    Learn New Technologies and Find how you can start your
+                    learning from the beginner level. Datacode collects for you
+                    in a very shorted order The Best Learning Tutorials and
+                    Courses as Free or Paid
+                  </p>
+                  <h4 className="text-center p-0 m-0 ">It's Time to Code</h4>
+                </div>
+              </div>
               <CodeChallangeCardCarousel />
-              <Link to="/index_programming_questions">
-                <h4 className="mt-3" style={{ color: "#133658" }}>
-                  <FontAwesomeIcon icon={faFileCode} color="#133658" />{" "}
-                  Programming Example Question
-                </h4>
-              </Link>
+              {/* Ending Code challange*/}
+              {/* Starting Programming Questions */}
+              <div
+                className="card mb-2 mt-3"
+                style={{ backgroundColor: "#AACBCF" }}
+              >
+                <div className="card-body">
+                  <Link to="/index_programming_questions">
+                    <h4 style={{ color: "#133658" }}>
+                      <FontAwesomeIcon icon={faFileCode} color="#133658" />{" "}
+                      Programming Example Question
+                    </h4>
+                  </Link>
+                  <p>
+                    Learn New Technologies and Find how you can start your
+                    learning from the beginner level. Datacode collects for you
+                    in a very shorted order The Best Learning Tutorials and
+                    Courses as Free or Paid
+                  </p>
+                  <h4 className="text-center p-0 m-0 ">Practice Programming</h4>
+                </div>
+              </div>
               <ProgrammingQuestionsCardCarousel />
-              <Link to="/index_articles">
-                <h4 className="mt-3" style={{ color: "#133658" }}>
-                  <FontAwesomeIcon icon={faNewspaper} color="#133658" />{" "}
-                  Community Blogs
-                </h4>
-              </Link>
-              <ArticleCardCarousel />{" "}
+              {/* Ending Programming Questions */}
+              {/* Starting Articles */}
+              <div
+                className="card mb-2 mt-3"
+                style={{ backgroundColor: "#AACBCF" }}
+              >
+                <div className="card-body">
+                  <Link to="/index_articles">
+                    <h4 style={{ color: "#133658" }}>
+                      <FontAwesomeIcon icon={faNewspaper} color="#133658" />{" "}
+                      Community Blogs
+                    </h4>
+                  </Link>
+                  <p>
+                    Learn New Technologies and Find how you can start your
+                    learning from the beginner level. Datacode collects for you
+                    in a very shorted order The Best Learning Tutorials and
+                    Courses as Free or Paid
+                  </p>
+                  <h4 className="text-center p-0 m-0 ">
+                    Learn From Communities
+                  </h4>
+                </div>
+              </div>
+              <ArticleCardCarousel /> {/* Ending Articels */}
+              {/* Starting Events */}
               {/* 
               <Link to="/index_events">
-              <h4 className="mt-3"style={{ color: "#133658" }}>Events and Contests</h4>
+              <h4style={{ color: "#133658" }}>Events and Contests</h4>
               <EventCardCarousel /> 
               </Link>
               */}

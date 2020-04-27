@@ -60,14 +60,14 @@ class CardCarousel extends Component {
                   link="/python_programming_questions"
                 />
                 <CardCarouselItem
-                  imgsource="code_challange.jpeg"
-                  title="weekly Code Challange"
-                  link="/index_code_challange"
+                  imgsource="dbms_interview_questions.jpeg"
+                  title="Top DBMS Interview Questions"
+                  link="/dbms_interview_question"
                 />
                 <CardCarouselItem
-                  imgsource="code_challange.jpeg"
-                  title="weekly Code Challange"
-                  link="/index_code_challange"
+                  imgsource="datastructure.jpeg"
+                  title="Learn DataStructure from Beginner"
+                  link="/datastructure"
                 />
                 <CardCarouselItem
                   imgsource="code_challange.jpeg"
@@ -163,6 +163,13 @@ class CardCarousel extends Component {
                 imgsource="python_programming_question.jpeg"
                 title="Python Programming Questions"
                 link="/python_programming_questions"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <CardCarouselItem
+                imgsource="datastructure.jpeg"
+                title="Learn DataStructure from Beginner"
+                link="/datastructure"
               />
             </Carousel.Item>
           </Carousel>
