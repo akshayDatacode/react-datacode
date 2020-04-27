@@ -27,6 +27,8 @@ import {
   faArrowRight,
   faUserTie,
   faTasks,
+  faCodeBranch,
+  faCode,
 } from "@fortawesome/free-solid-svg-icons";
 import FooterComponentUpper from "../footer_component/FooterComponentUpper";
 import {
@@ -359,19 +361,15 @@ class MainComponent extends Component {
             <div className="col p-0">
               <h4 className="text-center text-light">
                 {" "}
-                <FontAwesomeIcon icon={faPuzzlePiece} color="#ABFF03" />{" "}
+                <FontAwesomeIcon icon={faPuzzlePiece} color="#06CB6C" />{" "}
                 Practice{" "}
                 <FontAwesomeIcon
-                  icon={faArrowRight}
-                  color="#B303FF"
+                  icon={faPlus}
+                  color="#06CB6C"
                   className="mr-4 ml-3"
                 />
                 Code
-                <FontAwesomeIcon
-                  icon={faTerminal}
-                  color="#ABFF03"
-                  className="ml-2"
-                />
+                <FontAwesomeIcon icon={faCode} color="#06CB6C" className="ml-2" />
               </h4>
               <div class="card-deck mt-3 p-4">
                 <div class="card border border-white pt-3">

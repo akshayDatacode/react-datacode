@@ -39,7 +39,9 @@ class IndexTechnologies extends Component {
         <div className="row">
           <div className="col-1"></div>
           <div className="col-md-8 mt-4">
-            <h2 className="text-center mb-4">Tutorials & Courses</h2>
+            <h1 className="text-center mb-4" style={{ color: "#072C71" }}>
+              Tutorials & Courses
+            </h1>
             <Link to="/home" className="badge badge-primary mr-1">
               <FontAwesomeIcon icon={faHome} size="2x" />
             </Link>

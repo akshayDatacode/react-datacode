@@ -2,7 +2,11 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import RightSideSection from "../../right_section/RightSideSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faBook } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHome,
+  faBook,
+  faChalkboardTeacher,
+} from "@fortawesome/free-solid-svg-icons";
 import RecommendPost from "../../right_section/RecommendPost";
 import RoadMapCard from "./RoadMapCard";
 import FbShare from "../FbShare";
@@ -25,11 +29,23 @@ class C extends Component {
             >
               Find the Best C Programming Courses & Tutorials
             </h2>
-            <Link to="/home" className="badge badge-primary mr-1">
-              <FontAwesomeIcon icon={faHome} size="2x" />
+            <Link
+              to="/home"
+              className="badge mr-1"
+              style={{ backgroundColor: "#06CB6C" }}
+            >
+              <FontAwesomeIcon icon={faHome} size="2x" color="#072C71" />
             </Link>
-            <Link to="/index_technologies" className="badge badge-warning mr-1">
-              Technologies >
+            <Link
+              to="/index_technologies"
+              className="badge mr-1"
+              style={{ backgroundColor: "#072C71" }}
+            >
+              <FontAwesomeIcon
+                icon={faChalkboardTeacher}
+                size="2x"
+                color="#06CB6C"
+              />
             </Link>
             <RoadMapCard
               imgsource="youtube.jpeg"
@@ -40,7 +56,7 @@ class C extends Component {
               tag3="Beginner"
               link="https://www.youtube.com/playlist?list=PL2_aWCzGMAwLZp6LMUKI3cc7pgGsasm2_"
             />
-             <RoadMapCard
+            <RoadMapCard
               imgsource="youtube.jpeg"
               title="C Programming Tutorial | Programming Knowledge"
               source="(youtube.com)"
@@ -49,7 +65,7 @@ class C extends Component {
               tag3="Video"
               link="https://www.youtube.com/watch?v=-CpG3oATGIs"
             />
-             <RoadMapCard
+            <RoadMapCard
               imgsource="c_tutorial.jpeg"
               title="A to Z of C "
               source="(guideme.itgo.com)"
@@ -58,14 +74,14 @@ class C extends Component {
               tag3="Advanced"
               link="http://guideme.itgo.com/atozofc/"
             />
-             <RoadMapCard
+            <RoadMapCard
               imgsource="c_tutorial.jpeg"
               title="C - Geeks for Geeks "
               source="(geeksforgeeks.org)"
               tag1="Free"
               link="http://www.geeksforgeeks.org/c/"
             />
-             <RoadMapCard
+            <RoadMapCard
               imgsource="c_tutorial.jpeg"
               title="Essential C "
               source="(cslibrary.stanford.edu)"
@@ -75,7 +91,7 @@ class C extends Component {
               tag3="Book"
               link="http://cslibrary.stanford.edu/101/"
             />
-             <RoadMapCard
+            <RoadMapCard
               imgsource="youtube.jpeg"
               title="Learning to Program in C by Jonathan Engelsma "
               source="(youtube.com)"
@@ -83,7 +99,7 @@ class C extends Component {
               tag2="Video"
               link="https://www.youtube.com/playlist?list=PLkB3phqR3X40reMCBYSoNUPbDvM4kybMs"
             />
-             <RoadMapCard
+            <RoadMapCard
               imgsource="youtube.jpeg"
               title="Programming in C "
               source="(youtube.com)"
@@ -93,7 +109,7 @@ class C extends Component {
               tag3="Beginner"
               link="https://www.youtube.com/playlist?list=PLttVir45Xxf6hncJ-wFvZuDzkTAj6k6vZ"
             />
-             <RoadMapCard
+            <RoadMapCard
               imgsource="c_tutorial.jpeg"
               title="Learn C & Build Your Own Lisp 
               "
@@ -102,7 +118,7 @@ class C extends Component {
               tag2="Book"
               link="http://www.buildyourownlisp.com/contents"
             />
-             <RoadMapCard
+            <RoadMapCard
               imgsource="c_tutorial.jpeg"
               title="Pointers and Memory "
               source="(cslibrary.stanford.edu)"
@@ -110,7 +126,7 @@ class C extends Component {
               tag2="Beginner"
               link="http://cslibrary.stanford.edu/102/"
             />
-             <RoadMapCard
+            <RoadMapCard
               imgsource="c_tutorial.jpeg"
               title="Learn the Basics of C Programming Language"
               source="(eduonix.com)"
@@ -130,7 +146,7 @@ class C extends Component {
               tag3="Advanced"
               link="https://click.linksynergy.com/deeplink?id=jU79Zysihs4&mid=39197&murl=https://www.udemy.com/advanced-c-programming-pointers/"
             />
-               <RoadMapCard
+            <RoadMapCard
               imgsource="udemy.jpeg"
               title="C Programming For Beginners "
               source="(udemy.com)"
@@ -140,7 +156,7 @@ class C extends Component {
               tag3="Beginner"
               link="https://click.linksynergy.com/deeplink?id=jU79Zysihs4&mid=39197&murl=https://www.udemy.com/c-programming-for-beginners/"
             />
-               <RoadMapCard
+            <RoadMapCard
               imgsource="c_tutorial.jpeg"
               title="Learn C The Hard Way "
               source="(learncodethehardway.org)"
@@ -148,7 +164,7 @@ class C extends Component {
               tag2="Book"
               link="https://learncodethehardway.org/c/"
             />
-               <RoadMapCard
+            <RoadMapCard
               imgsource="c_tutorial.jpeg"
               title="C Programming with Linux "
               source="(edx.org)"
@@ -156,7 +172,7 @@ class C extends Component {
               tag2="Beginner"
               link="http://www.awin1.com/cread.php?awinmid=6798&awinaffid=428263&p=https://www.edx.org/professional-certificate/dartmouth-imtx-c-programming-with-linux"
             />
-               <RoadMapCard
+            <RoadMapCard
               imgsource="c_tutorial.jpeg"
               title="C Primer Plus "
               source="(amazon)"
@@ -166,7 +182,7 @@ class C extends Component {
               tag3="Beginner"
               link="https://geni.us/WGP6h"
             />
-               <RoadMapCard
+            <RoadMapCard
               imgsource="coursera.jpeg"
               title="Introduction to Programming in C "
               source="(coursera.org)"
@@ -176,7 +192,7 @@ class C extends Component {
               tag3="Beginner"
               link="https://click.linksynergy.com/deeplink?id=jU79Zysihs4&mid=40328&murl=https://www.coursera.org/specializations/c-programming"
             />
-               <RoadMapCard
+            <RoadMapCard
               imgsource="c_tutorial.jpeg"
               title="C Programming 101 "
               source="(crashcourse.io)"
@@ -186,7 +202,7 @@ class C extends Component {
               tag3="Beginner"
               link="https://crashcourse.io/courses/c-programming-101"
             />
-               <RoadMapCard
+            <RoadMapCard
               imgsource="c_tutorial.jpeg"
               title="C Tutorials "
               source="(software-skills-training.com)"
@@ -196,7 +212,7 @@ class C extends Component {
               tag3="Beginner"
               link="http://www.software-skills-training.com/courses.htm"
             />
-               <RoadMapCard
+            <RoadMapCard
               imgsource="c_tutorial.jpeg"
               title="Let Us C "
               source="(amazon.in)"
@@ -206,7 +222,7 @@ class C extends Component {
               tag3="Beginner"
               link="https://www.amazon.in/Let-Us-C-Yashavant-Kanetkar/dp/8183331637/"
             />
-               <RoadMapCard
+            <RoadMapCard
               imgsource="c_tutorial.jpeg"
               title="C Programming Language "
               source="(amazon.com)"
@@ -219,13 +235,13 @@ class C extends Component {
           </div>
           <div className="col-md-4 mt-md-5 mt-3  ">
             <FbLikeShare />
-            <h3
+            <h4
               className="text-center mt-4 mb-md-4 mb-3"
               style={{ color: "#133658" }}
             >
               <FontAwesomeIcon icon={faBook} size="1x" className="mr-2" />C
               Programming Learning
-            </h3>
+            </h4>
             <RecommendPost
               imgsource="c_mcq.jpeg"
               RecPostHading="C MCQs"
