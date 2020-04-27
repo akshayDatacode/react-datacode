@@ -41,13 +41,13 @@ class IndexAngularQuizeTests extends Component {
                 link="angular_quize_test_1"
               />
               <QuizeShowCard
-                title="Angular Quize Set 1"
-                level="Medium"
+                title="Angular Quize Set 2"
+                level="Intermediate"
                 imgsource="angular_tech.jpeg"
                 link="angular_quize_test_2"
               />
               <QuizeShowCard
-                title="Angular Quize Set 1"
+                title="Angular Quize Set 3"
                 level="Advance"
                 imgsource="angular_tech.jpeg"
                 link="angular_quize_test_3"

@@ -40,13 +40,13 @@ class IndexReactQuizeTests extends Component {
                 link="react_quize_test_1"
               />
               <QuizeShowCard
-                title="React Quize Set 1"
-                level="Medium"
+                title="React Quize Set 2"
+                level="Intermediate"
                 imgsource="react_tech.jpeg"
                 link="react_quize_test_2"
               />
               <QuizeShowCard
-                title="React Quize Set 1"
+                title="React Quize Set 3"
                 level="Advance"
                 imgsource="react_tech.jpeg"
                 link="react_quize_test_3"

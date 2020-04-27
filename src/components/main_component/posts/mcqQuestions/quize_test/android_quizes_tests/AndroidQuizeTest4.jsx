@@ -4,7 +4,7 @@ class CQuizeTest4 extends Component {
   render() {
     return (
       <>
-        <h1>C Quize Test 4</h1>
+        <h1>Android Quize Test 4</h1>
       </>
     );
   }
