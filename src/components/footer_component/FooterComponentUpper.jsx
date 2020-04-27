@@ -55,7 +55,7 @@ class FooterComponentUpper extends Component {
                           size="2x"
                         />
                         <p className="mt-1 text-secondary">
-                          Technical Quize Test
+                          Technical Quizz Test
                         </p>
                       </Link>
                     </div>

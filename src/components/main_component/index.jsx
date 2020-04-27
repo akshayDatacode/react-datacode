@@ -331,7 +331,7 @@ class MainComponent extends Component {
                     />
                   </center>
                   <div class="card-body">
-                    <h5 class="card-title"> Programming Practice CODE</h5>
+                    <h5 class="card-title"> Programming Example Questions</h5>
                     <p class="card-text text-secondary">
                       Sharpen your coding skills by finding the best programming
                       questions meant only for you.
@@ -410,7 +410,7 @@ class MainComponent extends Component {
                     </center>
                   </Link>
                   <div class="card-body text-left">
-                    <h5 class="card-title ">Technical MCQs Tests</h5>
+                    <h5 class="card-title ">Technical Quizz Tests</h5>
                     <p class="card-text text-secondary">
                       Find the best Technical quizzes to test your Technical
                       knowledge
@@ -464,7 +464,7 @@ class MainComponent extends Component {
                     </p>
                   </div>
                   <div class="card-footer border border-white bg-white text-center">
-                    <Link to="/index_books">
+                    <Link to="/index_events">
                       <h6 className="btn btn-default border border-dark ">
                         Read More
                       </h6>
