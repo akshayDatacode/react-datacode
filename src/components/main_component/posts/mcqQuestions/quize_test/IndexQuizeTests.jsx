@@ -105,37 +105,9 @@ class IndexQuizeTests extends Component {
                   love to Computer Science Wolrd."
                 link="/react_quize_tests"
               />
-              <PostCard
-                imgsource="android_quize.jpeg"
-                title="Android Quiz Test"
-                paragraph="We Love to Code and this is the best way to express our
-                  love to Computer Science Wolrd."
-                link="/Android_quize_tests"
-              />
+      
             </div>
-            <div className="card-deck mb-5">
-              <PostCard
-                imgsource="django_quize.jpeg"
-                title="Django Quiz Test"
-                paragraph="We Love to Code and this is the best way to express our
-                  love to Computer Science Wolrd."
-                link="/html_quize_tests"
-              />
-              <PostCard
-                imgsource="bootstrap_quize.jpeg"
-                title="Bootstrap Quiz Test"
-                paragraph="We Love to Code and this is the best way to express our
-                  love to Computer Science Wolrd."
-                link="/bootstrap_quize_tests"
-              />
-              <PostCard
-                imgsource="git_quize.jpeg"
-                title="Git Quiz Test"
-                paragraph="We Love to Code and this is the best way to express our
-                  love to Computer Science Wolrd."
-                link="/git_quize_tests"
-              />
-            </div>
+    
             <h4 className="text-secondary mt-3">For More Quiz Tests</h4>
             <MCQTestCardCarousel />
           </div>
