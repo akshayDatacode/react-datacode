@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b96414cfd1d15be78defd9938c06b335",
+    "revision": "a6e27e4dfb81b9de8d52cd2ff5625e36",
     "url": "/index.html"
   },
   {
-    "revision": "ad4ad6b04b6c2b362d46",
+    "revision": "60759d9bf77607a1883d",
     "url": "/static/css/2.89f067aa.chunk.css"
   },
   {
-    "revision": "c4a5f0cce2c1531e65af",
+    "revision": "fa3e31a5959538dda041",
     "url": "/static/css/main.2749690b.chunk.css"
   },
   {
-    "revision": "ad4ad6b04b6c2b362d46",
-    "url": "/static/js/2.d2b6f99b.chunk.js"
+    "revision": "60759d9bf77607a1883d",
+    "url": "/static/js/2.6e4e7a4b.chunk.js"
   },
   {
     "revision": "ae54f939c6e84f9ec4d4c4cd8100d77f",
-    "url": "/static/js/2.d2b6f99b.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.6e4e7a4b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c4a5f0cce2c1531e65af",
-    "url": "/static/js/main.c6463b72.chunk.js"
+    "revision": "fa3e31a5959538dda041",
+    "url": "/static/js/main.4e41ca75.chunk.js"
   },
   {
     "revision": "ba88f149e390315adcbe",
@@ -166,6 +166,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1e5329d1ccf9526eab915999a4b8c1f9",
     "url": "/static/media/c_mcq.1e5329d1.jpeg"
+  },
+  {
+    "revision": "4a7a0e69e15660231aa536aee50ea387",
+    "url": "/static/media/c_practice_questions_advance.4a7a0e69.jpeg"
+  },
+  {
+    "revision": "0554f5070f329307ffdd7b06ad1a0781",
+    "url": "/static/media/c_practice_questions_beginner.0554f507.jpeg"
+  },
+  {
+    "revision": "e953c5cd20caadfb9850c6a685bf5c4e",
+    "url": "/static/media/c_practice_questions_intermediate.e953c5cd.jpeg"
   },
   {
     "revision": "d172a81333d8fd7c1a7c207bb0b11343",
@@ -368,6 +380,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/ds_mcqs.bb0317bd.jpeg"
   },
   {
+    "revision": "71916d46896c25552c7b0b34840637ba",
+    "url": "/static/media/ds_practice_questions_advance.71916d46.jpeg"
+  },
+  {
+    "revision": "2fab0d1429f688cbaaa81e309ab5cff8",
+    "url": "/static/media/ds_practice_questions_beginner.2fab0d14.jpeg"
+  },
+  {
+    "revision": "485b4169116b537b1e63a085965afb67",
+    "url": "/static/media/ds_practice_questions_intermediate.485b4169.jpeg"
+  },
+  {
     "revision": "65a530e006cb91be5766561c5f39b4de",
     "url": "/static/media/ds_quize.65a530e0.jpeg"
   },
@@ -494,6 +518,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "419fda51f47bb1c1e79badee223839e3",
     "url": "/static/media/java_mcqs.419fda51.jpeg"
+  },
+  {
+    "revision": "0cfc3b94cec92a59875bb378f52ac177",
+    "url": "/static/media/java_practice_questions_advance.0cfc3b94.jpeg"
+  },
+  {
+    "revision": "a5630036ab58123e14a0fb5af3ef49c2",
+    "url": "/static/media/java_practice_questions_beginner.a5630036.jpeg"
+  },
+  {
+    "revision": "bf8745688cee330415b525301f5aeca6",
+    "url": "/static/media/java_practice_questions_intermediate.bf874568.jpeg"
   },
   {
     "revision": "0fd7c8dd4fcdd417f3a6bc04b7cd7373",
@@ -642,6 +678,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3f0b9a3b75585f2f600399fdb2e1509f",
     "url": "/static/media/python_mcqs.3f0b9a3b.jpeg"
+  },
+  {
+    "revision": "703a951c461022d2dad76cddd04ec2a8",
+    "url": "/static/media/python_practice_questions_advance.703a951c.jpeg"
+  },
+  {
+    "revision": "8d37508ec707f7b4cdd01571bef890bb",
+    "url": "/static/media/python_practice_questions_beginner.8d37508e.jpeg"
+  },
+  {
+    "revision": "825da4cca71806b17af6eb16b431de6e",
+    "url": "/static/media/python_practice_questions_intermediate.825da4cc.jpeg"
   },
   {
     "revision": "a0c67178f3fa27b7bc316040c592ce2f",
