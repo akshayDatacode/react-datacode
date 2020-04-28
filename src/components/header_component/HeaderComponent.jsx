@@ -93,13 +93,17 @@ class HeaderComponent extends Component {
                   <FontAwesomeIcon icon={faUserTie} className="mr-2" />
                   Interview Preparation
                 </NavDropdown.Item>
+                <NavDropdown.Item href="/react-datacode/#/index_practice_questions">
+                  <FontAwesomeIcon icon={faFileCode} className="mr-2" />
+                  Programming Practice Questions
+                </NavDropdown.Item>
                 <NavDropdown.Item href="/react-datacode/#/index_quize_tests">
                   <FontAwesomeIcon icon={faUsersCog} className="mr-2" />
                   Programming Quiz Tests
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/react-datacode/#/index_programming_questions">
                   <FontAwesomeIcon icon={faFileCode} className="mr-2" />
-                  Programming Questions
+                  Programming Example Questions
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link

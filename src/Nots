@@ -1,4 +1,14 @@
+
+google C 15th edition solution
+
+https://books.google.co.in/books?id=Ce6gAAAACAAJ&lpg=PR1&pg=PA16#v=onepage&q&f=false
+
+
+
 Blog Site Examplle :- 
+
+
+
 
 https://hackr.io/
 Hackr.io is a community to find and share the best online courses & tutorials
@@ -31,6 +41,11 @@ npm install --save prism-react-renderer
 
 /====================FOr Git Pages
 npm install gh-pages --save
+
+
+//=======for SideBar
+npm i react-bootstrap-sidebar
+
 
 /====for Smooth Scroller =====
 npm install react-scroll

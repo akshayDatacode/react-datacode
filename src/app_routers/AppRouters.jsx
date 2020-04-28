@@ -268,6 +268,17 @@ import CodeChallangeWeek1 from "../components/main_component/code_challange/Code
 import PythonInterviewQuestions from "../components/main_component/posts/technical_interview_questions/PythonInterviewQuestions";
 import EventGallary from "../components/main_component/events/EventGallary";
 
+// Practice Question
+import IndexPracticeQuestions from "../components/main_component/posts/practice_questions/IndexPracticeQuestions";
+import IndexCPracticeQuestions from "../components/main_component/posts/practice_questions/c_practice_questions/IndexCPracticeQuestions";
+import CPracticeQuestionsBeginner from "../components/main_component/posts/practice_questions/c_practice_questions/CPracticeQuestionsBeginner";
+import CPracticeQuestionsIntermediate from "../components/main_component/posts/practice_questions/c_practice_questions/CPracticeQuestionsIntermediate";
+import CPracticeQuestionsAdvance from "../components/main_component/posts/practice_questions/c_practice_questions/CPracticeQuestionsAdvance";
+
+import IndexJavaPracticeQuestions from "../components/main_component/posts/practice_questions/java_practice_questions/IndexJavaPracticeQuestions";
+import IndexPythonPracticeQuestions from "../components/main_component/posts/practice_questions/python_practice_questions/IndexPythonPracticeQuestions";
+import IndexDSPracticeQuestions from "../components/main_component/posts/practice_questions/ds_practice_questions/IndexDSPracticeQuestions";
+
 class AppRouters extends Component {
   state = {};
   render() {
@@ -826,6 +837,51 @@ class AppRouters extends Component {
             component={CodeChallangeWeek2}
           />
           {/* Ending COde Challange PAge */}
+
+          {/* Starting Practice Questions */}
+
+          <Route
+            exact
+            path="/index_practice_questions"
+            component={IndexPracticeQuestions}
+          />
+          <Route
+            exact
+            path="/index_c_practice_questions"
+            component={IndexCPracticeQuestions}
+          />
+          <Route
+            exact
+            path="/c_practice_questions_beginner"
+            component={CPracticeQuestionsBeginner}
+          />
+          <Route
+            exact
+            path="/c_practice_questions_intermediate"
+            component={CPracticeQuestionsIntermediate}
+          />
+          <Route
+            exact
+            path="/c_practice_questions_advance"
+            component={CPracticeQuestionsAdvance}
+          />
+          <Route
+            exact
+            path="/index_java_practice_questions"
+            component={IndexJavaPracticeQuestions}
+          />
+          <Route
+            exact
+            path="/index_python_practice_questions"
+            component={IndexPythonPracticeQuestions}
+          />
+          <Route
+            exact
+            path="/index_ds_practice_questions"
+            component={IndexDSPracticeQuestions}
+          />
+
+          {/* Ending Code Challange */}
         </Switch>
       </>
     );
