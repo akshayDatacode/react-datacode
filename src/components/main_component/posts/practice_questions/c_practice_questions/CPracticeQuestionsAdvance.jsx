@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import HeaderCard from "../../../HeaderCard";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
-import FbLikeComment from "../../../../FbComment";
 import Discuss from "../../../Discuss";
 class CPracticeQuestionsAdvance extends Component {
   state = {};

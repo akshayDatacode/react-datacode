@@ -7,6 +7,8 @@ import MCQTestCardCarousel from "../posts/mcqQuestions/quize_test/MCQTestCardCar
 import ProgrammingQuestionsCardCarousel from "../posts/programming_questions/ProgrammingQuestionCardCarousel";
 import CodeChallangeCardCarousel from "../code_challange/CodeChallangeCardCarousel";
 import ArticleCardCarousel from "../aticles/ArticleCardCarousel";
+import PracticeQuestionCardCarousel  from "../posts/practice_questions/PracticeQuestionCardCarousel";
+
 import EventCardCarousel from "../events/EventCardCarousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -84,7 +86,7 @@ class IndexPosts extends Component {
               {/* Starting MCQs */}
               <div
                 className="card mb-2 mt-3"
-                style={{ backgroundColor: "#AACBCF" }}
+                style={{ backgroundColor: "#90EE90" }}
               >
                 <div className="card-body">
                   <Link to="/index_mcqs">
@@ -104,10 +106,11 @@ class IndexPosts extends Component {
               </div>
               <MCQCardCarousel />
               {/* Ending MCQs  */}
+
               {/* Staring QUIZ */}
               <div
                 className="card mb-2 mt-3"
-                style={{ backgroundColor: "#AACBCF" }}
+                style={{ backgroundColor: "#FFE4E1" }}
               >
                 <div className="card-body">
                   <Link to="/index_quize_tests">
@@ -127,16 +130,17 @@ class IndexPosts extends Component {
               </div>
               <MCQTestCardCarousel />
               {/* End Quiz Test */}
-              {/* Starting Code Challange */}
+
+              {/* Staring programming pratice */}
               <div
                 className="card mb-2 mt-3"
                 style={{ backgroundColor: "#AACBCF" }}
               >
                 <div className="card-body">
-                  <Link to="/index_code_challange">
+                  <Link to="/index_quize_tests">
                     <h4 style={{ color: "#133658" }}>
-                      <FontAwesomeIcon icon={faLaptopCode} color="#133658" />{" "}
-                      Weekly Code Challanges
+                      <FontAwesomeIcon icon={faUserClock} color="#133658" />{" "}
+                      Programming Practice question
                     </h4>
                   </Link>
                   <p>
@@ -145,15 +149,17 @@ class IndexPosts extends Component {
                     in a very shorted order The Best Learning Tutorials and
                     Courses as Free or Paid
                   </p>
-                  <h4 className="text-center p-0 m-0 ">It's Time to Code</h4>
+                  <h4 className="text-center p-0 m-0 ">Practice your logic </h4>
                 </div>
               </div>
-              <CodeChallangeCardCarousel />
-              {/* Ending Code challange*/}
+              <PracticeQuestionCardCarousel  />
+               {/* END programming pratice */}
+
+            
               {/* Starting Programming Questions */}
               <div
                 className="card mb-2 mt-3"
-                style={{ backgroundColor: "#AACBCF" }}
+                style={{ backgroundColor: "#F8DB65" }}
               >
                 <div className="card-body">
                   <Link to="/index_programming_questions">
@@ -176,7 +182,7 @@ class IndexPosts extends Component {
               {/* Starting Articles */}
               <div
                 className="card mb-2 mt-3"
-                style={{ backgroundColor: "#AACBCF" }}
+                style={{ backgroundColor: "#90EE90" }}
               >
                 <div className="card-body">
                   <Link to="/index_articles">
@@ -197,6 +203,30 @@ class IndexPosts extends Component {
                 </div>
               </div>
               <ArticleCardCarousel /> {/* Ending Articels */}
+
+                {/* Starting Code Challange */}
+                <div
+                className="card mb-2 mt-3"
+                style={{ backgroundColor: "#FFE4E1" }}
+              >
+                <div className="card-body">
+                  <Link to="/index_code_challange">
+                    <h4 style={{ color: "#133658" }}>
+                      <FontAwesomeIcon icon={faLaptopCode} color="#133658" />{" "}
+                      Weekly Code Challanges
+                    </h4>
+                  </Link>
+                  <p>
+                    Learn New Technologies and Find how you can start your
+                    learning from the beginner level. Datacode collects for you
+                    in a very shorted order The Best Learning Tutorials and
+                    Courses as Free or Paid
+                  </p>
+                  <h4 className="text-center p-0 m-0 ">It's Time to Code</h4>
+                </div>
+              </div>
+              <CodeChallangeCardCarousel />
+              {/* Ending Code challange*/}
               {/* Starting Events */}
               {/* 
               <Link to="/index_events">
