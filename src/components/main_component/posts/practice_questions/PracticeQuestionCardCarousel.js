@@ -15,19 +15,40 @@ class PracticeQuestionCardCarousel extends Component {
                 <CardCarouselItem
                   imgsource="c_programming_question.jpeg"
                   title="C Programming Practice Questions"
-                  link="/c_programming_questions"
+                  link="/index_c_practice_questions"
                 />
                 <CardCarouselItem
                   imgsource="python_programming_question.jpeg"
                   title="Python Programming Practice Questions"
-                  link="/datastructure_programming_questions"
+                  link="/index_python_practice_questions"
                 />
                 <CardCarouselItem
                   imgsource="java_programming_question.jpeg"
                   title="Java Programming Practice Questions"
-                  link="/java_programming_questions"
+                  link="/index_java_practice_questions"
                 />
+               
               </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className="card-deck ">
+              <CardCarouselItem
+                  imgsource="dsa_programming_questions.jpeg"
+                  title="DS & Algo Practice Questions"
+                  link="/index_ds_practice_questions"
+                />
+                 <CardCarouselItem
+                  imgsource="comming_soon.jpeg"
+                  title="Practice Questions"
+                  link="/index_practice_questions"
+                />
+                <CardCarouselItem
+                  imgsource="comming_soon.jpeg"
+                  title="Practice Questions"
+                  link="/index_practice_questions"
+                />
+
+                </div>
             </Carousel.Item>
           </Carousel>
         </div>
