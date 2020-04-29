@@ -48,11 +48,26 @@ class DatastructurePgramQuestions extends Component {
             <div className="col-md-5 mt-5 bg-light">
               <div>
                 <h5>Python Programming examples on Characters</h5>
-                <ProgramCard link="" heading="" />
-                <ProgramCard link="" heading="" />
-                <ProgramCard link="" heading="" />
-                <ProgramCard link="" heading="" />
-                <ProgramCard link="" heading="" />
+                <ProgramCard
+                  link="http://www.techiedelight.com/sort-binary-array-linear-time/"
+                  heading="Sort binary array in linear time"
+                />
+                <ProgramCard
+                  link="http://www.techiedelight.com/find-duplicate-element-limited-range-array/"
+                  heading="Find a duplicate element in a limited range array"
+                />
+                <ProgramCard
+                  link="http://www.techiedelight.com/find-largest-sub-array-formed-by-consecutive-integers/"
+                  heading="Find largest sub-array formed by consecutive integers"
+                />
+                <ProgramCard
+                  link="http://www.techiedelight.com/find-maximum-length-sub-array-having-given-sum/"
+                  heading="Find maximum length sub-array having given sum"
+                />
+                <ProgramCard
+                  link="http://www.techiedelight.com/find-maximum-product-two-integers-array/"
+                  heading="Find maximum product of two integers in an array"
+                />
                 <ProgramCard link="" heading="" />
                 <ProgramCard link="" heading="" />
               </div>

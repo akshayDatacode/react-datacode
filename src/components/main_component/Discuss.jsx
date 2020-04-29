@@ -10,9 +10,9 @@ class Discuss extends Component {
         <DiscussionEmbed
           shortname="datacode-in"
           config={{
-            url: "https://www.datacode.in/#/",
-            identifier: "datacode-in",
-            title: "Comment Your Answer",
+            url: this.props.url,
+            identifier: this.props.identifier,
+            title: this.props.title,
           }}
         />
       </>

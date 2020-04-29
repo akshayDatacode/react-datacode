@@ -28,9 +28,9 @@ class PracticeQuestionCard extends Component {
             </div>
           </div>
           <div className="card-body">
-            <h6 className="text-left p-1 m-1" style={{ color: "#072C71" }}>
+            <p className="text-left p-1 m-1" style={{ color: "#072C71" }}>
               {this.props.question}
-            </h6>
+            </p>
           </div>
         </div>
       </>

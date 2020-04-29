@@ -276,8 +276,19 @@ import CPracticeQuestionsIntermediate from "../components/main_component/posts/p
 import CPracticeQuestionsAdvance from "../components/main_component/posts/practice_questions/c_practice_questions/CPracticeQuestionsAdvance";
 
 import IndexJavaPracticeQuestions from "../components/main_component/posts/practice_questions/java_practice_questions/IndexJavaPracticeQuestions";
+import JavaPracticeQuestionsBeginner from "../components/main_component/posts/practice_questions/java_practice_questions/JavaPracticeQuestionsBeginner";
+import JavaPracticeQuestionsIntermediate from "../components/main_component/posts/practice_questions/java_practice_questions/JavaPracticeQuestionsIntermediate";
+import JavaPracticeQuestionsAdvance from "../components/main_component/posts/practice_questions/java_practice_questions/JavaPracticeQuestionsAdvance";
+
 import IndexPythonPracticeQuestions from "../components/main_component/posts/practice_questions/python_practice_questions/IndexPythonPracticeQuestions";
+import PythonPracticeQuestionsBeginner from "../components/main_component/posts/practice_questions/python_practice_questions/PythonPracticeQuestionsBeginner";
+import PythonPracticeQuestionsIntermediate from "../components/main_component/posts/practice_questions/python_practice_questions/PythonPracticeQuestionsIntermediate";
+import PythonPracticeQuestionsAdvance from "../components/main_component/posts/practice_questions/python_practice_questions/PythonPracticeQuestionsAdvance";
+
 import IndexDSPracticeQuestions from "../components/main_component/posts/practice_questions/ds_practice_questions/IndexDSPracticeQuestions";
+import DSPracticeQuestionsBeginner from "../components/main_component/posts/practice_questions/ds_practice_questions/DSPracticeQuestionsBeginner";
+import DSPracticeQuestionsIntermediate from "../components/main_component/posts/practice_questions/ds_practice_questions/DSPracticeQuestionsIntermediate";
+import DSPracticeQuestionsAdvance from "../components/main_component/posts/practice_questions/ds_practice_questions/DSPracticeQuestionsAdvance";
 
 class AppRouters extends Component {
   state = {};
@@ -872,15 +883,59 @@ class AppRouters extends Component {
           />
           <Route
             exact
+            path="/java_practice_questions_beginner"
+            component={JavaPracticeQuestionsBeginner}
+          />
+          <Route
+            exact
+            path="/java_practice_questions_intermediate"
+            component={JavaPracticeQuestionsIntermediate}
+          />
+          <Route
+            exact
+            path="/java_practice_questions_advance"
+            component={JavaPracticeQuestionsAdvance}
+          />
+          <Route
+            exact
             path="/index_python_practice_questions"
             component={IndexPythonPracticeQuestions}
+          />
+          <Route
+            exact
+            path="/python_practice_questions_beginner"
+            component={PythonPracticeQuestionsBeginner}
+          />
+          <Route
+            exact
+            path="/python_practice_questions_intermediate"
+            component={PythonPracticeQuestionsIntermediate}
+          />
+          <Route
+            exact
+            path="/python_practice_questions_advance"
+            component={PythonPracticeQuestionsAdvance}
           />
           <Route
             exact
             path="/index_ds_practice_questions"
             component={IndexDSPracticeQuestions}
           />
-
+          <Route
+            exact
+            path="/ds_practice_questions_beginner"
+            component={DSPracticeQuestionsBeginner}
+          />
+          <Route
+            exact
+            path="/ds_practice_questions_intermediate"
+            component={DSPracticeQuestionsIntermediate}
+          />
+          <Route
+            exact
+            path="/ds_practice_questions_advance"
+            component={DSPracticeQuestionsAdvance}
+          />
           {/* Ending Code Challange */}
         </Switch>
       </>

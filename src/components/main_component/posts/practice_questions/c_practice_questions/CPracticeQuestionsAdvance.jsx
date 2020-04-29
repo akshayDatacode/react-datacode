@@ -107,7 +107,11 @@ class CPracticeQuestionsAdvance extends Component {
               tag2="Logic"
             />
 
-            <Discuss />
+            <Discuss
+              url="https://www.datacode.in/?p=/react-datacode/#/c_practice_questions_advance"
+              title="Advance C Practice Problems "
+              identifier="c_practice_questions_advance"
+            />
 
             <h5 className="text-secondary mt-5 mb-3">
               For More Programming Practice Questions

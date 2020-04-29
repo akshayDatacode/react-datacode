@@ -6,6 +6,7 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 import PracticeQuestionCard from "../PracticeQuestionCard";
 import RightSideSection from "../../../../right_section/RightSideSection";
 import PracticeQuestionCardCarousel from "../PracticeQuestionCardCarousel";
+import Discuss from "../../../Discuss";
 class CPracticeQuestionsIntermediate extends Component {
   state = {};
   componentDidMount() {
@@ -105,6 +106,11 @@ class CPracticeQuestionsIntermediate extends Component {
               no="10"
               tag1="Intermediate"
               tag2="Logic"
+            />
+            <Discuss
+              url="https://www.datacode.in/?p=/react-datacode/#/c_practice_questions_intermediate"
+              title="Intermediate C Practice Problems "
+              identifier="c_practice_questions_intermediate"
             />
 
             <h5 className="text-secondary mt-5 mb-3">

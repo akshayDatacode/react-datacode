@@ -6,6 +6,7 @@ import PracticeQuestionCardCarousel from "../PracticeQuestionCardCarousel";
 import RightSideSection from "../../../../right_section/RightSideSection";
 import HeaderCard from "../../../HeaderCard";
 import PracticeQuestionCard from "../PracticeQuestionCard";
+import Discuss from "../../../Discuss";
 
 class CPracticeQuestionsBeginner extends Component {
   state = {};
@@ -19,7 +20,7 @@ class CPracticeQuestionsBeginner extends Component {
           <div className="col-1"></div>
           <div className="col-md-8 mt-4">
             <HeaderCard
-              title="C Programming Practice Questions Beginner"
+              title="Beginner C Programming Practice Problems"
               color="#FFD700"
               textcolor="black"
             />
@@ -99,6 +100,13 @@ class CPracticeQuestionsBeginner extends Component {
               tag1="beginner"
               tag2="basic"
             />
+
+            <Discuss
+              url="https://www.datacode.in/?p=/react-datacode/#/c_practice_questions_beginner"
+              title="Beginner C Practice Problems "
+              identifier="c_practice_questions_beginner"
+            />
+
             <h5 className="text-secondary mt-5 mb-3">
               For More Programming Practice Questions
             </h5>
