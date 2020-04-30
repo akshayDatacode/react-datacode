@@ -27,7 +27,7 @@ class ProgramCard extends Component {
             <div className="row">
               <div className="col-9 mr-0 pr-0 pl-3">
                 <a href={this.props.link}>
-                  <h6 className="text-primary text-weight-bold text-align-middle m-0">
+                  <h6 className="text-weight-bold text-align-middle m-0">
                     {this.props.heading}
                   </h6>
                 </a>
