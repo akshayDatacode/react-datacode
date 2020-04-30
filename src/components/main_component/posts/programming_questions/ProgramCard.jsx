@@ -44,6 +44,7 @@ class ProgramCard extends Component {
                   handleClose={this.handleClose}
                   show={this.state.show}
                   code={this.props.code}
+                  heading={this.props.heading}
                   language={this.props.language}
                 />
               </div>

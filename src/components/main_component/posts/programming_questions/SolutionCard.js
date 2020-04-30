@@ -7,13 +7,15 @@ const SolutionCard = (props) => {
     <>
       <Modal
         show={props.show}
-        size="md"
+        size="lg"
         onHide={props.handleClose}
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
         <Modal.Header closeButton className="m-1 p-1">
-          <Modal.Title>Solution</Modal.Title>
+          <Modal.Title style={{ color: "#072C71" }}>
+            <h4 className="text-center ml-3">{props.heading}</h4>
+          </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <h6 className="text-center">

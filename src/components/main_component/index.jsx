@@ -29,6 +29,7 @@ import {
   faTasks,
   faCodeBranch,
   faCode,
+  faSearch,
 } from "@fortawesome/free-solid-svg-icons";
 import FooterComponentUpper from "../footer_component/FooterComponentUpper";
 import {
@@ -60,7 +61,7 @@ class MainComponent extends Component {
                   <Link to="/index_quize_tests">
                     <center>
                       <FontAwesomeIcon
-                        icon={faSearchengin}
+                        icon={faSearch}
                         color="#072C71"
                         size="4x"
                       />
@@ -369,7 +370,11 @@ class MainComponent extends Component {
                   className="mr-4 ml-3"
                 />
                 Code
-                <FontAwesomeIcon icon={faCode} color="#06CB6C" className="ml-2" />
+                <FontAwesomeIcon
+                  icon={faCode}
+                  color="#06CB6C"
+                  className="ml-2"
+                />
               </h4>
               <div class="card-deck mt-3 p-4">
                 <div class="card border border-white pt-3">
