@@ -27,42 +27,42 @@ class DSPracticeQuestionsAdvance extends Component {
             </Link>
 
             <PracticeQuestionCard
-              question={``}
+              question={`Poonam started a survey of employees and noted down all the details in a list. She wants to make a proper short list by name. Write a Program that reads the name, age, and salary of 10 employees and maintains them in a list and then sorted by name.`}
               no="1"
               tag1="Advance"
               tag2="Basic"
             />
             <PracticeQuestionCard
-              question={``}
+              question={`Write  a program to represent a deque using a list. Also write function to add and delete elements from the deque.`}
               no="2"
               tag1="Advance"
               tag2="Basic"
             />
             <PracticeQuestionCard
-              question={``}
+              question={`Write a program that finds the number of nodes in a binary tree at each level.`}
               no="3"
               tag1="Advance"
               tag2="Basic"
             />
             <PracticeQuestionCard
-              question={``}
+              question={`Write a program which prints the modes of T in (a) preorder, (b) inorder , (c) postorder`}
               no="4"
               tag1="Advance"
               tag2="Basic"
             />
             <PracticeQuestionCard
-              question={``}
+              question={`Write a function SEARCHB, INSERTB, DELETEB to search, insert, delete keys respectively, into a B-tree of order m. Implement a menu driven program to perform these operations on a B-tree`}
               no="5"
               tag1="Advance"
               tag2="Basic"
             />
             <PracticeQuestionCard
-              question={``}
+              question={`Write a program that sorts the element of a two-dimensional array (a) row wise , (b) column wise `}
               no="6"
               tag1="Advance"
               tag2="Basic"
             />
-            <PracticeQuestionCard
+            {/* <PracticeQuestionCard
               question={``}
               no="7"
               tag1="Advance"
@@ -85,7 +85,7 @@ class DSPracticeQuestionsAdvance extends Component {
               no="10"
               tag1="Advance"
               tag2="Basic"
-            />
+            /> */}
 
             <Discuss
               url="https://www.datacode.in/?p=/react-datacode/#/ds_practice_questions_advance"
