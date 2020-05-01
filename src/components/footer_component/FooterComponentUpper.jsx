@@ -174,7 +174,7 @@ class FooterComponentUpper extends Component {
         </div>
         <div className="container-fluid p-0">
           <div className="row mt-4 pl-md-3 pr-md-3 pl-0 pr-0">
-            <div className="col-sm col-md mt-3 text-center p-sm-0">
+            <div className="col-sm col-md mt-3 text-center p-0">
               <h4 style={{ color: "#072C71" }}>Trending For Learning</h4>
               <hr
                 class="teal accent-3 mb-3 mt-0 d-inline-block mx-auto"
