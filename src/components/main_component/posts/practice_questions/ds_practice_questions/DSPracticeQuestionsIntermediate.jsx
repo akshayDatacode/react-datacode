@@ -2,11 +2,12 @@ import React, { Component } from "react";
 import HeaderCard from "../../../HeaderCard";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faCode } from "@fortawesome/free-solid-svg-icons";
 import PracticeQuestionCard from "../PracticeQuestionCard";
 import RightSideSection from "../../../../right_section/RightSideSection";
 import PracticeQuestionCardCarousel from "../PracticeQuestionCardCarousel";
 import Discuss from "../../../Discuss";
+import Technologies from "../../../../right_section/Technologies";
 
 class DSPracticeQuestionsIntermediate extends Component {
   state = {};
@@ -22,9 +23,28 @@ class DSPracticeQuestionsIntermediate extends Component {
               textcolor="black"
             />
 
-            <Link to="/home" className="badge badge-primary mr-1">
-              <FontAwesomeIcon icon={faHome} size="2x" />
-            </Link>
+            <div className="mb-3">
+              <Link
+                to="/home"
+                className="badge mr-1"
+                style={{ backgroundColor: "#06CB6C" }}
+              >
+                <FontAwesomeIcon icon={faHome} size="2x" color="#072C71" />
+              </Link>
+              <Link
+                to="index_ds_practice_questions"
+                className="badge mr-1 text-white"
+                style={{ backgroundColor: "#072C71" }}
+              >
+                <FontAwesomeIcon
+                  icon={faCode}
+                  size="1x"
+                  color="#06CB6C"
+                  className="mr-2"
+                />
+                back to code
+              </Link>
+            </div>
 
             <PracticeQuestionCard
               question={`Write a subprogram PRINT(TEXT, K) which prints the character string TEXT in lines with at most K characters. No word should be divided in the middle and appear on two lines, so some lines may contain trailing blank spaces. Each paragraph should begin with its own line and be indented using 5 blank spaces. Test the program using (a) K= 800 (b) K= 79 and (c) K = 45`}
@@ -105,6 +125,7 @@ class DSPracticeQuestionsIntermediate extends Component {
 
           <div className="col-md-3">
             <RightSideSection />
+            <Technologies />
           </div>
         </div>
       </>

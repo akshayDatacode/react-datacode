@@ -7,6 +7,7 @@ import PracticeQuestionCard from "../PracticeQuestionCard";
 import RightSideSection from "../../../../right_section/RightSideSection";
 import PracticeQuestionCardCarousel from "../PracticeQuestionCardCarousel";
 import Discuss from "../../../Discuss";
+import Technologies from "../../../../right_section/Technologies";
 
 class DSPracticeQuestionsAdvance extends Component {
   state = {};
@@ -21,28 +22,28 @@ class DSPracticeQuestionsAdvance extends Component {
               color="#FFD700"
               textcolor="black"
             />
-
-            <Link
-              to="/home"
-              className="badge mr-1"
-              style={{ backgroundColor: "#06CB6C" }}
-            >
-              <FontAwesomeIcon icon={faHome} size="2x" color="#072C71" />
-            </Link>
-            <Link
-              to="index_ds_practice_questions"
-              className="badge mr-1 text-white"
-              style={{ backgroundColor: "#072C71" }}
-            >
-              <FontAwesomeIcon
-                icon={faCode}
-                size="1x"
-                color="#06CB6C"
-                className="mr-2"
-              />
-              back to code
-            </Link>
-
+            <div className="mb-3">
+              <Link
+                to="/home"
+                className="badge mr-1"
+                style={{ backgroundColor: "#06CB6C" }}
+              >
+                <FontAwesomeIcon icon={faHome} size="2x" color="#072C71" />
+              </Link>
+              <Link
+                to="index_ds_practice_questions"
+                className="badge mr-1 text-white"
+                style={{ backgroundColor: "#072C71" }}
+              >
+                <FontAwesomeIcon
+                  icon={faCode}
+                  size="1x"
+                  color="#06CB6C"
+                  className="mr-2"
+                />
+                back to code
+              </Link>
+            </div>
             <PracticeQuestionCard
               question={`Poonam started a survey of employees and noted down all the details in a list. She wants to make a proper short list by name. Write a Program that reads the name, age, and salary of 10 employees and maintains them in a list and then sorted by name.`}
               no="1"
@@ -118,6 +119,7 @@ class DSPracticeQuestionsAdvance extends Component {
 
           <div className="col-md-3">
             <RightSideSection />
+            <Technologies />
           </div>
         </div>
       </>

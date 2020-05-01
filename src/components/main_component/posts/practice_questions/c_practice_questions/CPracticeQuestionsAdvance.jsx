@@ -5,8 +5,9 @@ import PracticeQuestionCardCarousel from "../PracticeQuestionCardCarousel";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import HeaderCard from "../../../HeaderCard";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faCode } from "@fortawesome/free-solid-svg-icons";
 import Discuss from "../../../Discuss";
+import Technologies from "../../../../right_section/Technologies";
 class CPracticeQuestionsAdvance extends Component {
   state = {};
   componentDidMount() {
@@ -23,10 +24,28 @@ class CPracticeQuestionsAdvance extends Component {
               color="#FFD700"
               textcolor="black"
             />
-
-            <Link to="/home" className="badge badge-primary mr-1">
-              <FontAwesomeIcon icon={faHome} size="2x" />
-            </Link>
+            <div className="mb-3">
+              <Link
+                to="/home"
+                className="badge mr-1"
+                style={{ backgroundColor: "#06CB6C" }}
+              >
+                <FontAwesomeIcon icon={faHome} size="2x" color="#072C71" />
+              </Link>
+              <Link
+                to="index_c_practice_questions"
+                className="badge mr-1 text-white"
+                style={{ backgroundColor: "#072C71" }}
+              >
+                <FontAwesomeIcon
+                  icon={faCode}
+                  size="1x"
+                  color="#06CB6C"
+                  className="mr-2"
+                />
+                back to code
+              </Link>
+            </div>
 
             <PracticeQuestionCard
               question={`Write a function to determine whether a year in the Gregorian calender is a leap year. The function returns integer 1 if it is a leap year else 0. (Hint. A year is a leap year if it is divisible by 4 but not divisible by 100 or divisible by 400.) Using this function write another function to return the number of days in a given month (input in terms of 1–12) and year of the Gregorian calendar.`}
@@ -120,6 +139,7 @@ class CPracticeQuestionsAdvance extends Component {
 
           <div className="col-md-3">
             <RightSideSection />
+            <Technologies />
           </div>
         </div>
       </>

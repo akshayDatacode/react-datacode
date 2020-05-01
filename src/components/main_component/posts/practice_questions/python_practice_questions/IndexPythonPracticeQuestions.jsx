@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import PostCard from "../../../PostCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faCode } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import PracticeQuestionCardCarousel from "../PracticeQuestionCardCarousel";
 import RightSideSection from "../../../../right_section/RightSideSection";
+import Technologies from "../../../../right_section/Technologies";
 
 class IndexPythonPracticeQuestions extends Component {
   state = {};
@@ -20,9 +21,29 @@ class IndexPythonPracticeQuestions extends Component {
             <h2 className="text-center mb-4">
               Python Programming Practice Questions
             </h2>
-            <Link to="/home" className="badge badge-primary mr-1">
-              <FontAwesomeIcon icon={faHome} size="2x" />
-            </Link>
+
+            <div className="mb-3">
+              <Link
+                to="/home"
+                className="badge mr-1"
+                style={{ backgroundColor: "#06CB6C" }}
+              >
+                <FontAwesomeIcon icon={faHome} size="2x" color="#072C71" />
+              </Link>
+              <Link
+                to="index_practice_questions"
+                className="badge mr-1 text-white"
+                style={{ backgroundColor: "#072C71" }}
+              >
+                <FontAwesomeIcon
+                  icon={faCode}
+                  size="1x"
+                  color="#06CB6C"
+                  className="mr-2"
+                />
+                back to code
+              </Link>
+            </div>
 
             <div className="card-deck m-2">
               <PostCard
@@ -56,6 +77,7 @@ class IndexPythonPracticeQuestions extends Component {
 
           <div className="col-md-3">
             <RightSideSection />
+            <Technologies />
           </div>
         </div>
       </>

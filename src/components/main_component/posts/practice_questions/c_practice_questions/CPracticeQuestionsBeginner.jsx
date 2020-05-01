@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faCode } from "@fortawesome/free-solid-svg-icons";
 import PracticeQuestionCardCarousel from "../PracticeQuestionCardCarousel";
 import RightSideSection from "../../../../right_section/RightSideSection";
 import HeaderCard from "../../../HeaderCard";
 import PracticeQuestionCard from "../PracticeQuestionCard";
 import Discuss from "../../../Discuss";
+import Technologies from "../../../../right_section/Technologies";
 
 class CPracticeQuestionsBeginner extends Component {
   state = {};
@@ -25,9 +26,28 @@ class CPracticeQuestionsBeginner extends Component {
               textcolor="black"
             />
 
-            <Link to="/home" className="badge badge-primary mr-1">
-              <FontAwesomeIcon icon={faHome} size="2x" />
-            </Link>
+            <div className="mb-3">
+              <Link
+                to="/home"
+                className="badge mr-1"
+                style={{ backgroundColor: "#06CB6C" }}
+              >
+                <FontAwesomeIcon icon={faHome} size="2x" color="#072C71" />
+              </Link>
+              <Link
+                to="index_c_practice_questions"
+                className="badge mr-1 text-white"
+                style={{ backgroundColor: "#072C71" }}
+              >
+                <FontAwesomeIcon
+                  icon={faCode}
+                  size="1x"
+                  color="#06CB6C"
+                  className="mr-2"
+                />
+                back to code
+              </Link>
+            </div>
 
             <PracticeQuestionCard
               question="Take Akshay’s basic salary as input from User. His
@@ -115,6 +135,7 @@ class CPracticeQuestionsBeginner extends Component {
 
           <div className="col-md-3">
             <RightSideSection />
+            <Technologies />
           </div>
         </div>
       </>

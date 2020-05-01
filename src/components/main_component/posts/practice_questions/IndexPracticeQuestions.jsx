@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PostCard from "../../PostCard";
 import { Link } from "react-router-dom";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
+import Technologies from "../../../right_section/Technologies";
 class IndexPracticeQuestions extends Component {
   state = {};
   componentDidMount() {
@@ -17,9 +18,16 @@ class IndexPracticeQuestions extends Component {
           <div className="col-1"></div>
           <div className="col-md-8 mt-4">
             <h2 className="text-center mb-4">Programming Practice Questions</h2>
-            <Link to="/home" className="badge badge-primary mr-1">
-              <FontAwesomeIcon icon={faHome} size="2x" />
-            </Link>
+
+            <div className="mb-3">
+              <Link
+                to="/home"
+                className="badge mr-1"
+                style={{ backgroundColor: "#06CB6C" }}
+              >
+                <FontAwesomeIcon icon={faHome} size="2x" color="#072C71" />
+              </Link>
+            </div>
 
             <div className="card-deck m-2">
               <PostCard
@@ -59,6 +67,7 @@ class IndexPracticeQuestions extends Component {
 
           <div className="col-md-3">
             <RightSideSection />
+            <Technologies />
           </div>
         </div>
       </>
