@@ -18,7 +18,7 @@ class IndexPracticeQuestions extends Component {
           <div className="col-1"></div>
           <div className="col-md-8 mt-4">
             <h1
-              className="text-center mb-4 rounded p-2 display-4"
+              className="text-center mb-4 rounded p-2 "
               style={{ backgroundColor: "#06CB6C", color: "#072C71" }}
             >
               Programming Practice Questions
@@ -36,13 +36,13 @@ class IndexPracticeQuestions extends Component {
 
             <div className="card-deck m-2">
               <PostCard
-                imgsource="c_practice_questions_beginner.jpeg"
+                imgsource="c_practice_question.jpeg"
                 title="C Programming Practice Questions"
                 paragraph="We Love to Code and this is the best"
                 link="/index_c_practice_questions"
               />
               <PostCard
-                imgsource="python_programming_question.jpeg"
+                imgsource="python_practice_question.jpeg"
                 title="Python Programming Practice Questions"
                 paragraph="We Love to Code and this is the best "
                 link="/index_python_practice_questions"
@@ -50,13 +50,13 @@ class IndexPracticeQuestions extends Component {
             </div>
             <div className="card-deck m-2">
               <PostCard
-                imgsource="java_programming_question.jpeg"
+                imgsource="java_practice_question.jpeg"
                 title="Java Programming Practice Questions"
                 paragraph="We Love to Code and this is the best "
                 link="/index_java_practice_questions"
               />
               <PostCard
-                imgsource="ds_practice_questions_beginner.jpeg"
+                imgsource="ds_practice_question.jpeg"
                 title="Datastructre Programming Practice Questions"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
