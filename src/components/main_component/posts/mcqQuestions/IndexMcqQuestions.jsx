@@ -5,6 +5,7 @@ import RightSideSection from "../../../right_section/RightSideSection";
 import MCQCardCarousel from "./MCQCardCarousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
+import Technologies from "../../../right_section/Technologies";
 
 class IndexMcqQuestions extends Component {
   state = {};
@@ -17,11 +18,18 @@ class IndexMcqQuestions extends Component {
         <div className="row">
           <div className="col-1"></div>
           <div className="col-md-8 mt-4">
-            <h2 className="text-center mb-4">
+            <h1
+              className="text-center mb-4 rounded p-2"
+              style={{ backgroundColor: "#06CB6C", color: "#072C71" }}
+            >
               Technical MCQs Practice Question
-            </h2>
-            <Link to="/home" className="badge badge-primary mr-1">
-              <FontAwesomeIcon icon={faHome} size="2x" />
+            </h1>
+            <Link
+              to="/home"
+              className="badge mr-1"
+              style={{ backgroundColor: "#06CB6C" }}
+            >
+              <FontAwesomeIcon icon={faHome} size="2x" color="#072C71" />
             </Link>
 
             <div className="card-deck m-2">
@@ -138,13 +146,13 @@ class IndexMcqQuestions extends Component {
                 paragraph="Angular questions and answers focuses on all areas of Angular subject covering most topics in Angular. These topics are chosen from a collection of most authoritative and best reference books on Angular."
                 link="/index_angular_mcqs"
               />
-            
             </div>
             <h4 className="text-secondary mt-3">For More MCQs Practice</h4>
             <MCQCardCarousel />
           </div>
           <div className="col-md-3">
             <RightSideSection />
+            <Technologies />
           </div>
         </div>
       </>

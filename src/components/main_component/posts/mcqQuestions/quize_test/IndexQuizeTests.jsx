@@ -6,6 +6,7 @@ import RightSideSection from "../../../../right_section/RightSideSection";
 import { faPython, faJava } from "@fortawesome/free-brands-svg-icons";
 import MCQTestCardCarousel from "./MCQTestCardCarousel";
 import PostCard from "../../../PostCard";
+import Technologies from "../../../../right_section/Technologies";
 class IndexQuizeTests extends Component {
   state = {};
   componentDidMount() {
@@ -17,10 +18,20 @@ class IndexQuizeTests extends Component {
         <div className="row">
           <div className="col-1"></div>
           <div className="col-md-8 mt-4">
-            <h2 className="text-center mb-4">Programming Quiz Test</h2>
-            <Link to="/home" className="badge badge-primary mr-1 mb-3">
-              <FontAwesomeIcon icon={faHome} size="2x" />
+            <h1
+              className="text-center mb-4 rounded p-2"
+              style={{ backgroundColor: "#06CB6C", color: "#072C71" }}
+            >
+              Programming Quiz Test
+            </h1>
+            <Link
+              to="/home"
+              className="badge mr-1"
+              style={{ backgroundColor: "#06CB6C" }}
+            >
+              <FontAwesomeIcon icon={faHome} size="2x" color="#072C71" />
             </Link>
+
             <div className="card-deck mb-5">
               <PostCard
                 imgsource="c_quize.jpeg"
@@ -105,15 +116,15 @@ class IndexQuizeTests extends Component {
                   love to Computer Science Wolrd."
                 link="/react_quize_tests"
               />
-      
             </div>
-    
+
             <h4 className="text-secondary mt-3">For More Quiz Tests</h4>
             <MCQTestCardCarousel />
           </div>
 
           <div className="col-md-3">
             <RightSideSection />
+            <Technologies />
           </div>
         </div>
       </>

@@ -28,6 +28,7 @@ import {
   faAndroid,
 } from "@fortawesome/free-brands-svg-icons";
 import TechnologiesCardCarousel from "./TechnologiesCardCarousel";
+import Technologies from "../../right_section/Technologies";
 class IndexTechnologies extends Component {
   state = {};
   componentDidMount() {
@@ -39,12 +40,20 @@ class IndexTechnologies extends Component {
         <div className="row">
           <div className="col-1"></div>
           <div className="col-md-8 mt-4">
-            <h1 className="text-center mb-4" style={{ color: "#072C71" }}>
+            <h1
+              className="text-center mb-4 rounded p-2"
+              style={{ backgroundColor: "#06CB6C", color: "#072C71" }}
+            >
               Tutorials & Courses
             </h1>
-            <Link to="/home" className="badge badge-primary mr-1">
-              <FontAwesomeIcon icon={faHome} size="2x" />
+            <Link
+              to="/home"
+              className="badge mr-1"
+              style={{ backgroundColor: "#06CB6C" }}
+            >
+              <FontAwesomeIcon icon={faHome} size="2x" color="#072C71" />
             </Link>
+
             <div className="card-deck mt-4">
               <div className="card text-center p-2">
                 <Link to="/c">
@@ -254,6 +263,7 @@ class IndexTechnologies extends Component {
           </div>
           <div className="col-md-3">
             <RightSideSection />
+            <Technologies />
           </div>
         </div>
       </>

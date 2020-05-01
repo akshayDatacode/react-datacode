@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import PostCard from "../../PostCard";
 import ProgrammingQuestionCardCarousel from "./ProgrammingQuestionCardCarousel";
+import Technologies from "../../../right_section/Technologies";
 
 class IndexProgrammingQuestions extends Component {
   state = {};
@@ -17,9 +18,18 @@ class IndexProgrammingQuestions extends Component {
         <div className="row">
           <div className="col-1"></div>
           <div className="col-md-8 mt-4">
-            <h2 className="text-center mb-4">Programming Example Question</h2>
-            <Link to="/home" className="badge badge-primary mr-1">
-              <FontAwesomeIcon icon={faHome} size="2x" />
+            <h1
+              className="text-center mb-4 rounded p-2"
+              style={{ backgroundColor: "#06CB6C", color: "#072C71" }}
+            >
+              Programming Example Question
+            </h1>
+            <Link
+              to="/home"
+              className="badge mr-1"
+              style={{ backgroundColor: "#06CB6C" }}
+            >
+              <FontAwesomeIcon icon={faHome} size="2x" color="#072C71" />
             </Link>
 
             <div className="card-deck m-2">
@@ -69,6 +79,7 @@ class IndexProgrammingQuestions extends Component {
 
           <div className="col-md-3">
             <RightSideSection />
+            <Technologies />
           </div>
         </div>
       </>

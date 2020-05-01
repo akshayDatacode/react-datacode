@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import PostCard from "../../PostCard";
 import RightSideSection from "../../../right_section/RightSideSection";
 import InterviewQuestionCardCarousel from "./InterviewQuestionCardCarousel";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import Technologies from "../../../right_section/Technologies";
 class IndexInterviewQuestions extends Component {
   state = {};
   componentDidMount() {
@@ -14,11 +17,18 @@ class IndexInterviewQuestions extends Component {
         <div className="row">
           <div className="col-1"></div>
           <div className="col-md-8 mt-4">
-            <h2 className="text-center mb-4x" style={{ color: "#133658" }}>
+            <h1
+              className="text-center mb-4 rounded p-2"
+              style={{ backgroundColor: "#06CB6C", color: "#072C71" }}
+            >
               Technical Interview Questions
-            </h2>
-            <Link to="/home" className="badge badge-primary mr-1">
-              Home >
+            </h1>
+            <Link
+              to="/home"
+              className="badge mr-1"
+              style={{ backgroundColor: "#06CB6C" }}
+            >
+              <FontAwesomeIcon icon={faHome} size="2x" color="#072C71" />
             </Link>
             <div className="card-deck m-2">
               <PostCard
@@ -168,6 +178,7 @@ class IndexInterviewQuestions extends Component {
           </div>
           <div className="col-md-3">
             <RightSideSection />
+            <Technologies />
           </div>
         </div>
       </>

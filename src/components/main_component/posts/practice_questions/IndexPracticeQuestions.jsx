@@ -17,7 +17,12 @@ class IndexPracticeQuestions extends Component {
         <div className="row">
           <div className="col-1"></div>
           <div className="col-md-8 mt-4">
-            <h2 className="text-center mb-4">Programming Practice Questions</h2>
+            <h1
+              className="text-center mb-4 rounded p-2 display-4"
+              style={{ backgroundColor: "#06CB6C", color: "#072C71" }}
+            >
+              Programming Practice Questions
+            </h1>
 
             <div className="mb-3">
               <Link
