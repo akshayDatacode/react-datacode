@@ -37,7 +37,7 @@ class FooterComponentUpper extends Component {
   render() {
     return (
       <>
-        <div className="container-fluid ">
+        <div className="container-fluid">
           <div className="row">
             <div className="col-sm col text-center ">
               <h4 className="align-middle " style={{ color: "#072C71" }}>
@@ -50,7 +50,7 @@ class FooterComponentUpper extends Component {
               <div className="row text-center mb-4">
                 <div className="col-md-6">
                   <div className="row">
-                    <div className="col-6">
+                    <div className="col-6 mt-2">
                       <Link to="/index_technologies">
                         <FontAwesomeIcon
                           icon={faChalkboardTeacher}
@@ -63,7 +63,7 @@ class FooterComponentUpper extends Component {
                       </Link>
                     </div>
 
-                    <div className="col-6">
+                    <div className="col-6 mt-2">
                       <Link to="/index_articles">
                         <FontAwesomeIcon
                           icon={faNewspaper}
@@ -80,7 +80,7 @@ class FooterComponentUpper extends Component {
 
                 <div className="col-md-6">
                   <div className="row">
-                    <div className="col-6">
+                    <div className="col-6 mt-2">
                       <Link to="/index_programming_questions">
                         <FontAwesomeIcon
                           icon={faFileCode}
@@ -92,7 +92,7 @@ class FooterComponentUpper extends Component {
                         </h6>
                       </Link>
                     </div>
-                    <div className="col-6">
+                    <div className="col-6 mt-2">
                       <Link to="/index_interview_questioins">
                         <FontAwesomeIcon
                           icon={faUserTie}
@@ -111,7 +111,7 @@ class FooterComponentUpper extends Component {
               <div className="row text-center ">
                 <div className="col-md-6">
                   <div className="row">
-                    <div className="col-6">
+                    <div className="col-6 mt-2">
                       <Link to="/index_quize_tests">
                         <FontAwesomeIcon
                           icon={faUserClock}
@@ -124,7 +124,7 @@ class FooterComponentUpper extends Component {
                       </Link>
                     </div>
 
-                    <div className="col-6">
+                    <div className="col-6 mt-2">
                       <Link to="/index_mcqs">
                         <FontAwesomeIcon
                           icon={faTasks}
@@ -141,7 +141,7 @@ class FooterComponentUpper extends Component {
 
                 <div className="col-md-6">
                   <div className="row">
-                    <div className="col-6">
+                    <div className="col-6 mt-2">
                       <Link to="/index_practice_questions">
                         <FontAwesomeIcon
                           icon={faCode}
@@ -154,7 +154,7 @@ class FooterComponentUpper extends Component {
                       </Link>
                     </div>
 
-                    <div className="col-6">
+                    <div className="col-6 mt-2">
                       <Link to="/index_code_challange">
                         <FontAwesomeIcon
                           icon={faLaptopCode}
@@ -170,16 +170,17 @@ class FooterComponentUpper extends Component {
                 </div>
               </div>
             </div>
-
-            <div className="row mt-4 pl-5 pr-5">
-              <div className="col-sm col-md mt-3 text-center ">
-                <h4 style={{ color: "#072C71" }}>Trending For Learning</h4>
-                <hr
-                  class="teal accent-3 mb-3 mt-0 d-inline-block mx-auto"
-                  style={{ width: 280 }}
-                />
-                <CardCarousel />
-              </div>
+          </div>
+        </div>
+        <div className="container-fluid p-0">
+          <div className="row mt-4 pl-md-3 pr-md-3 pl-0 pr-0">
+            <div className="col-sm col-md mt-3 text-center p-sm-0">
+              <h4 style={{ color: "#072C71" }}>Trending For Learning</h4>
+              <hr
+                class="teal accent-3 mb-3 mt-0 d-inline-block mx-auto"
+                style={{ width: 280 }}
+              />
+              <CardCarousel />
             </div>
           </div>
         </div>
