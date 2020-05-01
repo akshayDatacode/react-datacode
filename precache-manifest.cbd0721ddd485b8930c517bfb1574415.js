@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d4b469641396195f7e842812f6f7b3df",
+    "revision": "89e89f7c3c51bac7ea784703ffb3182a",
     "url": "/index.html"
   },
   {
-    "revision": "ff27e7566d3d3555b136",
+    "revision": "a7db0099c1d8296122ef",
     "url": "/static/css/2.89f067aa.chunk.css"
   },
   {
-    "revision": "9b5fb7eec6cb449b8d96",
+    "revision": "eda4949894b05d97c1fd",
     "url": "/static/css/main.2749690b.chunk.css"
   },
   {
-    "revision": "ff27e7566d3d3555b136",
-    "url": "/static/js/2.24be59ca.chunk.js"
+    "revision": "a7db0099c1d8296122ef",
+    "url": "/static/js/2.89afc54c.chunk.js"
   },
   {
     "revision": "ae54f939c6e84f9ec4d4c4cd8100d77f",
-    "url": "/static/js/2.24be59ca.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.89afc54c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9b5fb7eec6cb449b8d96",
-    "url": "/static/js/main.7cc7f5ed.chunk.js"
+    "revision": "eda4949894b05d97c1fd",
+    "url": "/static/js/main.0bf2c99e.chunk.js"
   },
   {
     "revision": "ba88f149e390315adcbe",
@@ -166,6 +166,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1e5329d1ccf9526eab915999a4b8c1f9",
     "url": "/static/media/c_mcq.1e5329d1.jpeg"
+  },
+  {
+    "revision": "3b0bad30b20dc506291373b7494033ec",
+    "url": "/static/media/c_practice_question.3b0bad30.jpeg"
   },
   {
     "revision": "4a7a0e69e15660231aa536aee50ea387",
@@ -380,6 +384,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/ds_mcqs.bb0317bd.jpeg"
   },
   {
+    "revision": "c80105d5b4a073f7102d2a96b4cd6342",
+    "url": "/static/media/ds_practice_question.c80105d5.jpeg"
+  },
+  {
     "revision": "71916d46896c25552c7b0b34840637ba",
     "url": "/static/media/ds_practice_questions_advance.71916d46.jpeg"
   },
@@ -518,6 +526,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "419fda51f47bb1c1e79badee223839e3",
     "url": "/static/media/java_mcqs.419fda51.jpeg"
+  },
+  {
+    "revision": "b43fa2572bba32232757528a6aaba128",
+    "url": "/static/media/java_practice_question.b43fa257.jpeg"
   },
   {
     "revision": "0cfc3b94cec92a59875bb378f52ac177",
@@ -678,6 +690,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3f0b9a3b75585f2f600399fdb2e1509f",
     "url": "/static/media/python_mcqs.3f0b9a3b.jpeg"
+  },
+  {
+    "revision": "fbaf665c44131641a9172de4b264d664",
+    "url": "/static/media/python_practice_question.fbaf665c.jpeg"
   },
   {
     "revision": "703a951c461022d2dad76cddd04ec2a8",

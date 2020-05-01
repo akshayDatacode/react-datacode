@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.2749690b.chunk.css",
-    "main.js": "/static/js/main.7cc7f5ed.chunk.js",
-    "main.js.map": "/static/js/main.7cc7f5ed.chunk.js.map",
+    "main.js": "/static/js/main.0bf2c99e.chunk.js",
+    "main.js.map": "/static/js/main.0bf2c99e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4a1f94a7.js",
     "runtime-main.js.map": "/static/js/runtime-main.4a1f94a7.js.map",
     "static/css/2.89f067aa.chunk.css": "/static/css/2.89f067aa.chunk.css",
-    "static/js/2.24be59ca.chunk.js": "/static/js/2.24be59ca.chunk.js",
-    "static/js/2.24be59ca.chunk.js.map": "/static/js/2.24be59ca.chunk.js.map",
+    "static/js/2.89afc54c.chunk.js": "/static/js/2.89afc54c.chunk.js",
+    "static/js/2.89afc54c.chunk.js.map": "/static/js/2.89afc54c.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b32e68b7b4edfa88e0a2baebabdf58bb.js": "/precache-manifest.b32e68b7b4edfa88e0a2baebabdf58bb.js",
+    "precache-manifest.cbd0721ddd485b8930c517bfb1574415.js": "/precache-manifest.cbd0721ddd485b8930c517bfb1574415.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.89f067aa.chunk.css.map": "/static/css/2.89f067aa.chunk.css.map",
     "static/css/main.2749690b.chunk.css.map": "/static/css/main.2749690b.chunk.css.map",
-    "static/js/2.24be59ca.chunk.js.LICENSE.txt": "/static/js/2.24be59ca.chunk.js.LICENSE.txt",
+    "static/js/2.89afc54c.chunk.js.LICENSE.txt": "/static/js/2.89afc54c.chunk.js.LICENSE.txt",
     "static/media/Cover Photo (3).png": "/static/media/Cover Photo (3).6bc137af.png",
     "static/media/Green Disease Prevention Instagram Post.png": "/static/media/Green Disease Prevention Instagram Post.ee3b12ec.png",
     "static/media/Shootpy_W Cover Page (1).jpg": "/static/media/Shootpy_W Cover Page (1).39eabcb7.jpg",
@@ -49,6 +49,7 @@
     "static/media/c_interview_question.jpeg": "/static/media/c_interview_question.4abb558d.jpeg",
     "static/media/c_interview_questions.jpeg": "/static/media/c_interview_questions.e23abd81.jpeg",
     "static/media/c_mcq.jpeg": "/static/media/c_mcq.1e5329d1.jpeg",
+    "static/media/c_practice_question.jpeg": "/static/media/c_practice_question.3b0bad30.jpeg",
     "static/media/c_practice_questions_advance.jpeg": "/static/media/c_practice_questions_advance.4a7a0e69.jpeg",
     "static/media/c_practice_questions_beginner.jpeg": "/static/media/c_practice_questions_beginner.0554f507.jpeg",
     "static/media/c_practice_questions_intermediate.jpeg": "/static/media/c_practice_questions_intermediate.e953c5cd.jpeg",
@@ -102,6 +103,7 @@
     "static/media/ds_interview_questions.jpeg": "/static/media/ds_interview_questions.6859e5a7.jpeg",
     "static/media/ds_mcq.jpeg": "/static/media/ds_mcq.3145bbe6.jpeg",
     "static/media/ds_mcqs.jpeg": "/static/media/ds_mcqs.bb0317bd.jpeg",
+    "static/media/ds_practice_question.jpeg": "/static/media/ds_practice_question.c80105d5.jpeg",
     "static/media/ds_practice_questions_advance.jpeg": "/static/media/ds_practice_questions_advance.71916d46.jpeg",
     "static/media/ds_practice_questions_beginner.jpeg": "/static/media/ds_practice_questions_beginner.2fab0d14.jpeg",
     "static/media/ds_practice_questions_intermediate.jpeg": "/static/media/ds_practice_questions_intermediate.485b4169.jpeg",
@@ -137,6 +139,7 @@
     "static/media/java_learning_blogs.jpeg": "/static/media/java_learning_blogs.0360c5c3.jpeg",
     "static/media/java_mcq.jpeg": "/static/media/java_mcq.8190bc80.jpeg",
     "static/media/java_mcqs.jpeg": "/static/media/java_mcqs.419fda51.jpeg",
+    "static/media/java_practice_question.jpeg": "/static/media/java_practice_question.b43fa257.jpeg",
     "static/media/java_practice_questions_advance.jpeg": "/static/media/java_practice_questions_advance.0cfc3b94.jpeg",
     "static/media/java_practice_questions_beginner.jpeg": "/static/media/java_practice_questions_beginner.a5630036.jpeg",
     "static/media/java_practice_questions_intermediate.jpeg": "/static/media/java_practice_questions_intermediate.bf874568.jpeg",
@@ -177,6 +180,7 @@
     "static/media/python_learning_blog.jpeg": "/static/media/python_learning_blog.8cbf5fcf.jpeg",
     "static/media/python_mcq.jpeg": "/static/media/python_mcq.6ae195c6.jpeg",
     "static/media/python_mcqs.jpeg": "/static/media/python_mcqs.3f0b9a3b.jpeg",
+    "static/media/python_practice_question.jpeg": "/static/media/python_practice_question.fbaf665c.jpeg",
     "static/media/python_practice_questions_advance.jpeg": "/static/media/python_practice_questions_advance.703a951c.jpeg",
     "static/media/python_practice_questions_beginner.jpeg": "/static/media/python_practice_questions_beginner.8d37508e.jpeg",
     "static/media/python_practice_questions_intermediate.jpeg": "/static/media/python_practice_questions_intermediate.825da4cc.jpeg",
@@ -235,8 +239,8 @@
   "entrypoints": [
     "static/js/runtime-main.4a1f94a7.js",
     "static/css/2.89f067aa.chunk.css",
-    "static/js/2.24be59ca.chunk.js",
+    "static/js/2.89afc54c.chunk.js",
     "static/css/main.2749690b.chunk.css",
-    "static/js/main.7cc7f5ed.chunk.js"
+    "static/js/main.0bf2c99e.chunk.js"
   ]
 }
