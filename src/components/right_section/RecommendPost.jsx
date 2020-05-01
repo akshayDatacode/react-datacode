@@ -21,7 +21,7 @@ class RecommendPost extends Component {
               <div className="col ">
                 <h6 class="card-title text-left">{this.props.RecPostHading}</h6>
                 <Link to={this.props.link} className="font-weight-bold">
-                  <h6 className="btn btn-default border border-secondary mt-2">
+                  <h6 className="btn btn-sm btn-primary border mt-2">
                     Start Learning
                   </h6>
                 </Link>

@@ -5,6 +5,7 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import PracticeQuestionCardCarousel from "../PracticeQuestionCardCarousel";
 import RightSideSection from "../../../../right_section/RightSideSection";
+import Technologies from "../../../../right_section/Technologies";
 class IndexCPracticeQuestions extends Component {
   state = {};
   componentDidMount() {
@@ -55,6 +56,7 @@ class IndexCPracticeQuestions extends Component {
 
           <div className="col-md-3">
             <RightSideSection />
+            <Technologies />
           </div>
         </div>
       </>
