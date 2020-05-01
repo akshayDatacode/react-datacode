@@ -39,20 +39,16 @@ class HeaderComponent extends Component {
           expand="lg"
           variant="dark"
           className="m-0 p-0"
-          style={{ backgroundColor: "#0a0a23" }}
+          style={{ backgroundColor: "#264767" }}
         >
           <Navbar.Brand
             collapseOnSelect="false"
             aria-controls="responsive-navbar-nav"
-            
           >
-            
             <Nav.Link
               href="/react-datacode/#/"
               className="text-white h3 p-0 ml-3 mr-0 mt-0 mb-0 "
-
             >
-              
               Datacode.in
             </Nav.Link>
           </Navbar.Brand>
@@ -134,7 +130,7 @@ class HeaderComponent extends Component {
                   <FontAwesomeIcon icon={faFacebook} size="2x" />
                 </a>
                 <a
-                  href="https://www.facebook.com/Datacode.in"
+                  href="https://www.instagram.com/datacode.in/"
                   className="text-white mr-3"
                   target="_blank"
                 >

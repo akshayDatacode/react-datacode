@@ -25,6 +25,9 @@ import {
   faTools,
   faUserTie,
   faTasks,
+  faChalkboardTeacher,
+  faFileCode,
+  faCode,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import CardCarousel from "./CardCarousel";
@@ -34,103 +37,149 @@ class FooterComponentUpper extends Component {
   render() {
     return (
       <>
-        <div className="container-fluid p-0">
+        <div className="container-fluid ">
           <div className="row">
             <div className="col-sm col text-center ">
-              <h4 className="align-middle " style={{ color: "#133658" }}>
+              <h4 className="align-middle " style={{ color: "#072C71" }}>
                 Categories
               </h4>
               <hr
                 class="teal accent-3 mb-3 mt-0 d-inline-block mx-auto"
                 style={{ width: 120 }}
               />
-              <div className="row text-center">
-                <div className="col">
+              <div className="row text-center mb-4">
+                <div className="col-md-6">
                   <div className="row">
-                    <div className="col-4">
-                      <Link to="/index_quize_tests">
+                    <div className="col-6">
+                      <Link to="/index_technologies">
                         <FontAwesomeIcon
-                          icon={faUserClock}
-                          color="#036157"
-                          size="2x"
+                          icon={faChalkboardTeacher}
+                          color="#072C71"
+                          size="3x"
                         />
-                        <p className="mt-1 text-secondary">
-                          Technical Quizz Test
-                        </p>
+                        <h6 className="mt-2 text-secondary">
+                          Tutorials & Courses
+                        </h6>
                       </Link>
                     </div>
 
-                    <div className="col-4">
-                      <Link to="/index_interview_questioins">
-                        <FontAwesomeIcon
-                          icon={faUserTie}
-                          color="#036157"
-                          size="2x"
-                        />
-                        <p className="mt-1 text-secondary">
-                          Interview Preparations
-                        </p>
-                      </Link>
-                    </div>
-                    <div className="col-4">
+                    <div className="col-6">
                       <Link to="/index_articles">
                         <FontAwesomeIcon
                           icon={faNewspaper}
-                          color="#036157"
-                          size="2x"
+                          color="#072C71"
+                          size="3x"
                         />
-                        <p className="mt-1 text-secondary">Community Blogs </p>
+                        <h6 className="mt-2 text-secondary">
+                          Communnity Blogs
+                        </h6>
                       </Link>
                     </div>
                   </div>
-                  <div className="row mt-3">
-                    <div className="col-4">
-                      <Link to="/index_code_challange">
+                </div>
+
+                <div className="col-md-6">
+                  <div className="row">
+                    <div className="col-6">
+                      <Link to="/index_programming_questions">
                         <FontAwesomeIcon
-                          icon={faLaptopCode}
-                          color="#036157"
-                          size="2x"
+                          icon={faFileCode}
+                          color="#072C71"
+                          size="3x"
                         />
-                        <p className="mt-1 text-secondary">
-                          Programming Code Challanges
-                        </p>
+                        <h6 className="mt-2 text-secondary">
+                          Programming Example Questions
+                        </h6>
                       </Link>
                     </div>
-                    <div className="col-4">
+                    <div className="col-6">
+                      <Link to="/index_interview_questioins">
+                        <FontAwesomeIcon
+                          icon={faUserTie}
+                          color="#072C71"
+                          size="3x"
+                        />
+                        <h6 className="mt-2 text-secondary">
+                          Interview Preparation
+                        </h6>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/*  Second Row */}
+              <div className="row text-center ">
+                <div className="col-md-6">
+                  <div className="row">
+                    <div className="col-6">
+                      <Link to="/index_quize_tests">
+                        <FontAwesomeIcon
+                          icon={faUserClock}
+                          color="#072C71"
+                          size="3x"
+                        />
+                        <h6 className="mt-2 text-secondary">
+                          Technical Quizz Test
+                        </h6>
+                      </Link>
+                    </div>
+
+                    <div className="col-6">
                       <Link to="/index_mcqs">
                         <FontAwesomeIcon
                           icon={faTasks}
-                          color="#036157"
-                          size="2x"
+                          color="#072C71"
+                          size="3x"
                         />
-                        <p className="mt-1 text-secondary">
-                          Programming MCQs Practices
-                        </p>
+                        <h6 className="mt-2 text-secondary">
+                          Programming MCQs Practice
+                        </h6>
                       </Link>
                     </div>
-                    <div className="col-4">
-                      <Link to="/index_technologies">
+                  </div>
+                </div>
+
+                <div className="col-md-6">
+                  <div className="row">
+                    <div className="col-6">
+                      <Link to="/index_practice_questions">
                         <FontAwesomeIcon
-                          icon={faTools}
-                          color="#036157"
-                          size="2x"
+                          icon={faCode}
+                          color="#072C71"
+                          size="3x"
                         />
-                        <p className="mt-1 text-secondary">Technologies</p>
+                        <h6 className="mt-2 text-secondary">
+                          Programming Practice Problems
+                        </h6>
+                      </Link>
+                    </div>
+
+                    <div className="col-6">
+                      <Link to="/index_code_challange">
+                        <FontAwesomeIcon
+                          icon={faLaptopCode}
+                          color="#072C71"
+                          size="3x"
+                        />
+                        <h6 className="mt-2 text-secondary">
+                          Weekly Code Challange
+                        </h6>
                       </Link>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="row">
-            <div className="col-sm col-md mt-3 text-center ">
-              <h3 style={{ color: "#133658" }}>Trending For Learning</h3>
-              <hr
-                class="teal accent-3 mb-3 mt-0 d-inline-block mx-auto"
-                style={{ width: 190 }}
-              />
-              <CardCarousel />
+
+            <div className="row mt-4 pl-5 pr-5">
+              <div className="col-sm col-md mt-3 text-center ">
+                <h4 style={{ color: "#072C71" }}>Trending For Learning</h4>
+                <hr
+                  class="teal accent-3 mb-3 mt-0 d-inline-block mx-auto"
+                  style={{ width: 280 }}
+                />
+                <CardCarousel />
+              </div>
             </div>
           </div>
         </div>
