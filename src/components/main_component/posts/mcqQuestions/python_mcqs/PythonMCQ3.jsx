@@ -9,7 +9,6 @@ import { faHome, faListAlt } from "@fortawesome/free-solid-svg-icons";
 import MCQCardCarousel from "../MCQCardCarousel";
 import HeaderCard from "../../../HeaderCard";
 
-
 class PythonMCQ3 extends Component {
   state = {
     isCorrect: false,
@@ -28,12 +27,12 @@ class PythonMCQ3 extends Component {
   render() {
     return (
       <>
-      <HeaderCard
+        <HeaderCard
           title="Python MCQs Set 3"
           color="#FF9B00"
           textcolor="black"
         />
-   
+
         <div class="container-fluid">
           <div className="row">
             <div className="col-1"></div>
@@ -43,7 +42,6 @@ class PythonMCQ3 extends Component {
                   <FontAwesomeIcon icon={faHome} size="1x" />
                 </Link>
                 <Link to="/index_mcqs" className="badge badge-info  mr-1">
-                 
                   MCQs >>
                 </Link>
                 <Link
@@ -59,7 +57,7 @@ class PythonMCQ3 extends Component {
                   <Quize
                     quizeNo="21"
                     question=" What is the output of the code shown below?"
-                    language="Python"
+                    language="python"
                     code={`import math
 [str(round(math.pi)) for i in range (1, 6)]`}
                     correctAnswer="[‘3’, ‘3’, ‘3’, ‘3’, ‘3’]"
@@ -72,7 +70,7 @@ class PythonMCQ3 extends Component {
                   <Quize
                     quizeNo="22"
                     question="What is the output of the code shown below?"
-                    language="Python"
+                    language="python"
                     code={`t=32.00
 [round((x-32)*5/9) for x in t]`}
                     correctAnswer="Error"
@@ -85,7 +83,7 @@ class PythonMCQ3 extends Component {
                   <Quize
                     quizeNo="23"
                     question="What is the output of the following piece of code when executed in the python shell?"
-                    language="Python"
+                    language="python"
                     code={`a={1,2,3}
 a.intersection_update({2,3,4,5})
 a`}
@@ -99,7 +97,7 @@ a`}
                   <Quize
                     quizeNo="24"
                     question="What is the output of the code shown below?"
-                    language="Python"
+                    language="python"
                     code={`s=set([1, 2, 3])
 s.union([4, 5])
 s|([4, 5])`}
@@ -123,7 +121,7 @@ s|([4, 5])`}
                   <Quize
                     quizeNo="26"
                     question="What is the output of the code shown below?"
-                    language="Python"
+                    language="python"
                     code={`l1=[1, 2, 3, [4]]
 l2=list(l1)
 id(l1)==id(l2)`}
@@ -137,7 +135,7 @@ id(l1)==id(l2)`}
                   <Quize
                     quizeNo="27"
                     question="What is the output of the code shown below?"
-                    language="Python"
+                    language="python"
                     code={`'The {} side {1} {2}'.format('bright', 'of', 'life')`}
                     correctAnswer="Error"
                     v1="Error"
@@ -149,7 +147,7 @@ id(l1)==id(l2)`}
                   <Quize
                     quizeNo="28"
                     question="Which of these is a private data field?"
-                    language="Python"
+                    language="python"
                     code={`def Demo:
 def __init__(self):
     __a = 1
@@ -166,7 +164,7 @@ def __init__(self):
                   <Quize
                     quizeNo="29"
                     question="What is the output of the code shown below?"
-                    language="Python"
+                    language="python"
                     code={`def f(x):
 yield x+1
 print('test')
@@ -182,7 +180,7 @@ g=f(9)`}
                   <Quize
                     quizeNo="30"
                     question="What is the value of this expression:"
-                    language="Python"
+                    language="python"
                     code={`bin(10-2)+bin(12^4)`}
                     correctAnswer="0b10000b1000"
                     v1="0b10000"

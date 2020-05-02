@@ -10,7 +10,6 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 import MCQCardCarousel from "../MCQCardCarousel";
 import HeaderCard from "../../../HeaderCard";
 
-
 class PythonMCQ4 extends Component {
   state = {
     isCorrect: false,
@@ -34,7 +33,6 @@ class PythonMCQ4 extends Component {
           color="#FF9B00"
           textcolor="black"
         />
-   
 
         <div class="container-fluid">
           <div className="row">
@@ -60,7 +58,7 @@ class PythonMCQ4 extends Component {
                   <Quize
                     quizeNo="31"
                     question="What is the output of the code shown below?"
-                    language="Python"
+                    language="python"
                     code={`class Truth:
 pass
 x=Truth()
@@ -75,7 +73,7 @@ bool(x)`}
                   <Quize
                     quizeNo="32"
                     question="Python allows string slicing. What is the output of below code:"
-                    language="Python"
+                    language="python"
                     code={`s='cppbuzz chicago'
 print(s[3:5])`}
                     correctAnswer="bu"
@@ -88,7 +86,7 @@ print(s[3:5])`}
                   <Quize
                     quizeNo="33"
                     question="What does the following code print?"
-                    language="Python"
+                    language="python"
                     code={`lst = []
 nums = [15, 6]
 lst.append(nums)
@@ -106,7 +104,7 @@ print lst`}
                   <Quize
                     quizeNo="34"
                     question="What is the output of the following code?"
-                    language="Python"
+                    language="python"
                     code={`def make_pretty(func):
 def inner():
     print('I got decorated')
@@ -139,7 +137,7 @@ pretty()`}
                   <Quize
                     quizeNo="36"
                     question="What is the output of the following program?."
-                    language="Python"
+                    language="python"
                     code={`z = lambda x : x * x     
 print(z(6))`}
                     correctAnswer="36"
@@ -152,7 +150,7 @@ print(z(6))`}
                   <Quize
                     quizeNo="37"
                     question="Choose the correct option with reference to below Python code?."
-                    language="Python"
+                    language="python"
                     code={`def fn(a):        
 print(a)
 x=90
@@ -167,7 +165,7 @@ fn(x)`}
                   <Quize
                     quizeNo="38"
                     question="Which of the following is False with respect Python code?."
-                    language="Python"
+                    language="python"
                     code={`class Student:
 def __init__(self,id,age):
   self.id=id
@@ -183,7 +181,7 @@ std=Student(1,20)`}
                   <Quize
                     quizeNo="39"
                     question="Which of the following is correct?."
-                    language="Python"
+                    language="python"
                     code={`class Book:
 def __init__(self,author):
   self.author=author
@@ -199,7 +197,7 @@ book2=book1`}
                   <Quize
                     quizeNo="40"
                     question=" What will be the output of following Python code?."
-                    language="Python"
+                    language="python"
                     code={`set1={0,0,9}     
 print(set1)`}
                     correctAnswer="{0,9}"

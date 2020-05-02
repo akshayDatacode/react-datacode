@@ -27,7 +27,7 @@ class CppMCQ1 extends Component {
   render() {
     return (
       <>
-         <HeaderCard
+        <HeaderCard
           title="C++ Programming MCQs Set 1"
           color="#90EE90"
           textcolor="black"
@@ -39,8 +39,7 @@ class CppMCQ1 extends Component {
             <div className="col-md-7 ">
               <div className="col-fluid ">
                 <Link to="/home" className="badge badge-primary mr-1">
-                               <FontAwesomeIcon icon={faHome} size="1x" />
-
+                  <FontAwesomeIcon icon={faHome} size="1x" />
                 </Link>
                 <Link to="/index_mcqs" className="badge badge-warning mr-1">
                   MCQs >>
@@ -75,7 +74,7 @@ class CppMCQ1 extends Component {
                   <Quize
                     quizeNo="3"
                     question="What will be the output of the following C++ code?"
-                    language="c++"
+                    language="c"
                     code={`#include <iostream>
 using namespace std;
 class A{
@@ -113,7 +112,7 @@ int main(int argc, char const *argv[])
                   <Quize
                     quizeNo="5"
                     question=" What happens if the following code is compiled on both C and C++?"
-                    language="C++"
+                    language="c"
                     code={`#include<stdio.h>
 struct STRUCT
 {
@@ -135,7 +134,7 @@ int main()
                   <Quize
                     quizeNo="6"
                     question="  What is the value of the bool?"
-                    language="C++"
+                    language="c"
                     code={`bool is_int(789.54)`}
                     correctAnswer="False"
                     v1="True"
@@ -147,7 +146,7 @@ int main()
                   <Quize
                     quizeNo="7"
                     question="Given the variables p, q are of char type and r, s, t are of int type. Select the right statement?"
-                    language="C++"
+                    language="c"
                     code={`1. t = (r * s) / (r + s);
 2. t = (p * q) / (r + s);`}
                     correctAnswer="both 1 and 2 are true"
@@ -170,7 +169,7 @@ int main()
                   <Quize
                     quizeNo="9"
                     question="What will happen in the following C++ code snippet?"
-                    language="C++"
+                    language="c"
                     code={`int a = 100, b = 200;
 int *p = and a, *q = &b;
 p = q;`}
@@ -184,7 +183,7 @@ p = q;`}
                   <Quize
                     quizeNo="10"
                     question=" What will be the output of the following C++ code?"
-                    language="C++"
+                    language="c"
                     code={`#include <iostream>
 using namespace std;
 int main()
@@ -228,7 +227,6 @@ int main()
                 RecPostHading="C MCQs Questions"
                 link="/index_c_mcqs"
               />
-              
             </div>
           </div>
         </div>

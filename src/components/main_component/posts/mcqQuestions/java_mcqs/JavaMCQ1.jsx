@@ -27,7 +27,7 @@ class JavaMCQ1 extends Component {
   render() {
     return (
       <>
-       <HeaderCard
+        <HeaderCard
           title="Java Programming MCQs Set 1"
           color="#AFEEEE"
           textcolor="black"
@@ -66,7 +66,7 @@ class JavaMCQ1 extends Component {
                   <Quize
                     quizeNo="2"
                     question="Which of the following are legal lines of Java code?"
-                    language="Java"
+                    language="java"
                     code={`1. int w = (int)888.8;
 2. byte x = (byte)100L;
 3. long y = (byte)100;
@@ -81,7 +81,7 @@ class JavaMCQ1 extends Component {
                   <Quize
                     quizeNo="3"
                     question=". What will be the output of the following Java program?"
-                    language="Java"
+                    language="java"
                     code={`class array_output {
   public static void main(String args[]) 
   {    
@@ -103,7 +103,7 @@ for (int i = 0; i < 10; ++i) {
                   <Quize
                     quizeNo="4"
                     question="  What will be the output of the following Java program?"
-                    language="Java"
+                    language="java"
                     code={`class mainclass {
   public static void main(String args[]) 
   {
@@ -132,7 +132,7 @@ System.out.print((int)a);
                   <Quize
                     quizeNo="6"
                     question=" What will be the output of the following Java code?"
-                    language="Java"
+                    language="java"
                     code={`int arr[] = new int [5];
 System.out.print(arr);`}
                     correctAnswer="Class name@ hashcode in hexadecimal form"
@@ -145,7 +145,7 @@ System.out.print(arr);`}
                   <Quize
                     quizeNo="7"
                     question="What is the type of variable ‘b’ and ‘d’ in the following Java snippet?"
-                    language="Java"
+                    language="java"
                     code={`int a[], b;
 int []c, d;`}
                     correctAnswer="‘b’ is int variable; ‘d’ is int array"
@@ -207,7 +207,7 @@ int []c, d;`}
                 RecPostHading="Java MCQ Questions"
                 link="/index_java_mcqs"
               />
-               <RecommendPost
+              <RecommendPost
                 imgsource="c_mcq.jpeg"
                 RecPostHading="C MCQ Questions"
                 link="/index_c_mcqs"

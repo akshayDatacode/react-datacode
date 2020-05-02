@@ -87,7 +87,7 @@ class PythonQuizeTest3 extends Component {
                   <QuizeTest
                     quizeNo="2"
                     question="What is the output for −"
-                    language="pythons"
+                    language="python"
                     code={`S = [['him', 'sell'], [90, 28, 43]]
 
 S[0][1][1]`}
@@ -101,7 +101,7 @@ S[0][1][1]`}
 
                   <QuizeTest
                     quizeNo="3"
-                    language="pythons"
+                    language="python"
                     question="When the given code is executed how many times ' 'you are learning python ' ' will be printed."
                     code={`a = 0
 while a<10:

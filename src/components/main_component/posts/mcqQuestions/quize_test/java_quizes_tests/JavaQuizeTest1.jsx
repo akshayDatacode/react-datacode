@@ -75,7 +75,7 @@ class JavaQuizeTest1 extends Component {
                 <div className="col">
                   <QuizeTest
                     quizeNo="1"
-                    language="Java"
+                    language="java"
                     question="What is the range of short data type in Java?"
                     correctAnswer="-32768 to 32767"
                     v1="-128 to 127"
@@ -87,7 +87,7 @@ class JavaQuizeTest1 extends Component {
 
                   <QuizeTest
                     quizeNo="2"
-                    language="Java"
+                    language="java"
                     question="Which of the following are legal lines of Java code?"
                     code={`1. int w = (int)888.8;
 2. byte x = (byte)100L;
@@ -104,7 +104,7 @@ class JavaQuizeTest1 extends Component {
                   <QuizeTest
                     quizeNo="3"
                     question="Which of these literals can be contained in float data type variable?"
-                    language="Java"
+                    language="java"
                     correctAnswer=" -3.4e+038"
                     v1=" -1.7e+308"
                     v2=" -3.4e+038"
@@ -115,7 +115,7 @@ class JavaQuizeTest1 extends Component {
 
                   <QuizeTest
                     quizeNo="4"
-                    language="Java"
+                    language="java"
                     question="In Iterator, hasMoreElements() method of Enumeration has been changed to:
                 "
                     correctAnswer="hasNext()
@@ -134,7 +134,7 @@ class JavaQuizeTest1 extends Component {
                     quizeNo="5"
                     question="TreeSet internally uses that one to store elements?
                 "
-                    language="Java"
+                    language="java"
                     correctAnswer="TreeMap
                 "
                     v1="HashMap
@@ -148,7 +148,7 @@ class JavaQuizeTest1 extends Component {
                   />
                   <QuizeTest
                     quizeNo="6"
-                    language="Java"
+                    language="java"
                     question="Enumeration returned by ArrayList is
                 "
                     correctAnswer="Fail-fast
@@ -165,7 +165,7 @@ class JavaQuizeTest1 extends Component {
 
                   <QuizeTest
                     quizeNo="7"
-                    language="Java"
+                    language="java"
                     question="Which of these is synchronised and isn't sorted by natural order?"
                     correctAnswer=""
                     v1="EnumSet"
@@ -178,7 +178,7 @@ class JavaQuizeTest1 extends Component {
 
                   <QuizeTest
                     quizeNo="8"
-                    language="Java"
+                    language="java"
                     question="The Comparator interface contains the method?
                 "
                     correctAnswer="compare()
@@ -196,7 +196,7 @@ class JavaQuizeTest1 extends Component {
 
                   <QuizeTest
                     quizeNo="9"
-                    language="Java"
+                    language="java"
                     question="What will Collections.sort internally uses when number of elements are less than 7?"
                     correctAnswer="Insertion sort"
                     v1="Insertion sort"
@@ -210,7 +210,7 @@ class JavaQuizeTest1 extends Component {
 
                   <QuizeTest
                     quizeNo="10"
-                    language="Java"
+                    language="java"
                     question="In ListIterator, when a call to next() or previous(), if a call is made to set(E element) followed by add() or remove() what happens?"
                     correctAnswer="UnsupportedOperationException
                 "

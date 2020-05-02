@@ -10,7 +10,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import HeaderCard from "../../../HeaderCard";
 
-
 class PythonMCQ5 extends Component {
   state = {
     isCorrect: false,
@@ -29,12 +28,12 @@ class PythonMCQ5 extends Component {
   render() {
     return (
       <>
-  <HeaderCard
+        <HeaderCard
           title="Python MCQs Set 5"
           color="#FF9B00"
           textcolor="black"
         />
-       
+
         <div class="container-fluid">
           <div className="row">
             <div className="col-1"></div>
@@ -59,7 +58,7 @@ class PythonMCQ5 extends Component {
                   <Quize
                     quizeNo="41"
                     question="What will the be the result of below Python code?."
-                    language="Python"
+                    language="python"
                     code={`set1={1,2,3}     
 set1.add(4)
 set1.add(4)
@@ -74,7 +73,7 @@ print(set1)`}
                   <Quize
                     quizeNo="42"
                     question="Which of the following will delete key_value pair for key='tiger' in dictionary?."
-                    language="Python"
+                    language="python"
                     code={`dic={'lion':'wild','tiger':'wild','cat':'domestic','dog':'domestic}`}
                     correctAnswer="del dic['tiger']"
                     v1="del dic['tiger']"
@@ -106,7 +105,7 @@ print(set1)`}
                   <Quize
                     quizeNo="45"
                     question="What will be the output of the following Python code?."
-                    language="Python"
+                    language="python"
                     code={`def function1(var1=5, var2=7):
 var2=9
 var1=3
@@ -122,7 +121,7 @@ function1(10,12)`}
                   <Quize
                     quizeNo="46"
                     question="What will be output of this expression:."
-                    language="Python"
+                    language="python"
                     code={`'p' + 'q' if '12'.isdigit() else 'r' + 's'`}
                     correctAnswer="pq"
                     v1="pq"
@@ -134,7 +133,7 @@ function1(10,12)`}
                   <Quize
                     quizeNo="47"
                     question="What will be the output of the following code snippet?"
-                    language="Python"
+                    language="python"
                     code={`class Sales:
 def __init__(self, id):
     self.id = id
@@ -152,7 +151,7 @@ print (val.id)`}
                   <Quize
                     quizeNo="48"
                     question="Which of the following statements are correct about the given code snippet?"
-                    language="Python"
+                    language="python"
                     code={`class A:
 def __init__(self, i = 0):
     self.i = i
@@ -187,7 +186,7 @@ main()`}
                   <Quize
                     quizeNo="50"
                     question="Which of the following is the output of the below Python code?"
-                    language="Python"
+                    language="python"
                     code={`class A:
 def __init__(self):
     self.x = 1

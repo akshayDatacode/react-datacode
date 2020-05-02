@@ -97,7 +97,7 @@ class PythonPgramQuestions extends Component {
                     </h5>
                     <ProgramCard
                       heading="Python Program to Print Hello world!"
-                      language="Python"
+                      language="python"
                       code={`# This program prints Hello, world!
 
 print('Hello, world!')
@@ -109,7 +109,7 @@ Hello, world!`}
 
                     <ProgramCard
                       heading="Python program to do arithmetical operations"
-                      language="Python"
+                      language="python"
                       code={`# Store input numbers:  
 num1 = input('Enter first number: ')  
 num2 = input('Enter second number: ')  
@@ -143,7 +143,7 @@ print('The division of {0} and {1} is {2}'.format(num1, num2, div))
 
                     <ProgramCard
                       heading="Python program to find the area of a triangle"
-                      language="Python"
+                      language="python"
                       code={`# Three sides of the triangle is a, b and c:  
 a = float(input('Enter first side: '))  
 b = float(input('Enter second side: '))  
@@ -158,7 +158,7 @@ print('The area of the triangle is %0.2f' %area)   `}
                     />
                     <ProgramCard
                       heading="Python program to solve quadratic equation"
-                      language="Python"
+                      language="python"
                       code={`# import complex math module  
 import cmath  
 a = float(input('Enter a: '))  
@@ -175,7 +175,7 @@ print('The solution are {0} and {1}'.format(sol1,sol2))   `}
                     />
                     <ProgramCard
                       heading="Python program to swap two variables"
-                      language="Python"
+                      language="python"
                       code={`# Python swap program   
 x = input('Enter value of x: ')  
 y = input('Enter value of y: ')  
@@ -190,13 +190,13 @@ print('The value of y after swapping: {}'.format(y))  `}
                     />
                     <ProgramCard
                       heading="Python program to generate a random number"
-                      language="Python"
+                      language="python"
                       code={`import random  
 print(random.randint(100,500))  `}
                     />
                     <ProgramCard
                       heading="Python program to convert kilometers to miles"
-                      language="Python"
+                      language="python"
                       code={`# Collect input from the user  
 kilometers = float(input('How many kilometers?: '))  
 # conversion factor  
@@ -207,7 +207,7 @@ print('%0.3f kilometers is equal to %0.3f miles' %(kilometers,miles))  `}
                     />
                     <ProgramCard
                       heading="Python program to convert Celsius to Fahrenheit"
-                      language="Python"
+                      language="python"
                       code={`# Collect input from the user  
 celsius = float(input('Enter temperature in Celsius: '))  
   
@@ -217,7 +217,7 @@ print('%0.1f  Celsius is equal to %0.1f degree Fahrenheit'%(celsius,fahrenheit))
                     />
                     <ProgramCard
                       heading="Python program to display calendar"
-                      language="Python"
+                      language="python"
                       code={`import calendar  
 # Enter the month and year  
 yy = int(input("Enter year: "))  
@@ -235,7 +235,7 @@ print(calendar.month(yy,mm))  `}
 
                     <ProgramCard
                       heading="Python Program to Check if a Number is Positive, Negative or Zero"
-                      language="Python"
+                      language="python"
                       code={`num = float(input("Enter a number: "))  
   
 if num > 0:  
@@ -247,7 +247,7 @@ else:
                     />
                     <ProgramCard
                       heading="Python Program for factorial of a number"
-                      language="Python"
+                      language="python"
                       code={`num = int(input("Enter a number: "))  
 factorial = 1  
 if num < 0:  
@@ -262,7 +262,7 @@ else:
 
                     <ProgramCard
                       heading="Python Program to Check whether Year is a Leap Year or not"
-                      language="Python"
+                      language="python"
                       code={`year = int(input("Enter a year: "))  
 if (year % 4) == 0:  
    if (year % 100) == 0:  
@@ -277,7 +277,7 @@ else:
                     />
                     <ProgramCard
                       heading="Python Program to Check If a number is Prime or not"
-                      language="Python"
+                      language="python"
                       code={`num = int(input("Enter a number: "))  
   
 if num > 1:  
@@ -294,7 +294,7 @@ else:
                     />
                     <ProgramCard
                       heading="Python Program to Check If number is Even or Odd"
-                      language="Python"
+                      language="python"
                       code={`num = int(input("Enter a number: "))  
 if (num % 2) == 0:  
    print("{0} is Even number".format(num))  
@@ -303,7 +303,7 @@ else:
                     />
                     <ProgramCard
                       heading="Python Program to Print all Prime Numbers between an Interval"
-                      language="Python"
+                      language="python"
                       code={`#Take the input from the user:   
 lower = int(input("Enter lower range: "))  
 upper = int(input("Enter upper range: "))  
@@ -318,7 +318,7 @@ for num in range(lower,upper + 1):
                     />
                     <ProgramCard
                       heading="Python Program to Display the multiplication Table"
-                      language="Python"
+                      language="python"
                       code={`num = int(input("Show the multiplication table of? "))  
 # using for loop to iterate multiplication 10 times   
 for i in range(1,11):  
@@ -327,7 +327,7 @@ for i in range(1,11):
                     <ProgramCard
                       heading="Python Program to Print the Fibonacci sequence
                   "
-                      language="Python"
+                      language="python"
                       code={`nterms = int(input("How many terms you want? "))  
 # first two terms  
 n1 = 0  
@@ -352,7 +352,7 @@ else:
                     />
                     <ProgramCard
                       heading="Python Program to Check Armstrong Number"
-                      language="Python"
+                      language="python"
                       code={` num = int(input("Enter a number: "))  
 sum = 0  
 temp = num  
@@ -369,7 +369,7 @@ else:
                     />
                     <ProgramCard
                       heading="Python Program to Find Armstrong Number in an Interval"
-                      language="Python"
+                      language="python"
                       code={`lower = int(input("Enter lower range: "))  
 upper = int(input("Enter upper range: "))  
   
@@ -386,7 +386,7 @@ for num in range(lower,upper + 1):
                     <ProgramCard
                       heading="Python Program to Find the Sum of Natural Numbers
                   "
-                      language="Python"
+                      language="python"
                       code={`num = int(input("Enter a number: "))  
   
 if num < 0:  
@@ -407,7 +407,7 @@ else:
                     </h5>
                     <ProgramCard
                       heading="Python Program to Find LCM"
-                      language="Python"
+                      language="python"
                       code={`def lcm(x, y):  
 if x > y:  
     greater = x  
@@ -427,7 +427,7 @@ print("The L.C.M. of", num1,"and", num2,"is", lcm(num1, num2))  `}
                     />
                     <ProgramCard
                       heading="Python Program to Find HCF"
-                      language="Python"
+                      language="python"
                       code={`def hcf(x, y):  
 if x > y:  
     smaller = y  
@@ -445,7 +445,7 @@ print("The H.C.F. of", num1,"and", num2,"is", hcf(num1, num2))
                     />
                     <ProgramCard
                       heading="Python Program to Convert Decimal to Binary, Octal and Hexadecimal"
-                      language="Python"
+                      language="python"
                       code={`dec = int(input("Enter a decimal number: "))  
   
 print(bin(dec),"in binary.")  
@@ -454,14 +454,14 @@ print(hex(dec),"in hexadecimal."  `}
                     />
                     <ProgramCard
                       heading="Python Program To Find ASCII value of a character"
-                      language="Python"
+                      language="python"
                       code={`c = input("Enter a character: ")  
   
 print("The ASCII value of '" + c + "' is",ord(c))  `}
                     />
                     <ProgramCard
                       heading="Python Program to Make a Simple Calculator"
-                      language="Python"
+                      language="python"
                       code={`# define functions  
 def add(x, y):  
    """This function adds two numbers"" 
@@ -502,7 +502,7 @@ else:
                     />
                     <ProgramCard
                       heading="Python Program to Display Calendar"
-                      language="Python"
+                      language="python"
                       code={`# First import the calendar module  
 import calendar  
 # ask of month and year  
@@ -513,7 +513,7 @@ print(calendar.month(yy,mm))  `}
                     />
                     <ProgramCard
                       heading="Python Program to Display Fibonacci Sequence Using Recursion"
-                      language="Python"
+                      language="python"
                       code={`def recur_fibo(n):  
 if n <= 1:  
     return n  
@@ -531,7 +531,7 @@ for i in range(nterms):
                     />
                     <ProgramCard
                       heading="Python Program to Find Factorial of Number Using Recursion"
-                      language="Python"
+                      language="python"
                       code={`def recur_factorial(n):  
 if n == 1:  
     return n  
@@ -555,7 +555,7 @@ print("The factorial of",num,"is",recur_factorial(num))  `}
                     </h5>
                     <ProgramCard
                       heading="Python Program to Add Two Matrices"
-                      language="Python"
+                      language="python"
                       code={`X = [[1,2,3],  
 [4,5,6],  
 [7,8,9]]  
@@ -578,7 +578,7 @@ print(r)
                     />
                     <ProgramCard
                       heading="Python Program to Multiply Two Matrices"
-                      language="Python"
+                      language="python"
                       code={`X = [[1,2,3],  
 [4,5,6],  
 [7,8,9]]  
@@ -601,7 +601,7 @@ print(r)  `}
                     />
                     <ProgramCard
                       heading="Python Program to Transpose a Matrix"
-                      language="Python"
+                      language="python"
                       code={`X = [[1,2],  
 [4,5],  
 [7,8]]  
@@ -619,7 +619,7 @@ print(r)  `}
                     />
                     <ProgramCard
                       heading="Python Program to Sort Words in Alphabetic Order"
-                      language="Python"
+                      language="python"
                       code={`my_str = input("Enter a string: ")  
 # breakdown the string into a list of words  
 words = my_str.split()  
@@ -631,7 +631,7 @@ for word in words:
                     />
                     <ProgramCard
                       heading="Python Program to Remove Punctuation From a String"
-                      language="Python"
+                      language="python"
                       code={`# define punctuation  
 punctuation = '''''!()-[]{};:'"\,<>./?@#$%^&*_~'''  
 # take input from the user  
@@ -652,7 +652,7 @@ print(no_punct)  `}
                     </h5>
                     <ProgramCard
                       heading="Python Program to Find the Largest Number in a List"
-                      language="Python"
+                      language="python"
                       code={`a=[]
 n=int(input("Enter number of elements:"))
 for i in range(1,n+1):
@@ -663,7 +663,7 @@ print("Largest element is:",a[n-1])`}
                     />
                     <ProgramCard
                       heading="Python Program to Find the Second Largest Number in a List"
-                      language="Python"
+                      language="python"
                       code={`a=[]
 n=int(input("Enter number of elements:"))
 for i in range(1,n+1):
@@ -674,7 +674,7 @@ print("Second largest element is:",a[n-2])`}
                     />
                     <ProgramCard
                       heading="Python Program to Put Even and Odd elements in a List into Two Different Lists"
-                      language="Python"
+                      language="python"
                       code={`a=[]
 n=int(input("Enter number of elements:"))
 for i in range(1,n+1):
@@ -692,7 +692,7 @@ print("The odd list",odd)`}
                     />
                     <ProgramCard
                       heading="Python Program to Merge Two Lists and Sort it"
-                      language="Python"
+                      language="python"
                       code={`a=[]
 c=[]
 n1=int(input("Enter number of elements:"))
@@ -709,7 +709,7 @@ print("Sorted list is:",new)`}
                     />
                     <ProgramCard
                       heading="Python Program to Sort the List According to the Second Element in Sublist"
-                      language="Python"
+                      language="python"
                       code={`a=[['A',34],['B',21],['C',26]]
 for i in range(0,len(a)):
     for j in range(0,len(a)-i-1):
@@ -722,7 +722,7 @@ print(a)`}
                     />
                     <ProgramCard
                       heading="Python Program to Find the Second Largest Number in a List Using Bubble Sort"
-                      language="Python"
+                      language="python"
                       code={`a=[]
 n=int(input("Enter number of elements:"))
 for i in range(1,n+1):
@@ -738,7 +738,7 @@ print('Second largest number is:',a[n-2])`}
                     />
                     <ProgramCard
                       heading="Python Program to Sort a List According to the Length of the Elements"
-                      language="Python"
+                      language="python"
                       code={`a=[]
 n=int(input("Enter number of elements:"))
 for i in range(1,n+1):
@@ -749,7 +749,7 @@ print(a)`}
                     />
                     <ProgramCard
                       heading="Python Program to Find the Union of two Lists"
-                      language="Python"
+                      language="python"
                       code={`l1 = []
 num1 = int(input('Enter size of list 1: '))
 for n in range(num1):
@@ -768,7 +768,7 @@ print('The Union of two lists is:',union)`}
                     />
                     <ProgramCard
                       heading="Python Program to Remove the Duplicate Items from a List"
-                      language="Python"
+                      language="python"
                       code={`a=[]
 n= int(input("Enter the number of elements in list:"))
 for x in range(0,n):
@@ -785,7 +785,7 @@ print(unique)`}
                     />
                     <ProgramCard
                       heading="Python Program to Read a List of Words and Return the Length of the Longest One"
-                      language="Python"
+                      language="python"
                       code={`a=[]
 n= int(input("Enter the number of elements in list:"))
 for x in range(0,n):
@@ -803,7 +803,7 @@ print(temp)
                     />
                     <ProgramCard
                       heading="Python Program to Remove the ith Occurrence of the Given Word in a List where Words can Repeat"
-                      language="Python"
+                      language="python"
                       code={`a=[]
 n= int(input("Enter the number of elements in list:"))
 for x in range(0,n):
@@ -830,7 +830,7 @@ else:
                     />
                     <ProgramCard
                       heading="Python Program to Remove All Tuples in a List of Tuples with the USN Outside the Given Range"
-                      language="Python"
+                      language="python"
                       code={`y=[('a','12CS039'),('b','12CS320'),('c','12CS055'),('d','12CS100')]
 low=int(input("Enter lower roll number (starting with 12CS):"))
 up=int(input("Enter upper roll number (starting with 12CS):"))
@@ -846,7 +846,7 @@ print(p)`}
                     </h5>
                     <ProgramCard
                       heading="Python program to create a Circular Linked List of N nodes and count the number of nodes"
-                      language="Python"
+                      language="python"
                       code={`ALGORITHM:
 Define a Node class which represents a node in the list. It has two properties data and next which will point to the next node.
 Define another class for creating the circular linked list, and it has two nodes: head and tail. It has two methods: add() and display() .
@@ -922,7 +922,7 @@ Count of nodes present in circular linked list:
                     />
                     <ProgramCard
                       heading="Python program to create a Circular Linked List of n nodes and display it in reverse order"
-                      language="Python"
+                      language="python"
                       code={`ALGORITHM:
 Define a Node class which represents a node in the list. It has two properties data and next which will point to the next node.
 Define another class for creating the circular linked list, and it has two nodes: head and tail. It has two methods: add(), display() and reverse().
@@ -1021,7 +1021,7 @@ Reversed List:
                     />
                     <ProgramCard
                       heading="Python program to create and display a Circular Linked List"
-                      language="Python"
+                      language="python"
                       code={`ALGORITHM:
 Define a Node class which represents a node in the list. It has two properties data and next which will point to the next node.
 Define another class for creating the circular linked list, and it has two nodes: head and tail. It has two methods: add() and display() .
@@ -1099,7 +1099,7 @@ Nodes of the circular linked list:
                     />
                     <ProgramCard
                       heading="Python program to delete a node from the beginning of the Circular Linked List"
-                      language="Python"
+                      language="python"
                       code={`ALGORITHM:
 Define a Node class which represents a node in the list. It has two properties data and next which will point to the next node.
 Define another class for creating the circular linked list, and it has two nodes: head and tail. It has two methods: deleteStart() and display() .
@@ -1209,7 +1209,7 @@ List is empty
                     <ProgramCard
                       heading="Python program to delete a node from the end of the Circular Linked List
                   "
-                      language="Python"
+                      language="python"
                       code={`ALGORITHM:
 Define a Node class which represents a node in the list. It has two properties data and next which will point to the next node.
 Define another class for creating the circular linked list, and it has two nodes: head and tail. It has two methods: deleteEnd() and display() .
@@ -1329,7 +1329,7 @@ List is empty`}
                     </h5>
                     <ProgramCard
                       heading="Python program to convert a given binary tree to doubly linked list"
-                      language="Python"
+                      language="python"
                       code={`ALGORITHM:
 Define a Node class which represents a node in the binary tree. It will have three properties: data left, and right where the left and right represent two children of a node.
 Root will represent the root of the binary tree. Head and tail node represent the head and tail of the doubly linked list.
@@ -1422,7 +1422,7 @@ Nodes of generated doubly linked list:
                     />
                     <ProgramCard
                       heading="Python program to create a doubly linked list from a ternary tree"
-                      language="Python"
+                      language="python"
                       code={`ALGORITHM:
 Define a Node class which represents a node in the ternary tree. It will have four properties: data, left, middle, right where left, middle and right represent three children of a node.
 Root will represent the root of the ternary tree. Head and tail node represent the head and tail of the doubly linked list.
@@ -1536,7 +1536,7 @@ Nodes of generated doubly linked list:
                     />
                     <ProgramCard
                       heading="Python program to create a doubly linked list of n nodes and count the number of nodes"
-                      language="Python"
+                      language="python"
                       code={`ALGORITHM:
 Define a Node class which represents a node in the list. It will have three properties: data, previous which will point to the previous node and next which will point to the next node.
 Define another class for creating a doubly linked list, and it has two nodes: head and tail. Initially, head and tail will point to null.
@@ -1642,7 +1642,7 @@ Count of nodes present in the list: 5`}
                     />
                     <ProgramCard
                       heading="Python program to create a doubly linked list of n nodes and display it in reverse order"
-                      language="Python"
+                      language="python"
                       code={`ALGORITHM:
 Define a Node class which represents a node in the list. It will have three properties: data, previous which will point to the previous node and next which will point to the next node.
 Define another class for creating a doubly linked list, and it has two nodes: head and tail. Initially, head and tail will point to null.
@@ -1757,7 +1757,7 @@ Reversed List:
                     />
                     <ProgramCard
                       heading="Python program to create and display a doubly linked list"
-                      language="Python"
+                      language="python"
                       code={`ALGORITHM:
 Define a Node class which represents a node in the list. It will have three properties: data, previous which will point to the previous node and next which will point to the next node.
 Define another class for creating a doubly linked list, and it has two nodes: head and tail. Initially, head and tail will point to null.
@@ -1841,7 +1841,7 @@ Nodes of doubly linked list:
                     />
                     <ProgramCard
                       heading="Python program to delete a new node from the beginning of the doubly linked list"
-                      language="Python"
+                      language="python"
                       code={`ALGORITHM:
 Define a Node class which represents a node in the list. It will have three properties: data, previous which will point to the previous node and next which will point to the next node.
 2Define another class for creating a doubly linked list, and it has two nodes: head and tail. Initially, head and tail will point to null.
@@ -1960,7 +1960,7 @@ List is empty`}
                     />
                     <ProgramCard
                       heading="Python program to delete a new node from the end of the doubly linked list"
-                      language="Python"
+                      language="python"
                       code={`ALGORITHM:
 Define a Node class which represents a node in the list. It will have three properties: data, previous which will point to the previous node and next which will point to the next node.
 Define another class for creating the doubly linked list, and it has two nodes: head and tail. Initially, head and tail will point to null.
@@ -2080,7 +2080,7 @@ List is empty`}
                     />
                     <ProgramCard
                       heading="Python program to delete a new node from the middle of the doubly linked list"
-                      language="Python"
+                      language="python"
                       code={`ALGORITHM:
 Define a Node class which represents a node in the list. It will have three properties: data, previous which will point to the previous node and next which will point to the next node.
 Define another class for creating the doubly linked list, and it has two nodes: head and tail. Initially, head and tail will point to null.
@@ -2220,7 +2220,7 @@ List is empty`}
                     </h5>
                     <ProgramCard
                       heading="Python program to print the elements of an array"
-                      language="Python"
+                      language="python"
                       code={`ALGORITHM:
 STEP 1: Declare and initialize an array.
 STEP 2: Loop through the array by incrementing the value of i.
@@ -2243,7 +2243,7 @@ Elements of given array:
                     />
                     <ProgramCard
                       heading="Python program to copy all elements of one array into another array"
-                      language="Python"
+                      language="python"
                       code={`ALGORITHM:
 STEP 1: Declare and initialize an array.
 STEP 2: Declare another array of the same size as of the first one
@@ -2282,7 +2282,7 @@ Elements of new array:
                     />
                     <ProgramCard
                       heading="Python program to find the frequency of each element in the array"
-                      language="Python"
+                      language="python"
                       code={`ALGORITHM:
 STEP 1: Declare and initialize an array arr.
 STEP 2: Declare another array fr with the same size of array arr. It is used to store the frequencies of elements present in the array.
@@ -2334,7 +2334,7 @@ Element | Frequency
                     />
                     <ProgramCard
                       heading="Python program to left rotate the elements of an array"
-                      language="Python"
+                      language="python"
                       code={`ALGORITHM:
 STEP 1: Declare and initialize an array.
 STEP 2: Variable n will denote the number of times an array should be rotated toward its left.
@@ -2382,7 +2382,7 @@ Array after left rotation:
                     />
                     <ProgramCard
                       heading="Python program to print the duplicate elements of an array"
-                      language="Python"
+                      language="python"
                       code={`ALGORITHM:
 STEP 1: Declare and initialize an array.
 STEP 2: Duplicate elements can be found using two loops. The outer loop will iterate through the array from 0 to length of the array. The outer loop will select an element. The inner loop will be used to compare the selected element with the rest of the elements of the array.
@@ -2412,7 +2412,7 @@ Duplicate elements in given array:
 
                     <ProgramCard
                       heading="Python program to print the elements of an array in reverse order"
-                      language="Python"
+                      language="python"
                       code={`ALGORITHM:
 STEP 1: Declare and initialize an array.
 STEP 2: Loop through the array in reverse order that is, the loop will start from (length of the array - 1) and end at 0 by decreasing the value of i by 1.
@@ -2439,7 +2439,7 @@ Array in reverse order:
                     />
                     <ProgramCard
                       heading="Python program to print the elements of an array present on even position"
-                      language="Python"
+                      language="python"
                       code={`ALGORITHM:
 STEP 1: Declare and initialize an array.
 STEP 2: Calculate the length of the declared array.
@@ -2466,7 +2466,7 @@ Elements of given array present on even position:
                     />
                     <ProgramCard
                       heading="Python program to print the elements of an array present on odd position"
-                      language="Python"
+                      language="python"
                       code={`ALGORITHM:
 STEP 1: Declare and initialize an array.
 STEP 2: Calculate the length of the declared array.
@@ -2494,7 +2494,7 @@ Elements of given array present on odd position:
                     />
                     <ProgramCard
                       heading="Python program to print the largest element in an array"
-                      language="Python"
+                      language="python"
                       code={`ALGORITHM:
 STEP 1: Declare and initialize an array.
 STEP 2: Store first element in variable max.
@@ -2524,7 +2524,7 @@ Largest element present in given array: 75`}
                     />
                     <ProgramCard
                       heading="Python program to print the smallest element in an array"
-                      language="Python"
+                      language="python"
                       code={`ALGORITHM:
 STEP 1: Declare and initialize an array.
 STEP 2: Store first element in the variable min.
@@ -2554,7 +2554,7 @@ Smallest element present in given array: 7`}
                     />
                     <ProgramCard
                       heading="Python program to print the number of elements present in an array"
-                      language="Python"
+                      language="python"
                       code={`ALGORITHM:
 STEP 1: Declare and initialize an array.
 STEP 2: Calculate the length of the array that is a number of elements present in the array.
@@ -2578,7 +2578,7 @@ Number of elements present in given array: 5`}
                     />
                     <ProgramCard
                       heading="Python program to print the sum of all elements in an array"
-                      language="Python"
+                      language="python"
                       code={`ALGORITHM:
 STEP 1: Declare and initialize an array.
 STEP 2: The variable sum will be used to calculate the sum of the elements. Initialize it to 0.
@@ -2601,7 +2601,7 @@ Sum of all the elements of an array: 15`}
                     />
                     <ProgramCard
                       heading="Python program to right rotate the elements of an array"
-                      language="Python"
+                      language="python"
                       code={`ALGORITHM:
 STEP 1: Declare and initialize an array.
 STEP 2: Variable n will denote the number of times an array should be rotated toward its right.
@@ -2648,7 +2648,7 @@ Array after right rotation:
                     />
                     <ProgramCard
                       heading="Python program to sort the elements of an array in ascending order"
-                      language="Python"
+                      language="python"
                       code={`ALGORITHM:
 STEP 1: Declare and initialize an array.
 STEP 2: Loop through the array and select an element.
@@ -2692,7 +2692,7 @@ Elements of array sorted in ascending order:
                     />
                     <ProgramCard
                       heading="Python program to sort the elements of an array in descending order"
-                      language="Python"
+                      language="python"
                       code={`ALGORITHM:
 STEP 1: Declare and initialize an array.
 STEP 2: Loop through the array and select an element.

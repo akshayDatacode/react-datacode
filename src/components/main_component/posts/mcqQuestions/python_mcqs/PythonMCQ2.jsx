@@ -10,7 +10,6 @@ import { faHome, faListAlt } from "@fortawesome/free-solid-svg-icons";
 import MCQCardCarousel from "../MCQCardCarousel";
 import HeaderCard from "../../../HeaderCard";
 
-
 class PythonMCQ2 extends Component {
   state = {
     isCorrect: false,
@@ -29,12 +28,11 @@ class PythonMCQ2 extends Component {
   render() {
     return (
       <>
-       <HeaderCard
+        <HeaderCard
           title="Python MCQs Set 2"
           color="#FF9B00"
           textcolor="black"
         />
-   
 
         <div class="container-fluid">
           <div className="row">
@@ -45,7 +43,6 @@ class PythonMCQ2 extends Component {
                   <FontAwesomeIcon icon={faHome} size="1x" />
                 </Link>
                 <Link to="/index_mcqs" className="badge badge-info  mr-1">
-                  
                   MCQs >>
                 </Link>
                 <Link
@@ -61,7 +58,7 @@ class PythonMCQ2 extends Component {
                   <Quize
                     quizeNo="11"
                     question="Write a list comprehension equivalent for the Python code shown below."
-                    language="Python"
+                    language="python"
                     code={`for i in range(1, 101):
 if int(i*0.5)==i*0.5:
 print(i)`}
@@ -75,7 +72,7 @@ print(i)`}
                   <Quize
                     quizeNo="12"
                     question="What will be the output of the following Python code?"
-                    language="Python"
+                    language="python"
                     code={`A = [[1, 2, 3],
     [4, 5, 6],
     [7, 8, 9]]
@@ -90,7 +87,7 @@ print(i)`}
                   <Quize
                     quizeNo="13"
                     question="Is the following Python code valid?"
-                    language="Python"
+                    language="python"
                     code={`>>> a,b=1,2,3`}
                     correctAnswer="No, too many values to unpack"
                     v1="Yes, this is an example of tuple unpacking. a=1 and b=2"
@@ -112,7 +109,7 @@ print(i)`}
                   <Quize
                     quizeNo="15"
                     question="What will be the output of the following Python code?"
-                    language="Python"
+                    language="python"
                     code={`a={}
 a[2]=1
 a[1]=[2,3,4]
@@ -127,7 +124,7 @@ print(a[1][1])`}
                   <Quize
                     quizeNo="16"
                     question="What will be the output of the following Python function?"
-                    language="Python"
+                    language="python"
                     code={`float(' -12345)
 (Note that the number of blank spaces before the number is ‘5’)`}
                     correctAnswer="-12345.0"
@@ -140,7 +137,7 @@ print(a[1][1])`}
                   <Quize
                     quizeNo="17"
                     question="What will be the output of the following Python code?"
-                    language="Python"
+                    language="python"
                     code={`elements = [0, 1, 2]
 def incr(x):
    return x+1
@@ -155,7 +152,7 @@ print(list(map(elements, incr)))`}
                   <Quize
                     quizeNo="18"
                     question="What will be the output of the following Python code?"
-                    language="Python"
+                    language="python"
                     code={`import sys
 sys.stdin.readline() 
 Datacode is best`}
@@ -169,7 +166,7 @@ Datacode is best`}
                   <Quize
                     quizeNo="19"
                     question="What will be the output of the following Python code?"
-                    language="Python"
+                    language="python"
                     code={`import datetime
 d=datetime.date(2017,06,18)
 print(d)`}

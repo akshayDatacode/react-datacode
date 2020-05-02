@@ -24,7 +24,7 @@ class JSMCQ2 extends Component {
   render() {
     return (
       <>
-<HeaderCard
+        <HeaderCard
           title="JavaScript MCQs Set 2"
           color="#00FF00"
           textcolor="black"
@@ -35,8 +35,7 @@ class JSMCQ2 extends Component {
             <div className="col-md-7 ">
               <div className="col-fluid ">
                 <Link to="/home" className="badge badge-primary mr-1">
-                <FontAwesomeIcon icon={faHome} size="1x" />
-
+                  <FontAwesomeIcon icon={faHome} size="1x" />
                 </Link>
                 <Link to="/index_mcqs" className="badge badge-warning mr-1">
                   MCQs >>
@@ -50,7 +49,7 @@ class JSMCQ2 extends Component {
                   <Quize
                     quizeNo="11"
                     question="What will be the output of the following ?"
-                    language="Javascript"
+                    language="js"
                     code={`<script type='text/javascript'>
 var name;
 name = 'Datacode';
@@ -78,7 +77,7 @@ document.write(name);
                   <Quize
                     quizeNo="13"
                     question="What will be the output of the following JavaScript code?"
-                    language="Javascript"
+                    language="js"
                     code={`var a1 = [,,,]; 
 var a2 = new Array(3); 
 0 in a1 
@@ -93,7 +92,7 @@ var a2 = new Array(3);
                   <Quize
                     quizeNo="14"
                     question="What is the observation made in the following JavaScript code?"
-                    language="Javascript"
+                    language="js"
                     code={`if (!a[i]) continue;`}
                     correctAnswer="Skips the null elements"
                     v1="Skips the defined elements"
@@ -105,7 +104,7 @@ var a2 = new Array(3);
                   <Quize
                     quizeNo="15"
                     question="What convenience does the following JavaScript code snippet provide?"
-                    language="Javascript"
+                    language="js"
                     code={`let succ = function(x) x+1, yes = function() true, no = function() false;`}
                     correctAnswer="Functional behaviour"
                     v1="Functional behaviour"
@@ -137,7 +136,7 @@ var a2 = new Array(3);
                   <Quize
                     quizeNo="18"
                     question="What will the following JavaScript code snippet work? If not, what will be the error?"
-                    language="Javascript"
+                    language="js"
                     code={`function tail(o) 
 { 
     for (; o.next; o = o.next) ;
@@ -153,7 +152,7 @@ var a2 = new Array(3);
                   <Quize
                     quizeNo="19"
                     question=" What will be the output of the following JavaScript code?"
-                    language="Javascript"
+                    language="js"
                     code={`function myFunction() 
 {
     document.getElementById('demo').innerHTML = Boolean(10 > 9);

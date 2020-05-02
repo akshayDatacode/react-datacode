@@ -38,43 +38,43 @@ class JavaQuizeTest3 extends Component {
   render() {
     return (
       <>
-         <HeaderBannerSection imgsource="headerdark.jpeg" />
+        <HeaderBannerSection imgsource="headerdark.jpeg" />
 
-<div class="container-fluid">
-  <div className="row">
-    <div className="col-1"></div>
-    <div className="col-md-7 ">
-      <div className="row">
-        <div className="col text-center mt-3 mb-3">
-          <h2>Java Quiz Test Advance</h2>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col">
-          <Link to="/home" className="badge badge-primary mr-1">
-            Home >>
-          </Link>
-          <Link
-            to="/index_quize_tests"
-            className="badge badge-warning mr-1"
-          >
-            Quize Test >>
-          </Link>
-          <Link
-            to="/java_quize_tests"
-            className="badge badge-success mr-1"
-          >
-            Java Quiz >>
-          </Link>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col">
-              <QuizeTest
-                quizeNo="1"
-                language="Java"
-                question="What will be the output of the following Java code snippet?"
-                code={`class A
+        <div class="container-fluid">
+          <div className="row">
+            <div className="col-1"></div>
+            <div className="col-md-7 ">
+              <div className="row">
+                <div className="col text-center mt-3 mb-3">
+                  <h2>Java Quiz Test Advance</h2>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col">
+                  <Link to="/home" className="badge badge-primary mr-1">
+                    Home >>
+                  </Link>
+                  <Link
+                    to="/index_quize_tests"
+                    className="badge badge-warning mr-1"
+                  >
+                    Quize Test >>
+                  </Link>
+                  <Link
+                    to="/java_quize_tests"
+                    className="badge badge-success mr-1"
+                  >
+                    Java Quiz >>
+                  </Link>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col">
+                  <QuizeTest
+                    quizeNo="1"
+                    language="java"
+                    question="What will be the output of the following Java code snippet?"
+                    code={`class A
 {
                  
 }
@@ -83,19 +83,19 @@ enum Enums extends A
 {
     ABC, BCD, CDE, DEF;
 }`}
-                correctAnswer="Compilation Error"
-                v1="Runtime Error"
-                v2="Compilation Error"
-                v3="It runs successfully"
-                v4="EnumNotDefined Exception"
-                counter={this.counter}
-              />
+                    correctAnswer="Compilation Error"
+                    v1="Runtime Error"
+                    v2="Compilation Error"
+                    v3="It runs successfully"
+                    v4="EnumNotDefined Exception"
+                    counter={this.counter}
+                  />
 
-            <QuizeTest
-                quizeNo="2"
-                language="Java"
-                question="What will be the output of the following Java code snippet?"
-                code={`enum Enums
+                  <QuizeTest
+                    quizeNo="2"
+                    language="java"
+                    question="What will be the output of the following Java code snippet?"
+                    code={`enum Enums
 {
     A, B, C;
                  
@@ -112,18 +112,18 @@ public class MainClass
         Enum en = Enums.B;
     }
 }`}
-                correctAnswer=""
-                v1="10 10 10"
-                v2="Compilation Error"
-                v3="10 10"
-                v4="Runtime Exception"
-                counter={this.counter}
-              />
-              <QuizeTest
-                quizeNo="3"
-                language="Java"
-                question="What will be the output of the following Java code snippet?"
-                code={`double a = 0.02;
+                    correctAnswer=""
+                    v1="10 10 10"
+                    v2="Compilation Error"
+                    v3="10 10"
+                    v4="Runtime Exception"
+                    counter={this.counter}
+                  />
+                  <QuizeTest
+                    quizeNo="3"
+                    language="java"
+                    question="What will be the output of the following Java code snippet?"
+                    code={`double a = 0.02;
 double b = 0.03;
 double c = b - a;
 System.out.println(c);
@@ -132,34 +132,34 @@ BigDecimal _a = new BigDecimal("0.02");
 BigDecimal _b = new BigDecimal("0.03");
 BigDecimal _c = b.subtract(_a);
 System.out.println(_c);`}
-                correctAnswer="0.009999999999999998
+                    correctAnswer="0.009999999999999998
                 0.01"
-                v1=" 0.009999999999999998
+                    v1=" 0.009999999999999998
                 0.01"
-                v2=" 0.01
+                    v2=" 0.01
                 0.009999999999999998"
-                v3="   0.01
+                    v3="   0.01
                 0.01"
-                v4="0.009999999999999998
+                    v4="0.009999999999999998
                 0.009999999999999998"
-                counter={this.counter}
-              />
-              <QuizeTest
-                quizeNo="4"
-                language="Java"
-                question="How to get difference between two dates?"
-                correctAnswer="long diffInMilli = java.time.Duration.between(dateTime1, dateTime2).toMillis();"
-                v1="long diffInMilli = java.time.Duration.between(dateTime1, dateTime2).toMillis();"
-                v2="long diffInMilli = java.time.difference(dateTime1, dateTime2).toMillis();"
-                v3="Date diffInMilli = java.time.Duration.between(dateTime1, dateTime2).toMillis();"
-                v4="Time diffInMilli = java.time.Duration.between(dateTime1, dateTime2).toMillis();"
-                counter={this.counter}
-              />
-              <QuizeTest
-                quizeNo="5"
-                language="Java"
-                question="What will be the output of the following Java program?"
-                code={`class evaluate 
+                    counter={this.counter}
+                  />
+                  <QuizeTest
+                    quizeNo="4"
+                    language="java"
+                    question="How to get difference between two dates?"
+                    correctAnswer="long diffInMilli = java.time.Duration.between(dateTime1, dateTime2).toMillis();"
+                    v1="long diffInMilli = java.time.Duration.between(dateTime1, dateTime2).toMillis();"
+                    v2="long diffInMilli = java.time.difference(dateTime1, dateTime2).toMillis();"
+                    v3="Date diffInMilli = java.time.Duration.between(dateTime1, dateTime2).toMillis();"
+                    v4="Time diffInMilli = java.time.Duration.between(dateTime1, dateTime2).toMillis();"
+                    counter={this.counter}
+                  />
+                  <QuizeTest
+                    quizeNo="5"
+                    language="java"
+                    question="What will be the output of the following Java program?"
+                    code={`class evaluate 
 {
     public static void main(String args[]) 
     {
@@ -171,18 +171,18 @@ System.out.println(_c);`}
           System.out.println(sum);
     } 
 }`}
-                correctAnswer="40"
-                v1="38"
-                v2="39"
-                v3="40"
-                v4="41"
-                counter={this.counter}
-              />
-              <QuizeTest
-                quizeNo="6"
-                language="Java"
-                question="What will be the output of the following Java program?"
-                code={`class array_output 
+                    correctAnswer="40"
+                    v1="38"
+                    v2="39"
+                    v3="40"
+                    v4="41"
+                    counter={this.counter}
+                  />
+                  <QuizeTest
+                    quizeNo="6"
+                    language="java"
+                    question="What will be the output of the following Java program?"
+                    code={`class array_output 
 {
     public static void main(String args[]) 
     {
@@ -196,18 +196,18 @@ System.out.println(_c);`}
              
     } 
 }`}
-                correctAnswer=" 1 2 3 4 5"
-                v1=" 0 2 4 6 8"
-                v2=" 1 2 3 4 5"
-                v3="0 1 2 3 4 5 6 7 8 9"
-                v4="1 2 3 4 5 6 7 8 9 10"
-                counter={this.counter}
-              />
-              <QuizeTest
-                quizeNo="7"
-                language="Java"
-                question=" What will be the output of the following Java program?"
-                code={`class variable_scope 
+                    correctAnswer=" 1 2 3 4 5"
+                    v1=" 0 2 4 6 8"
+                    v2=" 1 2 3 4 5"
+                    v3="0 1 2 3 4 5 6 7 8 9"
+                    v4="1 2 3 4 5 6 7 8 9 10"
+                    counter={this.counter}
+                  />
+                  <QuizeTest
+                    quizeNo="7"
+                    language="java"
+                    question=" What will be the output of the following Java program?"
+                    code={`class variable_scope 
 {
     public static void main(String args[]) 
     {
@@ -220,18 +220,18 @@ System.out.println(_c);`}
         System.out.println(x + " " + y);
     } 
 }`}
-                correctAnswer="Compilation error"
-                v1="5 6 5 6"
-                v2=" 5 6 5"
-                v3="Runtime error"
-                v4="Compilation error"
-                counter={this.counter}
-              />
-              <QuizeTest
-                quizeNo="8"
-                language="Java"
-                question="What will be the output of the following Java program?"
-                code={`class dynamic_initialization 
+                    correctAnswer="Compilation error"
+                    v1="5 6 5 6"
+                    v2=" 5 6 5"
+                    v3="Runtime error"
+                    v4="Compilation error"
+                    counter={this.counter}
+                  />
+                  <QuizeTest
+                    quizeNo="8"
+                    language="java"
+                    question="What will be the output of the following Java program?"
+                    code={`class dynamic_initialization 
 {
     public static void main(String args[]) 
     {
@@ -242,18 +242,18 @@ System.out.println(_c);`}
         System.out.println(c);
     } 
 }`}
-                correctAnswer="5.0"
-                v1="5.0"
-                v2="25.0"
-                v3="7.0"
-                v4="Compilation Error"
-                counter={this.counter}
-              />
-              <QuizeTest
-                quizeNo="9"
-                language="Java"
-                question="What will be the output of the following Java code?"
-                code={`class char_increment 
+                    correctAnswer="5.0"
+                    v1="5.0"
+                    v2="25.0"
+                    v3="7.0"
+                    v4="Compilation Error"
+                    counter={this.counter}
+                  />
+                  <QuizeTest
+                    quizeNo="9"
+                    language="java"
+                    question="What will be the output of the following Java code?"
+                    code={`class char_increment 
 {
     public static void main(String args[]) 
     {
@@ -264,18 +264,18 @@ System.out.println(_c);`}
         System.out.println(c1 + " "  + c2);
     } 
 }`}
-                correctAnswer="E U"
-                v1="E U"
-                v2="U E"
-                v3="V E"
-                v4="U F"
-                counter={this.counter}
-              />
-              <QuizeTest
-                quizeNo="10"
-                language="Java"
-                question="What will be the output of the following Java code?"
-                code={`class conversion 
+                    correctAnswer="E U"
+                    v1="E U"
+                    v2="U E"
+                    v3="V E"
+                    v4="U F"
+                    counter={this.counter}
+                  />
+                  <QuizeTest
+                    quizeNo="10"
+                    language="java"
+                    question="What will be the output of the following Java code?"
+                    code={`class conversion 
 {
     public static void main(String args[]) 
     {
@@ -286,14 +286,14 @@ System.out.println(_c);`}
         System.out.println(c + " "  + d);
     } 
 }`}
-                correctAnswer=""
-                v1="38 43"
-                v2="39 44"
-                v3="295 300"
-                v4="295.04 300"
-                counter={this.counter}
-              />
-              </div>
+                    correctAnswer=""
+                    v1="38 43"
+                    v2="39 44"
+                    v3="295 300"
+                    v4="295.04 300"
+                    counter={this.counter}
+                  />
+                </div>
               </div>
               <div className="text-center mb-3">
                 <Button variant="primary" onClick={this.handleShow}>

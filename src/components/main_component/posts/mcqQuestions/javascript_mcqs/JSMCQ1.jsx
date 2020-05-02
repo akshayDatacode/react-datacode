@@ -24,7 +24,7 @@ class JSMCQ1 extends Component {
   render() {
     return (
       <>
-         <HeaderCard
+        <HeaderCard
           title="JavaScript MCQs Set 1"
           color="#00FF00"
           textcolor="black"
@@ -36,8 +36,7 @@ class JSMCQ1 extends Component {
             <div className="col-md-7 ">
               <div className="col-fluid ">
                 <Link to="/home" className="badge badge-primary mr-1">
-                <FontAwesomeIcon icon={faHome} size="1x" />
-
+                  <FontAwesomeIcon icon={faHome} size="1x" />
                 </Link>
                 <Link to="/index_mcqs" className="badge badge-warning mr-1">
                   MCQs >>
@@ -147,7 +146,7 @@ class JSMCQ1 extends Component {
                   <Quize
                     quizeNo="10"
                     question="Guess the ternary operator used in the following example !!!"
-                    language="Javascript"
+                    language="js"
                     code={`marks = (mark<35)?'Fail':'Pass';`}
                     correctAnswer=""
                     v1="Colon Operator"
@@ -188,7 +187,6 @@ class JSMCQ1 extends Component {
                 RecPostHading="C++ MCQs Questions"
                 link="/index_cpp_mcqs"
               />
-             
             </div>
           </div>
         </div>
