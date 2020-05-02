@@ -2019,8 +2019,8 @@ Number of days is 31`}
                     </div>
                     <div className="mb-3">
                     <h5 className="mb-2" style={{ color: "#072C71" }}>
-                     </h5>
-                     C programs on Arrays
+                    C programs on Arrays</h5>
+                     
                     <ProgramCard
                       heading="C Program to insert an element in an array
                       "
@@ -2204,76 +2204,1142 @@ Input the array elements : 1 2 3 4 5
 The smallest element is 1
 The largest element is 5`}
                     /><ProgramCard
-                    heading=""
+                    heading="C program to find the sum of elements in a given array"
                     language="C"
-code={``}
+code={`// C program to find the sum of elements in a given array
+#include<stdio.h>
+int main()
+{
+    //fill the code;
+    int n;
+    printf(“Enter the size of array:”);
+    scanf(“%d”,&n);
+    int arr[n];
+    int i, sum = 0;
+    printf(“Enter the elements of array:”);
+    for(i = 0; i < n; i++)
+    {
+        scanf(“%d”,&arr[i]);
+    }
+
+    for(i = 0; i < n; i++)
+        sum = sum + arr[i];
+    printf(“The sum is %d”,sum);
+    return 0;
+}
+
+Output:-
+
+Enter the size of array : 5
+Enter the element of array : 10 20 30 40 50
+The Sum is 150`}
                   />
                   <ProgramCard
-                      heading=""
+                      heading="C Program to check if two arrays are equal or not"
                       language="C"
-code={``}
+code={`/* C Program to check if two arrays are equal or not */
+#include<stdio.h>
+
+int sort(int arr[], int n)
+{
+    int i,j;
+    for (i = 0; i < n-1; i++)
+    {
+        for (j = 0; j < n-i-1; j++)
+        {
+            if (arr[j] > arr[j+1])
+            {
+                int temp = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = temp;
+            }
+        }
+    }
+}
+
+int arrays_equal(int arr1[], int arr2[], int n, int m)
+{
+    sort(arr1,n);
+    sort(arr2,m);
+    int i;
+    for(i = 0; i < n; i++)
+    {
+        if(arr1[i] != arr2[i])
+        {
+            return 0;
+        }
+    }
+}
+
+int main()
+{
+    int n, m;
+    scanf(“%d”,&n);
+    scanf(“%d”,&m);
+    int arr1[n];
+    int arr2[m];
+    int i;
+    for(i = 0; i < n; i++)
+    {
+        scanf(“%d”,&arr1[i]);
+    }
+    for(i = 0; i < m; i++)
+    {
+        scanf(“%d”,&arr2[i]);
+    }
+    if(arrays_equal(arr1, arr2, n, m) == 0)
+    {
+        printf(“Not same”);
+    }
+    else
+        printf(“Same”);
+
+    return 0;
+}
+
+// Solution to the problem statement, using C pointers
+#include<stdio.h>
+#include<stdlib.h>
+int same(int size1, int*array1, int size2, int*array2);
+int main()
+{
+
+    int *a,*b,n,p,i,c=0,d=0,e,f;
+    scanf(“%d%d”,&n,&p);
+    a=(int*)malloc(n*sizeof(int));
+    b=(int*)malloc(n*sizeof(int));
+    for(i=1;i<=n;i++)
+    {
+        scanf(“%d”,&a[i]);
+    }
+    for(i=1;i<=p;i++)
+    {
+        scanf(“%d”,&b[i]);
+    }
+    for(i=1;i<=n;i++)
+    {
+        c=c+i;
+        c=e;
+    }
+    for(i=1;i<=p;i++)
+    {
+        d=d+i;
+        d=f;
+    }
+    if (e==f)
+    {
+        printf(“Same”);
+    }
+    else
+    {
+        printf(“Not Same”);
+    }
+    return 0;
+}
+
+Output:-
+
+4 4
+1 2 3 4
+4 2 3 4
+Not same`}
                     />
                     <ProgramCard
-                      heading=""
+                      heading="C program to find the sum of perfect square elements in an array"
                       language="C"
-code={``}
+code={`/* C program to find the sum of perfect square elements in an array */
+#include<stdio.h>
+#include<math.h>
+
+int isPerfectSquare(int number)
+{
+    int iVar;
+    float fVar;
+
+    fVar=sqrt((double)number);
+    iVar=fVar;
+
+    if(iVar==fVar)
+        return number;
+    else
+        return 0;
+}
+
+int main()
+{
+    int n;
+    scanf(“%d”,&n);
+    int arr[n];
+    int i;
+    for(i = 0; i < n; i++)
+    {
+        scanf(“%d”,&arr[i]);
+    }
+    int sum = 0;
+    for(i = 0; i < n; i++)
+    {
+        sum = sum + isPerfectSquare(arr[i]);
+    }
+    printf(“%d”,sum);
+    return 0;
+}
+
+// Solving th problem statement using C pointers
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+int sumPositive(int n,int *a)
+{
+    int i,sum=0,m;
+    for(i=0;i<n;i++)
+    {
+        m=sqrt(*(a+i));
+        if(pow(m,2)==*(a+i))
+        {
+            sum+=*(a+i);
+        }
+    }
+    return sum;
+}
+int main()
+{
+    int i,*a,n;
+    printf(“Enter the size of array:/n”);
+    scanf(“%d”,&n);
+    a=(int*)malloc(n*sizeof(int));
+    printf(“Enter the elements of array:/n”);
+    for(i=0;i<n;i++)
+    {
+        scanf(“%d”,a+i);
+    }
+    printf(“Sum of positive square elements is %d”,sumPositive(n,a));
+    return 0;
+}
+
+Output:-
+
+4
+1 4 9 16
+30`}
                     />
                     <ProgramCard
-                      heading=""
+                      heading="C program for Implementation of Bubble sort"
                       language="C"
-code={``}
+code={`void bubble_sort(int arr[], int n)
+{
+    int i, j, temp;
+    //the first for loop n elements and n-1 passesfor(i = 0; i < n; i++)  
+    {
+        // comparisons done at each passfor(j = 0; j < n-i-1; j++)
+        {
+            if( arr[j] > arr[j+1])
+            {
+                // swap the elements
+                temp = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = temp;
+            }
+        }
+    }
+}
+`}
                     />
                     <ProgramCard
-                      heading=""
+                      heading="C Program to reverse an array
+                      "
                       language="C"
-code={``}
+code={`// C program to reverse an array
+
+#include<stdio.h>
+int main()
+{
+    //fill the code;
+    int n;
+    scanf(“%d”,&n);
+    int arr[n];
+    int i;
+    for(i = 0; i < n; i++)
+    {
+        scanf(“%d”,&arr[i]);
+    }
+    printf(“Reversed array is:/n”);
+    for(i = n-1; i >= 0; i–)
+    {
+        printf(“%d/n”,arr[i]);
+    }
+    return 0;
+}
+
+Output:-
+
+4 (size of the array)
+2 (array elements)
+6
+7
+1
+Reversed array is:
+1
+7
+6
+2`}
                     />
                     <ProgramCard
-                      heading=""
+                      heading="C program to remove duplicate elements in an array "
                       language="C"
-code={``}
+code={`/* C program to remove duplicate elements in an array */
+#include<stdio.h>
+// Code without the usage of pointers
+int remove_duplicate_elements(int arr[], int n)
+{
+
+    if (n==0 || n==1)
+        return n;
+
+    int temp[n];
+
+    int j = 0;
+    int i;
+    for (i=0; i<n-1; i++)
+        if (arr[i] != arr[i+1])
+            temp[j++] = arr[i];
+    temp[j++] = arr[n-1];
+
+    for (i=0; i<j; i++)
+        arr[i] = temp[i];
+
+    return j;
+}
+
+
+int main()
+{
+    int n;
+    scanf(“%d”,&n);
+    int arr[n];
+    int i;
+    for(i = 0; i < n; i++)
+    {
+        scanf(“%d”,&arr[i]);
+    }
+
+    n = remove_duplicate_elements(arr, n);
+
+
+    for (i=0; i<n; i++)
+        printf(“%d “,arr[i]);
+
+    return 0;
+}
+
+Output:-
+
+4
+2
+2
+4
+5
+2 4 5`}
                     />
                     <ProgramCard
-                      heading=""
+                      heading="C program to count the number of even and odd elements in an array"
                       language="C"
-code={``}
+code={`/* C program to count the number of even and odd elements in an array */
+#include
+int main()
+{
+    //fill your code
+    int n;
+    scanf(“%d”,&n);
+    int arr[n];
+    for(int i = 0; i < n; i++)
+    {
+        scanf(“%d”,&arr[i]);
+    }
+    int count_odd =0, count_even = 0;
+    for(int i = 0; i < n; i++)
+    {
+        if(arr[i] % 2 == 1)
+            count_odd++;
+        else
+            count_even++;
+    }
+    printf(“Odd: %d”,count_odd);
+    printf(“/nEven: %d”,count_even);
+    return 0;
+}
+
+// Solution to the problem statement using C pointers.
+
+#include<stdio.h>
+#include<stdlib.h>
+int countEven(int n, int *a)
+{
+    int Even=0;
+    for(int i=0;i<n;i++)
+    {
+        if(*(a+i)%2==0)
+        {
+            Even++;
+        }
+    }
+    return Even;
+}
+int countOdd(int n,int*a)
+{
+    int Odd=0;
+    for(int i=0;i<n;i++)
+    {
+        if(*(a+i)%2!=0)
+        {
+            Odd++;
+        }
+    }return Odd;
+}
+int main()
+{
+    int *a,n,Even=0,Odd=0;
+    scanf(“%d”,&n);
+    a=(int*)malloc(n*sizeof(int));
+    for(int i=0;i<n;i++)
+    {
+        scanf(“%d”,(a+i));
+    }
+    printf(“Odd:%d/n”,countOdd(n,a));
+    printf(“Even:%d”,countEven(n,a));
+
+    return 0;
+}
+
+Output:-
+
+5
+1 2 3 4 5
+Odd : 3
+Even : 2
+`}
+
                     />
                     <ProgramCard
-                      heading=""
+                      heading="Program in C to Merge two sorted arrays  "
                       language="C"
-code={``}
+code={`#include <stdio.h>
+#include <stdlib.h>
+int merge_two_sorted_arrays(int arr1[], int arr2[], int arr3[], int m, int n)
+{
+    int i,j,k;
+    i = j = k = 0;
+    for(i=0;i < m && j < n;)
+    {
+        if(arr1[i] < arr2[j])
+        {
+            arr3[k] = arr1[i];
+            k++;
+            i++;
+        }
+        else
+        {
+            arr3[k] = arr2[j];
+            k++;
+            j++;
+        }
+    }
+    while(i < m)
+    {
+        arr3[k] = arr1[i];
+        k++;
+        i++;
+    }
+    while(j < n)
+    {
+        arr3[k] = arr2[j];
+        k++;
+        j++;
+    }
+}
+int main()
+{
+    int n,m;
+    printf("/nEnter the size of Array 1 : ");
+    scanf("%d",&m);
+    printf("/nEnter the size of Array 2 : ");
+    scanf("%d",&n);
+    int arr1[m],arr2[n];
+    int arr3[m+n];
+    int i;
+    printf("/nInput the Array 1 elements : ");
+    for(i = 0; i < m; i++)
+    {
+        scanf("%d",&arr1[i]);
+    }
+    printf("/nInput the Array 2 elements : ");
+    for(i = 0;i<n;i++)
+    {
+        scanf("%d",&arr2[i]);
+    }
+    merge_two_sorted_arrays(arr1,arr2,arr3,m,n);
+    printf("/nThe Merged Sorted Array : ");
+    for(i = 0; i < n + m; i++)
+    {
+        printf("%d ",arr3[i]);
+    }
+    printf("/n");
+    return 0;
+}
+
+Output:-
+
+Input- 
+Enter the size of Array 1:5 
+Enter the size of Array 2:5 
+Input the Array 1 elements:1 2 3 4 5 
+Input the Array 2 elements:6 7 8 9 10 
+Output- The Merged Sorted Array: 1 2 3 4 5 6 7 8 9 10
+`}
+                    />
+                    </div>
+                    <div className="mb-3">
+                    <h5 className="mb-2" style={{ color: "#072C71" }}>
+                    C programs on 2-D Arrays</h5>
+
+                    <ProgramCard
+                      heading="C Program to perform matrix operations | Matrix addition"
+                      language="C"
+code={`/* C Program to perform matrix addition */
+#include <stdio.h>
+int main()
+{
+    //fill your code
+    int m, n;
+    scanf(“%d %d”,&m,&n);
+    int i, j;
+    int mat1[m][n], mat2[m][n], mat3[m][n];
+    for(i = 0; i < m; i++)
+    {
+        for(j = 0; j < n; j++)
+            scanf(“%d”,&mat1[i][j]);
+    }
+    for(i = 0; i < n; i++)
+    {
+        for(j = 0; j < n; j++)
+            scanf(“%d”,&mat2[i][j]);
+    }
+
+    for(i = 0; i < m; i++)
+    {
+        for(j = 0; j < n; j++)
+        {
+            mat3[i][j] = mat1[i][j] + mat2[i][j];
+        }
+    }
+
+    for(i = 0; i < m; i++)
+    {
+        for(j = 0; j < n; j++)
+            printf(“%d “, mat3[i][j]);
+        printf(“/n”);
+    }
+
+    return 0;
+}
+
+Output:-
+
+2 2 (order of the matrix)
+1 2 3 4 (matrix 1 elements)
+2 3 4 5 (matrix 2 elements)
+3 5 (resultant matrix)
+7 9`}
                     />
                     <ProgramCard
-                      heading=""
+                      heading="C Program to perform basic matrix operations | Matrix Subtraction"
                       language="C"
-code={``}
+code={`/* C Program to perform matrix operations ,matrix addition, matrix subtraction, matrix multiplication – subtraction */
+#include <stdio.h>
+int main()
+{
+    int m, n;
+    scanf(“%d %d”,&m,&n);
+    int i, j;
+    int mat1[m][n], mat2[m][n], mat3[m][n];
+    for(i = 0; i < m; i++)
+    {
+        for(j = 0; j < n; j++)
+            scanf(“%d”,&mat1[i][j]);
+    }
+    for(i = 0; i < n; i++)
+    {
+        for(j = 0; j < n; j++)
+            scanf(“%d”,&mat2[i][j]);
+    }
+
+    for(i = 0; i < m; i++)
+    {
+        for(j = 0; j < n; j++)
+        {
+            mat3[i][j] = mat1[i][j] – mat2[i][j];
+        }
+    }
+
+    for(i = 0; i < m; i++)
+    {
+        for(j = 0; j < n; j++)
+            printf(“%d “, mat3[i][j]);
+        printf(“/n”);
+    }
+
+    return 0;
+}
+
+Output:-
+
+2 2 (order of the matrix)
+5 6 7 8 (matrix 1 elements)
+1 2 3 4 (matrix 2 elements)
+4 4 (resultant matrix)
+4 4`}
                     />
                     <ProgramCard
-                      heading=""
+                      heading="C Program to perform basic matrix operations | Matrix multiplication"
                       language="C"
-code={``}
+code={`/* C program to multiply matrices */
+#include <stdio.h>
+
+int main()
+{
+    int m, n, p, q, c, d, k, sum = 0;
+    int mat1[10][10], mat2[10][10], mat3[10][10];
+
+    printf(“Enter number of rows and columns of mat1 matrix/n”);
+    scanf(“%d%d”, &m, &n);
+    printf(“Enter elements of matrix 1/n”);
+
+    for (c = 0; c < m; c++)
+        for (d = 0; d < n; d++)
+            scanf(“%d”, &mat1[c][d]);
+
+    printf(“/nEnter number of rows and columns of mat2 matrix/n”);
+    scanf(“%d%d”, &p, &q);
+
+    if (n != p)
+        printf(“/nThe matrices can’t be multiplied with each other./n”);
+    else
+    {
+        printf(“/nEnter elements of matrix2/n”);
+
+        for (c = 0; c < p; c++)
+            for (d = 0; d < q; d++)
+                scanf(“%d”, &mat2[c][d]);
+
+        for (c = 0; c < m; c++) {
+            for (d = 0; d < q; d++) {
+                for (k = 0; k < p; k++) {
+                    sum = sum + mat1[c][k]*mat2[k][d];
+                }
+
+                mat3[c][d] = sum;
+                sum = 0;
+            }
+        }
+
+        printf(“/nProduct of the matrices:/n”);
+
+        for (c = 0; c < m; c++) {
+            for (d = 0; d < q; d++)
+                printf(“%d/t”, mat3[c][d]);
+
+            printf(“/n”);
+        }
+    }
+
+    return 0;
+}
+
+Output:-
+
+Enter number of rows and columns of mat1 matrix
+2 2
+Enter elements of matrix 1
+2 3 4 5
+Enter number of rows and columns of mat2 matrix
+2 2
+Enter elements of matrix 2
+1 2 3 4
+Product of the matrices:
+11 16
+19 28`}
                     />
                     <ProgramCard
-                      heading=""
+                      heading="C Program to find the transpose of a matrix
+                      "
                       language="C"
-code={``}
+code={`#include <stdio.h>
+int main()
+{
+    int m, n, c, d, matrix[10][10], transpose[10][10];
+    scanf(“%d%d”, &m, &n);
+    for (c = 0; c < m; c++)
+        for(d = 0; d < n; d++)
+            scanf(“%d”, &matrix[c][d]);
+    for (c = 0; c < m; c++)
+        for( d = 0 ; d < n ; d++ )
+            transpose[d][c] = matrix[c][d];
+    for (c = 0; c < n; c++) {
+        for (d = 0; d < m; d++)
+            printf(“%d/t”, transpose[c][d]);
+        printf(“/n”);
+    }
+    return 0;
+}
+
+Output:-
+
+Input- Enter number of rows: 3 
+Enter number of columns: 3 
+Enter the element: 1 1 1 2 2 2 3 3 3 
+Input matrix: 1 1 1 2 2 2 3 3 3 
+Output- Transpose matrix: 1 2 3 1 2 3 1 2 3`}
+                    />
+
+                    <ProgramCard
+                      heading="C Program to check if the given matrix is upper triangular or not
+                      "
+                      language="C"
+code={`/* C program to check if the given matrix is upper triangular or not */
+
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    scanf(“%d”,&n);
+    int flag = 0;
+    int mat[n][n];
+    int i, j;
+    for(i = 0; i < n; i++)
+    {
+        for(j = 0; j < n; j++)
+            scanf(“%d”,&mat[i][j]);
+    }
+
+    for (i = 1; i < n; i++)
+        for (j = 0; j < i; j++)
+            if (mat[i][j] != 0)
+                flag = 0;
+    else
+        flag = 1;
+
+    if (flag == 1)
+        printf(“Upper Triangular Matrix”);
+    else
+        printf(“Not an Upper Triangular Matrix”);
+    return 0;
+}
+
+// Solution using pointers
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int **a,n,i,j,check=0;
+    scanf(“%d”,&n);
+
+    a=(int**)malloc(n*sizeof(int*));
+    for(i=0;i<n;i++)
+        *(a+i)=(int*)malloc(n*sizeof(int));
+
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<n;j++)
+            scanf(“%d”,*(a+i)+j);
+    }
+
+    for(i=1;i<n;i++)
+    {
+        for(j=0;j<i;j++)
+        {
+            if(*(*(a+i)+j)!=0)
+            {
+                check++;
+                break;
+            }
+        }
+    }
+    if(check==0)
+        printf(“Upper triangular matrix”);
+    else	
+        printf(“Not a upper triangular matrix”);
+    return 0;
+}
+
+Output:-
+
+Input the matrix elements :
+1 2 3
+0 1 2
+0 0 3
+Upper triangular matrix`}
                     />
                     <ProgramCard
-                      heading=""
+                      heading="C Program to check if the given matrix is lower triangular or not
+                      "
                       language="C"
-code={``}
+code={`/* C program to check if the given matrix is Lower triangular or not */
+#include<stdio.h>
+#define N 3
+
+int check_lower_triangular_matrix(int mat[N][N])
+{
+    int i, j;
+    for (i = 0; i < N; i++)
+        for (j = i + 1; j < N; j++)
+            if (mat[i][j] != 0)
+                return 0;
+    return 1;
+}
+
+int main()
+{
+    int mat[N][N];
+    int i, j;
+    for(i = 0; i < N; i++)
+    {
+        for(j = 0; j < N; j++)
+            scanf(“%d”,&mat[i]);
+    }
+    if (check_lower_triangular_matrix(mat))
+        printf(“Lower Triangular Matrix”);
+    else
+        printf(“Not a Lower Triangular Matrix”);
+    return 0;
+}
+
+//Program solved using pointers
+
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int **a,n,i,j,check=0;
+    scanf(“%d”,&n);
+
+    a=(int**)malloc(n*sizeof(int*));
+    for(i=0;i<n;i++)
+        *(a+i)=(int*)malloc(n*sizeof(int));
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            scanf(“%d”,*(a+i)+j);
+        }
+    }
+
+    for(i=0;i<n-1;i++)
+    {
+        for(j=i+1;j<n;j++)
+        {
+            if(*(*(a+i)+j)!=0)
+            {
+                check++;
+                break;
+            }
+        }
+    }
+    if(check!=0)
+        printf(“Not a lower triangular matrix”);
+    else
+        printf(“Lower triangular matrix”);
+    return 0;
+}
+
+Output:-
+
+Enter the order of the matrix : 3
+Input the matrix elements :
+1 0 0
+1 2 0
+2 5 0
+Lower Triangular Matrix`}
                     />
                     <ProgramCard
-                      heading=""
+                      heading="C Program to find the minimum element in each row of a matrix"
                       language="C"
-code={``}
+code={`/* C Program to find the minimum element in each row of a matrix */
+#include<stdio.h>
+#include<limits.h>
+
+void display(int result[], int n)
+{
+    int i;
+    for(i = 0; i < n; i++)
+    {
+        printf(“%d “, result[i]);
+    }
+}
+
+void mini_row(int mat[][3], int m, int n)
+{
+    int i = 0, j;
+    int min = INT_MAX;
+    int result[m];
+    while (i < m)
+    {
+        for ( j = 0; j < n; j++)
+        {
+            if (mat[i][j] < min)
+            {
+                min = mat[i][j];
+            }
+        }
+        result[i] = min;
+        min = INT_MAX;
+        i++;
+
+    }
+    display(result, m);
+}
+int main()
+{
+    int m, n;
+    scanf(“%d %d”,&m,&n);
+    int i, j;
+    int mat1[m][n];
+    for(i = 0; i < m; i++)
+    {
+        for(j = 0; j < n; j++)
+            scanf(“%d”,&mat1[i][j]);
+    }
+
+    mini_row(mat1,m,n);
+    return 0;
+}
+
+Output:-
+
+Enter the order of the matrix : 3 3
+Input matrix elements :
+1 2 3
+4 5 6
+7 8 9
+1
+4
+7`}
                     />
                     <ProgramCard
-                      heading=""
+                      heading="C Program to find the minimum element in each column of a matrix
+                      "
                       language="C"
-code={``}
+code={`/* C Program to find the minimum element in each column of a matrix */
+#include<stdio.h>
+
+void mini_col(int mat[][3], int m, int n)
+{
+    int i,j;
+    for(i = 0; i < n; i++)
+    {
+        int min = mat[0][i];
+        for(j = 1; j < m; j++)
+        {
+            if(mat[j][i] < min)
+            {
+                min= mat[j][i];
+            }
+        }
+        printf(“%d/n”,min);
+    }
+}
+int main()
+{
+    int m, n;
+    scanf(“%d %d”,&m,&n);
+    int i, j;
+    int mat1[m][n];
+    for(i = 0; i < m; i++)
+    {
+        for(j = 0; j < n; j++)
+            scanf(“%d”,&mat1[i][j]);
+    }
+
+    mini_col(mat1,m,n);
+    return 0;
+}
+
+Output:-
+
+Enter the order of the matrix : 3 3
+Input matrix elements :
+1 2 3
+4 5 6
+7 8 9
+1
+2
+3
+`}
+
                     />
-                    
+                    <ProgramCard
+                      heading=" C program to find the sum of elements in each row and each column of the given matrix and print the greatest of the same"
+                      language="C"
+code={`/* C program to find the sum of elements in each row and each column of the given matrix and print the greatest of the same */
+#include
+#include
+
+int main()
+{
+    int m, n, row, col, sum = 0, row_ind = 0, col_ind = 0;
+    scanf(“%d %d”,&m,&n);
+    int row_arr[m];
+    int i, j;
+    int mat[m][n];
+    for(i = 0; i < m; i++)
+    {
+        for(j = 0; j < n; j++)
+            scanf(“%d”,&mat[i][j]);
+    }
+
+    int z = 0;
+
+    printf(“Sum of rows is “);
+    for(row=0; row<m; row++)
+    {
+        sum = 0;
+        for(col=0; col<n; col++)
+        {
+            sum += mat[row][col];
+        }
+        printf(“%d “,sum);
+        row_arr[z++] = sum;
+    }
+    int temp_row = row_arr[0];
+    for(i=1;i<m;i++)
+    {
+        if(temp_row < row_arr[i])
+        {
+            temp_row = row_arr[i];
+            row_ind = i;
+        }
+    }
+    printf(“/nRow %d has maximum sum “, row_ind + 1);
+
+    printf(“/nSum of columns is “);
+    sum = 0;
+    int y = 0;
+    int col_arr[n];
+    for (i = 0; i < n; ++i)
+    {
+        sum = 0;
+        for (j = 0; j < m; ++j)
+        {
+            sum = sum + mat[j][i];
+        }		
+        printf(“%d “,sum);
+        col_arr[y++] = sum;
+    }
+    int temp_col = col_arr[0];
+    for(i=1;i<n;i++)
+    {
+        if(temp_col < col_arr[i])
+        {
+            temp_col = col_arr[i];
+            col_ind = i;
+        }
+    }
+    printf(“/nColumn %d has maximum sum “, col_ind + 1);
+    return 0;
+}
+
+Output:-
+
+Enter the order of the matrix : 3 3
+Input the matrix elements :
+1 2 3
+4 5 6
+7 8 9
+Sum of rows is 6 15 24
+Row 3 has maximum sum
+Sum of columns is 12 15 18
+Column 3 has maximum sum`}
+                    />
+                    <ProgramCard
+                      heading="C program to Rotate the matrix by K times "
+                      language="C"
+code={`#include <iostream>
+#define M 3
+#define N 3
+using namespace std;
+
+// Function to print the matrix
+void displayMatrix(int matrix[][M])
+{
+    for (int i = 0; i < N; i++)
+    {
+        for (int j = 0; j < M; j++)
+        {
+            cout << matrix[i][j] << " ";
+        }
+        cout << endl;
+    }}
+
+// Main Function
+int main()
+{
+    int matrix[N][M];
+    cout<<"Enter the matrix elements"<<endl;
+    for(int i = 0 ; i < M ; i++)
+    {
+        for(int j = 0 ; j < N ; j++)
+        {
+            cin >> matrix[i][j]; // Input the matrix elements
+        }}
+    cout << "The given matrix is" << endl;
+    displayMatrix(matrix);
+    int temp[M];
+    int k;
+    cout << "Number of rotations : ";
+    cin >> k; // input the number of rotations
+    k = k % M;
+
+    // For rotating matrix by k times
+    for (int i = 0; i < N; i++)
+    {
+        // copy first M-k elements to temporary array
+        for (int t = 0; t < M - k; t++)
+        {
+            temp[t] = matrix[i][t];
+        }
+        // copy the elements from k to end to starting
+        for (int j = M - k; j < M; j++)
+        {
+            matrix[i][j - M + k] = matrix[i][j];
+        }
+        // copy elements from temporary array to end
+        for (int j = k; j < M; j++)
+        {
+            matrix[i][j] = temp[j - k];
+        }}
+
+    cout<<"/nThe rotated matrix is/n";
+    // display rotated matrix
+
+    displayMatrix(matrix);
+    return 0;
+}
+
+Output:-
+
+Enter the matrix elements
+1 2 3 4 5 6 7 8 9
+The given matrix is
+1 2 3
+4 5 6
+7 8 9
+Number of rotations: 2
+
+The rotated matrix is
+2 3 1
+5 6 4
+8 9 7`}
+                    />
+                  
                        
 
                      </div>
