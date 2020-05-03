@@ -10,6 +10,8 @@ import {
   faChalkboardTeacher,
   faCode,
 } from "@fortawesome/free-solid-svg-icons";
+import Technologies from "../../../right_section/Technologies";
+
 class   CPgramQuestions extends Component {
   state = {};
   componentDidMount() {
@@ -1678,7 +1680,9 @@ Enter the number of rows : 5
                     </div>
                     <div className="mb-3">
                     <h5 className="mb-2" style={{ color: "#072C71" }}>
-                    Pattern printing programs </h5>
+                    C programs on Functions{
+                        
+                    } </h5>
                     
                     <ProgramCard
                       heading="C Program to replace all 0's with 1 in a given integer."
@@ -3384,6 +3388,8 @@ The rotated matrix is
                 RecPostHading="Programminig Quize Test"
                 link="/index_quize_tests"
               />
+                            <Technologies />
+
             </div>
           </div>
         </div>
