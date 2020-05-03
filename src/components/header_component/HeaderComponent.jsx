@@ -24,6 +24,8 @@ import {
   faChalkboardTeacher,
   faTasks,
   faBookOpen,
+  faFlask,
+  faCode,
 } from "@fortawesome/free-solid-svg-icons";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
@@ -94,11 +96,11 @@ class HeaderComponent extends Component {
                   Interview Preparation
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/react-datacode/#/index_practice_questions">
-                  <FontAwesomeIcon icon={faFileCode} className="mr-2" />
+                  <FontAwesomeIcon icon={faCode} className="mr-2" />
                   Programming Practice Questions
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/react-datacode/#/index_quize_tests">
-                  <FontAwesomeIcon icon={faUsersCog} className="mr-2" />
+                  <FontAwesomeIcon icon={faFlask} className="mr-2" />
                   Programming Quiz Tests
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/react-datacode/#/index_programming_questions">

@@ -4,7 +4,7 @@ import PostCard from "../../PostCard";
 import RightSideSection from "../../../right_section/RightSideSection";
 import InterviewQuestionCardCarousel from "./InterviewQuestionCardCarousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faUserTie } from "@fortawesome/free-solid-svg-icons";
 import Technologies from "../../../right_section/Technologies";
 class IndexInterviewQuestions extends Component {
   state = {};
@@ -21,7 +21,8 @@ class IndexInterviewQuestions extends Component {
               className="text-center mb-4 rounded p-2"
               style={{ backgroundColor: "#06CB6C", color: "#072C71" }}
             >
-              Technical Interview Questions
+              <FontAwesomeIcon icon={faUserTie} color="#072C71" /> Technical
+              Interview Questions
             </h1>
             <Link
               to="/home"

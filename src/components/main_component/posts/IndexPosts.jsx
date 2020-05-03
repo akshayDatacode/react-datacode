@@ -7,7 +7,7 @@ import MCQTestCardCarousel from "../posts/mcqQuestions/quize_test/MCQTestCardCar
 import ProgrammingQuestionsCardCarousel from "../posts/programming_questions/ProgrammingQuestionCardCarousel";
 import CodeChallangeCardCarousel from "../code_challange/CodeChallangeCardCarousel";
 import ArticleCardCarousel from "../aticles/ArticleCardCarousel";
-import PracticeQuestionCardCarousel  from "../posts/practice_questions/PracticeQuestionCardCarousel";
+import PracticeQuestionCardCarousel from "../posts/practice_questions/PracticeQuestionCardCarousel";
 
 import EventCardCarousel from "../events/EventCardCarousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -22,6 +22,8 @@ import {
   faList,
   faTasks,
   faNewspaper,
+  faFlask,
+  faCode,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
@@ -106,7 +108,6 @@ class IndexPosts extends Component {
               </div>
               <MCQCardCarousel />
               {/* Ending MCQs  */}
-
               {/* Staring QUIZ */}
               <div
                 className="card mb-2 mt-3"
@@ -115,7 +116,7 @@ class IndexPosts extends Component {
                 <div className="card-body">
                   <Link to="/index_quize_tests">
                     <h4 style={{ color: "#133658" }}>
-                      <FontAwesomeIcon icon={faUserClock} color="#133658" />{" "}
+                      <FontAwesomeIcon icon={faFlask} color="#133658" />{" "}
                       Programming Quiz Test
                     </h4>
                   </Link>
@@ -130,7 +131,6 @@ class IndexPosts extends Component {
               </div>
               <MCQTestCardCarousel />
               {/* End Quiz Test */}
-
               {/* Staring programming pratice */}
               <div
                 className="card mb-2 mt-3"
@@ -139,7 +139,7 @@ class IndexPosts extends Component {
                 <div className="card-body">
                   <Link to="/index_quize_tests">
                     <h4 style={{ color: "#133658" }}>
-                      <FontAwesomeIcon icon={faUserClock} color="#133658" />{" "}
+                      <FontAwesomeIcon icon={faCode} color="#133658" />{" "}
                       Programming Practice question
                     </h4>
                   </Link>
@@ -152,10 +152,8 @@ class IndexPosts extends Component {
                   <h4 className="text-center p-0 m-0 ">Practice your logic </h4>
                 </div>
               </div>
-              <PracticeQuestionCardCarousel  />
-               {/* END programming pratice */}
-
-            
+              <PracticeQuestionCardCarousel />
+              {/* END programming pratice */}
               {/* Starting Programming Questions */}
               <div
                 className="card mb-2 mt-3"
@@ -203,9 +201,8 @@ class IndexPosts extends Component {
                 </div>
               </div>
               <ArticleCardCarousel /> {/* Ending Articels */}
-
-                {/* Starting Code Challange */}
-                <div
+              {/* Starting Code Challange */}
+              <div
                 className="card mb-2 mt-3"
                 style={{ backgroundColor: "#FFE4E1" }}
               >

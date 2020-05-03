@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCopyright } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
+
 class Technologies extends Component {
   state = {};
   render() {
@@ -12,145 +12,177 @@ class Technologies extends Component {
               More Technologies
             </h5>
           </div>
-          <div className="row p-2">
+          <div className="row p-3">
             <div className="col-3">
               {" "}
-              <img
-                className="card-img-top mx-auto img-fluid img-circle d-block"
-                src={require("../../assets/images/c_tech.jpeg")}
-                alt="avatar"
-              />
+              <Link to="/c">
+                <img
+                  className="card-img-top mx-auto img-fluid img-circle d-block"
+                  src={require("../../assets/images/c_tech.jpeg")}
+                  alt="datacode"
+                />
+              </Link>
             </div>
             <div className="col-3">
               {" "}
-              <img
-                className="card-img-top mx-auto img-fluid img-circle d-block"
-                src={require("../../assets/images/cpp_tech.jpeg")}
-                alt="avatar"
-              />
+              <Link to="/cpp">
+                <img
+                  className="card-img-top mx-auto img-fluid img-circle d-block"
+                  src={require("../../assets/images/cpp_tech.jpeg")}
+                  alt="datacode"
+                />
+              </Link>
             </div>
             <div className="col-3">
               {" "}
-              <img
-                className="card-img-top mx-auto img-fluid img-circle d-block"
-                src={require("../../assets/images/python_tech.jpeg")}
-                alt="avatar"
-              />
+              <Link to="/python">
+                <img
+                  className="card-img-top mx-auto img-fluid img-circle d-block"
+                  src={require("../../assets/images/python_tech.jpeg")}
+                  alt="datacode"
+                />
+              </Link>
             </div>
             <div className="col-3">
               {" "}
-              <img
-                className="card-img-top mx-auto img-fluid img-circle d-block"
-                src={require("../../assets/images/java_tech.jpeg")}
-                alt="avatar"
-              />
+              <Link to="/java">
+                <img
+                  className="card-img-top mx-auto img-fluid img-circle d-block"
+                  src={require("../../assets/images/java_tech.jpeg")}
+                  alt="datacode"
+                />
+              </Link>
             </div>
           </div>
           <div className="row p-3">
             <div className="col-3">
               {" "}
-              <img
-                className="card-img-top mx-auto img-fluid img-circle d-block"
-                src={require("../../assets/images/dbms_tech.jpeg")}
-                alt="avatar"
-              />
+              <Link to="/dbms">
+                <img
+                  className="card-img-top mx-auto img-fluid img-circle d-block"
+                  src={require("../../assets/images/dbms_tech.jpeg")}
+                  alt="datacode"
+                />
+              </Link>
               DBMS
             </div>
             <div className="col-3">
               {" "}
-              <img
-                className="card-img-top mx-auto img-fluid img-circle d-block"
-                src={require("../../assets/images/sql_tech.jpeg")}
-                alt="avatar"
-              />
+              <Link to="/sql">
+                <img
+                  className="card-img-top mx-auto img-fluid img-circle d-block"
+                  src={require("../../assets/images/sql_tech.jpeg")}
+                  alt="datacode"
+                />
+              </Link>
             </div>
             <div className="col-3">
               {" "}
-              <img
-                className="card-img-top mx-auto img-fluid img-circle d-block"
-                src={require("../../assets/images/html_tech.jpeg")}
-                alt="avatar"
-              />
+              <Link to="/html">
+                <img
+                  className="card-img-top mx-auto img-fluid img-circle d-block"
+                  src={require("../../assets/images/html_tech.jpeg")}
+                  alt="datacode"
+                />
+              </Link>
             </div>
             <div className="col-3">
               {" "}
-              <img
-                className="card-img-top mx-auto img-fluid img-circle d-block"
-                src={require("../../assets/images/css_tech.jpeg")}
-                alt="avatar"
-              />
+              <Link to="/css">
+                <img
+                  className="card-img-top mx-auto img-fluid img-circle d-block"
+                  src={require("../../assets/images/css_tech.jpeg")}
+                  alt="datacode"
+                />
+              </Link>
             </div>
           </div>
           <div className="row p-3">
             <div className="col-3">
               {" "}
-              <img
-                className="card-img-top mx-auto img-fluid img-circle d-block"
-                src={require("../../assets/images/ds_tech.jpeg")}
-                alt="avatar"
-              />
+              <Link to="/datastructure">
+                <img
+                  className="card-img-top mx-auto img-fluid img-circle d-block"
+                  src={require("../../assets/images/ds_tech.jpeg")}
+                  alt="datacode"
+                />
+              </Link>
               DS
             </div>
             <div className="col-3">
               {" "}
-              <img
-                className="card-img-top mx-auto img-fluid img-circle d-block"
-                src={require("../../assets/images/oops_tech.jpeg")}
-                alt="avatar"
-              />
+              <Link to="/oops">
+                <img
+                  className="card-img-top mx-auto img-fluid img-circle d-block"
+                  src={require("../../assets/images/oops_tech.jpeg")}
+                  alt="datacode"
+                />
+              </Link>
               OOPs
             </div>
             <div className="col-3">
               {" "}
-              <img
-                className="card-img-top mx-auto img-fluid img-circle d-block"
-                src={require("../../assets/images/cn_tech.jpeg")}
-                alt="avatar"
-              />
+              <Link to="/cn">
+                <img
+                  className="card-img-top mx-auto img-fluid img-circle d-block"
+                  src={require("../../assets/images/cn_tech.jpeg")}
+                  alt="datacode"
+                />
+              </Link>
               CN
             </div>
             <div className="col-3">
               {" "}
-              <img
-                className="card-img-top mx-auto img-fluid img-circle d-block"
-                src={require("../../assets/images/os_tech.jpeg")}
-                alt="avatar"
-              />
+              <Link to="/os">
+                <img
+                  className="card-img-top mx-auto img-fluid img-circle d-block"
+                  src={require("../../assets/images/os_tech.jpeg")}
+                  alt="datacode"
+                />
+              </Link>
               OS
             </div>
           </div>
           <div className="row p-3">
             <div className="col-3">
               {" "}
-              <img
-                className="card-img-top mx-auto img-fluid img-circle d-block mt-0"
-                src={require("../../assets/images/js_tech.jpeg")}
-                alt="avatar"
-              />
+              <Link to="/js">
+                <img
+                  className="card-img-top mx-auto img-fluid img-circle d-block mt-0"
+                  src={require("../../assets/images/js_tech.jpeg")}
+                  alt="datacode"
+                />
+              </Link>
             </div>
             <div className="col-3">
               {" "}
-              <img
-                className="card-img-top mx-auto img-fluid img-circle d-block"
-                src={require("../../assets/images/react_tech.jpeg")}
-                alt="avatar"
-              />
+              <Link to="/react">
+                <img
+                  className="card-img-top mx-auto img-fluid img-circle d-block"
+                  src={require("../../assets/images/react_tech.jpeg")}
+                  alt="datacode"
+                />
+              </Link>
             </div>
             <div className="col-3">
               {" "}
-              <img
-                className="card-img-top mx-auto img-fluid img-circle d-block"
-                src={require("../../assets/images/angular_tech.jpeg")}
-                alt="avatar"
-              />
+              <Link to="/angular">
+                <img
+                  className="card-img-top mx-auto img-fluid img-circle d-block"
+                  src={require("../../assets/images/angular_tech.jpeg")}
+                  alt="datacode"
+                />
+              </Link>
             </div>
             <div className="col-3">
               {" "}
-              <img
-                className="card-img-top mx-auto img-fluid img-circle d-block"
-                src={require("../../assets/images/android_tech.jpeg")}
-                alt="avatar"
-              />
+              <Link to="/android">
+                <img
+                  className="card-img-top mx-auto img-fluid img-circle d-block"
+                  src={require("../../assets/images/android_tech.jpeg")}
+                  alt="datacode"
+                />
+              </Link>
             </div>
           </div>
         </div>

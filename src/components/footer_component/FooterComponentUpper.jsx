@@ -28,6 +28,7 @@ import {
   faChalkboardTeacher,
   faFileCode,
   faCode,
+  faFlask,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import CardCarousel from "./CardCarousel";
@@ -114,7 +115,7 @@ class FooterComponentUpper extends Component {
                     <div className="col-6 mt-2">
                       <Link to="/index_quize_tests">
                         <FontAwesomeIcon
-                          icon={faUserClock}
+                          icon={faFlask}
                           color="#072C71"
                           size="3x"
                         />

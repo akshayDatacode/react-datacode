@@ -10,6 +10,7 @@ import {
   faChalkboardTeacher,
   faCode,
 } from "@fortawesome/free-solid-svg-icons";
+import Technologies from "../../../right_section/Technologies";
 class PythonPgramQuestions extends Component {
   state = {};
   componentDidMount() {
@@ -2754,26 +2755,8 @@ Elements of array sorted in descending order:
                 RecPostHading="Programminig Quize Test"
                 link="/index_quize_tests"
               />
-              <RecommendPost
-                imgsource="datacodelogo.jpeg"
-                RecPostHading="Programminig Quize Test"
-                link="/index_quize_tests"
-              />
-              <RecommendPost
-                imgsource="datacodelogo.jpeg"
-                RecPostHading="Programminig Quize Test"
-                link="/index_quize_tests"
-              />
-              <RecommendPost
-                imgsource="datacodelogo.jpeg"
-                RecPostHading="Programminig Quize Test"
-                link="/index_quize_tests"
-              />
-              <RecommendPost
-                imgsource="datacodelogo.jpeg"
-                RecPostHading="Programminig Quize Test"
-                link="/index_quize_tests"
-              />
+
+              <Technologies />
             </div>
           </div>
         </div>

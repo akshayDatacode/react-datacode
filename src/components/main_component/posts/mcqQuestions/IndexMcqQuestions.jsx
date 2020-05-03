@@ -4,7 +4,7 @@ import PostCard from "../../PostCard";
 import RightSideSection from "../../../right_section/RightSideSection";
 import MCQCardCarousel from "./MCQCardCarousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faTasks } from "@fortawesome/free-solid-svg-icons";
 import Technologies from "../../../right_section/Technologies";
 
 class IndexMcqQuestions extends Component {
@@ -22,6 +22,7 @@ class IndexMcqQuestions extends Component {
               className="text-center mb-4 rounded p-2"
               style={{ backgroundColor: "#06CB6C", color: "#072C71" }}
             >
+              <FontAwesomeIcon icon={faTasks} color="#072C71" size="1x" />{" "}
               Technical MCQs Practice Question
             </h1>
             <Link

@@ -2,7 +2,12 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import RightSideSection from "../../../right_section/RightSideSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHome,
+  faCode,
+  faLaptopCode,
+  faFileCode,
+} from "@fortawesome/free-solid-svg-icons";
 import PostCard from "../../PostCard";
 import ProgrammingQuestionCardCarousel from "./ProgrammingQuestionCardCarousel";
 import Technologies from "../../../right_section/Technologies";
@@ -22,7 +27,8 @@ class IndexProgrammingQuestions extends Component {
               className="text-center mb-4 rounded p-2"
               style={{ backgroundColor: "#06CB6C", color: "#072C71" }}
             >
-              Programming Example Question
+              <FontAwesomeIcon icon={faFileCode} color="#072C71" /> Programming
+              Example Question
             </h1>
             <Link
               to="/home"

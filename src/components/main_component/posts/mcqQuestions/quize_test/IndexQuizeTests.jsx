@@ -1,7 +1,12 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faCopyright } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHome,
+  faCopyright,
+  faUserClock,
+  faFlask,
+} from "@fortawesome/free-solid-svg-icons";
 import RightSideSection from "../../../../right_section/RightSideSection";
 import { faPython, faJava } from "@fortawesome/free-brands-svg-icons";
 import MCQTestCardCarousel from "./MCQTestCardCarousel";
@@ -22,7 +27,7 @@ class IndexQuizeTests extends Component {
               className="text-center mb-4 rounded p-2"
               style={{ backgroundColor: "#06CB6C", color: "#072C71" }}
             >
-              Programming Quiz Test
+              <FontAwesomeIcon icon={faFlask} /> Programming Quiz Test
             </h1>
             <Link
               to="/home"

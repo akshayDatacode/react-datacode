@@ -4,7 +4,7 @@ import PracticeQuestionCardCarousel from "./PracticeQuestionCardCarousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PostCard from "../../PostCard";
 import { Link } from "react-router-dom";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faCode } from "@fortawesome/free-solid-svg-icons";
 import Technologies from "../../../right_section/Technologies";
 class IndexPracticeQuestions extends Component {
   state = {};
@@ -21,7 +21,8 @@ class IndexPracticeQuestions extends Component {
               className="text-center mb-4 rounded p-2 "
               style={{ backgroundColor: "#06CB6C", color: "#072C71" }}
             >
-              Programming Practice Questions
+              <FontAwesomeIcon icon={faCode} color="#072C71" /> Programming
+              Practice Questions
             </h1>
 
             <div className="mb-3">

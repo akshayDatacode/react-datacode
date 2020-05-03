@@ -310,7 +310,7 @@ class C extends Component {
               RecPostHading="Weekly Code Challanges"
               link="/index_code_challange"
             />
-            
+
             <Technologies />
             <RightSideSection />
           </div>

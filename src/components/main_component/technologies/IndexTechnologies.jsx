@@ -9,6 +9,7 @@ import {
   faObjectGroup,
   faNetworkWired,
   faAmericanSignLanguageInterpreting,
+  faChalkboardTeacher,
 } from "@fortawesome/free-solid-svg-icons";
 import RightSideSection from "../../right_section/RightSideSection";
 import {
@@ -44,7 +45,7 @@ class IndexTechnologies extends Component {
               className="text-center mb-4 rounded p-2"
               style={{ backgroundColor: "#06CB6C", color: "#072C71" }}
             >
-              Tutorials & Courses
+              <FontAwesomeIcon icon={faChalkboardTeacher} /> Tutorials & Courses
             </h1>
             <Link
               to="/home"
@@ -58,7 +59,11 @@ class IndexTechnologies extends Component {
               <div className="card text-center p-2">
                 <Link to="/c">
                   <center>
-                    <FontAwesomeIcon icon={faCopyright} size="4x" />
+                    <FontAwesomeIcon
+                      icon={faCopyright}
+                      size="4x"
+                      color="#072C71"
+                    />
                   </center>
                   C Programming
                 </Link>
@@ -66,7 +71,11 @@ class IndexTechnologies extends Component {
               <div className="card text-center p-2">
                 <Link to="/python">
                   <center>
-                    <FontAwesomeIcon icon={faPython} size="4x" />
+                    <FontAwesomeIcon
+                      icon={faPython}
+                      size="4x"
+                      color="#072C71"
+                    />
                   </center>
                   Python
                 </Link>
@@ -74,7 +83,7 @@ class IndexTechnologies extends Component {
               <div className="card text-center p-2">
                 <Link to="/java">
                   <center>
-                    <FontAwesomeIcon icon={faJava} size="4x" />
+                    <FontAwesomeIcon icon={faJava} size="4x" color="#072C71" />
                   </center>
                   Java
                 </Link>
@@ -82,7 +91,11 @@ class IndexTechnologies extends Component {
               <div className="card text-center p-2">
                 <Link to="/cpp">
                   <center>
-                    <FontAwesomeIcon icon={faCopyright} size="4x" />
+                    <FontAwesomeIcon
+                      icon={faCopyright}
+                      size="4x"
+                      color="#072C71"
+                    />
                   </center>
                   C++
                 </Link>
@@ -92,7 +105,7 @@ class IndexTechnologies extends Component {
               <div className="card text-center p-2">
                 <Link to="/js">
                   <center>
-                    <FontAwesomeIcon icon={faJs} size="4x" />
+                    <FontAwesomeIcon icon={faJs} size="4x" color="#072C71" />
                   </center>
                   JavaScript
                 </Link>
@@ -100,7 +113,11 @@ class IndexTechnologies extends Component {
               <div className="card text-center p-2">
                 <Link to="/dbms">
                   <center>
-                    <FontAwesomeIcon icon={faDatabase} size="4x" />
+                    <FontAwesomeIcon
+                      icon={faDatabase}
+                      size="4x"
+                      color="#072C71"
+                    />
                   </center>
                   DBMS
                 </Link>
@@ -108,7 +125,11 @@ class IndexTechnologies extends Component {
               <div className="card text-center p-2">
                 <Link to="/sql">
                   <center>
-                    <FontAwesomeIcon icon={faDatabase} size="4x" />
+                    <FontAwesomeIcon
+                      icon={faDatabase}
+                      size="4x"
+                      color="#072C71"
+                    />
                   </center>
                   SQL
                 </Link>
@@ -116,7 +137,11 @@ class IndexTechnologies extends Component {
               <div className="card text-center p-2">
                 <Link to="/datastructure">
                   <center>
-                    <FontAwesomeIcon icon={faDigitalTachograph} size="4x" />
+                    <FontAwesomeIcon
+                      icon={faDigitalTachograph}
+                      size="4x"
+                      color="#072C71"
+                    />
                   </center>
                   Data Structure
                 </Link>
@@ -126,7 +151,7 @@ class IndexTechnologies extends Component {
               <div className="card text-center p-2">
                 <Link to="/html">
                   <center>
-                    <FontAwesomeIcon icon={faHtml5} size="4x" />
+                    <FontAwesomeIcon icon={faHtml5} size="4x" color="#072C71" />
                   </center>
                   HTML
                 </Link>
@@ -134,7 +159,7 @@ class IndexTechnologies extends Component {
               <div className="card text-center p-2">
                 <Link to="/css">
                   <center>
-                    <FontAwesomeIcon icon={faCss3} size="4x" />
+                    <FontAwesomeIcon icon={faCss3} size="4x" color="#072C71" />
                   </center>
                   CSS
                 </Link>
@@ -142,7 +167,11 @@ class IndexTechnologies extends Component {
               <div className="card text-center p-2">
                 <Link to="oops">
                   <center>
-                    <FontAwesomeIcon icon={faObjectGroup} size="4x" />
+                    <FontAwesomeIcon
+                      icon={faObjectGroup}
+                      size="4x"
+                      color="#072C71"
+                    />
                   </center>
                   OOPs
                 </Link>
@@ -150,7 +179,11 @@ class IndexTechnologies extends Component {
               <div className="card text-center p-2">
                 <Link to="/cpp">
                   <center>
-                    <FontAwesomeIcon icon={faNetworkWired} size="4x" />
+                    <FontAwesomeIcon
+                      icon={faNetworkWired}
+                      size="4x"
+                      color="#072C71"
+                    />
                   </center>
                   CN
                 </Link>
@@ -160,7 +193,11 @@ class IndexTechnologies extends Component {
               <div className="card text-center p-2">
                 <Link to="/c">
                   <center>
-                    <FontAwesomeIcon icon={faNodeJs} size="4x" />
+                    <FontAwesomeIcon
+                      icon={faNodeJs}
+                      size="4x"
+                      color="#072C71"
+                    />
                   </center>
                   Node JS
                 </Link>
@@ -168,7 +205,11 @@ class IndexTechnologies extends Component {
               <div className="card text-center p-2">
                 <Link to="/angular">
                   <center>
-                    <FontAwesomeIcon icon={faAngular} size="4x" />
+                    <FontAwesomeIcon
+                      icon={faAngular}
+                      size="4x"
+                      color="#072C71"
+                    />
                   </center>
                   Angular
                 </Link>
@@ -176,7 +217,7 @@ class IndexTechnologies extends Component {
               <div className="card text-center p-2">
                 <Link to="/react">
                   <center>
-                    <FontAwesomeIcon icon={faReact} size="4x" />
+                    <FontAwesomeIcon icon={faReact} size="4x" color="#072C71" />
                   </center>
                   React
                 </Link>
@@ -184,7 +225,11 @@ class IndexTechnologies extends Component {
               <div className="card text-center p-2">
                 <Link to="/cpp">
                   <center>
-                    <FontAwesomeIcon icon={faGithub} size="4x" />
+                    <FontAwesomeIcon
+                      icon={faGithub}
+                      size="4x"
+                      color="#072C71"
+                    />
                   </center>
                   GitHub
                 </Link>
@@ -194,7 +239,7 @@ class IndexTechnologies extends Component {
               <div className="card text-center p-2">
                 <Link to="/c">
                   <center>
-                    <FontAwesomeIcon icon={faPhp} size="4x" />
+                    <FontAwesomeIcon icon={faPhp} size="4x" color="#072C71" />
                   </center>
                   PHP
                 </Link>
@@ -202,7 +247,7 @@ class IndexTechnologies extends Component {
               <div className="card text-center p-2">
                 <Link to="/python">
                   <center>
-                    <FontAwesomeIcon icon={faSwift} size="4x" />
+                    <FontAwesomeIcon icon={faSwift} size="4x" color="#072C71" />
                   </center>
                   Swift
                 </Link>
@@ -210,7 +255,11 @@ class IndexTechnologies extends Component {
               <div className="card text-center p-2">
                 <Link to="/android">
                   <center>
-                    <FontAwesomeIcon icon={faAndroid} size="4x" />
+                    <FontAwesomeIcon
+                      icon={faAndroid}
+                      size="4x"
+                      color="#072C71"
+                    />
                   </center>
                   Android
                 </Link>
@@ -218,17 +267,25 @@ class IndexTechnologies extends Component {
               <div className="card text-center p-2">
                 <Link to="/cpp">
                   <center>
-                    <FontAwesomeIcon icon={faCopyright} size="4x" />
+                    <FontAwesomeIcon
+                      icon={faCopyright}
+                      size="4x"
+                      color="#072C71"
+                    />
                   </center>
-                  C++
+                  OS
                 </Link>
               </div>
             </div>
-            <div className="card-deck mt-4">
+            {/* <div className="card-deck mt-4">
               <div className="card text-center p-2">
                 <Link to="/c">
                   <center>
-                    <FontAwesomeIcon icon={faCopyright} size="4x" />
+                    <FontAwesomeIcon
+                      icon={faCopyright}
+                      size="4x"
+                      color="#072C71"
+                    />
                   </center>
                   C Programming
                 </Link>
@@ -236,7 +293,11 @@ class IndexTechnologies extends Component {
               <div className="card text-center p-2">
                 <Link to="/python">
                   <center>
-                    <FontAwesomeIcon icon={faPython} size="4x" />
+                    <FontAwesomeIcon
+                      icon={faPython}
+                      size="4x"
+                      color="#072C71"
+                    />
                   </center>
                   Python
                 </Link>
@@ -244,7 +305,7 @@ class IndexTechnologies extends Component {
               <div className="card text-center p-2">
                 <Link to="java">
                   <center>
-                    <FontAwesomeIcon icon={faJava} size="4x" />
+                    <FontAwesomeIcon icon={faJava} size="4x" color="#072C71" />
                   </center>
                   Java
                 </Link>
@@ -252,12 +313,16 @@ class IndexTechnologies extends Component {
               <div className="card text-center p-2">
                 <Link to="/cpp">
                   <center>
-                    <FontAwesomeIcon icon={faCopyright} size="4x" />
+                    <FontAwesomeIcon
+                      icon={faCopyright}
+                      size="4x"
+                      color="#072C71"
+                    />
                   </center>
                   C++
                 </Link>
               </div>
-            </div>
+            </div> */}
             <h4 className="text-secondary mt-5">For More Technologies</h4>
             <TechnologiesCardCarousel />
           </div>
