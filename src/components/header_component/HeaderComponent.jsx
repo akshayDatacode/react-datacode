@@ -26,6 +26,7 @@ import {
   faBookOpen,
   faFlask,
   faCode,
+  faCertificate,
 } from "@fortawesome/free-solid-svg-icons";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
@@ -106,6 +107,10 @@ class HeaderComponent extends Component {
                 <NavDropdown.Item href="/react-datacode/#/index_programming_questions">
                   <FontAwesomeIcon icon={faFileCode} className="mr-2" />
                   Programming Example Questions
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/react-datacode/#/index_certification">
+                  <FontAwesomeIcon icon={faCertificate} className="mr-2" />
+                  Certification
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link

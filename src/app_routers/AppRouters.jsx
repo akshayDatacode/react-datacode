@@ -290,6 +290,10 @@ import DSPracticeQuestionsBeginner from "../components/main_component/posts/prac
 import DSPracticeQuestionsIntermediate from "../components/main_component/posts/practice_questions/ds_practice_questions/DSPracticeQuestionsIntermediate";
 import DSPracticeQuestionsAdvance from "../components/main_component/posts/practice_questions/ds_practice_questions/DSPracticeQuestionsAdvance";
 
+// Certification
+import IndexCertification from "../components/main_component/certification/IndexCertification";
+import CertificationPlatforms from "../components/main_component/certification/CertificationPlatforms";
+
 class AppRouters extends Component {
   state = {};
   render() {
@@ -937,6 +941,20 @@ class AppRouters extends Component {
             component={DSPracticeQuestionsAdvance}
           />
           {/* Ending Code Challange */}
+
+          {/* Strting Certification */}
+          <Route
+            exact
+            path="/index_certification"
+            component={IndexCertification}
+          />
+          <Route
+            exact
+            path="/certification_platforms"
+            component={CertificationPlatforms}
+          />
+
+          {/* Ending Certification */}
         </Switch>
       </>
     );
