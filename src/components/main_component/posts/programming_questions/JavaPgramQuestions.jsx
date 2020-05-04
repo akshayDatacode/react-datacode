@@ -802,7 +802,7 @@ code={`class JavaExample {
   } 
   public static void main(String[] args) 
   {  
- String str = "beginnersbook"; 
+ String str = "Datacode"; 
  countEachChar(str); 
   } 
 }`}
