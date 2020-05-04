@@ -291,8 +291,30 @@ import DSPracticeQuestionsIntermediate from "../components/main_component/posts/
 import DSPracticeQuestionsAdvance from "../components/main_component/posts/practice_questions/ds_practice_questions/DSPracticeQuestionsAdvance";
 
 // Certification
-import IndexCertification from "../components/main_component/certification/IndexCertification";
-import CertificationPlatforms from "../components/main_component/certification/CertificationPlatforms";
+import IndexLearningPlatforms from "../components/main_component/learning_platforms/IndexLearningPlatforms";
+import CertificationPlatforms from "../components/main_component/learning_platforms/CertificationPlatforms";
+import WebDevelopmentPlatforms from "../components/main_component/learning_platforms/WebDevelopmentPlatforms";
+import DataSciencePlatforms from "../components/main_component/learning_platforms/DataSciencePlatforms";
+import ComputerSciencePlatforms from "../components/main_component/learning_platforms/ComputerSciencePlatforms";
+import ProgrammingLearningPlatforms from "../components/main_component/learning_platforms/ProgrammingLearningPlatforms";
+import ProgrammingPracticePlatforms from "../components/main_component/learning_platforms/ProgrammingPracticePlatforms";
+
+// TrainingCertification
+import IndexTrainingCertification from "../components/main_component/training_and_certification/IndexTrainingCertification";
+import PythonTrainingCertification from "../components/main_component/training_and_certification/PythonTrainingCertification";
+import CTrainingCertification from "../components/main_component/training_and_certification/CTrainingCertification";
+import CppTrainingCertification from "../components/main_component/training_and_certification/CppTrainingCertification";
+
+import JavaTrainingCertification from "../components/main_component/training_and_certification/JavaTrainingCertification";
+import JSTrainingCertification from "../components/main_component/training_and_certification/JSTrainingCertification";
+import DataStructureTrainingCertification from "../components/main_component/training_and_certification/DataStructureTrainingCertification";
+import HTMLTrainingCertification from "../components/main_component/training_and_certification/HTMLTrainingCertification";
+import DBMSTrainingCertification from "../components/main_component/training_and_certification/DBMSTrainingCertification";
+import SQLTrainingCertification from "../components/main_component/training_and_certification/SQLTrainingCertification";
+import OOPsTrainingCertification from "../components/main_component/training_and_certification/OOPsTrainingCertification";
+import AngularTrainingCertification from "../components/main_component/training_and_certification/AngularTrainingCertification";
+import ReactJSTrainingCertification from "../components/main_component/training_and_certification/ReactTrainingCertification";
+import AndroidTrainingCertification from "../components/main_component/training_and_certification/AndroidTrainingCertification";
 
 class AppRouters extends Component {
   state = {};
@@ -796,6 +818,79 @@ class AppRouters extends Component {
           <Route exact path="/android" component={Android} />
           {/* Ending Technologies */}
 
+          {/* Starting TrainingCertification */}
+          <Route
+            exact
+            path="/index_traning_certification"
+            component={IndexTrainingCertification}
+          />
+          <Route
+            exact
+            path="/python_traning_certification"
+            component={PythonTrainingCertification}
+          />
+          <Route
+            exact
+            path="/c_traning_certification"
+            component={CTrainingCertification}
+          />
+          <Route
+            exact
+            path="/cpp_traning_certification"
+            component={CppTrainingCertification}
+          />
+          <Route
+            exact
+            path="/java_traning_certification"
+            component={JavaTrainingCertification}
+          />
+          <Route
+            exact
+            path="/js_traning_certification"
+            component={JSTrainingCertification}
+          />
+          <Route
+            exact
+            path="/datastructure_traning_certification"
+            component={DataStructureTrainingCertification}
+          />
+          <Route
+            exact
+            path="/html_traning_certification"
+            component={HTMLTrainingCertification}
+          />
+          <Route
+            exact
+            path="/dbms_traning_certification"
+            component={DBMSTrainingCertification}
+          />
+          <Route
+            exact
+            path="/sql_traning_certification"
+            component={SQLTrainingCertification}
+          />
+          <Route
+            exact
+            path="/oops_traning_certification"
+            component={OOPsTrainingCertification}
+          />
+          <Route
+            exact
+            path="/angular_traning_certification"
+            component={AngularTrainingCertification}
+          />
+          <Route
+            exact
+            path="/react_traning_certification"
+            component={ReactJSTrainingCertification}
+          />
+          <Route
+            exact
+            path="/android_traning_certification"
+            component={AndroidTrainingCertification}
+          />
+          {/* Ending TrainingCertification */}
+
           {/* Starting Programming Questions */}
           <Route
             exact
@@ -942,19 +1037,44 @@ class AppRouters extends Component {
           />
           {/* Ending Code Challange */}
 
-          {/* Strting Certification */}
+          {/* Strting Learning Platform  */}
           <Route
             exact
-            path="/index_certification"
-            component={IndexCertification}
+            path="/index_learning_platforms"
+            component={IndexLearningPlatforms}
           />
           <Route
             exact
             path="/certification_platforms"
             component={CertificationPlatforms}
           />
+          <Route
+            exact
+            path="/webdevelopment_platforms"
+            component={WebDevelopmentPlatforms}
+          />
+          <Route
+            exact
+            path="/programming_practice_platforms"
+            component={ProgrammingPracticePlatforms}
+          />
+          <Route
+            exact
+            path="/programming_learning_platforms"
+            component={ProgrammingLearningPlatforms}
+          />
+          <Route
+            exact
+            path="/datascience_platforms"
+            component={DataSciencePlatforms}
+          />
+          <Route
+            exact
+            path="/computerscience_platforms"
+            component={ComputerSciencePlatforms}
+          />
 
-          {/* Ending Certification */}
+          {/* Ending Learning paltform */}
         </Switch>
       </>
     );
