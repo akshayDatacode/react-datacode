@@ -821,72 +821,72 @@ class AppRouters extends Component {
           {/* Starting TrainingCertification */}
           <Route
             exact
-            path="/index_traning_certification"
+            path="/index_training_certification"
             component={IndexTrainingCertification}
           />
           <Route
             exact
-            path="/python_traning_certification"
+            path="/python_training_certification"
             component={PythonTrainingCertification}
           />
           <Route
             exact
-            path="/c_traning_certification"
+            path="/c_training_certification"
             component={CTrainingCertification}
           />
           <Route
             exact
-            path="/cpp_traning_certification"
+            path="/cpp_training_certification"
             component={CppTrainingCertification}
           />
           <Route
             exact
-            path="/java_traning_certification"
+            path="/java_training_certification"
             component={JavaTrainingCertification}
           />
           <Route
             exact
-            path="/js_traning_certification"
+            path="/js_training_certification"
             component={JSTrainingCertification}
           />
           <Route
             exact
-            path="/datastructure_traning_certification"
+            path="/datastructure_training_certification"
             component={DataStructureTrainingCertification}
           />
           <Route
             exact
-            path="/html_traning_certification"
+            path="/html_training_certification"
             component={HTMLTrainingCertification}
           />
           <Route
             exact
-            path="/dbms_traning_certification"
+            path="/dbms_training_certification"
             component={DBMSTrainingCertification}
           />
           <Route
             exact
-            path="/sql_traning_certification"
+            path="/sql_training_certification"
             component={SQLTrainingCertification}
           />
           <Route
             exact
-            path="/oops_traning_certification"
+            path="/oops_training_certification"
             component={OOPsTrainingCertification}
           />
           <Route
             exact
-            path="/angular_traning_certification"
+            path="/angular_training_certification"
             component={AngularTrainingCertification}
           />
           <Route
             exact
-            path="/react_traning_certification"
+            path="/react_training_certification"
             component={ReactJSTrainingCertification}
           />
           <Route
             exact
-            path="/android_traning_certification"
+            path="/android_training_certification"
             component={AndroidTrainingCertification}
           />
           {/* Ending TrainingCertification */}

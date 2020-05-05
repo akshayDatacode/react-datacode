@@ -57,7 +57,7 @@ class IndexTrainingCertification extends Component {
 
             <div className="card-deck mt-4">
               <div className="card text-center p-2">
-                <Link to="/c_traning_certification">
+                <Link to="/c_training_certification">
                   <center>
                     <FontAwesomeIcon
                       icon={faCopyright}
@@ -69,7 +69,7 @@ class IndexTrainingCertification extends Component {
                 </Link>
               </div>
               <div className="card text-center p-2">
-                <Link to="/python_traning_certification">
+                <Link to="/python_training_certification">
                   <center>
                     <FontAwesomeIcon
                       icon={faPython}
@@ -81,7 +81,7 @@ class IndexTrainingCertification extends Component {
                 </Link>
               </div>
               <div className="card text-center p-2">
-                <Link to="/java_traning_certification">
+                <Link to="/java_training_certification">
                   <center>
                     <FontAwesomeIcon icon={faJava} size="4x" color="#633974" />
                   </center>
@@ -89,7 +89,7 @@ class IndexTrainingCertification extends Component {
                 </Link>
               </div>
               <div className="card text-center p-2">
-                <Link to="/cpp_traning_certification">
+                <Link to="/cpp_training_certification">
                   <center>
                     <FontAwesomeIcon
                       icon={faCopyright}
@@ -103,7 +103,7 @@ class IndexTrainingCertification extends Component {
             </div>
             <div className="card-deck mt-4">
               <div className="card text-center p-2">
-                <Link to="/js_traning_certification">
+                <Link to="/js_training_certification">
                   <center>
                     <FontAwesomeIcon icon={faJs} size="4x" color="#633974" />
                   </center>
@@ -111,7 +111,7 @@ class IndexTrainingCertification extends Component {
                 </Link>
               </div>
               <div className="card text-center p-2">
-                <Link to="/dbms_traning_certification">
+                <Link to="/dbms_training_certification">
                   <center>
                     <FontAwesomeIcon
                       icon={faDatabase}
@@ -123,7 +123,7 @@ class IndexTrainingCertification extends Component {
                 </Link>
               </div>
               <div className="card text-center p-2">
-                <Link to="/sql_traning_certification">
+                <Link to="/sql_training_certification">
                   <center>
                     <FontAwesomeIcon
                       icon={faDatabase}
@@ -135,7 +135,7 @@ class IndexTrainingCertification extends Component {
                 </Link>
               </div>
               <div className="card text-center p-2">
-                <Link to="/datastructure_traning_certification">
+                <Link to="/datastructure_training_certification">
                   <center>
                     <FontAwesomeIcon
                       icon={faDigitalTachograph}
@@ -149,7 +149,7 @@ class IndexTrainingCertification extends Component {
             </div>
             <div className="card-deck mt-4">
               <div className="card text-center p-2">
-                <Link to="/html_traning_certification">
+                <Link to="/html_training_certification">
                   <center>
                     <FontAwesomeIcon icon={faHtml5} size="4x" color="#633974" />
                   </center>
@@ -157,7 +157,7 @@ class IndexTrainingCertification extends Component {
                 </Link>
               </div>
               <div className="card text-center p-2">
-                <Link to="/css_traning_certification">
+                <Link to="/css_training_certification">
                   <center>
                     <FontAwesomeIcon icon={faCss3} size="4x" color="#633974" />
                   </center>
@@ -165,7 +165,7 @@ class IndexTrainingCertification extends Component {
                 </Link>
               </div>
               <div className="card text-center p-2">
-                <Link to="oops_traning_certification">
+                <Link to="oops_training_certification">
                   <center>
                     <FontAwesomeIcon
                       icon={faObjectGroup}
@@ -177,7 +177,7 @@ class IndexTrainingCertification extends Component {
                 </Link>
               </div>
               <div className="card text-center p-2">
-                <Link to="/cpp_traning_certification">
+                <Link to="/cpp_training_certification">
                   <center>
                     <FontAwesomeIcon
                       icon={faNetworkWired}
@@ -191,7 +191,7 @@ class IndexTrainingCertification extends Component {
             </div>
             <div className="card-deck mt-4">
               <div className="card text-center p-2">
-                <Link to="/c_traning_certification">
+                <Link to="/c_training_certification">
                   <center>
                     <FontAwesomeIcon
                       icon={faNodeJs}
@@ -203,7 +203,7 @@ class IndexTrainingCertification extends Component {
                 </Link>
               </div>
               <div className="card text-center p-2">
-                <Link to="/angular_traning_certification">
+                <Link to="/angular_training_certification">
                   <center>
                     <FontAwesomeIcon
                       icon={faAngular}
@@ -215,7 +215,7 @@ class IndexTrainingCertification extends Component {
                 </Link>
               </div>
               <div className="card text-center p-2">
-                <Link to="/react_traning_certification">
+                <Link to="/react_training_certification">
                   <center>
                     <FontAwesomeIcon icon={faReact} size="4x" color="#633974" />
                   </center>
@@ -223,7 +223,7 @@ class IndexTrainingCertification extends Component {
                 </Link>
               </div>
               <div className="card text-center p-2">
-                <Link to="/cpp_traning_certification">
+                <Link to="/cpp_training_certification">
                   <center>
                     <FontAwesomeIcon
                       icon={faGithub}
@@ -237,7 +237,7 @@ class IndexTrainingCertification extends Component {
             </div>
             <div className="card-deck mt-4">
               <div className="card text-center p-2">
-                <Link to="/c_traning_certification">
+                <Link to="/c_training_certification">
                   <center>
                     <FontAwesomeIcon icon={faPhp} size="4x" color="#633974" />
                   </center>
@@ -245,7 +245,7 @@ class IndexTrainingCertification extends Component {
                 </Link>
               </div>
               <div className="card text-center p-2">
-                <Link to="/python_traning_certification">
+                <Link to="/python_training_certification">
                   <center>
                     <FontAwesomeIcon icon={faSwift} size="4x" color="#633974" />
                   </center>
@@ -253,7 +253,7 @@ class IndexTrainingCertification extends Component {
                 </Link>
               </div>
               <div className="card text-center p-2">
-                <Link to="/android_traning_certification">
+                <Link to="/android_training_certification">
                   <center>
                     <FontAwesomeIcon
                       icon={faAndroid}
@@ -265,7 +265,7 @@ class IndexTrainingCertification extends Component {
                 </Link>
               </div>
               <div className="card text-center p-2">
-                <Link to="/cpp_traning_certification">
+                <Link to="/cpp_training_certification">
                   <center>
                     <FontAwesomeIcon
                       icon={faCopyright}

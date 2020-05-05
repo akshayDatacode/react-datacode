@@ -112,7 +112,7 @@ class HeaderComponent extends Component {
                   <FontAwesomeIcon icon={faCertificate} className="mr-2" />
                   Online Learning Paltforms
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/react-datacode/#/index_traning_certification">
+                <NavDropdown.Item href="/react-datacode/#/index_training_certification">
                   <FontAwesomeIcon icon={faCertificate} className="mr-2" />
                   Training & Certification
                 </NavDropdown.Item>
