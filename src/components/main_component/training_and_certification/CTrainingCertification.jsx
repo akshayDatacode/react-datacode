@@ -26,7 +26,7 @@ class C extends Component {
       <>
         <div className="row">
           <div className="col-1"></div>
-          <div className="col-md-8 mt-4">
+          <div className="col-md-8 mt-4 ">
             <h2
               className="text-center mb-4 display-5"
               style={{ color: "#072C71" }}

@@ -429,12 +429,12 @@ class CertificaionPlatforms extends Component {
                     link="https://progate.com/"
                   />
                   <LearningPlatformCard
-                    imgsource="udemy.jpeg"
+                    imgsource="openlearning.jpeg"
                     tag1="code"
                     tag2="Learning"
-                    title="Tutorials Point"
-                    paragraph="Tutorials Point originated from the idea that there exists a class of readers who respond better to online content and prefer to learn new skills at their ow"
-                    link="https://www.tutorialspoint.com/"
+                    title="OpenLearning"
+                    paragraph="OpenLearning is a social online learning and MOOC platform that allows universities, colleges and educators to create, design, deliver, market online"
+                    link="https://www.openlearning.com/"
                   />
                   <LearningPlatformCard
                     imgsource="codingninjas.jpeg"
