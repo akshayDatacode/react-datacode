@@ -78,7 +78,7 @@ class C extends Component {
                 title="Writing, Running, and Fixing Code in C"
                 level="Beginner"
                 duration="15 hrs"
-                enroll="Paid Certificate"
+                enroll="Pay for Certificate only"
                 platform="Coursera.com"
                 tag1="C Programming"
                 tag2="Logical Programming"
@@ -90,7 +90,7 @@ class C extends Component {
                 title="Introduction to Computer Programming"
                 level="Beginner"
                 duration="18 hrs"
-                enroll="Paid Certificate"
+                enroll="Pay for Certificate only"
                 platform="Coursera.com"
                 tag1="C Programming"
                 tag2="Logical Programming"
@@ -101,16 +101,17 @@ class C extends Component {
             </div>
             <div className="card-deck">
               <CertificateShowCard
-                title=""
-                level=""
-                duration=""
-                enroll=""
-                platform=""
-                tag1=""
-                tag2=""
-                tag3=""
-                tag4=""
-                link=""
+                title="C for Everyone: Structured Programming"
+                
+                level="Intermediate"
+                duration="10 hr"
+                enroll="Pay for Certificate only"
+                platform="Coursera.com"
+                tag1="C Programming"
+                tag2="Intermediate"
+                tag3="Structured Programming"
+                tag4="Code"
+                link="https://www.coursera.org/learn/c-structured-programming"
               />
               <CertificateShowCard
                 title=""
