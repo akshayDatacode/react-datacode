@@ -13,7 +13,7 @@ class CertificateShowCard extends Component {
   render() {
     return (
       <>
-        <div className="card mt-4 shadow">
+        <div className="card mt-4 shadow border border-secondary">
           <div className="card-body">
             <h3 className="mb-4" style={{ color: "#072C71" }}>
               {this.props.title}
@@ -56,16 +56,13 @@ class CertificateShowCard extends Component {
                 >
                   {this.props.tag3}
                 </snap>{" "}
-                <snap
-                  className="rounded pl-1 pr-1 text-weight-bold "
-                  style={{ backgroundColor: "grey", color: "white" }}
-                >
-                  {this.props.tag4}
-                </snap>
               </div>
             </div>
           </div>
-          <div className="card-footer text-right p-2 ">
+          <div
+            className="card-footer text-right p-2 "
+            style={{ backgroundColor: "#62F967" }}
+          >
             <a href={this.props.link} target="_blank">
               <h6
                 className="btn btn-sm border rounded mb-0"

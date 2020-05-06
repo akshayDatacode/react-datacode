@@ -10,6 +10,7 @@ import {
   faNetworkWired,
   faAmericanSignLanguageInterpreting,
   faChalkboardTeacher,
+  faAward,
 } from "@fortawesome/free-solid-svg-icons";
 import RightSideSection from "../../right_section/RightSideSection";
 import {
@@ -44,8 +45,7 @@ class IndexTrainingCertification extends Component {
               className="text-center mb-4 rounded p-2"
               style={{ backgroundColor: "#06CB6C", color: "#072C71" }}
             >
-              <FontAwesomeIcon icon={faChalkboardTeacher} /> Training &
-              Certification
+              <FontAwesomeIcon icon={faAward} /> Training & Certification
             </h1>
             <Link
               to="/home"
