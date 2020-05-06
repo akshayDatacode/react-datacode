@@ -7,6 +7,7 @@ import {
   faCoins,
   faTags,
   faGlobe,
+  faAward,
 } from "@fortawesome/free-solid-svg-icons";
 class CertificateShowCard extends Component {
   state = {};
@@ -20,39 +21,39 @@ class CertificateShowCard extends Component {
             </h3>
             <div className="row">
               <div className="col-6">
-                <FontAwesomeIcon icon={faChartBar} /> {this.props.level}
+                <FontAwesomeIcon icon={faChartBar} /> <b>{this.props.level}</b>{" "}
               </div>
               <div className="col-6">
-                <FontAwesomeIcon icon={faClock} /> {this.props.duration}
+                <FontAwesomeIcon icon={faClock} /> <b>{this.props.duration}</b>
               </div>
             </div>
             <div className="row mt-3">
               <div className="col-6">
-                <FontAwesomeIcon icon={faCoins} /> {this.props.enroll}
+                <FontAwesomeIcon icon={faCoins} /> <b>{this.props.enroll}</b>{" "}
               </div>
               <div className="col-6">
-                <FontAwesomeIcon icon={faGlobe} /> {this.props.platform}
+                <FontAwesomeIcon icon={faGlobe} /> <b>{this.props.platform}</b>
               </div>
             </div>
             <div className="row mt-3">
               <div className="col">
                 <FontAwesomeIcon icon={faTags} />{" "}
                 <snap
-                  className="rounded  pl-1 pr-1 text-weight-bold"
-                  style={{ backgroundColor: "blue", color: "white" }}
+                  className="rounded badge p-2 text-weight-bold"
+                  style={{ backgroundColor: "#2C7A2C", color: "white" }}
                 >
                   {" "}
                   {this.props.tag1}
                 </snap>{" "}
                 <snap
-                  className="rounded  pl-1 pr-1 text-weight-bold"
-                  style={{ backgroundColor: "orange", color: "black" }}
+                  className="rounded badge p-2 text-weight-bold"
+                  style={{ backgroundColor: "#3A2B6D", color: "white" }}
                 >
                   {this.props.tag2}
                 </snap>{" "}
                 <snap
-                  className="rounded  pl-1 pr-1 text-weight-bold"
-                  style={{ backgroundColor: "skyblue", color: "black" }}
+                  className="rounded badge p-2 text-weight-bold"
+                  style={{ backgroundColor: "#8C10DC", color: "white" }}
                 >
                   {this.props.tag3}
                 </snap>{" "}
@@ -61,16 +62,28 @@ class CertificateShowCard extends Component {
           </div>
           <div
             className="card-footer text-right p-2 "
-            style={{ backgroundColor: "#62F967" }}
+            style={{ backgroundColor: "#264767" }}
           >
-            <a href={this.props.link} target="_blank">
-              <h6
-                className="btn btn-sm border rounded mb-0"
-                style={{ backgroundColor: "green", color: "white" }}
-              >
-                Enroll Now
-              </h6>
-            </a>
+            <div className="row">
+              <div className="col-8 text-left">
+                <FontAwesomeIcon
+                  icon={faAward}
+                  size="2x"
+                  className="ml-3"
+                  color="white"
+                />
+              </div>
+              <div className="col-4">
+                <a href={this.props.link} target="_blank">
+                  <h6
+                    className="btn btn-sm rounded mb-0"
+                    style={{ backgroundColor: "#04FFD5", color: "#264767" }}
+                  >
+                    <b>Enroll Now</b>
+                  </h6>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </>
