@@ -2,10 +2,19 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import RightSideSection from "../../right_section/RightSideSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faBook } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHome,
+  faBook,
+  faChalkboardTeacher,
+  faPuzzlePiece,
+  faAward,
+} from "@fortawesome/free-solid-svg-icons";
 import RecommendPost from "../../right_section/RecommendPost";
 import RoadMapCard from "./RoadMapCard";
-import { faJava } from "@fortawesome/free-brands-svg-icons";
+import FbShare from "../FbShare";
+import FbLikeShare from "../../FbLikeShare";
+import Technologies from "../../right_section/Technologies";
+import CertificateShowCard from "./CertificateShowCard";
 
 class Java extends Component {
   state = {};
@@ -15,189 +24,130 @@ class Java extends Component {
   render() {
     return (
       <>
-        <div className="row">
+         <div className="row">
           <div className="col-1"></div>
-          <div className="col-md-7 mt-4">
-            <h1 className="text-center mb-4 display-5">
-              Find the Best Java Courses & Tutorials
-            </h1>
-            <Link to="/home" className="badge badge-primary mr-1">
-              <FontAwesomeIcon icon={faHome} size="2x" />
-            </Link>
-            <Link to="/index_technologies" className="badge badge-warning mr-1">
-              Technologies >
-            </Link>
-            <RoadMapCard
-              imgsource="java_tutorial.jpeg"
-              source="(youtube.com)"
-              title="Java Video Tutorial by Derek Banas "
-              tag1="Free"
-              tag2="Video"
-              link="https://www.youtube.com/playlist?list=PLE7E8B7F4856C9B19"
-            />
-            <RoadMapCard
-              imgsource="java_tutorial.jpeg"
-              source="(docs.oracle.com)"
-              title="The Java Tutorials by Oracle"
-              tag1="Free"
-              link="https://docs.oracle.com/javase/tutorial/"
-            />
-            <RoadMapCard
-              imgsource="java_tutorial.jpeg"
-              source="(youtube.com)"
-              title="Java Course - The New Boston"
-              tag1="Free"
-              tag2="Video"
-              link="https://www.youtube.com/watch?v=Hl-zzrqQoSE&list=PLFE2CE09D83EE3E28"
-            />
-            <RoadMapCard
-              imgsource="java_tutorial.jpeg"
-              source="(greenteapress.com)"
-              title="Think Java"
-              tag1="Free"
-              link="https://greenteapress.com/wp/think-java/"
-            />
-            <RoadMapCard
-              imgsource="java_tutorial.jpeg"
-              source="(javatpoint.com)"
-              title="Java Tutorial"
-              tag1="Free"
-              tag2="Beginner"
-              tag3="Book"
-              link="https://www.javatpoint.com/java-tutorial"
-            />
-            <RoadMapCard
-              imgsource="java_tutorial.jpeg"
-              source="(udacity.com)"
-              title="Intro to Java Programming"
-              tag1="Free"
-              tag2="Video"
-              link="https://www.udacity.com/course/java-programming-basics--ud282"
-            />
-            <RoadMapCard
-              imgsource="java_tutorial.jpeg"
-              source="(moocfi.github.io)"
-              title="Object-Oriented programming with Java"
-              tag1="Free"
-              link="https://moocfi.github.io/courses/2013/programming-part-1/"
-            />
-            <RoadMapCard
-              imgsource="java_tutorial.jpeg"
-              source="(youtube.com)"
-              title="Java JDBC Tutorial"
-              tag1="Free"
-              tag2=" Beginner"
-              link="https://www.youtube.com/playlist?list=PLEAQNNR8IlB4R7NfqBY1frapYo97L6fOQ"
-            />
-            <RoadMapCard
-              imgsource="java_tutorial.jpeg"
-              source="(eduonix.com)"
-              title="Java Programming Course for Beginner From Scratch"
-              tag1="Free"
-              tag2="Video"
-              link="https://www.eduonix.com/courses/Software-Development/Java-Programming-Course-for-Beginner-From-Scratch"
-            />
-            <RoadMapCard
-              imgsource="java_tutorial.jpeg"
-              source="(ibm.com)"
-              title="Java language basics"
-              tag1="Free"
-              link="https://developer.ibm.com/tutorials/j-introtojava1/"
-            />
-            <RoadMapCard
-              imgsource="java_tutorial.jpeg"
-              source="(udemy.com)"
-              title="Java Programming Masterclass for Software Developers"
-              tag1="Paid"
-              tag2="Video"
-              link="https://www.udemy.com/course/java-the-complete-java-developer-course/?LSNPUBID=jU79Zysihs4&ranEAID=jU79Zysihs4&ranMID=39197&ranSiteID=jU79Zysihs4-_It8GbJqTRqWtie65i0C3g"
-            />
-            <RoadMapCard
-              imgsource="java_tutorial.jpeg"
-              source="(manning.com)"
-              title="Seriously Good Software"
-              tag1="Paid"
-              tag2="Book"
-              link="https://www.manning.com/books/seriously-good-software"
-            />
-            <RoadMapCard
-              imgsource="java_tutorial.jpeg"
-              source="(coursera.org)"
-              title="Java Programming and Software Engineering Fundamentals"
-              tag1="Paid"
-              tag2="Beginner"
-              link="https://www.coursera.org/specializations/java-programming?ranMID=40328&ranEAID=jU79Zysihs4&ranSiteID=jU79Zysihs4-Wnlmve9Nu8Bq5W0IqQD0cw&siteID=jU79Zysihs4-Wnlmve9Nu8Bq5W0IqQD0cw&utm_content=10&utm_medium=partners&utm_source=linkshare&utm_campaign=jU79Zysihs4"
-            />
-            <RoadMapCard
-              imgsource="java_tutorial.jpeg"
-              source="(codecademy.com)"
-              title="Learn Java with Codecademy"
-              tag1="Paid"
-              tag2="Exercises/Practice-programs"
-              tag3="Beginner"
-              link="https://www.codecademy.com/learn/learn-java?utm_source=rakuten&utm_medium=affiliate&utm_campaign=Hackr.io&utm_content=10-1&ranMID=44188&ranEAID=jU79Zysihs4&ranSiteID=jU79Zysihs4-2F4HetFX_gT_DtUJE_8CkA"
-            />
-            <RoadMapCard
-              imgsource="java_tutorial.jpeg"
-              source="(javawebscrapinghandbook.com)"
-              title="A Step by Step Guide to Web Scraping"
-              tag1="Paid"
-              tag2="Book"
-              link="https://www.javawebscrapinghandbook.com/"
-            />
-            <RoadMapCard
-              imgsource="java_tutorial.jpeg"
-              source="(manning.com)"
-              title="Modern Java in Action"
-              tag1="Paid"
-              tag2="Book"
-              tag3="Advanced"
-              link="https://www.manning.com/books/modern-java-in-action"
-            />
-            <RoadMapCard
-              imgsource="java_tutorial.jpeg"
-              source="(codegym.cc)"
-              title="CodeGym - Online Java Course"
-              tag1="Paid"
-              tag2="Exercises/Practice-programs"
-              tag3="Beginner"
-              link="https://codegym.cc/"
-            />
-            <RoadMapCard
-              imgsource="java_tutorial.jpeg"
-              source="(coursera.org)"
-              title="Object Oriented Java Programming: Data Structures and Beyond Specialization"
-              tag1="Paid"
-              tag2="Video"
-              link="https://www.coursera.org/specializations/java-object-oriented?ranMID=40328&ranEAID=jU79Zysihs4&ranSiteID=jU79Zysihs4-tzxJpzWwop0FntgoboWIqg&siteID=jU79Zysihs4-tzxJpzWwop0FntgoboWIqg&utm_content=10&utm_medium=partners&utm_source=linkshare&utm_campaign=jU79Zysihs4"
-            />
-            <RoadMapCard
-              imgsource="java_tutorial.jpeg"
-              source="(teamtreehouse.com)"
-              title="Learn Java"
-              tag1="Paid"
-              tag2="Video"
-              link="https://teamtreehouse.com/tracks/learn-java?irgwc=1&click_id=X6R3A1ylNxyOUDBwUx0Mo3QwUkixo2xwKSCjWA0&iradid=228915&ircid=3944&irpid=383034&iradname=Online%20Tracking%20Link&iradtype=ONLINE_TRACKING_LINK&iradsize=&irmpname=Hackr.io&irmptype=mediapartner&utm_source=ir&cid=4612"
-            />
-            <RoadMapCard
-              imgsource="java_tutorial.jpeg"
-              source="(packtpub.com)"
-              title="Learn Java 12 Programming"
-              tag1="Paid"
-              tag2="Book"
-              link="https://www.packtpub.com/in/application-development/learn-java-12-programming"
-            />
-          </div>
-          <div className="col-md-4 mt-md-5 ">
-            <h2 className="text-center text-primary mt-2 mb-3">
-              <FontAwesomeIcon icon={faJava} size="1x" className="mr-2" />
-              Java Learning
+          <div className="col-md-8 mt-4 ">
+            <h2
+              className="text-center mb-4 display-5"
+              style={{ color: "#072C71" }}
+            >
+              Find the Best DataStructure Training & Certification
             </h2>
-            <RecommendPost
-              imgsource="java_mcq.jpeg"
-              RecPostHading="Java MCQs"
-              link="/index_java_mcqss"
-            />
+            <Link
+              to="/home"
+              className="badge mr-1"
+              style={{ backgroundColor: "#06CB6C" }}
+            >
+              <FontAwesomeIcon icon={faHome} size="2x" color="#072C71" />
+            </Link>
+            <Link
+              to="/index_training_certification"
+              className="badge mr-1"
+              style={{ backgroundColor: "#072C71" }}
+            >
+              <FontAwesomeIcon icon={faAward} size="2x" color="#06CB6C" />
+            </Link>
+
+           <div className="card-deck">
+              <CertificateShowCard
+                title="Building a Text-Based Bank in Java"
+                level="Beginner"
+                duration="2 hr "
+                enroll="Paid"
+                platform="Coursera"
+                tag1="Coomputer Science"
+                tag2="Software Development"
+                link="https://www.coursera.org/projects/building-a-java-application-banking"
+              />
+              <CertificateShowCard
+                title="Java Programming: Solving Problems with Software"
+                level="Beginner"
+                duration="14 hr"
+                enroll="Pay for Certificate only"
+                platform="Coursera"
+                tag1="Software Development"
+                tag2="Java"
+                link="https://www.coursera.org/learn/java-programming"
+              />
+            </div>
+
+            <div className="card-deck">
+              <CertificateShowCard
+                title="Java Programming: Arrays, Lists, and Structured Data"
+                level="Beginner"
+                duration="11 hr"
+                enroll="Pay for Certificate only"
+                platform="Coursera"
+                tag1="Coomputer Science"
+                tag2="Java"
+                tag3="DataStructures"
+                link="https://www.coursera.org/learn/java-programming-arrays-lists-data"
+              />
+              <CertificateShowCard
+                title="Parallel, Concurrent, and Distributed Programming in Java Specialization"
+                level="Intermediate"
+                duration="3 months"
+                enroll="Pay for Certificate only"
+                platform=""
+                tag2="Parallel"
+                tag3="Concurrent"
+                tag4="Distributed"
+                tag1="Programming"
+                link="https://www.coursera.org/specializations/pcdp"
+              />
+            </div>
+
+            <div className="card-deck">
+              <CertificateShowCard
+                title="Java Certification Training Course
+                "
+                level="Beginner"
+                duration="70 hrs"
+                enroll="Paid"
+                platform="simplilearn"
+                tag4="Java"
+
+                tag1="software-development"
+                tag2="training"
+                tag3="mobile development"
+                link="https://www.simplilearn.com/mobile-and-software-development/java-javaee-soa-development-training"
+              />
+              <CertificateShowCard
+                title="Full Stack Java Developer"
+                level="Beginner"
+                duration="120 hr"
+                enroll="Paid"
+                platform="simplilearn"
+                tag1="Full Stack"
+                tag2="Java"
+                tag3="Developer"
+                tag4="Training"
+                link="https://www.simplilearn.com/java-full-stack-developer-certification-training-course"
+              />
+            </div>
+</div>
+<div className="col-md-3 mt-md-5 mt-3">
+            <div className="row">
+              <FbLikeShare />{" "}
+            </div>
+            <div className="row text-center mt-5">
+              <div className="col">
+                {" "}
+                <FontAwesomeIcon
+                  icon={faBook}
+                  color="#133658"
+                  size="4x"
+                  className="text-center"
+                />
+                <h5
+                  className="text-center mt-2 mb-md-4 mb-3"
+                  style={{ color: "#133658" }}
+                >
+                  Java Programming Learning
+                </h5>
+              </div>
+            </div>
+
             <RecommendPost
               imgsource="java_interview_questions.jpeg"
               RecPostHading="Java Interview Questions"
@@ -209,20 +159,59 @@ class Java extends Component {
               link="/java_programming_questions"
             />
             <RecommendPost
-              imgsource="java_quize.jpeg"
-              RecPostHading="Java Quize Test"
-              link="/java_quize_tests"
-            />
-            <RecommendPost
               imgsource="programming_blog.jpeg"
               RecPostHading="Java Programming Blogs"
               link="/prog_lan_blog"
+            />
+
+            <div className="row text-center mt-5">
+              <div className="col">
+                {" "}
+                <FontAwesomeIcon
+                  icon={faPuzzlePiece}
+                  color="#133658"
+                  size="4x"
+                  className="text-center"
+                />
+                <h5
+                  className="text-center mt-2 mb-md-4 mb-3"
+                  style={{ color: "#133658" }}
+                >
+                  Java Programming Practice
+                </h5>
+              </div>
+            </div>
+            <RecommendPost
+              imgsource="java_practice_questions_beginner.jpeg"
+              RecPostHading="Java Programming Practice Problems"
+              link="/index_practice_questions"
+            />
+            <RecommendPost
+              imgsource="java_mcq.jpeg"
+              RecPostHading="Java MCQs"
+              link="/index_java_mcqs"
+            />
+            <RecommendPost
+              imgsource="java_quize_test.jpeg"
+              RecPostHading="Java Quize Test"
+              link="/java_quize_tests"
             />
             <RecommendPost
               imgsource="code_challange.jpeg"
               RecPostHading="Weekly Code Challanges"
               link="/index_code_challange"
             />
+<a href="https://stude.co/848611" target="_blank">
+              <img
+                className=" card-img-top mx-auto img-fluid img-circle d-block mt-5 "
+                src={require("../../../assets/images/bitdegree.jpeg")}
+                alt="avatar"
+              />
+            </a>
+            
+
+
+            <Technologies />
             <RightSideSection />
           </div>
         </div>
