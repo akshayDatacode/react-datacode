@@ -5,18 +5,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHome,
   faBook,
-  faChalkboardTeacher,
   faPuzzlePiece,
   faAward,
 } from "@fortawesome/free-solid-svg-icons";
 import RecommendPost from "../../right_section/RecommendPost";
-import RoadMapCard from "./RoadMapCard";
-import FbShare from "../FbShare";
 import FbLikeShare from "../../FbLikeShare";
 import Technologies from "../../right_section/Technologies";
 import CertificateShowCard from "./CertificateShowCard";
 
-class C extends Component {
+class MachineLearning extends Component {
   state = {};
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -31,7 +28,7 @@ class C extends Component {
               className="text-center mb-4 display-5"
               style={{ color: "#072C71" }}
             >
-              Find the Best C Programming Training & Certification
+              Find the Best MachineLearning Training & Certification
             </h2>
             <Link
               to="/home"
@@ -47,70 +44,19 @@ class C extends Component {
             >
               <FontAwesomeIcon icon={faAward} size="2x" color="#06CB6C" />
             </Link>
+
             <div className="card-deck">
               <CertificateShowCard
-                title="C for Everyone: Programming Fundamentals"
-                level="Beginner"
-                duration="22 hrs"
-                enroll="Pay for Certificate only"
-                platform="Coursera.com"
-                tag1="C Programming"
-                tag2="Software Developemt"
-                tag3="Developments"
-                tag4="Computer Science"
-                link="https://www.coursera.org/learn/c-for-everyone"
-              />
-              <CertificateShowCard
-                title="Programming Fundamentals"
-                level="Beginner"
-                duration="12 hrs"
-                enroll="Pay for Certificate only"
-                platform="Coursera.com"
-                tag1="C Programming"
-                tag2="Development"
-                tag3="Learning"
-                tag4="Skills"
-                link="https://www.coursera.org/learn/programming-fundamentals"
-              />
-            </div>
-            <div className="card-deck">
-              <CertificateShowCard
-                title="Writing, Running, and Fixing Code in C"
-                level="Beginner"
-                duration="15 hrs"
-                enroll="Pay for Certificate only"
-                platform="Coursera.com"
-                tag1="C Programming"
-                tag2="Logical Programming"
-                tag3="Learning"
-                tag4="Code"
-                link="https://www.coursera.org/learn/writing-running-fixing-code"
-              />
-              <CertificateShowCard
-                title="Introduction to Computer Programming"
-                level="Beginner"
-                duration="18 hrs"
-                enroll="Pay for Certificate only"
-                platform="Coursera.com"
-                tag1="C Programming"
-                tag2="Logical Programming"
-                tag3="Learning"
-                tag4="Code"
-                link="https://www.coursera.org/learn/introduction-to-computer-programming"
-              />
-            </div>
-            <div className="card-deck">
-              <CertificateShowCard
-                title="C for Everyone: Structured Programming"
-                level="Intermediate"
-                duration="10 hr"
-                enroll="Pay for Certificate only"
-                platform="Coursera.com"
-                tag1="C Programming"
-                tag2="Intermediate"
-                tag3="Structured Programming"
-                tag4="Code"
-                link="https://www.coursera.org/learn/c-structured-programming"
+                title=""
+                level=""
+                duration=""
+                enroll=""
+                platform=""
+                tag1=""
+                tag2=""
+                tag3=""
+                tag4=""
+                link=""
               />
               <CertificateShowCard
                 title=""
@@ -227,9 +173,9 @@ class C extends Component {
               RecPostHading="Weekly Code Challanges"
               link="/index_code_challange"
             />
-            <a href="https://stude.co/848611" target="_blank">
+            <a href="https://stude.co/848611" target="_blank" className="mt-3">
               <img
-                className=" card-img-top mx-auto img-fluid img-circle d-block mt-5 "
+                className=" card-img-top mx-auto img-fluid img-circle d-block "
                 src={require("../../../assets/images/bitdegree.jpeg")}
                 alt="avatar"
               />
@@ -244,4 +190,4 @@ class C extends Component {
   }
 }
 
-export default C;
+export default MachineLearning;

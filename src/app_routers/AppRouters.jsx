@@ -315,6 +315,11 @@ import OOPsTrainingCertification from "../components/main_component/training_and
 import AngularTrainingCertification from "../components/main_component/training_and_certification/AngularTrainingCertification";
 import ReactJSTrainingCertification from "../components/main_component/training_and_certification/ReactTrainingCertification";
 import AndroidTrainingCertification from "../components/main_component/training_and_certification/AndroidTrainingCertification";
+import ComputerScienceTrainingCertification from "../components/main_component/training_and_certification/ComputerScienceTrainingCertification";
+import DataScienceTrainingCertification from "../components/main_component/training_and_certification/DataScienceTrainingCertification";
+import MachineLearningTrainingCertification from "../components/main_component/training_and_certification/MachineLearningTrainingCertification";
+import WebdevelopmentTrainingCertification from "../components/main_component/training_and_certification/WebdevelopmentTrainingCertification";
+import SwiftTrainingCertification from "../components/main_component/training_and_certification/SwiftTrainingCertification";
 
 class AppRouters extends Component {
   state = {};
@@ -823,6 +828,31 @@ class AppRouters extends Component {
             exact
             path="/index_training_certification"
             component={IndexTrainingCertification}
+          />
+          <Route
+            exact
+            path="/datascience_training_certification"
+            component={DataScienceTrainingCertification}
+          />
+          <Route
+            exact
+            path="/computerscience_training_certification"
+            component={ComputerScienceTrainingCertification}
+          />
+          <Route
+            exact
+            path="/machinelearning_training_certification"
+            component={MachineLearningTrainingCertification}
+          />
+          <Route
+            exact
+            path="/webdevelopment_training_certification"
+            component={WebdevelopmentTrainingCertification}
+          />
+          <Route
+            exact
+            path="/swift_training_certification"
+            component={SwiftTrainingCertification}
           />
           <Route
             exact

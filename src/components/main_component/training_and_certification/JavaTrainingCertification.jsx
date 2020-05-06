@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import RightSideSection from "../../right_section/RightSideSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faBook } from "@fortawesome/free-solid-svg-icons";
-import PostCard from "../PostCard";
 import RecommendPost from "../../right_section/RecommendPost";
 import RoadMapCard from "./RoadMapCard";
 import { faJava } from "@fortawesome/free-brands-svg-icons";

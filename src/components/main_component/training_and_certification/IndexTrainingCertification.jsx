@@ -11,6 +11,9 @@ import {
   faAmericanSignLanguageInterpreting,
   faChalkboardTeacher,
   faAward,
+  faWindowMaximize,
+  faColumns,
+  faTv,
 } from "@fortawesome/free-solid-svg-icons";
 import RightSideSection from "../../right_section/RightSideSection";
 import {
@@ -54,7 +57,48 @@ class IndexTrainingCertification extends Component {
             >
               <FontAwesomeIcon icon={faHome} size="2x" color="#633974" />
             </Link>
-
+            <div className="card-deck mt-4">
+              <div className="card text-center p-2">
+                <Link to="/webdevelopment_training_certification">
+                  <center>
+                    <FontAwesomeIcon
+                      icon={faColumns}
+                      size="4x"
+                      color="#633974"
+                    />
+                  </center>
+                  Web Development
+                </Link>
+              </div>
+              <div className="card text-center p-2">
+                <Link to="/datascience_training_certification">
+                  <center>
+                    <FontAwesomeIcon
+                      icon={faPython}
+                      size="4x"
+                      color="#633974"
+                    />
+                  </center>
+                  DataScience
+                </Link>
+              </div>
+              <div className="card text-center p-2">
+                <Link to="/machinelearning_training_certification">
+                  <center>
+                    <FontAwesomeIcon icon={faJava} size="4x" color="#633974" />
+                  </center>
+                  Machine Learning
+                </Link>
+              </div>
+              <div className="card text-center p-2">
+                <Link to="/computerscience_training_certification">
+                  <center>
+                    <FontAwesomeIcon icon={faTv} size="4x" color="#633974" />
+                  </center>
+                  Computer Science
+                </Link>
+              </div>
+            </div>
             <div className="card-deck mt-4">
               <div className="card text-center p-2">
                 <Link to="/c_training_certification">
@@ -245,7 +289,7 @@ class IndexTrainingCertification extends Component {
                 </Link>
               </div>
               <div className="card text-center p-2">
-                <Link to="/python_training_certification">
+                <Link to="/swift_training_certification">
                   <center>
                     <FontAwesomeIcon icon={faSwift} size="4x" color="#633974" />
                   </center>
