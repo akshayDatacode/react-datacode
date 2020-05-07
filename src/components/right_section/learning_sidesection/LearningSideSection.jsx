@@ -365,7 +365,7 @@ class LearningSideSection extends Component {
                   className="text-center mt-2 mb-md-4 mb-3"
                   style={{ color: "#133658" }}
                 >
-                  JS Learning
+                  Javascript Learning
                 </h5>
               </div>
             </div>
@@ -405,7 +405,7 @@ class LearningSideSection extends Component {
                   className="text-center mt-2 mb-md-4 mb-3"
                   style={{ color: "#133658" }}
                 >
-                  Javascript Programming Practice
+                  Javascript Practice
                 </h5>
               </div>
             </div>
@@ -416,7 +416,7 @@ class LearningSideSection extends Component {
               link="/index_js_mcqs"
             />
             <RecommendPost
-              imgsource="js_quize_test.jpeg"
+              imgsource="js_quize.jpeg"
               RecPostHading="Javascript Quize Test"
               link="/js_quizes_tests"
             />

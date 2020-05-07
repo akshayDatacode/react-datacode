@@ -2,16 +2,11 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import RightSideSection from "../../right_section/RightSideSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHome,
-  faBook,
-  faPuzzlePiece,
-  faAward,
-} from "@fortawesome/free-solid-svg-icons";
-import RecommendPost from "../../right_section/RecommendPost";
+import { faHome, faAward } from "@fortawesome/free-solid-svg-icons";
 import FbLikeShare from "../../FbLikeShare";
 import Technologies from "../../right_section/Technologies";
 import CertificateShowCard from "./CertificateShowCard";
+import LearningSideSection from "../../right_section/learning_sidesection/LearningSideSection";
 
 class Webdevelopment extends Component {
   state = {};
@@ -45,6 +40,22 @@ class Webdevelopment extends Component {
               <FontAwesomeIcon icon={faAward} size="2x" color="#06CB6C" />
             </Link>
 
+            <h3 className="mt-3 mb-0">
+              <code>Upcoimng Training </code>
+            </h3>
+            <div className="card-deck">
+              <CertificateShowCard
+                title="The Youth Project : Full Stack Javascript Deployment"
+                level="Beginner"
+                duration="6 week"
+                enroll="Paid"
+                platform="The Youth Project"
+                tag1="Full Stack"
+                tag2="NodeJs"
+                tag3="Deployment"
+                link="https://drive.google.com/open?id=1N7Xk4ryxHhTXQDRO_ugccgjm3CIOHlm2"
+              />
+            </div>
             <div className="card-deck">
               <CertificateShowCard
                 title="Programming Foundations with JavaScript, HTML and CSS"
@@ -139,7 +150,6 @@ class Webdevelopment extends Component {
                 tag1="web applications"
                 tag2="architecture"
                 tag3="Intermediate"
-                
                 link="https://www.open.edu/openlearn/science-maths-technology/introduction-web-applications-architecture/content-section-0?active-tab=description-tab"
               />
             </div>
@@ -168,7 +178,7 @@ class Webdevelopment extends Component {
             </div>
 
             <div className="card-deck">
-            <CertificateShowCard
+              <CertificateShowCard
                 title="Introducing Coding for Beginners: an HTML and CSS Online Course"
                 level="Beginner"
                 duration="23 hr"
@@ -179,7 +189,7 @@ class Webdevelopment extends Component {
                 tag3=" Beginners"
                 link="https://stude.co/848611/coding-for-beginners-space-doggos"
               />
-               <CertificateShowCard
+              <CertificateShowCard
                 title="Bootstrap and PHP Blog Tutorial Step by Step"
                 level="Beginner"
                 duration="20 hr"
@@ -192,7 +202,7 @@ class Webdevelopment extends Component {
               />
             </div>
             <div className="card-deck">
-            <CertificateShowCard
+              <CertificateShowCard
                 title="Learn HTML5 and CSS3 to Build a HTML5 Website from Scratch"
                 level="Beginner"
                 duration="35 hr"
@@ -203,7 +213,7 @@ class Webdevelopment extends Component {
                 tag3="Website"
                 link="https://stude.co/848611/learn-html5-and-css3"
               />
-               <CertificateShowCard
+              <CertificateShowCard
                 title="Web Development Training: Start Your Career as a Front End Developer"
                 level="Beginner"
                 duration="62 hr"
@@ -216,7 +226,7 @@ class Webdevelopment extends Component {
               />
             </div>
             <div className="card-deck">
-            <CertificateShowCard
+              <CertificateShowCard
                 title="REST API Tutorial For Beginners: Learn How to Code & Develop REST APIs"
                 level="Beginner"
                 duration="18 hr"
@@ -227,87 +237,16 @@ class Webdevelopment extends Component {
                 tag3="Code"
                 link="https://stude.co/848611/rest-api-tutorial"
               />
-           
             </div>
           </div>
           <div className="col-md-3 mt-md-5 mt-3">
             <div className="row">
               <FbLikeShare />{" "}
             </div>
-            <div className="row text-center mt-5">
-              <div className="col">
-                {" "}
-                <FontAwesomeIcon
-                  icon={faBook}
-                  color="#133658"
-                  size="4x"
-                  className="text-center"
-                />
-                <h5
-                  className="text-center mt-2 mb-md-4 mb-3"
-                  style={{ color: "#133658" }}
-                >
-                   Web Development Learning
-                </h5>
-              </div>
-            </div>
-
-            <RecommendPost
-              imgsource="c_interview_questions.jpeg"
-              RecPostHading="C Interview Questions"
-              link="/c_interview_question"
-            />
-            <RecommendPost
-              imgsource="c_programming_question.jpeg"
-              RecPostHading="C Programming Questions"
-              link="/c_programming_questions"
-            />
-            <RecommendPost
-              imgsource="programming_blog.jpeg"
-              RecPostHading="C Programming Blogs"
-              link="/prog_lan_blog"
-            />
-
-            <div className="row text-center mt-5">
-              <div className="col">
-                {" "}
-                <FontAwesomeIcon
-                  icon={faPuzzlePiece}
-                  color="#133658"
-                  size="4x"
-                  className="text-center"
-                />
-                <h5
-                  className="text-center mt-2 mb-md-4 mb-3"
-                  style={{ color: "#133658" }}
-                >
-                  Web Development Practice
-                </h5>
-              </div>
-            </div>
-            <RecommendPost
-              imgsource="c_practice_questions_beginner.jpeg"
-              RecPostHading="C Programming Practice Problems"
-              link="/index_practice_questions"
-            />
-            <RecommendPost
-              imgsource="c_mcq.jpeg"
-              RecPostHading="C MCQs"
-              link="/index_c_mcqs"
-            />
-            <RecommendPost
-              imgsource="c_quize_test.jpeg"
-              RecPostHading="C Quize Test"
-              link="/c_quizes_tests"
-            />
-            <RecommendPost
-              imgsource="code_challange.jpeg"
-              RecPostHading="Weekly Code Challanges"
-              link="/index_code_challange"
-            />
+            <LearningSideSection language="js" />
             <a href="https://stude.co/848611" target="_blank">
               <img
-                className=" card-img-top mx-auto img-fluid img-circle d-block "
+                className=" card-img-top mx-auto  img-fluid img-circle d-block mt-4 "
                 src={require("../../../assets/images/bitdegree.jpeg")}
                 alt="avatar"
               />
