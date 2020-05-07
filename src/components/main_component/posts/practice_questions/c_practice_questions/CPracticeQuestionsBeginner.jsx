@@ -8,6 +8,7 @@ import HeaderCard from "../../../HeaderCard";
 import PracticeQuestionCard from "../PracticeQuestionCard";
 import Discuss from "../../../Discuss";
 import Technologies from "../../../../right_section/Technologies";
+import LearningSideSection from "../../../../right_section/learning_sidesection/LearningSideSection";
 
 class CPracticeQuestionsBeginner extends Component {
   state = {};
@@ -134,6 +135,7 @@ class CPracticeQuestionsBeginner extends Component {
           </div>
 
           <div className="col-md-3">
+            <LearningSideSection language="c" />
             <RightSideSection />
             <Technologies />
           </div>

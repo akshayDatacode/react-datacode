@@ -8,6 +8,8 @@ import HeaderCard from "../../../HeaderCard";
 import { faHome, faCode } from "@fortawesome/free-solid-svg-icons";
 import Discuss from "../../../Discuss";
 import Technologies from "../../../../right_section/Technologies";
+import LearningSideSection from "../../../../right_section/learning_sidesection/LearningSideSection";
+
 class CPracticeQuestionsAdvance extends Component {
   state = {};
   componentDidMount() {
@@ -138,6 +140,7 @@ class CPracticeQuestionsAdvance extends Component {
           </div>
 
           <div className="col-md-3">
+            <LearningSideSection language="c" />
             <RightSideSection />
             <Technologies />
           </div>

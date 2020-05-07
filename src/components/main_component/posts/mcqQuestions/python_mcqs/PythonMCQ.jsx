@@ -8,6 +8,7 @@ import RightSideSection from "../../../../right_section/RightSideSection";
 import RecommendPost from "../../../../right_section/RecommendPost";
 import MCQCardCarousel from "../MCQCardCarousel";
 import HeaderCard from "../../../HeaderCard";
+import LearningSideSection from "../../../../right_section/learning_sidesection/LearningSideSection";
 
 class PythonMCQ extends Component {
   state = {
@@ -96,7 +97,7 @@ class PythonMCQ extends Component {
                   <Quize
                     quizeNo="5"
                     question="What are the values of the following Python expressions?"
-                    language="Python"
+                    language="python"
                     code={`2**(3**2)
 (2**3)**2
 2**3**2`}
@@ -120,7 +121,7 @@ class PythonMCQ extends Component {
                   <Quize
                     quizeNo="7"
                     question="What will be the output of the following Python code?"
-                    language="Python"
+                    language="python"
                     code={`['f', 't'][bool('spam')]`}
                     correctAnswer="t"
                     v1="t"
@@ -132,7 +133,7 @@ class PythonMCQ extends Component {
                   <Quize
                     quizeNo="8"
                     question="What will be the output of the following Python code?"
-                    language="Python"
+                    language="python"
                     code={`l=list('HELLO')
 p=l[0], l[-1], l[1:3]
 'a={0}, b={1}, c={2}'.format(*p)`}
@@ -146,7 +147,7 @@ p=l[0], l[-1], l[1:3]
                   <Quize
                     quizeNo="9"
                     question="What will be the output of the following Python code snippet?"
-                    language="Python"
+                    language="python"
                     code={`print('Ab!2'.swapcase())`}
                     correctAnswer="aB!2"
                     v1="AB!@"
@@ -158,7 +159,7 @@ p=l[0], l[-1], l[1:3]
                   <Quize
                     quizeNo="10"
                     question="What will be the output of the following Python code?"
-                    language="Python"
+                    language="python"
                     code={`a=[13,56,17]
 a.append([87])
 a.extend([45,67])s
@@ -181,27 +182,7 @@ print(a)`}
               </div>
             </div>
             <div className="col-md-4 ">
-              <h4>Recommended for you</h4>
-              <RecommendPost
-                imgsource="python_mcq.jpeg"
-                RecPostHading="Python MCQs Set 2"
-                link="/python_mcq_2"
-              />
-              <RecommendPost
-                imgsource="python_mcq.jpeg"
-                RecPostHading="Python MCQs Set 3"
-                link="/python_mcq_3"
-              />
-              <RecommendPost
-                imgsource="python_mcq.jpeg"
-                RecPostHading="Python MCQs Set 4"
-                link="/python_mcq_4"
-              />
-              <RecommendPost
-                imgsource="python_mcq.jpeg"
-                RecPostHading="Python MCQs Set 5"
-                link="/python_mcq_5"
-              />
+              <LearningSideSection language="python" />
               <RightSideSection />
             </div>
           </div>

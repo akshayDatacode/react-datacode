@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import PracticeQuestionCardCarousel from "../PracticeQuestionCardCarousel";
 import RightSideSection from "../../../../right_section/RightSideSection";
 import Technologies from "../../../../right_section/Technologies";
+import LearningSideSection from "../../../../right_section/learning_sidesection/LearningSideSection";
 class IndexCPracticeQuestions extends Component {
   state = {};
   componentDidMount() {
@@ -76,6 +77,7 @@ class IndexCPracticeQuestions extends Component {
           </div>
 
           <div className="col-md-3">
+            <LearningSideSection language="c" />
             <RightSideSection />
             <Technologies />
           </div>

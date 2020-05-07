@@ -9,7 +9,7 @@ import MCQCardCarousel from "../MCQCardCarousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import HeaderCard from "../../../HeaderCard";
-
+import LearningSideSection from "../../../../right_section/learning_sidesection/LearningSideSection";
 
 class CMCQ1 extends Component {
   state = {
@@ -29,13 +29,9 @@ class CMCQ1 extends Component {
   render() {
     return (
       <>
-   <HeaderCard
-          title="C MCQs Set 1"
-          color="#FFD700"
-          textcolor="black"
-        />   
+        <HeaderCard title="C MCQs Set 1" color="#FFD700" textcolor="black" />
 
-<div class="container-fluid">
+        <div class="container-fluid">
           <div className="row">
             <div className="col-1"></div>
             <div className="col-md-7 ">
@@ -44,13 +40,9 @@ class CMCQ1 extends Component {
                   <FontAwesomeIcon icon={faHome} size="1x" />
                 </Link>
                 <Link to="/index_mcqs" className="badge badge-info  mr-1">
-                  
                   MCQs >>
                 </Link>
-                <Link
-                  to="/index_c_mcqs"
-                  className="badge badge-success mr-1"
-                >
+                <Link to="/index_c_mcqs" className="badge badge-success mr-1">
                   C MCQs >>
                 </Link>
                 <ScoreCard count={this.state.count} />
@@ -407,24 +399,9 @@ void foo()
               </div>
             </div>
             <div className="col-md-4">
+              <LearningSideSection language="c" />
               <RightSideSection />
               <h5 className="mb-3">Recommended for you</h5>
-              <RecommendPost
-                imgsource="c_mcq.jpeg"
-                RecPostHading="C MCQs Set 2"
-                link="/c_mcq_2"
-              />
-              <RecommendPost
-                imgsource="python_mcqs.jpeg"
-                RecPostHading="Python MCQs Questions"
-                link="/index_python_mcqs"
-              />
-              <RecommendPost
-                imgsource="java_mcqs.jpeg"
-                RecPostHading="Java MCQs Questions"
-                link="/index_java_mcqs"
-              />
-              
             </div>
           </div>
         </div>

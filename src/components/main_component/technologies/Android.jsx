@@ -13,6 +13,7 @@ import RoadMapCard from "./RoadMapCard";
 import FbShare from "../FbShare";
 import FbLikeShare from "../../FbLikeShare";
 import Technologies from "../../right_section/Technologies";
+import LearningSideSection from "../../right_section/learning_sidesection/LearningSideSection";
 
 class Android extends Component {
   state = {};
@@ -22,14 +23,14 @@ class Android extends Component {
   render() {
     return (
       <>
-         <div className="row">
+        <div className="row">
           <div className="col-1"></div>
           <div className="col-md-7 mt-4">
             <h2
               className="text-center mb-4 display-5"
               style={{ color: "#072C71" }}
             >
-              Find the Best Android  Programming Courses & Tutorials
+              Find the Best Android Programming Courses & Tutorials
             </h2>
             <Link
               to="/home"
@@ -223,61 +224,7 @@ class Android extends Component {
             <div className="row">
               <FbLikeShare />{" "}
             </div>
-            <div className="row text-center mt-5">
-              <div className="col">
-                {" "}
-                <FontAwesomeIcon
-                  icon={faBook}
-                  color="#133658"
-                  size="4x"
-                  className="text-center"
-                />
-                <h5
-                  className="text-center mt-2 mb-md-4 mb-3"
-                  style={{ color: "#133658" }}
-                >
-                   Android Learning
-                </h5>
-              </div>
-            </div>
-
-            <RecommendPost
-              imgsource="android_interview_questions.jpeg"
-              RecPostHading="Android Interview Questions"
-              link="/android_interview_question"
-            />
-            
-            <RecommendPost
-              imgsource="programming_blog.jpeg"
-              RecPostHading="Android Blogs"
-              link="/prog_lan_blog"
-            />
-
-            <div className="row text-center mt-5">
-              <div className="col">
-                {" "}
-                <FontAwesomeIcon
-                  icon={faPuzzlePiece}
-                  color="#133658"
-                  size="4x"
-                  className="text-center"
-                />
-                <h5
-                  className="text-center mt-2 mb-md-4 mb-3"
-                  style={{ color: "#133658" }}
-                >
-                  Android Practice
-                </h5>
-              </div>
-            </div>
-           
-            <RecommendPost
-              imgsource="android_mcq.jpeg"
-              RecPostHading="Android MCQs"
-              link="/index_android_mcqs"
-            />
-         
-
+            <LearningSideSection language="android" />
             <Technologies />
             <RightSideSection />
           </div>
