@@ -2,19 +2,11 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import RightSideSection from "../../right_section/RightSideSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHome,
-  faBook,
-  faChalkboardTeacher,
-  faPuzzlePiece,
-  faAward,
-} from "@fortawesome/free-solid-svg-icons";
-import RecommendPost from "../../right_section/RecommendPost";
-import RoadMapCard from "./RoadMapCard";
-import FbShare from "../FbShare";
+import { faHome, faAward } from "@fortawesome/free-solid-svg-icons";
 import FbLikeShare from "../../FbLikeShare";
 import Technologies from "../../right_section/Technologies";
 import CertificateShowCard from "./CertificateShowCard";
+import LearningSideSection from "../../right_section/learning_sidesection/LearningSideSection";
 
 class Java extends Component {
   state = {};
@@ -88,7 +80,7 @@ class Java extends Component {
                 level="Intermediate"
                 duration="3 months"
                 enroll="Pay for Certificate only"
-                platform=""
+                platform="Coursera"
                 tag2="Parallel"
                 tag3="Concurrent"
                 tag4="Distributed"
@@ -105,7 +97,7 @@ class Java extends Component {
                 duration="70 hrs"
                 enroll="Paid"
                 platform="simplilearn"
-                tag4="Java"
+                tag2="Java"
 
                 tag1="software-development"
                 tag2="training"
@@ -125,91 +117,139 @@ class Java extends Component {
                 link="https://www.simplilearn.com/java-full-stack-developer-certification-training-course"
               />
             </div>
+
+            <div className="card-deck">
+              <CertificateShowCard
+                title="Java Tutorial for Complete Beginners"
+                level="Beginner"
+                duration="16hr 7min"
+                enroll="FREE"
+                platform="Udemy"
+                tag2="Java"
+                tag1="Tutorial"
+                link="https://www.udemy.com/course/java-tutorial/"
+                />
+                 <CertificateShowCard
+                title="20 Small Programs in Java
+                "
+                level="Intermediate"
+                duration="58min"
+                enroll="FREE"
+                platform="Udemy"
+                tag2="Java"
+                tag1="Programs"
+                link="https://www.udemy.com/course/10-small-programs-in-java/"
+                />
+              </div>
+              <div className="card-deck">
+              <CertificateShowCard
+                title="Simple Game Programming From Scratch with libGDX and java
+                "
+                level="Intermediate"
+                duration="1hr 22min"
+                enroll="FREE"
+                platform="Udemy"
+                tag2="Java"
+                tag1="Programming"
+                tag2="Scratch"
+                link="https://www.udemy.com/course/game-programming-with-libgdx-and-java"
+                />
+                 <CertificateShowCard
+                title="An Introduction to Java Programming
+                "
+                level="Beginner"
+                duration="1hr 23min"
+                enroll="FREE"
+                platform="Udemy"
+                tag2="Java"
+                tag1="Programming"
+                tag2="Introduction"
+                link="https://www.udemy.com/course/an-introduction-to-java-programming"
+                />
+              </div>
+              <div className="card-deck">
+              <CertificateShowCard
+                title="String, StringBuffer & StringBuilder for JAVA Interviews
+                "
+                level="Intermediate"
+                duration="5hr 11min"
+                enroll="FREE"
+                platform="Udemy"
+                tag2="Java"
+                tag1="String"
+                tag2="Interviews"
+                link="https://www.udemy.com/course/string-stringbuffer-stringbuilder-for-java-certification"
+                />
+                 <CertificateShowCard
+                title="Java Tutorial"
+                level="Beginner"
+                duration="5 hr"
+                enroll="Free "
+                platform="SoloLearn"
+                tag2="Java"
+                tag1="Tutorial"
+                link="https://www.sololearn.com/Course/Java/"
+                />
+              </div>
+              <div className="card-deck">
+              <CertificateShowCard
+                title="Java 101: Find the Easiest Way to Learn Java & Start Coding in No Time"
+                level="Beginner"
+                duration="52 hr"
+                enroll="Pay for Certificate only"
+                platform="bitdegree.org"
+                tag1="Java"
+                tag1=" Learn"
+                tag2="Coding"
+                link="https://stude.co/848611/learn-java"
+                />
+                 <CertificateShowCard
+                title="Java Rest API automation from scratch"
+                level="Beginner"
+                duration="52 hr"
+                enroll="Pay for Certificate only"
+                platform="bitdegree.org"
+                tag1="Java"
+                tag1="scratch"
+                tag2="Rest API"
+                link="https://stude.co/848611/java-rest-api"
+                />
+              </div>
+              <div className="card-deck">
+              <CertificateShowCard
+                title="Java for Dummies: Learn Java Programming Basics"
+                level="Beginner"
+                duration="3hr"
+                enroll="Pay for Certificate only"
+                platform="bitdegree.org"
+                tag1="Java"
+                
+                link="https://stude.co/848611/java-for-dummies"
+                />
+                <CertificateShowCard
+                title="Introduction to Java Basics Programming: Coding Android Apps"
+                level="Beginner"
+                duration="3hr"
+                enroll="Pay for Certificate only"
+                platform="bitdegree.org"
+                tag1="Java"
+               
+                link="https://stude.co/848611/java-for-dummies"
+                />
+                </div>
 </div>
 <div className="col-md-3 mt-md-5 mt-3">
             <div className="row">
               <FbLikeShare />{" "}
             </div>
-            <div className="row text-center mt-5">
-              <div className="col">
-                {" "}
-                <FontAwesomeIcon
-                  icon={faBook}
-                  color="#133658"
-                  size="4x"
-                  className="text-center"
-                />
-                <h5
-                  className="text-center mt-2 mb-md-4 mb-3"
-                  style={{ color: "#133658" }}
-                >
-                  Java Programming Learning
-                </h5>
-              </div>
-            </div>
-
-            <RecommendPost
-              imgsource="java_interview_questions.jpeg"
-              RecPostHading="Java Interview Questions"
-              link="/java_interview_question"
-            />
-            <RecommendPost
-              imgsource="java_programming_question.jpeg"
-              RecPostHading="Java Programming Questions"
-              link="/java_programming_questions"
-            />
-            <RecommendPost
-              imgsource="programming_blog.jpeg"
-              RecPostHading="Java Programming Blogs"
-              link="/prog_lan_blog"
-            />
-
-            <div className="row text-center mt-5">
-              <div className="col">
-                {" "}
-                <FontAwesomeIcon
-                  icon={faPuzzlePiece}
-                  color="#133658"
-                  size="4x"
-                  className="text-center"
-                />
-                <h5
-                  className="text-center mt-2 mb-md-4 mb-3"
-                  style={{ color: "#133658" }}
-                >
-                  Java Programming Practice
-                </h5>
-              </div>
-            </div>
-            <RecommendPost
-              imgsource="java_practice_questions_beginner.jpeg"
-              RecPostHading="Java Programming Practice Problems"
-              link="/index_practice_questions"
-            />
-            <RecommendPost
-              imgsource="java_mcq.jpeg"
-              RecPostHading="Java MCQs"
-              link="/index_java_mcqs"
-            />
-            <RecommendPost
-              imgsource="java_quize_test.jpeg"
-              RecPostHading="Java Quize Test"
-              link="/java_quize_tests"
-            />
-            <RecommendPost
-              imgsource="code_challange.jpeg"
-              RecPostHading="Weekly Code Challanges"
-              link="/index_code_challange"
-            />
-<a href="https://stude.co/848611" target="_blank">
+            <LearningSideSection language="java" />
+            <a href="https://stude.co/848611" target="_blank">
               <img
-                className=" card-img-top mx-auto img-fluid img-circle d-block mt-5 "
+                className=" card-img-top mx-auto  img-fluid img-circle d-block mt-4 "
                 src={require("../../../assets/images/bitdegree.jpeg")}
                 alt="avatar"
               />
             </a>
-            
-
 
             <Technologies />
             <RightSideSection />

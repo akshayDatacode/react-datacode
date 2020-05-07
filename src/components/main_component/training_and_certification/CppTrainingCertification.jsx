@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import RightSideSection from "../../right_section/RightSideSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faBook } from "@fortawesome/free-solid-svg-icons";
-import RecommendPost from "../../right_section/RecommendPost";
-import RoadMapCard from "./RoadMapCard";
-import FbShare from "../FbShare";
+import { faHome, faAward } from "@fortawesome/free-solid-svg-icons";
 import FbLikeShare from "../../FbLikeShare";
+import Technologies from "../../right_section/Technologies";
+import CertificateShowCard from "./CertificateShowCard";
+import LearningSideSection from "../../right_section/learning_sidesection/LearningSideSection";
 
 class Cpp extends Component {
   state = {};
@@ -16,230 +16,107 @@ class Cpp extends Component {
   render() {
     return (
       <>
-        <div className="row">
+         <div className="row">
           <div className="col-1"></div>
-          <div className="col-md-7 mt-4">
+          <div className="col-md-8 mt-4 ">
             <h2
               className="text-center mb-4 display-5"
               style={{ color: "#072C71" }}
             >
               Find the Best C++ Programming Training & Certification
             </h2>
-            <Link to="/home" className="badge badge-primary mr-1">
-              <FontAwesomeIcon icon={faHome} size="2x" />
-            </Link>
-            <Link to="/index_technologies" className="badge badge-warning mr-1">
-              Technologies >>
-            </Link>
-            <RoadMapCard
-              imgsource="youtube.jpeg"
-              title="Introduction to pointers in C/C++"
-              source="(youtube.com)"
-              tag1="Free"
-              tag2="Video"
-              tag3="Beginner"
-              link="https://www.youtube.com/playlist?list=PL2_aWCzGMAwLZp6LMUKI3cc7pgGsasm2_"
-            />
-            <RoadMapCard
-              imgsource="c_tutorial.jpeg"
-              title="LearnCpp"
-              source="(learncpp.com)"
-              tag1="Free"
-              link="https://www.learncpp.com/"
-            />
-            <RoadMapCard
-              imgsource="youtube.jpeg"
-              title="Buckys C++ Programming Tutorials"
-              source="(youtube.com)"
-              tag1="Free"
-              tag2="Video"
-              link="https://www.youtube.com/playlist?list=PLAE85DE8440AA6B83"
-            />
-            <RoadMapCard
-              imgsource="c_tutorial.jpeg"
-              title="C++ Tutorial"
-              source="(sololearn.com)"
-              tag1="Free"
-              tag2="Beginner"
-              link="https://www.sololearn.com/Course/CPlusPlus/"
-            />
-            <RoadMapCard
-              imgsource="youtube.jpeg"
-              title="C++ Tutorial"
-              source="(youtube.com)"
-              tag1="Free"
-              tag2="Video"
-              tag3="Beginner"
-              link="https://www.youtube.com/playlist?list=PLGLfVvz_LVvQ9S8YSV0iDsuEU8v11yP9M"
-            />
-            <RoadMapCard
-              imgsource="youtube.jpeg"
-              title="C++/Game Tutorials"
-              source="(youtube.com)"
-              tag1="Free"
-              tag2="Video"
-              tag3="Beginner"
-              link="https://www.youtube.com/playlist?list=PLSPw4ASQYyynKPY0I-QFHK0iJTjnvNUys"
-            />
-            <RoadMapCard
-              imgsource="coursera.jpeg"
-              title="C++ For C Programmers"
-              source="(coursera.org)"
-              tag1="Free"
-              tag2="Video"
-              link="https://www.coursera.org/learn/c-plus-plus-a?ranMID=40328&ranEAID=jU79Zysihs4&ranSiteID=jU79Zysihs4-mOZIN.E.Fr4mLyGypMbyAg&siteID=jU79Zysihs4-mOZIN.E.Fr4mLyGypMbyAg&utm_content=10&utm_medium=partners&utm_source=linkshare&utm_campaign=jU79Zysihs4"
-            />
-            <RoadMapCard
-              imgsource="udacity.jpeg"
-              title="C++ For Programmers"
-              source="(udacity.com)"
-              tag1="Free"
-              tag2="Video"
-              tag3="Beginner"
-              link="https://www.udacity.com/course/c-for-programmers--ud210"
-            />
-            <RoadMapCard
-              imgsource="youtube.jpeg"
-              title="Entire C++ language in one video"
-              source="(youtube.com)"
-              tag1="Free"
-              tag2="Video"
-              link="https://www.youtube.com/watch?v=Rub-JsjMhWY&hd=1"
-            />{" "}
-            <RoadMapCard
-              imgsource="c_tutorial.jpeg"
-              title="C++ Annotations"
-              source="(icce.rug.nl)"
-              tag1="Free"
-              link="http://www.icce.rug.nl/documents/cplusplus/"
-            />
-            <RoadMapCard
-              imgsource="udemy.jpeg"
-              title="Beginning C++ Programming - From Beginner to Beyond"
-              source="(udemy.com)"
-              tag1="Paid"
-              tag2="Video"
-              tag3="Beginner"
-              link="https://click.linksynergy.com/deeplink?id=jU79Zysihs4&mid=39197&murl=https://www.udemy.com/beginning-c-plus-plus-programming"
-            />
-            <RoadMapCard
-              imgsource="udemy.jpeg"
-              title="Learn Advanced C++ Programming"
-              source="(udemy.com)"
-              tag1="Paid"
-              tag2="Video"
-              tag3="Advanced"
-              link="https://click.linksynergy.com/deeplink?id=jU79Zysihs4&mid=39197&murl=https://www.udemy.com/learn-advanced-c-programming/"
-            />
-            <RoadMapCard
-              imgsource="udemy.jpeg"
-              title="C++: From Beginner to Expert"
-              source="(udemy.com)"
-              tag1="Paid"
-              tag2="Video"
-              tag3="Beginner"
-              link="https://www.udemy.com/course/video-course-c-from-beginner-to-expert/?LSNPUBID=jU79Zysihs4&ranEAID=jU79Zysihs4&ranMID=39197&ranSiteID=jU79Zysihs4-ZA2i.SGJOZUGuX7WMxkVTg"
-            />
-            <RoadMapCard
-              imgsource="pluralsight.jpeg"
-              title="Learn C++"
-              source="(pluralsight.com)"
-              tag1="Paid"
-              link="https://www.pluralsight.com/paths/c-plus-plus?clickid=X6R3A1ylNxyOUDBwUx0Mo3QwUkixoVSYKSCjWA0&irgwc=1&mpid=1419154&utm_source=impactradius&utm_medium=digital_affiliate&utm_campaign=1419154&aid=7010a000001xAKZAA2"
-            />{" "}
-            <RoadMapCard
-              imgsource="pluralsight.jpeg"
-              title="C++ Advanced Topics"
-              source="(pluralsight.com)"
-              tag1="Paid"
-              tag2="Video"
-              tag3="Advanced"
-              link="https://www.pluralsight.com/courses/adv-cpp?clickid=X6R3A1ylNxyOUDBwUx0Mo3QwUkixoXzwKSCjWA0&irgwc=1&mpid=1419154&utm_source=impactradius&utm_medium=digital_affiliate&utm_campaign=1419154&aid=7010a000001xAKZAA2"
-            />
-            <RoadMapCard
-              imgsource="udemy.jpeg"
-              title="Learn C++ Programming -Beginner to Advance- Deep Dive in C++"
-              source="(udemy.com)"
-              tag1="Paid"
-              tag2="Video"
-              tag3="Beginner"
-              link="https://click.linksynergy.com/deeplink?id=jU79Zysihs4&mid=39197&murl=https://www.udemy.com/cpp-deep-dive"
-            />
-            <RoadMapCard
-              imgsource="c_tutorial.jpeg"
-              title="C++ Concurrency in Action, Second Edition"
-              source="(manning.com)"
-              tag1="Paid"
-              tag2="Book"
-              tag3="Advanced"
-              link="https://www.manning.com/books/c-plus-plus-concurrency-in-action-second-edition"
-            />
-            <RoadMapCard
-              imgsource="c_tutorial.jpeg"
-              title="C++ Programming for Non-C Programmers"
-              source="(software-skills-training.com)"
-              tag1="Paid"
-              tag2="Advanced"
-              link="http://software-skills-training.com/Courses/c++-programming.htm"
-            />
-            <RoadMapCard
-              imgsource="c_tutorial.jpeg"
-              title="Nicolai M. Josuttis: The C++ Standard Library, 2nd edition"
-              source="(cppstdlib.com)"
-              tag1="Paid"
-              tag2="Book"
-              tag3="Advanced"
-              link="http://www.cppstdlib.com/"
-            />
-            <RoadMapCard
-              imgsource="c_tutorial.jpeg"
-              title="C++ for Programmers"
-              source="(educative.io)"
-              tag1="Paid"
-              tag2="Video"
-              tag3="Beginner"
-              link="https://www.educative.io/track/c-plus-plus-for-programmers"
-            />
-          </div>
-          <div className="col-md-4 mt-md-5 mt-3  ">
-            <FbLikeShare />
-            <h3
-              className="text-center mt-4 mb-md-4 mb-3"
-              style={{ color: "#133658" }}
+            <Link
+              to="/home"
+              className="badge mr-1"
+              style={{ backgroundColor: "#06CB6C" }}
             >
-              <FontAwesomeIcon icon={faBook} size="1x" className="mr-2" />
-              C++ Programming Learning
-            </h3>
-            <RecommendPost
-              imgsource="cpp_mcq.jpeg"
-              RecPostHading="C++ MCQs"
-              link="/index_cpp_mcqs"
-            />
-            <RecommendPost
-              imgsource="cpp_interview_questions.jpeg"
-              RecPostHading="C Interview Questions"
-              link="/c_interview_question"
-            />
-            <RecommendPost
-              imgsource="cpp_tech.jpeg"
-              RecPostHading="C++ Programming Questions"
-              link="/c_programming_questions"
-            />
-            <RecommendPost
-              imgsource="cpp_quize.jpeg"
-              RecPostHading="C++ Quize Test"
-              link="/c_quizes_tests"
-            />
-            <RecommendPost
-              imgsource="programming_blog.jpeg"
-              RecPostHading="C++ Programming Blogs"
-              link="/prog_lan_blog"
-            />
-            <RecommendPost
-              imgsource="code_challange.jpeg"
-              RecPostHading="Weekly Code Challanges"
-              link="/index_code_challange"
-            />
+              <FontAwesomeIcon icon={faHome} size="2x" color="#072C71" />
+            </Link>
+            <Link
+              to="/index_training_certification"
+              className="badge mr-1"
+              style={{ backgroundColor: "#072C71" }}
+            >
+              <FontAwesomeIcon icon={faAward} size="2x" color="#06CB6C" />
+            </Link>
+
+            <div className="card-deck">
+              <CertificateShowCard
+                title="CS107: C++ Programming"
+                level="Beginner"
+                duration="40 hr"
+                enroll="TOTAL FREE"
+                platform="Saylor.org"
+                tag1="C++"
+                tag2="Programming"
+                tag3=""
+                link="https://learn.saylor.org/course/view.php?id=65"
+              />
+             <CertificateShowCard
+                title="Modelling object-oriented software – an introduction"
+                level="Intermediate"
+                duration="20 hr"
+                enroll="FREE"
+                platform="open.eduCoursera"
+                tag1="object-oriented "
+                tag2="Modelling"
+                tag3="software"
+                link="https://www.open.edu/openlearn/science-maths-technology/computing-ict/modelling-object-oriented-software-introduction/content-section-0?active-tab=description-tab"
+              />
+            </div>
+            <div className="card-deck">
+              <CertificateShowCard
+                title="The main object-oriented programming concepts explained"
+                level="Beginner"
+                duration="1 hr"
+                enroll="Pay for Certificate only"
+                platform="bitdegree.org"
+                tag1="object-oriented programming"
+                tag2="concepts"
+                link="https://stude.co/848611/object-oriented-programming-concepts"
+              />
+             <CertificateShowCard
+                title="C++ Tutorial for Complete Beginners"
+                level="Beginner"
+                duration="17hr 59min"
+                enroll="FREE"
+                platform="Udemy"
+                tag1="Beginners"
+                tag2="C++"
+                tag3="Tutorial"
+                link="https://www.udemy.com/course/free-learn-c-tutorial-beginners/"
+              />
+            </div>
+            <div className="card-deck">
+              <CertificateShowCard
+                title="C++ Tutorial"
+                level="Beginner"
+                duration="5 hr"
+                enroll="Free "
+                platform="SoloLearn"
+                tag1="C++"
+                tag2="Tutorial"
+                link="https://www.sololearn.com/Course/Java/"
+              />
+           
+            </div>
+          
+          </div>
+
+           <div className="col-md-3 mt-md-5 mt-3">
+            <div className="row">
+              <FbLikeShare />{" "}
+            </div>
+            <LearningSideSection language="cpp" />
+            <a href="https://stude.co/848611" target="_blank">
+              <img
+                className=" card-img-top mx-auto  img-fluid img-circle d-block mt-4 "
+                src={require("../../../assets/images/bitdegree.jpeg")}
+                alt="avatar"
+              />
+            </a>
+
+            <Technologies />
             <RightSideSection />
           </div>
         </div>

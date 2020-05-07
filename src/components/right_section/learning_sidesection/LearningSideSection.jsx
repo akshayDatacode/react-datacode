@@ -242,7 +242,7 @@ class LearningSideSection extends Component {
               </div>
             </div>
             <RecommendPost
-              imgsource="java_practice_questions.jpeg"
+              imgsource="java_practice_question.jpeg"
               RecPostHading="Java Programming Practice Problems"
               link="/index_java_practice_questions"
             />
@@ -298,7 +298,7 @@ class LearningSideSection extends Component {
               link="/cpp_interview_question"
             />
             <RecommendPost
-              imgsource="cpp_programming_question.jpeg"
+              imgsource="cprogramming_practice_question.jpeg"
               RecPostHading="C++ Programming Example Questions"
               link="/cpp_programming_questions"
             />
@@ -326,7 +326,7 @@ class LearningSideSection extends Component {
               </div>
             </div>
             <RecommendPost
-              imgsource="cpp_practice_questions.jpeg"
+              imgsource="cprogramming_practice_question.jpeg"
               RecPostHading="C++ Programming Practice Problems"
               link="/index_cpp_practice_questions"
             />
@@ -336,7 +336,7 @@ class LearningSideSection extends Component {
               link="/index_cpp_mcqs"
             />
             <RecommendPost
-              imgsource="cpp_quize_test.jpeg"
+              imgsource="cpp_quize.jpeg"
               RecPostHading="C++ Quize Test"
               link="/cpp_quizes_tests"
             />
