@@ -47,56 +47,90 @@ class MachineLearning extends Component {
 
             <div className="card-deck">
               <CertificateShowCard
-                title=""
-                level=""
-                duration=""
-                enroll=""
-                platform=""
-                tag1=""
-                tag2=""
-                tag3=""
-                tag4=""
-                link=""
+                title="Video Basics with OpenCV and Python"
+                level="Beginner"
+                duration="4 hr"
+                enroll="Paid"
+                platform="Coursera"
+                tag1="Basics"
+                tag2="OpenCV"
+                tag3="Python"
+                link="https://www.coursera.org/learn/computer-vision-video-basics-opencv-python"
               />
               <CertificateShowCard
-                title=""
-                level=""
-                duration=""
-                enroll=""
-                platform=""
-                tag1=""
-                tag2=""
-                tag3=""
-                tag4=""
-                link=""
+                title="Logistic Regression with NumPy and Python"
+                level="Beginner"
+                duration="1.5 hr"
+                enroll="Paid"
+                platform="Coursera"
+                tag1="Regression"
+                tag2="NumPy"
+                tag3="Python"
+                link="https://www.coursera.org/projects/logistic-regression-numpy-python"
               />
             </div>
             <div className="card-deck">
               <CertificateShowCard
-                title=""
-                level=""
-                duration=""
-                enroll=""
-                platform=""
-                tag1=""
-                tag2=""
-                tag3=""
-                tag4=""
-                link=""
+                title="Linear Regression with NumPy and Python"
+                level="Beginner"
+                duration="1.5 hr"
+                enroll="Paid"
+                platform="Coursera"
+                tag1="Linear Regression"
+                tag2="NumPy"
+                tag3="Python"
+                link="https://www.coursera.org/projects/linear-regression-numpy-python"
               />
               <CertificateShowCard
-                title=""
-                level=""
-                duration=""
-                enroll=""
-                platform=""
-                tag1=""
-                tag2=""
-                tag3=""
-                tag4=""
-                link=""
+                title="Machine Learning for All"
+                level="Beginner"
+                duration="22hr"
+                enroll="pay for certificate only"
+                platform="Coursera"
+                tag1="Machine Learning"
+                tag2="certificate"
+                tag3="training"
+                link="https://www.coursera.org/learn/uol-machine-learning-for-all"
               />
             </div>
+            <div className="card-deck">
+              <CertificateShowCard
+                title="Introduction to Machine Learning"
+                level="Intermediate"
+                duration="21 hr "
+                enroll="pay for certificate only"
+                platform="Coursera"
+                tag1="Introduction"
+                tag2="Machine Learning"
+                tag3="Intermediate"
+                link="https://www.coursera.org/learn/machine-learning-duke"
+              />
+              <CertificateShowCard
+                title="Machine Learning for All"
+                level="Beginner"
+                duration="54 hr"
+                enroll="FREE"
+                platform="Coursera"
+                tag1="Machine Learning"
+                tag2="Beginner"
+                link="https://www.coursera.org/learn/machine-learning"
+              />
+            </div>
+            <div className="card-deck">
+              <CertificateShowCard
+                title="Unity Machine Learning with Python"
+                level="Beginner"
+                duration="36 hr"
+                enroll="pay for certificate only"
+                platform="bitdegree.org"
+                tag1="Python"
+                tag2="Machine"
+                tag3="Learning"
+                link="https://stude.co/848611/unity-machine-learning"
+              />
+             
+            </div>
+           
           </div>
           <div className="col-md-3 mt-md-5 mt-3">
             <div className="row">

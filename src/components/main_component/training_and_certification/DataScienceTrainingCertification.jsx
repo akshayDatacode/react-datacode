@@ -13,6 +13,7 @@ import FbLikeShare from "../../FbLikeShare";
 import Technologies from "../../right_section/Technologies";
 import CertificateShowCard from "./CertificateShowCard";
 
+
 class DataScience extends Component {
   state = {};
   componentDidMount() {
@@ -47,132 +48,140 @@ class DataScience extends Component {
 
             <div className="card-deck">
               <CertificateShowCard
-                title=""
-                level=""
-                duration=""
-                enroll=""
-                platform=""
-                tag1=""
-                tag2=""
-                tag3=""
-                tag4=""
-                link=""
+                title="Build Data Analysis tools using R and DPLYR"
+                level="Beginner"
+                duration="1 hr"
+                enroll="Paid"
+                platform="Coursera"
+                tag1="Data Analysis"
+                tag2="R"
+                tag3="DPLYR"
+                link="https://www.coursera.org/projects/introduction-to-dplyr"
               />
               <CertificateShowCard
-                title=""
-                level=""
-                duration=""
-                enroll=""
-                platform=""
-                tag1=""
-                tag2=""
-                tag3=""
-                tag4=""
-                link=""
+                title="IBM Data Science Professional Certificate"
+                level="Beginner"
+                duration="10 Months"
+                enroll="Paid"
+                platform="Coursera"
+                tag1="Data Science"
+                tag2="IBM"
+                link="https://www.coursera.org/professional-certificates/ibm-data-science"
               />
             </div>
             <div className="card-deck">
               <CertificateShowCard
-                title=""
-                level=""
-                duration=""
-                enroll=""
-                platform=""
-                tag1=""
-                tag2=""
-                tag3=""
-                tag4=""
-                link=""
+                title="Databases and SQL for Data Science"
+                level="Beginner"
+                duration="15 hr"
+                enroll="pay for certificate only"
+                platform="Coursera"
+                tag1="Data Science"
+                tag2="Databases"
+                tag3="SQL"
+                link="https://www.coursera.org/learn/sql-data-science"
               />
               <CertificateShowCard
-                title=""
-                level=""
-                duration=""
-                enroll=""
-                platform=""
-                tag1=""
-                tag2=""
-                tag3=""
-                tag4=""
-                link=""
+                title="Python for Data Science and AI"
+                level="Beginner"
+                duration="22 hr"
+                enroll="pay for certificate only"
+                platform="Coursera"
+                tag1="Python"
+                tag2="Data Science"
+                tag3="AI"
+                link="https://www.coursera.org/learn/python-for-applied-data-science-ai"
               />
             </div>
+            <div className="card-deck">
+              <CertificateShowCard
+                title="Data Analysis with Python"
+                level="Beginner"
+                duration="16 hr"
+                enroll="pay for certificate only"
+                platform="Coursera"
+                tag1="Data Analysis"
+                tag2="Python"
+                tag3="Beginner"
+                link="https://www.coursera.org/learn/data-analysis-with-python"
+              />
+              <CertificateShowCard
+                title="Introduction to Data Science in Python"
+                level="Intermediate"
+                duration="16 hr"
+                enroll="pay for certificate only"
+                platform="Coursera"
+                tag1="Data Science"
+                tag2="Python"
+                link="https://www.coursera.org/learn/python-data-analysis"
+              />
+            </div>
+            <div className="card-deck">
+              <CertificateShowCard
+                title="Data Science: Statistics and Machine Learning Specialization"
+                level="Intermediate"
+                duration="6 months"
+                enroll="pay for certificate only"
+                platform="Coursera"
+                tag1="Statistics"
+                tag2="Data Science"
+                tag3="Machine Learning"
+                link="https://www.coursera.org/specializations/data-science-statistics-machine-learning"
+              />
+              <CertificateShowCard
+                title="Data Science Math Skills"
+                level="Beginner"
+                duration="4 Week"
+                enroll="FREE"
+                platform="Coursera"
+                tag1=" Math "
+                tag2="Data Science"
+                link="https://www.coursera.org/learn/datasciencemathskills?edocomorp=free-courses-college-students&ranMID=40328&ranEAID=SAyYsTvLiGQ&ranSiteID=SAyYsTvLiGQ-_LocLC0RVsvxyDU0ugyWXA&siteID=SAyYsTvLiGQ-_LocLC0RVsvxyDU0ugyWXA&utm_content=10&utm_medium=partners&utm_source=linkshare&utm_campaign=SAyYsTvLiGQ"
+              />
+            </div>
+            <div className="card-deck">
+              <CertificateShowCard
+                title="Learn Data Science With R Part 1 of 10
+                "
+                level="Beginner"
+                duration="8hr 42min"
+                enroll="FREE"
+                platform="Udemy"
+                tag1="Data Science"
+                tag2="R"
+                link="https://www.udemy.com/course/datascience_with_r"
+              />
+              <CertificateShowCard
+                title="Introduction to Data Science using Python (Module 1/3)
+                "
+                level="Intermediate"
+                duration="2hr 32min"
+                enroll="FREE"
+                platform="Udemy"
+                tag1="Data Science"
+                tag2=" Python"
+                link="https://www.udemy.com/course/introduction-to-data-science-using-python/"
+              />
+            </div>
+            <div className="card-deck">
+              <CertificateShowCard
+                title="Mobile ML and Data Science with nitroproc
+                "
+                level="Intermediate"
+                duration="5hr 27min"
+                enroll="FREE"
+                platform="Udemy"
+                tag1="ML"
+                tag2="Data Science"
+                tag3="nitroproc"
+                link="https://www.udemy.com/course/work-with-big-data-locally-with-nitroproc/"
+              />
+              
+            </div>
+            
           </div>
           <div className="col-md-3 mt-md-5 mt-3">
-            <div className="row">
-              <FbLikeShare />{" "}
-            </div>
-            <div className="row text-center mt-5">
-              <div className="col">
-                {" "}
-                <FontAwesomeIcon
-                  icon={faBook}
-                  color="#133658"
-                  size="4x"
-                  className="text-center"
-                />
-                <h5
-                  className="text-center mt-2 mb-md-4 mb-3"
-                  style={{ color: "#133658" }}
-                >
-                  C Programming Learning
-                </h5>
-              </div>
-            </div>
-
-            <RecommendPost
-              imgsource="c_interview_questions.jpeg"
-              RecPostHading="C Interview Questions"
-              link="/c_interview_question"
-            />
-            <RecommendPost
-              imgsource="c_programming_question.jpeg"
-              RecPostHading="C Programming Questions"
-              link="/c_programming_questions"
-            />
-            <RecommendPost
-              imgsource="programming_blog.jpeg"
-              RecPostHading="C Programming Blogs"
-              link="/prog_lan_blog"
-            />
-
-            <div className="row text-center mt-5">
-              <div className="col">
-                {" "}
-                <FontAwesomeIcon
-                  icon={faPuzzlePiece}
-                  color="#133658"
-                  size="4x"
-                  className="text-center"
-                />
-                <h5
-                  className="text-center mt-2 mb-md-4 mb-3"
-                  style={{ color: "#133658" }}
-                >
-                  C Programming Practice
-                </h5>
-              </div>
-            </div>
-            <RecommendPost
-              imgsource="c_practice_questions_beginner.jpeg"
-              RecPostHading="C Programming Practice Problems"
-              link="/index_practice_questions"
-            />
-            <RecommendPost
-              imgsource="c_mcq.jpeg"
-              RecPostHading="C MCQs"
-              link="/index_c_mcqs"
-            />
-            <RecommendPost
-              imgsource="c_quize_test.jpeg"
-              RecPostHading="C Quize Test"
-              link="/c_quizes_tests"
-            />
-            <RecommendPost
-              imgsource="code_challange.jpeg"
-              RecPostHading="Weekly Code Challanges"
-              link="/index_code_challange"
-            />
+            
             <a href="https://stude.co/848611" target="_blank" className="mt-3">
               <img
                 className=" card-img-top mx-auto img-fluid img-circle d-block "
@@ -180,7 +189,7 @@ class DataScience extends Component {
                 alt="avatar"
               />
             </a>
-
+         
             <Technologies />
             <RightSideSection />
           </div>
