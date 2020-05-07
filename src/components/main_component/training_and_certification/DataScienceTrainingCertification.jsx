@@ -2,16 +2,11 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import RightSideSection from "../../right_section/RightSideSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHome,
-  faBook,
-  faPuzzlePiece,
-  faAward,
-} from "@fortawesome/free-solid-svg-icons";
-import RecommendPost from "../../right_section/RecommendPost";
+import { faHome, faAward } from "@fortawesome/free-solid-svg-icons";
 import FbLikeShare from "../../FbLikeShare";
 import Technologies from "../../right_section/Technologies";
 import CertificateShowCard from "./CertificateShowCard";
+import LearningSideSection from "../../right_section/learning_sidesection/LearningSideSection";
 
 
 class DataScience extends Component {
@@ -181,15 +176,18 @@ class DataScience extends Component {
             
           </div>
           <div className="col-md-3 mt-md-5 mt-3">
-            
-            <a href="https://stude.co/848611" target="_blank" className="mt-3">
+            <div className="row">
+              <FbLikeShare />{" "}
+            </div>
+            <LearningSideSection language="python" />
+            <a href="https://stude.co/848611" target="_blank">
               <img
-                className=" card-img-top mx-auto img-fluid img-circle d-block "
+                className=" card-img-top mx-auto  img-fluid img-circle d-block mt-4 "
                 src={require("../../../assets/images/bitdegree.jpeg")}
                 alt="avatar"
               />
             </a>
-         
+
             <Technologies />
             <RightSideSection />
           </div>

@@ -2,11 +2,12 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import RightSideSection from "../../right_section/RightSideSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faBookDead, faBook } from "@fortawesome/free-solid-svg-icons";
-import PostCard from "../PostCard";
-import RecommendPost from "../../right_section/RecommendPost";
-import RoadMapCard from "./RoadMapCard";
-import { faPython } from "@fortawesome/free-brands-svg-icons";
+import { faHome, faAward } from "@fortawesome/free-solid-svg-icons";
+import FbLikeShare from "../../FbLikeShare";
+import Technologies from "../../right_section/Technologies";
+import CertificateShowCard from "./CertificateShowCard";
+import LearningSideSection from "../../right_section/learning_sidesection/LearningSideSection";
+
 
 class Python extends Component {
   state = {};
@@ -16,173 +17,422 @@ class Python extends Component {
   render() {
     return (
       <>
-        <div className="row">
+         <div className="row">
           <div className="col-1"></div>
-          <div className="col-md-7 mt-4">
-            <h1 className="text-center mb-4 display-5">
-              Find the Best Python Courses & Tutorials
-            </h1>
-            <Link to="/home" className="badge badge-primary mr-1">
-              <FontAwesomeIcon icon={faHome} size="2x" />
+          <div className="col-md-8 mt-4 ">
+            <h2
+              className="text-center mb-4 display-5"
+              style={{ color: "#072C71" }}
+            >
+              Find the Best Python Training & Certification
+            </h2>
+            <Link
+              to="/home"
+              className="badge mr-1"
+              style={{ backgroundColor: "#06CB6C" }}
+            >
+              <FontAwesomeIcon icon={faHome} size="2x" color="#072C71" />
             </Link>
-            <Link to="/index_technologies" className="badge badge-warning mr-1">
-              Technologies >
+            <Link
+              to="/index_training_certification"
+              className="badge mr-1"
+              style={{ backgroundColor: "#072C71" }}
+            >
+              <FontAwesomeIcon icon={faAward} size="2x" color="#06CB6C" />
             </Link>
-            <RoadMapCard
-              imgsource="python_tutorial.jpeg"
-              source="(google.com)"
-              title="Google Python Class For Beginners"
-              tag1="Free"
-              link="https://developers.google.com/edu/python/"
-            />
-            <RoadMapCard
-              imgsource="python_tutorial.jpeg"
-              source="(mva.microsoft.com)"
-              title="Introduction to Programming with Python"
-              tag1="Free"
-              tag2="Video"
-              link="https://docs.microsoft.com/en-in/learn/"
-            />
-            <RoadMapCard
-              imgsource="python_tutorial.jpeg"
-              source="(pymbook.readthedocs.io)"
-              title="Python for You and Me"
-              tag1="Free"
-              tag2="Beginner"
-              tag3="Book"
-              link="https://pymbook.readthedocs.io/en/latest/index.html"
-            />
-            <RoadMapCard
-              imgsource="python_tutorial.jpeg"
-              source="(python.swroopch.com)"
-              title="A Byte of Python"
-              tag1="Free"
-              link="https://python.swaroopch.com/"
-            />
-            <RoadMapCard
-              imgsource="python_tutorial.jpeg"
-              source="(freecodecamp.org)"
-              title="Learning Python: From Zero to Hero"
-              tag1="Free"
-              tag2="Python3"
-              tag3="Beginner"
-              link="https://www.freecodecamp.org/news/learning-python-from-zero-to-hero-120ea540b567/"
-            />
-            <RoadMapCard
-              imgsource="python_tutorial.jpeg"
-              source="(automatetheboringstuff.com)"
-              title="Automate the Boring Stuff with Python"
-              tag1="Free"
-              tag2="Book"
-              link="http://automatetheboringstuff.com/"
-            />
-            <RoadMapCard
-              imgsource="python_tutorial.jpeg"
-              source="(greenteapress.com)"
-              title="Think Python"
-              tag1="Free"
-              tag2="Book"
-              tag3="Beginners"
-              link="https://greenteapress.com/wp/think-python-2e/?ref=hackr.io"
-            />
-            <RoadMapCard
-              imgsource="python_tutorial.jpeg"
-              source="(simplilearn.com)"
-              title="Python Programming | Python Programming For Beginners | Python Programming Tutorial | Simplilearn"
-              tag1="video"
-              tag2="Free"
-              tag3="Beginners"
-              link="https://www.youtube.com/watch?v=-mr-gtL1-n0&"
-            />
-            <RoadMapCard
-              imgsource="python_tutorial.jpeg"
-              source="(practicepython.org)"
-              title="Practice Python"
-              tag1="Free"
-              tag2="Beginner"
-              tag3="Practice-Program"
-              link="http://www.practicepython.org/"
-            />
-            <RoadMapCard
-              imgsource="python_tutorial.jpeg"
-              source="(labex.io)"
-              title="Intro to Python"
-              tag1="Free"
-              tag2="Beginner"
-              tag3="Python3"
-              link="https://labex.io/courses/10"
-            />
-            <RoadMapCard
-              imgsource="python_tutorial.jpeg"
-              source="(eduonix.com)"
-              title="Learn Python Programming From Scratch"
-              tag1="Free"
-              tag2="Video"
-              tag3="Beginner"
-              link="https://www.eduonix.com/courses/Software-Development/Learn-Python-programming-From-Scratch"
-            />
-            <RoadMapCard
-              imgsource="python_tutorial.jpeg"
-              source="(diveintopython3.net)"
-              title="Dive Into Python 3"
-              tag1="Free"
-              tag2="Book"
-              link="https://diveintopython3.net/"
-            />
-            <RoadMapCard
-              imgsource="python_tutorial.jpeg"
-              source="(udemy.com)"
-              title="Introduction To Python Programming"
-              tag1="Free"
-              tag2="Beginner"
-              tag3="Vedio"
-              link="https://www.udemy.com/course/pythonforbeginnersintro/?LSNPUBID=jU79Zysihs4&ranEAID=jU79Zysihs4&ranMID=39197&ranSiteID=jU79Zysihs4-W1g_hz76sE9f0HFReMbHJg0"
-            />
-            <RoadMapCard
-              imgsource="python_tutorial.jpeg"
-              source="(thepythonguru.com)"
-              title="Python tutorials for beginners"
-              tag1="Free"
-              tag2="Read"
-              tag3="Beginner"
-              link="https://thepythonguru.com/"
-            />
-          </div>
-          <div className="col-md-4 mt-md-5 ">
-            <h3 className="text-center text-primary mt-2 mb-3">
-              <FontAwesomeIcon icon={faPython} size="1x" className="mr-2" />
-              Python Learning
-            </h3>
-            <RecommendPost
-              imgsource="python_mcq.jpeg"
-              RecPostHading="Python MCQs"
-              link="/index_python_mcqs"
-            />
-            <RecommendPost
-              imgsource="python_interview_questions.jpeg"
-              RecPostHading="Python Interview Questions"
-              link="/python_interview_question"
-            />
-            <RecommendPost
-              imgsource="python_programming_question.jpeg"
-              RecPostHading="Python Programming Questions"
-              link="/python_programming_questions"
-            />
-            <RecommendPost
-              imgsource="python_quize.jpeg"
-              RecPostHading="Python Quize Test"
-              link="/python_quize_tests"
-            />
-            <RecommendPost
-              imgsource="python_learning_blog.jpeg"
-              RecPostHading="Python Programming Blogs"
-              link="/prog_lan_blog"
-            />
-            <RecommendPost
-              imgsource="code_challange.jpeg"
-              RecPostHading="Weekly Code Challanges"
-              link="/index_code_challange"
-            />
+
+           
+            <div className="card-deck">
+              <CertificateShowCard
+                title="Create Your First Python Program"
+                level="Beginner"
+                duration="2 hrs"
+                enroll="Paid"
+                platform="Coursera"
+                tag1="Python"
+                tag2="Beginner"
+                link="https://www.coursera.org/projects/first-python-program"
+              />
+              <CertificateShowCard
+                title="Python for Everybody Specialization"
+                level="Beginner"
+                duration="8 Months"
+                enroll="Pay for Certificate only"
+                platform="Coursera"
+                tag1="Python"
+                tag2="Beginner"
+                link="https://www.coursera.org/specializations/python"
+              />
+            </div>
+            <div className="card-deck">
+              <CertificateShowCard
+                title="Google IT Automation with Python Professional Certificate"
+                level="Beginner"
+                duration="8 Months"
+                enroll="Pay for Certificate only"
+                platform="Coursera"
+                tag1=" Automation"
+                tag2=" Python"
+                tag3="Professional "
+                link="https://www.coursera.org/professional-certificates/google-it-automation"
+              />
+              <CertificateShowCard
+                title="Crash Course on Python"
+                level="Beginner"
+                duration="31 Hr"
+                enroll="Pay for Certificate only"
+                platform="Coursera"
+                tag1="Python"
+                tag2="Course"
+                tag3="Beginner"
+                link="https://www.coursera.org/learn/python-crash-course"
+              />
+            </div>
+            <div className="card-deck">
+              <CertificateShowCard
+                title="Learn to Program: The Fundamentals"
+                level="Beginner"
+                duration="25 hr"
+                enroll="FREE"
+                platform="Coursera"
+                tag1="Program"
+                tag2="Fundamentals"
+                tag3="python"
+                link="https://www.coursera.org/learn/learn-to-program"
+              />
+              <CertificateShowCard
+                title="Python Programming: A Concise Introduction"
+                level="Beginner"
+                duration="18 hr"
+                enroll="FREE"
+                platform="Coursera"
+                tag1="Python"
+                tag2="Programming"
+                tag3="Introduction"
+                link="https://www.coursera.org/learn/python-programming-introduction"
+              />
+            </div>
+            <div className="card-deck">
+              <CertificateShowCard
+                title="Problem Solving, Python Programming, and Video Games"
+                level="Beginner"
+                duration="57 hr"
+                enroll="Pay for Certificate only"
+                platform="Coursera"
+                tag1="Problem Solving"
+                tag2="Python"
+                tag3="Video Games"
+                link="https://www.coursera.org/learn/problem-solving-programming-video-games"
+              />
+              <CertificateShowCard
+                title="Data Processing Using Python"
+                level="Beginner"
+                duration="28 hr"
+                enroll="Pay for Certificate only"
+                platform="Coursera"
+                tag1="Python"
+                tag2="Data "
+                tag3="Processing"
+                link="https://www.coursera.org/learn/python-data-processing"
+              />
+            </div>
+            <div className="card-deck">
+              <CertificateShowCard
+                title="Python Basics"
+                level="Beginner"
+                duration="36 hr"
+                enroll="Pay for Certificate only"
+                platform="Coursera"
+                tag1="Python"
+                tag2="Basics"
+                link="https://www.coursera.org/learn/python-basics"
+              />
+              <CertificateShowCard
+                title="Python Functions, Files, and Dictionaries
+                "
+                level="Beginner"
+                duration="32 hr"
+                enroll="Pay for Certificate only"
+                platform="Coursera"
+                tag1="Functions"
+                tag2="Files"
+                tag3="Dictionaries"
+                link="https://www.coursera.org/learn/python-functions-files-dictionaries"
+              />
+            </div>
+            <div className="card-deck">
+              <CertificateShowCard
+                title="Python Data Representations"
+                level="Beginner"
+                duration="8 hr"
+                enroll="Pay for Certificate only"
+                platform="Coursera"
+                tag1="Python"
+                tag2="Data "
+                link="https://www.coursera.org/learn/python-representation"
+              />
+              <CertificateShowCard
+                title="Programming for Everybody (Getting Started with Python)"
+                level="Beginner"
+                duration="19 hr"
+                enroll="Pay for Certificate only"
+                platform="Coursera"
+                tag1="Programming"
+                tag2="Python"
+                link="https://www.coursera.org/learn/python"
+              />
+            </div>
+
+            <div className="card-deck">
+              <CertificateShowCard
+                title="Using Databases with Python"
+                level="Beginner"
+                duration="13 hr"
+                enroll="Pay for Certificate only"
+                platform="Coursera"
+                tag1="Python"
+                tag2="Database"
+                link="https://www.coursera.org/learn/python-databases"
+              />
+              <CertificateShowCard
+                title="Simple coding"
+                level="Beginner"
+                duration="2 hr"
+                enroll="FREE"
+                platform="open.edu"
+                tag1="Python"
+                tag2="coding"
+                tag3="Beginner"
+                link="https://www.open.edu/openlearn/science-maths-technology/simple-coding/content-section-0?active-tab=description-tab"
+              />
+            </div>
+
+            <div className="card-deck">
+            <CertificateShowCard
+                title="Using Python for Research"
+                level="Beginner"
+                duration="5 week"
+                enroll="Pay for Certificate only"
+                platform="edx.org"
+                tag1="Python"
+                tag2="Beginner"
+                tag3="Certificate "
+                link="https://www.edx.org/course/using-python-for-research"
+              />
+               <CertificateShowCard
+                title="CS50's Introduction to Artificial Intelligence with Python"
+                level="Beginner"
+                duration="7 week"
+                enroll="Pay for Certificate only"
+                platform="edx.org"
+                tag1="Python"
+                tag2="AI"
+                tag3="Beginner"
+                link="https://www.edx.org/course/cs50s-introduction-to-artificial-intelligence-with-python"
+              />
+            </div>
+            <div className="card-deck">
+
+            <CertificateShowCard
+                title="Learn Advanced Python Programming: Advanced Python Course"
+                level="Intermediate"
+                duration="25 hr"
+                enroll="Pay for Certificate only"
+                platform="bitdegree.org"
+                tag1="Python"
+                tag2="Advanced"
+                tag3=" Programming"
+                link="https://stude.co/848611/advanced-python-programming"
+              />
+               <CertificateShowCard
+                title="Learn Python in one day! Beginner’s crash course"
+                level="Beginner"
+                duration="36 hr"
+                enroll="Pay for Certificate only"
+                platform="bitdegree.org"
+                tag1="Python"
+                tag2="Beginner"
+                link="https://stude.co/848611/learn-python"
+              />
+            </div>
+
+            <div className="card-deck">
+            <CertificateShowCard
+                title="Simple and Extensive Python 3 Tutorial: Learn Python Basics From Scratch"
+                level="Beginner"
+                duration="78 hr"
+                enroll="Pay for Certificate only"
+                platform="bitdegree.org"
+                tag1="Python"
+                tag2="Tutorial"
+                tag3="Extensive"
+                link="https://stude.co/848611/python-3-tutorial"
+              />
+               <CertificateShowCard
+                title="Selenium Tutorial: Learn to Build an Automation Framework with Python"
+                level="Beginner"
+                duration="60 hr"
+                enroll="Pay for Certificate only"
+                platform="bitdegree.org"
+                tag1="Python"
+                tag2="Learn"
+                tag3="Automation"
+                link="https://stude.co/848611/selenium-tutorial"
+              />
+            </div>
+            <div className="card-deck">
+            <CertificateShowCard
+                title="AWS tutorial for beginners: get confident with DynamoDB, using Python and Boto3, RDS"
+                level="Beginner"
+                duration="47 hr"
+                enroll="Pay for Certificate only"
+                platform="bitdegree.org"
+                tag1="Python"
+                tag2="DynamoDB"
+                link="https://stude.co/848611/aws-tutorial"
+              />
+               <CertificateShowCard
+                title="QGIS tutorial: extend QGIS with Python plugins"
+                level="Intermediate"
+                duration="22 hr"
+                enroll="Pay for Certificate only"
+                platform="Python	bitdegree.org"
+                tag1="Python"
+                tag2="QGIS"
+                tag3="plugins"
+                link="https://stude.co/848611/qgis-tutorial"
+              />
+            </div>
+            <div className="card-deck">
+
+            <CertificateShowCard
+                title="Learn Python From Scratch: Basics and Projects for Practice"
+                level="Beginner"
+                duration="37 hr"
+                enroll="TOTAL FREE"
+                platform="bitdegree.org"
+                tag1="Python"
+                tag2="Basics"
+                tag3="Projects"
+                link="https://stude.co/848611/python-from-scratch"
+              />
+               <CertificateShowCard
+                title="Python Course: Become a Highly In-demand Programmer"
+                level="Beginner"
+                duration="62 hr"
+                enroll="Pay for Certificate only"
+                platform="bitdegree.org"
+                tag1="Python"
+                tag2="In-demand"
+                tag3="Programmer"
+                link="https://stude.co/848611/python-course"
+              />
+            </div>
+
+            <div className="card-deck">
+
+<CertificateShowCard
+    title="Anyone Can Code: How to Learn Coding for Beginners With Scratch and Python!"
+    level="Beginner"
+    duration="37 hr"
+    enroll="Pay for Certificate only"
+    platform="bitdegree.org"
+    tag1="Python"
+    tag2="Coding"
+    tag3="Learn"
+    link="https://stude.co/848611/how-to-learn-coding-for-beginners"
+  />
+   <CertificateShowCard
+    title="Learn Node.js web development getting a full stack of the best tools"
+    level="Beginner"
+    duration="5 hr"
+    enroll="Pay for Certificate only"
+    platform="bitdegree.org"
+    tag1="Python"
+    tag2="web development"
+    tag3="full stack"
+    link="https://stude.co/848611/node-js-web-development"
+  />
+</div>
+
+<div className="card-deck">
+
+<CertificateShowCard
+    title="Introduction To Python Programming"
+    level="Beginner"
+    duration="4hr 32min"
+    enroll="FREE"
+    platform="Udemy"
+    tag1="Python"
+    tag2="Programming"
+    link="https://www.udemy.com/course/pythonforbeginnersintro/"
+  />
+   <CertificateShowCard
+    title="Learn Graphs and Social Network Analytics Using Python
+    "
+    level="Intermediate"
+    duration="6hr 24min"
+    enroll="FREE"
+    platform="Udemy"
+    tag1="Python"
+    tag2="Graphs"
+    tag3="Analytics"
+    link="https://www.udemy.com/course/graphs-and-social-network-analytics-for-dummies-using-python/"
+  />
+</div>
+<div className="card-deck">
+
+<CertificateShowCard
+    title="Free Python 101 Class Beginners Bootcamp Intro to Python NYC"
+    level="Beginner"
+    duration="2hr 25min"
+    enroll="FREE"
+    platform="Udemy"
+    tag1="Python"
+    tag2="Beginners"
+    tag3="Bootcamp"
+    link="https://www.udemy.com/course/python-101-beginners-coding-bootcamp-free-course"
+  />
+   <CertificateShowCard
+    title="Python For Data Science"
+    level="Intermediate"
+    duration="3hr 55min"
+    enroll="FREE"
+    platform="Udemy"
+    tag1="Python"
+    tag2="Data Science"
+    link="https://www.udemy.com/course/python-for-every1/"
+  />
+</div>
+<div className="card-deck">
+
+<CertificateShowCard
+    title="Python 3 Tutorial"
+    level="Beginner"
+    duration="3hr 55min"
+    enroll="FREE"
+    platform="SoloLearn"
+    tag1="Python"
+    tag2="Tutorial"
+    link="https://www.sololearn.com/Course/Python/"
+  />
+  </div>
+  </div>
+
+           <div className="col-md-3 mt-md-5 mt-3">
+            <div className="row">
+              <FbLikeShare />{" "}
+            </div>
+            <LearningSideSection language="python" />
+            <a href="https://stude.co/848611" target="_blank">
+              <img
+                className=" card-img-top mx-auto  img-fluid img-circle d-block mt-4 "
+                src={require("../../../assets/images/bitdegree.jpeg")}
+                alt="avatar"
+              />
+            </a>
+
+            <Technologies />
             <RightSideSection />
           </div>
         </div>
