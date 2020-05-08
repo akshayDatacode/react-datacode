@@ -7,6 +7,7 @@ import FbLikeShare from "../../FbLikeShare";
 import Technologies from "../../right_section/Technologies";
 import CertificateShowCard from "./CertificateShowCard";
 import LearningSideSection from "../../right_section/learning_sidesection/LearningSideSection";
+import TrainingCertificationCardCarousel from "./TrainingCertificationCardCarousel";
 
 class NodeJs extends Component {
   state = {};
@@ -51,19 +52,25 @@ class NodeJs extends Component {
                 tag2="Certification"
                 link="https://www.simplilearn.com/node-js-certification-training"
               />
-              <CertificateShowCard
-                title=""
-                level=""
-                duration=""
-                enroll=""
-                platform=""
-                tag1=""
-                tag2=""
-                tag3=""
-                tag4=""
-                link=""
+             <CertificateShowCard
+                title="Learn Node.js web development getting a full stack of the best tools"
+                level="Beginner"
+                duration="5 hr"
+                enroll="Pay for Certificate only"
+                platform="bitdegree.org"
+                tag1=" Node.js"
+                tag2="web development"
+                tag3="full stack"
+                link="https://stude.co/848611/node-js-web-development"
               />
             </div>
+            <h4 className="text-secondary mt-5">
+              <code className="text-primary">
+                {" "}
+                For More Training & Certification
+              </code>
+            </h4>
+            <TrainingCertificationCardCarousel />
           </div>
           <div className="col-md-3 mt-md-5 mt-3">
             <div className="row">

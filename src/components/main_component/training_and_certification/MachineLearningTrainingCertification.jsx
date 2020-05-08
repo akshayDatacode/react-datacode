@@ -125,6 +125,45 @@ class MachineLearning extends Component {
                 tag3="Learning"
                 link="https://stude.co/848611/unity-machine-learning"
               />
+              <CertificateShowCard
+                title="Welcome to Artificial Intelligence
+                "
+                level="Beginner"
+                duration="49min"
+                enroll="FREE"
+                platform="Udemy"
+                tag1="Python"
+                tag2="Artificial"
+                tag3="Intelligence"
+                link="https://www.udemy.com/course/road-map-to-artificial-intelligence-and-machine-learning"
+              />
+             
+            </div>
+
+            <div className="card-deck">
+              <CertificateShowCard
+                title="Complexity Theory Basics
+                "
+                level="Intermediate"
+                duration="1hr 21min"
+                enroll="FREE"
+                platform="Udemy"
+                tag1="Python"
+                tag2="Machine"
+                tag3="Learning"
+                link="https://www.udemy.com/course/complexity-theory-basics"
+              />
+             <CertificateShowCard
+                title="A Beginner's Guide To Learn Machine Learning"
+                level="Beginner"
+                duration="31min"
+                enroll="Paid"
+                platform="Udemy"
+                tag1="Python"
+                tag2="Machine"
+                tag3="Learning"
+                link="https://www.udemy.com/course/complete-machine-learning-course-go-from-zero-to-hero"
+              />
              
             </div>
             <h4 className="text-secondary mt-5">

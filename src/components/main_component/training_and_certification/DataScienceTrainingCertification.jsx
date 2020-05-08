@@ -171,7 +171,45 @@ class DataScience extends Component {
                 tag3="nitroproc"
                 link="https://www.udemy.com/course/work-with-big-data-locally-with-nitroproc/"
               />
+               <CertificateShowCard
+                title="Data Science: Computational Thinking with Python"
+                level="Beginner"
+                duration="5 Weeks"
+                enroll="Pay for Certificate only"
+                platform="BerkeleyX"
+                tag1="Python"
+                tag2="Data Science"
+                link="https://www.edx.org/course/foundations-of-data-science-computational-thinking"
+              />
             </div>
+            <div className="card-deck">
+
+            <CertificateShowCard
+                title="Data Science: Computational Thinking with Python"
+                level="Beginner"
+                duration="5 Weeks"
+                enroll="Pay for Certificate only"
+                platform="BerkeleyX"
+                tag1="Python"
+                tag2="Data Science"
+                link="https://www.edx.org/course/foundations-of-data-science-computational-thinking"
+              />
+<CertificateShowCard
+                title="Data Science: Machine Learning and Predictions"
+                level="Beginner"
+                duration="6 Weeks"
+                enroll="Pay for Certificate only"
+                platform="BerkeleyX"
+                tag1="Python"
+                tag2="Data Science"
+                tag1="ML"
+
+                link="https://www.edx.org/course/foundations-of-data-science-prediction-and-machine"
+              />
+
+              
+              </div>
+              
             <h4 className="text-secondary mt-5">
               <code className="text-primary">
                 {" "}

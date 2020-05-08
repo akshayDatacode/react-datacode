@@ -7,6 +7,7 @@ import FbLikeShare from "../../FbLikeShare";
 import Technologies from "../../right_section/Technologies";
 import CertificateShowCard from "./CertificateShowCard";
 import LearningSideSection from "../../right_section/learning_sidesection/LearningSideSection";
+import TrainingCertificationCardCarousel from "./TrainingCertificationCardCarousel";
 
 class DataStructure extends Component {
   state = {};
@@ -39,6 +40,57 @@ class DataStructure extends Component {
             >
               <FontAwesomeIcon icon={faAward} size="2x" color="#06CB6C" />
             </Link>
+            <div className="card-deck">
+              <CertificateShowCard
+                title="Data Structure - Part I
+                "
+                level="Beginner"
+                duration="5hr 37min"
+                enroll="Free"
+                platform="Udemy"
+                tag1="Data Structures"
+                tag2="Beginner"
+                link="https://www.udemy.com/course/data-structures-part-1-lognacademy/"
+              />
+                <CertificateShowCard
+                title="Getting interview ready - data structures
+                "
+                level="Beginner"
+                duration="3hr"
+                enroll="Free"
+                platform="Udemy"
+                tag1="Data Structures"
+                tag2="interview"
+                link="https://www.udemy.com/course/getting-interview-ready-data-structures"
+              />
+              
+            </div>
+            <div className="card-deck">
+              <CertificateShowCard
+                title="Graph Theory Algorithms
+                "
+                level="Intermediate"
+                duration="7hr 30min"
+                enroll="Free"
+                platform="Udemy"
+                tag1="Data Structures"
+                tag2="Graph"
+                tag3="Algorithms"
+                link="https://www.udemy.com/course/graph-theory-algorithms"
+              />
+                <CertificateShowCard
+                title="Easy to Advanced Data Structures
+                "
+                level="Beginner"
+                duration="8hr 30min"
+                enroll="Free"
+                platform="Udemy"
+                tag1="Data Structures"
+                tag2="Beginner"
+                link="https://www.udemy.com/course/introduction-to-data-structures"
+              />
+              
+            </div>
             <div className="card-deck">
               <CertificateShowCard
                 title="Object-Oriented Data Structures in C++"
@@ -100,32 +152,39 @@ class DataStructure extends Component {
                 link="https://stude.co/848611/python-data-structures"
               />
               <CertificateShowCard
-                title=""
-                level=""
-                duration=""
-                enroll=""
-                platform=""
-                tag1=""
-                tag2=""
-                tag3=""
-                tag4=""
-                link=""
+                title="Land a Job Easily: Java Algorithms & Data Structures Interview Questions"
+                level="Beginner"
+                duration="2 hr"
+                enroll="Pay for Certificate only"
+                platform="bitdegree.org"
+                tag1="Data Structures"
+                tag2="Algorithms"
+                link="https://stude.co/848611/data-structures-interview-questions"
               />
             </div>
+            <h4 className="text-secondary mt-5">
+              <code className="text-primary">
+                {" "}
+                For More Training & Certification
+              </code>
+            </h4>
+            <TrainingCertificationCardCarousel />
           </div>
+
+          
           <div className="col-md-3 mt-md-5 mt-3">
             <div className="row">
               <FbLikeShare />{" "}
             </div>
-
             <LearningSideSection language="ds" />
             <a href="https://stude.co/848611" target="_blank">
               <img
-                className=" card-img-top mx-auto img-fluid img-circle d-block mt-5 "
+                className=" card-img-top mx-auto  img-fluid img-circle d-block mt-4 "
                 src={require("../../../assets/images/bitdegree.jpeg")}
                 alt="avatar"
               />
             </a>
+
             <Technologies />
             <RightSideSection />
           </div>

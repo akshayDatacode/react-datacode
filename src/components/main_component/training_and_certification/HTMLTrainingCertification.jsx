@@ -42,6 +42,160 @@ class HTML extends Component {
             </Link>
             <div className="card-deck">
               <CertificateShowCard
+                title="HTML and CSS for Beginners - Build a Website & Launch ONLINE"
+                level="Beginner"
+                duration="5hr 51min"
+                enroll="FREE"
+                platform="Udemy"
+                tag1="HTML"
+                tag2=" CSS"
+                tag3=" Beginners"
+                link="https://www.udemy.com/course/html-and-css-for-beginners-crash-course-learn-fast-easy/"
+              />
+              <CertificateShowCard
+                title="Web Design for Web Developers: Build Beautiful Websites!"
+                level="Beginner"
+                duration="46min "
+                enroll="FREE"
+                platform="Udemy"
+                tag1="Web Design"
+                tag2=" Websites"
+                tag3="  Build "
+                link="https://www.udemy.com/course/web-design-secrets/"
+              />
+            </div>
+            <div className="card-deck">
+              <CertificateShowCard
+                title="Master the Basics of HTML5 & CSS3: Beginner Web Development
+                "
+                level="Beginner"
+                duration="3hr 5min "
+                enroll="FREE"
+                platform="Udemy"
+                tag1="HTML"
+                tag2=" CSS"
+                tag3=" Web Development"
+                link="https://www.udemy.com/course/master-the-basics-of-html5-css3-beginner-web-development/"
+              />
+              <CertificateShowCard
+                title="Build Your First Glass Web App Theme With HTML5 And CSS3
+                "
+                level="Beginner"
+                duration="2hr 26min"
+                enroll="FREE"
+                platform="Udemy"
+                tag1="HTML"
+                tag2=" CSS"
+                tag3="Web App "
+                link="https://www.udemy.com/course/build-your-first-glass-web-app-theme-with-css3-and-html5/"
+              />
+            </div>
+            <div className="card-deck">
+              <CertificateShowCard
+                title="HTML and CSS Foundations
+                "
+                level="Beginner"
+                duration="1hr 4min "
+                enroll="FREE"
+                platform="Udemy"
+                tag1="HTML"
+                tag2=" CSS"
+                tag3=" Beginners"
+                link="https://www.udemy.com/course/html-and-css-foundations"
+              />
+              <CertificateShowCard
+                title="Become a HTML and CSS Developer - Build a Responsive Site
+                "
+                level="Beginner"
+                duration="2hr 3min"
+                enroll="FREE"
+                platform="Udemy"
+                tag1="HTML"
+                tag2=" CSS"
+                tag3="Site"
+                link="https://www.udemy.com/course/learn-to-code-in-html-and-css/"
+              />
+            </div>
+            <div className="card-deck">
+              <CertificateShowCard
+                title="HTML and CSS: The Super Fun Beginner's Course
+                "
+                level="Beginner"
+                duration="1hr 2min "
+                enroll="FREE"
+                platform="Udemy"
+                tag1="HTML"
+                tag2=" CSS"
+                tag3=" Beginners"
+                link="https://www.udemy.com/course/ht-mlcss"
+              />
+              <CertificateShowCard
+                title="Learn Html and CSS with fun for Beginners
+                "
+                level="Beginner"
+                duration="4hr 31min"
+                enroll="FREE"
+                platform="Udemy"
+                tag1="HTML"
+                tag2=" CSS"
+                tag3=" Beginners"
+                link="https://www.udemy.com/course/html-with-fun/"
+              />
+            </div>
+            <div className="card-deck">
+              <CertificateShowCard
+                title="CSS Flexbox - Mastering the Basics
+                "
+                level="Beginner"
+                duration="1hr 18min "
+                enroll="FREE"
+                platform="Udemy"
+                tag1="HTML"
+                tag2=" CSS"
+                tag3=" Beginners"
+                link="https://www.udemy.com/course/css-flexbox-mastering-the-basics/"
+              />
+              <CertificateShowCard
+                title="Learn Basic CSS3 Easy way
+                "
+                level="Beginner"
+                duration="1hr 4min"
+                enroll="FREE"
+                platform="Udemy"
+                tag1="HTML"
+                tag2=" CSS"
+                tag3=" Beginners"
+                link="https://www.udemy.com/course/learn-basic-css3-easy-way"
+              />
+            </div>
+            <div className="card-deck">
+              <CertificateShowCard
+                title="CSS3 tutorial for beginners - Learn about CSS3
+                "
+                level="Beginner"
+                duration="1hr 9min"
+                enroll="FREE"
+                platform="Udemy"
+                tag1="HTML"
+                tag2=" CSS"
+                tag3=" Beginners"
+                link="https://www.udemy.com/course/learn-the-basic-of-css-with-course/"
+              />
+              <CertificateShowCard
+                title="Build Portfolio Website Using HTML5,CSS3,jQuery & Bootstrap
+                "
+                level="Beginner"
+                duration="1hr 30min"
+                enroll="Paid"
+                platform="Udemy"
+                tag1="HTML"
+                tag2=" CSS"
+                tag3=" Beginners"
+                link="https://www.udemy.com/course/build-portfolio-website-using-html5-css3-jquery-bootstrap4/"
+              />
+            </div>
+            <div className="card-deck">
+              <CertificateShowCard
                 title="Course: PRDV251: HTML and CSS for Beginners"
                 level="Beginner"
                 duration="5 hr"

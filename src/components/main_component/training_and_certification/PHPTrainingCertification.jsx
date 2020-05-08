@@ -126,7 +126,13 @@ class PHP extends Component {
               />
             </div>
             
-       
+            <h4 className="text-secondary mt-5">
+              <code className="text-primary">
+                {" "}
+                For More Training & Certification
+              </code>
+            </h4>
+            <TrainingCertificationCardCarousel />
           
           </div>
 

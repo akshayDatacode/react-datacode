@@ -42,6 +42,31 @@ class ComputerScience extends Component {
             </Link>
             <div className="card-deck">
               <CertificateShowCard
+                title="Key skill assessment unit: Information literacy"
+                level="Beginner"
+                duration="50 hr"
+                enroll="FREE"
+                platform="open.edu"
+                tag1=" Information"
+                tag2="computing"
+                tag3="literacy"
+                link="https://www.open.edu/openlearn/science-maths-technology/computing-ict/key-skill-assessment-unit-information-literacy/content-section-0?active-tab=description-tab"
+              />
+                <CertificateShowCard
+                title="Basics of Scrum, Agile and Project Delivery"
+                level="Beginner"
+                duration="58min"
+                enroll="FREE"
+                platform="Udemy"
+                tag1="Scrum"
+                tag2="Agile"
+                tag3="Project"
+                link="https://www.udemy.com/course/scrum-methodology/"
+              />
+
+            </div>
+            <div className="card-deck">
+              <CertificateShowCard
                 title="CS101: Introduction to Computer Science I
                 "
                 level="Beginner"
@@ -373,19 +398,7 @@ class ComputerScience extends Component {
                 link="https://www.open.edu/openlearn/science-maths-technology/computing-and-ict/systems-computer/distributed-paradigms/content-section-0?active-tab=description-tab"
               />
             </div>
-            <div className="card-deck">
-              <CertificateShowCard
-                title="Key skill assessment unit: Information literacy"
-                level="Beginner"
-                duration="50 hr"
-                enroll="FREE"
-                platform="open.edu"
-                tag1=" Information"
-                tag2="computing"
-                tag3="literacy"
-                link="https://www.open.edu/openlearn/science-maths-technology/computing-ict/key-skill-assessment-unit-information-literacy/content-section-0?active-tab=description-tab"
-              />
-            </div>
+          
             <h4 className="text-secondary mt-5">
               <code className="text-primary">
                 {" "}

@@ -78,7 +78,7 @@ class Github extends Component {
             <div className="row">
               <FbLikeShare />{" "}
             </div>
-            <LearningSideSection language="js" />
+            <LearningSideSection language="git" />
             <a href="https://stude.co/848611" target="_blank">
               <img
                 className=" card-img-top mx-auto  img-fluid img-circle d-block mt-4 "
