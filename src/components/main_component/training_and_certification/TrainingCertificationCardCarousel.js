@@ -13,90 +13,129 @@ class TrainingCertificationCardCarousel extends Component {
             <Carousel.Item>
               <div className="card-deck ">
                 <CardCarouselItem
-                  imgsource="c_programming.jpeg"
-                  title="C programming"
-                  link="/c"
+                  imgsource="datascience_training_certification.jpeg"
+                  title="DataScience Training Certification"
+                  link="/datascience_training_certification"
                 />
                 <CardCarouselItem
-                  imgsource="python_programming.jpeg"
-                  title="Python Programming"
-                  link="/python"
+                  imgsource="machinelearning_training_certification.jpeg"
+                  title="Machine Learning Training Certification"
+                  link="/machinelearning_training_certification"
                 />
                 <CardCarouselItem
-                  imgsource="java_programming.jpeg"
-                  title="Java Programming"
-                  link="/java"
+                  imgsource="webdevelopment_training_certification.jpeg"
+                  title="Webdevelopment Training Certification"
+                  link="/webdevelopment_training_certification"
+                />
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className="card-deck ">
+                <CardCarouselItem
+                  imgsource="computerscience_training_certification.jpeg"
+                  title="computerscience Training Certification"
+                  link="/computerscience_training_certification"
+                />
+                <CardCarouselItem
+                  imgsource="nodejs_training_certification.jpeg"
+                  title="NodeJs Training Certification"
+                  link="/nodejs_training_certification"
+                />
+                <CardCarouselItem
+                  imgsource="php_training_certification.jpeg"
+                  title="PHP Training Certification"
+                  link="/php_training_certification"
+                />
+              </div>
+            </Carousel.Item>
+
+            <Carousel.Item>
+              <div className="card-deck ">
+                <CardCarouselItem
+                  imgsource="c_training_certification.jpeg"
+                  title="C Training Certification"
+                  link="/c_training_certification"
+                />
+                <CardCarouselItem
+                  imgsource="python_training_certification.jpeg"
+                  title="Python Training Certification"
+                  link="/python_training_certification"
+                />
+                <CardCarouselItem
+                  imgsource="java_training_certification.jpeg"
+                  title="Java Training Certification"
+                  link="/java_training_certification"
                 />
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div className="card-deck">
                 <CardCarouselItem
-                  imgsource="javascript.jpeg"
-                  title="Javascript"
-                  link="/js"
+                  imgsource="js_training_certification.jpeg"
+                  title="Javascript Training Certification"
+                  link="/js_training_certification"
                 />
                 <CardCarouselItem
-                  imgsource="html.jpeg"
-                  title="HTML"
-                  link="/html"
+                  imgsource="html_css_training_certification.jpeg"
+                  title="HTM CSS Training Certification"
+                  link="/html_training_certification"
                 />
                 <CardCarouselItem
-                  imgsource="css.jpeg"
-                  title="Coming Soon..."
-                  link="/index_technologies"
+                  imgsource="git_training_certification.jpeg"
+                  title="Git Training Certification"
+                  link="/github_training_certification"
                 />
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div className="card-deck">
                 <CardCarouselItem
-                  imgsource="datastructure.jpeg"
+                  imgsource="ds_training_certification.jpeg"
                   title="Datastructure & Algorithm"
-                  link="/datastructure"
+                  link="/ds_training_certification"
                 />
                 <CardCarouselItem
-                  imgsource="dbms.jpeg"
-                  title="DBMS"
-                  link="/dbms"
+                  imgsource="dbms_sql_training_certification.jpeg"
+                  title="DBMS / SQL"
+                  link="/dbms_training_certification"
                 />
                 <CardCarouselItem
-                  imgsource="sql.jpeg"
-                  title="SQL"
-                  link="/sql"
+                  imgsource="swift_training_certification.jpeg"
+                  title="swift"
+                  link="/swift_training_certification"
                 />
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div className="card-deck">
                 <CardCarouselItem
-                  imgsource="android.jpeg"
+                  imgsource="android_training_certification.jpeg"
                   title="Android"
-                  link="/android"
+                  link="/android_training_certification"
                 />
                 <CardCarouselItem
-                  imgsource="react.jpeg"
+                  imgsource="react_training_certification.jpeg"
                   title="React"
-                  link="/react"
+                  link="/react_training_certification"
                 />
                 <CardCarouselItem
-                  imgsource="angular.jpeg"
+                  imgsource="angular_training_certification.jpeg"
                   title="Angular"
-                  link="/angular"
+                  link="/angular_training_certification"
                 />
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div className="card-deck">
                 <CardCarouselItem
-                  imgsource="oops.jpeg"
+                  imgsource="oops_training_certification.jpeg"
                   title="OOPS"
-                  link="/oops"
+                  link="/oops_training_certification"
                 />
                 <CardCarouselItem
-                  imgsource="comming_soon.jpeg"
-                  title=" Coming soon"
-                  link="/index_technologies"
+                  imgsource="cpp_training_certification.jpeg"
+                  title="C++"
+                  link="/cpp_training_certification"
                 />
                 <CardCarouselItem
                   imgsource="comming_soon.jpeg"
@@ -113,89 +152,142 @@ class TrainingCertificationCardCarousel extends Component {
           <Carousel indicators={false}>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="python_programming.jpeg"
-                title="Python Programming"
-                link="/python"
+                imgsource="datascience_training_certification.jpeg"
+                title="DataScience Training Certification"
+                link="/datascience_training_certification"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="c_programming.jpeg"
-                title="C Programming"
-                link="/c"
+                imgsource="machinelearning_training_certification.jpeg"
+                title="Machine Learning Training Certification"
+                link="/machinelearning_training_certification"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="java_programming.jpeg"
-                title="Java Programming"
-                link="/java"
+                imgsource="webdevelopment_training_certification.jpeg"
+                title="Webdevelopment Training Certification"
+                link="/webdevelopment_training_certification"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="javascript.jpeg"
+                imgsource="computerscience_training_certification.jpeg"
+                title="computerscience Training Certification"
+                link="/computerscience_training_certification"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <CardCarouselItem
+                imgsource="nodejs_training_certification.jpeg"
+                title="NodeJs Training Certification"
+                link="/nodejs_training_certification"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <CardCarouselItem
+                imgsource="php_training_certification.jpeg"
+                title="PHP Training Certification"
+                link="/php_training_certification"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <CardCarouselItem
+                imgsource="python_training_certification.jpeg"
+                title="Python Training Certification"
+                link="/python_training_certification"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <CardCarouselItem
+                imgsource="c_training_certification.jpeg"
+                title="C _training_certification"
+                link="/c_training_certification"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <CardCarouselItem
+                imgsource="cpp_training_certification.jpeg"
+                title="C++ Training Certification"
+                link="/cpp_training_certification"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <CardCarouselItem
+                imgsource="java_training_certification.jpeg"
+                title="Java _training_certification"
+                link="/java_training_certification"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <CardCarouselItem
+                imgsource="js_training_certification.jpeg"
                 title="Javascript"
-                link="/js"
+                link="/js_training_certification"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="html.jpeg"
+                imgsource="html_css_training_certification.jpeg"
                 title="HTML"
-                link="/html"
+                link="/html_training_certification"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="css.jpeg"
-                title="CSS"
-                link="/index_technologies"
+                imgsource="git_training_certification.jpeg"
+                title="Git Training Certification"
+                link="/github_training_certification"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="datastructure.jpeg"
+                imgsource="swift_training_certification.jpeg"
+                title="Swift Training Certification"
+                link="/swift_training_certification"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <CardCarouselItem
+                imgsource="ds_training_certification.jpeg"
                 title="Datastructure & Algorithm"
-                link="/datastructure"
+                link="/ds_training_certification"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="dbms.jpeg"
+                imgsource="dbms_sql_training_certification.jpeg"
                 title="DBMS"
-                link="/dbms"
+                link="/dbms_training_certification"
               />
             </Carousel.Item>
             <Carousel.Item>
-              <CardCarouselItem imgsource="sql.jpeg" title="SQL" link="/sql" />
-            </Carousel.Item>
-            <Carousel.Item>
               <CardCarouselItem
-                imgsource="oops.jpeg"
+                imgsource="oops_training_certification.jpeg"
                 title="OOPs"
-                link="/oops"
+                link="/oops_training_certification"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="android.jpeg"
+                imgsource="android_training_certification.jpeg"
                 title="Android"
-                link="/android"
+                link="/android_training_certification"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="react.jpeg"
+                imgsource="react_training_certification.jpeg"
                 title="React"
-                link="/react"
+                link="/react_training_certification"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="angular.jpeg"
+                imgsource="angular_training_certification.jpeg"
                 title="Angular"
-                link="/angular"
+                link="/angular_training_certification"
               />
             </Carousel.Item>
           </Carousel>
