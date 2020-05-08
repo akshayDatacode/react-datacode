@@ -601,7 +601,7 @@ class LearningSideSection extends Component {
             </div>
 
             <RecommendPost
-              imgsource="ds_tech.jpeg"
+              imgsource="ds_tutorials_courses.jpeg"
               RecPostHading="DataStructure Tutorials & Courses"
               link="/ds"
             />
@@ -612,7 +612,7 @@ class LearningSideSection extends Component {
               link="/ds_interview_question"
             />
             <RecommendPost
-              imgsource="ds_programming_question.jpeg"
+              imgsource="dsa_programming_questions.jpeg"
               RecPostHading="DataStructure Example Questions"
               link="/ds_programming_questions"
             />
@@ -640,7 +640,7 @@ class LearningSideSection extends Component {
               </div>
             </div>
             <RecommendPost
-              imgsource="ds_practice_questions.jpeg"
+              imgsource="ds_practice_question.jpeg"
               RecPostHading="DataStructure Practice Problems"
               link="/index_ds_practice_questions"
             />
@@ -650,7 +650,7 @@ class LearningSideSection extends Component {
               link="/index_ds_mcqs"
             />
             <RecommendPost
-              imgsource="ds_quize_test.jpeg"
+              imgsource="ds_quize.jpeg"
               RecPostHading="DataStructure Quiz Test"
               link="/ds_quizes_tests"
             />

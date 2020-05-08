@@ -41,7 +41,7 @@ class Webdevelopment extends Component {
             </Link>
 
             <h3 className="mt-3 mb-0">
-              <code>Upcoimng Training </code>
+              <code>Upcoming Training </code>
             </h3>
             <div className="card-deck">
               <CertificateShowCard
@@ -54,6 +54,30 @@ class Webdevelopment extends Component {
                 tag2="NodeJs"
                 tag3="Deployment"
                 link="https://drive.google.com/open?id=1N7Xk4ryxHhTXQDRO_ugccgjm3CIOHlm2"
+              />
+            </div>
+            <div className="card-deck">
+              <CertificateShowCard
+                title="Introducing Coding for Beginners: an HTML and CSS Online Course"
+                level="Beginner"
+                duration="23 hr"
+                enroll="FREE"
+                platform="bitdegree.org"
+                tag1="HTML"
+                tag2=" CSS"
+                tag3=" Beginners"
+                link="https://stude.co/848611/coding-for-beginners-space-doggos"
+              />
+              <CertificateShowCard
+                title="Bootstrap and PHP Blog Tutorial Step by Step"
+                level="Beginner"
+                duration="20 hr"
+                enroll="FREE"
+                platform="bitdegree.org"
+                tag1="PHP"
+                tag2="Bootstrap"
+                tag3="Tutorial"
+                link="https://stude.co/848611/php-blog-tutorial"
               />
             </div>
             <div className="card-deck">

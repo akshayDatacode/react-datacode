@@ -7,11 +7,7 @@ import {
   faDatabase,
   faDigitalTachograph,
   faObjectGroup,
-  faNetworkWired,
-  faAmericanSignLanguageInterpreting,
-  faChalkboardTeacher,
   faAward,
-  faWindowMaximize,
   faColumns,
   faTv,
 } from "@fortawesome/free-solid-svg-icons";
@@ -21,7 +17,6 @@ import {
   faJava,
   faJs,
   faHtml5,
-  faCss3,
   faNodeJs,
   faAngular,
   faReact,
@@ -147,68 +142,6 @@ class IndexTrainingCertification extends Component {
             </div>
             <div className="card-deck mt-4">
               <div className="card text-center p-2">
-                <Link to="/js_training_certification">
-                  <center>
-                    <FontAwesomeIcon icon={faJs} size="4x" color="#633974" />
-                  </center>
-                  JavaScript
-                </Link>
-              </div>
-              <div className="card text-center p-2">
-                <Link to="/dbms_training_certification">
-                  <center>
-                    <FontAwesomeIcon
-                      icon={faDatabase}
-                      size="4x"
-                      color="#633974"
-                    />
-                  </center>
-                  DBMS
-                </Link>
-              </div>
-              <div className="card text-center p-2">
-                <Link to="/sql_training_certification">
-                  <center>
-                    <FontAwesomeIcon
-                      icon={faDatabase}
-                      size="4x"
-                      color="#633974"
-                    />
-                  </center>
-                  SQL
-                </Link>
-              </div>
-              <div className="card text-center p-2">
-                <Link to="/datastructure_training_certification">
-                  <center>
-                    <FontAwesomeIcon
-                      icon={faDigitalTachograph}
-                      size="4x"
-                      color="#633974"
-                    />
-                  </center>
-                  Data Structure
-                </Link>
-              </div>
-            </div>
-            <div className="card-deck mt-4">
-              <div className="card text-center p-2">
-                <Link to="/html_training_certification">
-                  <center>
-                    <FontAwesomeIcon icon={faHtml5} size="4x" color="#633974" />
-                  </center>
-                  HTML
-                </Link>
-              </div>
-              <div className="card text-center p-2">
-                <Link to="/css_training_certification">
-                  <center>
-                    <FontAwesomeIcon icon={faCss3} size="4x" color="#633974" />
-                  </center>
-                  CSS
-                </Link>
-              </div>
-              <div className="card text-center p-2">
                 <Link to="oops_training_certification">
                   <center>
                     <FontAwesomeIcon
@@ -221,21 +154,50 @@ class IndexTrainingCertification extends Component {
                 </Link>
               </div>
               <div className="card text-center p-2">
-                <Link to="/cpp_training_certification">
+                <Link to="/dbms_training_certification">
                   <center>
                     <FontAwesomeIcon
-                      icon={faNetworkWired}
+                      icon={faDatabase}
                       size="4x"
                       color="#633974"
                     />
                   </center>
-                  CN
+                  DBMS/SQL
+                </Link>
+              </div>
+
+              <div className="card text-center p-2">
+                <Link to="/datastructure_training_certification">
+                  <center>
+                    <FontAwesomeIcon
+                      icon={faDigitalTachograph}
+                      size="4x"
+                      color="#633974"
+                    />
+                  </center>
+                  Data Structure
+                </Link>
+              </div>
+              <div className="card text-center p-2">
+                <Link to="/html_training_certification">
+                  <center>
+                    <FontAwesomeIcon icon={faHtml5} size="4x" color="#633974" />
+                  </center>
+                  HTML/CSS
                 </Link>
               </div>
             </div>
             <div className="card-deck mt-4">
               <div className="card text-center p-2">
-                <Link to="/c_training_certification">
+                <Link to="/js_training_certification">
+                  <center>
+                    <FontAwesomeIcon icon={faJs} size="4x" color="#633974" />
+                  </center>
+                  JavaScript
+                </Link>
+              </div>
+              <div className="card text-center p-2">
+                <Link to="/nodejs_training_certification">
                   <center>
                     <FontAwesomeIcon
                       icon={faNodeJs}
@@ -266,22 +228,10 @@ class IndexTrainingCertification extends Component {
                   React
                 </Link>
               </div>
-              <div className="card text-center p-2">
-                <Link to="/cpp_training_certification">
-                  <center>
-                    <FontAwesomeIcon
-                      icon={faGithub}
-                      size="4x"
-                      color="#633974"
-                    />
-                  </center>
-                  GitHub
-                </Link>
-              </div>
             </div>
             <div className="card-deck mt-4">
               <div className="card text-center p-2">
-                <Link to="/c_training_certification">
+                <Link to="/php_training_certification">
                   <center>
                     <FontAwesomeIcon icon={faPhp} size="4x" color="#633974" />
                   </center>
@@ -309,65 +259,24 @@ class IndexTrainingCertification extends Component {
                 </Link>
               </div>
               <div className="card text-center p-2">
-                <Link to="/cpp_training_certification">
+                <Link to="/github_training_certification">
                   <center>
                     <FontAwesomeIcon
-                      icon={faCopyright}
+                      icon={faGithub}
                       size="4x"
                       color="#633974"
                     />
                   </center>
-                  OS
+                  GitHub
                 </Link>
               </div>
             </div>
-            {/* <div className="card-deck mt-4">
-              <div className="card text-center p-2">
-                <Link to="/c">
-                  <center>
-                    <FontAwesomeIcon
-                      icon={faCopyright}
-                      size="4x"
-                      color="#633974"
-                    />
-                  </center>
-                  C Programming
-                </Link>
-              </div>
-              <div className="card text-center p-2">
-                <Link to="/python">
-                  <center>
-                    <FontAwesomeIcon
-                      icon={faPython}
-                      size="4x"
-                      color="#633974"
-                    />
-                  </center>
-                  Python
-                </Link>
-              </div>
-              <div className="card text-center p-2">
-                <Link to="java">
-                  <center>
-                    <FontAwesomeIcon icon={faJava} size="4x" color="#633974" />
-                  </center>
-                  Java
-                </Link>
-              </div>
-              <div className="card text-center p-2">
-                <Link to="/cpp">
-                  <center>
-                    <FontAwesomeIcon
-                      icon={faCopyright}
-                      size="4x"
-                      color="#633974"
-                    />
-                  </center>
-                  C++
-                </Link>
-              </div>
-            </div> */}
-            <h4 className="text-secondary mt-5">For More Technologies</h4>
+            <h4 className="text-secondary mt-5">
+              <code className="text-primary">
+                {" "}
+                For More Training & Certification
+              </code>
+            </h4>
             <TrainingCertificationCardCarousel />
           </div>
           <div className="col-md-3">

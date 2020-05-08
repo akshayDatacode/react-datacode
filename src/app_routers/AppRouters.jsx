@@ -320,6 +320,9 @@ import DataScienceTrainingCertification from "../components/main_component/train
 import MachineLearningTrainingCertification from "../components/main_component/training_and_certification/MachineLearningTrainingCertification";
 import WebdevelopmentTrainingCertification from "../components/main_component/training_and_certification/WebdevelopmentTrainingCertification";
 import SwiftTrainingCertification from "../components/main_component/training_and_certification/SwiftTrainingCertification";
+import NodeJsTrainingCertification from "../components/main_component/training_and_certification/NodeJsTrainingCertification";
+import PHPTrainingCertification from "../components/main_component/training_and_certification/PHPTrainingCertification";
+import GithubTrainingCertification from "../components/main_component/training_and_certification/GithubTrainingCertification";
 
 class AppRouters extends Component {
   state = {};
@@ -918,6 +921,21 @@ class AppRouters extends Component {
             exact
             path="/android_training_certification"
             component={AndroidTrainingCertification}
+          />
+          <Route
+            exact
+            path="/nodejs_training_certification"
+            component={NodeJsTrainingCertification}
+          />
+          <Route
+            exact
+            path="/php_training_certification"
+            component={PHPTrainingCertification}
+          />
+          <Route
+            exact
+            path="/github_training_certification"
+            component={GithubTrainingCertification}
           />
           {/* Ending TrainingCertification */}
 

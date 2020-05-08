@@ -8,7 +8,6 @@ import Technologies from "../../right_section/Technologies";
 import CertificateShowCard from "./CertificateShowCard";
 import LearningSideSection from "../../right_section/learning_sidesection/LearningSideSection";
 
-
 class DataScience extends Component {
   state = {};
   componentDidMount() {
@@ -40,7 +39,30 @@ class DataScience extends Component {
             >
               <FontAwesomeIcon icon={faAward} size="2x" color="#06CB6C" />
             </Link>
-
+            <div className="card-deck">
+              <CertificateShowCard
+                title="Learn Data Science With R Part 1 of 10
+                "
+                level="Beginner"
+                duration="8hr 42min"
+                enroll="FREE"
+                platform="Udemy"
+                tag1="Data Science"
+                tag2="R"
+                link="https://www.udemy.com/course/datascience_with_r"
+              />
+              <CertificateShowCard
+                title="Introduction to Data Science using Python (Module 1/3)
+                "
+                level="Intermediate"
+                duration="2hr 32min"
+                enroll="FREE"
+                platform="Udemy"
+                tag1="Data Science"
+                tag2=" Python"
+                link="https://www.udemy.com/course/introduction-to-data-science-using-python/"
+              />
+            </div>
             <div className="card-deck">
               <CertificateShowCard
                 title="Build Data Analysis tools using R and DPLYR"
@@ -134,30 +156,7 @@ class DataScience extends Component {
                 link="https://www.coursera.org/learn/datasciencemathskills?edocomorp=free-courses-college-students&ranMID=40328&ranEAID=SAyYsTvLiGQ&ranSiteID=SAyYsTvLiGQ-_LocLC0RVsvxyDU0ugyWXA&siteID=SAyYsTvLiGQ-_LocLC0RVsvxyDU0ugyWXA&utm_content=10&utm_medium=partners&utm_source=linkshare&utm_campaign=SAyYsTvLiGQ"
               />
             </div>
-            <div className="card-deck">
-              <CertificateShowCard
-                title="Learn Data Science With R Part 1 of 10
-                "
-                level="Beginner"
-                duration="8hr 42min"
-                enroll="FREE"
-                platform="Udemy"
-                tag1="Data Science"
-                tag2="R"
-                link="https://www.udemy.com/course/datascience_with_r"
-              />
-              <CertificateShowCard
-                title="Introduction to Data Science using Python (Module 1/3)
-                "
-                level="Intermediate"
-                duration="2hr 32min"
-                enroll="FREE"
-                platform="Udemy"
-                tag1="Data Science"
-                tag2=" Python"
-                link="https://www.udemy.com/course/introduction-to-data-science-using-python/"
-              />
-            </div>
+
             <div className="card-deck">
               <CertificateShowCard
                 title="Mobile ML and Data Science with nitroproc
@@ -171,9 +170,7 @@ class DataScience extends Component {
                 tag3="nitroproc"
                 link="https://www.udemy.com/course/work-with-big-data-locally-with-nitroproc/"
               />
-              
             </div>
-            
           </div>
           <div className="col-md-3 mt-md-5 mt-3">
             <div className="row">

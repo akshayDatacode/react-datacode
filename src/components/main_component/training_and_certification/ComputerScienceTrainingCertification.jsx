@@ -39,7 +39,29 @@ class ComputerScience extends Component {
             >
               <FontAwesomeIcon icon={faAward} size="2x" color="#06CB6C" />
             </Link>
-
+            <div className="card-deck">
+              <CertificateShowCard
+                title="CS101: Introduction to Computer Science I
+                "
+                level="Beginner"
+                duration="52 hr"
+                enroll="FREE"
+                platform="Saylor.org"
+                tag1="Introduction"
+                tag2="Computer Science"
+                link="https://learn.saylor.org/course/view.php?id=6"
+              />
+              <CertificateShowCard
+                title="CS102: Introduction to Computer Science II"
+                level="Beginner"
+                duration="42 hr"
+                enroll="FREE"
+                platform="Saylor.org"
+                tag1="Introduction"
+                tag2="Computer Science"
+                link="https://learn.saylor.org/course/view.php?id=64"
+              />
+            </div>
             <div className="card-deck">
               <CertificateShowCard
                 title="Computational Thinking for Problem Solving"
@@ -89,7 +111,7 @@ class ComputerScience extends Component {
               />
             </div>
             <div className="card-deck">
-            <CertificateShowCard
+              <CertificateShowCard
                 title="Introduction to Augmented Reality and ARCore"
                 level="Beginner"
                 duration="11 hrs"
@@ -114,7 +136,7 @@ class ComputerScience extends Component {
               />
             </div>
             <div className="card-deck">
-            <CertificateShowCard
+              <CertificateShowCard
                 title="Competitive Programmer's Core Skills"
                 level="Intermediate"
                 duration="28 hr"
@@ -138,7 +160,7 @@ class ComputerScience extends Component {
               />
             </div>
             <div className="card-deck">
-            <CertificateShowCard
+              <CertificateShowCard
                 title="Computer Science: Algorithms, Theory, and Machines"
                 level="Intermediate"
                 duration="16 hr"
@@ -161,33 +183,9 @@ class ComputerScience extends Component {
                 link="https://www.coursera.org/specializations/cloud-computing"
               />
             </div>
+
             <div className="card-deck">
-            <CertificateShowCard
-                title="CS101: Introduction to Computer Science I
-                "
-                level="Beginner"
-                duration="52 hr"
-                enroll="FREE"
-                platform="Saylor.org"
-                tag1="Introduction"
-                tag2="Computer Science"
-               
-                link="https://learn.saylor.org/course/view.php?id=6"
-              />
               <CertificateShowCard
-                title="CS102: Introduction to Computer Science II"
-                level="Beginner"
-                duration="42 hr"
-                enroll="FREE"
-                platform="Saylor.org"
-                tag1="Introduction"
-                tag2="Computer Science"
-                link="https://learn.saylor.org/course/view.php?id=64"
-              />
-              
-            </div>
-            <div className="card-deck">
-            <CertificateShowCard
                 title="CS301: Computer Architecture"
                 level="Beginner"
                 duration="109 hr"
@@ -210,7 +208,7 @@ class ComputerScience extends Component {
               />
             </div>
             <div className="card-deck">
-            <CertificateShowCard
+              <CertificateShowCard
                 title="Elementary Data Structures"
                 level="Beginner"
                 duration="38 hr"
@@ -233,7 +231,7 @@ class ComputerScience extends Component {
               />
             </div>
             <div className="card-deck">
-            <CertificateShowCard
+              <CertificateShowCard
                 title="Software Engineering"
                 level="Beginner"
                 duration="45 hr"
@@ -257,7 +255,7 @@ class ComputerScience extends Component {
               />
             </div>
             <div className="card-deck">
-            <CertificateShowCard
+              <CertificateShowCard
                 title="Computer Communications and Networks
                 "
                 level="Beginner"
@@ -282,7 +280,7 @@ class ComputerScience extends Component {
               />
             </div>
             <div className="card-deck">
-            <CertificateShowCard
+              <CertificateShowCard
                 title="An introduction to data and information"
                 level="Beginner"
                 duration="20 hr"
@@ -305,7 +303,7 @@ class ComputerScience extends Component {
               />
             </div>
             <div className="card-deck">
-            <CertificateShowCard
+              <CertificateShowCard
                 title="Data and processes in computing"
                 level="Beginner"
                 duration="14 hr"
@@ -328,7 +326,7 @@ class ComputerScience extends Component {
               />
             </div>
             <div className="card-deck">
-            <CertificateShowCard
+              <CertificateShowCard
                 title="Computers and computer systems"
                 level="Intermediate"
                 duration="20 hr"
@@ -351,7 +349,7 @@ class ComputerScience extends Component {
               />
             </div>
             <div className="card-deck">
-            <CertificateShowCard
+              <CertificateShowCard
                 title="An introduction to software development"
                 level="Advanced"
                 duration="6 hr"
@@ -375,7 +373,7 @@ class ComputerScience extends Component {
               />
             </div>
             <div className="card-deck">
-            <CertificateShowCard
+              <CertificateShowCard
                 title="Key skill assessment unit: Information literacy"
                 level="Beginner"
                 duration="50 hr"
@@ -386,9 +384,9 @@ class ComputerScience extends Component {
                 tag3="literacy"
                 link="https://www.open.edu/openlearn/science-maths-technology/computing-ict/key-skill-assessment-unit-information-literacy/content-section-0?active-tab=description-tab"
               />
-           </div>
+            </div>
           </div>
-          
+
           <div className="col-md-3 mt-md-5 mt-3">
             <div className="row">
               <FbLikeShare />{" "}

@@ -16,7 +16,7 @@ class Java extends Component {
   render() {
     return (
       <>
-         <div className="row">
+        <div className="row">
           <div className="col-1"></div>
           <div className="col-md-8 mt-4 ">
             <h2
@@ -39,8 +39,31 @@ class Java extends Component {
             >
               <FontAwesomeIcon icon={faAward} size="2x" color="#06CB6C" />
             </Link>
-
-           <div className="card-deck">
+            <div className="card-deck">
+              <CertificateShowCard
+                title="String, StringBuffer & StringBuilder for JAVA Interviews
+                "
+                level="Intermediate"
+                duration="5hr 11min"
+                enroll="FREE"
+                platform="Udemy"
+                tag2="Java"
+                tag1="String"
+                tag2="Interviews"
+                link="https://www.udemy.com/course/string-stringbuffer-stringbuilder-for-java-certification"
+              />
+              <CertificateShowCard
+                title="Java Tutorial"
+                level="Beginner"
+                duration="5 hr"
+                enroll="Free "
+                platform="SoloLearn"
+                tag2="Java"
+                tag1="Tutorial"
+                link="https://www.sololearn.com/Course/Java/"
+              />
+            </div>
+            <div className="card-deck">
               <CertificateShowCard
                 title="Building a Text-Based Bank in Java"
                 level="Beginner"
@@ -98,7 +121,6 @@ class Java extends Component {
                 enroll="Paid"
                 platform="simplilearn"
                 tag2="Java"
-
                 tag1="software-development"
                 tag2="training"
                 tag3="mobile development"
@@ -128,8 +150,8 @@ class Java extends Component {
                 tag2="Java"
                 tag1="Tutorial"
                 link="https://www.udemy.com/course/java-tutorial/"
-                />
-                 <CertificateShowCard
+              />
+              <CertificateShowCard
                 title="20 Small Programs in Java
                 "
                 level="Intermediate"
@@ -139,9 +161,9 @@ class Java extends Component {
                 tag2="Java"
                 tag1="Programs"
                 link="https://www.udemy.com/course/10-small-programs-in-java/"
-                />
-              </div>
-              <div className="card-deck">
+              />
+            </div>
+            <div className="card-deck">
               <CertificateShowCard
                 title="Simple Game Programming From Scratch with libGDX and java
                 "
@@ -153,8 +175,8 @@ class Java extends Component {
                 tag1="Programming"
                 tag2="Scratch"
                 link="https://www.udemy.com/course/game-programming-with-libgdx-and-java"
-                />
-                 <CertificateShowCard
+              />
+              <CertificateShowCard
                 title="An Introduction to Java Programming
                 "
                 level="Beginner"
@@ -165,33 +187,10 @@ class Java extends Component {
                 tag1="Programming"
                 tag2="Introduction"
                 link="https://www.udemy.com/course/an-introduction-to-java-programming"
-                />
-              </div>
-              <div className="card-deck">
-              <CertificateShowCard
-                title="String, StringBuffer & StringBuilder for JAVA Interviews
-                "
-                level="Intermediate"
-                duration="5hr 11min"
-                enroll="FREE"
-                platform="Udemy"
-                tag2="Java"
-                tag1="String"
-                tag2="Interviews"
-                link="https://www.udemy.com/course/string-stringbuffer-stringbuilder-for-java-certification"
-                />
-                 <CertificateShowCard
-                title="Java Tutorial"
-                level="Beginner"
-                duration="5 hr"
-                enroll="Free "
-                platform="SoloLearn"
-                tag2="Java"
-                tag1="Tutorial"
-                link="https://www.sololearn.com/Course/Java/"
-                />
-              </div>
-              <div className="card-deck">
+              />
+            </div>
+
+            <div className="card-deck">
               <CertificateShowCard
                 title="Java 101: Find the Easiest Way to Learn Java & Start Coding in No Time"
                 level="Beginner"
@@ -202,8 +201,8 @@ class Java extends Component {
                 tag1=" Learn"
                 tag2="Coding"
                 link="https://stude.co/848611/learn-java"
-                />
-                 <CertificateShowCard
+              />
+              <CertificateShowCard
                 title="Java Rest API automation from scratch"
                 level="Beginner"
                 duration="52 hr"
@@ -213,9 +212,9 @@ class Java extends Component {
                 tag1="scratch"
                 tag2="Rest API"
                 link="https://stude.co/848611/java-rest-api"
-                />
-              </div>
-              <div className="card-deck">
+              />
+            </div>
+            <div className="card-deck">
               <CertificateShowCard
                 title="Java for Dummies: Learn Java Programming Basics"
                 level="Beginner"
@@ -223,22 +222,20 @@ class Java extends Component {
                 enroll="Pay for Certificate only"
                 platform="bitdegree.org"
                 tag1="Java"
-                
                 link="https://stude.co/848611/java-for-dummies"
-                />
-                <CertificateShowCard
+              />
+              <CertificateShowCard
                 title="Introduction to Java Basics Programming: Coding Android Apps"
                 level="Beginner"
                 duration="3hr"
                 enroll="Pay for Certificate only"
                 platform="bitdegree.org"
                 tag1="Java"
-               
                 link="https://stude.co/848611/java-for-dummies"
-                />
-                </div>
-</div>
-<div className="col-md-3 mt-md-5 mt-3">
+              />
+            </div>
+          </div>
+          <div className="col-md-3 mt-md-5 mt-3">
             <div className="row">
               <FbLikeShare />{" "}
             </div>

@@ -8,7 +8,6 @@ import Technologies from "../../right_section/Technologies";
 import CertificateShowCard from "./CertificateShowCard";
 import LearningSideSection from "../../right_section/learning_sidesection/LearningSideSection";
 
-
 class Python extends Component {
   state = {};
   componentDidMount() {
@@ -17,7 +16,7 @@ class Python extends Component {
   render() {
     return (
       <>
-         <div className="row">
+        <div className="row">
           <div className="col-1"></div>
           <div className="col-md-8 mt-4 ">
             <h2
@@ -40,8 +39,18 @@ class Python extends Component {
             >
               <FontAwesomeIcon icon={faAward} size="2x" color="#06CB6C" />
             </Link>
-
-           
+            <div className="card-deck">
+              <CertificateShowCard
+                title="Python 3 Tutorial"
+                level="Beginner"
+                duration="3hr 55min"
+                enroll="FREE"
+                platform="SoloLearn"
+                tag1="Python"
+                tag2="Tutorial"
+                link="https://www.sololearn.com/Course/Python/"
+              />
+            </div>
             <div className="card-deck">
               <CertificateShowCard
                 title="Create Your First Python Program"
@@ -208,7 +217,7 @@ class Python extends Component {
             </div>
 
             <div className="card-deck">
-            <CertificateShowCard
+              <CertificateShowCard
                 title="Using Python for Research"
                 level="Beginner"
                 duration="5 week"
@@ -219,7 +228,7 @@ class Python extends Component {
                 tag3="Certificate "
                 link="https://www.edx.org/course/using-python-for-research"
               />
-               <CertificateShowCard
+              <CertificateShowCard
                 title="CS50's Introduction to Artificial Intelligence with Python"
                 level="Beginner"
                 duration="7 week"
@@ -232,8 +241,7 @@ class Python extends Component {
               />
             </div>
             <div className="card-deck">
-
-            <CertificateShowCard
+              <CertificateShowCard
                 title="Learn Advanced Python Programming: Advanced Python Course"
                 level="Intermediate"
                 duration="25 hr"
@@ -244,7 +252,7 @@ class Python extends Component {
                 tag3=" Programming"
                 link="https://stude.co/848611/advanced-python-programming"
               />
-               <CertificateShowCard
+              <CertificateShowCard
                 title="Learn Python in one day! Beginner’s crash course"
                 level="Beginner"
                 duration="36 hr"
@@ -257,7 +265,7 @@ class Python extends Component {
             </div>
 
             <div className="card-deck">
-            <CertificateShowCard
+              <CertificateShowCard
                 title="Simple and Extensive Python 3 Tutorial: Learn Python Basics From Scratch"
                 level="Beginner"
                 duration="78 hr"
@@ -268,7 +276,7 @@ class Python extends Component {
                 tag3="Extensive"
                 link="https://stude.co/848611/python-3-tutorial"
               />
-               <CertificateShowCard
+              <CertificateShowCard
                 title="Selenium Tutorial: Learn to Build an Automation Framework with Python"
                 level="Beginner"
                 duration="60 hr"
@@ -281,7 +289,7 @@ class Python extends Component {
               />
             </div>
             <div className="card-deck">
-            <CertificateShowCard
+              <CertificateShowCard
                 title="AWS tutorial for beginners: get confident with DynamoDB, using Python and Boto3, RDS"
                 level="Beginner"
                 duration="47 hr"
@@ -291,7 +299,7 @@ class Python extends Component {
                 tag2="DynamoDB"
                 link="https://stude.co/848611/aws-tutorial"
               />
-               <CertificateShowCard
+              <CertificateShowCard
                 title="QGIS tutorial: extend QGIS with Python plugins"
                 level="Intermediate"
                 duration="22 hr"
@@ -304,8 +312,7 @@ class Python extends Component {
               />
             </div>
             <div className="card-deck">
-
-            <CertificateShowCard
+              <CertificateShowCard
                 title="Learn Python From Scratch: Basics and Projects for Practice"
                 level="Beginner"
                 duration="37 hr"
@@ -316,7 +323,7 @@ class Python extends Component {
                 tag3="Projects"
                 link="https://stude.co/848611/python-from-scratch"
               />
-               <CertificateShowCard
+              <CertificateShowCard
                 title="Python Course: Become a Highly In-demand Programmer"
                 level="Beginner"
                 duration="62 hr"
@@ -330,96 +337,80 @@ class Python extends Component {
             </div>
 
             <div className="card-deck">
+              <CertificateShowCard
+                title="Anyone Can Code: How to Learn Coding for Beginners With Scratch and Python!"
+                level="Beginner"
+                duration="37 hr"
+                enroll="Pay for Certificate only"
+                platform="bitdegree.org"
+                tag1="Python"
+                tag2="Coding"
+                tag3="Learn"
+                link="https://stude.co/848611/how-to-learn-coding-for-beginners"
+              />
+              <CertificateShowCard
+                title="Learn Node.js web development getting a full stack of the best tools"
+                level="Beginner"
+                duration="5 hr"
+                enroll="Pay for Certificate only"
+                platform="bitdegree.org"
+                tag1="Python"
+                tag2="web development"
+                tag3="full stack"
+                link="https://stude.co/848611/node-js-web-development"
+              />
+            </div>
 
-<CertificateShowCard
-    title="Anyone Can Code: How to Learn Coding for Beginners With Scratch and Python!"
-    level="Beginner"
-    duration="37 hr"
-    enroll="Pay for Certificate only"
-    platform="bitdegree.org"
-    tag1="Python"
-    tag2="Coding"
-    tag3="Learn"
-    link="https://stude.co/848611/how-to-learn-coding-for-beginners"
-  />
-   <CertificateShowCard
-    title="Learn Node.js web development getting a full stack of the best tools"
-    level="Beginner"
-    duration="5 hr"
-    enroll="Pay for Certificate only"
-    platform="bitdegree.org"
-    tag1="Python"
-    tag2="web development"
-    tag3="full stack"
-    link="https://stude.co/848611/node-js-web-development"
-  />
-</div>
-
-<div className="card-deck">
-
-<CertificateShowCard
-    title="Introduction To Python Programming"
-    level="Beginner"
-    duration="4hr 32min"
-    enroll="FREE"
-    platform="Udemy"
-    tag1="Python"
-    tag2="Programming"
-    link="https://www.udemy.com/course/pythonforbeginnersintro/"
-  />
-   <CertificateShowCard
-    title="Learn Graphs and Social Network Analytics Using Python
+            <div className="card-deck">
+              <CertificateShowCard
+                title="Introduction To Python Programming"
+                level="Beginner"
+                duration="4hr 32min"
+                enroll="FREE"
+                platform="Udemy"
+                tag1="Python"
+                tag2="Programming"
+                link="https://www.udemy.com/course/pythonforbeginnersintro/"
+              />
+              <CertificateShowCard
+                title="Learn Graphs and Social Network Analytics Using Python
     "
-    level="Intermediate"
-    duration="6hr 24min"
-    enroll="FREE"
-    platform="Udemy"
-    tag1="Python"
-    tag2="Graphs"
-    tag3="Analytics"
-    link="https://www.udemy.com/course/graphs-and-social-network-analytics-for-dummies-using-python/"
-  />
-</div>
-<div className="card-deck">
+                level="Intermediate"
+                duration="6hr 24min"
+                enroll="FREE"
+                platform="Udemy"
+                tag1="Python"
+                tag2="Graphs"
+                tag3="Analytics"
+                link="https://www.udemy.com/course/graphs-and-social-network-analytics-for-dummies-using-python/"
+              />
+            </div>
+            <div className="card-deck">
+              <CertificateShowCard
+                title="Free Python 101 Class Beginners Bootcamp Intro to Python NYC"
+                level="Beginner"
+                duration="2hr 25min"
+                enroll="FREE"
+                platform="Udemy"
+                tag1="Python"
+                tag2="Beginners"
+                tag3="Bootcamp"
+                link="https://www.udemy.com/course/python-101-beginners-coding-bootcamp-free-course"
+              />
+              <CertificateShowCard
+                title="Python For Data Science"
+                level="Intermediate"
+                duration="3hr 55min"
+                enroll="FREE"
+                platform="Udemy"
+                tag1="Python"
+                tag2="Data Science"
+                link="https://www.udemy.com/course/python-for-every1/"
+              />
+            </div>
+          </div>
 
-<CertificateShowCard
-    title="Free Python 101 Class Beginners Bootcamp Intro to Python NYC"
-    level="Beginner"
-    duration="2hr 25min"
-    enroll="FREE"
-    platform="Udemy"
-    tag1="Python"
-    tag2="Beginners"
-    tag3="Bootcamp"
-    link="https://www.udemy.com/course/python-101-beginners-coding-bootcamp-free-course"
-  />
-   <CertificateShowCard
-    title="Python For Data Science"
-    level="Intermediate"
-    duration="3hr 55min"
-    enroll="FREE"
-    platform="Udemy"
-    tag1="Python"
-    tag2="Data Science"
-    link="https://www.udemy.com/course/python-for-every1/"
-  />
-</div>
-<div className="card-deck">
-
-<CertificateShowCard
-    title="Python 3 Tutorial"
-    level="Beginner"
-    duration="3hr 55min"
-    enroll="FREE"
-    platform="SoloLearn"
-    tag1="Python"
-    tag2="Tutorial"
-    link="https://www.sololearn.com/Course/Python/"
-  />
-  </div>
-  </div>
-
-           <div className="col-md-3 mt-md-5 mt-3">
+          <div className="col-md-3 mt-md-5 mt-3">
             <div className="row">
               <FbLikeShare />{" "}
             </div>

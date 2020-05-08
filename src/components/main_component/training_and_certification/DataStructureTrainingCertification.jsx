@@ -2,19 +2,11 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import RightSideSection from "../../right_section/RightSideSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHome,
-  faBook,
-  faChalkboardTeacher,
-  faPuzzlePiece,
-  faAward,
-} from "@fortawesome/free-solid-svg-icons";
-import RecommendPost from "../../right_section/RecommendPost";
-import RoadMapCard from "./RoadMapCard";
-import FbShare from "../FbShare";
+import { faHome, faAward } from "@fortawesome/free-solid-svg-icons";
 import FbLikeShare from "../../FbLikeShare";
 import Technologies from "../../right_section/Technologies";
 import CertificateShowCard from "./CertificateShowCard";
+import LearningSideSection from "../../right_section/learning_sidesection/LearningSideSection";
 
 class DataStructure extends Component {
   state = {};
@@ -120,84 +112,14 @@ class DataStructure extends Component {
                 link=""
               />
             </div>
-
-            </div>
+          </div>
           <div className="col-md-3 mt-md-5 mt-3">
             <div className="row">
               <FbLikeShare />{" "}
             </div>
-            <div className="row text-center mt-5">
-              <div className="col">
-                {" "}
-                <FontAwesomeIcon
-                  icon={faBook}
-                  color="#133658"
-                  size="4x"
-                  className="text-center"
-                />
-                <h5
-                  className="text-center mt-2 mb-md-4 mb-3"
-                  style={{ color: "#133658" }}
-                >
-                  Data Structures Learning
-                </h5>
-              </div>
-            </div>
 
-            <RecommendPost
-              imgsource="ds_interview_questions.jpeg"
-              RecPostHading="Data Structures Interview Questions"
-              link="/datastructre_interview_question"
-            />
-            <RecommendPost
-              imgsource="dsa_programming_questions.jpeg"
-              RecPostHading="Data Structures Programming Questions"
-              link="/datastructure_programming_questions"
-            />
-            <RecommendPost
-              imgsource="programming_blog.jpeg"
-              RecPostHading="Data Structures Blogs"
-              link="/prog_lan_blog"
-            />
-
-            <div className="row text-center mt-5">
-              <div className="col">
-                {" "}
-                <FontAwesomeIcon
-                  icon={faPuzzlePiece}
-                  color="#133658"
-                  size="4x"
-                  className="text-center"
-                />
-                <h5
-                  className="text-center mt-2 mb-md-4 mb-3"
-                  style={{ color: "#133658" }}
-                >
-                  Data Structures Practice
-                </h5>
-              </div>
-            </div>
-            <RecommendPost
-              imgsource="ds_practice_question.jpeg"
-              RecPostHading="Data Structures Practice Problems"
-              link="/index_practice_questions"
-            />
-            <RecommendPost
-              imgsource="ds_mcq.jpeg"
-              RecPostHading="Data Structure MCQs"
-              link="/index_ds_mcqs"
-            />
-            <RecommendPost
-              imgsource="ds_quize.jpeg"
-              RecPostHading="Data Structure Quize Test"
-              link="/ds_quize_tests"
-            />
-            <RecommendPost
-              imgsource="code_challange.jpeg"
-              RecPostHading="Weekly Code Challanges"
-              link="/index_code_challange"
-            />
-<a href="https://stude.co/848611" target="_blank">
+            <LearningSideSection language="ds" />
+            <a href="https://stude.co/848611" target="_blank">
               <img
                 className=" card-img-top mx-auto img-fluid img-circle d-block mt-5 "
                 src={require("../../../assets/images/bitdegree.jpeg")}

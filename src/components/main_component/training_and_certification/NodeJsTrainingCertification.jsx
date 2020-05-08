@@ -2,22 +2,13 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import RightSideSection from "../../right_section/RightSideSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHome,
-  faBook,
-  faChalkboardTeacher,
-  faPuzzlePiece,
-  faAward,
-} from "@fortawesome/free-solid-svg-icons";
-import RecommendPost from "../../right_section/RecommendPost";
-import RoadMapCard from "./RoadMapCard";
-import FbShare from "../FbShare";
+import { faHome, faAward } from "@fortawesome/free-solid-svg-icons";
 import FbLikeShare from "../../FbLikeShare";
 import Technologies from "../../right_section/Technologies";
 import CertificateShowCard from "./CertificateShowCard";
 import LearningSideSection from "../../right_section/learning_sidesection/LearningSideSection";
 
-class Angular extends Component {
+class NodeJs extends Component {
   state = {};
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -32,7 +23,7 @@ class Angular extends Component {
               className="text-center mb-4 display-5"
               style={{ color: "#072C71" }}
             >
-              Find the Best Angular Programming Training & Certification
+              Find the Best NodeJs Training & Certification
             </h2>
             <Link
               to="/home"
@@ -51,40 +42,28 @@ class Angular extends Component {
 
             <div className="card-deck">
               <CertificateShowCard
-                title="Angular Certification Training Course
-                "
-                level="Beginner"
-                duration="34 hr"
-                enroll="Paid"
-                platform="simplilearn.com"
-                tag1="Angular"
-                tag2="Training"
-                tag3="Certification"
-                link="https://www.simplilearn.com/angular-certification-training"
+                title=""
+                level=""
+                duration=""
+                enroll=""
+                platform=""
+                tag1=""
+                tag2=""
+                tag3=""
+                tag4=""
+                link=""
               />
               <CertificateShowCard
-                title="Single Page Web Applications with AngularJS"
-                level="Intermediate"
-                duration="30 hr"
-                enroll="Pay for Certificate only"
-                platform="Coursera"
-                tag1="Web Applications"
-                tag2="AngularJS"
-                tag3="Single Page"
-                link="https://www.coursera.org/learn/single-page-web-apps-with-angularjs"
-              />
-            </div>
-            <div className="card-deck">
-              <CertificateShowCard
-                title="Angular 2 Tutorial For Beginners: Learn Popular JavaScript Framework"
-                level="Beginner"
-                duration="68 hr"
-                enroll="Free"
-                platform="bitdegree.org"
-                tag1="Angular"
-                tag2="Training"
-                tag3="Certification"
-                link="https://stude.co/848611/angular-2-tutorial"
+                title=""
+                level=""
+                duration=""
+                enroll=""
+                platform=""
+                tag1=""
+                tag2=""
+                tag3=""
+                tag4=""
+                link=""
               />
             </div>
           </div>
@@ -92,10 +71,10 @@ class Angular extends Component {
             <div className="row">
               <FbLikeShare />{" "}
             </div>
-            <LearningSideSection language="angular" />
+            <LearningSideSection language="js" />
             <a href="https://stude.co/848611" target="_blank">
               <img
-                className=" card-img-top mx-auto img-fluid img-circle d-block mt-5 "
+                className=" card-img-top mx-auto  img-fluid img-circle d-block mt-4 "
                 src={require("../../../assets/images/bitdegree.jpeg")}
                 alt="avatar"
               />
@@ -110,4 +89,4 @@ class Angular extends Component {
   }
 }
 
-export default Angular;
+export default NodeJs;

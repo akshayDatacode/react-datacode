@@ -13,17 +13,17 @@ class TechnologiesCardCarousel extends Component {
             <Carousel.Item>
               <div className="card-deck ">
                 <CardCarouselItem
-                  imgsource="c_programming.jpeg"
+                  imgsource="c_tutorials_courses.jpeg"
                   title="C programming"
                   link="/c"
                 />
                 <CardCarouselItem
-                  imgsource="python_programming.jpeg"
+                  imgsource="python_tutorials_courses.jpeg"
                   title="Python Programming"
                   link="/python"
                 />
                 <CardCarouselItem
-                  imgsource="java_programming.jpeg"
+                  imgsource="java_tutorials_courses.jpeg"
                   title="Java Programming"
                   link="/java"
                 />
@@ -32,17 +32,17 @@ class TechnologiesCardCarousel extends Component {
             <Carousel.Item>
               <div className="card-deck">
                 <CardCarouselItem
-                  imgsource="javascript.jpeg"
+                  imgsource="js_tutorials_courses.jpeg"
                   title="Javascript"
                   link="/js"
                 />
                 <CardCarouselItem
-                  imgsource="html.jpeg"
+                  imgsource="html_tutorials_courses.jpeg"
                   title="HTML"
                   link="/html"
                 />
                 <CardCarouselItem
-                  imgsource="css.jpeg"
+                  imgsource="css_tutorials_courses.jpeg"
                   title="Coming Soon..."
                   link="/index_technologies"
                 />
@@ -51,17 +51,17 @@ class TechnologiesCardCarousel extends Component {
             <Carousel.Item>
               <div className="card-deck">
                 <CardCarouselItem
-                  imgsource="datastructure.jpeg"
+                  imgsource="ds_tutorials_courses.jpeg"
                   title="Datastructure & Algorithm"
                   link="/datastructure"
                 />
                 <CardCarouselItem
-                  imgsource="dbms.jpeg"
+                  imgsource="dbms_tutorials_courses.jpeg"
                   title="DBMS"
                   link="/dbms"
                 />
                 <CardCarouselItem
-                  imgsource="sql.jpeg"
+                  imgsource="sql_tutorials_courses.jpeg"
                   title="SQL"
                   link="/sql"
                 />
@@ -70,17 +70,17 @@ class TechnologiesCardCarousel extends Component {
             <Carousel.Item>
               <div className="card-deck">
                 <CardCarouselItem
-                  imgsource="android.jpeg"
+                  imgsource="android_tutorials_courses.jpeg"
                   title="Android"
                   link="/android"
                 />
                 <CardCarouselItem
-                  imgsource="react.jpeg"
+                  imgsource="react_tutorials_courses.jpeg"
                   title="React"
                   link="/react"
                 />
                 <CardCarouselItem
-                  imgsource="angular.jpeg"
+                  imgsource="angular_tutorials_courses.jpeg"
                   title="Angular"
                   link="/angular"
                 />
@@ -89,7 +89,7 @@ class TechnologiesCardCarousel extends Component {
             <Carousel.Item>
               <div className="card-deck">
                 <CardCarouselItem
-                  imgsource="oops.jpeg"
+                  imgsource="oops_tutorials_courses.jpeg"
                   title="OOPS"
                   link="/oops"
                 />
@@ -113,87 +113,91 @@ class TechnologiesCardCarousel extends Component {
           <Carousel indicators={false}>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="python_programming.jpeg"
+                imgsource="python_tutorials_courses.jpeg"
                 title="Python Programming"
                 link="/python"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="c_programming.jpeg"
+                imgsource="c_tutorials_courses.jpeg"
                 title="C Programming"
                 link="/c"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="java_programming.jpeg"
+                imgsource="java_tutorials_courses.jpeg"
                 title="Java Programming"
                 link="/java"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="javascript.jpeg"
+                imgsource="js_tutorials_courses.jpeg"
                 title="Javascript"
                 link="/js"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="html.jpeg"
+                imgsource="html_tutorials_courses.jpeg"
                 title="HTML"
                 link="/html"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="css.jpeg"
+                imgsource="css_tutorials_courses.jpeg"
                 title="CSS"
                 link="/index_technologies"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="datastructure.jpeg"
+                imgsource="ds_tutorials_courses.jpeg"
                 title="Datastructure & Algorithm"
                 link="/datastructure"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="dbms.jpeg"
+                imgsource="dbms_tutorials_courses.jpeg"
                 title="DBMS"
                 link="/dbms"
               />
             </Carousel.Item>
             <Carousel.Item>
-              <CardCarouselItem imgsource="sql.jpeg" title="SQL" link="/sql" />
+              <CardCarouselItem
+                imgsource="sql_tutorials_courses.jpeg"
+                title="SQL"
+                link="/sql"
+              />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="oops.jpeg"
+                imgsource="oops_tutorials_courses.jpeg"
                 title="OOPs"
                 link="/oops"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="android.jpeg"
+                imgsource="android_tutorials_courses.jpeg"
                 title="Android"
                 link="/android"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="react.jpeg"
+                imgsource="react_tutorials_courses.jpeg"
                 title="React"
                 link="/react"
               />
             </Carousel.Item>
             <Carousel.Item>
               <CardCarouselItem
-                imgsource="angular.jpeg"
+                imgsource="angular_tutorials_courses.jpeg"
                 title="Angular"
                 link="/angular"
               />
