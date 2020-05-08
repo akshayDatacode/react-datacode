@@ -27,6 +27,7 @@ import {
   faFlask,
   faCode,
   faCertificate,
+  faAward,
 } from "@fortawesome/free-solid-svg-icons";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
@@ -83,6 +84,10 @@ class HeaderComponent extends Component {
                   />
                   Tutorials & Courses
                 </NavDropdown.Item>
+                <NavDropdown.Item href="/react-datacode/#/index_training_certification">
+                  <FontAwesomeIcon icon={faAward} className="mr-2" />
+                  Training & Certification
+                </NavDropdown.Item>
                 <NavDropdown.Item href="/react-datacode/#/index_mcqs">
                   <FontAwesomeIcon icon={faTasks} className="mr-2" />
                   Programming MCQs
@@ -107,14 +112,6 @@ class HeaderComponent extends Component {
                 <NavDropdown.Item href="/react-datacode/#/index_programming_questions">
                   <FontAwesomeIcon icon={faFileCode} className="mr-2" />
                   Programming Example Questions
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/react-datacode/#/index_learning_platforms">
-                  <FontAwesomeIcon icon={faCertificate} className="mr-2" />
-                  Online Learning Paltforms
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/react-datacode/#/index_training_certification">
-                  <FontAwesomeIcon icon={faCertificate} className="mr-2" />
-                  Training & Certification
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link

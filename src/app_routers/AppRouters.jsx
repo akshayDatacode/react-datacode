@@ -290,14 +290,14 @@ import DSPracticeQuestionsBeginner from "../components/main_component/posts/prac
 import DSPracticeQuestionsIntermediate from "../components/main_component/posts/practice_questions/ds_practice_questions/DSPracticeQuestionsIntermediate";
 import DSPracticeQuestionsAdvance from "../components/main_component/posts/practice_questions/ds_practice_questions/DSPracticeQuestionsAdvance";
 
-// Certification
-import IndexLearningPlatforms from "../components/main_component/learning_platforms/IndexLearningPlatforms";
-import CertificationPlatforms from "../components/main_component/learning_platforms/CertificationPlatforms";
-import WebDevelopmentPlatforms from "../components/main_component/learning_platforms/WebDevelopmentPlatforms";
-import DataSciencePlatforms from "../components/main_component/learning_platforms/DataSciencePlatforms";
-import ComputerSciencePlatforms from "../components/main_component/learning_platforms/ComputerSciencePlatforms";
-import ProgrammingLearningPlatforms from "../components/main_component/learning_platforms/ProgrammingLearningPlatforms";
-import ProgrammingPracticePlatforms from "../components/main_component/learning_platforms/ProgrammingPracticePlatforms";
+// Learning Platforms
+import IndexLearningPlatforms from "../components/main_component/aticles/learning_platforms/IndexLearningPlatforms";
+import CertificationPlatforms from "../components/main_component/aticles/learning_platforms/CertificationPlatforms";
+import WebDevelopmentPlatforms from "../components/main_component/aticles/learning_platforms/WebDevelopmentPlatforms";
+import DataSciencePlatforms from "../components/main_component/aticles/learning_platforms/DataSciencePlatforms";
+import ComputerSciencePlatforms from "../components/main_component/aticles/learning_platforms/ComputerSciencePlatforms";
+import ProgrammingLearningPlatforms from "../components/main_component/aticles/learning_platforms/ProgrammingLearningPlatforms";
+import ProgrammingPracticePlatforms from "../components/main_component/aticles/learning_platforms/ProgrammingPracticePlatforms";
 
 // TrainingCertification
 import IndexTrainingCertification from "../components/main_component/training_and_certification/IndexTrainingCertification";

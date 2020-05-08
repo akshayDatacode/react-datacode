@@ -31,6 +31,11 @@ class IndexArticles extends Component {
               </Link>
               <div className="card-deck m-2">
                 <PostCard
+                  imgsource="web_blog.jpeg"
+                  title="Learning Platforms"
+                  link="/index_learning_platforms"
+                />
+                <PostCard
                   imgsource="programming_blog.jpeg"
                   title="Programming Languages Blogs"
                   link="/prog_lan_blog"
@@ -39,11 +44,6 @@ class IndexArticles extends Component {
                   imgsource="web_blog.jpeg"
                   title="Web Design Blogs"
                   link="/webdesign_blog"
-                />
-                <PostCard
-                  imgsource="machine_blog.jpeg"
-                  title="Machine Learning Blogs"
-                  link="/machine_learning_blog"
                 />
               </div>
               <div className="card-deck m-2">
@@ -56,6 +56,11 @@ class IndexArticles extends Component {
                   imgsource="tech_docs.jpeg"
                   title="Documentation Blogs"
                   link="/documentation_blog"
+                />
+                <PostCard
+                  imgsource="machine_blog.jpeg"
+                  title="Machine Learning Blogs"
+                  link="/machine_learning_blog"
                 />
               </div>
               <h4 className="text-secondary mt-3">For More Community Blogs</h4>

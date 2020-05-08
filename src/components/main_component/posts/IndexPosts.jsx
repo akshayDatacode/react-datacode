@@ -24,6 +24,7 @@ import {
   faNewspaper,
   faFlask,
   faCode,
+  faAward,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
@@ -62,6 +63,29 @@ class IndexPosts extends Component {
               </div>
               <TechnologiesCardCarousel />
               {/* Ending of Technologies  */}
+              {/* Starting Training And Certificate */}
+              <div
+                className="card mb-2 mt-3"
+                style={{ backgroundColor: "#D8DB95" }}
+              >
+                <div className="card-body">
+                  <Link to="/index_training_certification">
+                    <h4 style={{ color: "#133658" }}>
+                      <FontAwesomeIcon icon={faAward} color="#133658" />{" "}
+                      Training & Certification
+                    </h4>
+                  </Link>
+                  <p>
+                    Learn New Technologies and Find how you can start your
+                    learning from the beginner level. Datacode collects for you
+                    in a very shorted order The Best Learning Tutorials and
+                    Courses as Free or Paid
+                  </p>
+                  <h4 className="text-center p-0 m-0 ">Get The Placment</h4>
+                </div>
+              </div>
+              <InterviewQuestionsCardCarousel />
+              {/* Ending Training And Certificate */}
               {/* Starting Interview */}
               <div
                 className="card mb-2 mt-3"
