@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5bc92ea00e36723b4973b57a5cfad73c",
+    "revision": "0eb0d3ec19669ec8888f1da0016a0b46",
     "url": "/index.html"
   },
   {
-    "revision": "555fbebf9da4a33ea6e6",
+    "revision": "1f4736fcabd6f2545175",
     "url": "/static/css/2.89f067aa.chunk.css"
   },
   {
-    "revision": "2027ab30332c4a79c6f3",
+    "revision": "f09ae6e2ccf9ae6f1aa6",
     "url": "/static/css/main.2749690b.chunk.css"
   },
   {
-    "revision": "555fbebf9da4a33ea6e6",
-    "url": "/static/js/2.18193757.chunk.js"
+    "revision": "1f4736fcabd6f2545175",
+    "url": "/static/js/2.0c1a2923.chunk.js"
   },
   {
     "revision": "df8be702f0cc9d299c0ff42ca03d3e40",
-    "url": "/static/js/2.18193757.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.0c1a2923.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2027ab30332c4a79c6f3",
-    "url": "/static/js/main.c57c719b.chunk.js"
+    "revision": "f09ae6e2ccf9ae6f1aa6",
+    "url": "/static/js/main.e9b751e7.chunk.js"
   },
   {
     "revision": "ba88f149e390315adcbe",
@@ -84,6 +84,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/WhatsApp Image 2020-04-05 at 12.30.38 PM (9).83d70f9f.jpeg"
   },
   {
+    "revision": "cb43e62b6df7d803256ad4de59edf795",
+    "url": "/static/media/academicearth.cb43e62b.jpeg"
+  },
+  {
+    "revision": "90c100bff5bd4d3791f09f184b6d7c0f",
+    "url": "/static/media/ageoflearning.90c100bf.jpeg"
+  },
+  {
+    "revision": "b3fa0ea680a51e8a01e879f54c707872",
+    "url": "/static/media/alison.b3fa0ea6.jpeg"
+  },
+  {
     "revision": "8fa047d45000af2bc3f17938fbdd178c",
     "url": "/static/media/android.8fa047d4.jpeg"
   },
@@ -104,8 +116,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/android_tech.0531dc15.jpeg"
   },
   {
+    "revision": "27e56b650b7f49b2c397584c77ca74ff",
+    "url": "/static/media/android_training_certification.27e56b65.jpeg"
+  },
+  {
     "revision": "48e739af02f49564c3be51e7ee7a172e",
     "url": "/static/media/android_tutorial.48e739af.jpeg"
+  },
+  {
+    "revision": "b64fa2a8cbba7e18107b27c4b3693ff3",
+    "url": "/static/media/android_tutorials_courses.b64fa2a8.jpeg"
   },
   {
     "revision": "c8cc4536adc7e98b69916d97cc9b1de3",
@@ -128,12 +148,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/angular_tech.d6e8cffa.jpeg"
   },
   {
+    "revision": "a8ab83cad9504a0766b299b12acc2990",
+    "url": "/static/media/angular_training_certification.a8ab83ca.jpeg"
+  },
+  {
     "revision": "2f57cbe4b171a562b05b5933ab6026c5",
     "url": "/static/media/angular_tutorial (2).2f57cbe4.jpeg"
   },
   {
     "revision": "9fae84323371a1cbad68c0c5ae10b7d9",
     "url": "/static/media/angular_tutorial.9fae8432.jpeg"
+  },
+  {
+    "revision": "62eba71acc8f85c0ac80d1e914373ea5",
+    "url": "/static/media/angular_tutorials_courses.62eba71a.jpeg"
+  },
+  {
+    "revision": "aa6129a626a3bf7c4049f24fa8639a69",
+    "url": "/static/media/bitdegree.aa6129a6.jpeg"
   },
   {
     "revision": "8b88ce41d2028e8c2467e9e58362ed40",
@@ -204,8 +236,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/c_tech.bf1508ec.jpeg"
   },
   {
+    "revision": "3fbadc69a902d7982820aa7bea1f9dc9",
+    "url": "/static/media/c_training_certification.3fbadc69.jpeg"
+  },
+  {
     "revision": "f32536dfccd8b06d6b349e68ca35102c",
     "url": "/static/media/c_tutorial.f32536df.jpeg"
+  },
+  {
+    "revision": "60cd3184d101049b8bd5c4a0d001b6d9",
+    "url": "/static/media/c_tutorials_courses.60cd3184.jpeg"
+  },
+  {
+    "revision": "4a1829e293621d6f4bfb709247a42045",
+    "url": "/static/media/certificate.4a1829e2.jpeg"
+  },
+  {
+    "revision": "0d989ecc93d8ae201eccd860a6497f83",
+    "url": "/static/media/classcentral.0d989ecc.jpeg"
   },
   {
     "revision": "ad182992e2c78cf34a682389f57b49bd",
@@ -236,16 +284,64 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/codecademy.ab3de14e.jpeg"
   },
   {
+    "revision": "113d3b1d7f7a01dbc506bc1bb2740cf9",
+    "url": "/static/media/codecademy1.113d3b1d.jpeg"
+  },
+  {
+    "revision": "a798b4509e901e31a053decfe0f45138",
+    "url": "/static/media/codechef.a798b450.jpeg"
+  },
+  {
+    "revision": "7f1d299c22c784886e8cdc1ed4e7358b",
+    "url": "/static/media/codecombat.7f1d299c.jpeg"
+  },
+  {
+    "revision": "49777bf778257e9eec3a6bf21af09c29",
+    "url": "/static/media/codeeval.49777bf7.jpeg"
+  },
+  {
+    "revision": "3c461a04983147c53e992943cde779ce",
+    "url": "/static/media/codeforces.3c461a04.jpeg"
+  },
+  {
     "revision": "17a6aab685d1ff492666d9c503f8579a",
     "url": "/static/media/coder1.17a6aab6.jpeg"
+  },
+  {
+    "revision": "610244e10cf071ad686f965e6608c796",
+    "url": "/static/media/coderbyte.610244e1.jpeg"
+  },
+  {
+    "revision": "f576f1c7ff524e21ca444e295f4b0620",
+    "url": "/static/media/codesignal.f576f1c7.jpeg"
+  },
+  {
+    "revision": "1b1e687522c23d1a0f422c577c368ad9",
+    "url": "/static/media/codewars.1b1e6875.jpeg"
+  },
+  {
+    "revision": "9ddb5fa6fdd7e4c530fb080e171e2a26",
+    "url": "/static/media/codinggame.9ddb5fa6.jpeg"
+  },
+  {
+    "revision": "e16f633177d68e3918c551db6845c42b",
+    "url": "/static/media/codingninjas.e16f6331.jpeg"
   },
   {
     "revision": "a9223a891215578a45272cfc4c4ced91",
     "url": "/static/media/comming_soon.a9223a89.jpeg"
   },
   {
+    "revision": "962d337227d620822bebcabe72c2cfb4",
+    "url": "/static/media/computerscience_training_certification.962d3372.jpeg"
+  },
+  {
     "revision": "719bf7d4bcb14bef6a10f9b48768e365",
     "url": "/static/media/coursera.719bf7d4.jpeg"
+  },
+  {
+    "revision": "170c8f6314d428b26cadcefd8ad69353",
+    "url": "/static/media/coursera1.170c8f63.jpeg"
   },
   {
     "revision": "b89de2b679beb0e2b7cbae5f994b7320",
@@ -272,6 +368,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/cpp_tech.4e3e4bc8.jpeg"
   },
   {
+    "revision": "a2a1ac1bb20fd52fde3a556f0d4d75d1",
+    "url": "/static/media/cpp_training_certification.a2a1ac1b.jpeg"
+  },
+  {
+    "revision": "5b8e8fded0a823487a84cef12522e7c1",
+    "url": "/static/media/cpp_tutorials_courses.5b8e8fde.jpeg"
+  },
+  {
     "revision": "0554f5070f329307ffdd7b06ad1a0781",
     "url": "/static/media/cprogramming_practice_question.0554f507.jpeg"
   },
@@ -292,8 +396,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/css_tech.2676c7c8.jpeg"
   },
   {
+    "revision": "ee370e53ed73526eda67154d6a00d949",
+    "url": "/static/media/css_tutorials_courses.ee370e53.jpeg"
+  },
+  {
     "revision": "05f98ced3865fde259c127ff52a349af",
     "url": "/static/media/data_web.05f98ced.jpeg"
+  },
+  {
+    "revision": "ce933da96fe1df675f40e7526527f5e3",
+    "url": "/static/media/datacamp.ce933da9.jpeg"
   },
   {
     "revision": "6a3682a9cb2114f8fa21758a82ff9ccc",
@@ -310,6 +422,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "bd748d1d96be11a3de6252357849bbe4",
     "url": "/static/media/datacodelogo.bd748d1d.jpeg"
+  },
+  {
+    "revision": "b23ce3c095a9ff2e832230f78a87108d",
+    "url": "/static/media/datascience_training_certification.b23ce3c0.jpeg"
+  },
+  {
+    "revision": "7cf74cbed051f481e33c9a3ed1db607a",
+    "url": "/static/media/datasciencedojo.7cf74cbe.jpeg"
   },
   {
     "revision": "3e2d8a9579c50a4c8e5d07b2a52e1509",
@@ -344,12 +464,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/dbms_quize.61ee6763.jpeg"
   },
   {
+    "revision": "e5a7f0c5ae88b01e15ca0a0453a4a6f6",
+    "url": "/static/media/dbms_sql_training_certification.e5a7f0c5.jpeg"
+  },
+  {
     "revision": "ceae7e60879877b2d26a19e6924086ad",
     "url": "/static/media/dbms_tech.ceae7e60.jpeg"
   },
   {
     "revision": "e3423bb1c75aa4f07a6cf3fc28b28f22",
     "url": "/static/media/dbms_tutorial.e3423bb1.jpeg"
+  },
+  {
+    "revision": "dca98f3eb131b4d589baa580a141a7dc",
+    "url": "/static/media/dbms_tutorials_courses.dca98f3e.jpeg"
   },
   {
     "revision": "9cf0ed9b63b09bee3275bf971323753d",
@@ -408,12 +536,32 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/ds_tech.8035fa76.jpeg"
   },
   {
+    "revision": "87c0ea815f4e870c609ffe716ddeb4eb",
+    "url": "/static/media/ds_training_certification.87c0ea81.jpeg"
+  },
+  {
     "revision": "4ef56e456b10fad4aadc0ffa5243262f",
     "url": "/static/media/ds_tutorial.4ef56e45.jpeg"
   },
   {
+    "revision": "662a081e3f9f99eeb351a76d78e55522",
+    "url": "/static/media/ds_tutorials_courses.662a081e.jpeg"
+  },
+  {
     "revision": "b3c2e11089a5f0103b53c19736366591",
     "url": "/static/media/dsa_programming_questions.b3c2e110.jpeg"
+  },
+  {
+    "revision": "77af936def0ebe0cb08e6446628406c0",
+    "url": "/static/media/dzone.77af936d.jpeg"
+  },
+  {
+    "revision": "5bbc2a6fd0083a86c1e0c68be8f97c28",
+    "url": "/static/media/educause.5bbc2a6f.jpeg"
+  },
+  {
+    "revision": "dcc4e5fc7008642b0d8c7784b73923da",
+    "url": "/static/media/edx.dcc4e5fc.jpeg"
   },
   {
     "revision": "07a66ffe69c6e9d0a90d464b6d555a41",
@@ -422,6 +570,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f6300d0652d01396048c0ea00a5ab930",
     "url": "/static/media/eventcover1.f6300d06.jpeg"
+  },
+  {
+    "revision": "7820aa2afc539c49b112a292c5d32cc7",
+    "url": "/static/media/exercism.7820aa2a.jpeg"
   },
   {
     "revision": "25b3d015c01eb87bb274bd8b094e54f8",
@@ -436,6 +588,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/freecodecamp.34b1c72f.jpeg"
   },
   {
+    "revision": "6c39b4d1e039b03b0774ebf117abc8d8",
+    "url": "/static/media/freecodecamp1.6c39b4d1.jpeg"
+  },
+  {
+    "revision": "c9e749029d2724583be73b6afcc73cbf",
+    "url": "/static/media/futurelearn.c9e74902.jpeg"
+  },
+  {
+    "revision": "e0569433272ea58b4367d9fc457a2b69",
+    "url": "/static/media/geeksforgeeks.e0569433.jpeg"
+  },
+  {
     "revision": "07fa7a724573cd2b6d24c11feebe616f",
     "url": "/static/media/git_mcq.07fa7a72.jpeg"
   },
@@ -448,8 +612,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/git_tech.be0b1cac.jpeg"
   },
   {
+    "revision": "8ec3fd06297b91457f01ef481240ea01",
+    "url": "/static/media/git_training_certification.8ec3fd06.jpeg"
+  },
+  {
     "revision": "e03defd019c51307e7db7aa9f0a9affc",
     "url": "/static/media/h2.e03defd0.jpeg"
+  },
+  {
+    "revision": "1db0b5312423a646c843244dde73c835",
+    "url": "/static/media/hackerrank.1db0b531.jpeg"
+  },
+  {
+    "revision": "2b340494761940f7abc1fb35b0032735",
+    "url": "/static/media/harvardextentionschool.2b340494.jpeg"
   },
   {
     "revision": "014ae370995a1aaa6fe99791384bc67f",
@@ -476,6 +652,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/html_css_quize.5cfe4c1a.jpeg"
   },
   {
+    "revision": "076d86f0802f504e5545170b0d2681ea",
+    "url": "/static/media/html_css_training_certification.076d86f0.jpeg"
+  },
+  {
     "revision": "ca398586bc396586383bc1b7e09f42b4",
     "url": "/static/media/html_interview_questions.ca398586.jpeg"
   },
@@ -492,6 +672,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/html_tutorial.92c900c1.jpeg"
   },
   {
+    "revision": "38535477113ed3ecb86ed2a01bb47f4a",
+    "url": "/static/media/html_tutorials_courses.38535477.jpeg"
+  },
+  {
     "revision": "55920f374dc297f5ba509d31d02d3c90",
     "url": "/static/media/icon192.55920f37.png"
   },
@@ -506,6 +690,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d657c63ccf22fa6c5b96a727d73d6f29",
     "url": "/static/media/indexcover2.d657c63c.jpeg"
+  },
+  {
+    "revision": "ee4080c9b22bdaa4beb3ced798586aa1",
+    "url": "/static/media/intro_training_certification.ee4080c9.jpeg"
+  },
+  {
+    "revision": "23a3f3c067470ed4d9d33d39fdafb98a",
+    "url": "/static/media/intro_tutorials_courses.23a3f3c0.jpeg"
+  },
+  {
+    "revision": "fa15b11bffe111dd65b27b295d8ec6ab",
+    "url": "/static/media/iversity.fa15b11b.jpeg"
   },
   {
     "revision": "f35cdf18c60ba4221ee981250abe4bae",
@@ -564,8 +760,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/java_tech.a86921f8.jpeg"
   },
   {
+    "revision": "db11fc58b0f1c1c01ff3da82e9106c88",
+    "url": "/static/media/java_training_certification.db11fc58.jpeg"
+  },
+  {
     "revision": "73f1ac1fc883151b9941abcbc58010b3",
     "url": "/static/media/java_tutorial.73f1ac1f.jpeg"
+  },
+  {
+    "revision": "6abf522afe10af2f4811b416b4e0b6ad",
+    "url": "/static/media/java_tutorials_courses.6abf522a.jpeg"
   },
   {
     "revision": "bec692599d4e91e774b5d180c129fef5",
@@ -600,12 +804,36 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/js_tech.724af920.jpeg"
   },
   {
+    "revision": "c683618bf4e70d56448e9b411dddf54d",
+    "url": "/static/media/js_training_certification.c683618b.jpeg"
+  },
+  {
     "revision": "5b4a7a5c207841131964a6de44e4b4bf",
     "url": "/static/media/js_tutorial.5b4a7a5c.jpeg"
   },
   {
+    "revision": "a5caa419c0b39834dcc68a796399436d",
+    "url": "/static/media/js_tutorials_courses.a5caa419.jpeg"
+  },
+  {
+    "revision": "43d67789f19bb164b04ce391715e0ab5",
+    "url": "/static/media/khanacademy.43d67789.jpeg"
+  },
+  {
+    "revision": "d6ceeba3b7c960fb1a68416da6757330",
+    "url": "/static/media/linkedlist.d6ceeba3.jpeg"
+  },
+  {
     "revision": "50ab2ca53a788732357ba287425ea185",
     "url": "/static/media/machine_blog.50ab2ca5.jpeg"
+  },
+  {
+    "revision": "5683ccd51e3c634d2578909691997131",
+    "url": "/static/media/machinelearning_training_certification.5683ccd5.jpeg"
+  },
+  {
+    "revision": "44184356e3b7c3669f0e88e5f21498fb",
+    "url": "/static/media/mitocw.44184356.jpeg"
   },
   {
     "revision": "de98d24aa748af38d99b7549c82b0a92",
@@ -614,6 +842,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "cf450fdb9b21bc231d46daae04750d51",
     "url": "/static/media/node_express.cf450fdb.jpeg"
+  },
+  {
+    "revision": "b0cd010433e0dc9ff6d0ebfef90fb510",
+    "url": "/static/media/nodejs_training_certification.b0cd0104.jpeg"
   },
   {
     "revision": "c99f81fe69e72204b2f14da55bb3d322",
@@ -644,6 +876,26 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/oops_tech.4e5d2c8b.jpeg"
   },
   {
+    "revision": "7acdf580dd156444c8ddd3dd9bf3370d",
+    "url": "/static/media/oops_training_certification.7acdf580.jpeg"
+  },
+  {
+    "revision": "b74e5d317a0198e10a450af8400e9119",
+    "url": "/static/media/oops_tutorials_courses.b74e5d31.jpeg"
+  },
+  {
+    "revision": "da083c68dff487e1aba54cc004457638",
+    "url": "/static/media/openclassrooms.da083c68.jpeg"
+  },
+  {
+    "revision": "48646f57fc325d2b88d7e2f0d2fb646d",
+    "url": "/static/media/opencourser.48646f57.jpeg"
+  },
+  {
+    "revision": "ee7c2a12e709aa9d2d62f807c2444301",
+    "url": "/static/media/openlearning.ee7c2a12.jpeg"
+  },
+  {
     "revision": "c775277d2190ae376a5508e381ba1671",
     "url": "/static/media/os_interview_questions.c775277d.jpeg"
   },
@@ -652,8 +904,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/os_tech.f7f30a4d.jpeg"
   },
   {
+    "revision": "da397c2433feb5a451be4803769377eb",
+    "url": "/static/media/php_training_certification.da397c24.jpeg"
+  },
+  {
+    "revision": "6416fe989bccf8059664354dbe7e06bb",
+    "url": "/static/media/platzi.6416fe98.jpeg"
+  },
+  {
     "revision": "269f069aa03c244812f77162de000820",
     "url": "/static/media/pluralsight.269f069a.jpeg"
+  },
+  {
+    "revision": "34ea93dc0c0caead7287d7a768c68e7b",
+    "url": "/static/media/pluralsight1.34ea93dc.jpeg"
+  },
+  {
+    "revision": "5b7f3a0146f65d1bc2b0580368070dc6",
+    "url": "/static/media/progate.5b7f3a01.jpeg"
   },
   {
     "revision": "770d5ca0c10e563f9ccc953718a01b9e",
@@ -728,8 +996,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/python_tech.b3ccd037.jpeg"
   },
   {
+    "revision": "8c275c277527b49e36cf70e7d6e34e63",
+    "url": "/static/media/python_training_certification.8c275c27.jpeg"
+  },
+  {
     "revision": "bfaa66e71bd5e8fb816080c97c3851be",
     "url": "/static/media/python_tutorial.bfaa66e7.jpeg"
+  },
+  {
+    "revision": "0fbe689fc0b77787115ffd76798b6679",
+    "url": "/static/media/python_tutorials_courses.0fbe689f.jpeg"
   },
   {
     "revision": "429f9e69c23535a032da5438e12daf81",
@@ -776,12 +1052,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/react_tech.665ac028.jpeg"
   },
   {
+    "revision": "51360cb2ed8d2f427ef743f724fedd41",
+    "url": "/static/media/react_training_certification.51360cb2.jpeg"
+  },
+  {
     "revision": "1406570db4d0bcf3abf48223ce14dfbd",
     "url": "/static/media/react_tutorial.1406570d.jpeg"
   },
   {
+    "revision": "233d1342becb98a68f5fd0aca6763f44",
+    "url": "/static/media/react_tutorials_courses.233d1342.jpeg"
+  },
+  {
     "revision": "4ce3247e6d003ad97957d3034bebfbab",
     "url": "/static/media/rest_api_node.4ce3247e.jpeg"
+  },
+  {
+    "revision": "80a712550387fb7101a906c437470d2d",
+    "url": "/static/media/saylor.80a71255.jpeg"
   },
   {
     "revision": "b4cb76b39a2254534c00832d728a9487",
@@ -792,8 +1080,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/sdlc_tech.647d36b6.jpeg"
   },
   {
+    "revision": "51d4b5a763d818bb436a961bf034f0a0",
+    "url": "/static/media/simplilearn.51d4b5a7.jpeg"
+  },
+  {
+    "revision": "303419db77edfca72bcf125d32e0f115",
+    "url": "/static/media/sitepoint.303419db.jpeg"
+  },
+  {
+    "revision": "52dd01c103c4737735ec15352e8e3d09",
+    "url": "/static/media/skillshare.52dd01c1.jpeg"
+  },
+  {
     "revision": "2e6e2be15e7ce10ea5cca80f23055011",
     "url": "/static/media/sololearn.2e6e2be1.jpeg"
+  },
+  {
+    "revision": "21b87a1369514b4baa74b30c730f2d74",
+    "url": "/static/media/sololearn1.21b87a13.jpeg"
   },
   {
     "revision": "8c55a04009c4fb12a19082e134100a09",
@@ -824,8 +1128,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/sql_tutorial.7716d2e0.jpeg"
   },
   {
+    "revision": "ac43d584397d862488bf3abd2c853a76",
+    "url": "/static/media/sql_tutorials_courses.ac43d584.jpeg"
+  },
+  {
     "revision": "e060b13154bdaabd057316304cc54b15",
     "url": "/static/media/start_learning_together.e060b131.jpeg"
+  },
+  {
+    "revision": "1dd642389c67cb94c624272382b19ac3",
+    "url": "/static/media/swift_training_certification.1dd64238.jpeg"
+  },
+  {
+    "revision": "95d345b7974e9531dc8f60d9a579cc0b",
+    "url": "/static/media/swift_tutorials_courses.95d345b7.jpeg"
   },
   {
     "revision": "ae6a7be82eb8f079f86e90d7df399ba2",
@@ -844,8 +1160,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/testing_interview_questions.eaa4de36.jpeg"
   },
   {
-    "revision": "dba016c3f4a5cab9599ee82de82ce95c",
-    "url": "/static/media/udacity.dba016c3.jpeg"
+    "revision": "696ac4599af8f998720e48f7737c7538",
+    "url": "/static/media/topcoder.696ac459.jpeg"
+  },
+  {
+    "revision": "2babde23fe850017dcde6b14a1af5be0",
+    "url": "/static/media/treehouse.2babde23.jpeg"
+  },
+  {
+    "revision": "c379aa5a86bece5b631b114aae7cecb2",
+    "url": "/static/media/tutorials_courses.c379aa5a.jpeg"
+  },
+  {
+    "revision": "0f88d8a1fa8a3d37cf74d134ff262a04",
+    "url": "/static/media/tutorialspoint.0f88d8a1.jpeg"
+  },
+  {
+    "revision": "f442cffef10603ea1e8f7f7562e63d6f",
+    "url": "/static/media/udacity.f442cffe.jpeg"
+  },
+  {
+    "revision": "373c5cc805c38579fbbaa3597eda9f31",
+    "url": "/static/media/udemey.373c5cc8.jpeg"
   },
   {
     "revision": "0a8e1d00ff43937bfffaa8b8b5fab322",
@@ -854,6 +1190,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c1f2197320940d7cdc062c063eda8682",
     "url": "/static/media/w3school.c1f21973.jpeg"
+  },
+  {
+    "revision": "5cdc5ea8f648a5596d78dede17859dbc",
+    "url": "/static/media/w3schools.5cdc5ea8.jpeg"
   },
   {
     "revision": "6c49b2fef84607c7570bf4c58d6718d8",
@@ -902,6 +1242,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "7ba1a448732137b197daad19c7937fcd",
     "url": "/static/media/webdesign.7ba1a448.jpeg"
+  },
+  {
+    "revision": "4c46fc918c1fdeffae87fcc1a45abf8c",
+    "url": "/static/media/webdevelopment_training_certification.4c46fc91.jpeg"
   },
   {
     "revision": "2d706f13f60a2fcf8e09cb168a61963e",
