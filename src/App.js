@@ -19,7 +19,7 @@ const App = () => {
         </div>
       </div>
 
-      <div className="container-fluid m-0 border border-danger">
+      <div className="container-fluid m-0 ">
         <div className="row  mt-4 mb-2 p-0 ">
           <div className="col">
             <AppRouters />

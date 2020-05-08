@@ -84,7 +84,7 @@ class LearningSideSection extends Component {
               link="/index_c_mcqs"
             />
             <RecommendPost
-              imgsource="c_quize_test.jpeg"
+              imgsource="c_quiz_test.jpeg"
               RecPostHading="C Quize Test"
               link="/c_quizes_tests"
             />
@@ -168,7 +168,7 @@ class LearningSideSection extends Component {
               link="/index_python_mcqs"
             />
             <RecommendPost
-              imgsource="python_quize_test.jpeg"
+              imgsource="python_quiz_test.jpeg"
               RecPostHading="python Quize Test"
               link="/python_quizes_tests"
             />
@@ -252,7 +252,7 @@ class LearningSideSection extends Component {
               link="/index_java_mcqs"
             />
             <RecommendPost
-              imgsource="java_quize_test.jpeg"
+              imgsource="java_quiz_test.jpeg"
               RecPostHading="java Quize Test"
               link="/java_quizes_tests"
             />
@@ -336,7 +336,7 @@ class LearningSideSection extends Component {
               link="/index_cpp_mcqs"
             />
             <RecommendPost
-              imgsource="cpp_quize.jpeg"
+              imgsource="cpp_quiz_test.jpeg"
               RecPostHading="C++ Quize Test"
               link="/cpp_quizes_tests"
             />
@@ -416,7 +416,7 @@ class LearningSideSection extends Component {
               link="/index_js_mcqs"
             />
             <RecommendPost
-              imgsource="js_quize.jpeg"
+              imgsource="js_quiz_test.jpeg"
               RecPostHading="Javascript Quize Test"
               link="/js_quizes_tests"
             />
@@ -492,7 +492,7 @@ class LearningSideSection extends Component {
               link="/index_dbms_mcqs"
             />
             <RecommendPost
-              imgsource="dbms_quize.jpeg"
+              imgsource="dbms_quiz_test.jpeg"
               RecPostHading="DBMS Quize Test"
               link="/dbms_quizes_tests"
             />
@@ -566,7 +566,7 @@ class LearningSideSection extends Component {
               link="/index_sql_mcqs"
             />
             <RecommendPost
-              imgsource="sql_quize_test.jpeg"
+              imgsource="sql_quiz_test.jpeg"
               RecPostHading="SQL Quize Test"
               link="/sql_quizes_tests"
             />
@@ -650,7 +650,7 @@ class LearningSideSection extends Component {
               link="/index_ds_mcqs"
             />
             <RecommendPost
-              imgsource="ds_quize.jpeg"
+              imgsource="ds_quiz_test.jpeg"
               RecPostHading="DataStructure Quiz Test"
               link="/ds_quizes_tests"
             />
@@ -726,7 +726,7 @@ class LearningSideSection extends Component {
               link="/index_html_mcqs"
             />
             <RecommendPost
-              imgsource="html_css_quize.jpeg"
+              imgsource="html_css_quiz_test.jpeg"
               RecPostHading="HTML Quiz Test"
               link="/html_quizes_tests"
             />
@@ -802,9 +802,9 @@ class LearningSideSection extends Component {
               link="/index_css_mcqs"
             />
             <RecommendPost
-              imgsource="css_quize_test.jpeg"
-              RecPostHading="CSS Quiz Test"
-              link="/css_quizes_tests"
+              imgsource="html_css_quiz_test.jpeg"
+              RecPostHading="Html / CSS Quiz Test"
+              link="/html_quizes_tests"
             />
             <RecommendPost
               imgsource="code_challange.jpeg"
@@ -878,7 +878,7 @@ class LearningSideSection extends Component {
               link="/index_oops_mcqs"
             />
             <RecommendPost
-              imgsource="oops_quize.jpeg"
+              imgsource="oops_quiz_test.jpeg"
               RecPostHading="OOPs Quiz Test"
               link="/oops_quizes_tests"
             />
@@ -951,7 +951,7 @@ class LearningSideSection extends Component {
               link="/index_cn_mcqs"
             />
             <RecommendPost
-              imgsource="cn_quize_test.jpeg"
+              imgsource="cn_quiz_test.jpeg"
               RecPostHading="Computer Networking Quiz Test"
               link="/cn_quizes_tests"
             />
@@ -1024,7 +1024,7 @@ class LearningSideSection extends Component {
               link="/index_os_mcqs"
             />
             <RecommendPost
-              imgsource="os_quize_test.jpeg"
+              imgsource="os_quiz_test.jpeg"
               RecPostHading="Operating System Quiz Test"
               link="/os_quizes_tests"
             />
@@ -1097,7 +1097,7 @@ class LearningSideSection extends Component {
               link="/index_react_mcqs"
             />
             <RecommendPost
-              imgsource="react_quize.jpeg"
+              imgsource="react_quiz_test.jpeg"
               RecPostHading="React Test"
               link="/react_quizes_tests"
             />
@@ -1171,7 +1171,7 @@ class LearningSideSection extends Component {
               link="/index_angular_mcqs"
             />
             <RecommendPost
-              imgsource="angular_quize.jpeg"
+              imgsource="angular_quiz_test.jpeg"
               RecPostHading="Angular Quiz Test"
               link="/angular_quize_tests"
             />
@@ -1245,7 +1245,7 @@ class LearningSideSection extends Component {
               link="/index_android_mcqs"
             />
             <RecommendPost
-              imgsource="android_quize.jpeg"
+              imgsource="android_quiz_test.jpeg"
               RecPostHading="Android Quiz Test"
               link="/android_quizes_tests"
             />

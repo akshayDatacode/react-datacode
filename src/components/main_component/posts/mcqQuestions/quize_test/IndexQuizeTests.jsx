@@ -39,21 +39,21 @@ class IndexQuizeTests extends Component {
 
             <div className="card-deck mb-5">
               <PostCard
-                imgsource="c_quize.jpeg"
+                imgsource="c_quiz_test.jpeg"
                 title="C Programming Quiz Test"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
                 link="/c_quize_tests"
               />
               <PostCard
-                imgsource="python_quize.jpeg"
+                imgsource="python_quiz_test.jpeg"
                 title="Python Programming Quiz Test"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
                 link="/python_quize_tests"
               />
               <PostCard
-                imgsource="java_quize.jpeg"
+                imgsource="java_quiz_test.jpeg"
                 title="Java Programming Quiz Test"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
@@ -62,21 +62,21 @@ class IndexQuizeTests extends Component {
             </div>
             <div className="card-deck mb-5">
               <PostCard
-                imgsource="html_css_quize.jpeg"
+                imgsource="html_css_quiz_test.jpeg"
                 title="HTML & CSS Quiz Test"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
                 link="/html_quize_tests"
               />
               <PostCard
-                imgsource="js_quize.jpeg"
+                imgsource="js_quiz_test.jpeg"
                 title="JavaScript Programming Quiz Test"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
                 link="/js_quize_tests"
               />
               <PostCard
-                imgsource="ds_quize.jpeg"
+                imgsource="ds_quiz_test.jpeg"
                 title="DataStructure Quiz Test"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
@@ -85,21 +85,21 @@ class IndexQuizeTests extends Component {
             </div>
             <div className="card-deck mb-5">
               <PostCard
-                imgsource="dbms_quize.jpeg"
+                imgsource="dbms_quiz_test.jpeg"
                 title="DBMS Quiz Test"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
                 link="/dbms_quize_tests"
               />
               <PostCard
-                imgsource="sql_quize.jpeg"
+                imgsource="sql_quiz_test.jpeg"
                 title="SQL Quiz Test"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
                 link="/sql_quize_tests"
               />
               <PostCard
-                imgsource="oops_quize.jpeg"
+                imgsource="oops_quiz_test.jpeg"
                 title="OOPs Programming Quiz Test"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
@@ -108,14 +108,14 @@ class IndexQuizeTests extends Component {
             </div>
             <div className="card-deck mb-5">
               <PostCard
-                imgsource="angular_quize.jpeg"
+                imgsource="angular_quiz_test.jpeg"
                 title="Angular Quiz Test"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
                 link="/angular_quize_tests"
               />
               <PostCard
-                imgsource="react_quize.jpeg"
+                imgsource="react_quiz_test.jpeg"
                 title="React Quiz Test"
                 paragraph="We Love to Code and this is the best way to express our
                   love to Computer Science Wolrd."
