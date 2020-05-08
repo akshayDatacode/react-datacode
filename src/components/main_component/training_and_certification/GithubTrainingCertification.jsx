@@ -7,6 +7,7 @@ import FbLikeShare from "../../FbLikeShare";
 import Technologies from "../../right_section/Technologies";
 import CertificateShowCard from "./CertificateShowCard";
 import LearningSideSection from "../../right_section/learning_sidesection/LearningSideSection";
+import TrainingCertificationCardCarousel from "./TrainingCertificationCardCarousel";
 
 class Github extends Component {
   state = {};
@@ -42,30 +43,36 @@ class Github extends Component {
 
             <div className="card-deck">
               <CertificateShowCard
-                title=""
-                level=""
-                duration=""
-                enroll=""
-                platform=""
-                tag1=""
-                tag2=""
-                tag3=""
-                tag4=""
-                link=""
+                title="Introduction to Git and GitHub
+                "
+                level="Beginner"
+                duration="18hr"
+                enroll="Enroll Free"
+                platform="Coursera"
+                tag1="Git"
+                tag2="GitHub"
+                tag3="Introduction"
+                link="https://www.coursera.org/learn/introduction-git-github"
               />
               <CertificateShowCard
-                title=""
-                level=""
-                duration=""
-                enroll=""
-                platform=""
-                tag1=""
-                tag2=""
-                tag3=""
-                tag4=""
-                link=""
+                title="Git Started with GitHub"
+                level="Beginner"
+                duration="52min "
+                enroll="FREE"
+                platform="Udemy"
+                tag1="Git"
+                tag2="GitHub"
+                link="https://www.udemy.com/course/git-started-with-github/"
               />
             </div>
+         
+            <h4 className="text-secondary mt-5">
+              <code className="text-primary">
+                {" "}
+                For More Training & Certification
+              </code>
+            </h4>
+            <TrainingCertificationCardCarousel />
           </div>
           <div className="col-md-3 mt-md-5 mt-3">
             <div className="row">

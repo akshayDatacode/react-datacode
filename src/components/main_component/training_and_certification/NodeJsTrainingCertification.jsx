@@ -23,7 +23,7 @@ class NodeJs extends Component {
               className="text-center mb-4 display-5"
               style={{ color: "#072C71" }}
             >
-              Find the Best NodeJs Training & Certification
+              Find the Best Node.js Training & Certification
             </h2>
             <Link
               to="/home"
@@ -42,16 +42,14 @@ class NodeJs extends Component {
 
             <div className="card-deck">
               <CertificateShowCard
-                title=""
-                level=""
-                duration=""
-                enroll=""
-                platform=""
-                tag1=""
-                tag2=""
-                tag3=""
-                tag4=""
-                link=""
+                title="Node.js Certification Training"
+                level="Beginner"
+                duration="38 hr"
+                enroll="Paid"
+                platform="simplilearn"
+                tag1="Node.js"
+                tag2="Certification"
+                link="https://www.simplilearn.com/node-js-certification-training"
               />
               <CertificateShowCard
                 title=""

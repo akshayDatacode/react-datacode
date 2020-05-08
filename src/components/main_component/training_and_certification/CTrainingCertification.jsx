@@ -7,6 +7,7 @@ import FbLikeShare from "../../FbLikeShare";
 import Technologies from "../../right_section/Technologies";
 import CertificateShowCard from "./CertificateShowCard";
 import LearningSideSection from "../../right_section/learning_sidesection/LearningSideSection";
+import TrainingCertificationCardCarousel from "./TrainingCertificationCardCarousel";
 
 class C extends Component {
   state = {};
@@ -105,44 +106,60 @@ class C extends Component {
                 link="https://www.coursera.org/learn/c-structured-programming"
               />
               <CertificateShowCard
-                title=""
-                level=""
-                duration=""
-                enroll=""
-                platform=""
-                tag1=""
-                tag2=""
-                tag3=""
-                tag4=""
-                link=""
+                title="C Tutorial for Beginners on Compiler Installation and Writing Code For Simple C Programs"
+                level="Beginner"
+                duration="5 hr"
+                enroll="Pay for Certificate only"
+                platform="bitdegree.org"
+                tag1="Installation"
+                tag2="Code"
+                tag3="C "
+                link="https://stude.co/848611/c-tutorial"
               />
             </div>
             <div className="card-deck">
               <CertificateShowCard
-                title=""
-                level=""
-                duration=""
-                enroll=""
-                platform=""
-                tag1=""
-                tag2=""
-                tag3=""
-                tag4=""
-                link=""
+                title="C Programming: Tutorial for Absolute Beginners"
+                level="Beginner"
+                duration="3 hr"
+                enroll="Pay for Certificate only"
+                platform="bitdegree.org"
+                tag1="Programming"
+                tag2="Tutorial"
+                tag3="Beginners"
+                link="https://stude.co/848611/c-programming-tutorial"
               />
               <CertificateShowCard
-                title=""
-                level=""
-                duration=""
-                enroll=""
-                platform=""
-                tag1=""
-                tag2=""
-                tag3=""
-                tag4=""
-                link=""
+                title="C Programming:The best approach to learn C Language"
+                level="Beginner"
+                duration="3hr 26min"
+                enroll="FREE"
+                platform="Udemy"
+                tag1="C Language"
+                tag2="Programming"
+                link="https://www.udemy.com/course/c-programming-the-best-approach-to-learn-c-language/"
               />
             </div>
+            <div className="card-deck">
+
+            <CertificateShowCard
+                title="C Tutorial"
+                level="Beginner"
+                duration="5 hr"
+                enroll="Free "
+                platform="SoloLearn"
+                tag1="C"
+                tag2="Tutorial"
+                link="https://www.sololearn.com/Course/C/"
+              />
+              </div>
+            <h4 className="text-secondary mt-5">
+              <code className="text-primary">
+                {" "}
+                For More Training & Certification
+              </code>
+            </h4>
+            <TrainingCertificationCardCarousel />
           </div>
           <div className="col-md-3 mt-md-5 mt-3">
             <div className="row">

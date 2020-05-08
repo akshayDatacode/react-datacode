@@ -492,7 +492,7 @@ class LearningSideSection extends Component {
               link="/index_dbms_mcqs"
             />
             <RecommendPost
-              imgsource="dbms_quize_test.jpeg"
+              imgsource="dbms_quize.jpeg"
               RecPostHading="DBMS Quize Test"
               link="/dbms_quizes_tests"
             />
@@ -726,7 +726,7 @@ class LearningSideSection extends Component {
               link="/index_html_mcqs"
             />
             <RecommendPost
-              imgsource="html_quize_test.jpeg"
+              imgsource="html_css_quize.jpeg"
               RecPostHading="HTML Quiz Test"
               link="/html_quizes_tests"
             />
@@ -867,7 +867,7 @@ class LearningSideSection extends Component {
                   className="text-center mt-2 mb-md-4 mb-3"
                   style={{ color: "#133658" }}
                 >
-                  DataStructure Practice
+                  OOPs Practice
                 </h5>
               </div>
             </div>
@@ -878,7 +878,7 @@ class LearningSideSection extends Component {
               link="/index_oops_mcqs"
             />
             <RecommendPost
-              imgsource="oops_quize_test.jpeg"
+              imgsource="oops_quize.jpeg"
               RecPostHading="OOPs Quiz Test"
               link="/oops_quizes_tests"
             />
