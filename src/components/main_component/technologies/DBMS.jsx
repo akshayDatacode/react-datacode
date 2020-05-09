@@ -2,10 +2,18 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import RightSideSection from "../../right_section/RightSideSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faBook } from "@fortawesome/free-solid-svg-icons";
-import PostCard from "../PostCard";
+import {
+  faHome,
+  faBook,
+  faChalkboardTeacher,
+  faPuzzlePiece,
+} from "@fortawesome/free-solid-svg-icons";
 import RecommendPost from "../../right_section/RecommendPost";
 import RoadMapCard from "./RoadMapCard";
+import FbShare from "../FbShare";
+import FbLikeShare from "../../FbLikeShare";
+import Technologies from "../../right_section/Technologies";
+import LearningSideSection from "../../right_section/learning_sidesection/LearningSideSection";
 
 class DBMS extends Component {
   state = {};
@@ -18,15 +26,31 @@ class DBMS extends Component {
         <div className="row">
           <div className="col-1"></div>
           <div className="col-md-7 mt-4">
-            <h1 className="text-center mb-4 display-5">
+            <h2
+              className="text-center mb-4 display-5"
+              style={{ color: "#072C71" }}
+            >
               Find the Best DBMS Courses & Tutorials
-            </h1>
-            <Link to="/home" className="badge badge-primary mr-1">
-              <FontAwesomeIcon icon={faHome} size="2x" />
+            </h2>
+            <Link
+              to="/home"
+              className="badge mr-1"
+              style={{ backgroundColor: "#06CB6C" }}
+            >
+              <FontAwesomeIcon icon={faHome} size="2x" color="#072C71" />
             </Link>
-            <Link to="/index_technologies" className="badge badge-warning mr-1">
-              Technologies >
+            <Link
+              to="/index_technologies"
+              className="badge mr-1"
+              style={{ backgroundColor: "#072C71" }}
+            >
+              <FontAwesomeIcon
+                icon={faChalkboardTeacher}
+                size="2x"
+                color="#06CB6C"
+              />
             </Link>
+
             <RoadMapCard
               imgsource="programming_blog.jpeg"
               title="Google Python Classes For Beginners"
@@ -34,42 +58,16 @@ class DBMS extends Component {
               link="google.com"
             />
           </div>
-          <div className="col-md-4 mt-md-5 ">
-            <h2 className="text-center text-secondary mt-2 mb-3">
-              <FontAwesomeIcon icon={faBook} size="1x" className="mr-2" />
-              DBMS Learning
-            </h2>
-            <RecommendPost
-              imgsource="python_mcqs.jpeg"
-              RecPostHading="DBMS MCQs"
-              link="//index_dbms_mcqs"
-            />
-            <RecommendPost
-              imgsource="python_interview_question.jpeg"
-              RecPostHading="DBMS Interview Questions"
-              link="/dbms_interview_question"
-            />
-            <RecommendPost
-              imgsource="python_programming_question.jpeg"
-              RecPostHading="DBMS Programming Questions"
-              link="//DBMS__programming_questions"
-            />
-            <RecommendPost
-              imgsource="python_programming_question.jpeg"
-              RecPostHading="DBMS Quize Test"
-              link="/DBMS_quize_tests"
-            />
-            <RecommendPost
-              imgsource="python_learning_blog.jpeg"
-              RecPostHading="DBMS Programming Blogs"
-              link="/prog_lan_blog"
-            />
-            <RecommendPost
-              imgsource="code_challange.jpeg"
-              RecPostHading="Weekly Code Challanges"
-              link="/index_code_challange"
-            />
+
+
+          <div className="col-md-4 mt-md-5 mt-3">
+            <div className="row">
+              <FbLikeShare />{" "}
+            </div>
+            <LearningSideSection language="c" />
+            <Technologies />
             <RightSideSection />
+            
           </div>
         </div>
       </>

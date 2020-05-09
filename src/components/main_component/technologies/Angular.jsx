@@ -14,6 +14,7 @@ import FbShare from "../FbShare";
 import FbLikeShare from "../../FbLikeShare";
 import Technologies from "../../right_section/Technologies";
 import LearningSideSection from "../../right_section/learning_sidesection/LearningSideSection";
+import TechnologiesCardCarousel from "./TechnologiesCardCarousel";
 
 class Angular extends Component {
   state = {};
@@ -220,6 +221,8 @@ class Angular extends Component {
               tag3="Angular 5"
               link="http://software-skills-training.com/Courses/angular-training-course.htm"
             />
+            <h4 className="text-secondary mt-5">For More Technologies</h4>
+            <TechnologiesCardCarousel />
           </div>
           <div className="col-md-4 mt-md-5 mt-3">
             <div className="row">

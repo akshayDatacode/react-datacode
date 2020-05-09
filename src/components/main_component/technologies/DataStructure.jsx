@@ -2,9 +2,19 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import RightSideSection from "../../right_section/RightSideSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faBook } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHome,
+  faBook,
+  faChalkboardTeacher,
+  faPuzzlePiece,
+} from "@fortawesome/free-solid-svg-icons";
 import RecommendPost from "../../right_section/RecommendPost";
 import RoadMapCard from "./RoadMapCard";
+import FbShare from "../FbShare";
+import FbLikeShare from "../../FbLikeShare";
+import Technologies from "../../right_section/Technologies";
+import LearningSideSection from "../../right_section/learning_sidesection/LearningSideSection";
+import TechnologiesCardCarousel from "./TechnologiesCardCarousel";
 
 class DataStructure extends Component {
   state = {};
@@ -14,17 +24,32 @@ class DataStructure extends Component {
   render() {
     return (
       <>
-        <div className="row">
+         <div className="row">
           <div className="col-1"></div>
           <div className="col-md-7 mt-4">
-            <h1 className="text-center mb-4 display-5">
-              Find the Best DataStructure Courses & Tutorials
-            </h1>
-            <Link to="/home" className="badge badge-primary mr-1">
-              <FontAwesomeIcon icon={faHome} size="2x" />
+            <h2
+              className="text-center mb-4 display-5"
+              style={{ color: "#072C71" }}
+            >
+              Find the Best DataStructure Programming Courses & Tutorials
+            </h2>
+            <Link
+              to="/home"
+              className="badge mr-1"
+              style={{ backgroundColor: "#06CB6C" }}
+            >
+              <FontAwesomeIcon icon={faHome} size="2x" color="#072C71" />
             </Link>
-            <Link to="/index_technologies" className="badge badge-warning mr-1">
-              Technologies >
+            <Link
+              to="/index_technologies"
+              className="badge mr-1"
+              style={{ backgroundColor: "#072C71" }}
+            >
+              <FontAwesomeIcon
+                icon={faChalkboardTeacher}
+                size="2x"
+                color="#06CB6C"
+              />
             </Link>
             <RoadMapCard
               imgsource="ds_tutorial.jpeg"
@@ -191,43 +216,18 @@ class DataStructure extends Component {
               tag3="Beginner"
               link="https://click.linksynergy.com/deeplink?id=jU79Zysihs4&mid=39197&murl=https://www.udemy.com/data-structures-algorithms-in-python"
             />
+             <h4 className="text-secondary mt-5">For More Technologies</h4>
+            <TechnologiesCardCarousel />
           </div>
-          <div className="col-md-4 mt-md-5 ">
-            <h3 className="text-center text-secondary mt-2 mb-3">
-              <FontAwesomeIcon icon={faBook} size="1x" className="mr-2" />
-              DataStructure Learning
-            </h3>
-            <RecommendPost
-              imgsource="python_mcqs.jpeg"
-              RecPostHading="DataStructure MCQs"
-              link="/index_python_mcqs"
-            />
-            <RecommendPost
-              imgsource="python_interview_question.jpeg"
-              RecPostHading="Datastructure Interview Questions"
-              link="/datastructre_interview_question"
-            />
-            <RecommendPost
-              imgsource="python_programming_question.jpeg"
-              RecPostHading=" Datastructure Programming Questions"
-              link="/datastructure_programming_questions"
-            />
-            <RecommendPost
-              imgsource="python_programming_question.jpeg"
-              RecPostHading="Datastructure Quize Test"
-              link="/python_quize_tests"
-            />
-            <RecommendPost
-              imgsource="python_learning_blog.jpeg"
-              RecPostHading="Datastructure Blogs"
-              link="/prog_lan_blog"
-            />
-            <RecommendPost
-              imgsource="code_challange.jpeg"
-              RecPostHading="Weekly Code Challanges"
-              link="/index_code_challange"
-            />
+          
+          <div className="col-md-4 mt-md-5 mt-3">
+            <div className="row">
+              <FbLikeShare />{" "}
+            </div>
+            <LearningSideSection language="ds" />
+            <Technologies />
             <RightSideSection />
+            
           </div>
         </div>
       </>

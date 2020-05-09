@@ -14,6 +14,7 @@ import FbShare from "../FbShare";
 import FbLikeShare from "../../FbLikeShare";
 import Technologies from "../../right_section/Technologies";
 import LearningSideSection from "../../right_section/learning_sidesection/LearningSideSection";
+import TechnologiesCardCarousel from "./TechnologiesCardCarousel";
 
 class Android extends Component {
   state = {};
@@ -218,6 +219,8 @@ class Android extends Component {
               tag2="Video"
               link="https://www.udemy.com/course/android-material-design-course-tutorial/?LSNPUBID=jU79Zysihs4&ranEAID=jU79Zysihs4&ranMID=39197&ranSiteID=jU79Zysihs4-NBnGUeb39Og2WEuT.7m3Fg"
             />
+             <h4 className="text-secondary mt-5">For More Technologies</h4>
+            <TechnologiesCardCarousel />
           </div>
 
           <div className="col-md-4 mt-md-5 mt-3">
