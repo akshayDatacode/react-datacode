@@ -1019,12 +1019,12 @@ class LearningSideSection extends Component {
               </div>
             </div>
             <RecommendPost
-              imgsource="os_mcq.jpeg"
+              imgsource="os_tech.jpeg"
               RecPostHading="Operating System MCQs"
               link="/index_os_mcqs"
             />
             <RecommendPost
-              imgsource="os_quiz_test.jpeg"
+              imgsource="os_tech.jpeg"
               RecPostHading="Operating System Quiz Test"
               link="/os_quizes_tests"
             />

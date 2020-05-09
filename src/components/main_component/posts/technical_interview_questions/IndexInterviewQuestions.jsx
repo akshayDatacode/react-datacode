@@ -116,26 +116,7 @@ class IndexInterviewQuestions extends Component {
                 link="/sdlc_interview_question"
               />
             </div>
-            <div className="card-deck m-2">
-              <PostCard
-                imgsource="sql_interview_questions.jpeg"
-                title="SQL Interview Questions"
-                paragraph="We Love to Code and this is the best way to "
-                link="/sql_interview_question"
-              />
-              <PostCard
-                imgsource="testing_interview_questions.jpeg"
-                title="Testing Interview Questions"
-                paragraph="We Love to Code and this "
-                link="/testing_interview_question"
-              />
-              <PostCard
-                imgsource="django_interview_questions.jpeg"
-                title="Django Interview Questions coming soon"
-                paragraph="We Love to Code and this is the best"
-                link="/django_interview_question"
-              />
-            </div>
+           
             <div className="card-deck m-2">
               <PostCard
                 imgsource="html_interview_questions.jpeg"
@@ -175,6 +156,21 @@ class IndexInterviewQuestions extends Component {
                 paragraph="We Love to Code and this is the best"
                 link="/bootstrap_interview_question"
               />
+            </div>
+            <div className="card-deck m-2">
+              <PostCard
+                imgsource="sql_interview_questions.jpeg"
+                title="SQL Interview Questions"
+                paragraph="We Love to Code and this is the best way to "
+                link="/sql_interview_question"
+              />
+              <PostCard
+                imgsource="testing_interview_questions.jpeg"
+                title="Testing Interview Questions"
+                paragraph="We Love to Code and this "
+                link="/testing_interview_question"
+              />
+            
             </div>
 
             <h4 className="text-secondary mt-3">

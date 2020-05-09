@@ -6,7 +6,9 @@ import { Link } from "react-router-dom";
 import RoadMapCard from "../../technologies/RoadMapCard";
 import InterviewQuestionCardCarousel from "./InterviewQuestionCardCarousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
+import FbLikeShare from "../../../FbLikeShare";
+import { faHome, faChalkboardTeacher } from "@fortawesome/free-solid-svg-icons";
+import Technologies from "../../../right_section/Technologies";
 
 
 class CNInterviewQuestions extends Component {
@@ -17,30 +19,33 @@ class CNInterviewQuestions extends Component {
   render() {
     return (
       <>
-        <div className="container-fluids">
-          <div className="row">
-            <div className="col">
-              <div className="card bg-primary">
-                <div className="card-body">
-                  <h1 className="card-title text-light display-5 ">
-                    Computer Networking Interview Question
-                  </h1>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="row mt-5 mb-5">
-            <div className="col-md-1"></div>
-            <div className="col-md-7 ">
-            <Link to="/home" className="badge badge-primary mr-1">
-                  <FontAwesomeIcon icon={faHome} size="1x" />
-                </Link>
-              <Link
-                to="/index_interview_questioins"
-                className="badge badge-warning mr-1"
-              >
-                Interview Questions >>
-              </Link>
+        <div className="row">
+          <div className="col-1"></div>
+          <div className="col-md-7 mt-4">
+            <h2
+              className="text-center mb-4 display-5"
+              style={{ color: "#072C71" }}
+            >
+              Find the Best Computer Network Interview Questions
+            </h2>
+            <Link
+              to="/home"
+              className="badge mr-1"
+              style={{ backgroundColor: "#06CB6C" }}
+            >
+              <FontAwesomeIcon icon={faHome} size="2x" color="#072C71" />
+            </Link>
+            <Link
+              to="/index_interview_questioins"
+              className="badge mr-1"
+              style={{ backgroundColor: "#072C71" }}
+            >
+              <FontAwesomeIcon
+                icon={faChalkboardTeacher}
+                size="2x"
+                color="#06CB6C"
+              />
+            </Link>
               <div className="row mb-5">
                 <div className="col">
               <QuestionCard
@@ -139,10 +144,12 @@ For Example, A computer network is a group of computers connected with each othe
                 </div>
               </div>
             </div>    
-               
             <div className="col-md-4 mt-5">
-              <h5 className="mb-4">Other Learning Resources</h5>
-              <RoadMapCard
+            <FbLikeShare />{" "}
+            <h4 className="mb-3 mt-4" style={{ color: "#072C71" }}>
+              Other Learning Resources
+            </h4> 
+            <RoadMapCard
                 imgsource="cn_tech.jpeg"
                 title="Top 47 Networking Interview Questions"
                 source="(javatpoint)"
@@ -185,8 +192,8 @@ For Example, A computer network is a group of computers connected with each othe
                 tag1="network "
                 link="http://placement.freshersworld.com/networking-interview-questions/33121835176"
               />
-              <RightSideSection />
-            </div>
+            <RightSideSection />
+            <Technologies />
           </div>
         </div>
       </>

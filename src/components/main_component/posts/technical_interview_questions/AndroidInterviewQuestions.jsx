@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 import QuestionCard from "./QuestionCard";
-import RecommendPost from "../../../right_section/RecommendPost";
 import RightSideSection from "../../../right_section/RightSideSection";
+import RecommendPost from "../../../right_section/RecommendPost";
 import { Link } from "react-router-dom";
 import RoadMapCard from "../../technologies/RoadMapCard";
 import InterviewQuestionCardCarousel from "./InterviewQuestionCardCarousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
 import FbLikeShare from "../../../FbLikeShare";
+import { faHome, faChalkboardTeacher } from "@fortawesome/free-solid-svg-icons";
+import LearningSideSection from "../../../right_section/learning_sidesection/LearningSideSection";
+import Technologies from "../../../right_section/Technologies";
 
 class AndroidInterviewQuestions extends Component {
   state = {};
@@ -17,31 +19,33 @@ class AndroidInterviewQuestions extends Component {
   render() {
     return (
       <>
-        <div className="container-fluids">
-          <div className="row">
-            <div className="col">
-              <div className="card bg-warning">
-                <div className="card-body">
-                  <h1 className="card-title text-dark display-5 ">
-                    Android Interview Question
-                  </h1>
-                  <FbLikeShare link="https://www.datacode.in/?p=/react-datacode/#/android_interview_question" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="row mt-5 mb-5">
-            <div className="col-md-1"></div>
-            <div className="col-md-7 ">
-              <Link to="/home" className="badge badge-primary mr-1">
-                <FontAwesomeIcon icon={faHome} size="1x" />
-              </Link>
-              <Link
-                to="/index_interview_questioins"
-                className="badge badge-warning mr-1"
-              >
-                Interview Questions >>
-              </Link>
+        <div className="row">
+          <div className="col-1"></div>
+          <div className="col-md-7 mt-4">
+            <h2
+              className="text-center mb-4 display-5"
+              style={{ color: "#072C71" }}
+            >
+              Find the Best Android Interview Questions
+            </h2>
+            <Link
+              to="/home"
+              className="badge mr-1"
+              style={{ backgroundColor: "#06CB6C" }}
+            >
+              <FontAwesomeIcon icon={faHome} size="2x" color="#072C71" />
+            </Link>
+            <Link
+              to="/index_interview_questioins"
+              className="badge mr-1"
+              style={{ backgroundColor: "#072C71" }}
+            >
+              <FontAwesomeIcon
+                icon={faChalkboardTeacher}
+                size="2x"
+                color="#06CB6C"
+              />
+            </Link>
               <div className="row mb-5">
                 <div className="col">
                   <QuestionCard
@@ -154,7 +158,11 @@ class AndroidInterviewQuestions extends Component {
             </div>
 
             <div className="col-md-4 mt-5">
-              <h5 className="mb-4">Other Learning Resources</h5>
+            <FbLikeShare />{" "}
+            <h4 className="mb-3 mt-4" style={{ color: "#072C71" }}>
+              Other Learning Resources
+            </h4>
+
               <RoadMapCard
                 imgsource="android_tech.jpeg"
                 title="50 Android Interview Questions & Answers"
@@ -203,8 +211,9 @@ class AndroidInterviewQuestions extends Component {
                 tag2=" Interview Questions"
                 link="https://hackr.io/blog/android-interview-questions"
               />
-              <RightSideSection />
-            </div>
+              <LearningSideSection language="android" />
+            <RightSideSection />
+            <Technologies />
           </div>
         </div>
       </>
