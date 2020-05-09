@@ -5,6 +5,7 @@ import PostCard from "../../PostCard";
 import ArticlePostCard from "../ArticlePostCard";
 
 import { Link } from "react-router-dom";
+import Discuss from "../../Discuss";
 
 class ProgrammingBlog2 extends Component {
   state = {};
@@ -116,6 +117,14 @@ class ProgrammingBlog2 extends Component {
                   </ul>
                 </nav>
               </div>
+              <h3 className="mt-4 mb-2" style={{ color: "#072C71" }}>
+                Discuss with the Community
+              </h3>
+              <Discuss
+                url="https://www.datacode.in/?p=/react-datacode/#/index_articles"
+                title="Communities Learning Blogs"
+                identifier="index_articles"
+              />
             </div>
 
             <div className="col-md-3 ">

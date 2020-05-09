@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { faUserNinja } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 class RecommendPost extends Component {
   state = {};
   render() {
@@ -19,10 +21,16 @@ class RecommendPost extends Component {
                 />
               </div>
               <div className="col ">
-                <h6 class="card-title text-left">{this.props.RecPostHading}</h6>
+                <h6 class="card-title text-left" style={{ color: "#072C71" }}>
+                  {this.props.RecPostHading}
+                </h6>
                 <Link to={this.props.link} className="font-weight-bold">
-                  <h6 className="btn btn-sm btn-primary border mt-2">
+                  <h6
+                    className="btn btn-sm btn-primary border mt-2"
+                    style={{ backgroundColor: "#072C71" }}
+                  >
                     Start Learning
+                    <FontAwesomeIcon icon={faUserNinja} className="ml-1" />
                   </h6>
                 </Link>
               </div>

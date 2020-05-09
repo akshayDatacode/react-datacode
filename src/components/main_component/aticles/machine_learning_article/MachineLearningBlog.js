@@ -5,6 +5,7 @@ import PostCard from "../../PostCard";
 import ArticlePostCard from "../ArticlePostCard";
 
 import { Link } from "react-router-dom";
+import Discuss from "../../Discuss";
 
 class MachineLearningBlog extends Component {
   state = {};
@@ -14,7 +15,7 @@ class MachineLearningBlog extends Component {
   render() {
     return (
       <>
-       <div className="container-fluid ">
+        <div className="container-fluid ">
           <div className="row">
             <div className="col-md-1 p-0 m-0"></div>
             <div className="col-md-8 p-0 mt-4">
@@ -234,10 +235,18 @@ class MachineLearningBlog extends Component {
                   link="https://www.pluralsight.com/blog/it-ops/how-to-prepare-for-technical-it-interview-questions"
                 />
               </div>
-              </div>
+              <h3 className="mt-4 mb-2" style={{ color: "#072C71" }}>
+                Discuss with the Community
+              </h3>
+              <Discuss
+                url="https://www.datacode.in/?p=/react-datacode/#/index_articles"
+                title="Communities Learning Blogs"
+                identifier="index_articles"
+              />
+            </div>
             <div className="col-md-3 ">
               <RightSideSection />
-              </div>
+            </div>
           </div>
         </div>
       </>
