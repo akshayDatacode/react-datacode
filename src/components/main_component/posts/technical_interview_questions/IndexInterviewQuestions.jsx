@@ -4,7 +4,12 @@ import PostCard from "../../PostCard";
 import RightSideSection from "../../../right_section/RightSideSection";
 import InterviewQuestionCardCarousel from "./InterviewQuestionCardCarousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faUserTie } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHome,
+ 
+  faChalkboardTeacher,
+} from "@fortawesome/free-solid-svg-icons";
+
 import Technologies from "../../../right_section/Technologies";
 class IndexInterviewQuestions extends Component {
   state = {};
@@ -14,15 +19,14 @@ class IndexInterviewQuestions extends Component {
   render() {
     return (
       <>
-        <div className="row">
+         <div className="row">
           <div className="col-1"></div>
           <div className="col-md-8 mt-4">
             <h1
               className="text-center mb-4 rounded p-2"
               style={{ backgroundColor: "#06CB6C", color: "#072C71" }}
             >
-              <FontAwesomeIcon icon={faUserTie} color="#072C71" /> Technical
-              Interview Questions
+              <FontAwesomeIcon icon={faChalkboardTeacher} /> Interview  Questions
             </h1>
             <Link
               to="/home"
@@ -31,6 +35,7 @@ class IndexInterviewQuestions extends Component {
             >
               <FontAwesomeIcon icon={faHome} size="2x" color="#072C71" />
             </Link>
+
             <div className="card-deck m-2">
               <PostCard
                 imgsource="dbms_interview_questions.jpeg"
