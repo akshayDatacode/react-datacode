@@ -6,7 +6,7 @@ class PostCard extends Component {
   render() {
     return (
       <>
-        <div class="card border border-white">
+        <div class="card border border-white shadow">
           <img
             className=" card-img-top mx-auto img-fluid img-circle d-block"
             src={require("../../assets/images/" + this.props.imgsource)}
@@ -17,11 +17,11 @@ class PostCard extends Component {
             <h5 class="card-title">{this.props.title}</h5>
             <p class="card-text">{this.props.paragraph}</p>
           </div>
-          <div class="card-footer border border-white bg-white">
+          <div class="card-footer border border-white bg-white shadow">
             <div className="row">
               <div className="col text-right">
                 <Link to={this.props.link}>
-                  <h6 className="btn btn-default border border-secondary text-secondary">
+                  <h6 className="btn btn-default border border-secondary shadow text-secondary">
                     Read More
                   </h6>
                 </Link>

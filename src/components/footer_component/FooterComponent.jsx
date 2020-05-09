@@ -91,9 +91,9 @@ class FooterComponent extends Component {
                 />
 
                 <p style={{ color: "#7EC8F5" }}>
-                  We Present to you a Online Learning Community. Where you can
-                  Explore your Learning Path and also the get latest and Best
-                  online learning Content over the Internet
+                  We present to you an Online Learning Community. Where you can
+                  explore your learning path and also get the latest and Best
+                  online learning Content over the internet.
                 </p>
               </div>
               <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
@@ -110,12 +110,12 @@ class FooterComponent extends Component {
                     href="https://www.facebook.com/groups/DevCIndore"
                     target="_blank"
                   >
+                    <img
+                      className=" card-img-top mx-auto img-fluid img-circle d-block"
+                      src={require("../../assets/images/devcindore.jpeg")}
+                      alt="avatar"
+                    />
                     Facebook Developer Circle, Indore
-                  </a>
-                </p>
-                <p>
-                  <a class="dark-grey-text" href="#!" target="_blank">
-                    Mozila Community,Indore
                   </a>
                 </p>
               </div>
