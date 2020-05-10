@@ -10,6 +10,8 @@ import {
   faAward,
   faColumns,
   faTv,
+  faCogs,
+  faBrain,
 } from "@fortawesome/free-solid-svg-icons";
 import RightSideSection from "../../right_section/RightSideSection";
 import {
@@ -68,11 +70,7 @@ class IndexTrainingCertification extends Component {
               <div className="card text-center p-2">
                 <Link to="/datascience_training_certification">
                   <center>
-                    <FontAwesomeIcon
-                      icon={faPython}
-                      size="4x"
-                      color="#633974"
-                    />
+                    <FontAwesomeIcon icon={faBrain} size="4x" color="#633974" />
                   </center>
                   DataScience
                 </Link>
@@ -80,7 +78,7 @@ class IndexTrainingCertification extends Component {
               <div className="card text-center p-2">
                 <Link to="/machinelearning_training_certification">
                   <center>
-                    <FontAwesomeIcon icon={faJava} size="4x" color="#633974" />
+                    <FontAwesomeIcon icon={faCogs} size="4x" color="#633974" />
                   </center>
                   Machine Learning
                 </Link>

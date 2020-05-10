@@ -18,8 +18,20 @@ class DataScience extends Component {
     return (
       <>
         <div className="row">
-          <div className="col-1"></div>
-          <div className="col-md-8 mt-4 ">
+          <div className="col-1 pl-3 mt-3 d-none d-sm-block">
+            <a
+              target="_blank"
+              href="https://click.linksynergy.com/fs-bin/click?id=duQnNs8J88k&offerid=759505.373&subid=0&type=4"
+              style={{ position: "fixed" }}
+            >
+              <img
+                border="0"
+                alt="Start your future with a Data Analysis Certificate."
+                src="https://ad.linksynergy.com/fs-bin/show?id=duQnNs8J88k&bids=759505.373&subid=0&type=4&gridnum=10"
+              />
+            </a>
+          </div>
+          <div className="col-md-8 mt-4 pl-md-5 pr-md-4 pb-md-0 pt-md-3">
             <h2
               className="text-center mb-4 display-5"
               style={{ color: "#072C71" }}
@@ -171,7 +183,7 @@ class DataScience extends Component {
                 tag3="nitroproc"
                 link="https://www.udemy.com/course/work-with-big-data-locally-with-nitroproc/"
               />
-               <CertificateShowCard
+              <CertificateShowCard
                 title="Data Science: Computational Thinking with Python"
                 level="Beginner"
                 duration="5 Weeks"
@@ -183,8 +195,7 @@ class DataScience extends Component {
               />
             </div>
             <div className="card-deck">
-
-            <CertificateShowCard
+              <CertificateShowCard
                 title="Data Science: Computational Thinking with Python"
                 level="Beginner"
                 duration="5 Weeks"
@@ -194,7 +205,7 @@ class DataScience extends Component {
                 tag2="Data Science"
                 link="https://www.edx.org/course/foundations-of-data-science-computational-thinking"
               />
-<CertificateShowCard
+              <CertificateShowCard
                 title="Data Science: Machine Learning and Predictions"
                 level="Beginner"
                 duration="6 Weeks"
@@ -203,13 +214,10 @@ class DataScience extends Component {
                 tag1="Python"
                 tag2="Data Science"
                 tag1="ML"
-
                 link="https://www.edx.org/course/foundations-of-data-science-prediction-and-machine"
               />
+            </div>
 
-              
-              </div>
-              
             <h4 className="text-secondary mt-5">
               <code className="text-primary">
                 {" "}
