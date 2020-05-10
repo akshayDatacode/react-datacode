@@ -33,7 +33,7 @@ class CardCarousel extends Component {
                 <CardCarouselItem
                   imgsource="event.jpeg"
                   title="Event and Conference"
-                  link="/index_event"
+                  link="/home"
                 />
                 <CardCarouselItem
                   imgsource="web_blog.jpeg"
@@ -75,41 +75,13 @@ class CardCarousel extends Component {
                   link="/index_code_challange"
                 />
                 <CardCarouselItem
-                  imgsource="code_challange.jpeg"
-                  title="weekly Code Challange"
-                  link="/index_code_challange"
+                  imgsource="comming_soon.jpeg"
+                  title="coming soon"
+                  link="/home"
                 />
               </div>
             </Carousel.Item>
-            <Carousel.Item>
-              <div className="card-deck">
-                <CardCarouselItem
-                  imgsource="code_challange.jpeg"
-                  title="weekly Code Challange"
-                  link="/index_code_challange"
-                />
-                <CardCarouselItem
-                  imgsource="code_challange.jpeg"
-                  title="weekly Code Challange"
-                  link="/index_code_challange"
-                />
-                <CardCarouselItem
-                  imgsource="code_challange.jpeg"
-                  title="weekly Code Challange"
-                  link="/index_code_challange"
-                />
-                <CardCarouselItem
-                  imgsource="code_challange.jpeg"
-                  title="weekly Code Challange"
-                  link="/index_code_challange"
-                />
-                <CardCarouselItem
-                  imgsource="code_challange.jpeg"
-                  title="weekly Code Challange"
-                  link="/index_code_challange"
-                />
-              </div>
-            </Carousel.Item>
+        
           </Carousel>
         </div>
 
@@ -127,7 +99,7 @@ class CardCarousel extends Component {
               <CardCarouselItem
                 imgsource="event.jpeg"
                 title="Event and Conference"
-                link="/index_event"
+                link="/home"
               />
             </Carousel.Item>
             <Carousel.Item>

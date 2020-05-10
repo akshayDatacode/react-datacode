@@ -59,7 +59,7 @@ class MainComponent extends Component {
               </h2>
               <div class="card-deck mt-5 ml-md-5 mr-md-5 pr-md-5 pl-md-5">
                 <div class="card border border-white ml-md-5 mr-md-5 pr-md-5 pl-md-5">
-                  <Link to="/index_quize_tests">
+                  <Link to="/home">
                     <center>
                       <FontAwesomeIcon
                         icon={faSearch}
@@ -84,7 +84,7 @@ class MainComponent extends Component {
                   </div> */}
                 </div>
                 <div class="card border border-white ml-md-5 mr-md-5 pr-md-5 pl-md-5">
-                  <Link to="/index_interview_questioins" activeClass="active">
+                  <Link to="/home" activeClass="active">
                     <center>
                       <FontAwesomeIcon
                         icon={faBook}
@@ -113,7 +113,7 @@ class MainComponent extends Component {
 
               <div class="card-deck mt-5 ml-md-5 mr-md-5 pr-md-5 pl-md-5">
                 <div class="card border border-white ml-md-5 mr-md-5 pr-md-5 pl-md-5">
-                  <Link to="/index_mcqs">
+                  <Link to="/home">
                     <center>
                       <FontAwesomeIcon
                         icon={faPuzzlePiece}
@@ -138,7 +138,7 @@ class MainComponent extends Component {
                   </div> */}
                 </div>
                 <div class="card border border-white ml-md-5 mr-md-5 pr-md-5 pl-md-5">
-                  <Link to="/index_mcqs">
+                  <Link to="/home">
                     <center>
                       <FontAwesomeIcon
                         icon={faTerminal}

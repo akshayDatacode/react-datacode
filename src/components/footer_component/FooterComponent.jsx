@@ -142,11 +142,7 @@ class FooterComponent extends Component {
                     Weekly Code Challange
                   </Link>
                 </p>
-                <p>
-                  <a className="dark-grey-text" href="#!">
-                    Help
-                  </a>
-                </p>
+              
               </div>
 
               <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">

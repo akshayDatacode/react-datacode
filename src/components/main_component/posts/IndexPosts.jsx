@@ -8,6 +8,7 @@ import ProgrammingQuestionsCardCarousel from "../posts/programming_questions/Pro
 import CodeChallangeCardCarousel from "../code_challange/CodeChallangeCardCarousel";
 import ArticleCardCarousel from "../aticles/ArticleCardCarousel";
 import PracticeQuestionCardCarousel from "../posts/practice_questions/PracticeQuestionCardCarousel";
+import TrainingCertificationCardCarousel from "../training_and_certification/TrainingCertificationCardCarousel";
 
 import EventCardCarousel from "../events/EventCardCarousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -53,10 +54,8 @@ class IndexPosts extends Component {
                     </h4>
                   </Link>
                   <p>
-                    Learn New Technologies and Find how you can start your
-                    learning from the beginner level. Datacode collects for you
-                    in a very shorted order The Best Learning Tutorials and
-                    Courses as Free or Paid
+                  A one step solution for your technical learning.<br/> Learn online from the best programming tutorials and courses submitted and voted by the programming community.
+
                   </p>
                   <h4 className="text-center p-0 m-0 "> Find and Learn</h4>
                 </div>
@@ -76,15 +75,13 @@ class IndexPosts extends Component {
                     </h4>
                   </Link>
                   <p>
-                    Learn New Technologies and Find how you can start your
-                    learning from the beginner level. Datacode collects for you
-                    in a very shorted order The Best Learning Tutorials and
-                    Courses as Free or Paid
+                  A one step solution for your Certificates.<br/>Our hands-on training and practical certification collected from  all over the internet helps you to learn the essentials and build your career
+
                   </p>
-                  <h4 className="text-center p-0 m-0 ">Get The Placment</h4>
+                  <h4 className="text-center p-0 m-0 ">Get The Learning</h4>
                 </div>
               </div>
-              <InterviewQuestionsCardCarousel />
+              <TrainingCertificationCardCarousel />
               {/* Ending Training And Certificate */}
               {/* Starting Interview */}
               <div
@@ -99,12 +96,10 @@ class IndexPosts extends Component {
                     </h4>
                   </Link>
                   <p>
-                    Learn New Technologies and Find how you can start your
-                    learning from the beginner level. Datacode collects for you
-                    in a very shorted order The Best Learning Tutorials and
-                    Courses as Free or Paid
+                  A one step solution for your Interview Preparation.<br/>
+                  Our specially designed Interview Questions helps you to learn the essentials and secure a Placement
                   </p>
-                  <h4 className="text-center p-0 m-0 ">Get The Placment</h4>
+                  <h4 className="text-center p-0 m-0 ">Get The Placement</h4>
                 </div>
               </div>
               <InterviewQuestionsCardCarousel />
@@ -122,10 +117,7 @@ class IndexPosts extends Component {
                     </h4>
                   </Link>
                   <p>
-                    Learn New Technologies and Find how you can start your
-                    learning from the beginner level. Datacode collects for you
-                    in a very shorted order The Best Learning Tutorials and
-                    Courses as Free or Paid
+                  A one step solution for your technical learning.<br/> Here we bring up lots of MCQs to solve and get yourself thorough with the technology. 
                   </p>
                   <h4 className="text-center p-0 m-0 ">Challange Your Logic</h4>
                 </div>
@@ -145,10 +137,7 @@ class IndexPosts extends Component {
                     </h4>
                   </Link>
                   <p>
-                    Learn New Technologies and Find how you can start your
-                    learning from the beginner level. Datacode collects for you
-                    in a very shorted order The Best Learning Tutorials and
-                    Courses as Free or Paid
+                  A one step solution for your technical learning.<br/> You can test your knowledge through fun quizzes and evaluate your daily learning. 
                   </p>
                   <h4 className="text-center p-0 m-0 ">Test Your Practice</h4>
                 </div>
@@ -168,10 +157,7 @@ class IndexPosts extends Component {
                     </h4>
                   </Link>
                   <p>
-                    Learn New Technologies and Find how you can start your
-                    learning from the beginner level. Datacode collects for you
-                    in a very shorted order The Best Learning Tutorials and
-                    Courses as Free or Paid
+                  A one step solution for your technical learning.<br/> Practice what you learned and get better with your knowledge by our practice questions
                   </p>
                   <h4 className="text-center p-0 m-0 ">Practice your logic </h4>
                 </div>
@@ -191,10 +177,7 @@ class IndexPosts extends Component {
                     </h4>
                   </Link>
                   <p>
-                    Learn New Technologies and Find how you can start your
-                    learning from the beginner level. Datacode collects for you
-                    in a very shorted order The Best Learning Tutorials and
-                    Courses as Free or Paid
+                  A one step solution for your technical learning.<br/> Test your practice and knowledge by solving programming example questions specially designed for you.
                   </p>
                   <h4 className="text-center p-0 m-0 ">Practice Programming</h4>
                 </div>
@@ -214,10 +197,7 @@ class IndexPosts extends Component {
                     </h4>
                   </Link>
                   <p>
-                    Learn New Technologies and Find how you can start your
-                    learning from the beginner level. Datacode collects for you
-                    in a very shorted order The Best Learning Tutorials and
-                    Courses as Free or Paid
+                  A one step solution for your technical learning.<br/> A place where you can read blogs with fascinating knowledge, interests and ideas with people ranging from students, programmers and top technical experts. 
                   </p>
                   <h4 className="text-center p-0 m-0 ">
                     Learn From Communities
@@ -238,10 +218,9 @@ class IndexPosts extends Component {
                     </h4>
                   </Link>
                   <p>
-                    Learn New Technologies and Find how you can start your
-                    learning from the beginner level. Datacode collects for you
-                    in a very shorted order The Best Learning Tutorials and
-                    Courses as Free or Paid
+                  A one step solution for Challanging yourself.<br/> We present weekly coding challenges where you can show off your knowledge and win the challenges. 
+
+
                   </p>
                   <h4 className="text-center p-0 m-0 ">It's Time to Code</h4>
                 </div>
