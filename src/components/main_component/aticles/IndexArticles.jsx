@@ -8,6 +8,7 @@ import { faHome, faNewspaper } from "@fortawesome/free-solid-svg-icons";
 import RecommendPost from "../../right_section/RecommendPost";
 import ArticleCardCarousel from "./ArticleCardCarousel";
 import Discuss from "../Discuss";
+import Technologies from "../../right_section/Technologies";
 
 class IndexArticles extends Component {
   state = {};
@@ -104,21 +105,23 @@ class IndexArticles extends Component {
                 Recommended for you
               </h5>
               <RecommendPost
-                imgsource="python_mcqs.jpeg"
+                imgsource="python_mcq.jpeg"
                 RecPostHading="Python MCQs Questions"
                 link="/index_python_mcqs"
               />
               <RecommendPost
-                imgsource="java_mcqs.jpeg"
+                imgsource="java_mcq.jpeg"
                 RecPostHading="Java MCQs Questions"
                 link="/index_java_mcqs"
               />
               <RecommendPost
-                imgsource="datacodelogo.jpeg"
-                RecPostHading="Programminig Quize Test"
-                link="/index_quize_tests"
+                imgsource="c_mcq.jpeg"
+                RecPostHading="C MCQs Questions"
+                link="/index_c_mcqs"
               />
               <RightSideSection />
+              <Technologies />
+
             </div>
           </div>
         </div>
