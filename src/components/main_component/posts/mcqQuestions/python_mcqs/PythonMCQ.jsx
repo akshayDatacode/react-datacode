@@ -9,6 +9,7 @@ import RecommendPost from "../../../../right_section/RecommendPost";
 import MCQCardCarousel from "../MCQCardCarousel";
 import HeaderCard from "../../../HeaderCard";
 import LearningSideSection from "../../../../right_section/learning_sidesection/LearningSideSection";
+import Technologies from "../../../../right_section/Technologies";
 
 class PythonMCQ extends Component {
   state = {
@@ -183,7 +184,9 @@ print(a)`}
             </div>
             <div className="col-md-4 ">
               <LearningSideSection language="python" />
+
               <RightSideSection />
+              <Technologies />
             </div>
           </div>
         </div>

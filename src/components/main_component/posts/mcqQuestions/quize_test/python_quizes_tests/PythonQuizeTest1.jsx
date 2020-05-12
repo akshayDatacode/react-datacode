@@ -2,12 +2,12 @@ import React, { Component } from "react";
 import HeaderBannerSection from "../../../../HeaderBannerSection";
 import QuizeTest from "../quizeTest";
 import ScoreCard from "../../scoreCard";
-import { Button, Modal } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import FooterComponentUpper from "../../../../../footer_component/FooterComponentUpper";
 import MCQTestCardCarousel from "../MCQTestCardCarousel";
 import RightSideSection from "../../../../../right_section/RightSideSection";
-import RecommendPost from "../../../../../right_section/RecommendPost";
+import LearningSideSection from "../../../../../right_section/learning_sidesection/LearningSideSection";
+import Technologies from "../../../../../right_section/Technologies";
 
 class PythonQuizeTest1 extends Component {
   state = {
@@ -202,23 +202,9 @@ class PythonQuizeTest1 extends Component {
               </div>
             </div>
             <div className="col-md-4 mt-md-4">
-              <h4>Recommendation</h4>
-              <RecommendPost
-                imgsource="python_mcqs.jpeg"
-                RecPostHading="Python MCQs Questions"
-                link="/index_python_mcqs"
-              />
-              <RecommendPost
-                imgsource="java_mcqs.jpeg"
-                RecPostHading="Java MCQs Questions"
-                link="/index_java_mcqs"
-              />
-              <RecommendPost
-                imgsource="c_mcq.jpeg"
-                RecPostHading="C MCQs Questions"
-                link="/index_c_mcqs"
-              />
+              <LearningSideSection language="python" />
               <RightSideSection />
+              <Technologies />
             </div>
           </div>
         </div>
