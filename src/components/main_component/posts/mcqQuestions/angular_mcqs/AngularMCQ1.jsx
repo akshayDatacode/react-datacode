@@ -1,12 +1,16 @@
 import React, { Component } from "react";
-import HeaderCard from "../../../HeaderCard";
-import { Link } from "react-router-dom";
-import ScoreCard from "../scoreCard";
 import Quize from "../quize";
+import ScoreCard from "../scoreCard";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome, faCode, faChalkboardTeacher } from "@fortawesome/free-solid-svg-icons";
 import RightSideSection from "../../../../right_section/RightSideSection";
 import RecommendPost from "../../../../right_section/RecommendPost";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
+import MCQCardCarousel from "../MCQCardCarousel";
+import HeaderCard from "../../../HeaderCard";
+import LearningSideSection from "../../../../right_section/learning_sidesection/LearningSideSection";
+import Technologies from "../../../../right_section/Technologies";
+import FbLikeShare from "../../../FbLikeShare";
 
 class AngularMCQ1 extends Component {
   state = {
@@ -26,29 +30,47 @@ class AngularMCQ1 extends Component {
   render() {
     return (
       <>
-      <HeaderCard
-          title="Angular MCQs Set 1"
-          color="#FFD700"
-          textcolor="black"
-        /> 
-
-        <div class="container-fluid">
+     <div class="container-fluid">
           <div className="row">
             <div className="col-1"></div>
             <div className="col-md-7 ">
-              <div className="col-fluid ">
-                <Link to="/home" className="badge badge-primary mr-1">
-                  <FontAwesomeIcon icon={faHome} size="1x" />
-                </Link>
-                <Link to="/index_mcqs" className="badge badge-warning mr-1">
-                  MCQs >>
-                </Link>
-                <Link
-                  to="/index_angular_mcqs"
-                  className="badge badge-success mr-1"
-                >
-                  Angular MCQs >>
-                </Link>
+              <div className="col-fluid mt-2 ml-2">
+            <h2
+              className="text-center mb-4 display-5"
+              style={{ color: "#072C71" }}
+            >
+              Angular Multiple choice Questions Set-1
+            </h2>
+            <Link
+              to="/home"
+              className="badge mr-1"
+              style={{ backgroundColor: "#06CB6C" }}
+            >
+              <FontAwesomeIcon icon={faHome} size="2x" color="#072C71" /> 
+            </Link>
+            <Link
+              to="/index_mcqs"
+              className="badge mr-1"
+              style={{ backgroundColor: "#072C71" }}
+
+            >
+              <FontAwesomeIcon icon={faChalkboardTeacher} size="2x" color="#06CB6C" />
+
+            </Link>
+            <Link
+              to="/index_angular_mcqs"
+              className="badge mr-1 text-white"
+              style={{ backgroundColor: "#072C71" }}
+            >
+              <FontAwesomeIcon
+                  icon={faCode}
+                  size="1x"
+                  color="#06CB6C"
+                  className="mr-2"
+                />
+                back to Index
+            </Link>
+
                 <ScoreCard count={this.state.count} />
               </div>
               <div className="row">
@@ -161,28 +183,21 @@ class AngularMCQ1 extends Component {
                   />
                 </div>
               </div>
+            <div className="row">
+                <div className="col">
+                  <h4>For More MCQs Questions</h4>
+                  <MCQCardCarousel />
+                </div>
+              </div>
             </div>
-            <div className="col-md-4">
-              <RightSideSection />
-              <h5 className="mb-3">Recommended for you</h5>
-              <RecommendPost
-                imgsource="html_mcq.jpeg"
-                RecPostHading="HTML MCQs Questions"
-                link="/index_html_mcqs"
-              />
-              <RecommendPost
-                imgsource="js_mcq.jpeg"
-                RecPostHading="JavaScript MCQs Questions"
-                link="/index_java_mcqs"
-              />
-              <RecommendPost
-                imgsource="react_mcq.jpeg"
-                RecPostHading="React MCQs Questions"
-                link="/index_react_mcqs"
-              />
+            <div className="col-md-4 mt-md-5 mt-3">
+            <LearningSideSection language="angular" />
+            <RightSideSection />
+            <Technologies />
             </div>
           </div>
-        </div>
+        
+      </div>
       </>
     );
   }

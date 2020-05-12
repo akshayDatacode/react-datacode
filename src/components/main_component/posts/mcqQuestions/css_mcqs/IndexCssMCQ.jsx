@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import RightSideSection from "../../../../right_section/RightSideSection";
 import McqsShowCard from "../McqsShowCard";
+import RightSideSection from "../../../../right_section/RightSideSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faListAlt } from "@fortawesome/free-solid-svg-icons";
-import HeaderCard from "../../../HeaderCard";
+import { faHome, faCode, faChalkboardTeacher } from "@fortawesome/free-solid-svg-icons";
 
 
 class IndexCssMCQ extends Component {
@@ -15,21 +14,32 @@ class IndexCssMCQ extends Component {
   render() {
     return (
       <>
-      <HeaderCard
-          title="Css MCQs Sets"
-          color="#90EE90"
-          textcolor="black"
-        />
-      
-        <div className="row">
+     <div className="row">
           <div className="col-1"></div>
-          <div className="col-md-8 mt-4">
-            <Link to="/home" className="badge badge-primary mr-1">
-              <FontAwesomeIcon icon={faHome} size="1x" />
+          <div className="col-md-8 mt-4 ">
+            <h2
+              className="text-center mb-4 display-5"
+              style={{ color: "#072C71" }}
+            >
+              Find the Best Css Multiple choice Questions
+            </h2>
+            <Link
+              to="/home"
+              className="badge mr-1"
+              style={{ backgroundColor: "#06CB6C" }}
+            >
+              <FontAwesomeIcon icon={faHome} size="2x" color="#072C71" /> 
             </Link>
-            <Link to="/index_mcqs" className="badge badge-warning mr-1 mb-4">
-              MCQs>>
+            <Link
+              to="/index_mcqs"
+              className="badge mr-1"
+              style={{ backgroundColor: "#072C71" }}
+
+            >
+              <FontAwesomeIcon icon={faChalkboardTeacher} size="2x" color="#06CB6C" />
+
             </Link>
+
 
             <div className="card-deck m-2">
               <McqsShowCard link="css_mcq_1" title="Css MCQs Questions Set 1" />

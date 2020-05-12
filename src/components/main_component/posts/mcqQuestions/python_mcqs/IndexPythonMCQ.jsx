@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import McqsShowCard from "../McqsShowCard";
 import RightSideSection from "../../../../right_section/RightSideSection";
-import { faHome, faListAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import HeaderCard from "../../../HeaderCard";
+import { faHome, faCode, faChalkboardTeacher } from "@fortawesome/free-solid-svg-icons";
+
 class IndexPythonMCQ extends Component {
   state = {};
   componentDidMount() {
@@ -13,21 +13,35 @@ class IndexPythonMCQ extends Component {
   render() {
     return (
       <>
-        <HeaderCard
-          title="Python MCQs Practice"
-          color="#FF9B00"
-          textcolor="black"
-        />
-        <div className="row">
+
+ <div className="row">
           <div className="col-1"></div>
-          <div className="col-md-8 mt-4">
-            <Link to="/home" className="badge badge-primary mr-1">
-              <FontAwesomeIcon icon={faHome} size="2x" />
+          <div className="col-md-8 mt-4 ">
+            <h2
+              className="text-center mb-4 display-5"
+              style={{ color: "#072C71" }}
+            >
+              Find the Best Python Multiple choice Questions
+            </h2>
+            <Link
+              to="/home"
+              className="badge mr-1"
+              style={{ backgroundColor: "#06CB6C" }}
+            >
+              <FontAwesomeIcon icon={faHome} size="2x" color="#072C71" /> 
             </Link>
-            <Link to="/index_mcqs" className="badge badge-warning mr-1 mb-4">
-              MCQs>>
+            <Link
+              to="/index_mcqs"
+              className="badge mr-1"
+              style={{ backgroundColor: "#072C71" }}
+
+            >
+              <FontAwesomeIcon icon={faChalkboardTeacher} size="2x" color="#06CB6C" />
+
             </Link>
 
+
+        
             <div className="card-deck m-2">
               <McqsShowCard
                 link="python_mcq_1"
@@ -53,7 +67,7 @@ class IndexPythonMCQ extends Component {
                 link="python_mcq_5"
                 title="Python MCQs Questions Set 5"
               />
-              <McqsShowCard link="index_css_mcqs" title="Upcoming" />
+              <McqsShowCard link="index_python_mcqs" title="Upcoming" />
             </div>
           </div>
 

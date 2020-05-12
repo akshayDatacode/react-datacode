@@ -10,7 +10,7 @@ class McqsShowCard extends Component {
             <h4>{this.props.title}</h4>
           </div>
           <Link to={this.props.link}>
-            <div className=" btn btn-block btn-primary"> Start Quize</div>
+            <div className=" btn btn-block btn-primary"> Start</div>
           </Link>
         </div>
       </>

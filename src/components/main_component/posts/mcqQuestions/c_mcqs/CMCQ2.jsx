@@ -1,14 +1,16 @@
 import React, { Component } from "react";
-import HeaderCard from "../../../HeaderCard";
-import { Link } from "react-router-dom";
-import ScoreCard from "../scoreCard";
 import Quize from "../quize";
+import ScoreCard from "../scoreCard";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome, faCode, faChalkboardTeacher } from "@fortawesome/free-solid-svg-icons";
 import RightSideSection from "../../../../right_section/RightSideSection";
 import RecommendPost from "../../../../right_section/RecommendPost";
 import MCQCardCarousel from "../MCQCardCarousel";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import HeaderCard from "../../../HeaderCard";
 import LearningSideSection from "../../../../right_section/learning_sidesection/LearningSideSection";
+import Technologies from "../../../../right_section/Technologies";
+
 
 class CMCQ2 extends Component {
   state = {
@@ -31,21 +33,46 @@ class CMCQ2 extends Component {
   render() {
     return (
       <>
-        <HeaderCard title="C MCQs Set 2" color="#FFD700" textcolor="black" />
-        <div class="container-fluid">
+     <div class="container-fluid">
           <div className="row">
             <div className="col-1"></div>
             <div className="col-md-7 ">
               <div className="col-fluid mt-2 ml-2">
-                <Link to="/home" className="badge badge-primary mr-1">
-                  <FontAwesomeIcon icon={faHome} size="1x" />
-                </Link>
-                <Link to="/index_mcqs" className="badge badge-info  mr-1">
-                  MCQs >>
-                </Link>
-                <Link to="/index_c_mcqs" className="badge badge-success mr-1">
-                  C MCQs >>
-                </Link>
+            <h2
+              className="text-center mb-4 display-5"
+              style={{ color: "#072C71" }}
+            >
+              C Multiple choice Questions Set-2
+            </h2>
+            <Link
+              to="/home"
+              className="badge mr-1"
+              style={{ backgroundColor: "#06CB6C" }}
+            >
+              <FontAwesomeIcon icon={faHome} size="2x" color="#072C71" /> 
+            </Link>
+            <Link
+              to="/index_mcqs"
+              className="badge mr-1"
+              style={{ backgroundColor: "#072C71" }}
+
+            >
+              <FontAwesomeIcon icon={faChalkboardTeacher} size="2x" color="#06CB6C" />
+
+            </Link>
+            <Link
+              to="/index_c_mcqs"
+              className="badge mr-1 text-white"
+              style={{ backgroundColor: "#072C71" }}
+            >
+              <FontAwesomeIcon
+                  icon={faCode}
+                  size="1x"
+                  color="#06CB6C"
+                  className="mr-2"
+                />
+                back to Index
+            </Link>
                 <ScoreCard count={this.state.count} />
               </div>
               <div className="row">
@@ -244,6 +271,7 @@ void foo()
             <div className="col-md-4">
               <LearningSideSection language="c" />
               <RightSideSection />
+              <Technologies />
             </div>
           </div>
         </div>
