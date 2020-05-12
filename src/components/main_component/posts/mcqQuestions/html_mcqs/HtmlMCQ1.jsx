@@ -3,14 +3,15 @@ import Quize from "../quize";
 import ScoreCard from "../scoreCard";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faCode, faChalkboardTeacher } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHome,
+  faCode,
+  faChalkboardTeacher,
+} from "@fortawesome/free-solid-svg-icons";
 import RightSideSection from "../../../../right_section/RightSideSection";
-import RecommendPost from "../../../../right_section/RecommendPost";
 import MCQCardCarousel from "../MCQCardCarousel";
-import HeaderCard from "../../../HeaderCard";
 import LearningSideSection from "../../../../right_section/learning_sidesection/LearningSideSection";
 import Technologies from "../../../../right_section/Technologies";
-import FbLikeShare from "../../../FbLikeShare";
 
 class HtmlMCQ1 extends Component {
   state = {
@@ -30,46 +31,48 @@ class HtmlMCQ1 extends Component {
   render() {
     return (
       <>
-      <div class="container-fluid">
+        <div class="container-fluid">
           <div className="row">
             <div className="col-1"></div>
             <div className="col-md-7 ">
               <div className="col-fluid mt-2 ml-2">
-            <h2
-              className="text-center mb-4 display-5"
-              style={{ color: "#072C71" }}
-            >
-              HTML Multiple choice Questions Set-1
-            </h2>
-            <Link
-              to="/home"
-              className="badge mr-1"
-              style={{ backgroundColor: "#06CB6C" }}
-            >
-              <FontAwesomeIcon icon={faHome} size="2x" color="#072C71" /> 
-            </Link>
-            <Link
-              to="/index_mcqs"
-              className="badge mr-1"
-              style={{ backgroundColor: "#072C71" }}
-
-            >
-              <FontAwesomeIcon icon={faChalkboardTeacher} size="2x" color="#06CB6C" />
-
-            </Link>
-            <Link
-              to="/index_html_mcqs"
-              className="badge mr-1 text-white"
-              style={{ backgroundColor: "#072C71" }}
-            >
-              <FontAwesomeIcon
-                  icon={faCode}
-                  size="1x"
-                  color="#06CB6C"
-                  className="mr-2"
-                />
-                back to Index
-            </Link>
+                <h2
+                  className="text-center mb-4 display-5"
+                  style={{ color: "#072C71" }}
+                >
+                  HTML Multiple choice Questions Set-1
+                </h2>
+                <Link
+                  to="/home"
+                  className="badge mr-1"
+                  style={{ backgroundColor: "#06CB6C" }}
+                >
+                  <FontAwesomeIcon icon={faHome} size="2x" color="#072C71" />
+                </Link>
+                <Link
+                  to="/index_mcqs"
+                  className="badge mr-1"
+                  style={{ backgroundColor: "#072C71" }}
+                >
+                  <FontAwesomeIcon
+                    icon={faChalkboardTeacher}
+                    size="2x"
+                    color="#06CB6C"
+                  />
+                </Link>
+                <Link
+                  to="/index_html_mcqs"
+                  className="badge mr-1 text-white"
+                  style={{ backgroundColor: "#072C71" }}
+                >
+                  <FontAwesomeIcon
+                    icon={faCode}
+                    size="1x"
+                    color="#06CB6C"
+                    className="mr-2"
+                  />
+                  back to Index
+                </Link>
                 <ScoreCard count={this.state.count} />
               </div>
               <div className="row">
@@ -78,10 +81,10 @@ class HtmlMCQ1 extends Component {
                     quizeNo="1"
                     language="HTML"
                     question="Which of the following prints bold letters in traditional HTML?"
-               code={`i. <B>Go boldly</B>
+                    code={`i. <B>Go boldly</B>
 ii. <B>Go boldly</b>
 iii. <b>Go boldly</B>
-iv. <b>Go boldly</b>`} 
+iv. <b>Go boldly</b>`}
                     correctAnswer="i, ii, iii, and iv"
                     v1="iv"
                     v2="i"
@@ -190,9 +193,9 @@ iv. <b>Go boldly</b>`}
               </div>
             </div>
             <div className="col-md-4 mt-md-5 mt-3">
-            <LearningSideSection language="html" />
-            <RightSideSection />
-            <Technologies />
+              <LearningSideSection language="html" />
+              <RightSideSection />
+              <Technologies />
             </div>
           </div>
         </div>

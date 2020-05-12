@@ -10,7 +10,6 @@ import MCQCardCarousel from "../MCQCardCarousel";
 import HeaderCard from "../../../HeaderCard";
 import LearningSideSection from "../../../../right_section/learning_sidesection/LearningSideSection";
 import Technologies from "../../../../right_section/Technologies";
-import FbLikeShare from "../../../FbLikeShare";
 
 class DjangoMCQ1 extends Component {
   state = {
