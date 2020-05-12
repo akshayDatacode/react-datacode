@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { faConnectdevelop } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 class RightSideSection extends Component {
   state = {};
   render() {
@@ -15,7 +16,9 @@ class RightSideSection extends Component {
             />
 
             <div class="card-body text-center">
-              <h5 class="card-title">Datacode Learning Community</h5>
+              <h5 class="card-title" style={{ color: "#072C71" }}>
+                Datacode Learning Community
+              </h5>
               <p class="card-text">
                 Datacode is a Online Learning Community to find and share the
                 best learning courses and tutorials.
@@ -24,10 +27,11 @@ class RightSideSection extends Component {
             <div class="card-footer border border-white bg-white text-center">
               <a
                 href="https://www.facebook.com/Datacode.in/"
-                className="btn btn-info font-weight-bold"
+                className="btn font-weight-bold"
+                style={{ backgroundColor: "#06CB6C", color: "#072C71" }}
                 target="_blank"
               >
-                Join us
+                <FontAwesomeIcon icon={faConnectdevelop} /> Join us
               </a>
             </div>
           </div>
@@ -51,7 +55,8 @@ class RightSideSection extends Component {
             <div class="card-footer border border-white bg-white text-center">
               <a
                 href="https://www.facebook.com/Datacode.in/"
-                className="btn btn-info font-weight-bold"
+                className="btn font-weight-bold"
+                style={{ backgroundColor: "#06CB6C", color: "#072C71" }}
                 target="_blank"
               >
                 Join us

@@ -52,7 +52,7 @@ class IndexTrainingCertification extends Component {
               className="badge mr-1"
               style={{ backgroundColor: "#06CB6C" }}
             >
-              <FontAwesomeIcon icon={faHome} size="2x" color="#633974" />
+              <FontAwesomeIcon icon={faHome} size="2x" color="#072C71" />
             </Link>
             <div className="card-deck mt-4">
               <div className="card text-center p-2">
@@ -61,7 +61,7 @@ class IndexTrainingCertification extends Component {
                     <FontAwesomeIcon
                       icon={faColumns}
                       size="4x"
-                      color="#633974"
+                      color="#072C71"
                     />
                   </center>
                   Web Development
@@ -70,7 +70,7 @@ class IndexTrainingCertification extends Component {
               <div className="card text-center p-2">
                 <Link to="/datascience_training_certification">
                   <center>
-                    <FontAwesomeIcon icon={faBrain} size="4x" color="#633974" />
+                    <FontAwesomeIcon icon={faBrain} size="4x" color="#072C71" />
                   </center>
                   DataScience
                 </Link>
@@ -78,7 +78,7 @@ class IndexTrainingCertification extends Component {
               <div className="card text-center p-2">
                 <Link to="/machinelearning_training_certification">
                   <center>
-                    <FontAwesomeIcon icon={faCogs} size="4x" color="#633974" />
+                    <FontAwesomeIcon icon={faCogs} size="4x" color="#072C71" />
                   </center>
                   Machine Learning
                 </Link>
@@ -86,7 +86,7 @@ class IndexTrainingCertification extends Component {
               <div className="card text-center p-2">
                 <Link to="/computerscience_training_certification">
                   <center>
-                    <FontAwesomeIcon icon={faTv} size="4x" color="#633974" />
+                    <FontAwesomeIcon icon={faTv} size="4x" color="#072C71" />
                   </center>
                   Computer Science
                 </Link>
@@ -99,7 +99,7 @@ class IndexTrainingCertification extends Component {
                     <FontAwesomeIcon
                       icon={faCopyright}
                       size="4x"
-                      color="#633974"
+                      color="#072C71"
                     />
                   </center>
                   C Programming
@@ -111,7 +111,7 @@ class IndexTrainingCertification extends Component {
                     <FontAwesomeIcon
                       icon={faPython}
                       size="4x"
-                      color="#633974"
+                      color="#072C71"
                     />
                   </center>
                   Python
@@ -120,7 +120,7 @@ class IndexTrainingCertification extends Component {
               <div className="card text-center p-2">
                 <Link to="/java_training_certification">
                   <center>
-                    <FontAwesomeIcon icon={faJava} size="4x" color="#633974" />
+                    <FontAwesomeIcon icon={faJava} size="4x" color="#072C71" />
                   </center>
                   Java
                 </Link>
@@ -131,7 +131,7 @@ class IndexTrainingCertification extends Component {
                     <FontAwesomeIcon
                       icon={faCopyright}
                       size="4x"
-                      color="#633974"
+                      color="#072C71"
                     />
                   </center>
                   C++
@@ -145,7 +145,7 @@ class IndexTrainingCertification extends Component {
                     <FontAwesomeIcon
                       icon={faObjectGroup}
                       size="4x"
-                      color="#633974"
+                      color="#072C71"
                     />
                   </center>
                   OOPs
@@ -157,7 +157,7 @@ class IndexTrainingCertification extends Component {
                     <FontAwesomeIcon
                       icon={faDatabase}
                       size="4x"
-                      color="#633974"
+                      color="#072C71"
                     />
                   </center>
                   DBMS/SQL
@@ -170,7 +170,7 @@ class IndexTrainingCertification extends Component {
                     <FontAwesomeIcon
                       icon={faDigitalTachograph}
                       size="4x"
-                      color="#633974"
+                      color="#072C71"
                     />
                   </center>
                   Data Structure
@@ -179,7 +179,7 @@ class IndexTrainingCertification extends Component {
               <div className="card text-center p-2">
                 <Link to="/html_training_certification">
                   <center>
-                    <FontAwesomeIcon icon={faHtml5} size="4x" color="#633974" />
+                    <FontAwesomeIcon icon={faHtml5} size="4x" color="#072C71" />
                   </center>
                   HTML/CSS
                 </Link>
@@ -189,7 +189,7 @@ class IndexTrainingCertification extends Component {
               <div className="card text-center p-2">
                 <Link to="/js_training_certification">
                   <center>
-                    <FontAwesomeIcon icon={faJs} size="4x" color="#633974" />
+                    <FontAwesomeIcon icon={faJs} size="4x" color="#072C71" />
                   </center>
                   JavaScript
                 </Link>
@@ -200,7 +200,7 @@ class IndexTrainingCertification extends Component {
                     <FontAwesomeIcon
                       icon={faNodeJs}
                       size="4x"
-                      color="#633974"
+                      color="#072C71"
                     />
                   </center>
                   Node JS
@@ -212,7 +212,7 @@ class IndexTrainingCertification extends Component {
                     <FontAwesomeIcon
                       icon={faAngular}
                       size="4x"
-                      color="#633974"
+                      color="#072C71"
                     />
                   </center>
                   Angular
@@ -221,7 +221,7 @@ class IndexTrainingCertification extends Component {
               <div className="card text-center p-2">
                 <Link to="/react_training_certification">
                   <center>
-                    <FontAwesomeIcon icon={faReact} size="4x" color="#633974" />
+                    <FontAwesomeIcon icon={faReact} size="4x" color="#072C71" />
                   </center>
                   React
                 </Link>
@@ -231,7 +231,7 @@ class IndexTrainingCertification extends Component {
               <div className="card text-center p-2">
                 <Link to="/php_training_certification">
                   <center>
-                    <FontAwesomeIcon icon={faPhp} size="4x" color="#633974" />
+                    <FontAwesomeIcon icon={faPhp} size="4x" color="#072C71" />
                   </center>
                   PHP
                 </Link>
@@ -239,7 +239,7 @@ class IndexTrainingCertification extends Component {
               <div className="card text-center p-2">
                 <Link to="/swift_training_certification">
                   <center>
-                    <FontAwesomeIcon icon={faSwift} size="4x" color="#633974" />
+                    <FontAwesomeIcon icon={faSwift} size="4x" color="#072C71" />
                   </center>
                   Swift
                 </Link>
@@ -250,7 +250,7 @@ class IndexTrainingCertification extends Component {
                     <FontAwesomeIcon
                       icon={faAndroid}
                       size="4x"
-                      color="#633974"
+                      color="#072C71"
                     />
                   </center>
                   Android
@@ -262,7 +262,7 @@ class IndexTrainingCertification extends Component {
                     <FontAwesomeIcon
                       icon={faGithub}
                       size="4x"
-                      color="#633974"
+                      color="#072C71"
                     />
                   </center>
                   GitHub
