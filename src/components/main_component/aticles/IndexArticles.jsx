@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import HeaderBannerSection from "../HeaderBannerSection";
 import { Link } from "react-router-dom";
 import PostCard from "../PostCard";
 import RightSideSection from "../../right_section/RightSideSection";
@@ -9,10 +8,24 @@ import RecommendPost from "../../right_section/RecommendPost";
 import ArticleCardCarousel from "./ArticleCardCarousel";
 import Discuss from "../Discuss";
 import Technologies from "../../right_section/Technologies";
+import axios from "axios";
 
 class IndexArticles extends Component {
-  state = {};
+  state = {
+    persons: [],
+  };
   componentDidMount() {
+    axios
+      .get(`http://localhost:3000/api/get_users`)
+      .then((res) => {
+        debugger;
+        console.log(res.data);
+        this.setState({ persons: res.data });
+      })
+      .catch(function (error) {
+        debugger;
+        console.log("error");
+      });
     window.scrollTo(0, 0);
   }
   render() {
@@ -36,6 +49,11 @@ class IndexArticles extends Component {
                     />{" "}
                     Communities Learning Blogs
                   </h1>
+                  {/* API gET CODE */}
+                  <h1>{this.state.persons}</h1>
+                  {this.state.persons.map((persons) => (
+                    <li>{persons.user.name}</li>
+                  ))}
                   <Link
                     to="/home"
                     className="badge mr-1"
@@ -45,6 +63,7 @@ class IndexArticles extends Component {
                   </Link>
                 </div>
               </div>
+
               <div className="row ">
                 <div className="col">
                   <div className="card-deck m-2">
@@ -96,6 +115,7 @@ class IndexArticles extends Component {
                 </div>
               </div>
             </div>
+
             <div className="row">
               <div className="col"></div>
             </div>
@@ -121,7 +141,6 @@ class IndexArticles extends Component {
               />
               <RightSideSection />
               <Technologies />
-
             </div>
           </div>
         </div>

@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import EventDetailCard from "./EventDetailCard";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 class EventCard extends Component {
   state = {
     show: false,
@@ -15,13 +17,13 @@ class EventCard extends Component {
   render() {
     return (
       <>
-        <div className="card border">
+        <div className="card shadow mb-3">
           <img
             className=" card-img-top mx-auto img-fluid img-circle d-block"
             src={require("../../../assets/images/" + this.props.imgsource)}
             alt="avatar"
           />
-          <div className="card-body border border-white">
+          <div className="card-body border border-white pb-0 pt-2">
             {this.props.status == "Closed" && (
               <h6 className="text-danger text-right">{this.props.status}</h6>
             )}
@@ -33,16 +35,17 @@ class EventCard extends Component {
             )}
 
             <div className="card-title">
-              <h3 className="text-secondary">{this.props.eventName}</h3>
+              <h3 style={{ color: "#072C71" }}>{this.props.eventName}</h3>
             </div>
             <p>{this.props.detail}</p>
           </div>
-          <div className="card-footer bg-white text-right border border-white">
+          <div className="card-footer pt-0 bg-white text-right border border-white">
             <button
-              className="btn btn-default border border-secondary text-secondary"
+              className="btn btn-default border border-secondary shadow text-secondary"
               onClick={this.handleShow}
             >
               Show Details
+              <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-1" />
             </button>
             <EventDetailCard
               handleShow={this.handleShow}
