@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d011285b15a8a9355c9ba03c4fe90cc9",
+    "revision": "900a9f0c797bafe6eb86b8fcb5be2a22",
     "url": "/index.html"
   },
   {
-    "revision": "3e4d25a02601fa15c8b1",
-    "url": "/static/css/2.89f067aa.chunk.css"
+    "revision": "ed8392559673e23d7cd0",
+    "url": "/static/css/2.74189dbb.chunk.css"
   },
   {
-    "revision": "4efa40b6db5f83abb021",
-    "url": "/static/css/main.2749690b.chunk.css"
+    "revision": "0475fc0dbd17b84e4506",
+    "url": "/static/css/main.2d36ae55.chunk.css"
   },
   {
-    "revision": "3e4d25a02601fa15c8b1",
-    "url": "/static/js/2.538ed0c9.chunk.js"
+    "revision": "ed8392559673e23d7cd0",
+    "url": "/static/js/2.a4236701.chunk.js"
   },
   {
     "revision": "df8be702f0cc9d299c0ff42ca03d3e40",
-    "url": "/static/js/2.538ed0c9.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.a4236701.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4efa40b6db5f83abb021",
-    "url": "/static/js/main.9f8b1e10.chunk.js"
+    "revision": "0475fc0dbd17b84e4506",
+    "url": "/static/js/main.29c7e37e.chunk.js"
   },
   {
-    "revision": "ba88f149e390315adcbe",
-    "url": "/static/js/runtime-main.4a1f94a7.js"
+    "revision": "3ac390cceb77604f5072",
+    "url": "/static/js/runtime-main.7ad44a43.js"
   },
   {
     "revision": "6bc137afee803aec9b9daa3cfbbcc417",
@@ -82,6 +82,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "83d70f9ffe1c908ff46d29a722cc9576",
     "url": "/static/media/WhatsApp Image 2020-04-05 at 12.30.38 PM (9).83d70f9f.jpeg"
+  },
+  {
+    "revision": "45196f3b5aa752a5ce51ff4c6936a382",
+    "url": "/static/media/a.45196f3b.jpeg"
   },
   {
     "revision": "cb43e62b6df7d803256ad4de59edf795",
@@ -172,6 +176,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/angular_tutorials_courses.62eba71a.jpeg"
   },
   {
+    "revision": "3980f3403954ccdcc21fb27962bb4606",
+    "url": "/static/media/b.3980f340.jpeg"
+  },
+  {
+    "revision": "177981b9c6d05675ca3b0e06c985aaca",
+    "url": "/static/media/beginners_coding_banner.177981b9.jpeg"
+  },
+  {
+    "revision": "fa828af568f87bd9a834e7cf4bdc3838",
+    "url": "/static/media/beginners_coding_challenge.fa828af5.jpeg"
+  },
+  {
     "revision": "aa6129a626a3bf7c4049f24fa8639a69",
     "url": "/static/media/bitdegree.aa6129a6.jpeg"
   },
@@ -194,6 +210,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "aa3a266f09eefde99dec0c17a94f8585",
     "url": "/static/media/bootstrap_tech.aa3a266f.jpeg"
+  },
+  {
+    "revision": "e43af630b442582bfc70241be5ce49de",
+    "url": "/static/media/c.e43af630.jpeg"
   },
   {
     "revision": "4abb558df96f01ecff8996a741c3a0f0",
@@ -416,6 +436,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/css_tutorials_courses.ee370e53.jpeg"
   },
   {
+    "revision": "a8060435efc0c4b0c32ceaa22d6bb887",
+    "url": "/static/media/d.a8060435.jpeg"
+  },
+  {
     "revision": "05f98ced3865fde259c127ff52a349af",
     "url": "/static/media/data_web.05f98ced.jpeg"
   },
@@ -584,6 +608,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/dzone.77af936d.jpeg"
   },
   {
+    "revision": "836aa226ca5cecc35b23446016002f01",
+    "url": "/static/media/e.836aa226.jpeg"
+  },
+  {
     "revision": "5bbc2a6fd0083a86c1e0c68be8f97c28",
     "url": "/static/media/educause.5bbc2a6f.jpeg"
   },
@@ -602,6 +630,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "7820aa2afc539c49b112a292c5d32cc7",
     "url": "/static/media/exercism.7820aa2a.jpeg"
+  },
+  {
+    "revision": "9c2ff0cb14ee608b9c2afc4148a8cd58",
+    "url": "/static/media/f.9c2ff0cb.jpeg"
   },
   {
     "revision": "25b3d015c01eb87bb274bd8b094e54f8",
@@ -624,6 +656,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/futurelearn.c9e74902.jpeg"
   },
   {
+    "revision": "6f3c9eae7c248c0461f3ab2f413ae0fb",
+    "url": "/static/media/g.6f3c9eae.jpeg"
+  },
+  {
     "revision": "e0569433272ea58b4367d9fc457a2b69",
     "url": "/static/media/geeksforgeeks.e0569433.jpeg"
   },
@@ -642,6 +678,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8ec3fd06297b91457f01ef481240ea01",
     "url": "/static/media/git_training_certification.8ec3fd06.jpeg"
+  },
+  {
+    "revision": "291b4285d917efc5d0e8e752edb4d82c",
+    "url": "/static/media/h.291b4285.jpeg"
   },
   {
     "revision": "e03defd019c51307e7db7aa9f0a9affc",
@@ -708,6 +748,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/html_tutorials_courses.38535477.jpeg"
   },
   {
+    "revision": "49bda1305404c3085cbdf4d448b75f5a",
+    "url": "/static/media/i.49bda130.jpeg"
+  },
+  {
     "revision": "55920f374dc297f5ba509d31d02d3c90",
     "url": "/static/media/icon192.55920f37.png"
   },
@@ -734,6 +778,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "fa15b11bffe111dd65b27b295d8ec6ab",
     "url": "/static/media/iversity.fa15b11b.jpeg"
+  },
+  {
+    "revision": "37ebeeaf05e7f8fd7ecba2b070645716",
+    "url": "/static/media/j.37ebeeaf.jpeg"
   },
   {
     "revision": "f35cdf18c60ba4221ee981250abe4bae",
@@ -856,12 +904,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/js_tutorials_courses.a5caa419.jpeg"
   },
   {
+    "revision": "d4e86a1dd1ca64b9e9aae498e4eb2097",
+    "url": "/static/media/k.d4e86a1d.jpeg"
+  },
+  {
     "revision": "43d67789f19bb164b04ce391715e0ab5",
     "url": "/static/media/khanacademy.43d67789.jpeg"
   },
   {
+    "revision": "57c69e6be91d24d0b9141fe49970b287",
+    "url": "/static/media/l.57c69e6b.jpeg"
+  },
+  {
     "revision": "d6ceeba3b7c960fb1a68416da6757330",
     "url": "/static/media/linkedlist.d6ceeba3.jpeg"
+  },
+  {
+    "revision": "b1da64e7ccbdf493c9238926b5067bb1",
+    "url": "/static/media/m.b1da64e7.jpeg"
   },
   {
     "revision": "50ab2ca53a788732357ba287425ea185",
@@ -874,6 +934,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "44184356e3b7c3669f0e88e5f21498fb",
     "url": "/static/media/mitocw.44184356.jpeg"
+  },
+  {
+    "revision": "5bba9d3b75dd2a103677d5c08f356ae2",
+    "url": "/static/media/n.5bba9d3b.jpeg"
   },
   {
     "revision": "de98d24aa748af38d99b7549c82b0a92",
@@ -890,6 +954,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b0cd010433e0dc9ff6d0ebfef90fb510",
     "url": "/static/media/nodejs_training_certification.b0cd0104.jpeg"
+  },
+  {
+    "revision": "37435386e3d74037149776aa041b54e3",
+    "url": "/static/media/o.37435386.jpeg"
   },
   {
     "revision": "c99f81fe69e72204b2f14da55bb3d322",
