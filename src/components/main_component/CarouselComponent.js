@@ -10,15 +10,44 @@ class CarouselComponent extends Component {
         <Carousel indicators={false}>
           <Carousel.Item>
             <div className="card text-center border border-white">
+              <a
+                href="https://bit.ly/datacode_beginner_code_challenge"
+                target="_blank"
+              >
+                <img
+                  className=" card-img d-block w-100"
+                  src={require("../../assets/images/beginners_coding_banner.jpeg")}
+                  alt="First slide"
+                />
+              </a>
+            </div>
+          </Carousel.Item>
+          <Carousel.Item>
+            <div className="card text-center border border-white">
               <img
                 className=" card-img d-block w-100"
                 src={require("../../assets/images/datacodeheader1.jpeg")}
                 alt="First slide"
               />
-              <div className="card-img-overlay d-none d-md-block"></div>
+
+              {/* <div className="card-img-overlay d-none d-md-block">
+                <h1 className="display-1 mt-5 text-weight-bold">DataCode.in</h1>
+                <p>We Write Codes</p>
+                <Link to="/home">
+                  <div className="btn btn-lg btn-success mt-5">
+                    Register Now
+                  </div>
+                </Link>
+              </div> */}
+              {/* <div className="card-img-overlay d-block d-sm-none m-0 p-0 text-left">
+                <h2 className="text-weight-bold p-0 ">DataCode.in</h2>
+                <p>Find | Learn | Code</p>
+                <Link to="/home">
+                  <div className="btn btn-success">Getting Start</div>
+                </Link>
+              </div> */}
             </div>
           </Carousel.Item>
-
           <Carousel.Item>
             <div className="card text-center border border-white">
               <img
@@ -45,32 +74,6 @@ class CarouselComponent extends Component {
                 <p>Find | Learn | Code</p>
                 <Link to="/home">
                   <div className="btn btn-warning">Getting Start</div>
-                </Link>
-              </div>
-            </div>
-          </Carousel.Item>
-          <Carousel.Item>
-            <div className="card text-center border border-white">
-              <img
-                className=" card-img d-block w-100"
-                src={require("../../assets/images/datacodeheader3.jpeg")}
-                alt="First slide"
-              />
-
-              <div className="card-img-overlay d-none d-md-block">
-                <h1 className="display-1 mt-5 text-weight-bold">DataCode.in</h1>
-                <p>We Write Codes</p>
-                <Link to="/home">
-                  <div className="btn btn-lg btn-success mt-5">
-                    Register Now
-                  </div>
-                </Link>
-              </div>
-              <div className="card-img-overlay d-block d-sm-none m-0 p-0 text-left">
-                <h2 className="text-weight-bold p-0 ">DataCode.in</h2>
-                <p>Find | Learn | Code</p>
-                <Link to="/home">
-                  <div className="btn btn-success">Getting Start</div>
                 </Link>
               </div>
             </div>

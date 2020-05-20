@@ -12,12 +12,13 @@ class CarouselEvent extends Component {
               <a
                 href="https://bit.ly/datacode_beginner_code_challenge"
                 target="_blank"
-              ></a>
-              <img
-                className=" card-img d-block w-100"
-                src={require("../../../assets/images/beginners_coding_banner.jpeg")}
-                alt="First slide"
-              />
+              >
+                <img
+                  className=" card-img d-block w-100"
+                  src={require("../../../assets/images/beginners_coding_banner.jpeg")}
+                  alt="First slide"
+                />
+              </a>
             </div>
           </Carousel.Item>
         </Carousel>
