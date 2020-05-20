@@ -19,8 +19,7 @@ class EventGallary extends Component {
           />
         </div>
         <div className="row">
-          <div className="col-1"></div>
-          <div className="col-8">
+          <div className="col-9 pl-md-5 pl-5">
             <div className="row">
               <div className="col">
                 <div className="card-deck mt-4">

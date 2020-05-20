@@ -8,7 +8,7 @@ class EventPicture extends Component {
           <img
             className=" card-img-top mx-auto img-fluid img-circle d-block"
             src={require("../../../assets/images/" + this.props.imgsource)}
-            alt="avatar"
+            alt="datacode.in"
           />
         </div>
       </>

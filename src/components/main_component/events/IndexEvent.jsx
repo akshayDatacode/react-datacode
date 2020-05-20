@@ -19,9 +19,11 @@ class IndexEvent extends Component {
           {/* <div className="col-1"></div> */}
           <div className="col-md-9 p-2 mt-4">
             <div className="card-deck m-2">
-            <EventCard
-                imgsource="event.jpeg"	                
-                status="Upcoming"	                
+              <EventCard
+                imgsource="beginners_coding_challenge.jpeg"
+                imgheader="beginners_coding_banner.jpeg"
+                status="Upcoming"
+                reglink="https://bit.ly/datacode_beginner_code_challenge"
                 eventName="Beginner's Coding Challenge"
                 detail="A Coding Challenge for Beginners 
                 
@@ -45,9 +47,10 @@ class IndexEvent extends Component {
                 Register here:- https://bit.ly/datacode_beginner_code_challenge`}
               />
 
-            <EventCard
-                imgsource="event.jpeg"	                
-                status="Closed"	                
+              <EventCard
+                imgsource="event.jpeg"
+                status="Closed"
+                imgheader="datacodeheader1.jpeg"
                 eventName="DataStructure Learning Session"
                 detail="A Session on fundamentals of DataStructure "
                 discription="Datacode organized a learning session under CodechefSAGETECH campus chapter of Sage University, on Fundamentals of DataStructure for the students of 1st and 2nd year of CSE and IT department. 
@@ -55,12 +58,12 @@ class IndexEvent extends Component {
                 We also tried to mske this session a interactive and intresting one, so we also made the students play a game of Tower of Hanoi which is basically related to stack , and students with minimum moves got the swags.
                 Overall session contained lots of learning, logic building and interaction."
               />
-             
             </div>
             <div className="card-deck m-2">
-            <EventCard
+              <EventCard
                 imgsource="event.jpeg"
                 status="Closed"
+                imgheader="datacodeheader1.jpeg"
                 eventName="Shootpy_ Python for Women workshop"
                 detail="this is the event wich is taking over with the help  or out business"
                 discription="This International Women’s Day (8th March 2020), Datacode organized ‘Shoot PY_ for Women’ - an online python contest for women in association with Facebook Developers Circle as a Community partner.
@@ -75,19 +78,20 @@ class IndexEvent extends Component {
               <EventCard
                 imgsource="event.jpeg"
                 status="Closed"
-                eventName="Sagethon 2k18"	                
-                detail="Coding Contest in Sage University "	                
+                imgheader="datacodeheader1.jpeg"
+                eventName="Sagethon 2k18"
+                detail="Coding Contest in Sage University "
                 discription="A coding contest for all the coding ensthusiats.
                 The contest is divided in two parts first round was of coding mcq's followed by second round consist of coding questions to be solved in given time.
-                Winners were awarded with cool swags and prize money"	               
-              />	              
-                         
-            </div>	            
-          
+                Winners were awarded with cool swags and prize money"
+              />
+            </div>
+
             <div className="card-deck m-2">
-            <EventCard
+              <EventCard
                 imgsource="event.jpeg"
                 status="Closed"
+                imgheader="datacodeheader3.jpeg"
                 eventName="CodeCamp Online Round"
                 detail="this is the event wich is taking over with the help  or out business"
                 discription=" This Event was the best one so we are not able to dscritp the bst thnfksc dfsfkskjfdvsj ;v;djsj fefjje'f"
@@ -95,16 +99,17 @@ class IndexEvent extends Component {
               <EventCard
                 imgsource="event.jpeg"
                 status="Closed"
+                imgheader="datacodeheader2.jpeg"
                 eventName="CodeCamp 2"
                 detail="This is Our First Event with Rajeev Sir "
                 discription=" This Event was the best one so we are not able to dscritp the bst thnfksc dfsfkskjfdvsj ;v;djsj fefjje'f"
               />
-             
             </div>
             <div className="card-deck m-2">
-            <EventCard
+              <EventCard
                 imgsource="event.jpeg"
                 status="Closed"
+                imgheader="datacodeheader1.jpeg"
                 eventName="CodeCamp 2 Online Round"
                 detail="this is the event wich is taking over with the help  or out business"
                 discription=" This Event was the best one so we are not able to dscritp the bst thnfksc dfsfkskjfdvsj ;v;djsj fefjje'f"
@@ -112,31 +117,36 @@ class IndexEvent extends Component {
               <EventCard
                 imgsource="event.jpeg"
                 status="Closed"
+                imgheader="datacodeheader1.jpeg"
                 eventName="ShootPy_ Online Round"
                 detail="This is Our First Event with Rajeev Sir "
                 discription=" This Event was the best one so we are not able to dscritp the bst thnfksc dfsfkskjfdvsj ;v;djsj fefjje'f"
               />
-             
             </div>
             <div className="card-deck m-2">
-            <EventCard
+              <EventCard
                 imgsource="event.jpeg"
                 status="Closed"
+                imgheader="datacodeheader1.jpeg"
                 eventName="ShootPy2.O_ Online Round"
                 detail="this is the event wich is taking over with the help  or out business"
                 discription=" This Event was the best one so we are not able to dscritp the bst thnfksc dfsfkskjfdvsj ;v;djsj fefjje'f"
               />
 
-               <EventCard
-                imgsource="event.jpeg"	                
-                status="Closed"	                
-                eventName="Codeamp 1"	                
+              <EventCard
+                imgsource="event.jpeg"
+                status="Closed"
+                imgheader="datacodeheader1.jpeg"
+                eventName="Codeamp 1"
                 detail="This is Our First Event with Rajeev Sir "
                 discription=" This Event was the best one so we are not able to dscritp the bst thnfksc dfsfkskjfdvsj ;v;djsj fefjje'f"
               />
-</div>
-            <div className="card-deck m-2 ">
-              <h3 className="mt-4 mb-2" style={{ color: "#072C71" }}>
+            </div>
+            <div className="card-deck m-2  ">
+              <h3
+                className="mt-4 mb-2 text-center"
+                style={{ color: "#072C71" }}
+              >
                 Discuss with the Community
               </h3>
               <Discuss

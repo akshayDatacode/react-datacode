@@ -54,6 +54,8 @@ class EventCard extends Component {
               show={this.state.show}
               detail={this.props.discription}
               status={this.props.status}
+              imgheader={this.props.imgheader}
+              reglink={this.props.reglink}
             />
           </div>
         </div>

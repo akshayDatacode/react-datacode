@@ -124,7 +124,7 @@ class HeaderComponent extends Component {
                 href="/react-datacode/#/index_events"
                 style={{ color: "#04FFD5" }}
               >
-                <FontAwesomeIcon icon={faClipboardList} /> Events
+                <FontAwesomeIcon icon={faClipboardList} /> Events/Contests
               </Nav.Link>
             </Nav>
             <NavDropdown.Divider />
