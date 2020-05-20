@@ -25,9 +25,7 @@ class IndexEvent extends Component {
                 status="Upcoming"
                 reglink="https://bit.ly/datacode_beginner_code_challenge"
                 eventName="Beginner's Coding Challenge"
-                detail="A Coding Challenge for Beginners 
-                
-                Register here:- https://bit.ly/datacode_beginner_code_challenge "
+                detail="A Coding Challenge for Beginners  "
                 discription={`Hola coders!
 
                 Datacode.in is back with something exciting for all the learners out there.
@@ -44,7 +42,7 @@ class IndexEvent extends Component {
                 Starts on May 29, 2020 @ 7:30 PM
                 Ends on May 31, 2020 @ 7:30PM IST
                 
-                Register here:- https://bit.ly/datacode_beginner_code_challenge`}
+               `}
               />
 
               <EventCard
@@ -65,13 +63,14 @@ class IndexEvent extends Component {
                 status="Closed"
                 imgheader="datacodeheader1.jpeg"
                 eventName="Shootpy_ Python for Women workshop"
-                detail="this is the event wich is taking over with the help  or out business"
-                discription="This International Women’s Day (8th March 2020), Datacode organized ‘Shoot PY_ for Women’ - an online python contest for women in association with Facebook Developers Circle as a Community partner.
+                detail="A one day workshop on python for Women "
+                discription="Datacode.in organised a one day workshop, dedicated to help and support all the *Women* out there who want to grow, build and succeed in the *Programming* world.
 
-              to recognize the success of women programmers and reassert their importance to the IT industry.
-                
-                We at Datacode provided a platform for all code divas to showcase their coding talent and praise them.
-                we had more than 200 female participants in the contest from all over the world
+                With some sessions full of python knowledge, we are offered Beverages 🌯 for all the participants, 
+                Participants also won exciting
+                prizes🏆
+                Goodies🎁
+                and Certificates📝
                 
                 "
               />
@@ -93,16 +92,26 @@ class IndexEvent extends Component {
                 status="Closed"
                 imgheader="datacodeheader3.jpeg"
                 eventName="CodeCamp Online Round"
-                detail="this is the event wich is taking over with the help  or out business"
-                discription=" This Event was the best one so we are not able to dscritp the bst thnfksc dfsfkskjfdvsj ;v;djsj fefjje'f"
+                detail="CodeCamp was an online round of CodeCamp series"
+                discription="CODECAMP was a Multi-Programming Online Coding Contest Organised by Datacode for Beginners and Programmers.
+                In this Contest, there was 20 MCQs of Multiple Programming Languages varying from Easy to Hard level and also
+                3 Logical Coding Questions.
+                
+                Winners were awarded by cool Swags"
               />
               <EventCard
                 imgsource="event.jpeg"
                 status="Closed"
                 imgheader="datacodeheader2.jpeg"
                 eventName="CodeCamp 2"
-                detail="This is Our First Event with Rajeev Sir "
-                discription=" This Event was the best one so we are not able to dscritp the bst thnfksc dfsfkskjfdvsj ;v;djsj fefjje'f"
+                detail="One Day National Level Coding Competition - Code Camp - II"
+                discription="We organised One Day National Level Coding Competition - Code Camp - II under Code Chef (DirectI- one of the Top-10 MNC) & ACM students chapter. In which around 300 students have participated.
+
+                The KEYNOTE speaker was Mr. Mrinal Jain (Frontend Engineer, Wittyfeed, FDC Indore Lead) who delivered the session about Facbook Developer Circle and motivated students to join the Circle for student's betterment.
+                
+                Th TECH speaker was Mr. Rahul Rungta (Director, DATA HOUSE, Indore) who delivered the session about Data Science and its Future Scope.
+                
+                Winner of the coding competition got Amazing Prizes"
               />
             </div>
             <div className="card-deck m-2">
@@ -111,16 +120,22 @@ class IndexEvent extends Component {
                 status="Closed"
                 imgheader="datacodeheader1.jpeg"
                 eventName="CodeCamp 2 Online Round"
-                detail="this is the event wich is taking over with the help  or out business"
-                discription=" This Event was the best one so we are not able to dscritp the bst thnfksc dfsfkskjfdvsj ;v;djsj fefjje'f"
+                detail="A Multi-Programming Online Coding Contest"
+                discription=" CODECAMP 2 was a Multi-Programming Online Coding Contest Organised by Datacode for Beginners and Programmers.
+                In this Contest, there was 20 MCQs of Multiple Programming Languages varying from Easy to Hard level and also
+                3 Logical Coding Questions.
+                
+                Winners were awarded by cool Swags"
               />
               <EventCard
                 imgsource="event.jpeg"
                 status="Closed"
                 imgheader="datacodeheader1.jpeg"
                 eventName="ShootPy_ Online Round"
-                detail="This is Our First Event with Rajeev Sir "
-                discription=" This Event was the best one so we are not able to dscritp the bst thnfksc dfsfkskjfdvsj ;v;djsj fefjje'f"
+                detail="A Weekly Challenge organised by Datacode for Python"
+                discription="Shoot PY_  Online Round was a weekly Challenge organised by Datacode for Python beginners and Programmers.
+                In this Contest, there was 20 MCQs of Python varying from Easy to Hard level.
+              There were more than 200 participants from all over the world"
               />
             </div>
             <div className="card-deck m-2">
@@ -129,8 +144,10 @@ class IndexEvent extends Component {
                 status="Closed"
                 imgheader="datacodeheader1.jpeg"
                 eventName="ShootPy2.O_ Online Round"
-                detail="this is the event wich is taking over with the help  or out business"
-                discription=" This Event was the best one so we are not able to dscritp the bst thnfksc dfsfkskjfdvsj ;v;djsj fefjje'f"
+                detail="A Weekly Challenge organised by Datacode for Python"
+                discription="SHOOT PY _ 2.0  Online Round was second edition of Shoot PY_  Online Round a weekly Challenge organised by Datacode for Python beginners and Programmers.
+                In this Contest, there was 20 MCQs of Python varying from Easy to Hard level.
+              There were more than 200 participants from all over the world"
               />
 
               <EventCard
@@ -138,8 +155,10 @@ class IndexEvent extends Component {
                 status="Closed"
                 imgheader="datacodeheader1.jpeg"
                 eventName="Codeamp 1"
-                detail="This is Our First Event with Rajeev Sir "
-                discription=" This Event was the best one so we are not able to dscritp the bst thnfksc dfsfkskjfdvsj ;v;djsj fefjje'f"
+                detail="Multi Programming Coding event "
+                discription=" CODECAMP (Multi Programming Online Coding Contest) in association with Codechef for the students of CS/IT II-III year on 22nd August 2019.
+
+                Winners & all Participants were awarded by Goodies, T-shirts and swags sponsored by Facebook Developer Circle Indore, GitHub and ACM."
               />
             </div>
             <div className="card-deck m-2  ">
