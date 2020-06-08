@@ -22,7 +22,7 @@ class IndexEvent extends Component {
               <EventCard
                 imgsource="beginners_coding_challenge.jpeg"
                 imgheader="beginners_coding_banner.jpeg"
-                status="Upcoming"
+                status="Closed"
                 reglink="https://bit.ly/datacode_beginner_code_challenge"
                 eventName="Beginner's Coding Challenge"
                 detail="A Coding Challenge for Beginners  "
