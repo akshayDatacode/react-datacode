@@ -15,6 +15,7 @@
     "bootstrap": "^4.4.1",
     "commentbox.io": "^2.0.0",
     "disqus-react": "^1.0.8",
+    "firebase": "^7.15.0",
     "gh-pages": "^2.2.0",
     "modal": "^1.2.0",
     "prism-react-renderer": "^1.0.2",
