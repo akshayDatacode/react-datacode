@@ -28,11 +28,18 @@ import {
   faCode,
   faCertificate,
   faAward,
+  faSignOutAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import fire from "../../config/fire";
+
 class HeaderComponent extends Component {
   state = {};
+
+  logout() {
+    fire.auth().signOut();
+  }
 
   render() {
     return (
@@ -53,7 +60,7 @@ class HeaderComponent extends Component {
               href="/react-datacode/#/"
               className="text-white h3 p-0 ml-3 mr-0 mt-0 mb-0 "
             >
-              Datacode.in
+              Learning Community
             </Nav.Link>
           </Navbar.Brand>
           <Navbar.Toggle
@@ -68,7 +75,6 @@ class HeaderComponent extends Component {
               >
                 <FontAwesomeIcon icon={faHome} /> Home
               </Nav.Link>
-
               <NavDropdown
                 title={
                   <span className="my-auto" style={{ color: "#04FFD5" }}>
@@ -127,6 +133,7 @@ class HeaderComponent extends Component {
                 <FontAwesomeIcon icon={faClipboardList} /> Events/Contests
               </Nav.Link>
             </Nav>
+
             <NavDropdown.Divider />
             <Nav>
               <Nav.Item className="ml-2 ">
@@ -152,6 +159,13 @@ class HeaderComponent extends Component {
                   <FontAwesomeIcon icon={faTwitter} size="2x" />
                 </a>
               </Nav.Item>
+              {this.props.isUserLogin ? (
+                <Nav.Item style={{ color: "#04FFD5" }} onClick={this.logout}>
+                  <FontAwesomeIcon icon={faSignOutAlt} /> Sign Out
+                </Nav.Item>
+              ) : (
+                " "
+              )}
             </Nav>
           </Navbar.Collapse>
         </Navbar>

@@ -5,7 +5,7 @@ class IndexHeader extends Component {
   render() {
     return (
       <>
-        <HeaderComponent />
+        <HeaderComponent isUserLogin={this.props.isUserLogin} />
       </>
     );
   }

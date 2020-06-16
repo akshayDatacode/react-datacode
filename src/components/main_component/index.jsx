@@ -50,12 +50,12 @@ class MainComponent extends Component {
   render() {
     return (
       <>
-        <CarouselComponent />
+        {/* <CarouselComponent /> */}
         <div className="container-fluid p-0">
           <div className="row">
             <div className="col">
               <h2 className="text-center mt-5" style={{ color: "#072C71" }}>
-                What you'll find on Datacode.in
+                What you will Find on Learning Community
               </h2>
               <div class="card-deck mt-5 ml-md-5 mr-md-5 pr-md-5 pl-md-5">
                 <div class="card border border-white ml-md-5 mr-md-5 pr-md-5 pl-md-5">
