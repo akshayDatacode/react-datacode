@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.2d36ae55.chunk.css",
-    "main.js": "/static/js/main.ade08a0e.chunk.js",
-    "main.js.map": "/static/js/main.ade08a0e.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.7ad44a43.js",
-    "runtime-main.js.map": "/static/js/runtime-main.7ad44a43.js.map",
-    "static/css/2.74189dbb.chunk.css": "/static/css/2.74189dbb.chunk.css",
-    "static/js/2.a4236701.chunk.js": "/static/js/2.a4236701.chunk.js",
-    "static/js/2.a4236701.chunk.js.map": "/static/js/2.a4236701.chunk.js.map",
+    "main.css": "/static/css/main.8488e0ca.chunk.css",
+    "main.js": "/static/js/main.f4d2555d.chunk.js",
+    "main.js.map": "/static/js/main.f4d2555d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f4effeef.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f4effeef.js.map",
+    "static/css/2.89f067aa.chunk.css": "/static/css/2.89f067aa.chunk.css",
+    "static/js/2.65932522.chunk.js": "/static/js/2.65932522.chunk.js",
+    "static/js/2.65932522.chunk.js.map": "/static/js/2.65932522.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.e12873a4d0b9493ff2c47949e56dde94.js": "/precache-manifest.e12873a4d0b9493ff2c47949e56dde94.js",
+    "precache-manifest.743d8c0da04fbaba022a81884719dd23.js": "/precache-manifest.743d8c0da04fbaba022a81884719dd23.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.74189dbb.chunk.css.map": "/static/css/2.74189dbb.chunk.css.map",
-    "static/css/main.2d36ae55.chunk.css.map": "/static/css/main.2d36ae55.chunk.css.map",
-    "static/js/2.a4236701.chunk.js.LICENSE.txt": "/static/js/2.a4236701.chunk.js.LICENSE.txt",
+    "static/css/2.89f067aa.chunk.css.map": "/static/css/2.89f067aa.chunk.css.map",
+    "static/css/main.8488e0ca.chunk.css.map": "/static/css/main.8488e0ca.chunk.css.map",
+    "static/js/2.65932522.chunk.js.LICENSE.txt": "/static/js/2.65932522.chunk.js.LICENSE.txt",
     "static/media/Cover Photo (3).png": "/static/media/Cover Photo (3).6bc137af.png",
     "static/media/Green Disease Prevention Instagram Post.png": "/static/media/Green Disease Prevention Instagram Post.ee3b12ec.png",
     "static/media/Shootpy_W Cover Page (1).jpg": "/static/media/Shootpy_W Cover Page (1).39eabcb7.jpg",
@@ -358,10 +358,10 @@
     "static/media/youtube.jpeg": "/static/media/youtube.461e6cd4.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.7ad44a43.js",
-    "static/css/2.74189dbb.chunk.css",
-    "static/js/2.a4236701.chunk.js",
-    "static/css/main.2d36ae55.chunk.css",
-    "static/js/main.ade08a0e.chunk.js"
+    "static/js/runtime-main.f4effeef.js",
+    "static/css/2.89f067aa.chunk.css",
+    "static/js/2.65932522.chunk.js",
+    "static/css/main.8488e0ca.chunk.css",
+    "static/js/main.f4d2555d.chunk.js"
   ]
 }
