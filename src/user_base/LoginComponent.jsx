@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import fire from "../config/fire";
+import "../assets/css/login.css";
 
 class LoginComponent extends Component {
   state = {
@@ -47,36 +48,53 @@ class LoginComponent extends Component {
   render() {
     return (
       <>
-        <div className="row">
-          <div className="col text-center">
-            <form>
-              <input
-                name="email"
-                type="email"
-                id="email"
-                placeholder="Enter Email"
-                onChange={this.handleChange}
-                value={this.state.email}
-              />
-              <input
-                name="password"
-                type="password"
-                id="password"
-                onChange={this.handleChange}
-                placeholder="Enter Password"
-                value={this.state.password}
-              />
-              <div className="btn btn-primary" onClick={this.login}>
-                Login
-              </div>
-              <div className="btn btn-success" onClick={this.signup}>
-                Sign Up
-              </div>
-              <div>
-                {" "}
-                <h3 className="text-danger">{this.state.errMessage}</h3>
-              </div>
-            </form>
+      <div className="row">
+          <div className="col">
+          <form id="loginform">
+          <img id="imag"
+                    src={require("../assets/images/datacodelogo.jpeg")}
+                />
+  <div className="form-group">
+  <label>Enter Email address</label>
+
+<input 
+  name="email"
+  type="email"
+  id="email"
+  onChange={this.handleChange}
+  value={this.state.email}
+/>
+</div>
+<div className="form-group">
+<label>Enter Password</label>
+
+<input
+  name="password"
+  type="password"
+  id="password"
+  onChange={this.handleChange}
+  value={this.state.password}
+/>
+</div>
+
+
+<button        
+                  id="buttons"
+                  type="submit" 
+                  className="btn btn-success btn-block" 
+                  onClick={this.signup}>
+                  Signup</button>
+              <button 
+                  id="buttons"
+                  type="submit" 
+                  className="btn btn-primary btn-block" 
+                  onClick={this.login}>
+                  login</button>
+<div>
+  {" "}
+  <h3 className="text-danger">{this.state.errMessage}</h3>
+</div>
+</form>
           </div>
         </div>
       </>
