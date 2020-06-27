@@ -17,14 +17,13 @@ class IndexArticles extends Component {
   componentDidMount() {
     axios
       .get(`http://localhost:3000/api/get_users`)
-      .then((res) => {
-        debugger;
-        console.log(res.data);
-        this.setState({ persons: res.data });
+      .then((req, res) => {
+        console.log(res.json);
+        this.setState({ persons: res.json });
+        console.log("Data AA RAHA HE");
       })
       .catch(function (error) {
-        debugger;
-        console.log("error");
+        console.log("error  aaa rhi he");
       });
     window.scrollTo(0, 0);
   }
