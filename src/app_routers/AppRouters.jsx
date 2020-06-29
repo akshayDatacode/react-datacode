@@ -324,6 +324,9 @@ import NodeJsTrainingCertification from "../components/main_component/training_a
 import PHPTrainingCertification from "../components/main_component/training_and_certification/PHPTrainingCertification";
 import GithubTrainingCertification from "../components/main_component/training_and_certification/GithubTrainingCertification";
 
+// Video
+import IndexVideo from "../components/main_component/video/IndexVideo";
+
 class AppRouters extends Component {
   state = {};
   render() {
@@ -1123,6 +1126,11 @@ class AppRouters extends Component {
           />
 
           {/* Ending Learning paltform */}
+
+          {/* Starting video  */}
+          <Route exact path="/index_video" component={IndexVideo} />
+
+          {/* Ending Video */}
         </Switch>
       </>
     );

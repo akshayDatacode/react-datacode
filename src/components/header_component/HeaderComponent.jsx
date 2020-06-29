@@ -29,6 +29,8 @@ import {
   faCertificate,
   faAward,
   faSignOutAlt,
+  faVideoSlash,
+  faVideo,
 } from "@fortawesome/free-solid-svg-icons";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
@@ -60,7 +62,7 @@ class HeaderComponent extends Component {
               href="/react-datacode/#/"
               className="text-white h3 p-0 ml-3 mr-0 mt-0 mb-0 "
             >
-              Learning Community
+              Datacode.in
             </Nav.Link>
           </Navbar.Brand>
           <Navbar.Toggle
@@ -132,6 +134,12 @@ class HeaderComponent extends Component {
               >
                 <FontAwesomeIcon icon={faClipboardList} /> Events/Contests
               </Nav.Link>
+              <Nav.Link
+                href="/react-datacode/#/index_video"
+                style={{ color: "#04FFD5" }}
+              >
+                <FontAwesomeIcon icon={faVideo} /> Video
+              </Nav.Link>
             </Nav>
 
             <NavDropdown.Divider />
@@ -160,8 +168,12 @@ class HeaderComponent extends Component {
                 </a>
               </Nav.Item>
               {this.props.isUserLogin ? (
-                <Nav.Item style={{ color: "#04FFD5" }} onClick={this.logout}>
-                  <FontAwesomeIcon icon={faSignOutAlt} /> Sign Out
+                <Nav.Item style={{ color: "#FF5733" }} onClick={this.logout}>
+                  <FontAwesomeIcon
+                    icon={faSignOutAlt}
+                    size="2x"
+                    className="mr-3"
+                  />
                 </Nav.Item>
               ) : (
                 " "

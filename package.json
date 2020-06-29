@@ -32,6 +32,7 @@
     "react-scripts": "^3.4.1",
     "react-scroll": "^1.7.16",
     "react-sidebar": "^3.0.2",
+    "react-youtube": "^7.11.2",
     "sidebar": "^1.0.2",
     "v3": "0.0.0"
   },
