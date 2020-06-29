@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import CarouselComponent from "../CarouselComponent";
 import VideoRow from "./VideoRow";
+import "../../../assets/css/video.css";
+
 
 class IndexVideo extends Component {
   state = {};
@@ -8,6 +10,9 @@ class IndexVideo extends Component {
     return (
       <>
         <CarouselComponent />
+        <div id="video-top">
+      <h1> Top and latest webinars</h1>
+      </div>
         <div className="row">
           <div className="col">
             <VideoRow videoId="Ewa4-URpMg0" />
