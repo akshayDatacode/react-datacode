@@ -48,53 +48,57 @@ class LoginComponent extends Component {
   render() {
     return (
       <>
-      <div className="row">
+        <div className="row">
           <div className="col">
-          <form id="loginform">
-          <img id="imag"
-                    src={require("../assets/images/datacodelogo.jpeg")}
+            <form id="loginform">
+              <img
+                id="imag"
+                src={require("../assets/images/datacodelogo.jpeg")}
+              />
+              <div className="form-group">
+                <label>Enter Email address</label>
+
+                <input
+                  name="email"
+                  type="email"
+                  id="email"
+                  onChange={this.handleChange}
+                  value={this.state.email}
                 />
-  <div className="form-group">
-  <label>Enter Email address</label>
+              </div>
+              <div className="form-group">
+                <label>Enter Password</label>
 
-<input 
-  name="email"
-  type="email"
-  id="email"
-  onChange={this.handleChange}
-  value={this.state.email}
-/>
-</div>
-<div className="form-group">
-<label>Enter Password</label>
+                <input
+                  name="password"
+                  type="password"
+                  id="password"
+                  onChange={this.handleChange}
+                  value={this.state.password}
+                />
+              </div>
 
-<input
-  name="password"
-  type="password"
-  id="password"
-  onChange={this.handleChange}
-  value={this.state.password}
-/>
-</div>
-
-
-<button        
-                  id="buttons"
-                  type="submit" 
-                  className="btn btn-success btn-block" 
-                  onClick={this.signup}>
-                  Signup</button>
-              <button 
-                  id="buttons"
-                  type="submit" 
-                  className="btn btn-primary btn-block" 
-                  onClick={this.login}>
-                  login</button>
-<div>
-  {" "}
-  <h3 className="text-danger">{this.state.errMessage}</h3>
-</div>
-</form>
+              <button
+                id="buttons"
+                type="submit"
+                className="btn btn-success btn-block"
+                onClick={this.signup}
+              >
+                Signup
+              </button>
+              <button
+                id="buttons"
+                type="submit"
+                className="btn btn-primary btn-block"
+                onClick={this.login}
+              >
+                login
+              </button>
+              <div>
+                {" "}
+                <p className=" mt-3 text-danger">{this.state.errMessage}</p>
+              </div>
+            </form>
           </div>
         </div>
       </>
