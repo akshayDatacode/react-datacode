@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.4cd55afc.chunk.css",
-    "main.js": "/static/js/main.56acac74.chunk.js",
-    "main.js.map": "/static/js/main.56acac74.chunk.js.map",
+    "main.js": "/static/js/main.f8dee471.chunk.js",
+    "main.js.map": "/static/js/main.f8dee471.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f4effeef.js",
     "runtime-main.js.map": "/static/js/runtime-main.f4effeef.js.map",
     "static/css/2.89f067aa.chunk.css": "/static/css/2.89f067aa.chunk.css",
-    "static/js/2.ce0dff0c.chunk.js": "/static/js/2.ce0dff0c.chunk.js",
-    "static/js/2.ce0dff0c.chunk.js.map": "/static/js/2.ce0dff0c.chunk.js.map",
+    "static/js/2.d4d60b07.chunk.js": "/static/js/2.d4d60b07.chunk.js",
+    "static/js/2.d4d60b07.chunk.js.map": "/static/js/2.d4d60b07.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.4220217c96ad62eb6cd90828943eeee5.js": "/precache-manifest.4220217c96ad62eb6cd90828943eeee5.js",
+    "precache-manifest.a8dcfaeac68366708ad0140329d32cf4.js": "/precache-manifest.a8dcfaeac68366708ad0140329d32cf4.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.89f067aa.chunk.css.map": "/static/css/2.89f067aa.chunk.css.map",
     "static/css/main.4cd55afc.chunk.css.map": "/static/css/main.4cd55afc.chunk.css.map",
-    "static/js/2.ce0dff0c.chunk.js.LICENSE.txt": "/static/js/2.ce0dff0c.chunk.js.LICENSE.txt",
+    "static/js/2.d4d60b07.chunk.js.LICENSE.txt": "/static/js/2.d4d60b07.chunk.js.LICENSE.txt",
     "static/media/Cover Photo (3).png": "/static/media/Cover Photo (3).6bc137af.png",
     "static/media/Green Disease Prevention Instagram Post.png": "/static/media/Green Disease Prevention Instagram Post.ee3b12ec.png",
     "static/media/Shootpy_W Cover Page (1).jpg": "/static/media/Shootpy_W Cover Page (1).39eabcb7.jpg",
@@ -122,6 +122,7 @@
     "static/media/datacodeheader1.jpeg": "/static/media/datacodeheader1.6a3682a9.jpeg",
     "static/media/datacodeheader2.jpeg": "/static/media/datacodeheader2.860e3e16.jpeg",
     "static/media/datacodeheader3.jpeg": "/static/media/datacodeheader3.30e1351c.jpeg",
+    "static/media/datacodelive.png": "/static/media/datacodelive.e081ad8a.png",
     "static/media/datacodelogo.jpeg": "/static/media/datacodelogo.bd748d1d.jpeg",
     "static/media/datascience_training_certification.jpeg": "/static/media/datascience_training_certification.b23ce3c0.jpeg",
     "static/media/datasciencedojo.jpeg": "/static/media/datasciencedojo.7cf74cbe.jpeg",
@@ -360,8 +361,8 @@
   "entrypoints": [
     "static/js/runtime-main.f4effeef.js",
     "static/css/2.89f067aa.chunk.css",
-    "static/js/2.ce0dff0c.chunk.js",
+    "static/js/2.d4d60b07.chunk.js",
     "static/css/main.4cd55afc.chunk.css",
-    "static/js/main.56acac74.chunk.js"
+    "static/js/main.f8dee471.chunk.js"
   ]
 }
