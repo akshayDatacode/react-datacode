@@ -70,8 +70,8 @@ class QuizeTest extends Component {
                       name="op1"
                       value={this.props.v1}
                       onClick={this.handleOption}
-                    />{" "}
-                    {this.props.v1}
+                    />
+                    <label className="ml-2">{this.props.v1}</label>
                   </li>
                   <li className="list-group-item">
                     <input
@@ -79,18 +79,17 @@ class QuizeTest extends Component {
                       name="op1"
                       value={this.props.v2}
                       onClick={this.handleOption}
-                    />{" "}
-                    {this.props.v2}
+                    />
+                    <label className="ml-2">{this.props.v2}</label>
                   </li>
-
                   <li className="list-group-item">
                     <input
                       type="radio"
                       name="op1"
                       value={this.props.v3}
                       onClick={this.handleOption}
-                    />{" "}
-                    {this.props.v3}
+                    />
+                    <label className="ml-2">{this.props.v3}</label>
                   </li>
                   <li className="list-group-item">
                     <input
@@ -98,8 +97,8 @@ class QuizeTest extends Component {
                       name="op1"
                       value={this.props.v4}
                       onClick={this.handleOption}
-                    />{" "}
-                    {this.props.v4}
+                    />
+                    <label className="ml-2">{this.props.v4}</label>
                   </li>
                 </ul>
               </>

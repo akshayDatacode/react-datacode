@@ -15,11 +15,9 @@ class LoginComponent extends Component {
       .auth()
       .signInWithEmailAndPassword(this.state.email, this.state.password)
       .then((u) => {
-        console.log(u);
         this.setState({ successMessage: u.message });
       })
       .catch((err) => {
-        console.log(err);
         this.setState({ errMessage: err.message });
       });
   };
@@ -30,11 +28,9 @@ class LoginComponent extends Component {
       .auth()
       .createUserWithEmailAndPassword(this.state.email, this.state.password)
       .then((u) => {
-        console.log(u);
         this.setState({ errMessage: u.message });
       })
       .catch((err) => {
-        console.log(err);
         this.setState({ errMessage: err.message });
       });
   };
@@ -50,6 +46,7 @@ class LoginComponent extends Component {
       <>
         <div className="row">
           <div className="col">
+            <h1>WellCome to Learnin Community</h1>
             <form id="loginform">
               <img
                 id="imag"
@@ -61,7 +58,8 @@ class LoginComponent extends Component {
                 <input
                   name="email"
                   type="email"
-                  id="email"
+                  id="loginform"
+                  className="loginform"
                   onChange={this.handleChange}
                   value={this.state.email}
                 />
@@ -72,7 +70,7 @@ class LoginComponent extends Component {
                 <input
                   name="password"
                   type="password"
-                  id="password"
+                  id="loginform"
                   onChange={this.handleChange}
                   value={this.state.password}
                 />
