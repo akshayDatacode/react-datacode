@@ -46,7 +46,7 @@ class LoginComponent extends Component {
       <>
         <div className="row">
           <div className="col">
-            <h1>WellCome to Learnin Community</h1>
+            <h1 id="welcome-heading">You are welcome to our Learning Community</h1>
             <form id="loginform">
               <img
                 id="imag"
@@ -58,7 +58,7 @@ class LoginComponent extends Component {
                 <input
                   name="email"
                   type="email"
-                  id="loginform"
+                  id="logininput"
                   className="loginform"
                   onChange={this.handleChange}
                   value={this.state.email}
@@ -70,7 +70,7 @@ class LoginComponent extends Component {
                 <input
                   name="password"
                   type="password"
-                  id="loginform"
+                  id="logininput"
                   onChange={this.handleChange}
                   value={this.state.password}
                 />

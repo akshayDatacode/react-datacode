@@ -1,8 +1,11 @@
+#welcome-heading{
+  margin-left:350px;
+}
 #loginform {
   font-family: Arial;
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 30%;
   padding: 40px;
   margin: 0 auto;
   border: darkcyan;
@@ -47,5 +50,8 @@
   }
   #buttons {
     width: 100%;
+  }
+  #welcome-heading{
+    margin-left:2px;
   }
 }
