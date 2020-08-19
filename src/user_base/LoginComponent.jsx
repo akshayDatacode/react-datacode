@@ -46,7 +46,6 @@ class LoginComponent extends Component {
       <>
         <div className="row">
           <div className="col">
-            <h1 id="welcome-heading">You are welcome to our Learning Community</h1>
             <form id="loginform">
               <img
                 id="imag"
