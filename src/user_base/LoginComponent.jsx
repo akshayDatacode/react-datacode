@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import fire from "../config/fire";
 import "../assets/css/login.css";
+import { Helmet } from "react-helmet";
 
 class LoginComponent extends Component {
   state = {
@@ -44,6 +45,9 @@ class LoginComponent extends Component {
   render() {
     return (
       <>
+        <Helmet>
+          <title>Datacode | Login</title>
+        </Helmet>
         <div className="row">
           <div className="col">
             <form id="loginform">

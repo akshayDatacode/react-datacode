@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Indexposts from "./posts/IndexPosts";
 import HeaderBannerSection from "./HeaderBannerSection";
 import RightSideSection from "../right_section/RightSideSection";
+import { Helmet } from "react-helmet";
 
 class HomeComponent extends Component {
   state = {};
@@ -11,6 +12,9 @@ class HomeComponent extends Component {
   render() {
     return (
       <>
+        <Helmet>
+          <title>Datacode | Computer Science Learning Community</title>
+        </Helmet>
         <HeaderBannerSection imgsource="datacodelive.png" />
         {/* Index Posts */}
         <div className="row ">

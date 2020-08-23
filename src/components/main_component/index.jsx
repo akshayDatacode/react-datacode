@@ -1,18 +1,15 @@
 import React, { Component } from "react";
 import CarouselComponent from "./CarouselComponent";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 import {
-  faListAlt,
-  faUsers,
-  faBookOpen,
   faFileCode,
   faTools,
   faNewspaper,
   faUserClock,
   faLaptopCode,
-  faBookReader,
   faBookDead,
   faAddressBook,
   faSwatchbook,
@@ -50,6 +47,9 @@ class MainComponent extends Component {
   render() {
     return (
       <>
+        <Helmet>
+          <title>Datacode | Computer Science Learning Community</title>
+        </Helmet>
         <CarouselComponent />
         <div className="container-fluid p-0">
           <div className="row">
