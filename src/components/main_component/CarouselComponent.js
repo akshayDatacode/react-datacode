@@ -8,17 +8,17 @@ class CarouselComponent extends Component {
     return (
       <>
         <Carousel indicators={false}>
-          <Carousel.Item>
+          {/* <Carousel.Item>
             <div className="card text-center border border-white">
               <a href="https://bit.ly/datacodelive" target="_blank">
                 <img
                   className=" card-img d-block w-100"
-                  src={require("../../assets/images/datacodelive.png")}
+                  src={require("../../assets/images/datacodeheader1.jpeg")}
                   alt="First slide"
                 />
               </a>
             </div>
-          </Carousel.Item>
+          </Carousel.Item> */}
           <Carousel.Item>
             <div className="card text-center border border-white">
               <img

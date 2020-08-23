@@ -15,7 +15,7 @@ class HomeComponent extends Component {
         <Helmet>
           <title>Datacode | Computer Science Learning Community</title>
         </Helmet>
-        <HeaderBannerSection imgsource="datacodelive.png" />
+        <HeaderBannerSection imgsource="datacodeheader1.jpeg" />
         {/* Index Posts */}
         <div className="row ">
           <div className="col-md-1 d-none d-sm-block"></div>

@@ -10,6 +10,10 @@ class LoginComponent extends Component {
     errMessage: "",
     successMessage: "",
   };
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   login = (e) => {
     e.preventDefault();
     fire
@@ -51,12 +55,15 @@ class LoginComponent extends Component {
         <div className="row">
           <div className="col">
             <form id="loginform">
+              <h4 className="text-center" style={{ color: "#072C71" }}>
+                <b>Start Learning with!</b>
+              </h4>
               <img
                 id="imag"
                 src={require("../assets/images/datacodelogo.jpeg")}
               />
               <div className="form-group">
-                <label>Enter Email address</label>
+                <label id="lable">Enter Email address</label>
 
                 <input
                   name="email"
@@ -68,7 +75,7 @@ class LoginComponent extends Component {
                 />
               </div>
               <div className="form-group">
-                <label>Enter Password</label>
+                <label id="lable">Enter Password</label>
 
                 <input
                   name="password"
@@ -78,26 +85,34 @@ class LoginComponent extends Component {
                   value={this.state.password}
                 />
               </div>
+              <div className="row">
+                <div className="col-6">
+                  <button
+                    id="buttons"
+                    type="submit"
+                    className="btn btn-success btn-block"
+                    onClick={this.signup}
+                  >
+                    Signup
+                  </button>
+                </div>
+                <div className="col-6">
+                  <button
+                    id="buttons"
+                    type="submit"
+                    className="btn btn-primary btn-block"
+                    onClick={this.login}
+                  >
+                    login
+                  </button>
+                </div>
+              </div>
 
-              <button
-                id="buttons"
-                type="submit"
-                className="btn btn-success btn-block"
-                onClick={this.signup}
-              >
-                Signup
-              </button>
-              <button
-                id="buttons"
-                type="submit"
-                className="btn btn-primary btn-block"
-                onClick={this.login}
-              >
-                login
-              </button>
               <div>
                 {" "}
-                <p className=" mt-3 text-danger">{this.state.errMessage}</p>
+                <p id="p" className=" mt-3 text-danger">
+                  {this.state.errMessage}
+                </p>
               </div>
             </form>
           </div>

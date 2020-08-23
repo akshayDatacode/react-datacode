@@ -1,5 +1,5 @@
-#welcome-heading{
-  margin-left:350px;
+#welcome-heading {
+  margin-left: 350px;
 }
 #loginform {
   font-family: Arial;
@@ -8,11 +8,19 @@
   width: 30%;
   padding: 40px;
   margin: 0 auto;
-  border: darkcyan;
+  border: rgba(156, 206, 206, 0.787);
   box-shadow: 2px 2px 19px #264767;
   transition: 0.6s;
   margin-top: 50px;
   border-radius: 15px;
+}
+
+#p {
+  font-size: x-small;
+}
+
+#lable {
+  font-size: small;
 }
 
 #logininput {
@@ -51,7 +59,7 @@
   #buttons {
     width: 100%;
   }
-  #welcome-heading{
-    margin-left:2px;
+  #welcome-heading {
+    margin-left: 2px;
   }
 }
