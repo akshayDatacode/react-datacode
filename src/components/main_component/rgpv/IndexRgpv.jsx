@@ -23,6 +23,11 @@ class IndexTechnologies extends Component {
       <>
         <Helmet>
           <title>Datacode | RGPV Online Exam MCQs Resources</title>
+          <meta property="og:title" content="RGPV Online Exam MCQs Resources" />
+          <meta
+            property="og:image"
+            content="https://drive.google.com/file/d/1C11W0Go_LU2HGzEbxpwcSs-KO25Aa5jr/view?usp=sharing"
+          />
         </Helmet>
         <div className="row">
           <div className="col-1"></div>

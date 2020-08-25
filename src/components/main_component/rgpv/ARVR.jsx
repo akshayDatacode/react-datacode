@@ -47,9 +47,9 @@ class ARVR extends Component {
             </Link>
             <RoadMapCard
               imgsource="programming_blog.jpeg"
-              title="Google Python Classes For Beginners"
-              tag1="Free"
-              link="google.com"
+              title="Updatinig Soon!!"
+              tag1="RGPV Exam MCQs"
+              link="datacode.in"
             />
           </div>
 

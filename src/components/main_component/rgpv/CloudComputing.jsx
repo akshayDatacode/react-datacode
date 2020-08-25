@@ -56,7 +56,7 @@ class CloudComputing extends Component {
               imgsource="html_tutorial.jpeg"
               title="1000-Cloud Computing Questions and Answers"
               source="(Sanfoundry)"
-              tag1="MCQ"
+              tag1="RGPV Exam MCQs"
               link="https://www.sanfoundry.com/1000-cloud-computing-questions-answers/
               "
             />
@@ -64,7 +64,7 @@ class CloudComputing extends Component {
               imgsource="html_tutorial.jpeg"
               title="300+ TOP CLOUD COMPUTING MCQs"
               source="(iqsanswers.com)"
-              tag1="MCQ"
+              tag1="RGPV Exam MCQs"
               link="https://iqsanswers.com/cloud-computing-multiple-choice-questions-and-answers/
               "
             />
@@ -72,7 +72,7 @@ class CloudComputing extends Component {
               imgsource="html_tutorial.jpeg"
               title="Cloud Computing basics MCQs"
               source="(allindiaexams.in)"
-              tag1="MCQ"
+              tag1="RGPV Exam MCQs"
               link="http://www.allindiaexams.in/engineering/cse/cloud-computing-mcq/cloud-computing-basics"
             />
             <RoadMapCard
@@ -81,7 +81,7 @@ class CloudComputing extends Component {
               "
               source="(data-flair.training
                 )"
-              tag1="MCQ"
+              tag1="RGPV Exam MCQs"
               link="https://data-flair.training/blogs/cloud-computing-test/
               "
             />
@@ -90,14 +90,14 @@ class CloudComputing extends Component {
               title="Cloud Computing Questions and Answers
               "
               source="(sanfoundry.com)"
-              tag1="MCQ"
+              tag1="RGPV Exam MCQs"
               link="https://www.sanfoundry.com/computer-fundamentals-questions-answers-cloud-computing/"
             />
             <RoadMapCard
               imgsource="html_tutorial.jpeg"
               title="Cloud Computing MCQ Based Online Test"
               source="(examradar.com)"
-              tag1="MCQ"
+              tag1="RGPV Exam MCQs"
               link="http://examradar.com/cloud-computing-mcq-based-online-test-2/
               "
             />
@@ -107,21 +107,14 @@ class CloudComputing extends Component {
               Cloud Computing
               "
               source="(mcqtutorial.com)"
-              tag1="MCQ"
+              tag1="RGPV Exam MCQs"
               link="http://www.mcqtutorial.com/MCQ/Miscellaneous/Cloud%20Computing/121_198_1.php"
-            />
-            <RoadMapCard
-              imgsource="html_tutorial.jpeg"
-              title=""
-              source="()"
-              tag1="MCQ"
-              link=""
             />
             <RoadMapCard
               imgsource="html_tutorial.jpeg"
               title="Cloud Computing Quiz"
               source="(javatpoint.com)"
-              tag1="MCQ"
+              tag1="RGPV Exam MCQs"
               link="https://www.javatpoint.com/cloud-computing-quiz"
             />
             <RoadMapCard
@@ -129,7 +122,7 @@ class CloudComputing extends Component {
               title="Cloud Computing multiple choice questions and answers"
               source="(objectivequiz.com
                 )"
-              tag1="MCQ"
+              tag1="RGPV Exam MCQs"
               link="https://www.objectivequiz.com/objective-questions/computer-science/cloud-computing"
             />
 
@@ -139,14 +132,14 @@ class CloudComputing extends Component {
               "
               source="(naukrieducation.com
                 )"
-              tag1="MCQ"
+              tag1="RGPV Exam MCQs"
               link="http://www.naukrieducation.com/30-top-real-time-cloud-computing-multiple-choice-questions-and-answers/"
             />
             <RoadMapCard
               imgsource="html_tutorial.jpeg"
               title="Cloud Computing Multiple choice"
               source="(compscibits.com)"
-              tag1="MCQ"
+              tag1="RGPV Exam MCQs"
               link="https://compscibits.com/mcq-questions/Cloud-Computing/Cloud-Computing-Basics"
             />
             <RoadMapCard
@@ -154,7 +147,7 @@ class CloudComputing extends Component {
               title="Cloud Computing Multiple choice Questions"
               source="(compscibits.com
                 )"
-              tag1="MCQ"
+              tag1="RGPV Exam MCQs"
               link="https://compscibits.com/mcq-questions/Cloud-Computing/Cloud-Architecture"
             />
             <RoadMapCard
@@ -162,7 +155,7 @@ class CloudComputing extends Component {
               title="Cloud Computing MCQ Quiz "
               source="(onlineinterviewquestions.com
                 )"
-              tag1="MCQ"
+              tag1="RGPV Exam MCQs"
               link="https://www.onlineinterviewquestions.com/cloud-computing-mcq/"
             />
             <RoadMapCard
@@ -171,7 +164,7 @@ class CloudComputing extends Component {
               "
               source="(latestinterviewquestions.com
                 )"
-              tag1="MCQ"
+              tag1="RGPV Exam MCQs"
               link="https://www.latestinterviewquestions.com/cloud-computing-multiple-choice-questions"
             />
             <RoadMapCard
@@ -180,7 +173,7 @@ class CloudComputing extends Component {
               "
               source="(4cornerit.com
                 )"
-              tag1="MCQ"
+              tag1="RGPV Exam MCQs"
               link="https://www.4cornerit.com/cloud-computing-test/"
             />
             <RoadMapCard
@@ -189,7 +182,7 @@ class CloudComputing extends Component {
               "
               source="(waseian.com
                 )"
-              tag1="MCQ"
+              tag1="RGPV Exam MCQs"
               link="http://www.waseian.com/2019/04/cloud-computing-mcqs.html"
             />
             <RoadMapCard
@@ -197,14 +190,14 @@ class CloudComputing extends Component {
               title="Fundamental Cloud Computing"
               source="(whyfund.net
                 )"
-              tag1="MCQ"
+              tag1="RGPV Exam MCQs"
               link="http://whyfund.net/Cloud%20Computing/Test%20%20Cloud%20Module%201%20-%20Fundamental%20Cloud%20Computing%20MULTIPLE%20CHOICE.htm"
             />
             <RoadMapCard
               imgsource="html_tutorial.jpeg"
               title="Cloud Programming Multiple Choice Questions(MCQs)"
               source="(gkseries.com)"
-              tag1="MCQ"
+              tag1="RGPV Exam MCQs"
               link="https://www.gkseries.com/cloud-programming/multiple-choice-questions-and-answers-on-cloud-programming-1"
             />
           </div>
