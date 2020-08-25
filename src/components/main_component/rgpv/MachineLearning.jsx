@@ -54,7 +54,7 @@ class MachineLearning extends Component {
 
             <RoadMapCard
               imgsource="programming_blog.jpeg"
-              title="Updatinig Soon!!"
+              title="Updating Soon!!"
               tag1="RGPV Exam MCQs"
               link="datacode.in"
             />
