@@ -21,6 +21,17 @@ class CarouselComponent extends Component {
           </Carousel.Item> */}
           <Carousel.Item>
             <div className="card text-center border border-white">
+              <Link to="/rgpv">
+                <img
+                  className=" card-img d-block w-100"
+                  src={require("../../assets/images/rgpv_header.png")}
+                  alt="First slide"
+                />
+              </Link>
+            </div>
+          </Carousel.Item>
+          <Carousel.Item>
+            <div className="card text-center border border-white">
               <img
                 className=" card-img d-block w-100"
                 src={require("../../assets/images/datacodeheader1.jpeg")}

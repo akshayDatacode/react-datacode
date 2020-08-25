@@ -327,6 +327,12 @@ import GithubTrainingCertification from "../components/main_component/training_a
 // Video
 import IndexVideo from "../components/main_component/video/IndexVideo";
 
+// RGPV MCQs LINKS
+import IndexRgpv from "../components/main_component/rgpv/IndexRgpv";
+import CloudComputing from "../components/main_component/rgpv/CloudComputing";
+import MachineLearning from "../components/main_component/rgpv/MachineLearning";
+import ARVR from "../components/main_component/rgpv/ARVR";
+
 class AppRouters extends Component {
   state = {};
   render() {
@@ -1131,6 +1137,22 @@ class AppRouters extends Component {
           <Route exact path="/index_video" component={IndexVideo} />
 
           {/* Ending Video */}
+
+          {/* Starting RGPV */}
+          <Route exact path="/rgpv" component={IndexRgpv} />
+          <Route
+            exact
+            path="/rgpv_cloud_computing"
+            component={CloudComputing}
+          />
+          <Route
+            exact
+            path="/rgpv_machine_learning"
+            component={MachineLearning}
+          />
+          <Route exact path="/rgpv_ar_vr" component={ARVR} />
+
+          {/* Ending RGPV */}
         </Switch>
       </>
     );

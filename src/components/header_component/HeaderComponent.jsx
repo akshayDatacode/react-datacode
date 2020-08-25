@@ -31,6 +31,7 @@ import {
   faSignOutAlt,
   faVideoSlash,
   faVideo,
+  faUniversity,
 } from "@fortawesome/free-solid-svg-icons";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
@@ -39,9 +40,9 @@ import fire from "../../config/fire";
 class HeaderComponent extends Component {
   state = {};
 
-  logout() {
-    fire.auth().signOut();
-  }
+  // logout() {
+  //   fire.auth().signOut();
+  // }
 
   render() {
     return (
@@ -134,11 +135,17 @@ class HeaderComponent extends Component {
               >
                 <FontAwesomeIcon icon={faClipboardList} /> Events/Contests
               </Nav.Link>
-              <Nav.Link
+              {/* <Nav.Link
                 href="/react-datacode/#/index_video"
                 style={{ color: "#04FFD5" }}
               >
                 <FontAwesomeIcon icon={faVideo} /> Video
+              </Nav.Link> */}
+              <Nav.Link
+                href="/react-datacode/#/rgpv"
+                style={{ color: "#04FFD5" }}
+              >
+                <FontAwesomeIcon icon={faUniversity} /> RGPV MCQs Questions
               </Nav.Link>
             </Nav>
 
@@ -167,7 +174,7 @@ class HeaderComponent extends Component {
                   <FontAwesomeIcon icon={faTwitter} size="2x" />
                 </a>
               </Nav.Item>
-              {this.props.isUserLogin ? (
+              {/* {this.props.isUserLogin ? (
                 <Nav.Item style={{ color: "#FF5733" }} onClick={this.logout}>
                   <FontAwesomeIcon
                     icon={faSignOutAlt}
@@ -177,7 +184,7 @@ class HeaderComponent extends Component {
                 </Nav.Item>
               ) : (
                 " "
-              )}
+              )} */}
             </Nav>
           </Navbar.Collapse>
         </Navbar>
