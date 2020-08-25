@@ -54,20 +54,158 @@ class CloudComputing extends Component {
             </Link>
             <RoadMapCard
               imgsource="html_tutorial.jpeg"
-              title="30 Days To Learn HTML + CSS Course"
-              source="(youtube.com)"
-              tag1="Free"
-              tag2="Video"
-              link="https://www.youtube.com/playlist?list=PLgGbWId6zgaWZkPFI4Sc9QXDmmOWa1v5F"
+              title="1000-Cloud Computing Questions and Answers"
+              source="(Sanfoundry)"
+              tag1="MCQ"
+              link="https://www.sanfoundry.com/1000-cloud-computing-questions-answers/
+              "
             />
             <RoadMapCard
               imgsource="html_tutorial.jpeg"
-              title="HTML/CSS: Making webpages"
-              source="(khanacademy.org)"
-              tag1="Free"
-              tag2="Video"
-              link="https://www.khanacademy.org/computing/computer-programming/html-css
+              title="300+ TOP CLOUD COMPUTING MCQs"
+              source="(iqsanswers.com)"
+              tag1="MCQ"
+              link="https://iqsanswers.com/cloud-computing-multiple-choice-questions-and-answers/
               "
+            />
+            <RoadMapCard
+              imgsource="html_tutorial.jpeg"
+              title="Cloud Computing basics MCQs"
+              source="(allindiaexams.in)"
+              tag1="MCQ"
+              link="http://www.allindiaexams.in/engineering/cse/cloud-computing-mcq/cloud-computing-basics"
+            />
+            <RoadMapCard
+              imgsource="html_tutorial.jpeg"
+              title="Cloud Computing Test - An Opportunity to Prove Yourself
+              "
+              source="(data-flair.training
+                )"
+              tag1="MCQ"
+              link="https://data-flair.training/blogs/cloud-computing-test/
+              "
+            />
+            <RoadMapCard
+              imgsource="html_tutorial.jpeg"
+              title="Cloud Computing Questions and Answers
+              "
+              source="(sanfoundry.com)"
+              tag1="MCQ"
+              link="https://www.sanfoundry.com/computer-fundamentals-questions-answers-cloud-computing/"
+            />
+            <RoadMapCard
+              imgsource="html_tutorial.jpeg"
+              title="Cloud Computing MCQ Based Online Test"
+              source="(examradar.com)"
+              tag1="MCQ"
+              link="http://examradar.com/cloud-computing-mcq-based-online-test-2/
+              "
+            />
+            <RoadMapCard
+              imgsource="html_tutorial.jpeg"
+              title="MCQ Questions for 
+              Cloud Computing
+              "
+              source="(mcqtutorial.com)"
+              tag1="MCQ"
+              link="http://www.mcqtutorial.com/MCQ/Miscellaneous/Cloud%20Computing/121_198_1.php"
+            />
+            <RoadMapCard
+              imgsource="html_tutorial.jpeg"
+              title=""
+              source="()"
+              tag1="MCQ"
+              link=""
+            />
+            <RoadMapCard
+              imgsource="html_tutorial.jpeg"
+              title="Cloud Computing Quiz"
+              source="(javatpoint.com)"
+              tag1="MCQ"
+              link="https://www.javatpoint.com/cloud-computing-quiz"
+            />
+            <RoadMapCard
+              imgsource="html_tutorial.jpeg"
+              title="Cloud Computing multiple choice questions and answers"
+              source="(objectivequiz.com
+                )"
+              tag1="MCQ"
+              link="https://www.objectivequiz.com/objective-questions/computer-science/cloud-computing"
+            />
+
+            <RoadMapCard
+              imgsource="html_tutorial.jpeg"
+              title="30 TOP Real Time Cloud Computing Multiple choice Questions and Answers pdf
+              "
+              source="(naukrieducation.com
+                )"
+              tag1="MCQ"
+              link="http://www.naukrieducation.com/30-top-real-time-cloud-computing-multiple-choice-questions-and-answers/"
+            />
+            <RoadMapCard
+              imgsource="html_tutorial.jpeg"
+              title="Cloud Computing Multiple choice"
+              source="(compscibits.com)"
+              tag1="MCQ"
+              link="https://compscibits.com/mcq-questions/Cloud-Computing/Cloud-Computing-Basics"
+            />
+            <RoadMapCard
+              imgsource="html_tutorial.jpeg"
+              title="Cloud Computing Multiple choice Questions"
+              source="(compscibits.com
+                )"
+              tag1="MCQ"
+              link="https://compscibits.com/mcq-questions/Cloud-Computing/Cloud-Architecture"
+            />
+            <RoadMapCard
+              imgsource="html_tutorial.jpeg"
+              title="Cloud Computing MCQ Quiz "
+              source="(onlineinterviewquestions.com
+                )"
+              tag1="MCQ"
+              link="https://www.onlineinterviewquestions.com/cloud-computing-mcq/"
+            />
+            <RoadMapCard
+              imgsource="html_tutorial.jpeg"
+              title="TOP 50+ Cloud Computing Questions and Answers
+              "
+              source="(latestinterviewquestions.com
+                )"
+              tag1="MCQ"
+              link="https://www.latestinterviewquestions.com/cloud-computing-multiple-choice-questions"
+            />
+            <RoadMapCard
+              imgsource="html_tutorial.jpeg"
+              title="Cloud Computing Multiple Choice Questions
+              "
+              source="(4cornerit.com
+                )"
+              tag1="MCQ"
+              link="https://www.4cornerit.com/cloud-computing-test/"
+            />
+            <RoadMapCard
+              imgsource="html_tutorial.jpeg"
+              title="Cloud Computing - MCQS - WASEIAN
+              "
+              source="(waseian.com
+                )"
+              tag1="MCQ"
+              link="http://www.waseian.com/2019/04/cloud-computing-mcqs.html"
+            />
+            <RoadMapCard
+              imgsource="html_tutorial.jpeg"
+              title="Fundamental Cloud Computing"
+              source="(whyfund.net
+                )"
+              tag1="MCQ"
+              link="http://whyfund.net/Cloud%20Computing/Test%20%20Cloud%20Module%201%20-%20Fundamental%20Cloud%20Computing%20MULTIPLE%20CHOICE.htm"
+            />
+            <RoadMapCard
+              imgsource="html_tutorial.jpeg"
+              title="Cloud Programming Multiple Choice Questions(MCQs)"
+              source="(gkseries.com)"
+              tag1="MCQ"
+              link="https://www.gkseries.com/cloud-programming/multiple-choice-questions-and-answers-on-cloud-programming-1"
             />
           </div>
 
