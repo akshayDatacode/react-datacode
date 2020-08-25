@@ -28,6 +28,24 @@ class CloudComputing extends Component {
       <>
         <Helmet>
           <title>Cloud Computing | RGPV Online Exam MCQs Resources</title>
+          <meta
+            property="og:description"
+            content="Here is a collection of Cloud Computing resources to prepare for upcoming RGPV Online Exams."
+          />
+          <meta
+            property="og:url"
+            content="https://www.datacode.in/?p=/react-datacode/#/rgpv_cloud_computing"
+          />
+          <meta
+            name="description"
+            content="Here is a collection of Cloud Computing resources to prepare for upcoming RGPV Online Exams."
+          />
+          <meta property="og:title" content="RGPV Online Exam MCQs Resources" />
+          <meta property="og:type" content="article" />
+          <meta
+            property="og:image"
+            content="https://drive.google.com/file/d/1km1XaomHD5XQih_hmCsSuWRQDRcY98g2/view?usp=sharing"
+          />
         </Helmet>
         <div className="row">
           <div className="col-1"></div>

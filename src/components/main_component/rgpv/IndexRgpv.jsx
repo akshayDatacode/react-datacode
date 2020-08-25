@@ -23,10 +23,23 @@ class IndexTechnologies extends Component {
       <>
         <Helmet>
           <title>Datacode | RGPV Online Exam MCQs Resources</title>
+          <meta
+            property="og:description"
+            content="Here is a collection of Cloud Computing resources to prepare for upcoming RGPV Online Exams."
+          />
+          <meta
+            property="og:url"
+            content="https://www.datacode.in/?p=/react-datacode/#/rgpv"
+          />
+          <meta
+            name="description"
+            content="Here is a collection of Cloud Computing resources to prepare for upcoming RGPV Online Exams."
+          />
           <meta property="og:title" content="RGPV Online Exam MCQs Resources" />
+          <meta property="og:type" content="article" />
           <meta
             property="og:image"
-            content="https://drive.google.com/file/d/1C11W0Go_LU2HGzEbxpwcSs-KO25Aa5jr/view?usp=sharing"
+            content="https://drive.google.com/file/d/1km1XaomHD5XQih_hmCsSuWRQDRcY98g2/view?usp=sharing"
           />
         </Helmet>
         <div className="row">
