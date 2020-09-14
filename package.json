@@ -24,6 +24,7 @@
     "react": "^16.13.0",
     "react-bootstrap": "^1.0.0-beta.17",
     "react-bootstrap-sidebar": "0.0.1",
+    "react-countdown": "^2.2.1",
     "react-disqus-comments": "^1.4.0",
     "react-dom": "^16.13.0",
     "react-facebook": "^8.1.4",
