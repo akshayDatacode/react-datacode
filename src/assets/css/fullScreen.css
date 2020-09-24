@@ -1,0 +1,7 @@
+.my-component {
+  background: #fff;
+}
+
+.fullscreen-enabled .my-component {
+  background: #fff;
+}

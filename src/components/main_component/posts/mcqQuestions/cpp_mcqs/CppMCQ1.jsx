@@ -16,6 +16,7 @@ import LearningSideSection from "../../../../right_section/learning_sidesection/
 import Technologies from "../../../../right_section/Technologies";
 import FbLikeShare from "../../../../FbLikeShare";
 
+
 class CppMCQ1 extends Component {
   state = {
     isCorrect: false,

@@ -332,6 +332,8 @@ import IndexRgpv from "../components/main_component/rgpv/IndexRgpv";
 import CloudComputing from "../components/main_component/rgpv/CloudComputing";
 import MachineLearning from "../components/main_component/rgpv/MachineLearning";
 import ARVR from "../components/main_component/rgpv/ARVR";
+// Quiz Exam Board
+import QuizExamBoard from "../components/main_component/posts/quiz_exams/quiz_exam_board/QuizExamBoard";
 
 class AppRouters extends Component {
   state = {};
@@ -1153,6 +1155,11 @@ class AppRouters extends Component {
           <Route exact path="/rgpv_ar_vr" component={ARVR} />
 
           {/* Ending RGPV */}
+
+
+          {/* Quiz Exam Routes*/}
+          <Route exact path="/c_quiz_exam" component={QuizExamBoard} />
+
         </Switch>
       </>
     );
