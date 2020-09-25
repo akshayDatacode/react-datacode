@@ -121,17 +121,73 @@ const CQuizExam = () => {
             <FullScreen handle={handle}>
               {state.startQuiz &&
                 <>
-                  <div className="row pl-4 pr-4">
-                    <div className="col-9 border border-white">
-                      <div className="row border border-white text-center">
-                        <div className="col-5"></div>
-                        <div className="col-2">
+                
+                  <div id="quiz-container" className="row pl-4 pr-4">
+                  <div className="col-4 ">
+                    
+                      <div className="border border-white" style={{ overflow: 'auto', marginTop: '55px', height:"790px" }}>
+                        {quizData.map((item) => (
+                          <div id="question-lines">
+                             <ol className="list">
+                            <div  id="question-button">
+                              <div  onClick={() => handleExamQuizShow(item.quiz_id)}>
+                                <li style={{marginTop:'12px'}}>{item.question}</li> 
+                                
+                              </div>
+                          </div>
+                          </ol>
+                          </div>
+                          
+                        ))}
+                      </div>
+                    </div>
+                    <div id="quiz" className="col-8">
+                      
+                      <div className="row text-center" id="timer">
+
+                      <div style={{height:"43px", marginLeft:"20px"}} className="row text-right">
+                          <button
+                        
+                            className="btn btn-success"
+                            onClick={() => {
+                              handleSubmitExam();
+                              handleQuiz();
+                              handle.exit();
+                            }}
+                          >Submit Test
+                        </button>
+
+                          <button
+                          style={{marginLeft: "162px"}}
+                            className="btn btn-sm btn-danger"
+                            onClick={() => {
+                              handleQuiz();
+                              handle.exit();
+                            }}
+                          >End Test
+                        </button>
+
+                      </div>
+
+                        <div id="logo"
+                        src={require("../../../../../assets/images/datacodelogo.jpeg")}
+>
+                       
+</div>
+<div id="line">
+|
+</div>
+<div id="title">
+  Datacode Exam
+  </div>
+                        <div id="time" className="col-2">
+                          <div style={{marginLeft:"-50px"}}>
                           <Countdown
-                            date={Date.now() + 16000}
+                            date={Date.now() + 1600000}
                             renderer={renderer}
                           />
+                          </div>
                         </div>
-                        <div className="col-5"></div>
                       </div>
                       <div className="row">
                         {quizData.map((item, index) => {
@@ -150,9 +206,12 @@ const CQuizExam = () => {
                           }
                         })}
                       </div>
+
                       <div className="row border border-white">
+                      
                         <div className="col text-left">
                           {selectedQuizID !== 0 &&
+
                             <button
                               className="btn btn-sm btn-danger"
                               onClick={() => {
@@ -162,54 +221,22 @@ const CQuizExam = () => {
                           </button>
                           }
                         </div>
-                        <div className="col text-right">
-                          <button
-                            className="btn btn-sm btn-primary"
-                            onClick={() => {
-                              setSelectedQuizID(parseInt(selectedQuizID + 1))
-                            }}
-                          >Next
-                        </button>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-3 border border-white">
-                      <div className="row border border-white text-right">
-                        <div className="col-6">
-                          <button
-                            className="btn btn-sm btn-success"
-                            onClick={() => {
-                              handleSubmitExam();
-                              handleQuiz();
-                              handle.exit();
-                            }}
-                          >Submit Test
-                        </button>
-                        </div>
-                        <div className="col-6">
-                          <button
-                            className="btn btn-sm btn-danger"
-                            onClick={() => {
-                              handleQuiz();
-                              handle.exit();
-                            }}
-                          >End Test
-                        </button>
+
+                          <div className="col text-right">
+                            <button
+                              className="btn btn-sm btn-primary"
+                              onClick={() => {
+                                setSelectedQuizID(parseInt(selectedQuizID + 1))
+                              }}
+                            >Next
+                          </button>
                         </div>
 
                       </div>
-                      <div className="row" style={{ overflow: 'auto' }}>
-                        {quizData.map((item) => (
-                          <u>
-                            <li>
-                              <button onClick={() => handleExamQuizShow(item.quiz_id)}>
-                                <h5>{item.question}</h5>
-                              </button>
-                            </li>
-                          </u>
-                        ))}
-                      </div>
+
                     </div>
+
+                   
                   </div>
                 </>
               }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PrismCode from "../../../../PrismCode";
+import '../../../../../assets/css/fullScreen.css'
 
 
 class QuizFrame extends Component {
@@ -30,7 +31,7 @@ class QuizFrame extends Component {
             </div>
             <>
               <ul className="list-group list-group-flush">
-                <li className="list-group-item">
+                <li className="list-group-item" id="list-group-item">
                   <input
                     type="radio"
                     name="op1"
@@ -39,7 +40,7 @@ class QuizFrame extends Component {
                   />
                   <label className="ml-2">{this.props.v1}</label>
                 </li>
-                <li className="list-group-item">
+                <li className="list-group-item" id="list-group-item" >
                   <input
                     type="radio"
                     name="op1"
@@ -49,7 +50,7 @@ class QuizFrame extends Component {
                   <label className="ml-2">{this.props.v2}</label>
                 </li>
 
-                <li className="list-group-item">
+                <li className="list-group-item" id="list-group-item">
                   <input
                     type="radio"
                     name="op1"
@@ -58,7 +59,7 @@ class QuizFrame extends Component {
                   />
                   <label className="ml-2">{this.props.v3}</label>
                 </li>
-                <li className="list-group-item">
+                <li className="list-group-item" id="list-group-item">
                   <input
                     type="radio"
                     name="op1"
