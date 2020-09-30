@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.95e5bb37.chunk.css",
-    "main.js": "/static/js/main.5facf60c.chunk.js",
-    "main.js.map": "/static/js/main.5facf60c.chunk.js.map",
+    "main.js": "/static/js/main.56818ddc.chunk.js",
+    "main.js.map": "/static/js/main.56818ddc.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f4effeef.js",
     "runtime-main.js.map": "/static/js/runtime-main.f4effeef.js.map",
     "static/css/2.89f067aa.chunk.css": "/static/css/2.89f067aa.chunk.css",
-    "static/js/2.6e52956b.chunk.js": "/static/js/2.6e52956b.chunk.js",
-    "static/js/2.6e52956b.chunk.js.map": "/static/js/2.6e52956b.chunk.js.map",
+    "static/js/2.0e2b2016.chunk.js": "/static/js/2.0e2b2016.chunk.js",
+    "static/js/2.0e2b2016.chunk.js.map": "/static/js/2.0e2b2016.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.65dcc65975981d7e724688f510386921.js": "/precache-manifest.65dcc65975981d7e724688f510386921.js",
+    "precache-manifest.07db600e76b7def03f626aed2525b1d2.js": "/precache-manifest.07db600e76b7def03f626aed2525b1d2.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.89f067aa.chunk.css.map": "/static/css/2.89f067aa.chunk.css.map",
     "static/css/main.95e5bb37.chunk.css.map": "/static/css/main.95e5bb37.chunk.css.map",
-    "static/js/2.6e52956b.chunk.js.LICENSE.txt": "/static/js/2.6e52956b.chunk.js.LICENSE.txt",
+    "static/js/2.0e2b2016.chunk.js.LICENSE.txt": "/static/js/2.0e2b2016.chunk.js.LICENSE.txt",
     "static/media/Cover Photo (3).png": "/static/media/Cover Photo (3).6bc137af.png",
     "static/media/Green Disease Prevention Instagram Post.png": "/static/media/Green Disease Prevention Instagram Post.ee3b12ec.png",
     "static/media/Shootpy_W Cover Page (1).jpg": "/static/media/Shootpy_W Cover Page (1).39eabcb7.jpg",
@@ -242,6 +242,7 @@
     "static/media/machine_blog.jpeg": "/static/media/machine_blog.50ab2ca5.jpeg",
     "static/media/machinelearning_training_certification.jpeg": "/static/media/machinelearning_training_certification.5683ccd5.jpeg",
     "static/media/mitocw.jpeg": "/static/media/mitocw.44184356.jpeg",
+    "static/media/mocktestdrive.png": "/static/media/mocktestdrive.426c6569.png",
     "static/media/n.jpeg": "/static/media/n.5bba9d3b.jpeg",
     "static/media/node.jpeg": "/static/media/node.de98d24a.jpeg",
     "static/media/node_express.jpeg": "/static/media/node_express.cf450fdb.jpeg",
@@ -362,8 +363,8 @@
   "entrypoints": [
     "static/js/runtime-main.f4effeef.js",
     "static/css/2.89f067aa.chunk.css",
-    "static/js/2.6e52956b.chunk.js",
+    "static/js/2.0e2b2016.chunk.js",
     "static/css/main.95e5bb37.chunk.css",
-    "static/js/main.5facf60c.chunk.js"
+    "static/js/main.56818ddc.chunk.js"
   ]
 }
