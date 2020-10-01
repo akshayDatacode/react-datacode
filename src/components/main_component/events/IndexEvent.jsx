@@ -161,7 +161,7 @@ class IndexEvent extends Component {
                 Winners & all Participants were awarded by Goodies, T-shirts and swags sponsored by Facebook Developer Circle Indore, GitHub and ACM."
               />
             </div>
-            <div className="card-deck m-2  ">
+            {/* <div className="card-deck m-2  ">
               <h3
                 className="mt-4 mb-2 text-center"
                 style={{ color: "#072C71" }}
@@ -173,7 +173,7 @@ class IndexEvent extends Component {
                 title="Communities Learning Blogs"
                 identifier="index_articles"
               />
-            </div>
+            </div> */}
           </div>
           <div className="col-md-3">
             <RightSideSection />

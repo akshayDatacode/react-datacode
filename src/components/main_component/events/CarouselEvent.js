@@ -9,10 +9,10 @@ class CarouselEvent extends Component {
         <Carousel>
           <Carousel.Item>
             <div className="card text-center p-0 m-0">
-              <a href="https://bit.ly/datacodelive" target="_blank">
+              <a href="http://bit.ly/datacodemockdrive" target="_blank">
                 <img
                   className=" card-img d-block w-100"
-                  src={require("../../../assets/images/datacodelive.png")}
+                  src={require("../../../assets/images/mocktestdrive.png")}
                   alt="First slide"
                 />
               </a>

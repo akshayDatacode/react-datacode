@@ -142,10 +142,10 @@ class HeaderComponent extends Component {
                 <FontAwesomeIcon icon={faVideo} /> Video
               </Nav.Link> */}
               <Nav.Link
-                href="/react-datacode/#/rgpv"
+                href="/react-datacode/#/mock_drive"
                 style={{ color: "#04FFD5" }}
               >
-                <FontAwesomeIcon icon={faUniversity} /> RGPV MCQs Questions
+                <FontAwesomeIcon icon={faUniversity} /> Mock Placement Drive
               </Nav.Link>
             </Nav>
 

@@ -39,6 +39,9 @@ import DBMSBlog from "../components/main_component/aticles/dbms_article/DBMSBlog
 import DBMSBlog2 from "../components/main_component/aticles/dbms_article/DBMSBlog2";
 import DBMSBlog3 from "../components/main_component/aticles/dbms_article/DBMSBlog3";
 
+//Mock Drive Article
+import MockDriveArticle from "../components/main_component/aticles/mock_drive_article/MockDriveArticle";
+
 // Interview Routinig
 import IndexInterviewQuestions from "../components/main_component/posts/technical_interview_questions/IndexInterviewQuestions";
 import DBMSInterviewQuestions from "../components/main_component/posts/technical_interview_questions/DBMSInterviewQuestions";
@@ -335,6 +338,10 @@ import ARVR from "../components/main_component/rgpv/ARVR";
 // Quiz Exam Board
 import QuizExamBoard from "../components/main_component/posts/quiz_exams/quiz_exam_board/QuizExamBoard";
 
+// Email Templates
+import MockDriveRegConfirmation from "../components/main_component/email_template/mock_drive/MockDriveRegConfirmation";
+
+
 class AppRouters extends Component {
   state = {};
   render() {
@@ -385,6 +392,8 @@ class AppRouters extends Component {
           <Route path="/documentation_blog3" component={DocumentationBlog3} />
           <Route path="/documentation_blog4" component={DocumentationBlog4} />
 
+          {/* Mock Drive Article */}
+          <Route path="/mock_drive" component={MockDriveArticle} />
           {/* Ending Article */}
 
           {/* Starting Index MCQs */}
@@ -1160,6 +1169,8 @@ class AppRouters extends Component {
           {/* Quiz Exam Routes*/}
           <Route exact path="/c_quiz_exam" component={QuizExamBoard} />
 
+          {/* Email Templates Datacode */}
+          <Route exact path="/email_mock_drive_reg" component={MockDriveRegConfirmation} />
         </Switch>
       </>
     );
