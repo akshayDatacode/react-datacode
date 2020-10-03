@@ -16,11 +16,12 @@ class MockDriveArticle extends Component {
         <div className="row" style={{ backgroundColor: "#101820FF" }}>
           <div className="col-md-2">
           </div>
-        
+
           <div className="col-md-8 mb-5" style={{ backgroundColor: "#101820FF" }}>
             <a href="http://bit.ly/datacodemockdrive"><HeaderBannerSectionBlack imgsource="mocktestdrive.png" /></a>
-            <h1 className="mt-3 mx-auto" style={{ color: "#E18A07", fontSize: 30, fontFamily: "Playfair Display",textAlign: "center",
- }}><b>“ If a window of opportunity appears, don't pull down the shade ”</b> </h1>
+            <h1 className="mt-3 mx-auto" style={{
+              color: "#E18A07", fontSize: 29, fontFamily: "Playfair Display", textAlign: "center",
+            }}><b>“ If a window of opportunity appears, don't pull down the shade ”</b> </h1>
             <p style={{ color: "#e5e3e3", fontSize: 18, fontFamily: "Source Sans Pro" }}>Hey there!
             As the placement time is arising and you aspirants may be worried about the preparation that is needed for the placement in this pandemic.
             </p>
@@ -33,7 +34,7 @@ class MockDriveArticle extends Component {
             <h2 style={{ color: "#E18A07", textAlign: "center", fontFamily: "Playfair Display", fontSize: 30 }}><b>BUT DON'T WORRY!</b></h2>
             <p style={{ color: "#e5e3e3", fontSize: 18, fontFamily: "Source Sans Pro" }}>"The Best way to prepare for an interview is to actually face a mock test drive and interview. Datacode brings to you a great opportunity to put your step forward through an online mock placement drive for beginners who are willing to prepare for the placements."</p>
             <hr style={{ backgroundColor: "#E18A07", width: "120px" }} />
-            <h5 className="border-warning border-left pl-4" style={{ color: "#E18A07",fontFamily: "Source Sans Pro", fontSize: 18 }}>
+            <h5 className="border-warning border-left pl-4" style={{ color: "#E18A07", fontFamily: "Source Sans Pro", fontSize: 18 }}>
               Our aim behind this mock test drive is to prepare and to make our learners ready to face the placements processes and to make them aware about the steps and  the abilities that most MNCs expect in the candidates.
               The drive is designed to fully equip students with academic and strategic needs for all placement processes. It has incorporated essential elements required to clear the placement exams of various MNCs.
             </h5>
@@ -46,6 +47,7 @@ class MockDriveArticle extends Component {
             <p style={{ color: "#E18A07", marginTop: 35, fontFamily: "Source Sans Pro", fontSize: 18 }}>The drive includes the following 3 phases.</p>
 
             <h6 style={{ color: "#E18A07" }}>1. Technical Test :-</h6>
+            <i className=""></i>
             <p style={{ color: "#e5e3e3" }}>This round will include the questions about quantitative aptitude, logical reasoning and verbal ability. Logical reasoning aptitude tests are designed to measure the candidate’s ability to draw logical conclusions based on statements or arguments, and to identify the strengths and weaknesses of those arguments.</p>
             <p style={{ color: "#e5e3e3", marginTop: -16 }}>Use your knowledge and skill and solve some of the best interview and placement test questions asked by companies to see where your aptitude preparation stands.</p>
             <h6 style={{ color: "#E18A07" }}>2. Coding Round :-</h6>

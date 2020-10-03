@@ -23,7 +23,7 @@ class MockPlacementTestLink extends Component {
                     cellpadding="0"
                     cellspacing="0"
                     width="600"
-                    style={{ backgroundColor: "#191919" }}
+                    style={{ backgroundColor: "#101820" }}
                   >
                     <tr>
                       <td>
@@ -33,7 +33,7 @@ class MockPlacementTestLink extends Component {
                               <img
                                 className=" card-img-top mx-auto img-fluid img-circle d-block"
                                 // src="https://ci4.googleusercontent.com/proxy/1sVq3CdW95K_MDHVT_48HLNozKhCNrbd5pg96PhFh_opwXJ_E0f7j2pEwGUhxEe6rsnI51Bgo9qld8vRxVA54QSPGPhHuezeYStlTlGvl0xfr0O5Qd2opx3axX6uNyrg8vdMuQ=s0-d-e1-ft#https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200925143555/GW_MH_2.png"
-                                 src="https://i.postimg.cc/cH6sNpr4/1.png" 
+                                src="https://i.postimg.cc/SxCt6vzL/Email-Template-posters-4.png"
                                 alt="avatar"
                               />
                             </a>
@@ -47,7 +47,7 @@ class MockPlacementTestLink extends Component {
                           className="row"
                           style={{
                             textAlign: "center",
-                            backgroundColor: "#191919",
+                            backgroundColor: "#101820",
                           }}
                         >
                           <div className="col">
@@ -55,40 +55,40 @@ class MockPlacementTestLink extends Component {
                               className="row text-white mt-4 "
                               style={{
                                 textAlign: "center",
-                                backgroundColor: "#191919",
+                                backgroundColor: "#101820",
                               }}
                             >
-                              <p className="mx-auto" style={{fontWeight: "bold"}}>{`Hey!!`}</p>
-                              </div>
+                              <p className="mx-auto" style={{ fontWeight: "bold" }}>{`Hey!!`}</p>
+                            </div>
 
-                              <div
+                            <div
                               className="row text-white"
                               style={{
                                 textAlign: "center",
-                                backgroundColor: "#191919",
+                                backgroundColor: "#101820",
                               }}
                             >
-                              
-                              <p className="mx-auto" style={{fontWeight: "bold"}}>{`Greetings from Datacode.in`}</p>
-</div>
-<div
+
+                              <p className="mx-auto" style={{ fontWeight: "bold" }}>{`Greetings from Datacode.in`}</p>
+                            </div>
+                            <div
                               className="row text-white"
                               style={{
                                 textAlign: "center",
-                                backgroundColor: "#191919",
+                                backgroundColor: "#101820",
                               }}
                             >
                               <p className="pl-5 pr-5 pt-2">{` Thank you for registering for Datacode’s Mock Placement Drive. We are very excited to Greet you in the same.
                               We hope you are well-prepared and ready for it.  `}</p>
                             </div>
 
-                            
+
 
                             <div
                               className="row text-white"
                               style={{
                                 textAlign: "center",
-                                backgroundColor: "#191919",
+                                backgroundColor: "#101820",
                               }}
                             >
                               <p className="pl-5 pr-5 pt-2 mx-auto">{`Start your mock placement test by clicking on the button below:-
@@ -98,7 +98,7 @@ class MockPlacementTestLink extends Component {
                               className="row text-white"
                               style={{
                                 textAlign: "center",
-                                backgroundColor: "#191919",
+                                backgroundColor: "#101820",
                               }}
                             >
                               <div className="col text-center">
@@ -111,7 +111,7 @@ class MockPlacementTestLink extends Component {
                               className="row text-white"
                               style={{
                                 textAlign: "center",
-                                backgroundColor: "#191919",
+                                backgroundColor: "#101820",
                               }}
                             >
                               <p className="pl-5 pr-5 pt-3">{`Hope you will find it knowledgeable and valuable.We will be waiting for feedback from your side.`}</p>
@@ -121,7 +121,7 @@ class MockPlacementTestLink extends Component {
                               className="row text-white"
                               style={{
                                 textAlign: "center",
-                                backgroundColor: "#191919",
+                                backgroundColor: "#101820",
                                 fontWeight: "bold"
                               }}
                             >
@@ -131,7 +131,7 @@ class MockPlacementTestLink extends Component {
                               className="row text-white"
                               style={{
                                 textAlign: "center",
-                                backgroundColor: "#191919",
+                                backgroundColor: "#101820",
                               }}
                             >
                               <p className="pl-5 pr-5 pt-2 mx-auto">{`Thanks and Regards,`}</p>
@@ -140,7 +140,7 @@ class MockPlacementTestLink extends Component {
                               className="row text-white"
                               style={{
                                 textAlign: "center",
-                                backgroundColor: "#191919",
+                                backgroundColor: "#101820",
                               }}
                             >
                               <p className="pl-5 pr-5 mx-auto">{`Team Datacode.in`}</p>
@@ -151,8 +151,8 @@ class MockPlacementTestLink extends Component {
                         <div
                           className="row pt-4"
                           style={{
-                            backgroundColor: "#191919",
-                            backgroundColor: "#191919",
+                            backgroundColor: "#101820",
+                            backgroundColor: "#101820",
                           }}
                         >
                           <div className="col-3 text-center ml-2">
@@ -160,7 +160,7 @@ class MockPlacementTestLink extends Component {
                               className="row"
                               style={{
                                 paddingLeft: 35,
-                                backgroundColor: "#191919",
+                                backgroundColor: "#101820",
                               }}
                             >
                               <a href="https://www.facebook.com/Datacode.in">
@@ -203,7 +203,7 @@ class MockPlacementTestLink extends Component {
                           </div>
                           <div
                             className="col-8 border-left border-dark p-2"
-                            style={{ backgroundColor: "#191919" }}
+                            style={{ backgroundColor: "#101820" }}
                           >
                             <div className="row">
                               <div className="col text-center">
