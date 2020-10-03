@@ -340,6 +340,11 @@ import QuizExamBoard from "../components/main_component/posts/quiz_exams/quiz_ex
 
 // Email Templates
 import MockDriveRegConfirmation from "../components/main_component/email_template/mock_drive/MockDriveRegConfirmation";
+import MockPlacementTestLink from "../components/main_component/email_template/mock_drive/MockPlacementTestLink";
+import MockPlacementTestReport from "../components/main_component/email_template/mock_drive/MockPlacementTestReport";
+import MockCodingTestLink from "../components/main_component/email_template/mock_drive/MockCodingTestLink";
+import MockCodingTestReport from "../components/main_component/email_template/mock_drive/MockCodingTestReport";
+import MockInterviewSlot from "../components/main_component/email_template/mock_drive/MockInterviewSlot";
 
 
 class AppRouters extends Component {
@@ -1171,6 +1176,13 @@ class AppRouters extends Component {
 
           {/* Email Templates Datacode */}
           <Route exact path="/email_mock_drive_reg" component={MockDriveRegConfirmation} />
+          <Route exact path="/email_mock_placement_test_link" component={MockPlacementTestLink} />
+          <Route exact path="/email_mock_placement_test_report" component={MockPlacementTestReport} />
+          <Route exact path="/email_mock_coding_test_link" component={MockCodingTestLink} />
+          <Route exact path="/email_mock_coding_test_report" component={MockCodingTestReport} />
+          <Route exact path="/email_mock_interview_slot_link" component={MockInterviewSlot} />
+
+
         </Switch>
       </>
     );
