@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
 import HeaderBannerSectionBlack from '../../HeaderBannerSectionBlack';
+import { Helmet } from 'react-helmet';
 
 class MockDriveArticle extends Component {
   state = {}
   render() {
     return (
       <>
+        <Helmet>
+          <title>Mock Placement Drive | Datacode</title>
+          <meta name="description" content="Our aim behind this mock test drive is to prepare and to make our learners ready to face the placements processes and to make them aware about the steps and  the abilities that most MNCs expect in the candidates.
+              The drive is designed to fully equip students with academic and strategic needs for all placement processes. It has incorporated essential elements required to clear the placement exams of various MNCs." />
+          <meta name="description" content="https://i.postimg.cc/QsJsLWVc/Email-Template-posters.png" />
+        </Helmet>
         <div className="row" style={{ backgroundColor: "#191919" }}>
           <div className="col-md-2">
           </div>
@@ -24,7 +31,7 @@ class MockDriveArticle extends Component {
             <h2 style={{ color: "#37c9ef", textAlign: "center" }}><b>BUT DON'T WORRY!</b></h2>
             <p style={{ color: "white" }}>"The Best way to prepare for an interview is to actually face a mock test drive and interview. Datacode brings to you a great opportunity to put your step forward through an online mock placement drive for beginners who are willing to prepare for the placements."</p>
             <hr style={{ backgroundColor: "#37c9ef", width: 120 }} />
-            <h5 className="border-warning border-left pl-4" style={{ color: "yellow" }}>
+            <h5 className="border-warning border-left pl-4" style={{ color: "yellow", fontSize: 19 }}>
               Our aim behind this mock test drive is to prepare and to make our learners ready to face the placements processes and to make them aware about the steps and  the abilities that most MNCs expect in the candidates.
               The drive is designed to fully equip students with academic and strategic needs for all placement processes. It has incorporated essential elements required to clear the placement exams of various MNCs.
             </h5>
@@ -44,7 +51,18 @@ class MockDriveArticle extends Component {
             <h6 style={{ color: "#37c9ef" }}>3. Interview Round :-</h6>
             <p style={{ color: "white" }}>Our interview round consists of a panel of expert software developers from well-known MNCs. There will be a virtual mock interview by our experts in which you will be asked some sort of technical concepts and on that basis you will be scored.</p>
             <p style={{ color: "white", marginTop: -16 }}>You will get the reviews about your performance and the suggestions you should follow for self improvement. This will be proved highly beneficial for you to learn from your mistakes and to be ready for future opportunities.</p>
-            <HeaderBannerSectionBlack className="mt-5 mb-5" imgsource="mock_drive_flow.png" />
+            <a href="http://bit.ly/datacodemockdrive"><HeaderBannerSectionBlack className="mt-5 mb-5" imgsource="mock_drive_flow.png" /></a>
+            <h2 style={{ color: "#37c9ef", marginTop: 56 }}><b>FAQs</b></h2>
+            <hr style={{ backgroundColor: "#37c9ef", width: 780, textAlign: "left", marginLeft: -4, marginBottom: 44 }} />
+            <h6 style={{ color: "#37c9ef" }}>1. What benefits does Placement mock tests have?</h6>
+            <p style={{ color: "white" }}>Practicing mock tests gives you the chance to practice placement tests even before the actual placement test. Instead of preparing in a generic way, practicing in this method gives you an exact idea of what will be asked in a company placement test. It all depends upon your level of practicing.</p>
+            <h6 style={{ color: "#37c9ef" }}>2. How to get notified about the test drive?</h6>
+            <p style={{ color: "white" }}>As soon as you register, you will get a confirmation mail and all the necessary information and remainders about the test. <a href="http://bit.ly/datacodemockdrive">Register Now!</a></p>
+            <h6 style={{ color: "#37c9ef" }}>3. What are the prerequisites of the test?</h6>
+            <p style={{ color: "white" }}>All you need is your PC with an uninterrupted internet connection. You are allowed to use pen-paper for the aptitude technical test rounds.</p>
+            <h6 style={{ color: "#37c9ef" }}>4. What sort of knowledge is required to take the mock drive?</h6>
+            <p style={{ color: "white" }}>you must have a good grip upon the quantitative aptitude concepts and must be aware about the technical concepts, basic data structure and algorithm along with good command upon the programming language you choose for the test.</p>
+
           </div>
           <div className="col-md-2">
 
