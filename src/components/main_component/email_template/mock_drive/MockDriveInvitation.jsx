@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class MockDriveRegConfirmation extends Component {
+class MockDriveInvitation extends Component {
   state = {}
   render() {
     return (
@@ -21,7 +21,7 @@ class MockDriveRegConfirmation extends Component {
                               <img
                                 className=" card-img-top mx-auto img-fluid img-circle d-block"
                                 // src="https://ci4.googleusercontent.com/proxy/1sVq3CdW95K_MDHVT_48HLNozKhCNrbd5pg96PhFh_opwXJ_E0f7j2pEwGUhxEe6rsnI51Bgo9qld8vRxVA54QSPGPhHuezeYStlTlGvl0xfr0O5Qd2opx3axX6uNyrg8vdMuQ=s0-d-e1-ft#https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200925143555/GW_MH_2.png"
-                                src="https://i.postimg.cc/SxCt6vzL/Email-Template-posters-4.png"
+                                src="https://i.postimg.cc/hP9mz7PR/Email-Template-posters-6.png"
                                 alt="avatar"
                               />
                             </a>
@@ -139,4 +139,4 @@ class MockDriveRegConfirmation extends Component {
   }
 }
 
-export default MockDriveRegConfirmation;
+export default MockDriveInvitation;
