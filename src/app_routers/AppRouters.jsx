@@ -1182,6 +1182,7 @@ class AppRouters extends Component {
           <Route exact path="/email_mock_coding_test_link" component={MockCodingTestLink} />
           <Route exact path="/email_mock_coding_test_report" component={MockCodingTestReport} />
           <Route exact path="/email_mock_interview_slot_link" component={MockInterviewSlot} />
+          <Route exact path="/email_mock_drive_invitation" component={MockDriveInvitationMail} />
 
 
         </Switch>
