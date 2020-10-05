@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../../assets/css/ToolBar.css";
-import "../../assets/css/Header.css";
+import "../../assets/css/Navbar.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -45,7 +45,7 @@ import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import fire from "../../config/fire";
 import DrawerToggleButton from "./side_drawer/DrawerToggleButton";
 
-class HeaderComponent extends Component {
+class NavbarComponent extends Component {
   state = {};
 
   // logout() {
@@ -55,32 +55,34 @@ class HeaderComponent extends Component {
   render() {
     return (
       <>
-        <header className="toolbar fixed-top" id='tophead'>
-          <nav className="toolbar_navigation ">
+          <nav className="toolbar_navigation " id="top">
             <div className="toolbar_toggle-button">
               <DrawerToggleButton clickButton={this.props.drawerClickHandler} />
             </div>
-            <div className="toolbar_logo" id="leftsection"
-            >
-               <img id="logoimg"
-                     src="https://i.postimg.cc/Lsr6Chgw/icon.png"
-                                alt="avatar"
-                              />
-              <a href="/react-datacode/#/"><h2 id="HeadName" style={{fontFamily:'Rubik'}}>Datacode.in</h2></a>
-    </div>
-    <br/>
-    <a href="/react-datacode/#/"><h2 id="tagline" style={{fontFamily:"Merriweather"}}>A Beginner's Learning Portal</h2></a>
+          <div id="navlink">
+            <div id="links" ><a id="ahref" href="/react-datacode/#/index_technologies"> Tutorials/Courses
+</a>
+              </div>
+              <div id="links" ><a id="ahref" href="/react-datacode/#/index_training_certification">Training/Certification</a>
+
+              </div>
+              <div id="links" > <a id="ahref" href="/react-datacode/#/index_mcqs">Programming MCQs</a></div>
+
+              <div id="links" ><a id="ahref" href="/react-datacode/#/index_interview_questioins">Interview Preparation</a>
+
+              </div>
+              <div id="links" ><a id="ahref" href="/react-datacode/#/index_practice_questions">Practice Questions</a>
+              </div>
+              <div id="links" ><a id="ahref" href="/react-datacode/#/index_quize_tests">Quiz Tests</a>
+              </div>
+              <div id="links" ><a id="ahref" href="/react-datacode/#/index_programming_questions">Example Questions</a>
+
+              </div>
+            </div>
 
             {/* This is for Logo and Nev Spaccing */}
-            <div className="logo-nev-spacer"  />
-            <div className="toolbar_navigation-items" >
               <ul >
-                <li>
-                  <a href="/react-datacode/#/home">
-                    <FontAwesomeIcon icon={faHome} className="mr-2" />
-                    Home
-                  </a>
-                </li>
+               
                 {/* <li>
                   <NavDropdown
                     title={
@@ -128,28 +130,18 @@ class HeaderComponent extends Component {
                     </NavDropdown.Item>
                   </NavDropdown>
                 </li> */}
-                <li>
-                  <a href="/react-datacode/#/index_articles">
-                    <FontAwesomeIcon icon={faInfoCircle} /> About
-                  </a>
-                </li>
-                <li>
-                  <a href="/react-datacode/#/index_events">
-                    <FontAwesomeIcon icon={faSignInAlt} /> Login/Signup
-                  </a>
-                </li>
+             
+              
                 {/* <li>
                   <a href="#footer" onClick={this.logout}>
                     Log Out
                   </a>
                 </li> */}
               </ul>
-            </div>
           </nav>
-        </header>
       </>
     );
   }
 }
 
-export default HeaderComponent;
+export default NavbarComponent;
