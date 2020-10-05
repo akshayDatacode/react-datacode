@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import HeaderComponent from "./HeaderComponent";
+import NavbarComponent from "./NavbarComponent";
  import SideDrawer from "./side_drawer/SideDrawer";
  import BackDrop from "./back_drop/BackDrop";
 
@@ -30,6 +31,7 @@ class IndexHeader extends Component {
           drawerClickHandler={this.drawerToggleClickHandler}
           isUserLogin={this.props.isUserLogin}
         />
+        <NavbarComponent/>
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backDrop} 
       </>

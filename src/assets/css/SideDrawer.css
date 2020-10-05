@@ -1,6 +1,9 @@
+body{
+  background-color: white;
+}
 .side-drawer {
   height: 100%;
-  background: #f7f7f6;
+  background: #505050;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
@@ -30,15 +33,45 @@
 
 .side-drawer a:hover,
 .side-drawer a:active {
-  color: #f4cb58;
+  color: grey;
 }
 
 .side-drawer a {
-  color: #43413d;
+  color: white;
   text-decoration: none;
-  font-size: 1.7em;
+  font-size: 1.5em;
+}
+#dropcolor {
+  color: white;
+  margin-left: -16px;
 }
 
+#items {
+  color: black;
+  margin-left: -2 0px;
+  font-size: 20px;
+  margin-top: 10px;
+  position: relative;
+}
+#avatarimg{
+  width: 40px;
+  height:40px;
+  margin-top: 90px;
+  margin-left:15px;
+}
+#userid{
+   color:white;
+   width:245px;
+   margin-bottom:-120px;
+
+}
+#username{
+  margin-left: 62px;
+  color:white;
+  margin-top:-32px;
+  font-size: 20px;
+
+}
 @media (min-width: 769px) {
   .side-drawer {
     display: none;

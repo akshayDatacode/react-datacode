@@ -39,69 +39,150 @@ class SideDrawer extends Component {
     return (
       <>
         <nav className={drawerClasses}>
+          <div id="userid">
+          <img id="avatarimg"
+                     src="https://i.postimg.cc/Lsr6Chgw/icon.png"
+                                alt="avatar"
+                              />
+                              <div id="username">
+                                Hello Akshay!
+                                </div>
+            </div>
           <ul>
             <li>
-              <a href="/react-datacode/#/home">
-                <FontAwesomeIcon icon={faHome} className="mr-2" />
-                Home
-              </a>
+
+              <a href="/react-datacode/#/home">Home</a>
+              <hr
+                style={{
+                  backgroundColor: "white",
+                  width: "180px",
+                  marginLeft: "-3px",
+                  marginTop: "-1px",
+                  marginBottom: "-5px",
+                }}
+              />
             </li>
+
             <li>
+
               <NavDropdown
+              
                 title={
-                  <span className="my-auto" style={{ color: "#04FFD5" }}>
-                    <FontAwesomeIcon icon={faBookOpen} /> Learn
+
+                  <span className="my-auto" id="dropcolor">
+                    Learn
                   </span>
                 }
-                id="collasible-nav-dropdown"
               >
-                <NavDropdown.Item href="/react-datacode/#/index_technologies">
+                <NavDropdown.Item
+                  id="items"
+                  href="/react-datacode/#/index_technologies"
+                >
                   <FontAwesomeIcon
                     icon={faChalkboardTeacher}
                     className="mr-2"
                   />
-                  Tutorials & Courses
+                  Tutorials/Courses
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/react-datacode/#/index_training_certification">
+                <NavDropdown.Item
+                  id="items"
+                  href="/react-datacode/#/index_training_certification"
+                >
                   <FontAwesomeIcon icon={faAward} className="mr-2" />
-                  Training & Certification
+                  Training/Certification
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/react-datacode/#/index_mcqs">
+                <NavDropdown.Item
+                  id="items"
+                  href="/react-datacode/#/index_mcqs"
+                >
                   <FontAwesomeIcon icon={faTasks} className="mr-2" />
                   Programming MCQs
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/react-datacode/#/index_code_challange">
+                <NavDropdown.Item
+                  id="items"
+                  href="/react-datacode/#/index_code_challange"
+                >
                   <FontAwesomeIcon icon={faLaptopCode} className="mr-2" />
                   Code Challange
                 </NavDropdown.Item>
 
-                <NavDropdown.Item href="/react-datacode/#/index_interview_questioins">
+                <NavDropdown.Item
+                  id="items"
+                  href="/react-datacode/#/index_interview_questioins"
+                >
                   <FontAwesomeIcon icon={faUserTie} className="mr-2" />
                   Interview Preparation
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/react-datacode/#/index_practice_questions">
+                <NavDropdown.Item
+                  id="items"
+                  href="/react-datacode/#/index_practice_questions"
+                >
                   <FontAwesomeIcon icon={faCode} className="mr-2" />
-                  Programming Practice Questions
+                  Practice Questions
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/react-datacode/#/index_quize_tests">
+                <NavDropdown.Item
+                  id="items"
+                  href="/react-datacode/#/index_quize_tests"
+                >
                   <FontAwesomeIcon icon={faFlask} className="mr-2" />
-                  Programming Quiz Tests
+                  Quiz Tests
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/react-datacode/#/index_programming_questions">
+                <NavDropdown.Item
+                  id="items"
+                  href="/react-datacode/#/index_programming_questions"
+                >
                   <FontAwesomeIcon icon={faFileCode} className="mr-2" />
-                  Programming Example Questions
+                  Example Questions
                 </NavDropdown.Item>
               </NavDropdown>
+              <hr
+                style={{
+                  backgroundColor: "white",
+                  width: "180px",
+                  marginLeft: "-3px",
+                  marginTop: "-3px",
+                  marginBottom: "5px",
+                }}
+              />
             </li>
             <li>
-              <a href="/react-datacode/#/index_articles">
-                <FontAwesomeIcon icon={faNewspaper} /> Blogs
-              </a>
+              <a href="/react-datacode/#/index_articles">Blogs</a>
+              <hr
+                style={{
+                  backgroundColor: "white",
+                  width: "180px",
+                  marginLeft: "-3px",
+                  marginTop: "3px",
+                  marginBottom: "5px",
+                }}
+              />
             </li>
             <li>
-              <a href="/react-datacode/#/index_events">
-                <FontAwesomeIcon icon={faClipboardList} /> Events/Contests
-              </a>
+              <a href="/react-datacode/#/index_events">Events/Contests</a>
+              <hr
+                style={{
+                  backgroundColor: "white",
+                  width: "180px",
+                  marginLeft: "-3px",
+                  marginTop: "3px",
+                  marginBottom: "5px",
+                }}
+              />
+            </li>
+            <li>
+              <a href="/react-datacode/#/index_events">About</a>
+              <hr
+                style={{
+                  backgroundColor: "white",
+                  width: "180px",
+                  marginLeft: "-3px",
+                  marginTop: "3px",
+                  marginBottom: "5px",
+                }}
+              />
+            </li>
+            <li>
+              <a href="/react-datacode/#/index_events">Login/Signup</a>
             </li>
             {/* <li>
                   <a href="#footer" onClick={this.logout}>
