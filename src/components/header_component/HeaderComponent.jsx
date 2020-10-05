@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "../../assets/css/ToolBar.css";
+import "../../assets/css/Header.css";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   fab,
@@ -36,6 +38,7 @@ import {
   faInfoCircle,
   faSplotch,
   faComments,
+  faSignInAlt
 } from "@fortawesome/free-solid-svg-icons";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
@@ -52,25 +55,33 @@ class HeaderComponent extends Component {
   render() {
     return (
       <>
-        <header className="toolbar fixed-top">
+        <header className="toolbar fixed-top" id='tophead'>
           <nav className="toolbar_navigation ">
             <div className="toolbar_toggle-button">
               <DrawerToggleButton clickButton={this.props.drawerClickHandler} />
             </div>
-            <div className="toolbar_logo">
-              <a href="/react-datacode/#/"><h2>Datacode.in</h2></a>
-            </div>
+            <div className="toolbar_logo" id="leftsection"
+            >
+               <img id="logoimg"
+                     src="https://i.postimg.cc/Lsr6Chgw/icon.png"
+                                alt="avatar"
+                              />
+              <a href="/react-datacode/#/"><h2 id="HeadName" style={{fontFamily:'Fira Sans'}}>Datacode.in</h2></a>
+    </div>
+    <br/>
+    <a href="/react-datacode/#/"><h2 id="tagline" style={{fontFamily:"Merriweather"}}>A Beginner's Learning Portal</h2></a>
+
             {/* This is for Logo and Nev Spaccing */}
-            <div className="logo-nev-spacer" />
-            <div className="toolbar_navigation-items">
-              <ul>
+            <div className="logo-nev-spacer"  />
+            <div className="toolbar_navigation-items" >
+              <ul >
                 <li>
                   <a href="/react-datacode/#/home">
                     <FontAwesomeIcon icon={faHome} className="mr-2" />
                     Home
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <NavDropdown
                     title={
                       <span className="my-auto" style={{ color: "#04FFD5" }}>
@@ -116,15 +127,15 @@ class HeaderComponent extends Component {
                       Programming Example Questions
                     </NavDropdown.Item>
                   </NavDropdown>
-                </li>
+                </li> */}
                 <li>
                   <a href="/react-datacode/#/index_articles">
-                    <FontAwesomeIcon icon={faNewspaper} /> Blogs
+                    <FontAwesomeIcon icon={faInfoCircle} /> About
                   </a>
                 </li>
                 <li>
                   <a href="/react-datacode/#/index_events">
-                    <FontAwesomeIcon icon={faClipboardList} /> Events/Contests
+                    <FontAwesomeIcon icon={faSignInAlt} /> Login/Signup
                   </a>
                 </li>
                 {/* <li>
