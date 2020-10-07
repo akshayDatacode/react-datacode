@@ -33,7 +33,7 @@ class MockDriveInvitationMail extends Component {
                               <img
                                 className=" card-img-top mx-auto img-fluid img-circle d-block"
                                 // src="https://ci4.googleusercontent.com/proxy/1sVq3CdW95K_MDHVT_48HLNozKhCNrbd5pg96PhFh_opwXJ_E0f7j2pEwGUhxEe6rsnI51Bgo9qld8vRxVA54QSPGPhHuezeYStlTlGvl0xfr0O5Qd2opx3axX6uNyrg8vdMuQ=s0-d-e1-ft#https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200925143555/GW_MH_2.png"
-                                src="https://i.postimg.cc/QC8yXnKj/1.png"
+                                src="https://i.postimg.cc/6q5yx57P/Email-Template-posters-7.png"
                                 alt="avatar"
                               />
                             </a>
@@ -50,16 +50,16 @@ class MockDriveInvitationMail extends Component {
                             backgroundColor: "#101820FF",
                           }}
                         >
-                            
+
                           <div className="col">
 
-                          <div
-                              className="row text-white mt-4 "
+                            <div
+                              className="row text-light mt-4 "
                               style={{
                                 textAlign: "center",
                                 backgroundColor: "#101820FF",
-                                fontSize: 30                           
-                                 }}
+                                fontSize: 35
+                              }}
                             >
                               <p
                                 className="mx-auto"
@@ -111,14 +111,13 @@ To make you ready to face the placement processes Datacode brings to you a great
                               style={{
                                 textAlign: "center",
                                 backgroundColor: "#101820FF",
-                                fontSize: 30                           
-                                 }}
+                                fontSize: 30
+                              }}
                             >
                               <p
                                 className="mx-auto"
                                 style={{ fontWeight: "bold" }}
-                              >{`"Mock Placement Drive".
-
+                              >{`"Mock Placement Drive"
                               `}</p>
                             </div>
 
@@ -140,7 +139,7 @@ To make you ready to face the placement processes Datacode brings to you a great
                               style={{
                                 textAlign: "center",
                                 backgroundColor: "#101820FF",
-                                marginTop:'-20px'
+                                marginTop: '-15px'
                               }}
                             >
                               <p className="pl-5 pr-5 mx-auto">{`Hurry Up!
@@ -152,7 +151,7 @@ To make you ready to face the placement processes Datacode brings to you a great
                               style={{
                                 textAlign: "center",
                                 backgroundColor: "#101820FF",
-                                marginTop:'-30px'
+                                marginTop: '-25px'
 
                               }}
                             >
@@ -167,7 +166,7 @@ To make you ready to face the placement processes Datacode brings to you a great
                               style={{
                                 textAlign: "center",
                                 backgroundColor: "#101820FF",
-                                marginTop:'-30px'
+                                marginTop: '-30px'
 
                               }}
                             >
@@ -176,6 +175,11 @@ To make you ready to face the placement processes Datacode brings to you a great
 
 
 `}</p>
+                            </div>
+                            <div className="row text-white" style={{ marginTop: '-15px', textAlign: "center", backgroundColor: "#101820" }}>
+                              <div className="col text-center">
+                                <a href="http://bit.ly/datacode_mock_drive">For More Info!</a>
+                              </div>
                             </div>
                             <div
                               className="row text-white"
@@ -189,17 +193,22 @@ To make you ready to face the placement processes Datacode brings to you a great
 
 
 `}</p>
-</div>
+                            </div>
                             <div
                               className="row text-white"
                               style={{
                                 textAlign: "center",
                                 backgroundColor: "#101820FF",
                                 fontWeight: "bold",
-                                marginTop:'-15px'
+                                marginTop: '-5px'
                               }}
                             >
                               <p className="pl-5 pr-5">{`You can join our Placement Preparation Group by clicking on the link below`}</p>
+                            </div>
+                            <div className="row text-white" style={{ textAlign: "center", backgroundColor: "#101820" }}>
+                              <div className="col text-center">
+                                <a href="https://chat.whatsapp.com/FHSGFCf3vyJ85SxNJlYAfH"><p className="pl-5 pr-5">Join Now!</p></a>
+                              </div>
                             </div>
                             <div
                               className="row text-white"
@@ -215,6 +224,7 @@ To make you ready to face the placement processes Datacode brings to you a great
                               style={{
                                 textAlign: "center",
                                 backgroundColor: "#101820FF",
+                                marginTop: '-10px'
                               }}
                             >
                               <p className="pl-5 pr-5 mx-auto">{`Team Datacode.in`}</p>
@@ -222,21 +232,9 @@ To make you ready to face the placement processes Datacode brings to you a great
                           </div>
                         </div>
 
-                        <div
-                          className="row pt-4"
-                          style={{
-                            backgroundColor: "#101820FF",
-                            backgroundColor: "#101820FF",
-                          }}
-                        >
-                          <div className="col-3 text-center ml-2">
-                            <div
-                              className="row"
-                              style={{
-                                paddingLeft: 35,
-                                backgroundColor: "#101820FF",
-                              }}
-                            >
+                        <div className="row pt-4" style={{ backgroundColor: "#101820", backgroundColor: "#101820" }}>
+                          <div className="col-3 text-center">
+                            <div className="row " style={{ paddingLeft: 30, backgroundColor: "#101820" }}>
                               <a href="https://www.facebook.com/Datacode.in">
                                 <img
                                   style={{ width: 100, height: 100 }}
@@ -274,44 +272,24 @@ To make you ready to face the placement processes Datacode brings to you a great
                                 </a>
                               </div>
                             </div>
+
                           </div>
-                          <div
-                            className="col-8 border-left border-dark p-2"
-                            style={{ backgroundColor: "#101820FF" }}
-                          >
-                            <div className="row">
+                          <div className="col-8 p-2 ml-3" style={{ backgroundColor: "#101820" }}>
+                            <div className="row" >
                               <div className="col text-center">
-                                <h3
-                                  className="text-center"
-                                  style={{
-                                    color: "#37c9ef",
-                                    fontFamily: "Aileron Heavy",
-                                  }}
-                                >
-                                  Learn With Datacode
-                                </h3>
-                                <a href="https://www.datacode.in/#/">
-                                  <p
-                                    style={{ fontSize: 12 }}
-                                    className="text-white pt-0 mt-0 pl-2 pr-2"
-                                  >
-                                    An online learning portal for computer
-                                    science beginners, start your learning from
-                                    best resources over the internet
-                                  </p>
-                                </a>
+                                <h3 className="text-center" style={{ color: "#37c9ef", fontFamily: "Aileron Heavy" }}>Learn With Datacode</h3>
+                                <a href="https://www.datacode.in/#/"><p style={{ fontSize: 12 }} className="text-white pt-0 mt-0 pl-2 pr-2">An online learning portal for computer science beginners, start your learning from best resources over the internet</p></a>
                               </div>
                             </div>
                             <div className="row">
                               <div className="col text-center">
                                 <a href="https://www.datacode.in/#/">
-                                  <div className="btn btn-success btn-sm">
-                                    Start Learning
-                                  </div>
+                                  <div className="btn btn-success btn-sm">Start Learning</div>
                                 </a>
                               </div>
                             </div>
                           </div>
+
                         </div>
                       </td>
                     </tr>

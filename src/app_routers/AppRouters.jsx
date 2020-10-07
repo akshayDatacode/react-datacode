@@ -346,6 +346,7 @@ import MockCodingTestLink from "../components/main_component/email_template/mock
 import MockCodingTestReport from "../components/main_component/email_template/mock_drive/MockCodingTestReport";
 import MockInterviewSlot from "../components/main_component/email_template/mock_drive/MockInterviewSlot";
 import MockDriveInvitation from "../components/main_component/email_template/mock_drive/MockDriveInvitation";
+import MockDriveInvitationMail from "../components/main_component/email_template/mock_drive/MockDriveInvitationMail";
 
 class AppRouters extends Component {
   state = {};
@@ -1176,7 +1177,7 @@ class AppRouters extends Component {
 
           {/* Email Templates Datacode */}
           <Route exact path="/email_mock_drive_reg" component={MockDriveRegConfirmation} />
-          <Route exact path="/email_mock_drive_invitation" component={MockDriveInvitation} />
+          <Route exact path="/email_mock_drive_invitation" component={MockDriveInvitationMail} />
           <Route exact path="/email_mock_placement_test_link" component={MockPlacementTestLink} />
           <Route exact path="/email_mock_placement_test_report" component={MockPlacementTestReport} />
           <Route exact path="/email_mock_coding_test_link" component={MockCodingTestLink} />

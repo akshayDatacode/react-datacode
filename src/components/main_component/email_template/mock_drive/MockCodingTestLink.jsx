@@ -23,7 +23,7 @@ class MockCodingTestLink extends Component {
                     cellpadding="0"
                     cellspacing="0"
                     width="600"
-                    style={{ backgroundColor: "#191919" }}
+                    style={{ backgroundColor: "#101820" }}
                   >
                     <tr>
                       <td>
@@ -47,7 +47,7 @@ class MockCodingTestLink extends Component {
                           className="row"
                           style={{
                             textAlign: "center",
-                            backgroundColor: "#191919",
+                            backgroundColor: "#101820",
                           }}
                         >
                           <div className="col">
@@ -55,7 +55,7 @@ class MockCodingTestLink extends Component {
                               className="row text-white mt-4 "
                               style={{
                                 textAlign: "center",
-                                backgroundColor: "#191919",
+                                backgroundColor: "#101820",
                               }}
                             >
                               <p
@@ -68,7 +68,7 @@ class MockCodingTestLink extends Component {
                               className="row text-white"
                               style={{
                                 textAlign: "center",
-                                backgroundColor: "#191919",
+                                backgroundColor: "#101820",
                               }}
                             >
                               <p
@@ -80,7 +80,7 @@ class MockCodingTestLink extends Component {
                               className="row text-white"
                               style={{
                                 textAlign: "center",
-                                backgroundColor: "#191919",
+                                backgroundColor: "#101820",
                               }}
                             >
                               <p className="pl-5 pr-5 pt-2">{`This mail is in reference to datacode’s Mock Placement Drive’s Second Round i.e; Mock Coding Round.
@@ -91,7 +91,7 @@ class MockCodingTestLink extends Component {
                               className="row text-white"
                               style={{
                                 textAlign: "center",
-                                backgroundColor: "#191919",
+                                backgroundColor: "#101820",
                               }}
                             >
                               <p className="pl-5 pr-5 pt-2 mx-auto">{`You can attempt this coding test in the language of your choice.
@@ -102,7 +102,7 @@ class MockCodingTestLink extends Component {
                               className="row text-white"
                               style={{
                                 textAlign: "center",
-                                backgroundColor: "#191919",
+                                backgroundColor: "#101820",
                               }}
                             >
                               <p className="pl-5 pr-5 pt-2">{`To make you aware of the coding platform used by most of the MNC’s for their Coding Test, 
@@ -116,7 +116,7 @@ We planned this Coding Test Over HackerRank which is used by most of them.
                               className="row text-white"
                               style={{
                                 textAlign: "center",
-                                backgroundColor: "#191919",
+                                backgroundColor: "#101820",
                               }}
                             >
                               <p className="pl-5 pr-5 pt-2 mx-auto">{`You can start your mock placement test by clicking on the button below:-
@@ -126,7 +126,7 @@ We planned this Coding Test Over HackerRank which is used by most of them.
                               className="row text-white"
                               style={{
                                 textAlign: "center",
-                                backgroundColor: "#191919",
+                                backgroundColor: "#101820",
                               }}
                             >
                               <div className="col text-center">
@@ -139,7 +139,7 @@ We planned this Coding Test Over HackerRank which is used by most of them.
                               className="row text-white"
                               style={{
                                 textAlign: "center",
-                                backgroundColor: "#191919",
+                                backgroundColor: "#101820",
                               }}
                             >
                               <p className="pl-5 pr-5 pt-3">{`Hope you will find it knowledgeable and valuable.We will be waiting for feedback from your side.`}</p>
@@ -149,17 +149,22 @@ We planned this Coding Test Over HackerRank which is used by most of them.
                               className="row text-white"
                               style={{
                                 textAlign: "center",
-                                backgroundColor: "#191919",
+                                backgroundColor: "#101820",
                                 fontWeight: "bold",
                               }}
                             >
                               <p className="pl-5 pr-5 pt-2">{`You can join our Placement Preparation Group by clicking on the link below`}</p>
                             </div>
+                            <div className="row text-white" style={{ textAlign: "center", backgroundColor: "#101820" }}>
+                              <div className="col text-center">
+                                <a href="https://chat.whatsapp.com/FHSGFCf3vyJ85SxNJlYAfH"><p className="pl-5 pr-5">Join Now!</p></a>
+                              </div>
+                            </div>
                             <div
                               className="row text-white"
                               style={{
                                 textAlign: "center",
-                                backgroundColor: "#191919",
+                                backgroundColor: "#101820",
                               }}
                             >
                               <p className="pl-5 pr-5 pt-2 mx-auto">{`Thanks and Regards,`}</p>
@@ -168,7 +173,7 @@ We planned this Coding Test Over HackerRank which is used by most of them.
                               className="row text-white"
                               style={{
                                 textAlign: "center",
-                                backgroundColor: "#191919",
+                                backgroundColor: "#101820",
                               }}
                             >
                               <p className="pl-5 pr-5 mx-auto">{`Team Datacode.in`}</p>
@@ -176,21 +181,9 @@ We planned this Coding Test Over HackerRank which is used by most of them.
                           </div>
                         </div>
 
-                        <div
-                          className="row pt-4"
-                          style={{
-                            backgroundColor: "#191919",
-                            backgroundColor: "#191919",
-                          }}
-                        >
-                          <div className="col-3 text-center ml-2">
-                            <div
-                              className="row"
-                              style={{
-                                paddingLeft: 35,
-                                backgroundColor: "#191919",
-                              }}
-                            >
+                        <div className="row pt-4" style={{ backgroundColor: "#101820", backgroundColor: "#101820" }}>
+                          <div className="col-3 text-center">
+                            <div className="row " style={{ paddingLeft: 30, backgroundColor: "#101820" }}>
                               <a href="https://www.facebook.com/Datacode.in">
                                 <img
                                   style={{ width: 100, height: 100 }}
@@ -228,44 +221,24 @@ We planned this Coding Test Over HackerRank which is used by most of them.
                                 </a>
                               </div>
                             </div>
+
                           </div>
-                          <div
-                            className="col-8 border-left border-dark p-2"
-                            style={{ backgroundColor: "#191919" }}
-                          >
-                            <div className="row">
+                          <div className="col-8 p-2 ml-3" style={{ backgroundColor: "#101820" }}>
+                            <div className="row" >
                               <div className="col text-center">
-                                <h3
-                                  className="text-center"
-                                  style={{
-                                    color: "#37c9ef",
-                                    fontFamily: "Aileron Heavy",
-                                  }}
-                                >
-                                  Learn With Datacode
-                                </h3>
-                                <a href="https://www.datacode.in/#/">
-                                  <p
-                                    style={{ fontSize: 12 }}
-                                    className="text-white pt-0 mt-0 pl-2 pr-2"
-                                  >
-                                    An online learning portal for computer
-                                    science beginners, start your learning from
-                                    best resources over the internet
-                                  </p>
-                                </a>
+                                <h3 className="text-center" style={{ color: "#37c9ef", fontFamily: "Aileron Heavy" }}>Learn With Datacode</h3>
+                                <a href="https://www.datacode.in/#/"><p style={{ fontSize: 12 }} className="text-white pt-0 mt-0 pl-2 pr-2">An online learning portal for computer science beginners, start your learning from best resources over the internet</p></a>
                               </div>
                             </div>
                             <div className="row">
                               <div className="col text-center">
                                 <a href="https://www.datacode.in/#/">
-                                  <div className="btn btn-success btn-sm">
-                                    Start Learning
-                                  </div>
+                                  <div className="btn btn-success btn-sm">Start Learning</div>
                                 </a>
                               </div>
                             </div>
                           </div>
+
                         </div>
                       </td>
                     </tr>
