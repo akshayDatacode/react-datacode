@@ -9,6 +9,7 @@ import '../../../../../assets/css/fullScreen.css'
 import Quize from "../../mcqQuestions/quize";
 import QuizFrame from "./QuizFrame";
 import { cQuizData } from './helper'
+import Timer from "../Timer";
 
 const CQuizExam = () => {
 
@@ -121,33 +122,33 @@ const CQuizExam = () => {
             <FullScreen handle={handle}>
               {state.startQuiz &&
                 <>
-                
+
                   <div id="quiz-container" className="row pl-4 pr-4">
-                  <div className="col-4 ">
-                    
-                      <div className="border border-white" style={{ overflow: 'auto', marginTop: '55px', height:"790px" }}>
+                    <div className="col-4 ">
+
+                      <div className="border border-white" style={{ overflow: 'auto', marginTop: '55px', height: "790px" }}>
                         {quizData.map((item) => (
                           <div id="question-lines">
-                             <ol className="list">
-                            <div  id="question-button">
-                              <div  onClick={() => handleExamQuizShow(item.quiz_id)}>
-                                <li style={{marginTop:'12px'}}>{item.question}</li> 
-                                
+                            <ol className="list">
+                              <div id="question-button">
+                                <div onClick={() => handleExamQuizShow(item.quiz_id)}>
+                                  <li style={{ marginTop: '12px' }}>{item.question}</li>
+
+                                </div>
                               </div>
+                            </ol>
                           </div>
-                          </ol>
-                          </div>
-                          
+
                         ))}
                       </div>
                     </div>
                     <div id="quiz" className="col-8">
-                      
-                      <div className="row text-center" id="timer">
 
-                      <div style={{height:"43px", marginLeft:"20px"}} className="row text-right">
+                      <div className="row text-center" id="timer">
+                        <Timer />
+                        <div style={{ height: "43px", marginLeft: "20px" }} className="row text-right">
                           <button
-                        
+
                             className="btn btn-success"
                             onClick={() => {
                               handleSubmitExam();
@@ -158,7 +159,7 @@ const CQuizExam = () => {
                         </button>
 
                           <button
-                          style={{marginLeft: "162px"}}
+                            style={{ marginLeft: "162px" }}
                             className="btn btn-sm btn-danger"
                             onClick={() => {
                               handleQuiz();
@@ -167,25 +168,25 @@ const CQuizExam = () => {
                           >End Test
                         </button>
 
-                      </div>
+                        </div>
 
                         <div id="logo"
-                        src={require("../../../../../assets/images/datacodelogo.jpeg")}
->
-                       
+                          src={require("../../../../../assets/images/datacodelogo.jpeg")}
+                        >
+
+                        </div>
+                        <div id="line">
+                          |
 </div>
-<div id="line">
-|
-</div>
-<div id="title">
-  Datacode Exam
+                        <div id="title">
+                          Datacode Exam
   </div>
                         <div id="time" className="col-2">
-                          <div style={{marginLeft:"-50px"}}>
-                          <Countdown
-                            date={Date.now() + 1600000}
-                            renderer={renderer}
-                          />
+                          <div style={{ marginLeft: "-50px" }}>
+                            <Countdown
+                              date={Date.now() + 1600000}
+                              renderer={renderer}
+                            />
                           </div>
                         </div>
                       </div>
@@ -208,7 +209,7 @@ const CQuizExam = () => {
                       </div>
 
                       <div className="row border border-white">
-                      
+
                         <div className="col text-left">
                           {selectedQuizID !== 0 &&
 
@@ -222,13 +223,13 @@ const CQuizExam = () => {
                           }
                         </div>
 
-                          <div className="col text-right">
-                            <button
-                              className="btn btn-sm btn-primary"
-                              onClick={() => {
-                                setSelectedQuizID(parseInt(selectedQuizID + 1))
-                              }}
-                            >Next
+                        <div className="col text-right">
+                          <button
+                            className="btn btn-sm btn-primary"
+                            onClick={() => {
+                              setSelectedQuizID(parseInt(selectedQuizID + 1))
+                            }}
+                          >Next
                           </button>
                         </div>
 
@@ -236,7 +237,7 @@ const CQuizExam = () => {
 
                     </div>
 
-                   
+
                   </div>
                 </>
               }
