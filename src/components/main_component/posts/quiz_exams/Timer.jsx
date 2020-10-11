@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 class Timer extends Component {
   state = {
-    minutes: 6,
+    minutes: 1,
     seconds: 0,
   }
 
@@ -33,12 +33,12 @@ class Timer extends Component {
 
   render() {
     const { minutes, seconds } = this.state
-
+    const { handleEndTest } = this.props
     return (
       <>
         {minutes === 0 && seconds === 0
-          ? <h1>Busted!</h1>
-          : <h1>Time Remaining: {minutes}:{seconds < 10 ? `0${seconds}` : seconds}</h1>
+          ? () => handleEndTest()
+          : <h1>{minutes}:{seconds < 10 ? `0${seconds}` : seconds}</h1>
         }
       </>
     );

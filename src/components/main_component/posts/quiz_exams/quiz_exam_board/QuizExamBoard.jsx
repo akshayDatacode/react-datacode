@@ -54,8 +54,8 @@ const CQuizExam = () => {
   };
 
   const handle = useFullScreenHandle()
-
   const renderer = ({ hours, minutes, seconds, completed }) => {
+
     if (completed) {
       // Render a completed state
       handle.exit()
@@ -145,7 +145,7 @@ const CQuizExam = () => {
                     <div id="quiz" className="col-8">
 
                       <div className="row text-center" id="timer">
-                        <Timer />
+
                         <div style={{ height: "43px", marginLeft: "20px" }} className="row text-right">
                           <button
 
@@ -183,10 +183,7 @@ const CQuizExam = () => {
   </div>
                         <div id="time" className="col-2">
                           <div style={{ marginLeft: "-50px" }}>
-                            <Countdown
-                              date={Date.now() + 1600000}
-                              renderer={renderer}
-                            />
+                            <Timer />
                           </div>
                         </div>
                       </div>

@@ -9,6 +9,7 @@ import RightSideSection from "../../../../../right_section/RightSideSection";
 import RecommendPost from "../../../../../right_section/RecommendPost";
 import MCQTestCardCarousel from "../MCQTestCardCarousel";
 import Countdown from 'react-countdown'
+import Timer from "../../../quiz_exams/Timer";
 
 class CQuizeTest1 extends Component {
   state = {
@@ -51,6 +52,11 @@ class CQuizeTest1 extends Component {
 
   handleStartQuiz = () => {
     this.setState({ startQuiz: true })
+  }
+
+  handleEndTest = () => {
+    debugger
+    this.setState({ startQuiz: false })
   }
 
   render() {
@@ -96,10 +102,7 @@ class CQuizeTest1 extends Component {
               {this.state.startQuiz &&
                 <>
                   <div className="row">
-                    <Countdown
-                      date={Date.now() + 600000}
-                      renderer={this.renderer}
-                    />
+                    <Timer handleEndTest={this.handleEndTest} />
                   </div>
                   <div className="row">
                     <div className="col">

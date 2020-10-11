@@ -6,68 +6,61 @@
   background: #fff;
 }
 
-#quiz-container{
+#quiz-container {
   height: 850px;
 }
 
-#timer{
+#timer {
   background-color: blue;
   border: none;
-  width:1510px;
-  margin-left:-520px;
+  width: 1510px;
+  margin-left: -520px;
 }
-#quiz{
+#quiz {
   height: 850px;
   border: 1px solid cornsilk;
-
 }
 
-#question-button{
-  
+#question-button {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   margin-bottom: 7px;
   margin-top: 10px;
   width: 90%;
   color: white;
   background-color: black;
   cursor: pointer;
-
-  
 }
- .list{
-   color: white;
- }
+.list {
+  color: white;
+}
 
- #logo{
-   width:2px;
-   height:20px;
- }
- #title{
-color: white;
-margin-top:8px;
-margin-left: 10px;
- }
- #line{
-   color: white;
-   margin-top:7px;
-   margin-left: 50px;
-
- }
- #time{
-   margin-left: 290px;
-   background-color: cornflowerblue;
-   width: 10px;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
- }
- #list-group-item{
-   width: 800px;
-   margin-bottom: 5px;
-   background-color: black;
-   color:white;
-   border: 1px solid darkgray;
- }
- #question-lines{
+#logo {
+  width: 2px;
+  height: 20px;
+}
+#title {
+  color: white;
+  margin-top: 8px;
+  margin-left: 10px;
+}
+#line {
+  color: white;
+  margin-top: 7px;
+  margin-left: 50px;
+}
+#time {
+  margin-left: 290px;
+  background-color: cornflowerblue;
+  width: 10px;
+}
+#list-group-item {
+  width: 800px;
+  margin-bottom: 5px;
+  background-color: black;
+  color: white;
   border: 1px solid darkgray;
-
- }
+}
+#question-lines {
+  border: 1px solid darkgray;
+}
