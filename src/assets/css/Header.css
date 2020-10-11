@@ -24,15 +24,28 @@ height: 50px;
      font-size:18px;
      margin-top: 45px;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 360px) {
   #logoimg{
       display:none;
   }
   #HeadName{  
-      margin-left:172px;
+      margin-left:112px;
   }
   #tagline{
     margin-left:-212px;  
   }
  
 }
+@media only screen and (max-width: 500px) {
+  #logoimg{
+      display:none;
+  }
+  #HeadName{  
+      margin-left:112px;
+  }
+  #tagline{
+    margin-left:-212px;  
+  }
+ 
+}
+
