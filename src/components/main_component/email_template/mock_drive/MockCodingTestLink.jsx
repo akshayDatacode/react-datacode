@@ -123,16 +123,17 @@ We planned this Coding Test Over HackerRank which is used by most of them.
 `}</p>
                             </div>
                             <div
-                              className="row text-white"
+                              className="row text-warning"
                               style={{
                                 textAlign: "center",
                                 backgroundColor: "#101820",
                               }}
                             >
+                              <p className="pl-5 pr-5 pt-2 mx-auto">{`Oct 17 2020, 01:00 pm IST to Oct 17 2020, 02:00 pm IST`}</p>
+                            </div>
+                            <div className="row text-white" style={{ textAlign: "center", backgroundColor: "#101820" }}>
                               <div className="col text-center">
-                                <div className="btn btn-warning">
-                                  Start Test
-                                </div>
+                                <a href="https://www.hackerrank.com/mock-coding-test-a-datacode"><div className="btn btn-warning">Start Test</div></a>
                               </div>
                             </div>
                             <div
