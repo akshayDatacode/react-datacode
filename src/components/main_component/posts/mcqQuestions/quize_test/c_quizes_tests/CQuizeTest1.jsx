@@ -92,7 +92,7 @@ class CQuizeTest1 extends Component {
                 </div>
                 :
                 <>
-                  <div className="row mt-3 bg-white fixed-top">
+                  <div className="row pt-2 bg-white fixed-top">
                     <div className="col text-center">
                       Time Remaining: <Timer handleEndTest={this.handleEndTest} />
                     </div>
