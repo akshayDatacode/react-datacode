@@ -19,6 +19,7 @@ class CQuizeTest1 extends Component {
     status: "",
     show: false,
     startQuiz: false,
+    showScoreCard: false,
   };
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -55,54 +56,46 @@ class CQuizeTest1 extends Component {
   }
 
   handleEndTest = () => {
-    debugger
-    this.setState({ startQuiz: false })
+    this.setState({ startQuiz: false, showScoreCard: true })
   }
 
   render() {
+    const { showScoreCard, startQuiz } = this.state
     return (
       <>
-        <HeaderBannerSection imgsource="headerdark.jpeg" />
+        <HeaderBannerSection imgsource="c_quiz_test_header.png" />
         <div class="container-fluid">
           <div className="row">
             <div className="col-1"></div>
             <div className="col-md-7 ">
-              <div className="row">
-                <div className="col text-center mt-3 mb-3">
-                  <h2>C Quiz Test Beginner</h2>
+              <div className="row card mt-5 p-2">
+                <div className="col text-center text-dark mt-5 mb-5">
+                  <h2><b>C Programming Self-Evaluation Quiz Test</b></h2>
+                  <p>Take this quiz to see how much you know about C Programming</p>
                 </div>
               </div>
-              <div className="row">
-                <div className="col">
-                  <Link to="/home" className="badge badge-primary mr-1">
-                    Home >>
-                  </Link>
-                  <Link
-                    to="/index_quize_tests"
-                    className="badge badge-warning mr-1"
-                  >
-                    Quize Test >>
-                  </Link>
-                  <Link
-                    to="/c_quize_tests"
-                    className="badge badge-success mr-1"
-                  >
-                    C Quiz >>
-                  </Link>
-                </div>
-              </div>
-              <div className="row">
-                <button
-                  className="btn btn-primary"
-                  onClick={() => this.handleStartQuiz()}
-                >
-                  Start Quiz
-                </button>
-              </div>
-              {this.state.startQuiz &&
-                <>
+              {!startQuiz ?
+                <div className="row card mt-4 pt-5 pb-3 mb-5">
                   <div className="row">
-                    <Timer handleEndTest={this.handleEndTest} />
+                    <div className="col-md-6 text-center">
+                      <h3>Time: 10:00 Minutes</h3>
+                    </div>
+                    <div className="col-md-6 text-center">
+                      <button
+                        className="btn btn-primary"
+                        onClick={() => this.handleStartQuiz()}
+                      >
+                        Start Test
+                    </button>
+                    </div>
+                  </div>
+                </div>
+                :
+                <>
+                  <div className="row mt-3 bg-white fixed-top">
+                    <div className="col text-center">
+                      Time Remaining: <Timer handleEndTest={this.handleEndTest} />
+                    </div>
                   </div>
                   <div className="row">
                     <div className="col">
@@ -235,22 +228,37 @@ int main()
                       />
                     </div>
                   </div>
+                  <div className="row mb-4">
+                    <div className="col-6 text-center">
+                      <Button variant="success" onClick={this.handleEndTest}>
+                        Submit Test
+                      </Button>
+                    </div>
+                    <div className="col-6 text-center">
+                      <Button variant="danger" onClick={this.handleEndTest}>
+                        End Test
+                      </Button>
+                    </div>
+                  </div>
                 </>
               }
-              <div className="text-center mb-3">
-                <Button variant="primary" onClick={this.handleShow}>
-                  Show Score
+              {showScoreCard &&
+                <div className="row text-center card mb-5 p-3">
+                  <h5>Your Test Score for Self-Evaluation</h5>
+                  <Button variant="primary" onClick={this.handleShow}>
+                    Show Score
                 </Button>
-              </div>
+                </div>
+              }
               <div className="row">
                 <div className="col">
-                  <h5> For More Quiz Test</h5>
+                  <h5> For More Quiz Test </h5>
                   <MCQTestCardCarousel />
                 </div>
               </div>
             </div>
             <div className="col-md-4  mt-md-4">
-              <h4>Recommendation</h4>
+              {/* <h4>Recommendation</h4>
               <RecommendPost
                 imgsource="python_mcqs.jpeg"
                 RecPostHading="Python MCQs Questions"
@@ -265,7 +273,7 @@ int main()
                 imgsource="c_mcq.jpeg"
                 RecPostHading="C MCQs Questions"
                 link="/index_c_mcqs"
-              />
+              /> */}
               <RightSideSection />
             </div>
           </div>

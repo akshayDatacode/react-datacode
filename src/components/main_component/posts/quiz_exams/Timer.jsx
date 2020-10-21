@@ -36,8 +36,8 @@ class Timer extends Component {
     const { handleEndTest } = this.props
     return (
       <>
-        {minutes === 0 && seconds === 0
-          ? () => handleEndTest()
+        {(minutes === 0 && seconds === 0)
+          ? handleEndTest()
           : <h1>{minutes}:{seconds < 10 ? `0${seconds}` : seconds}</h1>
         }
       </>
