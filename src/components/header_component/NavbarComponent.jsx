@@ -56,32 +56,31 @@ class NavbarComponent extends Component {
     return (
       <>
          
-            <nav class=" toolbar navbar navbar-expand-lg navbar-dark bg-dark" id="top" >
+            <div id="top" >
             <div className="toolbar_toggle-button">
               <DrawerToggleButton clickButton={this.props.drawerClickHandler} />
             </div>
-  <div id="navlink">
+            <div id="navlink">
   <div id="links" className="hvr-sweep-to-top"  ><a id="ahref" href="/react-datacode/#/index_technologies"> Tutorials/Courses
 </a>
               </div>
               <div id="links" className="hvr-sweep-to-top" ><a id="ahref" href="/react-datacode/#/index_training_certification">Training/Certification</a>
 
               </div>
-              <div id="links" className="hvr-sweep-to-top"> <a id="ahref" href="/react-datacode/#/index_mcqs">Programming MCQs</a></div>
+              <div id="links" className="hvr-sweep-to-top"> <a id="ahref" href="/react-datacode/#/index_mcqs">MCQs</a></div>
 
               <div id="links" className="hvr-sweep-to-top"><a id="ahref" href="/react-datacode/#/index_interview_questioins">Interview Preparation</a>
 
               </div>
               <div id="links" className="hvr-sweep-to-top"><a id="ahref" href="/react-datacode/#/index_practice_questions">Practice Questions</a>
               </div>
-              <div id="links" className="hvr-sweep-to-top"><a id="ahref" href="/react-datacode/#/index_quize_tests">Quiz Tests</a>
+              <div id="links" className="hvr-sweep-to-top"><a id="ahref" href="/react-datacode/#/index_quize_tests">Tests</a>
               </div>
               <div id="links" className="hvr-sweep-to-top" ><a id="ahref" href="/react-datacode/#/index_programming_questions">Example Questions</a>
 
               </div>
-   
-  </div>
-</nav>
+</div>
+   </div>
 
           {/* <div id="navlink">
             <div id="links" ><a id="ahref" href="/react-datacode/#/index_technologies"> Tutorials/Courses

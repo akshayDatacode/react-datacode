@@ -55,7 +55,7 @@ class SideDrawer extends Component {
               <hr
                 style={{
                   backgroundColor: "white",
-                  width: "180px",
+                  width: "120px",
                   marginLeft: "-3px",
                   marginTop: "-1px",
                   marginBottom: "-5px",
@@ -138,7 +138,7 @@ class SideDrawer extends Component {
               <hr
                 style={{
                   backgroundColor: "white",
-                  width: "180px",
+                  width: "120px",
                   marginLeft: "-3px",
                   marginTop: "-3px",
                   marginBottom: "5px",
@@ -150,7 +150,7 @@ class SideDrawer extends Component {
               <hr
                 style={{
                   backgroundColor: "white",
-                  width: "180px",
+                  width: "120px",
                   marginLeft: "-3px",
                   marginTop: "3px",
                   marginBottom: "5px",
@@ -158,11 +158,11 @@ class SideDrawer extends Component {
               />
             </li>
             <li>
-              <a href="/react-datacode/#/index_events">Events/Contests</a>
+              <a href="/react-datacode/#/index_events">Events</a>
               <hr
                 style={{
                   backgroundColor: "white",
-                  width: "180px",
+                  width: "120px",
                   marginLeft: "-3px",
                   marginTop: "3px",
                   marginBottom: "5px",
@@ -174,7 +174,7 @@ class SideDrawer extends Component {
               <hr
                 style={{
                   backgroundColor: "white",
-                  width: "180px",
+                  width: "120px",
                   marginLeft: "-3px",
                   marginTop: "3px",
                   marginBottom: "5px",

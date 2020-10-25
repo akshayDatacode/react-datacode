@@ -31,7 +31,7 @@ class IndexHeader extends Component {
           drawerClickHandler={this.drawerToggleClickHandler}
           isUserLogin={this.props.isUserLogin}
         />
-        <NavbarComponent/>
+        <NavbarComponent/> 
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backDrop} 
       </>
