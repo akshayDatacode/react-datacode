@@ -7,9 +7,9 @@ class CarouselComponent extends Component {
   render() {
     return (
       <>
-        <Carousel indicators={false}>
+        <Carousel indicators={false} style={{marginTop: "10px"}} >
           <Carousel.Item>
-            <div className="card text-center border border-white">
+            <div className="card text-center border border-white"  >
               <a href="http://bit.ly/datacodemockdrive" target="_blank">
                 <img
                   className=" card-img d-block w-100"

@@ -55,11 +55,11 @@ class NavbarComponent extends Component {
   render() {
     return (
       <>
-         
+
+
+
             <div id="top" >
-            <div className="toolbar_toggle-button">
-              <DrawerToggleButton clickButton={this.props.drawerClickHandler} />
-            </div>
+            
             <div id="navlink">
   <div id="links" className="hvr-sweep-to-top"  ><a id="ahref" href="/react-datacode/#/index_technologies"> Tutorials/Courses
 </a>
