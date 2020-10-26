@@ -1,13 +1,13 @@
-body{
+ body{
   overflow-x: hidden;
 }
 *{box-sizing: border-box;}
 
 #top{
  margin-top: 70px;
- margin-bottom: -45px;
+ margin-bottom: -55px;
  background-color: #242c42;
- width:1500px;
+ width:1410px;
  
 
 }
@@ -15,9 +15,10 @@ body{
  color:white;
  font-size:16px;
  margin:0 auto;
- width:66%;
+ width:70%;
  height: 50px;
  padding:10px;
+ 
  
  display: flex;
  flex-direction: row;
@@ -31,14 +32,10 @@ body{
  margin-top:-5px;
  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-
 #ahref{
-   text-decoration: none;
-   color: white		;
-   display:block;
-
-  
+  text-decoration: none;
+  display:block;
+  color: white; 
 }
 .hvr-sweep-to-top {
    display: inline-block;
@@ -51,7 +48,6 @@ body{
    transition-property: color;
    -webkit-transition-duration: 0.3s;
    transition-duration: 0.3s;
-   color: black;
 
  }
  .hvr-sweep-to-top:before {
@@ -62,7 +58,7 @@ body{
    left: 0;
    right: 0;
    bottom: 0;
-   height:60px;
+   height:61px;
    margin-top: -16px;
    background: #06CB6C;
    -webkit-transform: scaleY(0);
@@ -77,13 +73,14 @@ body{
    transition-timing-function: ease-out;
  }
  .hvr-sweep-to-top:hover, .hvr-sweep-to-top:focus, .hvr-sweep-to-top:active {
-   color:#242c42;
+   color: #242c42;
  }
  .hvr-sweep-to-top:hover:before, .hvr-sweep-to-top:focus:before, .hvr-sweep-to-top:active:before {
    -webkit-transform: scaleY(1);
    transform: scaleY(1);
 
  }
+ 
 
  @media only screen   
 and (min-device-width : 320px)   
@@ -104,13 +101,16 @@ and (max-device-width : 480px)
 }
 @media only screen and (width: 768px){
  #top{
-  width:105%;
+  width:102%;
   
  }
 
  #navlink{
    margin:0 auto;
    width:92%;
+   height:70px;
+ }
+ .hvr-sweep-to-top:before {
    height:70px;
  }
 }
@@ -128,28 +128,16 @@ and (max-device-width : 480px)
 
 
 @media only screen and (min-width: 1440px) {
- #top{
-  width:169%;
+  #top{
+   width:169%;
+  }
+ 
+  #navlink{
+    margin: 0 auto;
+    width:60%;
+    margin-left:180px;
+  }
  }
+ 
 
- #navlink{
-   margin: 0 auto;
-   width:60%;
- }
-}
-
-@media only screen and (width: 1280px) {
- #top{
-  width:1%;
- }
-
- #navlink{
-   margin:0 auto;
-   width:60%;
- }
-}
-
-
-
-
-
+ 

@@ -140,7 +140,7 @@ class SideDrawer extends Component {
                   backgroundColor: "white",
                   width: "120px",
                   marginLeft: "-3px",
-                  marginTop: "-3px",
+                  marginTop: "43px",
                   marginBottom: "5px",
                 }}
               />
