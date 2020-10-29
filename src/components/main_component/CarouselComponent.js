@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 import { Carousel } from "react-bootstrap";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
+import "../../assets/css/Carousel.css";
+
 
 class CarouselComponent extends Component {
   state = {};
   render() {
     return (
       <>
-        <Carousel indicators={false} style={{marginTop: "10px"}} >
+        <Carousel indicators={false} id="carousel">
           <Carousel.Item>
             <div className="card text-center border border-white"  >
               <a href="http://bit.ly/datacodemockdrive" target="_blank">

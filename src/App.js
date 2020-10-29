@@ -33,7 +33,7 @@ class App extends Component {
         <div className="container-fluid">
           <div className="row">
             <div className="row">
-              <div className="col-md col-sm mb-4">
+              <div className="col-md col-sm mb-4" style={{marginBottom:'120px'}}>
                 {/* <IndexHeader isUserLogin={this.state.user} /> */}
                 <IndexHeader />
               </div>

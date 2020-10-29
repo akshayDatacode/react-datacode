@@ -1,0 +1,12 @@
+#carousel{
+    margin-top:75px;
+}
+
+
+
+@media only screen and (min-width:320px) and (max-width:414px){
+
+    #carousel{
+        margin-top: 10px;
+    }
+}

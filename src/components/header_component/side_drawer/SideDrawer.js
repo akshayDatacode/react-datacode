@@ -31,16 +31,21 @@ import {
   faAward,
 } from "@fortawesome/free-solid-svg-icons";
 
-class SideDrawer extends Component {
-  state = {};
+class SideDrawer extends React.Component {
+  
+state = {};
+
   render() {
     let drawerClasses = "side-drawer";
     if (this.props.show) {
       drawerClasses = "side-drawer open";
     }
+
+   
+    
     return (
       <>
-        <nav className={drawerClasses}>
+        <div className={drawerClasses}>
           <div id="userid">
             <img
               id="avatarimg"
@@ -51,59 +56,73 @@ class SideDrawer extends Component {
           </div>
           <ul>
             <li>
-              <a href="/react-datacode/#/home"> <FontAwesomeIcon
-                    icon={faHome}
-                    className="mr-2"
-                  />Home</a>
+              <a href="/react-datacode/#/home">
+                {" "}
+                <FontAwesomeIcon icon={faHome} className="mr-2" />
+                Home
+              </a>
               <hr id="dividerline" />
             </li>
             <li>
-              <a href="/react-datacode/#/index_technologies"> <FontAwesomeIcon
-                    icon={faChalkboardTeacher}
-                    className="mr-2"
-                  />Tutorials/Courses</a>
+              <a href="/react-datacode/#/index_technologies">
+                {" "}
+                <FontAwesomeIcon icon={faChalkboardTeacher} className="mr-2" />
+                Tutorials/Courses
+              </a>
               <hr id="dividerline" />
             </li>
 
             <li>
-              <a href="/react-datacode/#/index_training_certification"> <FontAwesomeIcon icon={faAward} className="mr-2" />
+              <a href="/react-datacode/#/index_training_certification">
+                {" "}
+                <FontAwesomeIcon icon={faAward} className="mr-2" />
                 Training/Certification
               </a>
               <hr id="dividerline" />
             </li>
 
             <li>
-              <a href="/react-datacode/#/index_code_challange"><FontAwesomeIcon icon={faLaptopCode} className="mr-2" />
+              <a href="/react-datacode/#/index_code_challange">
+                <FontAwesomeIcon icon={faLaptopCode} className="mr-2" />
                 Code Challange
               </a>
               <hr id="dividerline" />
             </li>
 
             <li>
-              <a href="/react-datacode/#/index_interview_questioins"><FontAwesomeIcon icon={faUserTie} className="mr-2" />
+              <a href="/react-datacode/#/index_interview_questioins">
+                <FontAwesomeIcon icon={faUserTie} className="mr-2" />
                 Interview Preparation
               </a>
               <hr id="dividerline" />
             </li>
             <li>
-              <a href="/react-datacode/#/index_mcqs"><FontAwesomeIcon icon={faTasks} className="mr-2" />Programming MCQs</a>
+              <a href="/react-datacode/#/index_mcqs">
+                <FontAwesomeIcon icon={faTasks} className="mr-2" />
+                Programming MCQs
+              </a>
               <hr id="dividerline" />
             </li>
 
             <li>
-              <a href="/react-datacode/#/index_practice_questions"><FontAwesomeIcon icon={faCode} className="mr-2" />
+              <a href="/react-datacode/#/index_practice_questions">
+                <FontAwesomeIcon icon={faCode} className="mr-2" />
                 Practice Questions
               </a>
               <hr id="dividerline" />
             </li>
 
             <li>
-              <a href="/react-datacode/#/index_quize_tests"><FontAwesomeIcon icon={faFlask} className="mr-2" />Quiz Tests</a>
+              <a href="/react-datacode/#/index_quize_tests">
+                <FontAwesomeIcon icon={faFlask} className="mr-2" />
+                Quiz Tests
+              </a>
               <hr id="dividerline" />
             </li>
 
             <li>
-              <a href="/react-datacode/#/index_programming_questions"><FontAwesomeIcon icon={faFileCode} className="mr-2" />
+              <a href="/react-datacode/#/index_programming_questions">
+                <FontAwesomeIcon icon={faFileCode} className="mr-2" />
                 Example Questions
               </a>
               <hr id="dividerline" />
@@ -188,16 +207,25 @@ class SideDrawer extends Component {
               </NavDropdown> */}
 
             <li>
-              <a href="/react-datacode/#/index_articles"><FontAwesomeIcon icon={faBookOpen} className="mr-2" />Blogs</a>
+              <a href="/react-datacode/#/index_articles">
+                <FontAwesomeIcon icon={faBookOpen} className="mr-2" />
+                Blogs
+              </a>
               <hr id="dividerline" />
             </li>
             <li>
-              <a href="/react-datacode/#/index_events"><FontAwesomeIcon icon={faCalendar} className="mr-2"/>Events</a>
+              <a href="/react-datacode/#/index_events">
+                <FontAwesomeIcon icon={faCalendar} className="mr-2" />
+                Events
+              </a>
               <hr id="dividerline" />
             </li>
 
             <li>
-              <a href="/react-datacode/#/index_events"><FontAwesomeIcon icon={faSignInAlt} className="mr-2"/>Login/Signup</a>
+              <a href="/react-datacode/#/index_events">
+                <FontAwesomeIcon icon={faSignInAlt} className="mr-2" />
+                Login/Signup
+              </a>
             </li>
             {/* <li>
                   <a href="#footer" onClick={this.logout}>
@@ -205,7 +233,7 @@ class SideDrawer extends Component {
                   </a>
                 </li> */}
           </ul>
-        </nav>
+        </div>
       </>
     );
   }

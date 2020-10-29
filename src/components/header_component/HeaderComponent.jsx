@@ -81,53 +81,7 @@ class HeaderComponent extends Component {
                     Home
                   </a>
                 </li>
-                {/* <li>
-                  <NavDropdown
-                    title={
-                      <span className="my-auto" style={{ color: "#04FFD5" }}>
-                        <FontAwesomeIcon icon={faBookOpen} /> Learn
-                  </span>
-                    }
-                    id="collasible-nav-dropdown"
-                  >
-                    <NavDropdown.Item href="/react-datacode/#/index_technologies">
-                      <FontAwesomeIcon
-                        icon={faChalkboardTeacher}
-                        className="mr-2"
-                      />
-                    Tutorials & Courses
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="/react-datacode/#/index_training_certification">
-                      <FontAwesomeIcon icon={faAward} className="mr-2" />
-                      Training & Certification
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="/react-datacode/#/index_mcqs">
-                      <FontAwesomeIcon icon={faTasks} className="mr-2" />
-                      Programming MCQs
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="/react-datacode/#/index_code_challange">
-                      <FontAwesomeIcon icon={faLaptopCode} className="mr-2" />
-                      Code Challange
-                    </NavDropdown.Item>
-
-                    <NavDropdown.Item href="/react-datacode/#/index_interview_questioins">
-                      <FontAwesomeIcon icon={faUserTie} className="mr-2" />
-                      Interview Preparation
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="/react-datacode/#/index_practice_questions">
-                      <FontAwesomeIcon icon={faCode} className="mr-2" />
-                      Programming Practice Questions
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="/react-datacode/#/index_quize_tests">
-                      <FontAwesomeIcon icon={faFlask} className="mr-2" />
-                      Programming Quiz Tests
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="/react-datacode/#/index_programming_questions">
-                      <FontAwesomeIcon icon={faFileCode} className="mr-2" />
-                      Programming Example Questions
-                    </NavDropdown.Item>
-                  </NavDropdown>
-                </li> */}
+               
                 <li>
                   <a href="/react-datacode/#/index_articles">
                     <FontAwesomeIcon icon={faInfoCircle} /> About
@@ -145,6 +99,37 @@ class HeaderComponent extends Component {
                 </li> */}
               </ul>
             </div>
+          </nav>
+      
+          <nav class="navbar navbar-default"  id="navlinkbar">
+               <div id="navlinks"> 
+               <div id="links" className="hvr-sweep-to-top "  ><a id="ahref" href="/react-datacode/#/index_technologies"> Tutorials/Courses
+ </a>
+               </div>               
+               <div id="links" className="hvr-sweep-to-top" ><a id="ahref" href="/react-datacode/#/index_training_certification">Training/Certification</a>
+
+               </div>
+            <div id="links" className="hvr-sweep-to-top"> <a id="ahref" href="/react-datacode/#/index_mcqs">MCQs</a></div>
+
+               <div id="links" className="hvr-sweep-to-top"><a id="ahref" href="/react-datacode/#/index_interview_questioins">Interview Preparation</a>
+
+              </div>
+              <div id="links" className="hvr-sweep-to-top"><a id="ahref" href="/react-datacode/#/index_practice_questions">Practice Questions</a>
+             </div>
+              <div id="links" className="hvr-sweep-to-top"><a id="ahref" href="/react-datacode/#/index_quize_tests">Tests</a>
+             </div>
+<div id="links" className="hvr-sweep-to-top" ><a id="ahref" href="/react-datacode/#/index_programming_questions">Example Questions</a>
+</div>
+<div id="links" className="hvr-sweep-to-top"><a id="ahref" href="/react-datacode/#/index_events">Events</a>
+
+</div>
+<div id="links" className="hvr-sweep-to-top"><a id="ahref" href="/react-datacode/#/index_articles">Blogs</a>
+</div>
+<div id="links" className="hvr-sweep-to-top"  ><a class="ahrefcolor" href="/mock_drive" >Mock Drive</a>
+</div> 
+
+              </div>
+         
           </nav>
         </header>
       </>
