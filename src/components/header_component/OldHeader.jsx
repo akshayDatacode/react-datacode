@@ -9,18 +9,11 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faHome,
-  faAddressCard,
   faClipboardList,
   faNewspaper,
-  faTools,
   faLaptopCode,
-  faUserAstronaut,
   faUserTie,
-  faUsersCog,
   faFileCode,
-  faCheckCircle,
-  faPills,
-  faThList,
   faChalkboardTeacher,
   faTasks,
   faBookOpen,
