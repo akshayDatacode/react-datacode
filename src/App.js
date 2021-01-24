@@ -5,8 +5,12 @@ import AppRouters from "./app_routers/AppRouters";
 import IndexFooter from "./components/footer_component/indexFooter";
 import IndexHeader from "./components/header_component/IndexHeader";
 import FooterComponentUpper from "./components/footer_component/FooterComponentUpper";
+
 // import fire from "./config/fire";
 // import LoginComponent from "./user_base/LoginComponent";
+
+import "./assets/scss/style.scss";
+import "./assets/scss/landing_page.scss";
 
 class App extends Component {
   state = {
@@ -33,7 +37,7 @@ class App extends Component {
         <div className="container-fluid">
           <div className="row">
             <div className="row">
-              <div className="col-md col-sm mb-4" style={{marginBottom:'120px'}}>
+              <div className="col-md col-sm">
                 {/* <IndexHeader isUserLogin={this.state.user} /> */}
                 <IndexHeader />
               </div>
@@ -42,13 +46,13 @@ class App extends Component {
         </div>
 
         <div className="container-fluid m-0 ">
-          <div className="row  mt-4 mb-2 p-0 ">
-            <div className="col">
+          <div className="row mb-2 p-0 ">
+            <div className="col p-0">
               {/* <div>{this.state.user ? <AppRouters /> : <LoginComponent />}</div> */}
               <AppRouters />
             </div>
           </div>
-          <div className="row  mt-5 mb-2 p-0 ">
+          <div className="row mb-2 p-0 ">
             <div className="col">
               <FooterComponentUpper />
             </div>

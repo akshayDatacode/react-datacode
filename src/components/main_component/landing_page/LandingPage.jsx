@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import CarouselComponent from "./CarouselComponent";
+import CarouselComponent from "../CarouselComponent";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { BrowserRouter as Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
@@ -29,7 +29,7 @@ import {
   faSearch,
   faFlask,
 } from "@fortawesome/free-solid-svg-icons";
-import FooterComponentUpper from "../footer_component/FooterComponentUpper";
+import FooterComponentUpper from "../../footer_component/FooterComponentUpper";
 import {
   faConnectdevelop,
   faSearchengin,
@@ -39,7 +39,7 @@ import {
   faDAndDBeyond,
 } from "@fortawesome/free-brands-svg-icons";
 
-class MainComponent extends Component {
+class LandingPage extends Component {
   state = {};
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -51,11 +51,12 @@ class MainComponent extends Component {
           <title>Datacode | Computer Science Learning Community</title>
         </Helmet>
         <CarouselComponent />
-        <div className="container-fluid p-0">
-          <div className="row">
-            <div className="col">
+        <div className="p-0">
+          <div className="row m-0">
+            <div className="col-12 p-0">
               <h2 className="text-center mt-5" style={{ color: "#072C71" }}>
                 What you will Find on Learning Community
+                
               </h2>
               <div class="card-deck mt-5 ml-md-5 mr-md-5 pr-md-5 pl-md-5">
                 <div class="card border border-white ml-md-5 mr-md-5 pr-md-5 pl-md-5">
@@ -168,12 +169,12 @@ class MainComponent extends Component {
         </div>
 
         {/* Images Start */}
-        <div className="container-fluid p-0 mt-5">
+        <div className="p-0 mt-5">
           <div className="row mr-md-5 ml-md-5">
             <div className="col-md-6">
               <img
                 className=" card-img-top mx-auto img-fluid img-circle d-block"
-                src={require("../../assets/images/cover3.jpeg")}
+                src={require("../../../assets/images/cover3.jpeg")}
                 alt="avatar"
               />
             </div>
@@ -201,7 +202,7 @@ class MainComponent extends Component {
             </div>
           </div>
         </div>
-        <div className="container-fluid p-0 mt-5">
+        <div className="p-0 mt-5">
           <div className="row mr-md-5 ml-md-5">
             <div className="col-md-6 text-center">
               <div className="card border border-white bg-white">
@@ -229,7 +230,7 @@ class MainComponent extends Component {
             <div className="col-md-6">
               <img
                 className=" card-img-top mx-auto img-fluid img-circle d-block"
-                src={require("../../assets/images/cover4.jpeg")}
+                src={require("../../../assets/images/cover4.jpeg")}
                 alt="avatar"
               />
             </div>
@@ -240,8 +241,8 @@ class MainComponent extends Component {
 
         {/* First Row of Find and Learn */}
 
-        <div className="container-fluid p-0 mt-5">
-          <div className="row">
+        <div className="p-0 mt-5">
+          <div className="row m-0">
             <div className="col">
               <h4 className="text-center text-dark">
                 {" "}
@@ -356,10 +357,10 @@ class MainComponent extends Component {
         {/* >>>>>>>>>>>>>>>>>>>>>>>>>>>First -3  Cards Ending  ...............*/}
         {/* ... starting Lower Cards -5  .........................................*/}
         <div
-          className="container-fluid mt-5 rounded pt-4 ml-0 mr-0"
+          className="mt-5 rounded pt-4 ml-0 mr-0"
           style={{ backgroundColor: "#072C71" }}
         >
-          <div className="row">
+          <div className="row m-0">
             <div className="col p-0">
               <h4 className="text-center text-light">
                 {" "}
@@ -480,4 +481,4 @@ class MainComponent extends Component {
   }
 }
 
-export default MainComponent;
+export default LandingPage;

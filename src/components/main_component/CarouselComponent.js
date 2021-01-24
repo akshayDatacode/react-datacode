@@ -1,64 +1,39 @@
 import React, { Component } from "react";
 import { Carousel } from "react-bootstrap";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "../../assets/css/Carousel.css";
-
 
 class CarouselComponent extends Component {
   state = {};
   render() {
     return (
       <>
-        <Carousel indicators={false} id="carousel">
+        <Carousel
+          nextIcon=""
+          nextLabel=""
+          prevIcon=""
+          prevLabel=""
+          indicators={false}
+          id="carousel"
+          className="p-0 mt-0"
+        >
           <Carousel.Item>
-            <div className="card text-center border border-white"  >
-              <a href="http://bit.ly/datacodemockdrive" target="_blank">
-                <img
-                  className=" card-img d-block w-100"
-                  src={require("../../assets/images/mocktestdrive.png")}
-                  alt="First slide"
-                />
-              </a>
+            <div className="carousel-card pt-5 text-center">
+              <h1 className="mt-3">
+                WelCome to the Awesome Learning Portal.... :)
+              </h1>
             </div>
           </Carousel.Item>
           {/* <Carousel.Item>
-            <div className="card text-center border border-white">
-              <Link to="/rgpv">
-                <img
-                  className=" card-img d-block w-100"
-                  src={require("../../assets/images/mocktestdrive.png")}
-                  alt="First slide"
-                />
-              </Link>
-            </div>
-          </Carousel.Item> */}
-          <Carousel.Item>
             <div className="card text-center border border-white">
               <img
                 className=" card-img d-block w-100"
                 src={require("../../assets/images/datacodeheader1.jpeg")}
                 alt="First slide"
               />
-
-              {/* <div className="card-img-overlay d-none d-md-block">
-                <h1 className="display-1 mt-5 text-weight-bold">DataCode.in</h1>
-                <p>We Write Codes</p>
-                <Link to="/home">
-                  <div className="btn btn-lg btn-success mt-5">
-                    Register Now
-                  </div>
-                </Link>
-              </div> */}
-              {/* <div className="card-img-overlay d-block d-sm-none m-0 p-0 text-left">
-                <h2 className="text-weight-bold p-0 ">DataCode.in</h2>
-                <p>Find | Learn | Code</p>
-                <Link to="/home">
-                  <div className="btn btn-success">Getting Start</div>
-                </Link>
-              </div> */}
             </div>
-          </Carousel.Item>
-          <Carousel.Item>
+          </Carousel.Item> */}
+          {/* <Carousel.Item>
             <div className="card text-center border border-white">
               <img
                 className=" card-img d-block w-100"
@@ -87,7 +62,7 @@ class CarouselComponent extends Component {
                 </Link>
               </div>
             </div>
-          </Carousel.Item>
+          </Carousel.Item> */}
         </Carousel>
       </>
     );

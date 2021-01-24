@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
-import MainComponent from "../components/main_component";
+import LandingPage from "../components/main_component/landing_page";
 import HomeComponent from "../components/main_component/HomeComponent";
 import AboutUs from "../components/header_component/AboutUs";
 
@@ -356,7 +356,7 @@ class AppRouters extends Component {
       <>
         <Switch>
           {/* Navigarion Routing */}
-          <Route exact path="/" component={MainComponent} />
+          <Route exact path="/" component={LandingPage} />
           <Route path="/home" component={HomeComponent} />
           <Route path="/aboutus" component={AboutUs} />
 
