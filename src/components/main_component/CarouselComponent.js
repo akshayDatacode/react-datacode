@@ -18,10 +18,25 @@ class CarouselComponent extends Component {
           className="p-0 mt-0"
         >
           <Carousel.Item>
-            <div className="carousel-card pt-5 text-center">
-              <h1 className="mt-3">
-                WelCome to the Awesome Learning Portal.... :)
-              </h1>
+            <div className="carousel-card pt-5 px-md-4 px-2 text-center">
+              <div className="text-left">
+                <h1 className="mt-3">
+                  WelCome to the Awesome Learning Portal.... :)
+                </h1>
+                <h2>Your Learning Assistant</h2>
+              </div>
+              <div className="col-12 col-md-6 qoute text-left">
+                <h6>
+                  <q>
+                    The Pessimist Sees Difficulty In Every Opportunity, The
+                    Optimist Sees Opportunity In Every Difficulty
+                  </q>
+                </h6>
+                <i>- Akshay Mandliya</i>
+              </div>
+              <button className="btn get-started-button shadow-lg">
+                Get Started
+              </button>
             </div>
           </Carousel.Item>
           {/* <Carousel.Item>

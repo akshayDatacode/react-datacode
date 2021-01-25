@@ -1,7 +1,17 @@
 h1,
-h2 {
+h2,
+h3,
+h6 {
   color: #30006d;
   font-weight: 600;
   // font-family: "Akzidenz", "‘Helvetica Neue’", Helvetica, Arial, sans-serif;
+  font-family: "Fira Code", monospace;
+}
+
+h4,
+h5 {
+  color: #212529;
+}
+p {
   font-family: "Fira Code", monospace;
 }

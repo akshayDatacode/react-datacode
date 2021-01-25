@@ -2,8 +2,89 @@
   height: 500px;
   width: auto;
   background-color: #30006d;
-
-  h1 {
+  // background: linear-gradient(#30006d, #6d03f7c9);
+  h1,
+  h6 {
     color: white;
+  }
+  h2 {
+    color: #fdd023;
+  }
+
+  .qoute {
+    font-size: 15px;
+    color: white;
+    margin-top: 90px;
+  }
+
+  .get-started-button {
+    //height: 20px;
+    //width: 50px;
+    background-color: wheat;
+    border-radius: 5px;
+    color: #30006d;
+    font-weight: 600;
+    font-family: "Fira Code", monospace;
+    padding: 10px;
+    border: solid 5px #30006d;
+    margin-top: 80px;
+  }
+}
+
+.community-section {
+  .join-us-button {
+    //height: 20px;
+    //width: 50px;
+    background-color: wheat;
+    border-radius: 3px;
+    color: #30006d;
+    font-weight: 600;
+    font-family: "Fira Code", monospace;
+    padding: 8px;
+    border: solid 5px #30006d;
+    margin-top: 35px;
+    align-items: center;
+  }
+}
+
+.aboutus-section {
+  .find-out-more {
+    height: 200px;
+    width: 300px;
+    background-color: #30006d;
+    color: white;
+    .find-out-more {
+      vertical-align: bottom;
+      color: #fdd023;
+      text-align: right;
+      justify-content: right;
+    }
+  }
+  .tag-lines {
+    span {
+      justify-content: space-between;
+      align-content: initial;
+      margin-right: 15px;
+      font-weight: 600;
+    }
+  }
+}
+
+.category-section {
+  .category-card {
+    h6 {
+      font-size: 18px;
+      font-weight: 600;
+    }
+    p {
+      font-size: 13px;
+      color: #212529;
+    }
+  }
+  .card-shadow {
+    border: none;
+    box-shadow: 0 7px 4px 0px rgba(0, 0, 0, 0.09);
+    height: auto;
+    border-radius: 5px;
   }
 }
