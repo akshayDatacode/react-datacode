@@ -11,6 +11,7 @@ import FooterComponentUpper from "./components/footer_component/FooterComponentU
 
 import "./assets/scss/style.scss";
 import "./assets/scss/landing_page.scss";
+import "./assets/scss/footer.scss";
 
 class App extends Component {
   state = {
@@ -52,11 +53,11 @@ class App extends Component {
               <AppRouters />
             </div>
           </div>
-          <div className="row mb-2 p-0 ">
+          {/* <div className="row mb-2 p-0 ">
             <div className="col">
               <FooterComponentUpper />
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="row m-0 p-0 ">
