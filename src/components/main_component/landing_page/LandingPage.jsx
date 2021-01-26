@@ -55,9 +55,9 @@ class LandingPage extends Component {
           <title>Datacode | Computer Science Learning Community</title>
         </Helmet>
         <CarouselComponent />
-        <div className="row m-0 community-section">
+        <div className="row m-0 px-md-5 community-section">
           <div className="col-12 col-md-6 text-center">
-            <Question width="500px" height="500px" />
+            <Question width="100%" height="Auto" />
           </div>
           <div className="col-12 col-md-6 pt-5 pr-4">
             <h3>Are you a Computer Science Beginner?</h3>
@@ -71,8 +71,8 @@ class LandingPage extends Component {
             </button>
           </div>
         </div>
-        <div className="row m-0 aboutus-section">
-          <div className="col-12 col-md-6 pt-5 pl-5">
+        <div className="row m-0 px-md-5 aboutus-section">
+          <div className="col-12 col-md-6 pt-5">
             <h3>What we do!</h3>
             <div className="tag-lines">
               <span>Find</span><span>Learn</span><span>Connect</span><span>Grow</span>
@@ -87,7 +87,7 @@ class LandingPage extends Component {
             </div>
           </div>
           <div className="col-12 col-md-6 text-center">
-            <Aboutus width="500px" height="500px" />
+            <Aboutus width="100%" height="Auto" />
           </div>
         </div>
         <div className="row m-0 category-section text-center px-5">
@@ -120,7 +120,9 @@ class LandingPage extends Component {
               />
             ))}
           </div>
-          <span className="text-right">Find out more <i className="fal fa-long-arrow-right" /></span>
+          <div className="text-right">
+            <h6 className="text-right justify-content-right">Find out more <i className="fal fa-long-arrow-right" /></h6>
+          </div>
         </div>
       </>
     );

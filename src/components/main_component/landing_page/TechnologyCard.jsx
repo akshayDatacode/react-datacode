@@ -24,7 +24,7 @@ const TechnologyCard = ({
               </Link>}
           </div>
           <div className="col-8">
-            <h6 className="pt-3">{technologyName}</h6>
+            <Link to={link}><h6 className="pt-3">{technologyName}</h6></Link>
             <p>{technologyDiscription}</p>
           </div>
         </div>

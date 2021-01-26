@@ -18,7 +18,7 @@ class CarouselComponent extends Component {
           className="p-0 mt-0"
         >
           <Carousel.Item>
-            <div className="carousel-card pt-5 px-md-4 px-2 text-center">
+            <div className="carousel-card pt-5 px-md-5 px-2 text-center">
               <div className="text-left">
                 <h1 className="mt-3">
                   WelCome to the Awesome Learning Portal.... :)

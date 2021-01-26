@@ -46,13 +46,13 @@ export const data = [
 export const techData = [
   {
     technologyName: "Python",
-    svgSource: "",
+    svgSource: "Python.png",
     technologyDiscription: "Learn to build and enable Python solutions.",
     link: "",
   },
   {
     technologyName: "React",
-    svgSource: "",
+    svgSource: "React.png",
     technologyDiscription: "Learn to build React applications",
     link: "",
   },
@@ -64,19 +64,19 @@ export const techData = [
   },
   {
     technologyName: "Java",
-    svgSource: "",
+    svgSource: "Java.png",
     technologyDiscription: "Learn to build and enable Java solutions.",
     link: "",
   },
   {
     technologyName: "Andorid",
-    svgSource: "",
+    svgSource: "Android.png",
     technologyDiscription: "Learn to build and enable Android solutions.",
     link: "",
   },
   {
     technologyName: "Javascript",
-    svgSource: "",
+    svgSource: "JS.png",
     technologyDiscription:
       "Learn to build and enable Web development solutions.",
     link: "",
@@ -89,7 +89,7 @@ export const techData = [
   },
   {
     technologyName: "Angular",
-    svgSource: "",
+    svgSource: "Angular.png",
     technologyDiscription: "Learn to build React applications",
     link: "",
   },

@@ -35,35 +35,23 @@ class App extends Component {
   render() {
     return (
       <>
-        <div className="container-fluid">
-          <div className="row">
-            <div className="row">
-              <div className="col-md col-sm">
-                {/* <IndexHeader isUserLogin={this.state.user} /> */}
-                <IndexHeader />
-              </div>
-            </div>
-          </div>
-        </div>
+        <div className="wrapper">
+          {/* <div className="container-fluid"> */}
 
-        <div className="container-fluid m-0 ">
-          <div className="row mb-2 p-0 ">
-            <div className="col p-0">
-              {/* <div>{this.state.user ? <AppRouters /> : <LoginComponent />}</div> */}
-              <AppRouters />
-            </div>
-          </div>
+          {/* <IndexHeader isUserLogin={this.state.user} /> */}
+          <IndexHeader />
+
+          {/* </div> */}
+
+          {/* <div>{this.state.user ? <AppRouters /> : <LoginComponent />}</div> */}
+          <AppRouters />
           {/* <div className="row mb-2 p-0 ">
             <div className="col">
               <FooterComponentUpper />
             </div>
           </div> */}
-        </div>
 
-        <div className="row m-0 p-0 ">
-          <div className="col">
-            <IndexFooter />
-          </div>
+          <IndexFooter />
         </div>
       </>
     );
