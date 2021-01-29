@@ -39,7 +39,6 @@ class App extends Component {
 
           {/* <IndexHeader isUserLogin={this.state.user} /> */}
           <IndexHeader />
-
           {/* </div> */}
 
           {/* <div>{this.state.user ? <AppRouters /> : <LoginComponent />}</div> */}

@@ -6,7 +6,7 @@ class IndexFooter extends Component {
   render() {
     return (
       <>
-        <div className="row">
+        <div className="row m-0">
           <div className="col p-0 m-0">
             <FooterComponent />
           </div>

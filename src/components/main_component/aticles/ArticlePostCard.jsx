@@ -31,7 +31,7 @@ class ArticlePostCard extends Component {
             <p className="card-text text-secondary ">{this.props.paragraph}</p>
           </div>
           <div class="card-footer border border-white bg-white pt-2">
-            <div className="row shadow">
+            <div className="row m-0 shadow">
               <div className="col text-right">
                 <a href={this.props.link} target="_blank">
                   <h6 className="text-secondary">

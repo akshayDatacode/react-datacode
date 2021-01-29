@@ -106,11 +106,11 @@ class LandingPage extends Component {
           </div>
         </div>
 
-        <div className="row m-0 category-section text-center px-5">
+        <div className="row m-0 category-section text-center">
           <div className="col-12 text-center">
             <h2 className="text-center">What technology do you want to learn today?</h2>
           </div>
-          <div className="row mt-5 text-left d-flex justify-content-center">
+          <div className="row mt-5 px-md-5 px-3 mx-md-0 mx-3 text-left d-flex justify-content-center">
             {techData.map((item) => (
               <TechnologyCard
                 technologyName={item.technologyName}

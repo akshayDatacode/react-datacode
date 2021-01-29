@@ -17,7 +17,7 @@ class HomeComponent extends Component {
         </Helmet>
         <HeaderBannerSection imgsource="datacodeheader1.jpeg" />
         {/* Index Posts */}
-        <div className="row ">
+        <div className="row m-0">
           <div className="col-md-1 d-none d-sm-block"></div>
           <div className="col-md-8 p-0">
             <Indexposts />
