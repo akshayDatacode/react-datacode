@@ -90,11 +90,11 @@ class LandingPage extends Component {
             <Aboutus width="100%" height="Auto" />
           </div>
         </div>
-        <div className="row m-0 category-section text-center px-5">
+        <div className="row m-0 category-section text-center">
           <div className="col-12 text-center">
             <h2 className="text-center">What you will find here?</h2>
           </div>
-          <div className="row mt-3 text-center d-flex justify-content-center">
+          <div className="row mt-md-3 mt-5 px-md-5 px-3 mx-md-0 mx-3 text-center d-flex justify-content-center">
             {data.map((item) => (
               <CategoryCard
                 categoryName={item.categoryName}

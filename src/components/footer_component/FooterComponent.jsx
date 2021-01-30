@@ -47,7 +47,7 @@ const FooterComponent = () => {
             </p>
           </div>
         </div>
-        <div className="row mt-3 px-5 d-flex align-items-center">
+        <div className="row mt-3 px-md-5 px-3 d-flex align-items-center">
           <div className="col-12 col-md-3 text-md-right text-left">
             <h6>Follow us on <i className="fal fa-long-arrow-right" /></h6>
           </div>
@@ -58,7 +58,7 @@ const FooterComponent = () => {
             >
               <FontAwesomeIcon
                 icon={faFacebookSquare}
-                size="3x"
+                size="2x"
                 color="#b89ddb"
                 className="m-3"
               />
@@ -69,7 +69,7 @@ const FooterComponent = () => {
             >
               <FontAwesomeIcon
                 icon={faInstagram}
-                size="3x"
+                size="2x"
                 color="#b89ddb"
                 className="m-3"
               />
@@ -80,7 +80,7 @@ const FooterComponent = () => {
             >
               <FontAwesomeIcon
                 icon={faLinkedinIn}
-                size="3x"
+                size="2x"
                 color="#b89ddb"
                 className="m-3"
               />
@@ -91,7 +91,7 @@ const FooterComponent = () => {
             >
               <FontAwesomeIcon
                 icon={faYoutube}
-                size="3x"
+                size="2x"
                 color="#b89ddb"
                 className="m-3"
               />
@@ -102,7 +102,7 @@ const FooterComponent = () => {
             >
               <FontAwesomeIcon
                 icon={faTwitter}
-                size="3x"
+                size="2x"
                 color="#b89ddb"
                 className="m-3"
               />
@@ -113,7 +113,7 @@ const FooterComponent = () => {
             >
               <FontAwesomeIcon
                 icon={faTelegramPlane}
-                size="3x"
+                size="2x"
                 color="#b89ddb"
                 className="m-3"
               />
@@ -124,7 +124,7 @@ const FooterComponent = () => {
             >
               <FontAwesomeIcon
                 icon={faWhatsapp}
-                size="3x"
+                size="2x"
                 color="#b89ddb"
                 className="m-3"
               />
