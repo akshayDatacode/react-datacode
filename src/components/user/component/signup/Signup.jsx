@@ -24,10 +24,11 @@ const Signup = ({
       if (res) {
         setUserDetails(res.data)
         console.log("Loged IN")
+        reset('signupForm')
       }
     })
 
-    reset('signupForm')
+
   }
 
   return (
