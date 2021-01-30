@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Field, reduxForm } from 'redux-form'
 import { Redirect, Link } from 'react-router-dom';
+import Loader from 'react-loader-spinner'
 
 import { renderInputField } from '../../../../shared_components/ReduxFormFields'
 import { required } from '../../../../utils/validators'
@@ -8,7 +9,7 @@ import { ReactComponent as Code } from '../../../../assets/images/svg/code_1.svg
 import { ReactComponent as GoogleLogo } from "../../../../assets/images/svg/google.svg"
 
 const Login = ({
-  reset, handleSubmit, submitting, loginUser,
+  reset, handleSubmit, submitting, loginUser, loginUserLoading,
 }) => {
   const [userDetails, setUserDetails] = useState()
 
@@ -26,17 +27,24 @@ const Login = ({
         reset('signupForm')
       }
     })
-
-
   }
 
   return (
     <>
       {userDetails && <Redirect to={`/contributor_home`} />}
       <div className="row m-0 login">
-        <div className="col-12 col-md-8 img-section p-md-5">
+        <div className="col-12 col-md-8 img-section p-md-5 text-center">
           <div className="p-md-4">
-            <Code width="auto" height="auto" className="m-2 m-md-0" />
+            {loginUserLoading ?
+              <Loader
+                type="Grids"
+                color="#30006d"
+                height={100}
+                width={100}
+                timeout={3000} //3 secs
+              /> :
+              <Code width="auto" height="auto" className="m-2 m-md-0" />
+            }
           </div>
         </div>
         <div className="col-12 col-md-4 login-section">

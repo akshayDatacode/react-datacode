@@ -5,6 +5,7 @@ import { signupUser } from "../../actions";
 
 const mapStateToProps = ({ user }) => ({
   userError: user.error,
+  signupUserLoading: user.signupUserLoading,
 });
 
 const mapDispatchToProps = {

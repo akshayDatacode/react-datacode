@@ -1,16 +1,20 @@
 import * as constants from "../constants";
 
 const getLoginUser = (state, action) => {
-  debugger;
-  console.log("reduxI", action.payload);
   localStorage.setItem("userDetails", JSON.stringify(action.payload));
   console.log(action.payload);
   return {
     ...state,
     error: null,
     currentUser: action.payload,
+    loginUserLoading: !state.loginUserLoading,
   };
 };
+
+const setLoginUserLoading = (state) => ({
+  ...state,
+  loginUserLoading: !state.loginUserLoading,
+});
 
 const getLogoutUser = (state) => {
   localStorage.clear();
@@ -31,8 +35,14 @@ const getSignupUser = (state, action) => {
     ...state,
     error: null,
     currentUser: action.payload,
+    signupUserLoading: !state.signupUserLoading,
   };
 };
+
+const setSignupUserLoading = (state) => ({
+  ...state,
+  signupUserLoading: !state.signupUserLoading,
+});
 
 const getSignupUserFailure = (state, action) => ({
   ...state,
@@ -45,4 +55,6 @@ export const getUserDataHandlers = {
   [constants.GET_SIGNUP_USER]: getSignupUser,
   [constants.GET_SIGNUP_USER_ERROR]: getSignupUserFailure,
   [constants.GET_LOGOUT_USER]: getLogoutUser,
+  [constants.SET_SIGNUP_USER_LOADING]: setSignupUserLoading,
+  [constants.SET_LOGIN_USER_LOADING]: setLoginUserLoading,
 };

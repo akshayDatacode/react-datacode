@@ -7,6 +7,7 @@ import { loginUser } from "../../actions";
 const mapStateToProps = ({ user }) => ({
   userError: user.error,
   currentUser: user.currentUser,
+  loginUserLoading: user.loginUserLoading,
 });
 
 const mapDispatchToProps = {

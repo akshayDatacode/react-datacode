@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Field, reduxForm } from 'redux-form'
 import { Redirect, Link } from 'react-router-dom';
+import Loader from 'react-loader-spinner'
 
 import { renderInputField } from '../../../../shared_components/ReduxFormFields'
 import { required, email } from '../../../../utils/validators'
@@ -9,7 +10,7 @@ import { ReactComponent as GoogleLogo } from "../../../../assets/images/svg/goog
 
 
 const Signup = ({
-  reset, handleSubmit, submitting, signupUser
+  reset, handleSubmit, submitting, signupUser, signupUserLoading,
 }) => {
   const [userDetails, setUserDetails] = useState()
 
@@ -25,19 +26,30 @@ const Signup = ({
         setUserDetails(res.data)
         console.log("Loged IN")
         reset('signupForm')
+      } else {
+        reset('signupForm')
       }
     })
-
-
   }
+
+  console.log("signupUserLoading", signupUserLoading)
 
   return (
     <>
       {userDetails && <Redirect to={`/confirmation`} />}
       <div className="row m-0 login">
-        <div className="col-12 col-md-8 img-section p-md-5">
+        <div className="col-12 col-md-8 img-section p-md-5 text-center">
           <div className="p-md-4">
-            <Code width="auto" height="auto" className="m-2 m-md-0" />
+            {signupUserLoading ?
+              <Loader
+                type="Puff"
+                color="#30006d"
+                height={100}
+                width={100}
+                timeout={3000} //3 secs
+              /> :
+              <Code width="auto" height="auto" className="m-2 m-md-0" />
+            }
           </div>
         </div>
         <div className="col-12 col-md-4 login-section">
