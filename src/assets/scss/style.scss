@@ -19,6 +19,80 @@ p {
   font-family: "Fira Code", monospace;
 }
 
+.form-label {
+  font-size: 14px;
+  color: rgb(61, 79, 88);
+  position: relative;
+  // height: 16px;
+  // width: 36px;
+  font-weight: bold;
+  line-height: 16px;
+  display: inline;
+  letter-spacing: 0.02em;
+}
+
+label {
+  cursor: default;
+}
+
+.form-input-field {
+  width: 100%;
+  height: 36px;
+  padding-left: 12px;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Akzidenz", "‘Helvetica Neue’", Helvetica, Arial, sans-serif;
+  z-index: 1;
+  color: rgb(33, 49, 60);
+  background-color: rgb(255, 255, 255);
+  padding-right: 12px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-image: initial;
+  transition: border-color 150ms ease-in-out 0s;
+  outline: none;
+  border-color: rgb(184, 196, 194);
+}
+
+input[type="text" i] {
+  padding: 1px 7px;
+}
+input[type="password" i] {
+  padding: 1px 7px;
+}
+
+input {
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  appearance: textfield;
+  cursor: text;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+}
+
+.field-error {
+  font-size: 10px;
+  font-family: "Akzidenz", "‘Helvetica Neue’", Helvetica, Arial, sans-serif;
+  color: red;
+}
+
+.link {
+  color: blue;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
 @media (max-width: 767px) {
   body {
     overflow-x: hidden;

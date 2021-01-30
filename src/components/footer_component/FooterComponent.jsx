@@ -19,23 +19,23 @@ const FooterComponent = () => {
     <>
       <div className="mt-2 pt-5 footer-section">
         {/* //</div><div className="col-12 "> */}
-        <div className="row m-0 px-5">
-          <div className="col-12 col-md-3">
+        <div className="row m-0 px-md-5 px-3">
+          <div className="col-12 col-md-3 mt-md-0 mt-3">
             <h6>Learning Resources</h6>
             <Link to="/index_technologies"><span>Tutorial & Courses</span></Link>
           </div>
-          <div className="col-12 col-md-3">
+          <div className="col-12 col-md-3 mt-md-0 mt-3">
             <h6>Useful Links</h6>
             <Link to="/index_events"><span>Event</span></Link>
           </div>
-          <div className="col-12 col-md-3">
+          <div className="col-12 col-md-3 mt-md-0 mt-3">
             <h6>Our Partners</h6>
             <p>Community Partner</p>
             <Link to="https://www.facebook.com/groups/DevCIndore">
               <span>Facebook Developer Circle, Indore</span>
             </Link>
           </div>
-          <div className="col-12 col-md-3 logo-section">
+          <div className="col-12 col-md-3 logo-section mt-md-0 mt-3">
             <h6 className="text-uppercase font-weight-bold">Datacode.in</h6>
             <hr
               class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto"

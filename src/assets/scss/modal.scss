@@ -1,0 +1,20 @@
+.display-flex {
+  display: flex;
+  justify-content: flex-end;
+  white-space: nowrap;
+  width: 100%;
+  button {
+    padding: 8px 10px;
+    width: auto;
+    margin-right: 10px;
+  }
+}
+.custom-modal-header {
+  h5 {
+    white-space: nowrap;
+    font-size: 18px;
+  }
+  button {
+    width: auto;
+  }
+}

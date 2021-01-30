@@ -34,9 +34,11 @@ class CarouselComponent extends Component {
                 </h6>
                 <i>- Akshay Mandliya</i>
               </div>
-              <button className="btn get-started-button shadow-lg">
-                Get Started
-              </button>
+              <Link to="/signup">
+                <button className="btn get-started-button shadow-lg">
+                  Get Started
+                </button>
+              </Link>
             </div>
           </Carousel.Item>
           {/* <Carousel.Item>

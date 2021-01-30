@@ -1,0 +1,13 @@
+.contributor-sidenav {
+  font-family: Segoe UI, SegoeUI, Helvetica Neue, Helvetica, Arial, sans-serif;
+  a {
+    display: block;
+    color: #203647;
+    margin-top: 10px;
+    &:hover {
+      a {
+        background-color: #007cc7;
+      }
+    }
+  }
+}

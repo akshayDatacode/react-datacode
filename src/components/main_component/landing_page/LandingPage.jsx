@@ -1,37 +1,12 @@
 import React, { Component } from "react";
 import CarouselComponent from "../CarouselComponent";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { BrowserRouter as Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { ReactComponent as Question } from '../../../assets/images/svg/question.svg'
 import { ReactComponent as Aboutus } from '../../../assets/images/svg/aboutus.svg'
 import CategoryCard from './CategoryCard'
 import { data, techData } from './helper'
-import {
-  faFileCode,
-  faTools,
-  faNewspaper,
-  faUserClock,
-  faLaptopCode,
-  faBookDead,
-  faAddressBook,
-  faSwatchbook,
-  faBook,
-  faPuzzlePiece,
-  faChalkboardTeacher,
-  faTerminal,
-  faSearchMinus,
-  faPlus,
-  faCartPlus,
-  faSlash,
-  faArrowRight,
-  faUserTie,
-  faTasks,
-  faCodeBranch,
-  faCode,
-  faSearch,
-  faFlask,
-} from "@fortawesome/free-solid-svg-icons";
 import FooterComponentUpper from "../../footer_component/FooterComponentUpper";
 import {
   faConnectdevelop,
@@ -66,9 +41,11 @@ class LandingPage extends Component {
               We at Datacode.in aims in creating a platform for beginners' communities where they will get the best online technical content like the latest technical blogs, tutorials and courses, practice questions, quizzes, training and certification, and lot more on a single platform.
               Learning has never been this easy, then what are you waiting for? Join Datacode.in and Learn with Community
             </p>
-            <button className="btn join-us-button shadow-lg text-center">
-              Join Us
-            </button>
+            <Link to="/signup">
+              <button className="btn join-us-button shadow-lg text-center">
+                Join Us
+              </button>
+            </Link>
           </div>
         </div>
         <div className="row m-0 px-md-5 aboutus-section">
@@ -120,7 +97,7 @@ class LandingPage extends Component {
               />
             ))}
           </div>
-          <div className="text-right">
+          <div className="col-12 text-right px-5 my-3">
             <h6 className="text-right justify-content-right">Find out more <i className="fal fa-long-arrow-right" /></h6>
           </div>
         </div>
