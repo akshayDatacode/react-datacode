@@ -1,0 +1,44 @@
+.home {
+  justify-content: space-between;
+  .card-shadow {
+    border: none;
+    box-shadow: 0 7px 4px 0px rgba(0, 0, 0, 0.09);
+    height: auto;
+    border-radius: 5px;
+  }
+  h5 {
+    font-size: 13px;
+    color: #30006d;
+    font-weight: 600;
+  }
+  .card-tag {
+    border-radius: 5px;
+    p {
+      font-size: 12px;
+    }
+  }
+  .baseline {
+    justify-content: baseline;
+    align-items: baseline;
+  }
+}
+.contributor-section {
+  justify-content: space-between;
+  .contributor-btn {
+    border: solid 4px #30006d;
+    height: 40px;
+    width: 200px;
+    border-radius: 6px;
+    h6 {
+      font-weight: 600;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .home-card {
+    h2 {
+      font-size: 25px;
+    }
+  }
+}

@@ -3,7 +3,7 @@ import { Switch, Route, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 // --------------------------------------------
 import LandingPage from "../../components/main_component/landing_page";
-import HomeComponent from "../../components/main_component/HomeComponent";
+import HomeComponent from "../../components/main_component/home";
 import AboutUs from "../../components/header_component/AboutUs";
 
 

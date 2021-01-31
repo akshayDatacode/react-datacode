@@ -17,7 +17,7 @@ const FooterComponent = () => {
 
   return (
     <>
-      <div className="mt-2 pt-5 footer-section">
+      <div className="mt-2 mt-md-0 pt-5 footer-section">
         {/* //</div><div className="col-12 "> */}
         <div className="row m-0 px-md-5 px-3">
           <div className="col-12 col-md-3 mt-md-0 mt-3">

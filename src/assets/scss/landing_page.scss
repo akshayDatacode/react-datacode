@@ -53,12 +53,16 @@
     width: 300px;
     background-color: #30006d;
     color: white;
+    border-radius: 5px;
     .find-out-more {
       vertical-align: bottom;
       color: #fdd023;
       text-align: right;
       justify-content: right;
     }
+  }
+  p {
+    font-size: 17px;
   }
   .tag-lines {
     span {

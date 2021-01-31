@@ -21,6 +21,7 @@ import "../assets/scss/login.scss";
 import "../assets/scss/style.scss";
 import "../assets/scss/landing_page.scss";
 import "../assets/scss/footer.scss";
+import "../assets/scss/home.scss";
 
 const App = () => {
   useEffect(() => {

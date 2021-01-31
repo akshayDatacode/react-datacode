@@ -35,7 +35,8 @@ class IndexPosts extends Component {
   render() {
     return (
       <>
-        {/* First 3 Post Cards */}
+
+
         <div className="container-fluid mt-md-5 mt-3">
           <div class="row ">
             <div className="col">
@@ -54,8 +55,7 @@ class IndexPosts extends Component {
                     </h4>
                   </Link>
                   <p>
-                  A one step solution for your technical learning.<br/> Learn online from the best programming tutorials and courses submitted and voted by the programming community.
-
+                    A one step solution for your technical learning.<br /> Learn online from the best programming
                   </p>
                   <h4 className="text-center p-0 m-0 "> Find and Learn</h4>
                 </div>
@@ -75,7 +75,7 @@ class IndexPosts extends Component {
                     </h4>
                   </Link>
                   <p>
-                  A one step solution for your Certificates.<br/>Our hands-on training and practical certification collected from  all over the internet helps you to learn the essentials and build your career
+                    A one step solution for your Certificates.<br />Our hands-on training and practical certification collected from  all over the internet helps you to learn the essentials and build your career
 
                   </p>
                   <h4 className="text-center p-0 m-0 ">Get The Learning</h4>
@@ -96,7 +96,7 @@ class IndexPosts extends Component {
                     </h4>
                   </Link>
                   <p>
-                  A one step solution for your Interview Preparation.<br/>
+                    A one step solution for your Interview Preparation.<br />
                   Our specially designed Interview Questions helps you to learn the essentials and secure a Placement
                   </p>
                   <h4 className="text-center p-0 m-0 ">Get The Placement</h4>
@@ -117,7 +117,7 @@ class IndexPosts extends Component {
                     </h4>
                   </Link>
                   <p>
-                  A one step solution for your technical learning.<br/> Here we bring up lots of MCQs to solve and get yourself thorough with the technology. 
+                    A one step solution for your technical learning.<br /> Here we bring up lots of MCQs to solve and get yourself thorough with the technology.
                   </p>
                   <h4 className="text-center p-0 m-0 ">Challange Your Logic</h4>
                 </div>
@@ -137,7 +137,7 @@ class IndexPosts extends Component {
                     </h4>
                   </Link>
                   <p>
-                  A one step solution for your technical learning.<br/> You can test your knowledge through fun quizzes and evaluate your daily learning. 
+                    A one step solution for your technical learning.<br /> You can test your knowledge through fun quizzes and evaluate your daily learning.
                   </p>
                   <h4 className="text-center p-0 m-0 ">Test Your Practice</h4>
                 </div>
@@ -157,7 +157,7 @@ class IndexPosts extends Component {
                     </h4>
                   </Link>
                   <p>
-                  A one step solution for your technical learning.<br/> Practice what you learned and get better with your knowledge by our practice questions
+                    A one step solution for your technical learning.<br />
                   </p>
                   <h4 className="text-center p-0 m-0 ">Practice your logic </h4>
                 </div>
@@ -177,7 +177,7 @@ class IndexPosts extends Component {
                     </h4>
                   </Link>
                   <p>
-                  A one step solution for your technical learning.<br/> Test your practice and knowledge by solving programming example questions specially designed for you.
+                    A one step solution for your technical learning.<br /> Test your practice and knowledge by solving programming example questions specially designed for you.
                   </p>
                   <h4 className="text-center p-0 m-0 ">Practice Programming</h4>
                 </div>
@@ -197,7 +197,7 @@ class IndexPosts extends Component {
                     </h4>
                   </Link>
                   <p>
-                  A one step solution for your technical learning.<br/> A place where you can read blogs with fascinating knowledge, interests and ideas with people ranging from students, programmers and top technical experts. 
+                    A one step solution for your technical learning.<br /> A place where you can read blogs with fascinating knowledge, interests and ideas with people ranging from students, programmers and top technical experts.
                   </p>
                   <h4 className="text-center p-0 m-0 ">
                     Learn From Communities
@@ -218,7 +218,7 @@ class IndexPosts extends Component {
                     </h4>
                   </Link>
                   <p>
-                  A one step solution for Challanging yourself.<br/> We present weekly coding challenges where you can show off your knowledge and win the challenges. 
+                    A one step solution for Challanging yourself.<br /> We present weekly coding challenges where you can show off your knowledge and win the challenges.
 
 
                   </p>
