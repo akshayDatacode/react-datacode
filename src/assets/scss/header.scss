@@ -4,8 +4,6 @@
   background-color: whitesmoke;
   justify-content: space-between;
   align-items: center;
-  .left-section {
-  }
   .card-shadow {
     border: none;
     box-shadow: 0 7px 4px 0px rgba(0, 0, 0, 0.09);
@@ -18,5 +16,46 @@
   .join-us {
     width: 100px;
     border: solid 2px #30006d;
+  }
+
+  .toggle-button {
+    justify-content: space-around;
+    cursor: pointer;
+    color: #30006d;
+    font-size: 30px;
+  }
+
+  .left-section {
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .toggle-button {
+    display: none;
+  }
+  .header-text-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .left-section {
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+    .toggle-button {
+      align-items: center;
+    }
+    .header-text-mobile {
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+  }
+  .header-text {
+    display: none;
+  }
+  .right-section {
+    display: none;
   }
 }

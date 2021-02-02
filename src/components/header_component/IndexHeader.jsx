@@ -12,6 +12,7 @@ const IndexHeader = () => {
   const [sideDrawerOpen, setSideDrawerOpen] = useState(false)
 
   const drawerToggleClickHandler = () => {
+    console.log("ddd")
     setSideDrawerOpen((prevState) => {
       return !prevState.sideDrawerOpen
     });
@@ -24,7 +25,7 @@ const IndexHeader = () => {
   let backDrop;
 
   if (sideDrawerOpen) {
-    backDrop = <BackDrop click={() => backDropClickHandler} />;
+    backDrop = <BackDrop click={backDropClickHandler} />;
   }
 
   return (
