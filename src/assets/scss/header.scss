@@ -1,0 +1,22 @@
+.header {
+  width: auto;
+  height: 80px;
+  background-color: whitesmoke;
+  justify-content: space-between;
+  align-items: center;
+  .left-section {
+  }
+  .card-shadow {
+    border: none;
+    box-shadow: 0 7px 4px 0px rgba(0, 0, 0, 0.09);
+    height: auto;
+  }
+  .header-text {
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  .join-us {
+    width: 100px;
+    border: solid 2px #30006d;
+  }
+}

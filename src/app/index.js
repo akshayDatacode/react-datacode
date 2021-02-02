@@ -22,6 +22,7 @@ import "../assets/scss/style.scss";
 import "../assets/scss/landing_page.scss";
 import "../assets/scss/footer.scss";
 import "../assets/scss/home.scss";
+import "../assets/scss/header.scss";
 
 const App = () => {
   useEffect(() => {
@@ -57,9 +58,7 @@ const App = () => {
         {/* </div> */}
 
         {/* <div>{this.state.user ? <AppRouters /> : <LoginComponent />}</div> */}
-        <div className="mt-5">
-          <AppRouters />
-        </div>
+        <AppRouters />
 
         {/* <div className="row mb-2 p-0 ">
             <div className="col">

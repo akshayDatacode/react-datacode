@@ -1,43 +1,45 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import HeaderComponent from "./OldHeader";
+import Header from "./Header";
 // import NavbarComponent from "./NavbarComponent";
-// import SideDrawer from "./side_drawer/SideDrawer";
-// import BackDrop from "./back_drop/BackDrop";
+import SideDrawer from "./side_drawer/SideDrawer";
+import BackDrop from "./back_drop/BackDrop";
 
-class IndexHeader extends Component {
+const IndexHeader = () => {
   //  state = {
   //    sideDrawerOpen: false,
   //  };
+  const [sideDrawerOpen, setSideDrawerOpen] = useState(false)
 
-  //  drawerToggleClickHandler = () => {
-  //    this.setState((prevState) => {
-  //      return { sideDrawerOpen: !prevState.sideDrawerOpen };
-  //    });
-  //  };
+  const drawerToggleClickHandler = () => {
+    setSideDrawerOpen((prevState) => {
+      return !prevState.sideDrawerOpen
+    });
+  };
 
-  //  backDropClickHandler = () => {
-  //    this.setState({ sideDrawerOpen: false });
-  //  };
+  const backDropClickHandler = () => {
+    setSideDrawerOpen(false);
+  };
 
-  render() {
-    // let backDrop;
+  let backDrop;
 
-    // if (this.state.sideDrawerOpen) {
-    //   backDrop = <BackDrop click={this.backDropClickHandler} />;
-    // }
-    return (
-      <>
-        <HeaderComponent />
-        {/* <HeaderComponent 
+  if (sideDrawerOpen) {
+    backDrop = <BackDrop click={() => backDropClickHandler} />;
+  }
+
+  return (
+    <>
+      <Header drawerClickHandler={drawerToggleClickHandler} />
+      {/* /<HeaderComponent /> */}
+      {/* <HeaderComponent 
           drawerClickHandler={this.drawerToggleClickHandler}
           isUserLogin={this.props.isUserLogin}
         /> */}
-        {/* <NavbarComponent/>  */}
-        {/* <SideDrawer show={this.state.sideDrawerOpen} /> */}
-        {/* {backDrop}  */}
-      </>
-    );
-  }
+      {/* <NavbarComponent/>  */}
+      <SideDrawer show={sideDrawerOpen} />
+      {backDrop}
+    </>
+  );
 }
 
 export default IndexHeader;

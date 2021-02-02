@@ -32,8 +32,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 class SideDrawer extends React.Component {
-  
-state = {};
+  state = {};
 
   render() {
     let drawerClasses = "side-drawer";
@@ -41,8 +40,6 @@ state = {};
       drawerClasses = "side-drawer open";
     }
 
-   
-    
     return (
       <>
         <div className={drawerClasses}>
