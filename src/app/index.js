@@ -23,6 +23,7 @@ import "../assets/scss/landing_page.scss";
 import "../assets/scss/footer.scss";
 import "../assets/scss/home.scss";
 import "../assets/scss/header.scss";
+import "../assets/scss/side_nav.scss";
 
 const App = () => {
   useEffect(() => {

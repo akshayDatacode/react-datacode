@@ -92,3 +92,14 @@
     border-radius: 5px;
   }
 }
+
+@media (max-width: 767px) {
+  .category-section {
+    h2 {
+      font-size: 24px;
+    }
+  }
+  .carousel-card {
+    height: auto;
+  }
+}

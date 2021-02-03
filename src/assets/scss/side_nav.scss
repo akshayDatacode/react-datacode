@@ -1,0 +1,66 @@
+.side-drawer {
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80%;
+  max-width: 300px;
+  z-index: 200;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-out;
+
+  .side-header {
+    width: 100%;
+    border-bottom: solid 3px #30006d;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      font-size: 26px;
+      text-decoration: quote($string: "Hello Learner");
+      margin: 0;
+      font-style: italic;
+    }
+  }
+  .join-us {
+    width: 100px;
+    border: solid 2px #30006d;
+  }
+
+  ul {
+    width: 100%;
+    justify-content: center;
+    list-style-type: none;
+    li {
+      width: 90%;
+      align-items: right;
+      justify-content: right;
+      padding: 8px 0 8px 0;
+      margin: 20px 0 20px 0;
+      background-color: rgb(205, 205, 243);
+      border-top-left-radius: 600px;
+      border-bottom-left-radius: 600px;
+      position: relative;
+      left: 29px;
+      span {
+        text-align: left;
+        color: #30006d;
+        font-size: 16px;
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+.side-drawer.open {
+  transform: translateX(0);
+}
+
+side-drawer:not(.side-drawer) {
+  position: fixed;
+}
+
+.side-drawer-backdrop {
+  position: fixed !important;
+}

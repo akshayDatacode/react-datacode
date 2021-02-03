@@ -1,6 +1,4 @@
-import React, { Component } from "react";
-import "../../../assets/css/SideDrawer.css";
-import { NavDropdown } from "react-bootstrap";
+import React from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -30,210 +28,198 @@ import {
   faCalendar,
   faAward,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
-class SideDrawer extends React.Component {
-  state = {};
-
-  render() {
-    let drawerClasses = "side-drawer";
-    if (this.props.show) {
-      drawerClasses = "side-drawer open";
-    }
-
-    return (
-      <>
-        <div className={drawerClasses}>
-          <div id="userid">
-            <img
-              id="avatarimg"
-              src="https://i.postimg.cc/Lsr6Chgw/icon.png"
-              alt="avatar"
-            />
-            <div id="username">Hello Akshay!</div>
-          </div>
-          <ul>
-            <li>
-              <a href="/react-datacode/#/home">
-                {" "}
-                <FontAwesomeIcon icon={faHome} className="mr-2" />
-                Home
-              </a>
-              <hr id="dividerline" />
-            </li>
-            <li>
-              <a href="/react-datacode/#/index_technologies">
-                {" "}
-                <FontAwesomeIcon icon={faChalkboardTeacher} className="mr-2" />
-                Tutorials/Courses
-              </a>
-              <hr id="dividerline" />
-            </li>
-
-            <li>
-              <a href="/react-datacode/#/index_training_certification">
-                {" "}
-                <FontAwesomeIcon icon={faAward} className="mr-2" />
-                Training/Certification
-              </a>
-              <hr id="dividerline" />
-            </li>
-
-            <li>
-              <a href="/react-datacode/#/index_code_challange">
-                <FontAwesomeIcon icon={faLaptopCode} className="mr-2" />
-                Code Challange
-              </a>
-              <hr id="dividerline" />
-            </li>
-
-            <li>
-              <a href="/react-datacode/#/index_interview_questioins">
-                <FontAwesomeIcon icon={faUserTie} className="mr-2" />
-                Interview Preparation
-              </a>
-              <hr id="dividerline" />
-            </li>
-            <li>
-              <a href="/react-datacode/#/index_mcqs">
-                <FontAwesomeIcon icon={faTasks} className="mr-2" />
-                Programming MCQs
-              </a>
-              <hr id="dividerline" />
-            </li>
-
-            <li>
-              <a href="/react-datacode/#/index_practice_questions">
-                <FontAwesomeIcon icon={faCode} className="mr-2" />
-                Practice Questions
-              </a>
-              <hr id="dividerline" />
-            </li>
-
-            <li>
-              <a href="/react-datacode/#/index_quize_tests">
-                <FontAwesomeIcon icon={faFlask} className="mr-2" />
-                Quiz Tests
-              </a>
-              <hr id="dividerline" />
-            </li>
-
-            <li>
-              <a href="/react-datacode/#/index_programming_questions">
-                <FontAwesomeIcon icon={faFileCode} className="mr-2" />
-                Example Questions
-              </a>
-              <hr id="dividerline" />
-            </li>
-
-            {/* <NavDropdown
-              
-                title={
-
-                  <span className="my-auto" id="dropcolor">
-                    Learn
-                  </span>
-                }
-              >
-                <NavDropdown.Item
-                  id="items"
-                  href="/react-datacode/#/index_technologies"
-                >
-                  <FontAwesomeIcon
-                    icon={faChalkboardTeacher}
-                    className="mr-2"
-                  />
-                  Tutorials/Courses
-                </NavDropdown.Item>
-
-                <NavDropdown.Item
-                  id="items"
-                  href="/react-datacode/#/index_training_certification"
-                >
-                  <FontAwesomeIcon icon={faAward} className="mr-2" />
-                  Training/Certification
-                </NavDropdown.Item>
-
-                <NavDropdown.Item
-                  id="items"
-                  href="/react-datacode/#/index_mcqs"
-                >
-                  <FontAwesomeIcon icon={faTasks} className="mr-2" />
-                  Programming MCQs
-                </NavDropdown.Item>
-
-                <NavDropdown.Item
-                  id="items"
-                  href="/react-datacode/#/index_code_challange"
-                >
-                  <FontAwesomeIcon icon={faLaptopCode} className="mr-2" />
-                  Code Challange
-                </NavDropdown.Item>
-
-                <NavDropdown.Item
-                  id="items"
-                  href="/react-datacode/#/index_interview_questioins"
-                >
-                  <FontAwesomeIcon icon={faUserTie} className="mr-2" />
-                  Interview Preparation
-                </NavDropdown.Item>
-
-                <NavDropdown.Item
-                  id="items"
-                  href="/react-datacode/#/index_practice_questions"
-                >
-                  <FontAwesomeIcon icon={faCode} className="mr-2" />
-                  Practice Questions
-                </NavDropdown.Item>
-
-                <NavDropdown.Item
-                  id="items"
-                  href="/react-datacode/#/index_quize_tests"
-                >
-                  <FontAwesomeIcon icon={faFlask} className="mr-2" />
-                  Quiz Tests
-                </NavDropdown.Item>
-
-                <NavDropdown.Item
-                  id="items"
-                  href="/react-datacode/#/index_programming_questions"
-                >
-                  <FontAwesomeIcon icon={faFileCode} className="mr-2" />
-                  Example Questions
-                </NavDropdown.Item>
-
-              </NavDropdown> */}
-
-            <li>
-              <a href="/react-datacode/#/index_articles">
-                <FontAwesomeIcon icon={faBookOpen} className="mr-2" />
-                Blogs
-              </a>
-              <hr id="dividerline" />
-            </li>
-            <li>
-              <a href="/react-datacode/#/index_events">
-                <FontAwesomeIcon icon={faCalendar} className="mr-2" />
-                Events
-              </a>
-              <hr id="dividerline" />
-            </li>
-
-            <li>
-              <a href="/react-datacode/#/index_events">
-                <FontAwesomeIcon icon={faSignInAlt} className="mr-2" />
-                Login/Signup
-              </a>
-            </li>
-            {/* <li>
-                  <a href="#footer" onClick={this.logout}>
-                    Log Out
-                  </a>
-                </li> */}
-          </ul>
-        </div>
-      </>
-    );
+const SideDrawer = ({ backDropClickHandler, show }) => {
+  let drawerClasses = "side-drawer";
+  if (show) {
+    drawerClasses = "row m-0 side-drawer open";
   }
-}
+
+  return (
+    <>
+      <div className={drawerClasses}>
+        <div className="col-12 p-0">
+          <div className="row m-0 p-2 side-header">
+            <h2 className="mt-4">Hello! Learner</h2>
+            <div className="mt-2 p-3 qoute text-left">
+              <h6>
+                <q>
+                  The Pessimist Sees Difficulty In Every Opportunity, The
+                  Optimist Sees Opportunity In Every Difficulty
+                </q>
+              </h6>
+              <i>- Akshay Mandliya</i>
+            </div>
+            <Link to="/signup" onClick={() => backDropClickHandler()}>
+              <div className="btn join-us mb-3">Join Us</div>
+            </Link>
+          </div>
+          <div className="row m-0 ul-list">
+            <ul className="m-0 p-0">
+              <Link to="/home" onClick={() => backDropClickHandler()}>
+                <li>
+                  <span>
+                    <FontAwesomeIcon icon={faHome} className="mr-2" /> Home
+                  </span>
+                </li>
+              </Link>
+
+              <Link
+                to="/index_technologies"
+                onClick={() => backDropClickHandler()}
+              >
+                <li>
+                  <span>
+                    <FontAwesomeIcon
+                      icon={faChalkboardTeacher}
+                      className="mr-2"
+                    />{" "}
+                    Tutorials/Courses
+                  </span>
+                </li>
+              </Link>
+
+              <Link
+                to="/index_training_certification"
+                onClick={() => backDropClickHandler()}
+              >
+                <li>
+                  <span>
+                    <FontAwesomeIcon icon={faAward} className="mr-2" />{" "}
+                    Training/Certification
+                  </span>
+                </li>
+              </Link>
+              <Link
+                to="/index_interview_questioins"
+                onClick={() => backDropClickHandler()}
+              >
+                <li>
+                  <span>
+                    <FontAwesomeIcon icon={faUserTie} className="mr-2" />{" "}
+                    Interview Preparation
+                  </span>
+                </li>
+              </Link>
+              <Link
+                to="/index_quize_tests"
+                onClick={() => backDropClickHandler()}
+              >
+                <li>
+                  <span>
+                    <FontAwesomeIcon icon={faFlask} className="mr-2" /> Quiz
+                    Tests
+                  </span>
+                </li>
+              </Link>
+            </ul>
+          </div>
+        </div>
+        {/* <ul>
+          <li>
+            <a
+              href="/react-datacode/#/home"
+              onClick={() => backDropClickHandler()}
+            >
+              {" "}
+              <FontAwesomeIcon icon={faHome} className="mr-2" />
+              Home
+            </a>
+            <hr id="dividerline" />
+          </li>
+          <li>
+            <a href="/react-datacode/#/index_technologies">
+              {" "}
+              <FontAwesomeIcon icon={faChalkboardTeacher} className="mr-2" />
+              Tutorials/Courses
+            </a>
+            <hr id="dividerline" />
+          </li>
+
+          <li>
+            <a href="/react-datacode/#/index_training_certification">
+              {" "}
+              <FontAwesomeIcon icon={faAward} className="mr-2" />
+              Training/Certification
+            </a>
+            <hr id="dividerline" />
+          </li>
+
+          <li>
+            <a href="/react-datacode/#/index_code_challange">
+              <FontAwesomeIcon icon={faLaptopCode} className="mr-2" />
+              Code Challange
+            </a>
+            <hr id="dividerline" />
+          </li>
+
+          <li>
+            <a href="/react-datacode/#/index_interview_questioins">
+              <FontAwesomeIcon icon={faUserTie} className="mr-2" />
+              Interview Preparation
+            </a>
+            <hr id="dividerline" />
+          </li>
+          <li>
+            <a href="/react-datacode/#/index_mcqs">
+              <FontAwesomeIcon icon={faTasks} className="mr-2" />
+              Programming MCQs
+            </a>
+            <hr id="dividerline" />
+          </li>
+
+          <li>
+            <a href="/react-datacode/#/index_practice_questions">
+              <FontAwesomeIcon icon={faCode} className="mr-2" />
+              Practice Questions
+            </a>
+            <hr id="dividerline" />
+          </li>
+
+          <li>
+            <a href="/react-datacode/#/index_quize_tests">
+              <FontAwesomeIcon icon={faFlask} className="mr-2" />
+              Quiz Tests
+            </a>
+            <hr id="dividerline" />
+          </li>
+
+          <li>
+            <a href="/react-datacode/#/index_programming_questions">
+              <FontAwesomeIcon icon={faFileCode} className="mr-2" />
+              Example Questions
+            </a>
+            <hr id="dividerline" />
+          </li>
+          <li>
+            <a href="/react-datacode/#/index_articles">
+              <FontAwesomeIcon icon={faBookOpen} className="mr-2" />
+              Blogs
+            </a>
+            <hr id="dividerline" />
+          </li>
+          <li>
+            <a href="/react-datacode/#/index_events">
+              <FontAwesomeIcon icon={faCalendar} className="mr-2" />
+              Events
+            </a>
+            <hr id="dividerline" />
+          </li>
+
+          <li>
+            <a href="/react-datacode/#/index_events">
+              <FontAwesomeIcon icon={faSignInAlt} className="mr-2" />
+              Login/Signup
+            </a>
+          </li>
+          <li>
+            <a href="#footer">Log Out</a>
+          </li>
+        </ul> */}
+      </div>
+    </>
+  );
+};
 
 export default SideDrawer;

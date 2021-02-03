@@ -37,7 +37,7 @@ const IndexHeader = () => {
           isUserLogin={this.props.isUserLogin}
         /> */}
       {/* <NavbarComponent/>  */}
-      <SideDrawer show={sideDrawerOpen} />
+      <SideDrawer show={sideDrawerOpen} backDropClickHandler={backDropClickHandler} />
       {backDrop}
     </>
   );
