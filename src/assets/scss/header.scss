@@ -4,6 +4,7 @@
   background-color: whitesmoke;
   justify-content: space-between;
   align-items: center;
+
   .card-shadow {
     border: none;
     box-shadow: 0 7px 4px 0px rgba(0, 0, 0, 0.09);
@@ -27,13 +28,26 @@
 
   .left-section {
     justify-content: space-between;
+    align-items: center;
+    .category-dropdown {
+      width: auto;
+      color: #30006d;
+      border: solid 2px #30006d;
+      margin-left: 25px;
+      background-color: whitesmoke;
+    }
+    .dropdown-menu {
+      border: solid 2px #30006d;
+      border-radius: 5px;
+      width: 600px;
+    }
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .toggle-button {
-    display: none;
-  }
+  // .toggle-button {
+  //   display: none;
+  // }
   .header-text-mobile {
     display: none;
   }
@@ -50,6 +64,9 @@
     .header-text-mobile {
       font-size: 20px;
       text-transform: uppercase;
+    }
+    .category-dropdown {
+      display: none;
     }
   }
   .header-text {

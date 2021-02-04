@@ -36,9 +36,20 @@
 }
 
 @media (max-width: 767px) {
-  .home-card {
+  .home {
     h2 {
-      font-size: 25px;
+      font-size: 24px;
     }
+  }
+  main {
+    justify-content: space-between;
+  }
+
+  .left {
+    order: 2;
+  }
+
+  .right {
+    order: 1;
   }
 }

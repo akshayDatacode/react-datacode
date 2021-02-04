@@ -65,8 +65,8 @@ class HomeComponent extends Component {
                 />
               </div>
             </div>
-            <div className="row m-0 d-flex ">
-              <div className="col-12 col-md-5 justify-content-center px-3 px-md-5">
+            <div className="row m-0 d-flex main">
+              <div className="col-12 left col-md-5 justify-content-center px-3 px-md-5">
                 <TagCard title="Programming MCQs"
                   discription="Here we bring up lots of MCQs to solve and get yourself thorough with the technology."
                   svgSource="Mcq.png"
@@ -83,7 +83,7 @@ class HomeComponent extends Component {
                   link="/index_programming_questions"
                 />
               </div>
-              <div className="col-12 col-md-7 p-md-3">
+              <div className="col-12 col-md-7 p-md-3 right">
                 <div className="row m-0 text-md-left text-center">
                   <Link to="/index_technologies" className="d-md-flex">
                     <img

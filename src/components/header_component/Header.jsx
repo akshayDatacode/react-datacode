@@ -1,16 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
 
 const Header = ({
   drawerClickHandler,
 }) => {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggle = () => setDropdownOpen(prevState => !prevState);
+
   return (
     <>
       <div className="row m-0 header card-shadow px-md-5 py-md-0 py-2">
         <div className="row m-0 left-section px-4 px-md-0">
-          <i className="toggle-button fal fa-window" onClick={() => drawerClickHandler()} />
-          <h1 className="m-0 text-sm-right header-text">Learning Portal | Datacode.in</h1>
+          <i className="toggle-button far fa-cabinet-filing mx-md-3" onClick={() => drawerClickHandler()} />
+          <Link to="/"><h1 className="m-0 text-sm-right header-text">Learning Portal | Datacode.in</h1></Link>
           <h1 className="m-0 text-sm-right header-text-mobile">Datacode.in</h1>
+          <Dropdown isOpen={dropdownOpen} toggle={toggle}>
+            <DropdownToggle caret className="category-dropdown">
+              Categories
+              </DropdownToggle>
+            <DropdownMenu className="dropdown-menu">
+              <DropdownItem header>Header</DropdownItem>
+              <DropdownItem>Some Action</DropdownItem>
+              <DropdownItem text>Dropdown Item Text</DropdownItem>
+              <DropdownItem disabled>Action (disabled)</DropdownItem>
+              <DropdownItem divider />
+              <DropdownItem>Foo Action</DropdownItem>
+              <DropdownItem>Bar Action</DropdownItem>
+              <DropdownItem>Quo Action</DropdownItem>
+            </DropdownMenu>
+          </Dropdown>
         </div>
         <div className="right-section row m-0 d-none d-sm-block">
           <div className="col-12">
