@@ -365,6 +365,8 @@ import Confirmation from "../../components/user/component/Confirmation";
 import ResetPassword from "../../components/user/component/reset_password";
 import SocialMediaLinks from "../../components/user/component/social_media/SocialMediaLinks";
 import SpeakerRegistration from "../../components/user/component/speaker_registration";
+// Contributor --- Tutorial
+import AddTutorial from "../../components/contributor/tutotials/component/AddTutorial";
 
 
 // --------------------------------------------------------------------
@@ -1234,6 +1236,10 @@ const AppRouters = () => {
         <Route exact path="/social_media" component={SocialMediaLinks} />
         <Route exact path="/speaker_form" component={SpeakerRegistration} />
         {/* ------------------------ */}
+
+        {/*Admin . . . Contributor Tutorial  */}
+        <Route path="/add_tutorial" render={authGuard(AddTutorial)} />
+
 
         <Route path="*" component={NotFound} />
 

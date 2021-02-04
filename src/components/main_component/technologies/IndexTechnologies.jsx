@@ -88,11 +88,11 @@ class IndexTechnologies extends Component {
                   Java
                 </Link>
               </div>
-           
+
             </div>
 
             <div className="card-deck mt-4">
-            <div className="card text-center p-2">
+              <div className="card text-center p-2">
                 <Link to="/cpp">
                   <center>
                     <FontAwesomeIcon
@@ -112,7 +112,7 @@ class IndexTechnologies extends Component {
                   JavaScript
                 </Link>
               </div>
-            
+
               <div className="card text-center p-2">
                 <Link to="/sql">
                   <center>
@@ -125,7 +125,7 @@ class IndexTechnologies extends Component {
                   SQL
                 </Link>
               </div>
-             
+
             </div>
 
             <div className="card-deck mt-4">
@@ -164,8 +164,8 @@ class IndexTechnologies extends Component {
             </div>
 
             <div className="card-deck mt-4">
-             
-             
+
+
               <div className="card text-center p-2">
                 <Link to="/react">
                   <center>
@@ -188,7 +188,7 @@ class IndexTechnologies extends Component {
               </div>
             </div>
 
-           
+
 
             {/* <div className="card-deck mt-4">
               <div className="card text-center p-2">

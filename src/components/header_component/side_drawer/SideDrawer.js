@@ -49,16 +49,8 @@ const SideDrawer = ({ backDropClickHandler, show }) => {
             </div>
           </div>
           <div className="row m-0 p-2 side-header">
-            <h2 className="mt-4">Hello! Learner</h2>
-            <div className="mt-2 p-3 qoute text-left">
-              <h6>
-                <q>
-                  The Pessimist Sees Difficulty In Every Opportunity, The
-                  Optimist Sees Opportunity In Every Difficulty
-                </q>
-              </h6>
-              <i>- Akshay Mandliya</i>
-            </div>
+            <h2 className="mt-2">Hello! Learner</h2>
+            <p>Start your learning with Community</p>
             <Link to="/signup" onClick={() => backDropClickHandler()}>
               <div className="btn join-us mb-3">Join Us</div>
             </Link>

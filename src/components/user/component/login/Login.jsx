@@ -31,7 +31,7 @@ const Login = ({
 
   return (
     <>
-      {userDetails && <Redirect to={`/contributor_home`} />}
+      {userDetails && <Redirect to={`/add_tutorial`} />}
       <div className="row m-0 login">
         <div className="col-12 col-md-8 img-section p-md-5 text-center">
           <div className="p-md-4">
