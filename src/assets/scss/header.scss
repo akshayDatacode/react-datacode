@@ -1,9 +1,14 @@
 .header {
-  width: auto;
+  width: 100%;
   height: 80px;
   background-color: whitesmoke;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
+
+  position: sticky;
+  top: 0;
+  transition: top 0.3s;
 
   .card-shadow {
     border: none;
@@ -42,6 +47,10 @@
       width: 600px;
     }
   }
+}
+
+.header-hide {
+  top: -80px;
 }
 
 @media only screen and (min-width: 768px) {

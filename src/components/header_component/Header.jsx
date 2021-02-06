@@ -1,17 +1,37 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
+
+import { debounce } from './helper';
 
 const Header = ({
   drawerClickHandler,
 }) => {
+
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffSet);
+  const [visible, setVisible] = useState(true)
+
+  const handleScroll = debounce(() => {
+    const currentScrollPos = window.pageYOffset;
+
+    setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70) || currentScrollPos < 10);
+
+    setPrevScrollPos(currentScrollPos);
+  }, 100);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+
+  }, [prevScrollPos, visible, handleScroll])
 
   const toggle = () => setDropdownOpen(prevState => !prevState);
 
   return (
     <>
-      <div className="row m-0 header card-shadow px-md-5 py-md-0 py-2">
+      <div className={`${!visible && `header-hide`} row m-0 header card-shadow px-md-5 py-md-0 py-2`}>
         <div className="row m-0 left-section px-4 px-md-0">
           <i className="toggle-button far fa-cabinet-filing mx-md-3" onClick={() => drawerClickHandler()} />
           <Link to="/"><h1 className="m-0 text-sm-right header-text">Learning Portal | Datacode.in</h1></Link>

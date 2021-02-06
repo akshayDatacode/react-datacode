@@ -62,9 +62,9 @@ const App = () => {
 
         {/* <div>{this.state.user ? <AppRouters /> : <LoginComponent />}</div> */}
         <AppRouters />
-        <div className="footer-navbar">
-          <FooterNavBar />
-        </div>
+        {/* <div className="footer-navbar"> */}
+        <FooterNavBar />
+        {/* </div> */}
         {/* <div className="row mb-2 p-0 ">
             <div className="col">
               <FooterComponentUpper />
