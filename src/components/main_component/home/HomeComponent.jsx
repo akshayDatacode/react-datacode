@@ -17,6 +17,7 @@ class HomeComponent extends Component {
           <title>Datacode | Computer Science Learning Community</title>
         </Helmet>
         <CarouselComponent />
+        <h3 className="activities my-3 my-md-5">Activities for you!!!</h3>
         <div className="row m-0 home">
           <div className="col-12 p-3">
             <div className="row m-0 d-flex ">

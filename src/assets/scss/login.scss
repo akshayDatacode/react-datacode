@@ -51,6 +51,9 @@
     margin-inline-end: 0px;
     font-weight: bold;
   }
+  .img-section {
+    align-items: center;
+  }
   .login-button {
     color: lightgray;
     position: relative;
@@ -83,6 +86,7 @@
   .img-section {
     width: 100px;
     height: 100px;
+    align-items: center;
   }
   .login-section {
     margin-top: 170px;

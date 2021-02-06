@@ -38,6 +38,25 @@ class IndexTechnologies extends Component {
   render() {
     return (
       <>
+        <div className="row m-0 category-page ">
+          <div className="col-12 p-0">
+            <div className="row m-0 category-header ">
+              <div className="col-12 col-md-6 pt-4 left-header-section px-md-5 px-2">
+                <h1>Tutorials & Courses</h1>
+                <p>From building websites to analyzing data, the choice is yours. Find the best of the best courses to learn from...</p>
+              </div>
+              <div className="col-12 col-md-6 text-right right-header-section">
+                <img
+                  height="300px"
+                  width="300px"
+                  src={require(`../../../assets/images/svg/tutorial.png`)}
+                  alt="avatar"
+                  className="text-right img-fluid img-circle d-block"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="row">
           <div className="col-1"></div>
           <div className="col-md-8 mt-4">

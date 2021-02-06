@@ -8,6 +8,7 @@ import AppRouters from "./app_routers/AppRouters";
 import IndexFooter from "../components/footer_component/indexFooter";
 import IndexHeader from "../components/header_component/IndexHeader";
 import FooterComponentUpper from "../components/footer_component/FooterComponentUpper";
+import FooterNavBar from "../components/header_component/footer_nav/FooterNavBar";
 import { setLocalUser } from "../components/user/actions";
 
 // import fire from "./config/fire";
@@ -24,6 +25,7 @@ import "../assets/scss/footer.scss";
 import "../assets/scss/home.scss";
 import "../assets/scss/header.scss";
 import "../assets/scss/side_nav.scss";
+import "../assets/scss/category.scss";
 
 const App = () => {
   useEffect(() => {
@@ -60,7 +62,9 @@ const App = () => {
 
         {/* <div>{this.state.user ? <AppRouters /> : <LoginComponent />}</div> */}
         <AppRouters />
-
+        <div className="footer-navbar">
+          <FooterNavBar />
+        </div>
         {/* <div className="row mb-2 p-0 ">
             <div className="col">
               <FooterComponentUpper />

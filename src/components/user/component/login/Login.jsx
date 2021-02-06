@@ -41,7 +41,7 @@ const Login = ({
                 color="#30006d"
                 height={100}
                 width={100}
-                timeout={3000} //3 secs
+                timeout={8000} //8 secs
               /> :
               <Code width="auto" height="auto" className="m-2 m-md-0" />
             }

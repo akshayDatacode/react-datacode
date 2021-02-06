@@ -40,7 +40,7 @@ const SideDrawer = ({ backDropClickHandler, show }) => {
     <>
       <div className={drawerClasses}>
         <div className="col-12 p-0">
-          <div className="row ">
+          <div className="row d-none d-sm-block">
             <div className="col-12 text-right">
               <i
                 className="nav-cross fal fa-times mx-md-3"
