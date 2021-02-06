@@ -32,10 +32,10 @@ const Header = ({
   return (
     <>
       <div className={`${!visible && `header-hide`} row m-0 header card-shadow px-md-5 py-md-0 py-2`}>
-        <div className="row m-0 left-section px-4 px-md-0">
-          <i className="toggle-button far fa-cabinet-filing mx-md-3" onClick={() => drawerClickHandler()} />
-          <Link to="/"><h1 className="m-0 text-sm-right header-text">Learning Portal | Datacode.in</h1></Link>
-          <h1 className="m-0 text-sm-right header-text-mobile">Datacode.in</h1>
+        <div className="col-md-4 col-12 m-0 left-section px-4 px-md-0">
+          <i className="toggle-button far fa-cabinet-filing mx-md-3 mt-0 mt-1" onClick={() => drawerClickHandler()} />
+          {/* <Link to="/"><h1 className="m-0 text-sm-right header-text">Learning Portal | Datacode.in</h1></Link> */}
+          <h1 className="m-0 header-text-mobile">Datacode.in</h1>
           <Dropdown isOpen={dropdownOpen} toggle={toggle}>
             <DropdownToggle caret className="category-dropdown">
               Categories
@@ -52,14 +52,15 @@ const Header = ({
             </DropdownMenu>
           </Dropdown>
         </div>
-        <div className="right-section row m-0 d-none d-sm-block">
-          <div className="col-12">
-            <Link to="/signup">
-              <div className="btn join-us">
-                Join Us
+        <div className="col-4 text-center">
+          <Link to="/"><h1 className="m-0 header-text">Learning Portal | Datacode.in</h1></Link>
+        </div>
+        <div className="col-4 text-right right-section m-0 d-none d-sm-block">
+          <Link to="/signup">
+            <div className="btn join-us">
+              Join Us
             </div>
-            </Link>
-          </div>
+          </Link>
         </div>
       </div>
     </>
