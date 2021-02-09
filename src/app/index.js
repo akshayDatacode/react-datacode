@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import "bootstrap/dist/css/bootstrap.css";
 
@@ -27,12 +27,21 @@ import "../assets/scss/header.scss";
 import "../assets/scss/side_nav.scss";
 import "../assets/scss/category.scss";
 
-const App = () => {
+const App = ({ location }) => {
+  const showFooterPaths = ["#/", "#/home"];
+  const [showFooter, setShowFooter] = useState(false);
+
   useEffect(() => {
     var localUser = JSON.parse(localStorage.getItem("userDetails"));
     console.log("local user", localUser);
     setLocalUser(localUser);
-  }, []);
+
+    // if (showFooterPaths.includes(location.pathname)) {
+    //   setShowFooter(true);
+    // } else {
+    //   setShowFooter(false);
+    // }
+  });
   // state = {
   //   user: {},
   // };
@@ -61,17 +70,12 @@ const App = () => {
         {/* </div> */}
 
         {/* <div>{this.state.user ? <AppRouters /> : <LoginComponent />}</div> */}
-        <AppRouters />
-        {/* <div className="footer-navbar"> */}
-        <FooterNavBar />
-        {/* </div> */}
-        {/* <div className="row mb-2 p-0 ">
-            <div className="col">
-              <FooterComponentUpper />
-            </div>
-          </div> */}
 
+        <AppRouters />
+        <FooterNavBar />
         <IndexFooter />
+        {/* <div className="footer-navbar"> */}
+        {/* {showFooter ? <IndexFooter /> : <FooterNavBar />} */}
       </div>
     </>
   );

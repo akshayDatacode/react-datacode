@@ -1,23 +1,123 @@
 .category-page {
   .category-header {
-    width: 100%;
-    height: 300px;
-    border-bottom: solid 2px #30006d;
-    border-radius: 25px;
-
+    border: solid 2px #30006d;
+    border-radius: 20px;
+    align-items: center;
     .left-header-section {
       align-items: center;
+      justify-content: center;
       h1 {
         font-size: 70px;
         font-weight: 700;
         align-items: center;
       }
     }
-    .right-header-section {
-      align-items: right;
-      img {
-        align-items: right;
-        text-align: right;
+  }
+  .tutorial-community-card {
+    border: solid 2px #30006d;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      font-size: 40px;
+      font-weight: 700;
+    }
+    .flow-card {
+      border: solid 1px #30006d;
+      box-shadow: 0 7px 4px 0px rgba(0, 0, 0, 0.09);
+      height: auto;
+      border-radius: 5px;
+      h5 {
+        font-size: 15px;
+        font-weight: 700;
+        margin-top: 15px;
+      }
+      i {
+        font-size: 55px;
+      }
+      .red {
+        color: rgb(150, 1, 38);
+      }
+      .green {
+        color: rgb(46, 131, 12);
+      }
+      .blue {
+        color: rgb(6, 67, 124);
+      }
+      .orange {
+        color: orangered;
+      }
+      .yellow {
+        color: yellow;
+      }
+    }
+  }
+
+  .search {
+    padding: 10px 50px 10px 50px;
+    height: 50px;
+    width: 100%;
+    border: solid 2px #30006d;
+    border-radius: 10px;
+  }
+  .search-icon {
+    padding: 5px;
+    align-items: center;
+    font-size: 40px;
+    color: rgb(6, 67, 124);
+  }
+  .tech-tag-row {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    .tech-tag {
+      display: inline;
+      justify-content: center;
+      align-items: center;
+      background-color: #d4bef1;
+      border-radius: 7px;
+      font-size: 15px;
+      font-weight: 700;
+      text-align: center;
+      padding: 10px;
+      margin: 10px;
+    }
+  }
+  .tech-card {
+    border: none;
+    box-shadow: 0 7px 4px 0px rgba(0, 0, 0, 0.09);
+    height: auto;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 767px) {
+  h2 {
+    font-size: 20px;
+  }
+  .category-page {
+    .category-header {
+      .left-header-section {
+        h1 {
+          font-size: 40px;
+          text-align: center;
+        }
+        p {
+          text-align: center;
+          font-size: 16px;
+          margin-top: 10px;
+          padding: 0 10px 0 10px;
+        }
+      }
+    }
+    .tutorial-community-card {
+      border: none;
+      h2 {
+        font-size: 30px;
+        margin-top: 15px;
       }
     }
   }
