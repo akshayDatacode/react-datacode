@@ -47,7 +47,7 @@ const FooterComponent = () => {
             </p>
           </div>
         </div>
-        <div className="row mt-3 px-md-5 px-3 d-flex align-items-center">
+        <div className="row m-0 mt-3 px-md-5 px-3 d-flex align-items-center">
           <div className="col-12 col-md-3 text-md-right text-left">
             <h6>Follow us on <i className="fal fa-long-arrow-right" /></h6>
           </div>

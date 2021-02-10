@@ -66,19 +66,45 @@
     font-size: 40px;
     color: rgb(6, 67, 124);
   }
-  .tech-tag-row {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
+  .tech-tag-col {
+    ul {
+      list-style-type: none;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      height: 300px;
+      :hover {
+        background-color: rgba(0, 0, 0, 0.09);
+        box-shadow: 0 7px 4px 0px rgba(0, 0, 0, 0.09);
+        height: auto;
+        border-radius: 5px;
+      }
+    }
+
+    ul {
+      &::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: #f1efef;
+      }
+
+      &::-webkit-scrollbar {
+        width: 5px;
+        height: 10px;
+        background-color: #fff;
+      }
+      &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: #c3c3c3;
+      }
+    }
+
     .tech-tag {
-      display: inline;
       justify-content: center;
       align-items: center;
       background-color: #d4bef1;
       border-radius: 7px;
       font-size: 15px;
       font-weight: 700;
-      text-align: center;
+      text-align: left;
       padding: 10px;
       margin: 10px;
     }
@@ -94,10 +120,97 @@
   }
 }
 
+.tutorial-card {
+  // border: solid 1px #30006d;
+  box-shadow: 0 7px 4px 0px rgba(0, 0, 0, 0.09);
+  height: auto;
+  width: 300px;
+  border-radius: 5px;
+  padding: 10px;
+  h6 {
+    font-size: 15px;
+  }
+  p {
+    font-size: 12px;
+  }
+  .tag {
+    padding: 2px 5px 2px 5px;
+    font-size: 10px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgb(46, 131, 12);
+  }
+  i {
+    font-size: 20px;
+  }
+  .red {
+    color: rgb(150, 1, 38);
+  }
+  .green {
+    color: rgb(46, 131, 12);
+  }
+  .blue {
+    color: rgb(6, 67, 124);
+  }
+  .orange {
+    color: orangered;
+  }
+  .yellow {
+    color: yellow;
+  }
+}
+
+.filter {
+  background-color: #30006d;
+  border-radius: 5px;
+  height: 500px;
+  color: #ffffff;
+  align-items: center;
+  h5 {
+    color: #fff;
+  }
+  h6 {
+    color: #fff;
+    margin-bottom: 15px;
+    margin-top: 25px;
+  }
+  input {
+    cursor: pointer;
+  }
+  p {
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    align-items: center;
+  }
+}
+
+.add-tutorial {
+  border: solid 2px #30006d;
+  border-radius: 5px;
+  color: #ffffff;
+  align-items: center;
+  text-align: center;
+  i {
+    color: green;
+    font-size: 45px;
+  }
+  h5 {
+    font-size: 15px;
+  }
+}
+
+.tutorial-card-section {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 700px;
+}
+
 @media (max-width: 767px) {
   h2 {
     font-size: 20px;
   }
+
   .category-page {
     .category-header {
       .left-header-section {
@@ -120,5 +233,34 @@
         margin-top: 15px;
       }
     }
+    .tech-tag-col {
+      overflow-x: scroll;
+      overflow-y: hidden;
+      white-space: nowrap;
+
+      ul {
+        height: auto;
+        border-right: none;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        display: flex;
+        padding: 0;
+        li {
+          display: flexbox;
+        }
+        :hover {
+          background-color: rgba(0, 0, 0, 0.09);
+          box-shadow: 0 7px 4px 0px rgba(0, 0, 0, 0.09);
+          height: auto;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+  .recommend-section {
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
   }
 }

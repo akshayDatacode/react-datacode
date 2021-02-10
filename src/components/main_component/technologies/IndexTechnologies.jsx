@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -30,135 +30,132 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import TechnologiesCardCarousel from "./TechnologiesCardCarousel";
 import Technologies from "../../right_section/Technologies";
-class IndexTechnologies extends Component {
-  state = {};
-  componentDidMount() {
-    window.scrollTo(0, 0);
-  }
-  render() {
-    return (
-      <>
-        <div className="row m-0 category-page">
-          <div className="col-12 p-md-5 p-2">
-            <div className="row m-0 category-header ">
-              <div className="col-12 col-md-6 pt-4 left-header-section px-md-5 px-2">
-                <h1>Tutorials & Courses</h1>
-                <p>From building websites to analyzing data, the choice is yours. Find the best of the best courses to learn from...</p>
-              </div>
-              <div className="col-12 col-md-6 text-center d-flex justify-content-right right-header-section">
-                <img
-                  height="600px"
-                  width="600px"
-                  src={require(`../../../assets/images/svg/tutorial.png`)}
-                  alt="avatar"
-                  className="text-center img-fluid img-circle d-block"
-                />
-              </div>
-            </div>
-            <div className="row m-0 mt-5 p-0 tutorial-community-card">
-              <div className="col-12 col-md-4 text-center">
-                <h2 className="text-center ">Let's start, learning with community</h2>
-                <p className="text-center">How it works?</p>
-              </div>
-              <div className="col-12 col-md-8 p-0 m-0 text-center ">
-                <div className="row m-0 p-2 d-flex justify-content-center">
-                  <div className="col-12 m-2 p-3 text-center col-md-3 flow-card">
-                    <i className="fad fa-file-search blue" />
-                    <h5>Find your tutorial and lean</h5>
-                  </div>
-                  <div className="col-12 m-2 p-3 col-md-3 text-center flow-card">
-                    <i className="fad fa-plus-circle green" />
-                    <h5>Add your Tutorial and contribute in communtiy</h5>
-                  </div>
-                  <div className="col-12 m-2 p-3 col-md-3 text-center flow-card">
-                    <i className="fad fa-users-medical" />
-                    <h5>Join Community learning group and learn with your peers and get all best tutorials notifiction</h5>
-                  </div>
-                  <div className="col-12 m-2 p-3  col-md-3 text-center flow-card">
-                    <i className="fad fa-heart-circle red" />
-                    <h5>Love your faourave one! fromthe list of tutorials</h5>
-                  </div>
-                  <div className="col-12 m-2 p-3 col-md-3 text-center flow-card">
-                    <i className="fad fa-bookmark orange" />
-                    <h5>Create your library save your favoirate tutorial</h5>
-                  </div>
-                  <div className="col-12 m-2 p-3 col-md-3 text-center flow-card">
-                    <i className="fad fa-comment-smile" />
-                    <h5>Comment and review your best tutorial to help other community members</h5>
-                  </div>
-                  <div className="col-12 m-2 p-3 col-md-3 text-center flow-card">
-                    <i className="fad fa-chart-line" />
-                    <h5>Help to make Best Tutorial at top</h5>
-                  </div>
-                  <div className="col-12 m-2 p-3 col-md-3 text-center flow-card">
-                    <i className="fad fa-trophy-alt yellow" />
-                    <h5>Earn Community Rewards from your contribution</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="row m-0">
-              <div className="col-12 text-center">
-                <h2 className="text-center my-5">Find the Best Programming Courses & Tutorials</h2>
-                <div className="d-flex mx-md-5 mx-2">
-                  <i className="fad fa-search search-icon" />
-                  <input type="text" className="search" />
-                </div>
-              </div>
-            </div>
-            <div className="row m-0 mt-5 px-5 d-flex justify-content-center tech-tag-row">
-              <div className="col-12 col-md-3 btn tech-tag">
-                <span>Programming</span>
-              </div>
-              <div className="col-12 col-md-3 btn tech-tag">
-                <span>DataScience</span>
-              </div>
-              <div className="col-12 col-md-3 btn tech-tag">
-                <span>Web Development</span>
-              </div>
-              <div className="col-12 col-md-3 btn tech-tag">
-                <span>Cyber Scurity</span>
-              </div>
-              <div className="col-12 col-md-3 btn tech-tag">
-                <span>Computer Science</span>
-              </div>
-            </div>
-            <div className="row m-0 mt-5 px-5 d-flex justify-content-center">
+import { techIcon, techCategory } from './helpers'
+import TutorialCard from "./TutorialCard";
 
-              <div className="col-12 col-md-3 d-flex tech-card">
-                <img
-                  height="50px"
-                  width="50px"
-                  src={require(`../../../assets/images/svg/Python.png`)}
-                  alt="avatar"
-                // className="card-img-top mx-auto img-fluid img-circle d-block"
-                />
-                <h6 className="ml-3">Python</h6>
-              </div>
-              <div className="col-12 col-md-3 d-flex tech-card">
-                <img
-                  height="50px"
-                  width="50px"
-                  src={require(`../../../assets/images/svg/Python.png`)}
-                  alt="avatar"
-                //className="card-img-top mx-auto img-fluid img-circle d-block"
-                />
-                <h6 className="ml-3">Python</h6>
-              </div>
-              <div className="col-12 col-md-3 d-flex tech-card">
-                <img
-                  height="50px"
-                  width="50px"
-                  src={require(`../../../assets/images/svg/Python.png`)}
-                  alt="avatar"
-                //className="card-img-top mx-auto img-fluid img-circle d-block"
-                />
-                <h6 className="ml-3">Python</h6>
+const IndexTechnologies = () => {
+  const [showTechIcon, setShowTechIcon] = useState('programming')
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
+
+  return (
+    <>
+      <div className="row m-0 category-page">
+        <div className="col-12 p-md-5 p-2">
+          <div className="row m-0 category-header ">
+            <div className="col-12 col-md-6 pt-4 left-header-section px-md-5 px-2">
+              <h1>Tutorials & Courses</h1>
+              <p>From building websites to analyzing data, the choice is yours. Find the best of the best courses to learn from...</p>
+            </div>
+            <div className="col-12 col-md-6 text-center d-flex justify-content-right right-header-section">
+              <img
+                height="600px"
+                width="600px"
+                src={require(`../../../assets/images/svg/tutorial.png`)}
+                alt="avatar"
+                className="text-center img-fluid img-circle d-block"
+              />
+            </div>
+          </div>
+          <div className="row m-0 mt-5 p-0 tutorial-community-card">
+            <div className="col-12 col-md-4 text-center">
+              <h2 className="text-center ">Let's start, learning with community</h2>
+              <p className="text-center">How it works?</p>
+            </div>
+            <div className="col-12 col-md-8 p-0 m-0 text-center ">
+              <div className="row m-0 p-2 d-flex justify-content-center">
+                <div className="col-12 m-2 p-3 text-center col-md-3 flow-card">
+                  <i className="fad fa-file-search blue" />
+                  <h5>Find your tutorial and lean</h5>
+                </div>
+                <div className="col-12 m-2 p-3 col-md-3 text-center flow-card">
+                  <i className="fad fa-plus-circle green" />
+                  <h5>Add your Tutorial and contribute in communtiy</h5>
+                </div>
+                <div className="col-12 m-2 p-3 col-md-3 text-center flow-card">
+                  <i className="fad fa-users-medical" />
+                  <h5>Join Community learning group and learn with your peers and get all best tutorials notifiction</h5>
+                </div>
+                <div className="col-12 m-2 p-3  col-md-3 text-center flow-card">
+                  <i className="fad fa-heart-circle red" />
+                  <h5>Love your faourave one! fromthe list of tutorials</h5>
+                </div>
+                <div className="col-12 m-2 p-3 col-md-3 text-center flow-card">
+                  <i className="fad fa-bookmark orange" />
+                  <h5>Create your library save your favoirate tutorial</h5>
+                </div>
+                <div className="col-12 m-2 p-3 col-md-3 text-center flow-card">
+                  <i className="fad fa-comment-smile" />
+                  <h5>Comment and review your best tutorial to help other community members</h5>
+                </div>
+                <div className="col-12 m-2 p-3 col-md-3 text-center flow-card">
+                  <i className="fad fa-chart-line" />
+                  <h5>Help to make Best Tutorial at top</h5>
+                </div>
+                <div className="col-12 m-2 p-3 col-md-3 text-center flow-card">
+                  <i className="fad fa-trophy-alt yellow" />
+                  <h5>Earn Community Rewards from your contribution</h5>
+                </div>
               </div>
             </div>
           </div>
+          <div className="row m-0">
+            <div className="col-12 text-center">
+              <h2 className="text-center my-5">Find the Best Programming Courses & Tutorials</h2>
+              <div className="d-flex mx-md-5 mx-2">
+                <i className="fad fa-search search-icon" />
+                <input type="text" className="search" />
+              </div>
+            </div>
+          </div>
+          <div className="row m-0">
+            <div className="col-12 col-md-4 tech-tag-col">
+              <ul className="mt-5">
+                {techCategory.map((item) => (
+                  <li className="tech-tag" onClick={() => setShowTechIcon(item.techCategory)}>
+                    <img
+                      height="30px"
+                      width="30px"
+                      src={require(`../../../assets/images/svg/${item.svgSource}`)}
+                      alt="avatar"
+                      className="mr-2"
+                    />
+                    <span>{item.title}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="col-12 col-md-8">
+              <div className="row m-0 mt-4 px-5 d-flex justify-content-center">
+                {techIcon.map((item) => (
+                  item.techCategory === showTechIcon &&
+                  <Link to={`/tutorials/${item.technology}`}>
+                    <div className="col-12 col-md-3 d-flex tech-card">
+                      <img
+                        height="50px"
+                        width="50px"
+                        src={require(`../../../assets/images/svg/${item.svgSource}`)}
+                        alt="avatar"
+                      // className="card-img-top mx-auto img-fluid img-circle d-block"
+                      />
+                      <h6 className="ml-3">{item.title}</h6>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+          <h2 className="text-center my-4">Recommended Tutorial from Community</h2>
+          <div className="row m-0 recommend-section d-flex justify-content-center">
+            <TutorialCard />
+            <TutorialCard />
+            <TutorialCard />
+          </div>
         </div>
-        {/* <div className="row m-0">
+      </div>
+      {/* <div className="row m-0">
                 <div className="col-1"></div>
                 <div className="col-md-8 mt-4">
                   <h1
@@ -381,9 +378,9 @@ class IndexTechnologies extends Component {
                   <Technologies />
                 </div>
               </div> */}
-      </>
-    );
-  }
+    </>
+  );
 }
+
 
 export default IndexTechnologies;
