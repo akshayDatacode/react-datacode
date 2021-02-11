@@ -9,7 +9,13 @@ class HomeComponent extends Component {
   state = {};
   componentDidMount() {
     window.scrollTo(0, 0);
+    this.props.showFooter()
   }
+
+  componentWillUnmount() {
+    this.props.hideFooter()
+  }
+
   render() {
     return (
       <>

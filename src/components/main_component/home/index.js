@@ -1,3 +1,11 @@
 import HomeComponent from "./HomeComponent";
+import { connect } from "react-redux";
 
-export default HomeComponent;
+import { showFooter, hideFooter } from "../../../app/actions";
+
+const mapDispatchToProps = {
+  showFooter,
+  hideFooter,
+};
+
+export default connect(null, mapDispatchToProps)(HomeComponent);

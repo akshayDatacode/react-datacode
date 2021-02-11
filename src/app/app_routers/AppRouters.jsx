@@ -368,6 +368,7 @@ import SpeakerRegistration from "../../components/user/component/speaker_registr
 // Contributor --- Tutorial
 import AddTutorial from "../../components/contributor/tutotials/component/AddTutorial";
 import TechTutorials from "../../components/main_component/technologies/TechTutorials";
+import TutorialPage from "../../components/main_component/technologies/TutorialPage";
 
 
 // --------------------------------------------------------------------
@@ -1242,6 +1243,7 @@ const AppRouters = () => {
         <Route path="/add_tutorial" render={authGuard(AddTutorial)} />
         {/* Tutorials Tech Pages */}
         <Route path="/tutorials/:technology" component={TechTutorials} />
+        <Route path="/tutorial/:id" component={TutorialPage} />
 
         <Route path="*" component={NotFound} />
 

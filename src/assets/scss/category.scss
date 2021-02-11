@@ -160,6 +160,46 @@
   }
 }
 
+.tutorial-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 15px;
+  }
+  i {
+    font-size: 35px;
+  }
+  .red {
+    color: rgb(150, 1, 38);
+  }
+  .green {
+    color: rgb(46, 131, 12);
+  }
+  .blue {
+    color: rgb(6, 67, 124);
+  }
+  .orange {
+    color: orangered;
+  }
+  .yellow {
+    color: yellow;
+  }
+}
+
+.sumited-by-card {
+  border: solid 1px #30006d;
+  box-shadow: 0 7px 4px 0px rgba(0, 0, 0, 0.09);
+  height: auto;
+  align-items: center;
+}
+
 .filter {
   background-color: #30006d;
   border-radius: 5px;

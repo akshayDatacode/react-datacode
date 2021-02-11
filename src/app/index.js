@@ -10,6 +10,7 @@ import IndexHeader from "../components/header_component/IndexHeader";
 import FooterComponentUpper from "../components/footer_component/FooterComponentUpper";
 import FooterNavBar from "../components/header_component/footer_nav/FooterNavBar";
 import { setLocalUser } from "../components/user/actions";
+import { showFooter } from "./actions";
 
 // import fire from "./config/fire";
 // import LoginComponent from "./user_base/LoginComponent";
@@ -27,15 +28,14 @@ import "../assets/scss/header.scss";
 import "../assets/scss/side_nav.scss";
 import "../assets/scss/category.scss";
 
-const App = ({ location }) => {
+const App = ({ isShowFooter }) => {
   const showFooterPaths = ["#/", "#/home"];
-  const [showFooter, setShowFooter] = useState(false);
+  // /const [showFooter, setShowFooter] = useState(false);
 
   useEffect(() => {
     var localUser = JSON.parse(localStorage.getItem("userDetails"));
     console.log("local user", localUser);
     setLocalUser(localUser);
-
     // if (showFooterPaths.includes(location.pathname)) {
     //   setShowFooter(true);
     // } else {
@@ -70,12 +70,10 @@ const App = ({ location }) => {
         {/* </div> */}
 
         {/* <div>{this.state.user ? <AppRouters /> : <LoginComponent />}</div> */}
-
         <AppRouters />
-        <FooterNavBar />
-        <IndexFooter />
-        {/* <div className="footer-navbar"> */}
-        {/* {showFooter ? <IndexFooter /> : <FooterNavBar />} */}
+        {/* <FooterNavBar />
+        <IndexFooter /> */}
+        {isShowFooter ? <IndexFooter /> : <FooterNavBar />}
       </div>
     </>
   );
@@ -85,4 +83,7 @@ const mapDispatchToProps = {
   setLocalUser,
 };
 
-export default connect(null, mapDispatchToProps)(App);
+const mapStateToProps = ({ app }) => ({
+  isShowFooter: app.isShowFooter,
+});
+export default connect(mapStateToProps, mapDispatchToProps)(App);

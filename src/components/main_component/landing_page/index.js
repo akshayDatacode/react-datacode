@@ -1,3 +1,12 @@
 import LandingPage from "./LandingPage";
 
-export default LandingPage;
+import { connect } from "react-redux";
+
+import { showFooter, hideFooter } from "../../../app/actions";
+
+const mapDispatchToProps = {
+  showFooter,
+  hideFooter,
+};
+
+export default connect(null, mapDispatchToProps)(LandingPage);

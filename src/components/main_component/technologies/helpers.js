@@ -69,10 +69,12 @@ export const techData = [
     svgSource: "React.png",
     title: "React",
     technology: "react",
+    id: "asder12",
   },
   {
     svgSource: "Python.png",
     title: "Python",
     technology: "python",
+    id: "asder13",
   },
 ];

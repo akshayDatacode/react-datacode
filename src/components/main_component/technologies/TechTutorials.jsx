@@ -87,8 +87,8 @@ const TechTutorials = ({
             <div className="col-12 col-md-9">
               <div className="row m-0 d-flex justify-content-center tutorial-card-section">
 
-                <TutorialCard />
-                <TutorialCard />
+                <TutorialCard id="asder12" />
+                <TutorialCard id="asder13" />
                 <TutorialCard />
                 <TutorialCard />
                 <TutorialCard />
