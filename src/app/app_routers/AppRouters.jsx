@@ -1240,11 +1240,11 @@ const AppRouters = () => {
         {/* ------------------------ */}
 
         {/*Admin . . . Contributor Tutorial  */}
-        <Route path="/add_tutorial" render={authGuard(AddTutorial)} />
+        {/* <Route path="/add_tutorial" render={authGuard(AddTutorial)} /> */}
+        <Route path="/add_tutorial" component={AddTutorial} />
         {/* Tutorials Tech Pages */}
         <Route path="/tutorials/:technology" component={TechTutorials} />
         <Route path="/tutorial/:id" component={TutorialPage} />
-
         <Route path="*" component={NotFound} />
 
       </Switch>

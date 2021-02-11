@@ -84,7 +84,7 @@ const TechTutorials = ({
                 </div>
               </div>
               <div className="add-tutorial mt-3 p-4 align-items-center">
-                <i className="fad fa-plus-circle green" />
+                <Link to="/add_tutorial"><i className="fad fa-plus-circle green" /></Link>
                 <h5>Add your Tutorial and contribute in communtiy</h5>
               </div>
             </div>
