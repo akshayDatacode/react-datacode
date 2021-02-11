@@ -6,7 +6,7 @@ const TutorialCard = ({
 }) => {
   return (
     <>
-      <div className="col-3 tutorial-card mx-4 mt-md-3 mt-4">
+      <div className="col-12 col-md-3 tutorial-card mx-4 mt-md-3 mt-4">
         <Link to={`/tutorial/${id}`}>
           <img
             height="150px"

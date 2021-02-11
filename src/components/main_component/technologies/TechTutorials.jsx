@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 import { techData } from './helpers'
 import TutorialCard from './TutorialCard'
+import { Link } from 'react-router-dom'
 
 const TechTutorials = ({
   match: { params: { technology } }
@@ -23,6 +24,9 @@ const TechTutorials = ({
         <div className="col-12 p-md-5 p-2">
           <div className="row m-0 category-header ">
             <div className="col-12 col-md-6 pt-4 left-header-section px-md-5 px-2">
+              <div className="nav">
+                <p className="nav-link px-0"><Link to="/home">Library</Link> / <Link to="/index_technologies">Tutorials</Link> / <Link to={`/tutorials/${techDetails && techDetails.technology}`}>{`${techDetails && techDetails.title} Tutorial`}</Link></p>
+              </div>
               <h2>{techDetails && techDetails.title}</h2>
               <h1>Tutorials & Courses</h1>
               <p>From building websites to analyzing data, the choice is yours. Find the best of the best courses to learn from...</p>

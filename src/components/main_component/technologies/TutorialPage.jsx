@@ -23,6 +23,7 @@ const TutorialPage = ({
         <div className="col-12 p-md-5 p-2">
           <div className="row m-0 category-header ">
             <div className="col-12 col-md-6 pt-4 left-header-section px-md-5 px-2">
+              <p className="nav-link px-0"><Link to="/index_technologies">Tutorials</Link> / <Link to={`/tutorials/${techDetails && techDetails.technology}`}>{`${techDetails && techDetails.title} Tutorial`}</Link> / <Link to={`/tutorials/${techDetails && techDetails.technology}`}>{`${techDetails.title} Course Name`}</Link></p>
               <h2>{techDetails && techDetails.title}</h2>
               <h1>Recomment Tutorial | Best Promotional Course</h1>
               <p>From building websites to analyzing data, the choice is yours. Find the best of the best courses to learn from...</p>
