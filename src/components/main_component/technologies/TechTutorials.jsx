@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { techData } from './helpers'
 import TutorialCard from './TutorialCard'
 import { Link } from 'react-router-dom'
+import Filter from './Filter'
 
 const TechTutorials = ({
   match: { params: { technology } }
@@ -48,41 +49,7 @@ const TechTutorials = ({
           <h2 className="my-5 text-center">{`Find Best ${techDetails.title} Tutorials and Courses`}</h2>
           <div className="row m-0">
             <div className="col-12 col-md-3 pt-2">
-              <div className="filter">
-                <h5 className="text-center p-2">Filter</h5>
-                <hr />
-                <div className="p-4">
-
-
-                  <h6>Type of course</h6>
-                  <div className="align-items-center d-flex mb-2">
-                    <input type="checkbox" className="mr-3" /><p>Free</p>
-                  </div>
-                  <div className="align-items-center d-flex mb-2">
-                    <input type="checkbox" className="mr-3" /><p>Paid</p>
-                  </div>
-                  <h6>Type of Medium</h6>
-                  <div className="align-items-center d-flex mb-2">
-                    <input type="checkbox" className="mr-3" /><p>Video</p>
-                  </div>
-                  <div className="align-items-center d-flex mb-2">
-                    <input type="checkbox" className="mr-3" /><p>Book</p>
-                  </div>
-                  <div className="align-items-center d-flex mb-2">
-                    <input type="checkbox" className="mr-3" /><p>PDF Notes</p>
-                  </div>
-                  <h6>Type of Levels</h6>
-                  <div className="align-items-center d-flex mb-2">
-                    <input type="checkbox" className="mr-3" /><p>Beginner</p>
-                  </div>
-                  <div className="align-items-center d-flex mb-2">
-                    <input type="checkbox" className="mr-3" /><p>Intermediate</p>
-                  </div>
-                  <div className="align-items-center d-flex mb-2">
-                    <input type="checkbox" className="mr-3" /><p>Advanced</p>
-                  </div>
-                </div>
-              </div>
+              <Filter />
               <div className="add-tutorial mt-3 p-4 align-items-center">
                 <Link to="/add_tutorial"><i className="fad fa-plus-circle green" /></Link>
                 <h5>Add your Tutorial and contribute in communtiy</h5>
