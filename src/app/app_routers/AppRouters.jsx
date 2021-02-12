@@ -240,21 +240,21 @@ import IndexAngularMCQ from "../../components/main_component/posts/mcqQuestions/
 import AngularMCQ1 from "../../components/main_component/posts/mcqQuestions/angular_mcqs/AngularMCQ1";
 
 // Technogies
-import IndexTechnologies from "../../components/main_component/technologies/IndexTechnologies";
-import Python from "../../components/main_component/technologies/Python";
-import C from "../../components/main_component/technologies/C";
-import Cpp from "../../components/main_component/technologies/Cpp";
 
-import Java from "../../components/main_component/technologies/Java";
-import JS from "../../components/main_component/technologies/JS";
-import DataStructure from "../../components/main_component/technologies/DataStructure";
-import HTML from "../../components/main_component/technologies/HTML";
-import DBMS from "../../components/main_component/technologies/DBMS";
-import SQL from "../../components/main_component/technologies/SQL";
-import OOPs from "../../components/main_component/technologies/OOPs";
-import Angular from "../../components/main_component/technologies/Angular";
-import ReactJS from "../../components/main_component/technologies/React";
-import Android from "../../components/main_component/technologies/Android";
+import Python from "../../components/main_component/tutorials/Python";
+import C from "../../components/main_component/tutorials/C";
+import Cpp from "../../components/main_component/tutorials/Cpp";
+
+import Java from "../../components/main_component/tutorials/Java";
+import JS from "../../components/main_component/tutorials/JS";
+import DataStructure from "../../components/main_component/tutorials/DataStructure";
+import HTML from "../../components/main_component/tutorials/HTML";
+import DBMS from "../../components/main_component/tutorials/DBMS";
+import SQL from "../../components/main_component/tutorials/SQL";
+import OOPs from "../../components/main_component/tutorials/OOPs";
+import Angular from "../../components/main_component/tutorials/Angular";
+import ReactJS from "../../components/main_component/tutorials/React";
+import Android from "../../components/main_component/tutorials/Android";
 
 // Index Programming Questions
 
@@ -366,9 +366,10 @@ import ResetPassword from "../../components/user/component/reset_password";
 import SocialMediaLinks from "../../components/user/component/social_media/SocialMediaLinks";
 import SpeakerRegistration from "../../components/user/component/speaker_registration";
 // Contributor --- Tutorial
+import IndexTechnologies from "../../components/main_component/tutorials/components/Tutorials/IndexTutorial";
 import AddTutorial from "../../components/contributor/tutotials/component/AddTutorial";
-import TechTutorials from "../../components/main_component/technologies/TechTutorials";
-import TutorialPage from "../../components/main_component/technologies/TutorialPage";
+import TechTutorials from "../../components/main_component/tutorials/components/Tutorials/TechTutorials";
+import TutorialPage from "../../components/main_component/tutorials/components/Tutorials/TutorialPage";
 
 
 // --------------------------------------------------------------------

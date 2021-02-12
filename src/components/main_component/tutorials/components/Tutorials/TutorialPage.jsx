@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { techData } from './helpers'
 import { Link } from 'react-router-dom'
-import Comment from "../../../shared_components/comment"
+import Comment from "../../../../../shared_components/comment"
 
 const TutorialPage = ({
   match: { params: { id } }
@@ -15,7 +15,8 @@ const TutorialPage = ({
         return setTechDetails(item)
       }
     })
-  })
+    window.scrollTo(0, 0);
+  }, [])
 
   return (
     <>
@@ -34,7 +35,7 @@ const TutorialPage = ({
                 <img
                   height="300px"
                   width="300px"
-                  src={require(`../../../assets/images/svg/${item.svgSource}`)}
+                  src={require(`../../../../../assets/images/svg/${item.svgSource}`)}
                   alt="avatar"
                   className="text-right img-fluid img-circle d-block"
                 />
@@ -47,7 +48,7 @@ const TutorialPage = ({
               <img
                 height="30px"
                 width="30px"
-                src={require(`../../../assets/images/svg/React.png`)}
+                src={require(`../../../../../assets/images/svg/React.png`)}
                 alt="avatar"
                 className="text-right img-fluid img-circle d-block"
               />

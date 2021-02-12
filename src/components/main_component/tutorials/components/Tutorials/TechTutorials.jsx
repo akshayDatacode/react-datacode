@@ -17,7 +17,8 @@ const TechTutorials = ({
         return setTechDetails(item)
       }
     })
-  })
+    window.scrollTo(0, 0);
+  }, [])
 
   return (
     <>
@@ -38,7 +39,7 @@ const TechTutorials = ({
                 <img
                   height="400px"
                   width="400px"
-                  src={require(`../../../assets/images/svg/${item.svgSource}`)}
+                  src={require(`../../../../../assets/images/svg/${item.svgSource}`)}
                   alt="avatar"
                   className="text-right img-fluid img-circle d-block"
                 />

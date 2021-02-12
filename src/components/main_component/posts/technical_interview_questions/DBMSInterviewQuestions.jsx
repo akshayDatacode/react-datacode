@@ -3,7 +3,7 @@ import QuestionCard from "./QuestionCard";
 import RightSideSection from "../../../right_section/RightSideSection";
 import RecommendPost from "../../../right_section/RecommendPost";
 import { Link } from "react-router-dom";
-import RoadMapCard from "../../technologies/RoadMapCard";
+import RoadMapCard from "../../tutorials/RoadMapCard";
 import InterviewQuestionCardCarousel from "./InterviewQuestionCardCarousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import FbLikeShare from "../../../FbLikeShare";

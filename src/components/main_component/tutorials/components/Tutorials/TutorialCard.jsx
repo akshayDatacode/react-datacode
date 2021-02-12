@@ -11,7 +11,7 @@ const TutorialCard = ({
           <img
             height="150px"
             width="150px"
-            src={require(`../../../assets/images/svg/Python.png`)}
+            src={require(`../../../../../assets/images/svg/Python.png`)}
             alt="avatar"
           // className="card-img-top mx-auto img-fluid img-circle d-block"
           />

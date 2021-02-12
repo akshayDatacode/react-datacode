@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import RoadMapCard from "../../technologies/RoadMapCard";
+import RoadMapCard from "../../tutorials/RoadMapCard";
 import {
   faChalkboardTeacher,
   faBook,
