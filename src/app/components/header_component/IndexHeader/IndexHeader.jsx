@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import HeaderComponent from "./OldHeader";
+import HeaderComponent from "../OldHeader";
 import Header from "./Header";
 // import NavbarComponent from "./NavbarComponent";
-import SideDrawer from "./side_drawer/SideDrawer";
-import BackDrop from "./back_drop/BackDrop";
+import SideDrawer from "../side_drawer/SideDrawer";
+import BackDrop from "../back_drop/BackDrop";
 
-const IndexHeader = () => {
+const IndexHeader = ({
+  isShowAddTutorial,
+}) => {
   //  state = {
   //    sideDrawerOpen: false,
   //  };
@@ -30,7 +32,7 @@ const IndexHeader = () => {
 
   return (
     <>
-      <Header drawerClickHandler={drawerToggleClickHandler} />
+      <Header drawerClickHandler={drawerToggleClickHandler} isShowAddTutorial={isShowAddTutorial} />
       {/* /<HeaderComponent /> */}
       {/* <HeaderComponent 
           drawerClickHandler={this.drawerToggleClickHandler}

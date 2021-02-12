@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Carousel } from "react-bootstrap";
-import CardCarouselItem from "../../footer_component/CardCarouselItem";
+import CardCarouselItem from "../../../app/components/footer_component/CardCarouselItem";
 
 class TrainingCertificationCardCarousel extends Component {
   state = {};

@@ -4,11 +4,11 @@ import "bootstrap/dist/css/bootstrap.css";
 
 // -----------------------------------------------------
 
-import AppRouters from "./app_routers/AppRouters";
-import IndexFooter from "../components/footer_component/indexFooter";
-import IndexHeader from "../components/header_component/IndexHeader";
-import FooterComponentUpper from "../components/footer_component/FooterComponentUpper";
-import FooterNavBar from "../components/header_component/footer_nav/FooterNavBar";
+import AppRouters from "./components/app_routers/AppRouters";
+import IndexFooter from "./components/footer_component/indexFooter";
+import IndexHeader from "./components/header_component/IndexHeader";
+import FooterComponentUpper from "./components/footer_component/FooterComponentUpper";
+import FooterNavBar from "./components/header_component/footer_nav/FooterNavBar";
 import { setLocalUser } from "../components/user/actions";
 import { showFooter } from "./actions";
 
@@ -70,7 +70,9 @@ const App = ({ isShowFooter }) => {
         {/* </div> */}
 
         {/* <div>{this.state.user ? <AppRouters /> : <LoginComponent />}</div> */}
-        <AppRouters />
+        <div className="mb-5">
+          <AppRouters />
+        </div>
         {/* <FooterNavBar />
         <IndexFooter /> */}
         {isShowFooter ? <IndexFooter /> : <FooterNavBar />}

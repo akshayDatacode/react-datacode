@@ -4,7 +4,7 @@ import QuizeTest from "../quizeTest";
 import ScoreCard from "../../scoreCard";
 import { Button, Modal } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import FooterComponentUpper from "../../../../../footer_component/FooterComponentUpper";
+import FooterComponentUpper from "../../../../../../app/components/footer_component/FooterComponentUpper";
 import RightSideSection from "../../../../../right_section/RightSideSection";
 import RecommendPost from "../../../../../right_section/RecommendPost";
 import MCQTestCardCarousel from "../MCQTestCardCarousel";
@@ -52,19 +52,19 @@ class JSQuizeTest3 extends Component {
               <div className="row">
                 <div className="col">
                   <Link to="/home" className="badge badge-primary mr-1">
-                    Home >>
+                    Home
                   </Link>
                   <Link
                     to="/index_quize_tests"
                     className="badge badge-warning mr-1"
                   >
-                    Quize Test >>
+                    Quize Test
                   </Link>
                   <Link
                     to="/js_quize_tests"
                     className="badge badge-success mr-1"
                   >
-                    JavaScript Quiz >>
+                    JavaScript Quiz
                   </Link>
                 </div>
               </div>

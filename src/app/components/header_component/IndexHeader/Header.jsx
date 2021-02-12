@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
 
-import { debounce } from './helper';
+import { debounce } from '../helper';
 
 const Header = ({
   drawerClickHandler,
+  isShowAddTutorial,
 }) => {
 
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -62,11 +63,17 @@ const Header = ({
           <Link to="/"><h1 className="m-0 header-text">Learning Portal | Datacode.in</h1></Link>
         </div>
         <div className="col-4 text-right right-section m-0 d-none d-sm-block">
-          <Link to="/signup">
-            <div className="btn join-us">
-              Join Us
-            </div>
-          </Link>
+          {isShowAddTutorial ?
+            <Link to="/add_tutorial">
+              <i className="fad fa-plus-circle green mr-2" />
+              Add Tutorial
+            </Link>
+            :
+            <Link to="/signup">
+              <div className="btn join-us">
+                Join Us
+              </div>
+            </Link>}
         </div>
       </div>
     </>

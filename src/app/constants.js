@@ -1,2 +1,4 @@
 export const SHOW_FOOTER = "SHOW_FOOTER";
 export const HIDE_FOOTER = "HIDE_FOOTER";
+export const SHOW_ADD_TUTORIAL = "SHOW_ADD_TUTORIAL";
+export const HIDE_ADD_TUTORIAL = "HIDE_ADD_TUTORIAL";

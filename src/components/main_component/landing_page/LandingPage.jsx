@@ -7,7 +7,7 @@ import { ReactComponent as Question } from '../../../assets/images/svg/question.
 import { ReactComponent as Aboutus } from '../../../assets/images/svg/aboutus.svg'
 import CategoryCard from './CategoryCard'
 import { data, techData } from './helper'
-import FooterComponentUpper from "../../footer_component/FooterComponentUpper";
+import FooterComponentUpper from "../../../app/components/footer_component/FooterComponentUpper";
 import {
   faConnectdevelop,
   faSearchengin,

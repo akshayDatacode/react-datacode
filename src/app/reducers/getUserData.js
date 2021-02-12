@@ -14,7 +14,21 @@ const setHideFooter = (state, action) => {
   };
 };
 
+const setShowAddTutorial = (state, action) => {
+  return {
+    ...state,
+    isShowAddTutorial: true,
+  };
+};
+
+const setHideAddTutorial = (state, action) => ({
+  ...state,
+  isShowAddTutorial: false,
+});
+
 export const getAppHandlers = {
   [constants.SHOW_FOOTER]: setShowFooter,
   [constants.HIDE_FOOTER]: setHideFooter,
+  [constants.SHOW_ADD_TUTORIAL]: setShowAddTutorial,
+  [constants.HIDE_ADD_TUTORIAL]: setHideAddTutorial,
 };

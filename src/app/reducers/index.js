@@ -3,6 +3,7 @@ import { createReducer } from "../../core/reduxUtils";
 
 const initialState = {
   isShowFooter: false,
+  isShowAddTutorial: false,
 };
 
 const handlers = {

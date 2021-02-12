@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Carousel } from "react-bootstrap";
-import CardCarouselItem from "../../../footer_component/CardCarouselItem";
+import CardCarouselItem from "../../../../app/components/footer_component/CardCarouselItem";
 
 class PracticeQuestionCardCarousel extends Component {
   state = {};
@@ -27,17 +27,16 @@ class PracticeQuestionCardCarousel extends Component {
                   title="Java Programming Practice Questions"
                   link="/index_java_practice_questions"
                 />
-               
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div className="card-deck ">
-              <CardCarouselItem
+                <CardCarouselItem
                   imgsource="dsa_programming_questions.jpeg"
                   title="DS & Algo Practice Questions"
                   link="/index_ds_practice_questions"
                 />
-                 <CardCarouselItem
+                <CardCarouselItem
                   imgsource="comming_soon.jpeg"
                   title="Practice Questions"
                   link="/index_practice_questions"
@@ -47,8 +46,7 @@ class PracticeQuestionCardCarousel extends Component {
                   title="Practice Questions"
                   link="/index_practice_questions"
                 />
-
-                </div>
+              </div>
             </Carousel.Item>
           </Carousel>
         </div>

@@ -11,7 +11,7 @@ class CardCarouselItem extends Component {
         <div className="card text-center shadow">
           <img
             className=" card-img-top mx-auto img-fluid img-circle d-block"
-            src={require("../../assets/images/" + this.props.imgsource)}
+            src={require("../../../assets/images/" + this.props.imgsource)}
             alt="avatar"
           />
           <h6 className="text-center mt-2">{this.props.title}</h6>

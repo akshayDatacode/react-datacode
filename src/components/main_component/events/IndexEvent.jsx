@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import CarouselEvent from "./CarouselEvent";
 import EventCard from "./EventCard";
 import RightSideSection from "../../right_section/RightSideSection";
-import FooterComponentUpper from "../../footer_component/FooterComponentUpper";
+import FooterComponentUpper from "../../../app/components/footer_component/FooterComponentUpper";
 import Discuss from "../Discuss";
 
 class IndexEvent extends Component {

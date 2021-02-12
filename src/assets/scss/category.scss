@@ -288,6 +288,29 @@
   margin: 0 auto;
 }
 
+.add-totorial {
+  .add-form {
+    border: solid 1px #30006d;
+    padding: 15px;
+    position: fixed;
+    box-shadow: 0 3px 6px 0px #30006d;
+    height: auto;
+    border-radius: 10px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  .button {
+    background-color: rgb(46, 131, 12);
+    color: #ffffff;
+    font-size: 13px;
+    i {
+      color: #ffffff;
+      font-size: 13px;
+    }
+  }
+}
+
 @media (max-width: 767px) {
   h2 {
     font-size: 20px;
@@ -295,6 +318,12 @@
 
   .user-comment {
     width: auto;
+  }
+
+  .add-totorial {
+    .add-form {
+      position: relative;
+    }
   }
 
   .category-page {

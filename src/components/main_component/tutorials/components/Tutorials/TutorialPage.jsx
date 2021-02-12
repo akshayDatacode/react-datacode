@@ -100,7 +100,7 @@ const TutorialPage = ({
                 />
                 <h6 className="mb-0">Akshay Mandliya</h6>
               </div>
-              <p className="text-left">A Compluter Science Student of IPS academy, Love to contribute in community</p>
+              <p className="text-left">A Compluter Science Student of IPS academy, Love to contribute in community. A Compluter Science Student of IPS academy, Love to contribute in community</p>
             </div>
           </div>
         </div>

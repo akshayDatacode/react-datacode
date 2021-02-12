@@ -28,7 +28,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
-import fire from "../../config/fire";
+import fire from "../../../config/fire";
 
 class HeaderComponent extends Component {
   state = {};

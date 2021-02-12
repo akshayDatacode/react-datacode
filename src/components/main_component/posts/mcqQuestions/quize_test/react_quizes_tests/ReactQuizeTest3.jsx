@@ -4,7 +4,7 @@ import QuizeTest from "../quizeTest";
 import ScoreCard from "../../scoreCard";
 import { Button, Modal } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import FooterComponentUpper from "../../../../../footer_component/FooterComponentUpper";
+import FooterComponentUpper from "../../../../../../app/components/footer_component/FooterComponentUpper";
 import RightSideSection from "../../../../../right_section/RightSideSection";
 import RecommendPost from "../../../../../right_section/RecommendPost";
 import MCQTestCardCarousel from "../MCQTestCardCarousel";
@@ -41,147 +41,147 @@ class ReactQuizeTest3 extends Component {
       <>
         <HeaderBannerSection imgsource="headerdark.jpeg" />
 
-<div class="container-fluid">
-  <div className="row">
-    <div className="col-1"></div>
-    <div className="col-md-7 ">
-      <div className="row">
-        <div className="col text-center mt-3 mb-3">
-          <h2>React Quiz Test Advance</h2>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col">
-          <Link to="/home" className="badge badge-primary mr-1">
-            Home >>
-          </Link>
-          <Link
-            to="/index_quize_tests"
-            className="badge badge-warning mr-1"
-          >
-            Quize Test >>
-          </Link>
-          <Link
-            to="/react_quize_tests"
-            className="badge badge-success mr-1"
-          >
-               React Quize >>
-          </Link>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col">
-              <QuizeTest
-                quizeNo="1"
-                question="Life cycle methods of a components fall under following categories?"
-                correctAnswer="Mounting, Updating, Unmounting"
-                v1="None of these"
-                v2=" Mounting, Updating"
-                v3="Mounting, Unmounting"
-                v4="Mounting, Updating, Unmounting"
-                counter={this.counter}
-              />
-
-              <QuizeTest
-                quizeNo="2"
-                question="Which of the following mounting methods are invoked before the component is inserted into DOM?"
-                correctAnswer=""
-                v1="componentWillMount"
-                v2="getInitialState, componentDidMount "
-                v3="getInitialState, componentWillMount"
-                v4="getInitialState
-                "
-                counter={this.counter}
-              />
-              
-              <QuizeTest
-                quizeNo="3"
-                question=""
-            
-                correctAnswer=""
-                v1=""
-                v2=""
-                v3=""
-                v4=""
-                counter={this.counter}
-              />
-              
-              <QuizeTest
-                quizeNo="4"
-                question=""
-                correctAnswer=""
-                v1=""
-                v2=""
-                v3=""
-                v4=""
-                counter={this.counter}
-              />
-                  <QuizeTest
-                quizeNo="5"
-                question=""
-            
-                correctAnswer=""
-                v1=""
-                v2=""
-                v3="="
-                v4=""
-                counter={this.counter}
-              />
-                  <QuizeTest
-                quizeNo="6"
-                question=""
-                correctAnswer=""
-                v1=""
-                v2=""
-                v3=""
-                v4=""
-                counter={this.counter}
-              />
-              
-              <QuizeTest
-                quizeNo="7"
-                question=""
-                correctAnswer=""
-                v1=""
-                v2=""
-                v3=""
-                v4=""
-                counter={this.counter}
-              />
-              
-              <QuizeTest
-                quizeNo="8"
-                question=""
-                correctAnswer=""
-                v1=""
-                v2=""
-                v3=""
-                v4=""
-                counter={this.counter}
-              />
-              
-              <QuizeTest
-                quizeNo="9"
-                question=""
-                correctAnswer=""
-                v1=""
-                v2=""
-                v3=""
-                v4=""
-                counter={this.counter}
-              />
-              
-              <QuizeTest
-                quizeNo="10"
-                question=""
-                correctAnswer=""
-                v1=""
-                v2=""
-                v3=""
-                v4=""
-                counter={this.counter}
-              />
+        <div class="container-fluid">
+          <div className="row">
+            <div className="col-1"></div>
+            <div className="col-md-7 ">
+              <div className="row">
+                <div className="col text-center mt-3 mb-3">
+                  <h2>React Quiz Test Advance</h2>
+                </div>
               </div>
+              <div className="row">
+                <div className="col">
+                  <Link to="/home" className="badge badge-primary mr-1">
+                    Home >>
+          </Link>
+                  <Link
+                    to="/index_quize_tests"
+                    className="badge badge-warning mr-1"
+                  >
+                    Quize Test >>
+          </Link>
+                  <Link
+                    to="/react_quize_tests"
+                    className="badge badge-success mr-1"
+                  >
+                    React Quize >>
+          </Link>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col">
+                  <QuizeTest
+                    quizeNo="1"
+                    question="Life cycle methods of a components fall under following categories?"
+                    correctAnswer="Mounting, Updating, Unmounting"
+                    v1="None of these"
+                    v2=" Mounting, Updating"
+                    v3="Mounting, Unmounting"
+                    v4="Mounting, Updating, Unmounting"
+                    counter={this.counter}
+                  />
+
+                  <QuizeTest
+                    quizeNo="2"
+                    question="Which of the following mounting methods are invoked before the component is inserted into DOM?"
+                    correctAnswer=""
+                    v1="componentWillMount"
+                    v2="getInitialState, componentDidMount "
+                    v3="getInitialState, componentWillMount"
+                    v4="getInitialState
+                "
+                    counter={this.counter}
+                  />
+
+                  <QuizeTest
+                    quizeNo="3"
+                    question=""
+
+                    correctAnswer=""
+                    v1=""
+                    v2=""
+                    v3=""
+                    v4=""
+                    counter={this.counter}
+                  />
+
+                  <QuizeTest
+                    quizeNo="4"
+                    question=""
+                    correctAnswer=""
+                    v1=""
+                    v2=""
+                    v3=""
+                    v4=""
+                    counter={this.counter}
+                  />
+                  <QuizeTest
+                    quizeNo="5"
+                    question=""
+
+                    correctAnswer=""
+                    v1=""
+                    v2=""
+                    v3="="
+                    v4=""
+                    counter={this.counter}
+                  />
+                  <QuizeTest
+                    quizeNo="6"
+                    question=""
+                    correctAnswer=""
+                    v1=""
+                    v2=""
+                    v3=""
+                    v4=""
+                    counter={this.counter}
+                  />
+
+                  <QuizeTest
+                    quizeNo="7"
+                    question=""
+                    correctAnswer=""
+                    v1=""
+                    v2=""
+                    v3=""
+                    v4=""
+                    counter={this.counter}
+                  />
+
+                  <QuizeTest
+                    quizeNo="8"
+                    question=""
+                    correctAnswer=""
+                    v1=""
+                    v2=""
+                    v3=""
+                    v4=""
+                    counter={this.counter}
+                  />
+
+                  <QuizeTest
+                    quizeNo="9"
+                    question=""
+                    correctAnswer=""
+                    v1=""
+                    v2=""
+                    v3=""
+                    v4=""
+                    counter={this.counter}
+                  />
+
+                  <QuizeTest
+                    quizeNo="10"
+                    question=""
+                    correctAnswer=""
+                    v1=""
+                    v2=""
+                    v3=""
+                    v4=""
+                    counter={this.counter}
+                  />
+                </div>
               </div>
               <div className="text-center mb-3">
                 <Button variant="primary" onClick={this.handleShow}>

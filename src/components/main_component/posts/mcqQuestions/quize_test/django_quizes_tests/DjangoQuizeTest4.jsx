@@ -4,7 +4,7 @@ import QuizeTest from "../quizeTest";
 import ScoreCard from "../../scoreCard";
 import { Button, Modal } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import FooterComponentUpper from "../../../../../footer_component/FooterComponentUpper";
+import FooterComponentUpper from "../../../../../../app/components/footer_component/FooterComponentUpper";
 class OOPsQuizeTest1 extends Component {
   state = {
     isCorrect: false,
@@ -72,11 +72,11 @@ class OOPsQuizeTest1 extends Component {
                 v4=""
                 counter={this.counter}
               />
-              
+
               <QuizeTest
                 quizeNo="3"
                 question=""
-            
+
                 correctAnswer=""
                 v1=""
                 v2=""
@@ -84,7 +84,7 @@ class OOPsQuizeTest1 extends Component {
                 v4=""
                 counter={this.counter}
               />
-              
+
               <QuizeTest
                 quizeNo="4"
                 question=""
@@ -95,10 +95,10 @@ class OOPsQuizeTest1 extends Component {
                 v4=""
                 counter={this.counter}
               />
-                  <QuizeTest
+              <QuizeTest
                 quizeNo="5"
                 question=""
-            
+
                 correctAnswer=""
                 v1=""
                 v2=""
@@ -106,7 +106,7 @@ class OOPsQuizeTest1 extends Component {
                 v4=""
                 counter={this.counter}
               />
-                  <QuizeTest
+              <QuizeTest
                 quizeNo="6"
                 question=""
                 correctAnswer=""
@@ -116,7 +116,7 @@ class OOPsQuizeTest1 extends Component {
                 v4=""
                 counter={this.counter}
               />
-              
+
               <QuizeTest
                 quizeNo="7"
                 question=""
@@ -127,7 +127,7 @@ class OOPsQuizeTest1 extends Component {
                 v4=""
                 counter={this.counter}
               />
-              
+
               <QuizeTest
                 quizeNo="8"
                 question=""
@@ -138,7 +138,7 @@ class OOPsQuizeTest1 extends Component {
                 v4=""
                 counter={this.counter}
               />
-              
+
               <QuizeTest
                 quizeNo="9"
                 question=""
@@ -149,7 +149,7 @@ class OOPsQuizeTest1 extends Component {
                 v4=""
                 counter={this.counter}
               />
-              
+
               <QuizeTest
                 quizeNo="10"
                 question=""
@@ -160,10 +160,10 @@ class OOPsQuizeTest1 extends Component {
                 v4=""
                 counter={this.counter}
               />
-              
-              
-              
-             
+
+
+
+
             </div>
           </div>
         </div>

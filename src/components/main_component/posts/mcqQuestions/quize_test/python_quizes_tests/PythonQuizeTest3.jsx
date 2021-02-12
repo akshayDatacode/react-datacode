@@ -4,7 +4,7 @@ import QuizeTest from "../quizeTest";
 import ScoreCard from "../../scoreCard";
 import { Button, Modal } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import FooterComponentUpper from "../../../../../footer_component/FooterComponentUpper";
+import FooterComponentUpper from "../../../../../../app/components/footer_component/FooterComponentUpper";
 import RecommendPost from "../../../../../right_section/RecommendPost";
 import RightSideSection from "../../../../../right_section/RightSideSection";
 import MCQTestCardCarousel from "../MCQTestCardCarousel";

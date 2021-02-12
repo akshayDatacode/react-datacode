@@ -11,7 +11,7 @@ import {
   faAmericanSignLanguageInterpreting,
   faChalkboardTeacher,
 } from "@fortawesome/free-solid-svg-icons";
-import RightSideSection from "../../../../right_section/RightSideSection";
+import RightSideSection from "../../../../../right_section/RightSideSection";
 import {
   faPython,
   faJava,
@@ -28,17 +28,25 @@ import {
   faSwift,
   faAndroid,
 } from "@fortawesome/free-brands-svg-icons";
-import TechnologiesCardCarousel from "../../TechnologiesCardCarousel";
-import Technologies from "../../../../right_section/Technologies";
-import { techIcon, techCategory } from './helpers'
-import TutorialCard from "./TutorialCard";
+import TechnologiesCardCarousel from "../../../TechnologiesCardCarousel";
+import Technologies from "../../../../../right_section/Technologies";
+import { techIcon, techCategory } from '../helpers'
+import TutorialCard from "../TutorialCard";
 
-const IndexTutorial = () => {
+const IndexTutorial = ({
+  showAddTutorial,
+  hideAddTutorial,
+}) => {
   const [showTechIcon, setShowTechIcon] = useState('programming')
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [])
+    showAddTutorial()
+
+    return () => {
+      hideAddTutorial()
+    }
+  })
 
   return (
     <>
@@ -53,7 +61,7 @@ const IndexTutorial = () => {
               <img
                 height="600px"
                 width="600px"
-                src={require(`../../../../../assets/images/svg/tutorial.png`)}
+                src={require(`../../../../../../assets/images/svg/tutorial.png`)}
                 alt="avatar"
                 className="text-center img-fluid img-circle d-block"
               />
@@ -118,7 +126,7 @@ const IndexTutorial = () => {
                     <img
                       height="30px"
                       width="30px"
-                      src={require(`../../../../../assets/images/svg/${item.svgSource}`)}
+                      src={require(`../../../../../../assets/images/svg/${item.svgSource}`)}
                       alt="avatar"
                       className="mr-2"
                     />
@@ -136,7 +144,7 @@ const IndexTutorial = () => {
                       <img
                         height="50px"
                         width="50px"
-                        src={require(`../../../../../assets/images/svg/${item.svgSource}`)}
+                        src={require(`../../../../../../assets/images/svg/${item.svgSource}`)}
                         alt="avatar"
                       // className="card-img-top mx-auto img-fluid img-circle d-block"
                       />
