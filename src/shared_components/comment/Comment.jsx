@@ -20,30 +20,22 @@ const Comment = ({
 
   return (
     <>
-      <div className="row m-0 login">
-        <div className="login-section text-center">
-          <div className="pt-md-3 mt-5 px-4 login-card">
-            <form className="" onSubmit={handleSubmit(onSubmit)}>
-              <div>
-                <Field
-                  name="comment"
-                  type="textarea"
-                  component={renderInputField}
-                  placeholder="review"
-                  validate={[required]}
-                />
-              </div>
-              <div className="row mt-4">
-                <div className="col-12 text-right">
-                  <button type="submit" className="btn btn-primary login-button" disabled={submitting}>
-                    Submit
-                  </button>
-                </div>
-              </div>
-            </form>
+      <form className="d-flex justify-content-center" onSubmit={handleSubmit(onSubmit)}>
+        <Field
+          name="comment"
+          type="textarea"
+          component={renderInputField}
+          placeholder="review"
+          validate={[required]}
+        />
+        <div className="row mt-4 ml-4">
+          <div className="col-12 text-right">
+            <button type="submit" className="btn btn-primary login-button" disabled={submitting}>
+              Submit
+              </button>
           </div>
         </div>
-      </div>
+      </form>
     </>
   )
 }

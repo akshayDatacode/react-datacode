@@ -183,7 +183,7 @@
     font-size: 15px;
   }
   i {
-    font-size: 35px;
+    font-size: 55px;
   }
   .nav-link {
     font-size: 16px;
@@ -205,13 +205,24 @@
   .yellow {
     color: yellow;
   }
-}
+  .start-learning-btn {
+    width: auto;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #30006d;
+    color: #ffffff;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+  }
 
-.sumited-by-card {
-  border: solid 1px #30006d;
-  box-shadow: 0 7px 4px 0px rgba(0, 0, 0, 0.09);
-  height: auto;
-  align-items: center;
+  .submitter-card {
+    border: none;
+    box-shadow: 0 7px 4px 0px rgba(0, 0, 0, 0.09);
+    height: auto;
+    border-radius: 10px;
+    align-items: center;
+  }
 }
 
 .filter {
@@ -263,9 +274,27 @@
   height: 700px;
 }
 
+.comment-section {
+  text-align: center;
+}
+
+.user-comment {
+  border: solid 1px #30006d;
+  box-shadow: 0 7px 4px 0px rgba(0, 0, 0, 0.09);
+  height: auto;
+  border-radius: 10px;
+  align-items: center;
+  width: 600px;
+  margin: 0 auto;
+}
+
 @media (max-width: 767px) {
   h2 {
     font-size: 20px;
+  }
+
+  .user-comment {
+    width: auto;
   }
 
   .category-page {
