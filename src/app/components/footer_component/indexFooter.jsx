@@ -8,7 +8,7 @@ class IndexFooter extends Component {
       <>
         <div className="row m-0">
           <div className="col p-0 m-0">
-            <FooterComponent />
+            <FooterComponent hideTopFooter={this.props.hideTopFooter} />
           </div>
         </div>
       </>

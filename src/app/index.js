@@ -75,7 +75,14 @@ const App = ({ isShowFooter }) => {
         </div>
         {/* <FooterNavBar />
         <IndexFooter /> */}
-        {isShowFooter ? <IndexFooter /> : <FooterNavBar />}
+        {isShowFooter ? (
+          <IndexFooter />
+        ) : (
+          <>
+            <IndexFooter hideTopFooter={true} />
+            <FooterNavBar />
+          </>
+        )}
       </div>
     </>
   );

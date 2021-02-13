@@ -30,6 +30,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import TechnologiesCardCarousel from "../../../TechnologiesCardCarousel";
 import Technologies from "../../../../../right_section/Technologies";
+
 import { techIcon, techCategory } from '../helpers'
 import TutorialCard from "../TutorialCard";
 
