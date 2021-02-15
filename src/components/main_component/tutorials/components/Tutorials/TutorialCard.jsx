@@ -2,7 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const TutorialCard = ({
-  id
+  id,
+  title,
 }) => {
   return (
     <>
@@ -26,7 +27,7 @@ const TutorialCard = ({
           </div>
         </div>
         <div className="row m-0 mb-2">
-          <span className="tag">Tags</span>
+          <span className="tag">{title}</span>
         </div>
 
         <Link to={`/tutorial/${id}`}><h6>Recomment Tutorial | Best Promotional Course</h6></Link>

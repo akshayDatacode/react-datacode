@@ -1,7 +1,7 @@
 .category-page {
   .category-header {
     border: solid 2px #30006d;
-    border-radius: 20px;
+    border-radius: 10px;
     align-items: center;
     .left-header-section {
       align-items: center;
@@ -270,8 +270,8 @@
 
 .tutorial-card-section {
   overflow-x: hidden;
-  overflow-y: scroll;
-  height: 700px;
+  overflow-y: hidden;
+  height: auto;
 }
 
 .comment-section {

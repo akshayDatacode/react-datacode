@@ -1,15 +1,34 @@
 import React, { useEffect, useState } from 'react'
-
-import { techData } from './helpers'
-import TutorialCard from './TutorialCard'
 import { Link } from 'react-router-dom'
+import ReactPaginate from 'react-paginate'
+
+import { techData, techCategory } from './helpers'
+import TutorialCard from './TutorialCard'
 import Filter from './Filter'
+
 
 const TechTutorials = ({
   match: { params: { technology } }
 }) => {
 
   const [techDetails, setTechDetails] = useState({})
+
+  const [pageNumber, setPageNumber] = useState(0)
+
+  const usersPerPage = 2
+  const pagesVisited = pageNumber * usersPerPage
+
+  const displayUsers = techCategory
+    .slice(pagesVisited, pagesVisited + usersPerPage)
+    .map((item) => {
+      return <TutorialCard id="asder12" title={item.title} />
+    })
+
+  const pageCount = Math.ceil(techCategory.length / usersPerPage)
+
+  const changePage = ({ selected }) => {
+    setPageNumber(selected)
+  }
 
   useEffect(() => {
     techData.find((item) => {
@@ -58,14 +77,20 @@ const TechTutorials = ({
             </div>
             <div className="col-12 col-md-9">
               <div className="row m-0 d-flex justify-content-center tutorial-card-section">
-
-                <TutorialCard id="asder12" />
-                <TutorialCard id="asder13" />
-                <TutorialCard />
-                <TutorialCard />
-                <TutorialCard />
-                <TutorialCard />
-                <TutorialCard />
+                {displayUsers}
+                <ReactPaginate
+                  previousLabel={"Prev"}
+                  nextLabel={"Next"}
+                  pageCount={pageCount}
+                  onPageChange={changePage}
+                  containerClassName={"pagination"}
+                  pageLinkClassName={"page"}
+                  previousLinkClassName={"previousBtn"}
+                  nextLinkClassName={"nextBtn"}
+                  disabledClassName={"disabled"}
+                  activeClassName={"activePage"}
+                  activeLinkClassName={"activeClassLink"}
+                />
               </div>
             </div>
           </div>

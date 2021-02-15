@@ -27,6 +27,7 @@ const Signup = ({
         console.log("Loged IN")
         reset('signupForm')
       } else {
+        console.log("Error", res)
         reset('signupForm')
       }
     })

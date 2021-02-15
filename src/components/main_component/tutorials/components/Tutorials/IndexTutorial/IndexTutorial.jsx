@@ -156,7 +156,7 @@ const IndexTutorial = ({
               </div>
             </div>
           </div>
-          <h2 className="text-center my-4">Recommended Tutorial from Community</h2>
+          <h4 className="text-center my-4">Recommended Tutorial from Community</h4>
           <div className="row m-0 recommend-section d-flex justify-content-center">
             <TutorialCard />
             <TutorialCard />

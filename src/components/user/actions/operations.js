@@ -33,18 +33,21 @@ export const signupUser = (user) => (dispatch) => {
   return axios
     .post(`${baseURL}user/signup`, user)
     .then((res) => {
+      console.log("ssss", res);
       if (res.status === 200) {
         dispatch(actions.setSignupUser(res.data));
         console.log("Signed yu", res.data);
         return { success: true, data: res.data };
-      } else {
-        return { success: false };
+      }
+      if (res.status === 400) {
+        debugger;
+        return { error: res.message };
       }
     })
     .catch((error) => {
       dispatch({ type: SET_SIGNUP_USER_LOADING });
       dispatch(actions.setSignupUserError(error));
-      console.log("Signup error", error);
+      console.log("Signup error", error.message);
     });
 };
 

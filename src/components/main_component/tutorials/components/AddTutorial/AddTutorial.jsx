@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Field, reduxForm } from 'redux-form'
 
 import { renderInputField } from '../../../../../shared_components/ReduxFormFields'
@@ -13,12 +13,16 @@ const AddTutorial = ({
   userName,
 }) => {
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
+
   const onSubmit = (values) => {
     const tutorial = { ...values }
     tutorial['userName'] = userName
     tutorial['id'] = Math.random().toString(36).substr(4, 9)
     addTutorial(tutorial).then((res) => {
-      if (res.success) {
+      if (res && res.success) {
         reset('tutorial')
       }
     })
