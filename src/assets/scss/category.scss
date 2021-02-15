@@ -253,6 +253,18 @@
   }
 }
 
+.show-filter {
+  background-color: #30006d;
+  height: auto;
+  width: 30%;
+  border-radius: 5px;
+  h5 {
+    font-size: 17px;
+    color: #ffffff;
+  }
+  transition: ease-in-out 3s;
+}
+
 .add-tutorial {
   border: solid 2px #30006d;
   border-radius: 5px;
@@ -324,6 +336,15 @@
     .add-form {
       position: relative;
     }
+  }
+
+  .col-sm-12 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .filter-text {
+    display: none;
   }
 
   .category-page {

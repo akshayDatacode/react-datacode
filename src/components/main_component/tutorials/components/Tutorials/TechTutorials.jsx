@@ -68,9 +68,9 @@ const TechTutorials = ({
           </div>
           <h2 className="my-5 text-center">{`Find Best ${techDetails.title} Tutorials and Courses`}</h2>
           <div className="row m-0">
-            <div className="col-12 col-md-3 pt-2">
+            <div className="col-12 col-sm-12 col-md-3 pt-2 main">
               <Filter />
-              <div className="add-tutorial mt-3 p-4 align-items-center">
+              <div className="add-tutorial mt-3 mb-md-0 mb-4 p-4 align-items-center">
                 <Link to="/add_tutorial"><i className="fad fa-plus-circle green" /></Link>
                 <h5>Add your Tutorial and contribute in communtiy</h5>
               </div>
