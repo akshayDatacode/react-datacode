@@ -59,8 +59,16 @@ const Header = ({
             </DropdownMenu>
           </Dropdown>
         </div>
-        <div className="col-4 text-center">
-          <Link to="/"><h1 className="m-0 header-text">Learning Portal | Datacode.in</h1></Link>
+        <div className="col-4 text-center d-flex justify-content-center">
+          <Link to="/">
+            <img
+              height="50px"
+              width="180px"
+              src={require(`../../../../assets/images/svg/logo.svg`)}
+              alt="avatar"
+              className="header-text"
+            />
+          </Link>
         </div>
         <div className="col-4 text-right right-section m-0 d-none d-sm-block">
           {isShowAddTutorial ?

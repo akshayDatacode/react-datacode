@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 const TutorialCard = ({
   id,
   title,
 }) => {
+
   return (
+
     <>
       <div className="col-12 col-md-3 tutorial-card mx-4 mt-md-3 mt-4">
         <Link to={`/tutorial/${id}`}>
