@@ -1,13 +1,13 @@
 export const techIcon = [
   {
     svgSource: "Python.png",
-    technology: "python",
+    technology: "Python",
     title: "Python",
     techCategory: "programming",
   },
   {
     svgSource: "React.png",
-    technology: "react",
+    technology: "React",
     title: "React",
     techCategory: "webDevelopment",
   },
@@ -68,13 +68,13 @@ export const techData = [
   {
     svgSource: "React.png",
     title: "React",
-    technology: "react",
+    technology: "React",
     id: "asder12",
   },
   {
     svgSource: "Python.png",
     title: "Python",
-    technology: "python",
+    technology: "Python",
     id: "asder13",
   },
 ];

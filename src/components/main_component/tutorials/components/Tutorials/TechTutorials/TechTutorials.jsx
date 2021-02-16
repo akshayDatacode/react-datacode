@@ -2,35 +2,39 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import ReactPaginate from 'react-paginate'
 
-import { techData, techCategory } from './helpers'
-import TutorialCard from './TutorialCard'
-import Filter from './Filter'
+import { techData, techCategory } from '../helpers'
+import TutorialCard from '../TutorialCard'
+import Filter from '../Filter'
 
 
 const TechTutorials = ({
-  match: { params: { technology } }
+  getTutorialsList,
+  match: { params: { technology } },
+  tutorialsList,
 }) => {
 
   const [techDetails, setTechDetails] = useState({})
 
   const [pageNumber, setPageNumber] = useState(0)
 
-  const usersPerPage = 2
-  const pagesVisited = pageNumber * usersPerPage
-
-  const displayUsers = techCategory
-    .slice(pagesVisited, pagesVisited + usersPerPage)
+  const tutorialsPerPage = 2
+  const pagesVisited = pageNumber * tutorialsPerPage
+  console.log("tutorialsList", tutorialsList)
+  const displayTutorials = tutorialsList
+    .slice(pagesVisited, pagesVisited + tutorialsPerPage)
     .map((item) => {
       return <TutorialCard id="asder12" title={item.title} />
     })
 
-  const pageCount = Math.ceil(techCategory.length / usersPerPage)
+  const pageCount = Math.ceil(tutorialsList.length / tutorialsPerPage)
 
   const changePage = ({ selected }) => {
     setPageNumber(selected)
   }
 
   useEffect(() => {
+    getTutorialsList(technology)
+
     techData.find((item) => {
       if (item.technology === technology) {
         return setTechDetails(item)
@@ -58,7 +62,7 @@ const TechTutorials = ({
                 <img
                   height="400px"
                   width="400px"
-                  src={require(`../../../../../assets/images/svg/${item.svgSource}`)}
+                  src={require(`../../../../../../assets/images/svg/${item.svgSource}`)}
                   alt="avatar"
                   className="text-right img-fluid img-circle d-block"
                 />
@@ -77,7 +81,7 @@ const TechTutorials = ({
             </div>
             <div className="col-12 col-md-9">
               <div className="row m-0 d-flex justify-content-center tutorial-card-section">
-                {displayUsers}
+                {displayTutorials}
                 <ReactPaginate
                   previousLabel={"Prev"}
                   nextLabel={"Next"}

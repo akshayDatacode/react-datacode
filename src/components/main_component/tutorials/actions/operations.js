@@ -20,11 +20,10 @@ export const addTutorial = (tutorial) => (dispatch) => {
     });
 };
 
-export const getTechnologyTutorials = (technology) => (dispatch) => {
+export const getTutorialsList = (technology) => (dispatch) => {
   return axios
-    .get(`${baseURL}/tutorial/get_tutorial`, technology)
+    .post(`${baseURL}/tutorial/get_tutorial`, { technology })
     .then(({ data }) => {
-      console.log("ddd", data);
       if (data.success) {
         dispatch(actions.setTutorialsList(data));
         return { success: true, data: data.tutorial };

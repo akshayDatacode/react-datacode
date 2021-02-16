@@ -2,7 +2,7 @@ import { setTutorialsHandlers } from "./setTutorials";
 import { createReducer } from "../../../../core/reduxUtils";
 
 const initialState = {
-  tutorialsList = [],
+  tutorialsList: [],
   error: "4444",
 };
 
