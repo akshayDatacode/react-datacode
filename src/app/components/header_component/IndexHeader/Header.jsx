@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
+import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem, UncontrolledDropdown } from 'reactstrap'
 
 import { debounce } from '../helper';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 
 const Header = ({
   drawerClickHandler,
   isShowAddTutorial,
   currentUser,
+  logoutUser,
 }) => {
 
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -95,17 +98,36 @@ const Header = ({
                   Add Tutorial
                 </Link>
               }
-              <div className="header-profile">
-
+              <div className="header-profile d-flex align-items-center">
                 <Link to="/my_profile">
                   <img
-                    height="50px"
-                    width="50px"
+                    height="40px"
+                    width="40px"
                     src={require(`../../../../assets/images/svg/Python.png`)}
                     alt="avatar"
                     className="header-profile-img rounded-circle ml-3"
                   />
                 </Link>
+                <UncontrolledDropdown setActiveFromChild>
+                  <DropdownToggle tag="a" className="ml-3 profile-dropdown">
+                    <i class="far fa-angle-down" />
+                  </DropdownToggle>
+                  <DropdownMenu className="dropdown-menu mt-3" right>
+                    <DropdownItem header>Akshay Mandliya</DropdownItem>
+                    <DropdownItem>My Profile</DropdownItem>
+                    <DropdownItem>My Library</DropdownItem>
+                    <DropdownItem>Edit Profile</DropdownItem>
+                    <DropdownItem>
+                      <span>
+                        <Link to="/" onClick={() => logoutUser()}>
+                          <FontAwesomeIcon icon={faSignOutAlt} className="mr-2" />{" "}
+                            Log out
+                            </Link>
+                      </span>
+                    </DropdownItem>
+                  </DropdownMenu>
+                </UncontrolledDropdown>
+
               </div>
             </>
           }

@@ -1,6 +1,37 @@
 .header-profile-img {
-  border: solid 3px #333333;
+  border: solid 3px #30006d;
 }
 .header-profile {
   align-items: center;
+}
+
+.my-profile {
+}
+
+.edit-profile-btn {
+  width: auto;
+  border: solid 2px #30006d;
+  font-size: 14px;
+}
+
+.left-profile-section {
+  align-items: center;
+  justify-content: center;
+  display: inline;
+}
+
+.bio {
+  font-size: 12px;
+  color: #30006d;
+}
+
+.profile-dashboard {
+  i {
+    font-size: 15px;
+    margin-right: 10px;
+  }
+  span {
+    font-size: 15px;
+    color: #30006d;
+  }
 }

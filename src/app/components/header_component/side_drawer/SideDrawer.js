@@ -69,7 +69,7 @@ const SideDrawer = ({
                   </Link>
                   <h2 className="ml-3">{`Hello! ${currentUser.userName}`}</h2>
                 </div>
-                <Link to="/profile" onClick={() => backDropClickHandler()}>
+                <Link to="/my_profile" onClick={() => backDropClickHandler()}>
                   <div className="btn join-us my-3">My Profile</div>
                 </Link>
               </>
