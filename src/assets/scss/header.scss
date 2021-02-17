@@ -48,15 +48,14 @@
       border-radius: 5px;
       width: 600px;
     }
-
-    .profile-dropdown {
-      width: auto;
-      color: #30006d;
-    }
   }
   .right-section {
     justify-content: flex-end;
     align-items: center;
+    .profile-dropdown {
+      width: auto;
+      color: #30006d;
+    }
   }
 }
 
@@ -77,8 +76,8 @@
   .header {
     height: auto;
     .left-section {
-      display: flex;
-      justify-content: space-between;
+      // display: flex;
+      // justify-content: space-between;
       align-items: center !important;
       .header-text-mobile {
         font-size: 27px;
@@ -88,12 +87,19 @@
         display: none;
       }
     }
+    .header-profile {
+      justify-content: flex-end;
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
   }
 
   .header-text {
     display: none;
   }
   .right-section {
-    display: none;
+    justify-content: flex-end;
   }
 }

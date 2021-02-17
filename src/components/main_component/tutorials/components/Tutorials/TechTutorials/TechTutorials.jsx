@@ -17,7 +17,7 @@ const TechTutorials = ({
 
   const [pageNumber, setPageNumber] = useState(0)
 
-  const tutorialsPerPage = 2
+  const tutorialsPerPage = 6
   const pagesVisited = pageNumber * tutorialsPerPage
   console.log("tutorialsList", tutorialsList)
   const displayTutorials = tutorialsList

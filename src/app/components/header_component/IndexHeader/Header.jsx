@@ -36,11 +36,11 @@ const Header = ({
 
   return (
     <>
-      <div className={`${!visible && `header-hide`} row m-0 header card-shadow px-md-5 py-md-0 py-2`}>
-        <div className="col-md-4 col-12 m-0 left-section px-4 px-md-0">
+      <div className={`${!visible && `header-hide`} row m-0 header card-shadow px-md-5 px-2 py-md-0 py-2`}>
+        <div className="col-4 m-0 left-section px-2 px-md-0">
           <i className="toggle-button far fa-cabinet-filing mx-md-3 mt-0 mt-1" onClick={() => drawerClickHandler()} />
           {/* <Link to="/"><h1 className="m-0 text-sm-right header-text">Learning Portal | Datacode.in</h1></Link> */}
-          <h1 className="m-0 header-text-mobile">Datacode.in</h1>
+          {/* <h1 className="m-0 ">Datacode.in</h1> */}
           <Dropdown isOpen={dropdownOpen} toggle={toggle}>
             <DropdownToggle caret className="category-dropdown">
               Categories
@@ -63,7 +63,7 @@ const Header = ({
             </DropdownMenu>
           </Dropdown>
         </div>
-        <div className="col-4 text-center d-flex justify-content-center">
+        <div className="col-4 p-0 text-center justify-content-center">
           <Link to="/">
             <img
               height="50px"
@@ -73,8 +73,17 @@ const Header = ({
               className="header-text"
             />
           </Link>
+          <Link to="/">
+            <img
+              height="40px"
+              width="40px"
+              src={require(`../../../../assets/images/svg/monolog.svg`)}
+              alt="avatar"
+              className="d-md-none"
+            />
+          </Link>
         </div>
-        <div className="col-4 d-md-flex right-section m-0 d-none d-sm-block">
+        <div className="col-4 p-0 d-md-flex right-section m-0">
           {!currentUser ?
             <div>
               {isShowAddTutorial ?
@@ -92,43 +101,43 @@ const Header = ({
             </div>
             :
             <>
-              {isShowAddTutorial &&
+              {isShowAddTutorial ?
                 <Link to="/add_tutorial">
                   <i className="fad fa-plus-circle green mr-2" />
                   Add Tutorial
                 </Link>
-              }
-              <div className="header-profile d-flex align-items-center">
-                <Link to="/my_profile">
-                  <img
-                    height="40px"
-                    width="40px"
-                    src={require(`../../../../assets/images/svg/Python.png`)}
-                    alt="avatar"
-                    className="header-profile-img rounded-circle ml-3"
-                  />
-                </Link>
-                <UncontrolledDropdown setActiveFromChild>
-                  <DropdownToggle tag="a" className="ml-3 profile-dropdown">
-                    <i class="far fa-angle-down" />
-                  </DropdownToggle>
-                  <DropdownMenu className="dropdown-menu mt-3" right>
-                    <DropdownItem header>Akshay Mandliya</DropdownItem>
-                    <DropdownItem><Link to="/my_profile"><span>My Profile</span></Link></DropdownItem>
-                    <DropdownItem>My Library</DropdownItem>
-                    <DropdownItem><Link to="/edit_profile">Edit Profile</Link></DropdownItem>
-                    <DropdownItem>
-                      <span>
-                        <Link to="/" onClick={() => logoutUser()}>
-                          <FontAwesomeIcon icon={faSignOutAlt} className="mr-2" />{" "}
+                :
+                <div className="header-profile d-flex align-items-center">
+                  <Link to="/my_profile">
+                    <img
+                      height="40px"
+                      width="40px"
+                      src={require(`../../../../assets/images/svg/Python.png`)}
+                      alt="avatar"
+                      className="header-profile-img rounded-circle ml-3"
+                    />
+                  </Link>
+                  <UncontrolledDropdown setActiveFromChild>
+                    <DropdownToggle tag="a" className="ml-3 profile-dropdown">
+                      <i class="far fa-angle-down" />
+                    </DropdownToggle>
+                    <DropdownMenu className="dropdown-menu mt-3" right>
+                      <DropdownItem header>Akshay Mandliya</DropdownItem>
+                      <DropdownItem><Link to="/my_profile"><span>My Profile</span></Link></DropdownItem>
+                      <DropdownItem>My Library</DropdownItem>
+                      <DropdownItem><Link to="/edit_profile">Edit Profile</Link></DropdownItem>
+                      <DropdownItem>
+                        <span>
+                          <Link to="/" onClick={() => logoutUser()}>
+                            <FontAwesomeIcon icon={faSignOutAlt} className="mr-2" />{" "}
                           Log out
                         </Link>
-                      </span>
-                    </DropdownItem>
-                  </DropdownMenu>
-                </UncontrolledDropdown>
-
-              </div>
+                        </span>
+                      </DropdownItem>
+                    </DropdownMenu>
+                  </UncontrolledDropdown>
+                </div>
+              }
             </>
           }
         </div>
