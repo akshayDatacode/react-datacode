@@ -22,7 +22,7 @@ const MyProfile = () => {
             <i className="fab fa-twitter-square mr-3" />
             <i className="fab fa-github" />
           </div>
-          <Link to="/my_profile" >
+          <Link to="/edit_profile" >
             <div className="btn edit-profile-btn my-3">Edit Profile <i className="fad fa-user-edit ml-2" /></div>
           </Link>
 
@@ -49,12 +49,24 @@ const MyProfile = () => {
             </div>
           </div>
         </div>
-        <div className="col-md-4 col-12 mt-0 mt-5">
-          <h6>Contributions</h6>
+        <div className="col-md-8 col-12 ">
+          <div className="row m-0 graduation-details">
+            <div className="col-12 p-3">
+              <h6><i className="fas fa-university" />Sage University, Indore </h6>
+              <h6><i className="fas fa-code-branch" />Computer Science Engineering</h6>
+              <h6><i className="fal fa-graduation-cap" />2016-2020</h6>
+            </div>
+          </div>
+          <div className="row m-0">
+            <div className="col-md-6 col-12 mt-0 mt-5">
+              <h6>Contributions</h6>
+            </div>
+            <div className="col-md-6 col-12 mt-0 mt-5">
+              <h6>Activities</h6>
+            </div>
+          </div>
         </div>
-        <div className="col-md-4 col-12 mt-0 mt-5">
-          <h6>Activities</h6>
-        </div>
+
       </div>
     </>
   )

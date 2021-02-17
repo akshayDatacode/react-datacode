@@ -372,6 +372,7 @@ import TechTutorials from "../../../components/main_component/tutorials/componen
 import TutorialPage from "../../../components/main_component/tutorials/components/Tutorials/TutorialPage";
 // Profile
 import MyProfile from "../../../components/user/component/profile/my_profile"
+import EditProfile from "../../../components/user/component/profile/edit_profile"
 
 // --------------------------------------------------------------------
 
@@ -1249,7 +1250,7 @@ const AppRouters = () => {
         <Route path="/tutorial/:id" component={TutorialPage} />
         {/* Profile */}
         <Route exact path="/my_profile" render={authGuard(MyProfile)} />
-
+        <Route exact path="/edit_profile" render={authGuard(EditProfile)} />
         {/* ____________________________________________ */}
 
         <Route path="*" component={NotFound} />

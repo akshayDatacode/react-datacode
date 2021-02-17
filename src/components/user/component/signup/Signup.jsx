@@ -16,7 +16,7 @@ const Signup = ({
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  })
+  }, [])
 
   const onSubmit = (values) => {
     const user = { ...values }

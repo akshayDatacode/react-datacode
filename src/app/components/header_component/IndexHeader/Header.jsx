@@ -114,15 +114,15 @@ const Header = ({
                   </DropdownToggle>
                   <DropdownMenu className="dropdown-menu mt-3" right>
                     <DropdownItem header>Akshay Mandliya</DropdownItem>
-                    <DropdownItem>My Profile</DropdownItem>
+                    <DropdownItem><Link to="/my_profile"><span>My Profile</span></Link></DropdownItem>
                     <DropdownItem>My Library</DropdownItem>
-                    <DropdownItem>Edit Profile</DropdownItem>
+                    <DropdownItem><Link to="/edit_profile">Edit Profile</Link></DropdownItem>
                     <DropdownItem>
                       <span>
                         <Link to="/" onClick={() => logoutUser()}>
                           <FontAwesomeIcon icon={faSignOutAlt} className="mr-2" />{" "}
-                            Log out
-                            </Link>
+                          Log out
+                        </Link>
                       </span>
                     </DropdownItem>
                   </DropdownMenu>
