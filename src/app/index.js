@@ -27,8 +27,9 @@ import "../assets/scss/home.scss";
 import "../assets/scss/header.scss";
 import "../assets/scss/side_nav.scss";
 import "../assets/scss/category.scss";
+import "../assets/scss/profile.scss";
 
-const App = ({ isShowFooter }) => {
+const App = ({ isShowFooter, setLocalUser }) => {
   const showFooterPaths = ["#/", "#/home"];
   // /const [showFooter, setShowFooter] = useState(false);
 
@@ -95,4 +96,5 @@ const mapDispatchToProps = {
 const mapStateToProps = ({ app }) => ({
   isShowFooter: app.isShowFooter,
 });
+
 export default connect(mapStateToProps, mapDispatchToProps)(App);

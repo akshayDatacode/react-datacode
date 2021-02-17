@@ -370,7 +370,8 @@ import IndexTechnologies from "../../../components/main_component/tutorials/comp
 import AddTutorial from "../../../components/main_component/tutorials/components/AddTutorial";
 import TechTutorials from "../../../components/main_component/tutorials/components/Tutorials/TechTutorials";
 import TutorialPage from "../../../components/main_component/tutorials/components/Tutorials/TutorialPage";
-
+// Profile
+import MyProfile from "../../../components/user/component/profile/my_profile"
 
 // --------------------------------------------------------------------
 
@@ -1246,6 +1247,11 @@ const AppRouters = () => {
         {/* Tutorials Tech Pages */}
         <Route path="/tutorials/:technology" component={TechTutorials} />
         <Route path="/tutorial/:id" component={TutorialPage} />
+        {/* Profile */}
+        <Route exact path="/my_profile" render={authGuard(MyProfile)} />
+
+        {/* ____________________________________________ */}
+
         <Route path="*" component={NotFound} />
 
       </Switch>

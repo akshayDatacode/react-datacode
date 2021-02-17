@@ -7,6 +7,8 @@ import BackDrop from "../back_drop/BackDrop";
 
 const IndexHeader = ({
   isShowAddTutorial,
+  currentUser,
+  logoutUser,
 }) => {
   //  state = {
   //    sideDrawerOpen: false,
@@ -14,7 +16,6 @@ const IndexHeader = ({
   const [sideDrawerOpen, setSideDrawerOpen] = useState(false)
 
   const drawerToggleClickHandler = () => {
-    console.log("ddd")
     setSideDrawerOpen((prevState) => {
       return !prevState.sideDrawerOpen
     });
@@ -32,14 +33,14 @@ const IndexHeader = ({
 
   return (
     <>
-      <Header drawerClickHandler={drawerToggleClickHandler} isShowAddTutorial={isShowAddTutorial} />
+      <Header currentUser={currentUser} logoutUser={logoutUser} drawerClickHandler={drawerToggleClickHandler} isShowAddTutorial={isShowAddTutorial} />
       {/* /<HeaderComponent /> */}
       {/* <HeaderComponent 
           drawerClickHandler={this.drawerToggleClickHandler}
           isUserLogin={this.props.isUserLogin}
         /> */}
       {/* <NavbarComponent/>  */}
-      <SideDrawer show={sideDrawerOpen} backDropClickHandler={backDropClickHandler} />
+      <SideDrawer logoutUser={logoutUser} currentUser={currentUser} show={sideDrawerOpen} backDropClickHandler={backDropClickHandler} />
       {backDrop}
     </>
   );

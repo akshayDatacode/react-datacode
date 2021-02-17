@@ -7,6 +7,7 @@ import { debounce } from '../helper';
 const Header = ({
   drawerClickHandler,
   isShowAddTutorial,
+  currentUser,
 }) => {
 
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -70,18 +71,44 @@ const Header = ({
             />
           </Link>
         </div>
-        <div className="col-4 text-right right-section m-0 d-none d-sm-block">
-          {isShowAddTutorial ?
-            <Link to="/add_tutorial">
-              <i className="fad fa-plus-circle green mr-2" />
-              Add Tutorial
-            </Link>
+        <div className="col-4 d-md-flex right-section m-0 d-none d-sm-block">
+          {!currentUser ?
+            <div>
+              {isShowAddTutorial ?
+                <Link to="/add_tutorial">
+                  <i className="fad fa-plus-circle green mr-2" />
+                  Add Tutorial
+                </Link>
+                :
+                <Link to="/signup">
+                  <div className="btn join-us">
+                    Join Us
+                  </div>
+                </Link>
+              }
+            </div>
             :
-            <Link to="/signup">
-              <div className="btn join-us">
-                Join Us
+            <>
+              {isShowAddTutorial &&
+                <Link to="/add_tutorial">
+                  <i className="fad fa-plus-circle green mr-2" />
+                  Add Tutorial
+                </Link>
+              }
+              <div className="header-profile">
+
+                <Link to="/my_profile">
+                  <img
+                    height="50px"
+                    width="50px"
+                    src={require(`../../../../assets/images/svg/Python.png`)}
+                    alt="avatar"
+                    className="header-profile-img rounded-circle ml-3"
+                  />
+                </Link>
               </div>
-            </Link>}
+            </>
+          }
         </div>
       </div>
     </>

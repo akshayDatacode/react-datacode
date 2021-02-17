@@ -27,10 +27,16 @@ import {
   faSignInAlt,
   faCalendar,
   faAward,
+  faSignOutAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
-const SideDrawer = ({ backDropClickHandler, show }) => {
+const SideDrawer = ({
+  backDropClickHandler,
+  show,
+  currentUser,
+  logoutUser,
+}) => {
   let drawerClasses = "side-drawer";
   if (show) {
     drawerClasses = "row m-0 side-drawer open";
@@ -49,11 +55,33 @@ const SideDrawer = ({ backDropClickHandler, show }) => {
             </div>
           </div>
           <div className="row m-0 p-2 side-header">
-            <h2 className="mt-2">Hello! Learner</h2>
-            <p>Start your learning with Community</p>
-            <Link to="/signup" onClick={() => backDropClickHandler()}>
-              <div className="btn join-us mb-3">Join Us</div>
-            </Link>
+            {currentUser && currentUser.userName ? (
+              <>
+                <div className="header-profile d-flex">
+                  <Link to="/my_profile">
+                    <img
+                      height="40px"
+                      width="40px"
+                      src={require(`../../../../assets/images/svg/Python.png`)}
+                      alt="avatar"
+                      className="header-profile-img rounded-circle ml-3"
+                    />
+                  </Link>
+                  <h2 className="ml-3">{`Hello! ${currentUser.userName}`}</h2>
+                </div>
+                <Link to="/profile" onClick={() => backDropClickHandler()}>
+                  <div className="btn join-us my-3">My Profile</div>
+                </Link>
+              </>
+            ) : (
+              <>
+                <h2 className="mt-2">Hello! Learner</h2>
+                <p>Start your learning with Community</p>
+                <Link to="/signup" onClick={() => backDropClickHandler()}>
+                  <div className="btn join-us mb-3">Join Us</div>
+                </Link>
+              </>
+            )}
           </div>
           <div className="row m-0 ul-list">
             <ul className="m-0 p-0">
@@ -113,6 +141,16 @@ const SideDrawer = ({ backDropClickHandler, show }) => {
                   </span>
                 </li>
               </Link>
+              {currentUser && (
+                <Link to="/" onClick={() => logoutUser()}>
+                  <li>
+                    <span>
+                      <FontAwesomeIcon icon={faSignOutAlt} className="mr-2" />{" "}
+                      Log out
+                    </span>
+                  </li>
+                </Link>
+              )}
             </ul>
           </div>
         </div>

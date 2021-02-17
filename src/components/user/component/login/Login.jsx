@@ -31,7 +31,7 @@ const Login = ({
 
   return (
     <>
-      {userDetails && <Redirect to={`/add_tutorial`} />}
+      {userDetails && <Redirect to={`/home`} />}
       <div className="row m-0 login">
         <div className="col-12 col-md-8 img-section p-md-5 text-center">
           <div className="p-md-4">
@@ -41,7 +41,7 @@ const Login = ({
                 color="#30006d"
                 height={100}
                 width={100}
-                timeout={8000} //8 secs
+                timeout={11000} //11 secs
               /> :
               <Code width="auto" height="auto" className="m-2 m-md-0" />
             }

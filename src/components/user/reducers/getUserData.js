@@ -2,7 +2,7 @@ import * as constants from "../constants";
 
 const getLoginUser = (state, action) => {
   localStorage.setItem("userDetails", JSON.stringify(action.payload));
-  console.log(action.payload);
+
   return {
     ...state,
     error: null,

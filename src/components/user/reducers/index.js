@@ -2,7 +2,7 @@ import { getUserDataHandlers } from "./getUserData";
 import { createReducer } from "../../../core/reduxUtils";
 
 const initialState = {
-  currentUser: null,
+  currentUser: {},
   error: null,
   signupUserLoading: false,
   loginUserLoading: false,
