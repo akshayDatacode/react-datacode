@@ -4,6 +4,7 @@ import {
   GET_SIGNUP_USER,
   GET_SIGNUP_USER_ERROR,
   GET_LOGOUT_USER,
+  SET_USER_PROFILE,
 } from "../constants";
 
 export const setLoginUser = (data) => ({
@@ -28,4 +29,9 @@ export const setSignupUser = (data) => ({
 export const setSignupUserError = (error) => ({
   type: GET_SIGNUP_USER_ERROR,
   payload: error,
+});
+
+export const setUserProfile = (data) => ({
+  type: SET_USER_PROFILE,
+  payload: data,
 });

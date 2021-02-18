@@ -36,11 +36,14 @@ const SideDrawer = ({
   show,
   currentUser,
   logoutUser,
+  userProfile,
 }) => {
   let drawerClasses = "side-drawer";
   if (show) {
     drawerClasses = "row m-0 side-drawer open";
   }
+
+  console.log("ddddddddddddddddddddddddddddddddd099", userProfile);
 
   return (
     <>
@@ -58,7 +61,7 @@ const SideDrawer = ({
             {currentUser && currentUser.userName ? (
               <>
                 <div className="header-profile d-flex">
-                  <Link to="/my_profile">
+                  <Link to={`/my_profile/${currentUser.email}`}>
                     <img
                       height="40px"
                       width="40px"
@@ -67,9 +70,14 @@ const SideDrawer = ({
                       className="header-profile-img rounded-circle ml-3"
                     />
                   </Link>
-                  <h2 className="ml-3">{`Hello! ${currentUser.userName}`}</h2>
+                  <h2 className="ml-3">
+                    {`Hello! ${userProfile && userProfile.firstName}`}
+                  </h2>
                 </div>
-                <Link to="/my_profile" onClick={() => backDropClickHandler()}>
+                <Link
+                  to={`/my_profile/${currentUser.email}`}
+                  onClick={() => backDropClickHandler()}
+                >
                   <div className="btn join-us my-3">My Profile</div>
                 </Link>
               </>

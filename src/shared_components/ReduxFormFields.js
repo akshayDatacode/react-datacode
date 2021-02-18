@@ -9,6 +9,7 @@ export const renderInputField = ({
   input,
   label,
   placeholder,
+  isDisabled,
   type,
   inputClass,
   meta: { touched, error, warning },
@@ -21,6 +22,7 @@ export const renderInputField = ({
         placeholder={placeholder}
         type={type}
         className="form-input-field"
+        disabled={isDisabled ? true : false}
       />
     ) : (
       <input
@@ -28,6 +30,7 @@ export const renderInputField = ({
         placeholder={placeholder}
         type={type}
         className="form-input-field"
+        disabled={isDisabled ? true : false}
       />
     )}
     {touched && errorMessage(error, warning)}

@@ -1,32 +1,42 @@
 import React, { useEffect } from "react";
 import { Field, reduxForm } from 'redux-form'
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import Loader from 'react-loader-spinner'
 
 import { renderInputField } from '../../../../../shared_components/ReduxFormFields'
 import { required, email } from '../../../../../utils/validators'
 
 const EditProfile = ({
-  reset, handleSubmit, submitting, signupUserLoading,
+  initialize, reset, handleSubmit, submitting,
+  signupUserLoading, userProfile, editUserProfile,
+  setUserProfile,
 }) => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [])
+    if (userProfile) {
+      initialize(userProfile)
+    }
+  }, [userProfile])
+
+  const history = useHistory()
 
   const onSubmit = (values) => {
+
     const user = { ...values }
     console.log("values ()()", user)
-    // signupUser(user).then((res) => {
-    //   if (res) {
-    //     setUserDetails(res.data)
-    //     console.log("Loged IN")
-    //     reset('signupForm')
-    //   } else {
-    //     console.log("Error", res)
-    //     reset('editForm')
-    //   }
-    // })
+    editUserProfile(user).then((res) => {
+      if (res) {
+        //  setUserProfile(res.data)
+        console.log("Updated", userProfile && userProfile.email)
+        history.push(`/my_profile/${userProfile && userProfile.email}`)
+
+        reset('editForm')
+      } else {
+        console.log("Error", res)
+        reset('editForm')
+      }
+    })
   }
 
   return (
@@ -58,60 +68,73 @@ const EditProfile = ({
             <div className="mt-3 mb-5">
               <h6>Personal Details</h6>
               <Field
-                name="name"
-                type="text"
-                component={renderInputField}
-                label='Name'
-                placeholder=""
-                validate={[required]}
-              />
-              <Field
                 name="userName"
                 type="text"
                 component={renderInputField}
                 label='Username'
                 placeholder="system123"
                 validate={[required]}
+                isDisabled={true}
               />
               <Field
-                name="password"
-                type="password"
+                name="firstName"
+                type="text"
                 component={renderInputField}
-                label='Password'
-                placeholder="******"
+                label='First Name'
+                placeholder=""
                 validate={[required]}
+              />
+              <Field
+                name="lastName"
+                type="text"
+                component={renderInputField}
+                label='Last Name'
+                placeholder=""
+                validate={[required]}
+              />
+              <Field
+                name="email"
+                type="email"
+                component={renderInputField}
+                label='Email'
+                placeholder=""
+                validate={[required]}
+                isDisabled={true}
+              />
+              <Field
+                name="phone"
+                type="number"
+                component={renderInputField}
+                label='Phone No.'
+              // placeholder=""
+              // validate={[required]}
+              // isDisabled={true}
               />
             </div>
             <div className="mt-3 mb-5">
               <h6>Acadmics Details</h6>
               <Field
-                name="email"
-                type="email"
-                component={renderInputField}
-                label='Email'
-                placeholder="member_name@joe.com"
-                validate={[required, email]}
-              />
-              <Field
-                name="userName"
+                name="university"
                 type="text"
                 component={renderInputField}
-                label='Username'
-                placeholder="system123"
-                validate={[required]}
+                label='College / University'
               />
               <Field
-                name="password"
-                type="password"
+                name="branch"
+                type="text"
                 component={renderInputField}
-                label='Password'
-                placeholder="******"
-                validate={[required]}
+                label='Branch'
+              />
+              <Field
+                name="graduationYear"
+                type="text"
+                component={renderInputField}
+                label='Graduation Year'
               />
             </div>
             <div className="mt-3 mb-5">
               <h6>Your Achivements</h6>
-              <Field
+              {/* <Field
                 name="email"
                 type="email"
                 component={renderInputField}
@@ -134,33 +157,27 @@ const EditProfile = ({
                 label='Password'
                 placeholder="******"
                 validate={[required]}
-              />
+              /> */}
             </div>
             <div className="mt-3 mb-5">
               <h6>Social Media Links</h6>
               <Field
-                name="email"
-                type="email"
-                component={renderInputField}
-                label='Email'
-                placeholder="member_name@joe.com"
-                validate={[required, email]}
-              />
-              <Field
-                name="userName"
+                name="linkedin"
                 type="text"
                 component={renderInputField}
-                label='Username'
-                placeholder="system123"
-                validate={[required]}
+                label='Linkedin'
               />
               <Field
-                name="password"
-                type="password"
+                name="twitter"
+                type="text"
                 component={renderInputField}
-                label='Password'
-                placeholder="******"
-                validate={[required]}
+                label='Twitter'
+              />
+              <Field
+                name="github"
+                type="text"
+                component={renderInputField}
+                label='Github'
               />
             </div>
             <div className="row mt-4">

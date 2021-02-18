@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import "bootstrap/dist/css/bootstrap.css";
-
+import { useHistory } from "react-router-dom";
 // -----------------------------------------------------
 
 import AppRouters from "./components/app_routers/AppRouters";
@@ -9,7 +9,7 @@ import IndexFooter from "./components/footer_component/indexFooter";
 import IndexHeader from "./components/header_component/IndexHeader";
 import FooterComponentUpper from "./components/footer_component/FooterComponentUpper";
 import FooterNavBar from "./components/header_component/footer_nav/FooterNavBar";
-import { setLocalUser } from "../components/user/actions";
+import { setLocalUser, getUserProfile } from "../components/user/actions";
 import { showFooter } from "./actions";
 
 // import fire from "./config/fire";
@@ -29,7 +29,7 @@ import "../assets/scss/side_nav.scss";
 import "../assets/scss/category.scss";
 import "../assets/scss/profile.scss";
 
-const App = ({ isShowFooter, setLocalUser }) => {
+const App = ({ isShowFooter, setLocalUser, getUserProfile }) => {
   const showFooterPaths = ["#/", "#/home"];
   // /const [showFooter, setShowFooter] = useState(false);
 
@@ -37,6 +37,9 @@ const App = ({ isShowFooter, setLocalUser }) => {
     var localUser = JSON.parse(localStorage.getItem("userDetails"));
     console.log("local user", localUser);
     setLocalUser(localUser);
+    if (localUser) {
+      getUserProfile(localUser.data.email);
+    }
     // if (showFooterPaths.includes(location.pathname)) {
     //   setShowFooter(true);
     // } else {
@@ -91,6 +94,7 @@ const App = ({ isShowFooter, setLocalUser }) => {
 
 const mapDispatchToProps = {
   setLocalUser,
+  getUserProfile,
 };
 
 const mapStateToProps = ({ app }) => ({

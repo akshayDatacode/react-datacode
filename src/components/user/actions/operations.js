@@ -1,7 +1,11 @@
 import axios from "axios";
 import * as actions from "./actionCreators";
 import DatacodeConfig from "../../../core/config";
-import { SET_SIGNUP_USER_LOADING, SET_LOGIN_USER_LOADING } from "../constants";
+import {
+  SET_SIGNUP_USER_LOADING,
+  SET_LOGIN_USER_LOADING,
+  SET_USER_PROFILE_LOADING,
+} from "../constants";
 
 const baseURL = DatacodeConfig.baseURL;
 
@@ -62,5 +66,39 @@ export const forgotPassword = (user) => (dispatch) => {
     })
     .catch((error) => {
       console.log("Forgot Password error", error);
+    });
+};
+
+export const getUserProfile = (email) => (dispatch) => {
+  dispatch({ type: SET_USER_PROFILE_LOADING });
+  return axios
+    .post(`${baseURL}/user/get-profile`, { email })
+    .then(({ data }) => {
+      if (data.success) {
+        console.log("User Profile:__", data.userProfile);
+        dispatch(actions.setUserProfile(data));
+        return { success: true, data: data.userProfile };
+      }
+    })
+    .catch((error) => {
+      dispatch({ type: SET_USER_PROFILE_LOADING });
+      console.log("get userProfile error", error);
+    });
+};
+
+export const editUserProfile = (user) => (dispatch) => {
+  dispatch({ type: SET_USER_PROFILE_LOADING });
+  return axios
+    .put(`${baseURL}/user/edit-profile`, user)
+    .then(({ data }) => {
+      if (data.success) {
+        console.log("User Profile:__", data.userProfile);
+        dispatch(actions.setUserProfile(data));
+        return { success: true, data: data.userProfile };
+      }
+    })
+    .catch((error) => {
+      dispatch({ type: SET_USER_PROFILE_LOADING });
+      console.log("get userProfile error", error);
     });
 };

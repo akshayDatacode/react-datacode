@@ -1,7 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
-const MyProfile = () => {
+const MyProfile = ({
+  getUserProfile,
+  match: { params: { email } },
+  userProfile,
+}) => {
+
+  useEffect(() => {
+    console.log("email", email)
+    if (email) {
+      getUserProfile(email);
+    }
+  })
+
+  const { firstName, branch, university } = userProfile && userProfile
+
   return (
     <>
       <div className="row m-0 my-profile p-md-5 p-2">
@@ -15,7 +30,7 @@ const MyProfile = () => {
               alt="avatar"
             />
           </div>
-          <h6 className="mt-3 mb-0">Akshay Mandliya</h6>
+          <h6 className="mt-3 mb-0">{firstName}</h6>
           <spna className="bio">Community Boy | React | I Love Datacode</spna>
           <div className="mt-3">
             <i className="fab fa-linkedin mr-3" />
@@ -52,8 +67,8 @@ const MyProfile = () => {
         <div className="col-md-8 col-12 ">
           <div className="row m-0 graduation-details">
             <div className="col-12 p-3">
-              <h6><i className="fas fa-university" />Sage University, Indore </h6>
-              <h6><i className="fas fa-code-branch" />Computer Science Engineering</h6>
+              <h6><i className="fas fa-university" />{university}</h6>
+              <h6><i className="fas fa-code-branch" />{branch}</h6>
               <h6><i className="fal fa-graduation-cap" />2016-2020</h6>
             </div>
           </div>
@@ -70,6 +85,17 @@ const MyProfile = () => {
       </div>
     </>
   )
+}
+
+MyProfile.defaultProps = {
+  email: '',
+  userProfile: {},
+}
+
+MyProfile.propTypes = {
+  getUserProfile: PropTypes.func.isRequired,
+  email: PropTypes.string,
+  userProfile: PropTypes.object
 }
 
 export default MyProfile

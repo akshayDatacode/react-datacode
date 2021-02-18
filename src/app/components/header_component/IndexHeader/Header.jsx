@@ -108,7 +108,7 @@ const Header = ({
                 </Link>
                 :
                 <div className="header-profile d-flex align-items-center">
-                  <Link to="/my_profile">
+                  <Link to={`/my_profile/${currentUser && currentUser.email}`}>
                     <img
                       height="40px"
                       width="40px"
@@ -123,7 +123,7 @@ const Header = ({
                     </DropdownToggle>
                     <DropdownMenu className="dropdown-menu mt-3" right>
                       <DropdownItem header>Akshay Mandliya</DropdownItem>
-                      <DropdownItem><Link to="/my_profile"><span>My Profile</span></Link></DropdownItem>
+                      <DropdownItem><Link to={`/my_profile/${currentUser.email}`}><span>My Profile</span></Link></DropdownItem>
                       <DropdownItem>My Library</DropdownItem>
                       <DropdownItem><Link to="/edit_profile">Edit Profile</Link></DropdownItem>
                       <DropdownItem>

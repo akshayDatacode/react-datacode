@@ -1249,7 +1249,9 @@ const AppRouters = () => {
         <Route path="/tutorials/:technology" component={TechTutorials} />
         <Route path="/tutorial/:id" component={TutorialPage} />
         {/* Profile */}
-        <Route exact path="/my_profile" render={authGuard(MyProfile)} />
+        {/* <Route path="/my_profile/:email" render={authGuard(MyProfile)} /> */}
+        <Route path="/my_profile/:email" component={MyProfile} />
+
         <Route exact path="/edit_profile" render={authGuard(EditProfile)} />
         {/* ____________________________________________ */}
 
