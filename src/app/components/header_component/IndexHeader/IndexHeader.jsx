@@ -36,7 +36,7 @@ const IndexHeader = ({
 
   return (
     <>
-      <Header currentUser={currentUser} logoutUser={logoutUser} drawerClickHandler={drawerToggleClickHandler} isShowAddTutorial={isShowAddTutorial} />
+      <Header userProfile={userProfile} currentUser={currentUser} logoutUser={logoutUser} drawerClickHandler={drawerToggleClickHandler} isShowAddTutorial={isShowAddTutorial} />
       {/* /<HeaderComponent /> */}
       {/* <HeaderComponent 
           drawerClickHandler={this.drawerToggleClickHandler}

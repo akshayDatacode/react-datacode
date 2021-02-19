@@ -11,6 +11,16 @@
   font-size: 14px;
 }
 
+.upload-img-btn {
+  width: 200px;
+  background-color: #30006d;
+  color: #ffffff;
+  font-size: 14px;
+  :hover {
+    color: #ffffff !important;
+  }
+}
+
 .left-profile-section {
   align-items: center;
   justify-content: center;

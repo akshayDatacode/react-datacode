@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Field, reduxForm } from 'redux-form'
 import { Link, useHistory } from "react-router-dom";
 import Loader from 'react-loader-spinner'
@@ -9,8 +9,12 @@ import { required, email } from '../../../../../utils/validators'
 const EditProfile = ({
   initialize, reset, handleSubmit, submitting,
   signupUserLoading, userProfile, editUserProfile,
-  setUserProfile,
+  setUserProfile, setUserImgDetails, userProfileLoading,
 }) => {
+
+  const [image, setImage] = useState("")
+  const [imgUrl, setImgUrl] = useState("")
+
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -21,16 +25,29 @@ const EditProfile = ({
 
   const history = useHistory()
 
-  const onSubmit = (values) => {
+  const postUserImgDetails = () => {
+    const data = new FormData()
+    data.append("file", image)
+    data.append("upload_preset", "user-profile-img")
+    data.append("cloud_name", "datacode")
+    setUserImgDetails(data).then((res) => {
+      if (res.success) {
+        setImgUrl(res.data)
+        setImage("")
+      }
+    })
+  }
 
+  const onSubmit = (values) => {
     const user = { ...values }
     console.log("values ()()", user)
+    user['imgUrl'] = imgUrl
+
     editUserProfile(user).then((res) => {
       if (res) {
         //  setUserProfile(res.data)
         console.log("Updated", userProfile && userProfile.email)
         history.push(`/my_profile/${userProfile && userProfile.email}`)
-
         reset('editForm')
       } else {
         console.log("Error", res)
@@ -44,18 +61,39 @@ const EditProfile = ({
       <div className="row m-0 edit-profile">
         <div className="col-md-4 col-12 text-center left-profile-section">
           <div className="mt-4">
-            <img
-              className="rounded-circle header-profile-img"
-              height="140"
-              width="140"
-              src={require(`../../../../../assets/images/svg/profile.jpg`)}
-              alt="avatar"
-            />
+            {userProfileLoading ? <Loader
+              type="Puff"
+              color="#30006d"
+              height={100}
+              width={100}
+              timeout={3000} //3 secs
+            /> :
+              <img
+                className="rounded-circle header-profile-img"
+                height="140"
+                width="140"
+                src={imgUrl !== "" ? imgUrl : userProfile && userProfile.imgUrl}
+                alt="avatar"
+              />}
           </div>
           <div>
-            <Link to="/edit_profile" >
-              <div className="btn edit-profile-btn my-3">Add Profile Picture<i className="fad fa-user-edit ml-2" /></div>
-            </Link>
+            {image ?
+              <div className="btn upload-img-btn mt-2 mb-3" onClick={() => postUserImgDetails()}>
+                Upload Image<i className="fad fa-user-edit ml-2" />
+              </div>
+              :
+              <>
+                <input
+                  type="file"
+                  id="edit-profile-btn"
+                  onChange={(e) => setImage(e.target.files[0])}
+                  hidden
+                />
+                <label className="btn edit-profile-btn my-3" for="edit-profile-btn">
+                  Add Profile Picture<i className="fad fa-user-edit ml-2" />
+                </label>
+              </>
+            }
           </div>
           <div>
             <Link to="/reset_password" >

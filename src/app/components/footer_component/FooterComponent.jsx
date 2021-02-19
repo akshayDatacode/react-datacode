@@ -145,7 +145,7 @@ const FooterComponent = ({
           </div>
         </div>
         <div className="row m-0 text-center d-flex justify-content-center bg-dark py-2">
-          <h6 class="text-center" href="https://datacode.in/">
+          <h6 className="text-center" href="https://datacode.in/">
             Made with <FontAwesomeIcon icon={faHeart} size="2x" color="red" />{" "}
               by Datacode Team
             </h6>

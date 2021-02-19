@@ -35,7 +35,7 @@ class LandingPage extends Component {
         <Helmet>
           <title>Datacode | Computer Science Learning Community</title>
         </Helmet>
-        <CarouselComponent />
+        <CarouselComponent name={this.props.userProfile.firstName} />
         <div className="row m-0 px-md-5 community-section">
           <div className="col-12 col-md-6 text-center">
             <Question width="100%" height="Auto" />

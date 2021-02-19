@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -43,8 +44,6 @@ const SideDrawer = ({
     drawerClasses = "row m-0 side-drawer open";
   }
 
-  console.log("ddddddddddddddddddddddddddddddddd099", userProfile);
-
   return (
     <>
       <div className={drawerClasses}>
@@ -60,17 +59,21 @@ const SideDrawer = ({
           <div className="row m-0 p-2 side-header">
             {currentUser && currentUser.userName ? (
               <>
-                <div className="header-profile d-flex">
+                <div className="header-profile">
                   <Link to={`/my_profile/${currentUser.email}`}>
                     <img
-                      height="40px"
-                      width="40px"
-                      src={require(`../../../../assets/images/svg/Python.png`)}
+                      className="rounded-circle header-profile-img"
+                      height="40"
+                      width="40"
+                      src={
+                        userProfile && userProfile.imgUrl !== ""
+                          ? userProfile.imgUrl
+                          : require(`../../../../assets/images/svg/profile.jpg`)
+                      }
                       alt="avatar"
-                      className="header-profile-img rounded-circle ml-3"
                     />
                   </Link>
-                  <h2 className="ml-3">
+                  <h2 className="mt-2">
                     {`Hello! ${userProfile && userProfile.firstName}`}
                   </h2>
                 </div>
@@ -266,6 +269,16 @@ const SideDrawer = ({
       </div>
     </>
   );
+};
+
+SideDrawer.defaultProps = {
+  email: "",
+  userProfile: {},
+};
+
+SideDrawer.propTypes = {
+  email: PropTypes.string,
+  userProfile: PropTypes.object,
 };
 
 export default SideDrawer;

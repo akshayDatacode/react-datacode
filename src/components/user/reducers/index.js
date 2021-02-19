@@ -7,7 +7,7 @@ const initialState = {
   error: null,
   signupUserLoading: false,
   loginUserLoading: false,
-  getUserProfileLoading: false,
+  userProfileLoading: false,
 };
 
 const handlers = {

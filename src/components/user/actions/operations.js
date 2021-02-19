@@ -102,3 +102,18 @@ export const editUserProfile = (user) => (dispatch) => {
       console.log("get userProfile error", error);
     });
 };
+
+export const setUserImgDetails = (data) => (dispatch) => {
+  dispatch({ type: SET_USER_PROFILE_LOADING });
+  return axios
+    .post(`https://api.cloudinary.com/v1_1/datacode/image/upload`, data)
+    .then(({ data }) => {
+      console.log("User Profile:__", data);
+      dispatch({ type: SET_USER_PROFILE_LOADING });
+      return { success: true, data: data.url };
+    })
+    .catch((error) => {
+      dispatch({ type: SET_USER_PROFILE_LOADING });
+      console.log("get userProfile error", error);
+    });
+};

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem, UncontrolledDropdown } from 'reactstrap'
+import PropTypes from 'prop-types'
 
 import { debounce } from '../helper';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -11,6 +12,7 @@ const Header = ({
   isShowAddTutorial,
   currentUser,
   logoutUser,
+  userProfile,
 }) => {
 
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -110,16 +112,16 @@ const Header = ({
                 <div className="header-profile d-flex align-items-center">
                   <Link to={`/my_profile/${currentUser && currentUser.email}`}>
                     <img
-                      height="40px"
-                      width="40px"
-                      src={require(`../../../../assets/images/svg/Python.png`)}
-                      alt="avatar"
-                      className="header-profile-img rounded-circle ml-3"
+                      className="rounded-circle header-profile-img"
+                      height="40"
+                      width="40"
+                      src={userProfile && userProfile.imgUrl !== "" ? userProfile.imgUrl : require(`../../../../assets/images/svg/profile.jpg`)}
+                      alt="datacode"
                     />
                   </Link>
                   <UncontrolledDropdown setActiveFromChild>
                     <DropdownToggle tag="a" className="ml-3 profile-dropdown">
-                      <i class="far fa-angle-down" />
+                      <i className="far fa-angle-down" />
                     </DropdownToggle>
                     <DropdownMenu className="dropdown-menu mt-3" right>
                       <DropdownItem header>Akshay Mandliya</DropdownItem>
@@ -144,6 +146,16 @@ const Header = ({
       </div>
     </>
   )
+}
+
+Header.defaultProps = {
+  email: '',
+  userProfile: {},
+}
+
+Header.propTypes = {
+  email: PropTypes.string,
+  userProfile: PropTypes.object
 }
 
 export default Header

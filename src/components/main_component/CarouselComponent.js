@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Carousel } from "react-bootstrap";
+import PropTypes from "prop-types";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "../../assets/css/Carousel.css";
 
@@ -21,9 +22,12 @@ class CarouselComponent extends Component {
             <div className="carousel-card pt-5 pb-3 pb-0 px-md-5 px-2 text-center">
               <div className="text-left px-3 px-md-0">
                 <h1 className="mt-3">
-                  WelCome to the Awesome Learning Portal.... :)
+                  {`WelCome ${this.props.name && `Back, ${this.props.name}`} `}
                 </h1>
-                <h2>Your Learning Assistant</h2>
+                <h1 className="heading-second">
+                  to the Awesome Learning Portal.... :)
+                </h1>
+                <h2>We are your learning assistant</h2>
               </div>
               <div className="col-12 col-md-6 qoute text-left">
                 <h6>
@@ -85,5 +89,13 @@ class CarouselComponent extends Component {
     );
   }
 }
+
+CarouselComponent.defaultProps = {
+  name: "",
+};
+
+CarouselComponent.propTypes = {
+  name: PropTypes.string,
+};
 
 export default CarouselComponent;

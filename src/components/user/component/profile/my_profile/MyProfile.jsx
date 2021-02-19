@@ -13,9 +13,9 @@ const MyProfile = ({
     if (email) {
       getUserProfile(email);
     }
-  })
+  }, [])
 
-  const { firstName, branch, university } = userProfile && userProfile
+  const { firstName, branch, university, imgUrl } = userProfile && userProfile
 
   return (
     <>
@@ -26,12 +26,12 @@ const MyProfile = ({
               className="rounded-circle header-profile-img"
               height="140"
               width="140"
-              src={require(`../../../../../assets/images/svg/profile.jpg`)}
+              src={imgUrl !== "" ? imgUrl : require(`../../../../../assets/images/svg/profile.jpg`)}
               alt="avatar"
             />
           </div>
           <h6 className="mt-3 mb-0">{firstName}</h6>
-          <spna className="bio">Community Boy | React | I Love Datacode</spna>
+          <span className="bio">Community Boy | React | I Love Datacode</span>
           <div className="mt-3">
             <i className="fab fa-linkedin mr-3" />
             <i className="fab fa-twitter-square mr-3" />
@@ -93,7 +93,6 @@ MyProfile.defaultProps = {
 }
 
 MyProfile.propTypes = {
-  getUserProfile: PropTypes.func.isRequired,
   email: PropTypes.string,
   userProfile: PropTypes.object
 }
