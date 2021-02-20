@@ -6,6 +6,12 @@ export const techIcon = [
     techCategory: "programming",
   },
   {
+    svgSource: "Angular.png",
+    technology: "Angular",
+    title: "Angular",
+    techCategory: "programming",
+  },
+  {
     svgSource: "React.png",
     technology: "React",
     title: "React",

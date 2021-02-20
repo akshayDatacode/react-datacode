@@ -39,6 +39,7 @@ const IndexTutorial = ({
   hideAddTutorial,
 }) => {
   const [showTechIcon, setShowTechIcon] = useState('programming')
+  const [search, setSearch] = useState('')
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -47,7 +48,9 @@ const IndexTutorial = ({
     return () => {
       hideAddTutorial()
     }
-  })
+  }, [])
+
+  const filteredList = techIcon.filter(tech => Object.values(tech).some(value => value.toLowerCase().includes(search.toLowerCase())));
 
   return (
     <>
@@ -115,7 +118,13 @@ const IndexTutorial = ({
               <h2 className="text-center my-5">Find the Best Programming Courses & Tutorials</h2>
               <div className="d-flex mx-md-5 mx-2">
                 <i className="fad fa-search search-icon" />
-                <input type="text" className="search" />
+                <input
+                  type="text"
+                  className="search"
+                  value={search}
+                  placeholder="Company Name / Technology / Job title"
+                  onChange={(e) => setSearch(e.target.value)}
+                />
               </div>
             </div>
           </div>
@@ -138,7 +147,7 @@ const IndexTutorial = ({
             </div>
             <div className="col-12 col-md-8">
               <div className="row m-0 mt-4 px-5 d-flex justify-content-center">
-                {techIcon.map((item) => (
+                {filteredList.map((item) => (
                   item.techCategory === showTechIcon &&
                   <Link to={`/tutorials/${item.technology}`}>
                     <div className="col-12 col-md-3 d-flex tech-card">
