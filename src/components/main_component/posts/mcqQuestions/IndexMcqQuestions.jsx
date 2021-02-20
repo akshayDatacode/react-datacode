@@ -20,7 +20,7 @@ class IndexMcqQuestions extends Component {
           <div className="col-md-8 mt-4">
             <h1
               className="text-center mb-4 rounded p-2"
-              style={{ backgroundColor: "#06CB6C", color: "#072C71" }}
+              style={{ backgroundColor: "#30006b", color: "#ffffff" }}
             >
               <FontAwesomeIcon icon={faTasks} color="#072C71" size="1x" />{" "}
               Technical MCQs Practice Question

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHome,
@@ -34,6 +35,7 @@ import Technologies from "../../../../../right_section/Technologies";
 import { techIcon, techCategory } from '../helpers'
 import TutorialCard from "../TutorialCard";
 
+
 const IndexTutorial = ({
   showAddTutorial,
   hideAddTutorial,
@@ -54,6 +56,7 @@ const IndexTutorial = ({
 
   return (
     <>
+      <Helmet><title>Find the Best Courses & Tutorials | Datacode.in</title></Helmet>
       <div className="row m-0 category-page">
         <div className="col-12 p-md-5 p-2">
           <div className="row m-0 category-header ">
@@ -116,8 +119,7 @@ const IndexTutorial = ({
           <div className="row m-0">
             <div className="col-12 text-center">
               <h2 className="text-center my-5">Find the Best Programming Courses & Tutorials</h2>
-              <div className="d-flex mx-md-5 mx-2">
-                <i className="fad fa-search search-icon" />
+              <div className="d-flex mx-md-5 mx-2 fontSearch">
                 <input
                   type="text"
                   className="search"
@@ -125,6 +127,7 @@ const IndexTutorial = ({
                   placeholder="Company Name / Technology / Job title"
                   onChange={(e) => setSearch(e.target.value)}
                 />
+                <i className="fad fa-search search-icon" />
               </div>
             </div>
           </div>
@@ -178,7 +181,7 @@ const IndexTutorial = ({
                 <div className="col-md-8 mt-4">
                   <h1
                     className="text-center mb-4 rounded p-2"
-                    style={{ backgroundColor: "#06CB6C", color: "#072C71" }}
+                    style={{ backgroundColor: "#30006b", color: "#ffffff" }}
                   >
                     <FontAwesomeIcon icon={faChalkboardTeacher} /> Tutorials & Courses
             </h1>

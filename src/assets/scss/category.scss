@@ -68,11 +68,11 @@
     width: 100%;
     border: solid 2px #30006d;
     border-radius: 10px;
+    outline: none;
   }
   .search-icon {
-    padding: 5px;
     align-items: center;
-    font-size: 40px;
+    font-size: 20px;
     color: rgb(6, 67, 124);
   }
   .tech-tag-col {
@@ -321,6 +321,17 @@
       font-size: 13px;
     }
   }
+}
+
+.fontSearch {
+  position: relative;
+}
+
+.fontSearch i {
+  position: absolute;
+  left: 13px;
+  top: 16px;
+  color: gray;
 }
 
 @media (max-width: 767px) {

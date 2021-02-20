@@ -20,7 +20,7 @@ class IndexPythonPracticeQuestions extends Component {
           <div className="col-md-8 mt-4">
             <h2
               className="text-center mb-4 rounded p-3"
-              style={{ backgroundColor: "#06CB6C", color: "#072C71" }}
+              style={{ backgroundColor: "#30006b", color: "#ffffff" }}
             >
               Python Programming Practice Questions
             </h2>

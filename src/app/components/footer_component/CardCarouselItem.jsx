@@ -8,26 +8,28 @@ class CardCarouselItem extends Component {
   render() {
     return (
       <>
-        <div className="card text-center shadow">
+        <div className="card post-card text-center shadow">
           <img
             className=" card-img-top mx-auto img-fluid img-circle d-block"
             src={require("../../../assets/images/" + this.props.imgsource)}
             alt="avatar"
           />
-          <h6 className="text-center mt-2">{this.props.title}</h6>
+          <h5 className="text-center mt-2">{this.props.title}</h5>
           <div
             className="card-footer p-1 mt-1"
-            style={{ backgroundColor: "#072C71" }}
+            style={{ backgroundColor: "#30006b" }}
           >
             <Link to={this.props.link}>
               <div
-                className="btn btn-primary btn-block p-0 m-0 border-0"
-                style={{ backgroundColor: "#072C71" }}
+                className="btn btn-block p-0 m-0 border-0"
+
               >
-                <h6 className="mt-1 p-0">
+                <span className="mt-1 p-0" style={{
+                  color: 'white'
+                }}>
                   Start Learning
-                  <FontAwesomeIcon icon={faUserNinja} className="ml-1" />
-                </h6>
+                  <i className="ml-2 fal fa-long-arrow-right" />
+                </span>
               </div>
             </Link>
           </div>

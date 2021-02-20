@@ -47,7 +47,7 @@ class IndexTechnologies extends Component {
           <div className="col-md-8 mt-4">
             <h1
               className="text-center mb-4 rounded p-2"
-              style={{ backgroundColor: "#06CB6C", color: "#072C71" }}
+              style={{ backgroundColor: "#30006b", color: "#ffffff" }}
             >
               <FontAwesomeIcon icon={faUniversity} /> RGPV Online Exam MCQs
               Resources
@@ -62,7 +62,7 @@ class IndexTechnologies extends Component {
             <br />
             <div
               className="text-center badge  mt-4 mb-4 rounded p-2"
-              style={{ backgroundColor: "#06CB6C", color: "#072C71" }}
+              style={{ backgroundColor: "#30006b", color: "#ffffff" }}
             >
               Computer Science Engineering
             </div>

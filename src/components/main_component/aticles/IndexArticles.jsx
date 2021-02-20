@@ -39,7 +39,7 @@ class IndexArticles extends Component {
                 <div className="col">
                   <h1
                     className="text-center mb-2 rounded p-2"
-                    style={{ backgroundColor: "#06CB6C", color: "#072C71" }}
+                    style={{ backgroundColor: "#30006b", color: "#ffffff" }}
                   >
                     <FontAwesomeIcon
                       icon={faNewspaper}

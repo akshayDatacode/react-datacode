@@ -25,7 +25,7 @@ class IndexProgrammingQuestions extends Component {
           <div className="col-md-8 mt-4">
             <h1
               className="text-center mb-4 rounded p-2"
-              style={{ backgroundColor: "#06CB6C", color: "#072C71" }}
+              style={{ backgroundColor: "#30006b", color: "#ffffff" }}
             >
               <FontAwesomeIcon icon={faFileCode} color="#072C71" /> Programming
               Example Question

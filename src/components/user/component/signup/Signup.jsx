@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Field, reduxForm } from 'redux-form'
+import { Field, reduxForm, initialize } from 'redux-form'
 import { Redirect, Link } from 'react-router-dom';
 import Loader from 'react-loader-spinner'
+import { GoogleLogin } from 'react-google-login'
 
 import { renderInputField } from '../../../../shared_components/ReduxFormFields'
 import { required, email } from '../../../../utils/validators'
@@ -10,9 +11,11 @@ import { ReactComponent as GoogleLogo } from "../../../../assets/images/svg/goog
 
 
 const Signup = ({
-  reset, handleSubmit, submitting, signupUser, signupUserLoading,
+  reset, handleSubmit, submitting, signupUser, signupUserLoading, initialize, googleLogin,
 }) => {
   const [userDetails, setUserDetails] = useState()
+  const [googleUser, setGoogleUSer] = useState()
+
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -20,10 +23,15 @@ const Signup = ({
 
   const onSubmit = (values) => {
     const user = { ...values }
+    if (googleUser && googleUser.email) {
+      user["email_verify"] = "verified"
+    }
     console.log("values ()()", user)
     signupUser(user).then((res) => {
       if (res) {
-        setUserDetails(res.data)
+        if (!googleUser) {
+          setUserDetails(res.data)
+        }
         console.log("Loged IN")
         reset('signupForm')
       } else {
@@ -32,6 +40,17 @@ const Signup = ({
       }
     })
   }
+
+  // const responseSuccessGoogle = (response) => {
+  //   if (response && response.profileObj) {
+  //     setGoogleUSer(response.profileObj)
+  //     initialize(response.profileObj.email)
+  //   }
+  // }
+
+  // const responseFailureGoogle = (response) => {
+
+  // }
 
   console.log("signupUserLoading", signupUserLoading)
 
@@ -56,15 +75,44 @@ const Signup = ({
         <div className="col-12 col-md-4 login-section">
           <h1 className="text-center login-text">Sign Up To Get Inside</h1>
           <div className="pt-md-3 px-4 login-card">
-            <button type="button" className="google-button">
+            {/* <GoogleLogin
+              clientId="135253032783-kmpa2k662qc8dkdqhlmml973l3c7khbt.apps.googleusercontent.com"
+              render={renderProps => (
+                <button onClick={renderProps.onClick} disabled={renderProps.disabled} type="button" className="google-button">
+                  <GoogleLogo width="40" height="40" className="bg-white p-1 mr-5" />
+                  <div class="google-login-string">
+                    Sign up in with Google
+                  </div>
+                </button>
+              )}
+              buttonText="Login"
+              onSuccess={responseSuccessGoogle}
+              onFailure={responseFailureGoogle}
+              cookiePolicy={'single_host_origin'}
+              isSignedIn={true}
+            /> */}
+            <button onClick={() => googleLogin()} type="button" className="google-button">
               <GoogleLogo width="40" height="40" className="bg-white p-1 mr-5" />
               <div class="google-login-string">
                 Sign up in with Google
               </div>
             </button>
+
             <div class="or-line">
               <span>or</span>
             </div>
+            {googleUser && googleUser.email &&
+              <>
+                <img
+                  className="rounded-circle header-profile-img"
+                  height="140"
+                  width="140"
+                  src={googleUser.image}
+                  alt="avatar"
+                />
+                <h6>Complete your Profile</h6>
+              </>
+            }
             <form className="" onSubmit={handleSubmit(onSubmit)}>
               <div>
                 <Field
@@ -83,14 +131,16 @@ const Signup = ({
                   placeholder="system123"
                   validate={[required]}
                 />
-                <Field
-                  name="password"
-                  type="password"
-                  component={renderInputField}
-                  label='Password'
-                  placeholder="******"
-                  validate={[required]}
-                />
+                {!googleUser &&
+                  <Field
+                    name="password"
+                    type="password"
+                    component={renderInputField}
+                    label='Password'
+                    placeholder="******"
+                    validate={[required]}
+                  />
+                }
               </div>
               <div className="row mt-4">
                 <div className="col-7 text-left">

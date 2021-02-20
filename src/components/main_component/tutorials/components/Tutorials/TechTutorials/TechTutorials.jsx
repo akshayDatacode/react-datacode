@@ -5,6 +5,7 @@ import ReactPaginate from 'react-paginate'
 import { techData, techCategory } from '../helpers'
 import TutorialCard from '../TutorialCard'
 import Filter from '../Filter'
+import { Helmet } from 'react-helmet'
 
 
 const TechTutorials = ({
@@ -45,6 +46,7 @@ const TechTutorials = ({
 
   return (
     <>
+      <Helmet><title>{`Find the Best ${techDetails && techDetails.title} Courses & Tutorials | Datacode.in`}</title></Helmet>
       <div className="row m-0 category-page">
         <div className="col-12 p-md-5 p-2">
           <div className="row m-0 category-header ">

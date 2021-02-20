@@ -20,7 +20,7 @@ class IndexLearningPlatforms extends Component {
           <div className="col-md-8 mt-4">
             <h1
               className="text-center mb-4 display-5 p-2 rounded"
-              style={{ backgroundColor: "#06CB6C", color: "#072C71" }}
+              style={{ backgroundColor: "#30006b", color: "#ffffff" }}
             >
               Onine Learning Platforms for Best Learning
             </h1>

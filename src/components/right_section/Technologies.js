@@ -6,12 +6,10 @@ class Technologies extends Component {
   render() {
     return (
       <>
-        <div className="card text-center mt-5 mb-4">
-          <div className="row text-center">
-            <h5 className="ml-4 mt-2" style={{ color: "#072C71" }}>
-              More Technologies
-            </h5>
-          </div>
+        <div className="card card-shadow text-center mt-5 mb-4">
+          <h6 className="ml-4 mt-2 text-center" style={{ color: "#072C71" }}>
+            More Technologies
+          </h6>
           <div className="row p-3">
             <div className="col-3">
               {" "}

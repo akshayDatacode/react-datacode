@@ -117,3 +117,15 @@ export const setUserImgDetails = (data) => (dispatch) => {
       console.log("get userProfile error", error);
     });
 };
+
+export const googleLogin = (data) => (dispatch) => {
+  return axios
+    .get(`${baseURL}/user/google`)
+    .then(({ data }) => {
+      console.log("User Profile:__", data);
+      return { success: true, data: data.url };
+    })
+    .catch((error) => {
+      console.log("get userProfile error", error);
+    });
+};

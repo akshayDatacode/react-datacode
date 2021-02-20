@@ -15,7 +15,7 @@ const EventDetailCard = (props) => {
         centered
       >
         <Modal.Header
-          style={{ backgroundColor: "#06CB6C", color: "#072C71" }}
+          style={{ backgroundColor: "#30006b", color: "#ffffff" }}
           closeButton
         >
           <Modal.Title className="text-center">{props.eventName}</Modal.Title>

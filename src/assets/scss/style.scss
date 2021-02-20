@@ -164,6 +164,24 @@ input {
   color: #ffffff;
 }
 
+.post-card {
+  h5 {
+    color: #30006d;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: "Akzidenz", "‘Helvetica Neue’", Helvetica, Arial, sans-serif;
+    //font-family: "Fira Code", monospace;
+  }
+  p {
+    font-size: 13px;
+  }
+  span {
+    font-weight: 600;
+    color: #686868;
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 767px) {
   body {
     overflow-x: hidden;

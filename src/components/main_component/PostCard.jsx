@@ -8,30 +8,27 @@ class PostCard extends Component {
   render() {
     return (
       <>
-        <div class="card border border-white shadow mb-3">
-          <img
-            className=" card-img-top mx-auto img-fluid img-circle d-block"
-            src={require("../../assets/images/" + this.props.imgsource)}
-            alt="avatar"
-          />
-
+        <div class="card post-card  border border-white shadow mb-3">
+          <Link to={this.props.link}>
+            <img
+              className=" card-img-top mx-auto img-fluid img-circle d-block"
+              src={require("../../assets/images/" + this.props.imgsource)}
+              alt="avatar"
+            />
+          </Link>
           <div class="card-body">
-            <h5 class="card-title" style={{ color: "#072C71" }}>
-              {this.props.title}
-            </h5>
+            <Link to={this.props.link}>
+              <h5 class="card-title" style={{ color: "#072C71" }}>
+                {this.props.title}
+              </h5>
+            </Link>
             <p class="card-text">{this.props.paragraph}</p>
           </div>
           <div class="card-footer border border-white bg-white shadow pt-1">
             <div className="row m-0">
-              <div className="col text-right">
-                <Link to={this.props.link}>
-                  <h6 className="btn btn-default border border-secondary shadow text-secondary">
-                    Read More
-                    <FontAwesomeIcon
-                      icon={faExternalLinkAlt}
-                      className="ml-1"
-                    />
-                  </h6>
+              <div className="col text-right p-0 align-itmes-center">
+                <Link to={this.props.link} >
+                  <span className="align-itmes-center">Start Learning <i className="fal fa-long-arrow-right" /></span>
                 </Link>
               </div>
             </div>

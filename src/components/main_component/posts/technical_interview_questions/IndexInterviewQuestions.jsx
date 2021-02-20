@@ -6,7 +6,7 @@ import InterviewQuestionCardCarousel from "./InterviewQuestionCardCarousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHome,
- 
+
   faChalkboardTeacher,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -19,12 +19,12 @@ class IndexInterviewQuestions extends Component {
   render() {
     return (
       <>
-         <div className="row">
+        <div className="row">
           <div className="col-1"></div>
           <div className="col-md-8 mt-4">
             <h1
               className="text-center mb-4 rounded p-2"
-              style={{ backgroundColor: "#06CB6C", color: "#072C71" }}
+              style={{ backgroundColor: "#30006b", color: "#ffffff" }}
             >
               <FontAwesomeIcon icon={faChalkboardTeacher} /> Interview  Questions
             </h1>
@@ -116,7 +116,7 @@ class IndexInterviewQuestions extends Component {
                 link="/sdlc_interview_question"
               />
             </div>
-           
+
             <div className="card-deck m-2">
               <PostCard
                 imgsource="html_interview_questions.jpeg"
@@ -170,7 +170,7 @@ class IndexInterviewQuestions extends Component {
                 paragraph="We Love to Code and this "
                 link="/testing_interview_question"
               />
-            
+
             </div>
 
             <h4 className="text-secondary mt-3">

@@ -11,14 +11,14 @@ class RightSideSection extends Component {
           <div class="card border border-white mt-5">
             <img
               className=" card-img-top mx-auto img-fluid img-circle d-block mt-5"
-              src={require("../../assets/images/datacodelogo.jpeg")}
+              src={require("../../assets/images/svg/monolog.svg")}
               alt="avatar"
             />
 
-            <div class="card-body text-center">
-              <h5 class="card-title" style={{ color: "#072C71" }}>
+            <div class="card-body post-card text-center">
+              <h6 class="card-title" style={{ color: "#072C71" }}>
                 Datacode Learning Community
-              </h5>
+              </h6>
               <p class="card-text">
                 Datacode is a Online Learning Community to find and share the
                 best learning courses and tutorials.
@@ -28,38 +28,10 @@ class RightSideSection extends Component {
               <a
                 href="https://www.facebook.com/Datacode.in/"
                 className="btn font-weight-bold"
-                style={{ backgroundColor: "#06CB6C", color: "#072C71" }}
+                style={{ backgroundColor: "#30006b", color: "#ffffff" }}
                 target="_blank"
               >
                 <FontAwesomeIcon icon={faConnectdevelop} /> Join us
-              </a>
-            </div>
-          </div>
-        </div>
-        {/* Mobile Version */}
-        <div className="container-fluid text-center text-md-center  mb-5 d-block d-md-none">
-          <div class="card border border-white ">
-            <img
-              className=" card-img-top mx-auto img-fluid img-circle d-block mt-2"
-              src={require("../../assets/images/datacodelogo.jpeg")}
-              alt="avatar"
-            />
-
-            <div class="card-body text-center">
-              <h5 class="card-title">Datacode Learning Community</h5>
-              <p class="card-text">
-                Datacode is a Online Learning Community to find and share the
-                best learning courses and tutorials.
-              </p>
-            </div>
-            <div class="card-footer border border-white bg-white text-center">
-              <a
-                href="https://www.facebook.com/Datacode.in/"
-                className="btn font-weight-bold"
-                style={{ backgroundColor: "#06CB6C", color: "#072C71" }}
-                target="_blank"
-              >
-                Join us
               </a>
             </div>
           </div>
