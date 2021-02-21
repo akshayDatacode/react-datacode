@@ -33,3 +33,29 @@ export const getTutorialsList = (technology) => (dispatch) => {
       console.log("get tutorials error", error);
     });
 };
+
+export const likeTutorial = (data) => (dispatch) => {
+  return axios
+    .put(`${baseURL}/tutorial/like_tutorial`, data)
+    .then(({ data }) => {
+      if (data.success) {
+        return { success: true, data: data.tutorial };
+      }
+    })
+    .catch((error) => {
+      console.log("get tutorials error", error);
+    });
+};
+
+export const unlikeTutorial = (data) => (dispatch) => {
+  return axios
+    .put(`${baseURL}/tutorial/unlike_tutorial`, data)
+    .then(({ data }) => {
+      if (data.success) {
+        return { success: true, data: data.tutorial };
+      }
+    })
+    .catch((error) => {
+      console.log("get tutorials error", error);
+    });
+};

@@ -24,7 +24,7 @@ const TechTutorials = ({
   const displayTutorials = tutorialsList
     .slice(pagesVisited, pagesVisited + tutorialsPerPage)
     .map((item) => {
-      return <TutorialCard id="asder12" title={item.title} />
+      return <TutorialCard id={item.id} title={item.title} likesCount={item.likes.length} />
     })
 
   const pageCount = Math.ceil(tutorialsList.length / tutorialsPerPage)
