@@ -373,7 +373,7 @@ import TutorialPage from "../../../components/main_component/tutorials/component
 // Profile
 import MyProfile from "../../../components/user/component/profile/my_profile"
 import EditProfile from "../../../components/user/component/profile/edit_profile"
-
+import MyLibrary from '../../../components/user/component/profile/my_library'
 // --------------------------------------------------------------------
 
 const AppRouters = () => {
@@ -1253,6 +1253,7 @@ const AppRouters = () => {
         <Route path="/my_profile/:email" component={MyProfile} />
 
         <Route exact path="/edit_profile" render={authGuard(EditProfile)} />
+        <Route exact path="/my_library" render={authGuard(MyLibrary)} />
         {/* ____________________________________________ */}
 
         <Route path="*" component={NotFound} />

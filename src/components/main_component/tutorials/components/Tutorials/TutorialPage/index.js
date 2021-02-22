@@ -7,6 +7,7 @@ import {
   unlikeTutorial,
   getTutorialById,
 } from "../../../actions";
+import { saveToLibrary, unsaveFromLibrary } from "../../../../../user/actions";
 
 const mapStateToProps = ({ tutorial, user }) => ({
   tutorial: tutorial.tutorial,
@@ -17,6 +18,8 @@ const mapDispatchToProps = {
   likeTutorial,
   unlikeTutorial,
   getTutorialById,
+  saveToLibrary,
+  unsaveFromLibrary,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(TutorialPage);

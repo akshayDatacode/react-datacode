@@ -9,10 +9,14 @@ const TutorialCard = ({
   likeTutorial,
   unlikeTutorial,
   likesCount,
-  userData: { userName },
+  userData: { userName, email },
+  saveToLibrary,
+  unsaveFromLibrary,
+  tutorial
 }) => {
 
   const [isLiked, setLiked] = useState()
+  const [isSaved, setSaved] = useState(false)
   const [likeCount, setLikeCount] = useState(likesCount)
 
   const handleUnlike = () => {
@@ -29,6 +33,24 @@ const TutorialCard = ({
       if (res) {
         setLiked(true)
         setLikeCount(likesCount + 1)
+      }
+    })
+  }
+
+  const handleSaveToLibrary = () => {
+    const saveItem = tutorial
+    saveToLibrary({ saveItem, email }).then((res) => {
+      if (res) {
+        setSaved(true)
+      }
+    })
+  }
+
+  const handleUnsaveFromLibrary = () => {
+    const saveItem = tutorial
+    unsaveFromLibrary({ saveItem, email }).then((res) => {
+      if (res) {
+        setSaved(false)
       }
     })
   }
@@ -50,7 +72,12 @@ const TutorialCard = ({
             {likeCount}
             {isLiked ? <i onClick={() => handleUnlike()} className="fad fa-heart-circle red mx-2" /> :
               <i onClick={() => handleLink()} className="far fa-heart-circle red mx-2" />}
-            <i className="fad fa-bookmark orange mx-2" />
+            {
+              isSaved ?
+                <i onClick={() => handleUnsaveFromLibrary()} className="fad fa-bookmark orange mx-2" />
+                :
+                <i onClick={() => handleSaveToLibrary()} className="far fa-bookmark orange mx-2" />
+            }
             <Link to={`/tutorial/${id}`}>
               <i className="fad fa-comment-smile blue mx-2" />
             </Link>
@@ -71,16 +98,20 @@ const TutorialCard = ({
 
 TutorialCard.defaultProps = {
   userName: '',
+  email: '',
   id: "",
   likesCount: 0,
   userData: {},
+  tutorial: {},
 }
 
 TutorialCard.propTypes = {
   userName: PropTypes.string,
+  userName: PropTypes.string,
   id: PropTypes.string,
   likesCount: PropTypes.number,
-  userData: PropTypes.object
+  userData: PropTypes.object,
+  tutorial: PropTypes.object,
 }
 
 export default TutorialCard

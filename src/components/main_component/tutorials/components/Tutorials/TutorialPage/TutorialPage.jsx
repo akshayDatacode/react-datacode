@@ -6,16 +6,18 @@ import PropTypes from 'prop-types'
 
 const TutorialPage = ({
   match: { params: { id } },
-  userData: { userName },
+  userData: { userName, email },
   getTutorialById,
   tutorial,
   tutorial: { likes },
   unlikeTutorial,
   likeTutorial,
+  saveToLibrary,
+  unsaveFromLibrary,
 }) => {
 
   const [techDetails, setTechDetails] = useState({})
-
+  const [isSaved, setSaved] = useState(false)
   const [isLiked, setLiked] = useState()
 
   const handleUnlike = () => {
@@ -32,6 +34,24 @@ const TutorialPage = ({
       if (res) {
         setLiked(true)
         // setLikeCount(likesCount + 1)
+      }
+    })
+  }
+
+  const handleSaveToLibrary = () => {
+    const saveItem = tutorial
+    saveToLibrary({ saveItem, email }).then((res) => {
+      if (res) {
+        setSaved(true)
+      }
+    })
+  }
+
+  const handleUnsaveFromLibrary = () => {
+    const saveItem = tutorial
+    unsaveFromLibrary({ saveItem, email }).then((res) => {
+      if (res) {
+        setSaved(false)
       }
     })
   }
@@ -115,7 +135,12 @@ const TutorialPage = ({
                   </h1>
                 </div>
                 <div className="col-4">
-                  <i className="fad fa-bookmark orange mx-2" />
+                  {
+                    isSaved ?
+                      <i onClick={() => handleUnsaveFromLibrary()} className="fad fa-bookmark orange mx-2" />
+                      :
+                      <i onClick={() => handleSaveToLibrary()} className="far fa-bookmark orange mx-2" />
+                  }
                   <p className="mt-md-4 mt-2 mb-0">save into your library</p>
                 </div>
                 <div className="col-4">
@@ -159,6 +184,7 @@ const TutorialPage = ({
 
 TutorialPage.defaultProps = {
   userName: '',
+  email: '',
   id: "",
   userData: {},
   tutorial: {},
@@ -166,6 +192,7 @@ TutorialPage.defaultProps = {
 
 TutorialPage.propTypes = {
   userName: PropTypes.string,
+  email: PropTypes.string,
   userData: PropTypes.object,
   id: PropTypes.string,
   tutorial: PropTypes.object,

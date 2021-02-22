@@ -126,7 +126,7 @@ const Header = ({
                     <DropdownMenu className="dropdown-menu mt-3" right>
                       <DropdownItem header>Akshay Mandliya</DropdownItem>
                       <DropdownItem><Link to={`/my_profile/${currentUser.email}`}><span>My Profile</span></Link></DropdownItem>
-                      <DropdownItem>My Library</DropdownItem>
+                      <DropdownItem><Link to={`/my_library`}><span>My Library</span></Link></DropdownItem>
                       <DropdownItem><Link to="/edit_profile">Edit Profile</Link></DropdownItem>
                       <DropdownItem>
                         <span>

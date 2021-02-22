@@ -129,3 +129,33 @@ export const googleLogin = (data) => (dispatch) => {
       console.log("get userProfile error", error);
     });
 };
+
+export const saveToLibrary = (data) => (dispatch) => {
+  return axios
+    .put(`${baseURL}/user/save-to-library`, data)
+    .then(({ data }) => {
+      if (data.success) {
+        console.log("User Profile:__", data.userProfile);
+        dispatch(actions.setUserProfile(data));
+        return { success: true, data: data.userProfile };
+      }
+    })
+    .catch((error) => {
+      console.log("save to library error", error);
+    });
+};
+
+export const unsaveFromLibrary = (data) => (dispatch) => {
+  return axios
+    .put(`${baseURL}/user/unsave-from-library`, data)
+    .then(({ data }) => {
+      if (data.success) {
+        console.log("User Profile:__", data.userProfile);
+        dispatch(actions.setUserProfile(data));
+        return { success: true, data: data.userProfile };
+      }
+    })
+    .catch((error) => {
+      console.log("save to library error", error);
+    });
+};
