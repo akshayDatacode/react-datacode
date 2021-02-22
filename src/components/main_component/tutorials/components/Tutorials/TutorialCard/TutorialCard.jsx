@@ -9,7 +9,7 @@ const TutorialCard = ({
   likeTutorial,
   unlikeTutorial,
   likesCount,
-  userName,
+  userData: { userName },
 }) => {
 
   const [isLiked, setLiked] = useState()
@@ -73,13 +73,15 @@ const TutorialCard = ({
 TutorialCard.defaultProps = {
   userName: '',
   id: "",
-  likesCount: 0
+  likesCount: 0,
+  userData: {},
 }
 
 TutorialCard.propTypes = {
   userName: PropTypes.string,
   id: PropTypes.string,
   likesCount: PropTypes.number,
+  userData: PropTypes.object
 }
 
 export default TutorialCard

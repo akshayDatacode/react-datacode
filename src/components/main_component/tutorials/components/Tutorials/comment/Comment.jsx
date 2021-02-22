@@ -3,18 +3,30 @@ import React from 'react';
 import { Field, reduxForm } from 'redux-form'
 import { Redirect, Link } from 'react-router-dom';
 
-import { renderInputField } from '../ReduxFormFields'
-import { required, email } from '../../utils/validators'
+import { renderInputField } from '../../../../../../shared_components/ReduxFormFields'
+import { required, email } from '../../../../../../utils/validators'
 
 const Comment = ({
   reset,
   handleSubmit,
   submitting,
+  id,
+  userName,
+  commentTutorial,
 }) => {
 
   const onSubmit = (values) => {
-    const user = { ...values }
-    console.log("values ()()", user)
+    const value = { ...values }
+    const text = value.comment
+    console.log("values ()()", text)
+    if (id && text && userName) {
+      commentTutorial({ id, text, userName }).then((res) => {
+        if (res) {
+          console.log("comm", res.data)
+        }
+      })
+    }
+
     reset('commentForm')
   }
 

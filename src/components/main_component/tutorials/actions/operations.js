@@ -22,10 +22,24 @@ export const addTutorial = (tutorial) => (dispatch) => {
 
 export const getTutorialsList = (technology) => (dispatch) => {
   return axios
-    .post(`${baseURL}/tutorial/get_tutorial`, { technology })
+    .post(`${baseURL}/tutorial/get_tutorial_list`, { technology })
     .then(({ data }) => {
       if (data.success) {
         dispatch(actions.setTutorialsList(data));
+        return { success: true, data: data.tutorial };
+      }
+    })
+    .catch((error) => {
+      console.log("get tutorials error", error);
+    });
+};
+
+export const getTutorialById = (id) => (dispatch) => {
+  return axios
+    .post(`${baseURL}/tutorial/get_tutorial`, { id })
+    .then(({ data }) => {
+      if (data.success) {
+        // dispatch(actions.setTutorialsList(data));
         return { success: true, data: data.tutorial };
       }
     })
@@ -57,5 +71,18 @@ export const unlikeTutorial = (data) => (dispatch) => {
     })
     .catch((error) => {
       console.log("get tutorials error", error);
+    });
+};
+
+export const commentTutorial = (data) => (dispatch) => {
+  return axios
+    .put(`${baseURL}/tutorial/comment_tutorial`, data)
+    .then(({ data }) => {
+      if (data.success) {
+        return { success: true, data: data.tutorial };
+      }
+    })
+    .catch((error) => {
+      console.log("comment tutorials error", error);
     });
 };

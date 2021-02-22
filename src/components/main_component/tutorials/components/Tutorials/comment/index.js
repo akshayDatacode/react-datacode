@@ -1,8 +1,8 @@
-import TutorialCard from "./TutorialCard";
+import Comment from "./Comment";
 
 import { connect } from "react-redux";
 
-import { likeTutorial, unlikeTutorial } from "../../../actions";
+import { commentTutorial } from "../../../actions";
 
 const mapStateToProps = ({ tutorial, user }) => ({
   tutorialsList: tutorial.tutorialsList,
@@ -10,8 +10,7 @@ const mapStateToProps = ({ tutorial, user }) => ({
 });
 
 const mapDispatchToProps = {
-  likeTutorial,
-  unlikeTutorial,
+  commentTutorial,
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(TutorialCard);
+export default connect(mapStateToProps, mapDispatchToProps)(Comment);

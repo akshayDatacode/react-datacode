@@ -1,8 +1,12 @@
-import TutorialCard from "./TutorialCard";
+import TutorialPage from "./TutorialPage";
 
 import { connect } from "react-redux";
 
-import { likeTutorial, unlikeTutorial } from "../../../actions";
+import {
+  likeTutorial,
+  unlikeTutorial,
+  getTutorialById,
+} from "../../../actions";
 
 const mapStateToProps = ({ tutorial, user }) => ({
   tutorialsList: tutorial.tutorialsList,
@@ -12,6 +16,7 @@ const mapStateToProps = ({ tutorial, user }) => ({
 const mapDispatchToProps = {
   likeTutorial,
   unlikeTutorial,
+  getTutorialById,
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(TutorialCard);
+export default connect(mapStateToProps, mapDispatchToProps)(TutorialPage);

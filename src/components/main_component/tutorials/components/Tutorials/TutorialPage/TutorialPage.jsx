@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import { techData } from './helpers'
+import { techData } from '../helpers'
 import { Link } from 'react-router-dom'
-import Comment from "../../../../../shared_components/comment"
+import Comment from "../comment"
+import PropTypes from 'prop-types'
 
 const TutorialPage = ({
-  match: { params: { id } }
+  match: { params: { id } },
+  userData: { userName },
+  getTutorialById,
 }) => {
 
   const [techDetails, setTechDetails] = useState({})
@@ -15,8 +18,18 @@ const TutorialPage = ({
         return setTechDetails(item)
       }
     })
+
+    getTutorialById(id).then((res) => {
+      if (res) {
+        console.log(res)
+        setTechDetails(res.data)
+      }
+    })
+
     window.scrollTo(0, 0);
   }, [])
+
+  console.log("tech details", techDetails)
 
   return (
     <>
@@ -38,7 +51,7 @@ const TutorialPage = ({
                 <img
                   height="300px"
                   width="300px"
-                  src={require(`../../../../../assets/images/svg/${item.svgSource}`)}
+                  src={require(`../../../../../../assets/images/svg/${item.svgSource}`)}
                   alt="avatar"
                   className="text-right img-fluid img-circle d-block"
                 />
@@ -54,7 +67,7 @@ const TutorialPage = ({
                   <img
                     height="100px"
                     width="100px"
-                    src={require(`../../../../../assets/images/svg/React.png`)}
+                    src={require(`../../../../../../assets/images/svg/React.png`)}
                     alt="avatar"
                     className="text-right img-fluid img-circle d-block"
                   />
@@ -88,25 +101,40 @@ const TutorialPage = ({
 
             <h6 className="text-center">Write your reviews and comments of this tutorial</h6>
             <p>ask question and provide information that might be helpful to the people taking this course</p>
-            <Comment />
-            <div className="mt-5 user-comment p-3">
-              <div className="d-flex p-0 mb-2 align-items-center">
-                <img
-                  height="35px"
-                  width="35px"
-                  src={require(`../../../../../assets/images/svg/React.png`)}
-                  alt="avatar"
-                  className="mr-2 text-right img-fluid img-circle d-block"
-                />
-                <h6 className="mb-0">Akshay Mandliya</h6>
+            <Comment id={id} userName={userName} />
+            {techDetails.comments && techDetails.comments.map((item) => (
+              <div className="mt-5 user-comment p-3">
+                <div className="d-flex p-0 mb-2 align-items-center">
+                  <img
+                    height="35px"
+                    width="35px"
+                    src={require(`../../../../../../assets/images/svg/React.png`)}
+                    alt="avatar"
+                    className="mr-2 text-right img-fluid img-circle d-block"
+                  />
+                  <h6 className="mb-0">Akshay Mandliya</h6>
+                </div>
+                <p className="text-left">{item.text}</p>
               </div>
-              <p className="text-left">A Compluter Science Student of IPS academy, Love to contribute in community. A Compluter Science Student of IPS academy, Love to contribute in community</p>
-            </div>
+            ))}
+
           </div>
         </div>
       </div>
     </>
   )
+}
+
+TutorialPage.defaultProps = {
+  userName: '',
+  id: "",
+  userData: {},
+}
+
+TutorialPage.propTypes = {
+  userName: PropTypes.string,
+  userData: PropTypes.object,
+  id: PropTypes.string,
 }
 
 export default TutorialPage
