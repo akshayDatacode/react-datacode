@@ -3,6 +3,7 @@ import { createReducer } from "../../../../core/reduxUtils";
 
 const initialState = {
   tutorialsList: [],
+  tutorial: {},
   error: "4444",
 };
 

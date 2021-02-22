@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import { useState } from 'react'
@@ -34,7 +34,6 @@ const TutorialCard = ({
   }
 
   return (
-
     <>
       <div className="col-12 col-md-3 tutorial-card mx-4 mt-md-3 mt-4">
         <Link to={`/tutorial/${id}`}>

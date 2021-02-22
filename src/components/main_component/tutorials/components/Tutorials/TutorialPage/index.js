@@ -9,7 +9,7 @@ import {
 } from "../../../actions";
 
 const mapStateToProps = ({ tutorial, user }) => ({
-  tutorialsList: tutorial.tutorialsList,
+  tutorial: tutorial.tutorial,
   userData: user.currentUser && user.currentUser.data,
 });
 

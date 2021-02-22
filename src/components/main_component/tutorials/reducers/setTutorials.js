@@ -1,7 +1,6 @@
 import * as constants from "../constants";
 
 const setTutorialsList = (state, action) => {
-  console.log("dispatch Tutorials", action.payload.tutorial);
   return {
     ...state,
     error: null,
@@ -9,6 +8,15 @@ const setTutorialsList = (state, action) => {
   };
 };
 
+const setTutorialById = (state, action) => {
+  return {
+    ...state,
+    error: null,
+    tutorial: action.payload.tutorial,
+  };
+};
+
 export const setTutorialsHandlers = {
   [constants.SET_TUTORIALS_LIST]: setTutorialsList,
+  [constants.SET_TUTORIALS_BY_ID]: setTutorialById,
 };

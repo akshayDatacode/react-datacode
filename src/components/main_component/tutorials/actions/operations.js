@@ -39,7 +39,7 @@ export const getTutorialById = (id) => (dispatch) => {
     .post(`${baseURL}/tutorial/get_tutorial`, { id })
     .then(({ data }) => {
       if (data.success) {
-        // dispatch(actions.setTutorialsList(data));
+        dispatch(actions.setTutorialById(data));
         return { success: true, data: data.tutorial };
       }
     })
@@ -53,6 +53,7 @@ export const likeTutorial = (data) => (dispatch) => {
     .put(`${baseURL}/tutorial/like_tutorial`, data)
     .then(({ data }) => {
       if (data.success) {
+        dispatch(actions.setTutorialById(data));
         return { success: true, data: data.tutorial };
       }
     })
@@ -66,6 +67,7 @@ export const unlikeTutorial = (data) => (dispatch) => {
     .put(`${baseURL}/tutorial/unlike_tutorial`, data)
     .then(({ data }) => {
       if (data.success) {
+        dispatch(actions.setTutorialById(data));
         return { success: true, data: data.tutorial };
       }
     })
@@ -79,6 +81,7 @@ export const commentTutorial = (data) => (dispatch) => {
     .put(`${baseURL}/tutorial/comment_tutorial`, data)
     .then(({ data }) => {
       if (data.success) {
+        dispatch(actions.setTutorialById(data));
         return { success: true, data: data.tutorial };
       }
     })
