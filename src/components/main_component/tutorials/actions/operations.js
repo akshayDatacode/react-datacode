@@ -48,6 +48,20 @@ export const getTutorialById = (id) => (dispatch) => {
     });
 };
 
+export const getTutorialByUserName = (userName) => (dispatch) => {
+  return axios
+    .post(`${baseURL}/tutorial/get_tutorial_by_username`, { userName })
+    .then(({ data }) => {
+      if (data.success) {
+        // dispatch(actions.setTutorialsList(data));
+        return { success: true, data: data.tutorial };
+      }
+    })
+    .catch((error) => {
+      console.log("get tutorials error", error);
+    });
+};
+
 export const likeTutorial = (data) => (dispatch) => {
   return axios
     .put(`${baseURL}/tutorial/like_tutorial`, data)

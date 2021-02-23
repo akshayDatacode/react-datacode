@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { techData } from '../helpers'
 import { Link } from 'react-router-dom'
-import Comment from "../comment"
 import PropTypes from 'prop-types'
+
+import Comment from "../comment"
 
 const TutorialPage = ({
   match: { params: { id } },

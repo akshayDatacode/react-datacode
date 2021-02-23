@@ -1,21 +1,35 @@
 import React, { useEffect } from 'react'
 import { Field, reduxForm } from 'redux-form'
+import PropTypes from 'prop-types'
 
 import { renderInputField } from '../../../../../shared_components/ReduxFormFields'
 import { required } from '../../../../../utils/validators'
 import TutorialCard from '../../../tutorials/components/Tutorials/TutorialCard'
+import { useState } from 'react'
 
 const AddTutorial = ({
   reset,
   handleSubmit,
   submitting,
   addTutorial,
-  userName,
+  getTutorialByUserName,
+  userProfile,
+  userProfile: { userName },
 }) => {
-
+  const [tutorialsList, setTutorialsList] = useState()
   useEffect(() => {
+    console.log("qqqq", userProfile)
+    // const userName = currentUser
+    if (userName) {
+      getTutorialByUserName(userName).then((res) => {
+        if (res.data) {
+          console.log("aa", res.data)
+          setTutorialsList(res.data)
+        }
+      })
+    }
     window.scrollTo(0, 0);
-  }, [])
+  }, [userProfile])
 
   const onSubmit = (values) => {
     const tutorial = { ...values }
@@ -23,10 +37,17 @@ const AddTutorial = ({
     tutorial['id'] = Math.random().toString(36).substr(4, 9)
     addTutorial(tutorial).then((res) => {
       if (res && res.success) {
+        getTutorialByUserName(userName).then((res) => {
+          if (res.data) {
+            console.log("aa", res.data)
+            setTutorialsList(res.data)
+          }
+        })
         reset('tutorial')
       }
     })
     console.log("values ()()", tutorial)
+
   }
 
   return (
@@ -79,16 +100,25 @@ const AddTutorial = ({
         <div className="col-12 col-md-8 mt-md-0 mt-5">
           <h2 className="text-center">List of your submitted tutorials</h2>
           <div className="row m-0 d-flex justify-content-center tutorial-card-section">
-            <TutorialCard id="asder12" />
-            <TutorialCard id="asder13" />
-            <TutorialCard />
-            <TutorialCard />
+            {tutorialsList && tutorialsList.map((item, i) => (
+              <TutorialCard key={i} tutorial={item} id={item.id} title={item.title} likesCount={item.likes.length} />
+            ))}
           </div>
         </div>
       </div>
     </>
   )
 
+}
+
+AddTutorial.defaultProps = {
+  userName: '',
+  tutorialsList: [],
+}
+
+AddTutorial.propTypes = {
+  userName: PropTypes.string,
+  tutorialsList: PropTypes.array,
 }
 
 export default reduxForm({
