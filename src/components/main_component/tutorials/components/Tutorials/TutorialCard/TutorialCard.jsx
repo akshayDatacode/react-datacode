@@ -41,7 +41,6 @@ const TutorialCard = ({
     const saveItem = tutorial
     saveToLibrary({ saveItem, email }).then((res) => {
       if (res) {
-        debugger
         setSaved(true)
       }
     })

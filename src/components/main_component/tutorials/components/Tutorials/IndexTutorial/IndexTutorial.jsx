@@ -124,7 +124,7 @@ const IndexTutorial = ({
                   type="text"
                   className="search"
                   value={search}
-                  placeholder="Company Name / Technology / Job title"
+                  placeholder="Technology"
                   onChange={(e) => setSearch(e.target.value)}
                 />
                 <i className="fad fa-search search-icon" />
