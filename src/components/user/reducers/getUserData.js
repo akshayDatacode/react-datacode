@@ -55,7 +55,7 @@ const setUserProfile = (state, action) => {
   return {
     ...state,
     error: null,
-    userProfile: action.payload.userProfile,
+    userProfile: action.payload,
     userProfileLoading: !state.userProfileLoading,
   };
 };

@@ -76,7 +76,7 @@ export const getUserProfile = (email) => (dispatch) => {
     .then(({ data }) => {
       if (data.success) {
         console.log("User Profile:__", data.userProfile);
-        dispatch(actions.setUserProfile(data));
+        dispatch(actions.setUserProfile(data.userProfile));
         return { success: true, data: data.userProfile };
       }
     })
@@ -93,7 +93,7 @@ export const editUserProfile = (user) => (dispatch) => {
     .then(({ data }) => {
       if (data.success) {
         console.log("User Profile:__", data.userProfile);
-        dispatch(actions.setUserProfile(data));
+        dispatch(actions.setUserProfile(data.userProfile));
         return { success: true, data: data.userProfile };
       }
     })
@@ -135,9 +135,8 @@ export const saveToLibrary = (data) => (dispatch) => {
     .put(`${baseURL}/user/save-to-library`, data)
     .then(({ data }) => {
       if (data.success) {
-        console.log("User Profile:__", data.userProfile);
-        dispatch(actions.setUserProfile(data));
-        return { success: true, data: data.userProfile };
+        dispatch(actions.setUserProfile(data.user));
+        return { success: true, data: data.user };
       }
     })
     .catch((error) => {
@@ -151,7 +150,7 @@ export const unsaveFromLibrary = (data) => (dispatch) => {
     .then(({ data }) => {
       if (data.success) {
         console.log("User Profile:__", data.userProfile);
-        dispatch(actions.setUserProfile(data));
+        dispatch(actions.setUserProfile(data.user));
         return { success: true, data: data.userProfile };
       }
     })

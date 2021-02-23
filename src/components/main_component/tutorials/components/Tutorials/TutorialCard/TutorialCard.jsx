@@ -16,7 +16,7 @@ const TutorialCard = ({
 }) => {
 
   const [isLiked, setLiked] = useState()
-  const [isSaved, setSaved] = useState(false)
+  const [isSaved, setSaved] = useState()
   const [likeCount, setLikeCount] = useState(likesCount)
 
   const handleUnlike = () => {
@@ -41,6 +41,7 @@ const TutorialCard = ({
     const saveItem = tutorial
     saveToLibrary({ saveItem, email }).then((res) => {
       if (res) {
+        debugger
         setSaved(true)
       }
     })

@@ -11,7 +11,12 @@ const MyLibrary = ({
       <h1>My Library</h1>
       <h6>Tutorials</h6>
       {myTutorialsLibrary && myTutorialsLibrary.map((item) => {
-        return <TutorialCard tutorial={item} id={item.id} title={item.title} likesCount={item.likes.length} />
+        return <TutorialCard
+          tutorial={item}
+          id={item.id}
+          title={item.title}
+          likesCount={item.likes && item.likes.length}
+        />
       })}
     </>
   )

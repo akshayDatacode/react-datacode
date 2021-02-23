@@ -3,7 +3,7 @@ import MyLibrary from "./MyLibrary";
 import { connect } from "react-redux";
 
 const mapStateToProps = ({ app, user }) => ({
-  userProfile: user.userProfile,
+  userProfile: user.userProfile && user.userProfile,
   userProfileLoading: user.userProfileLoading,
 });
 
