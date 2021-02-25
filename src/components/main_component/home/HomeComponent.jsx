@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import { Helmet } from "react-helmet";
+import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 import CarouselComponent from "../CarouselComponent";
 import TagCard from "./TagCard";
-import { Link } from "react-router-dom";
+
 
 class HomeComponent extends Component {
   state = {};
@@ -22,7 +24,7 @@ class HomeComponent extends Component {
         <Helmet>
           <title>Datacode | Computer Science Learning Community</title>
         </Helmet>
-        <CarouselComponent />
+        <CarouselComponent name={this.props.userProfile && this.props.userProfile.firstName} />
         <h3 className="activities my-3 my-md-5">Activities for you!!!</h3>
         <div className="row m-0 home">
           <div className="col-12 p-3">
@@ -141,5 +143,17 @@ class HomeComponent extends Component {
     );
   }
 }
+
+HomeComponent.defaultProps = {
+  name: "",
+  userProfile: {},
+  firstName: "",
+};
+
+HomeComponent.propTypes = {
+  name: PropTypes.string,
+  userProfile: PropTypes.object,
+  firstName: PropTypes.string,
+};
 
 export default HomeComponent;

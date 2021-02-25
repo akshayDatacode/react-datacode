@@ -29,6 +29,8 @@ const Login = ({
     })
   }
 
+  console.log("loginuserloading", loginUserLoading)
+
   return (
     <>
       {userDetails && <Redirect to={`/home`} />}
@@ -41,7 +43,7 @@ const Login = ({
                 color="#30006d"
                 height={100}
                 width={100}
-                timeout={11000} //11 secs
+                timeout={11000} //8 secs
               /> :
               <Code width="auto" height="auto" className="m-2 m-md-0" />
             }
@@ -52,11 +54,11 @@ const Login = ({
           <div className="pt-md-3 px-4 login-card">
             <button type="button" className="google-button">
               <GoogleLogo width="40" height="40" className="bg-white p-1 mr-5" />
-              <div class="google-login-string">
+              <div className="google-login-string">
                 Log in with Google
               </div>
             </button>
-            <div class="or-line">
+            <div className="or-line">
               <span>or</span>
             </div>
             <form className="" onSubmit={handleSubmit(onSubmit)}>

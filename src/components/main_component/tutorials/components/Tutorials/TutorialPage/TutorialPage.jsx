@@ -15,11 +15,44 @@ const TutorialPage = ({
   likeTutorial,
   saveToLibrary,
   unsaveFromLibrary,
+  userProfile,
+  userProfile: { myTutorialsLibrary }
 }) => {
 
   const [techDetails, setTechDetails] = useState({})
-  const [isSaved, setSaved] = useState(false)
+  const [isSaved, setSaved] = useState()
   const [isLiked, setLiked] = useState()
+
+  useEffect(() => {
+    techData.find((item) => {
+      if (item.id === id) {
+        return setTechDetails(item)
+      }
+    })
+
+    getTutorialById(id).then((res) => {
+      if (res) {
+        console.log(res.data)
+        setTechDetails(res.data)
+        if (res.data && res.data.likes) {
+          res.data.likes.find((item) => {
+            if (item === userName) {
+              return setLiked(true)
+            }
+          })
+        }
+
+        if (userProfile && userProfile.myTutorialsLibrary) {
+          myTutorialsLibrary.map((item) => {
+            if (item.id === id) {
+              debugger
+              return setSaved(true)
+            }
+          })
+        }
+      }
+    })
+  }, [])
 
   const handleUnlike = () => {
     unlikeTutorial({ id, userName }).then((res) => {
@@ -57,22 +90,7 @@ const TutorialPage = ({
     })
   }
 
-  useEffect(() => {
-    techData.find((item) => {
-      if (item.id === id) {
-        return setTechDetails(item)
-      }
-    })
 
-    getTutorialById(id).then((res) => {
-      if (res) {
-        console.log(res.data)
-        setTechDetails(res.data)
-      }
-    })
-
-    window.scrollTo(0, 0);
-  }, [])
 
   console.log("tech details", techDetails)
 
@@ -83,12 +101,14 @@ const TutorialPage = ({
           <div className="row m-0 category-header text-center">
             <div className="col-12 col-md-6 pt-4 left-header-section px-md-5 px-2">
               <p className="text-left nav-link px-0"><Link to="/index_technologies">Tutorials</Link> / <Link to={`/tutorials/${techDetails && techDetails.technology}`}>{`${techDetails && techDetails.technology} Tutorial`}</Link> / <Link to={`/tutorials/${techDetails && techDetails.technology}`}>{`${techDetails.title} Course Name`}</Link></p>
-              <h2>{techDetails && techDetails.title}</h2>
-              <h1>Recomment Tutorial | Best Promotional Course</h1>
+              <h2>{techDetails && techDetails.technology}</h2>
+              <h1>{techDetails && techDetails.title}</h1>
               <p>From building websites to analyzing data, the choice is yours. Find the best of the best courses to learn from...</p>
-              <button className="text-center btn start-learning-btn">
-                Start Learning
-              </button>
+              <a target="blank" href={techDetails && techDetails.link}>
+                <button className="text-center btn start-learning-btn">
+                  Start Learning
+                </button>
+              </a>
             </div>
             <div className="col-12 col-md-6 text-center d-flex justify-content-right right-header-section">
               {techData.map((item) => (

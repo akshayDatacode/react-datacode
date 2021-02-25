@@ -1,5 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
+import { UncontrolledCollapse, Button, CardBody, Card } from "reactstrap";
+import {
+  Dropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  UncontrolledDropdown,
+} from "reactstrap";
+import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -30,7 +39,7 @@ import {
   faAward,
   faSignOutAlt,
 } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import { faFlipboard } from "@fortawesome/free-brands-svg-icons";
 
 const SideDrawer = ({
   backDropClickHandler,
@@ -44,6 +53,12 @@ const SideDrawer = ({
     drawerClasses = "row m-0 side-drawer open";
   }
 
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
       <div className={drawerClasses}>
@@ -56,11 +71,14 @@ const SideDrawer = ({
               />
             </div>
           </div>
-          <div className="row m-0 p-2 side-header">
+          <div className="row m-0 px-3 side-header">
             {currentUser && currentUser.userName ? (
               <>
                 <div className="header-profile">
-                  <Link to={`/my_profile/${currentUser.email}`}>
+                  <Link
+                    onClick={() => backDropClickHandler()}
+                    to={`/my_profile/${currentUser.email}`}
+                  >
                     <img
                       className="rounded-circle header-profile-img"
                       height="40"
@@ -73,16 +91,47 @@ const SideDrawer = ({
                       alt="avatar"
                     />
                   </Link>
-                  <h2 className="mt-2">
-                    {`Hello! ${userProfile && userProfile.firstName}`}
-                  </h2>
+                  <div className="d-flex align-items-center mt-2">
+                    <h2>{`Hello! ${userProfile && userProfile.firstName}`}</h2>
+                    <i
+                      onClick={() => toggle()}
+                      className={`far ${
+                        isOpen ? "fa-angle-up" : "fa-angle-down"
+                      } ml-2`}
+                      id="toggler"
+                    />
+                  </div>
+                  <UncontrolledCollapse toggler="#toggler">
+                    <div className="row m-0 mt-2">
+                      <div className="col-4">
+                        <Link
+                          onClick={() => backDropClickHandler()}
+                          to={`/my_profile/${currentUser.email}`}
+                        >
+                          <i className="fas fa-user" />
+                        </Link>
+                      </div>
+                      <div className="col-4">
+                        <Link
+                          onClick={() => backDropClickHandler()}
+                          to={`/my_library`}
+                        >
+                          <span>
+                            <i className="fas fa-window-restore" />
+                          </span>
+                        </Link>
+                      </div>
+                      <div className="col-4 text-center">
+                        <Link
+                          to="/edit_profile"
+                          onClick={() => backDropClickHandler()}
+                        >
+                          <i className="fas fa-edit" />
+                        </Link>
+                      </div>
+                    </div>
+                  </UncontrolledCollapse>
                 </div>
-                <Link
-                  to={`/my_profile/${currentUser.email}`}
-                  onClick={() => backDropClickHandler()}
-                >
-                  <div className="btn join-us my-3">My Profile</div>
-                </Link>
               </>
             ) : (
               <>
@@ -94,7 +143,7 @@ const SideDrawer = ({
               </>
             )}
           </div>
-          <div className="row m-0 ul-list">
+          <div className="row m-0 ul-list mt-4">
             <ul className="m-0 p-0">
               <Link to="/home" onClick={() => backDropClickHandler()}>
                 <li>
@@ -149,6 +198,25 @@ const SideDrawer = ({
                   <span>
                     <FontAwesomeIcon icon={faFlask} className="mr-2" /> Quiz
                     Tests
+                  </span>
+                </li>
+              </Link>
+              <Link to="/index_mcqs" onClick={() => backDropClickHandler()}>
+                <li>
+                  <span>
+                    <FontAwesomeIcon icon={faCheckSquare} className="mr-2" />{" "}
+                    Programming MCQs
+                  </span>
+                </li>
+              </Link>
+              <Link
+                to="/index_programming_questions"
+                onClick={() => backDropClickHandler()}
+              >
+                <li>
+                  <span>
+                    <FontAwesomeIcon icon={faCode} className="mr-2" /> Practice
+                    Code Problem
                   </span>
                 </li>
               </Link>

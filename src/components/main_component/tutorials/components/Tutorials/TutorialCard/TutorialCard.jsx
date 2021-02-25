@@ -1,7 +1,6 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
-import { useState } from 'react'
 
 const TutorialCard = ({
   id,
@@ -12,12 +11,32 @@ const TutorialCard = ({
   userData: { userName, email },
   saveToLibrary,
   unsaveFromLibrary,
-  tutorial
+  tutorial,
+  userProfile,
+  userProfile: { myTutorialsLibrary }
 }) => {
 
   const [isLiked, setLiked] = useState()
   const [isSaved, setSaved] = useState()
   const [likeCount, setLikeCount] = useState(likesCount)
+
+  useEffect(() => {
+    if (tutorial && tutorial.likes) {
+      tutorial.likes.find((item) => {
+        if (item === userName) {
+          return setLiked(true)
+        }
+      })
+    }
+
+    if (userProfile && userProfile.myTutorialsLibrary) {
+      myTutorialsLibrary.map((item) => {
+        if (item.id === tutorial.id) {
+          return setSaved(true)
+        }
+      })
+    }
+  }, [tutorial, likesCount])
 
   const handleUnlike = () => {
     unlikeTutorial({ id, userName }).then((res) => {
@@ -32,7 +51,7 @@ const TutorialCard = ({
     likeTutorial({ id, userName }).then((res) => {
       if (res) {
         setLiked(true)
-        setLikeCount(likesCount + 1)
+        setLikeCount(likesCount)
       }
     })
   }
@@ -103,15 +122,18 @@ TutorialCard.defaultProps = {
   likesCount: 0,
   userData: {},
   tutorial: {},
+  myTutorialsLibrary: [],
+  userProfile: {},
 }
 
 TutorialCard.propTypes = {
-  userName: PropTypes.string,
   userName: PropTypes.string,
   id: PropTypes.string,
   likesCount: PropTypes.number,
   userData: PropTypes.object,
   tutorial: PropTypes.object,
+  myTutorialsLibrary: PropTypes.array,
+  userProfile: PropTypes.object,
 }
 
 export default TutorialCard

@@ -66,7 +66,7 @@ const Signup = ({
                 color="#30006d"
                 height={100}
                 width={100}
-                timeout={8000} //8 secs
+                timeout={8000} //3 secs
               /> :
               <Code width="auto" height="auto" className="m-2 m-md-0" />
             }

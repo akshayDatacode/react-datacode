@@ -22,7 +22,7 @@ class CarouselComponent extends Component {
             <div className="carousel-card pt-5 pb-3 pb-0 px-md-5 px-2 text-center">
               <div className="text-left px-3 px-md-0">
                 <h1 className="mt-3">
-                  {`WelCome ${this.props.name && `Back, ${this.props.name}`} `}
+                  {`Welcome ${this.props.name && `back, ${this.props.name}`} `}
                 </h1>
                 <h1 className="heading-second">
                   to the Awesome Learning Portal.... :)
@@ -38,11 +38,19 @@ class CarouselComponent extends Component {
                 </h6>
                 <i>- Akshay Mandliya</i>
               </div>
-              <Link to="/signup">
-                <button className="btn get-started-button shadow-lg">
-                  Get Started
-                </button>
-              </Link>
+              {this.props.name ? (
+                <Link to="/index_technologies">
+                  <button className="btn get-started-button shadow-lg">
+                    Find Courses
+                  </button>
+                </Link>
+              ) : (
+                <Link to="/signup">
+                  <button className="btn get-started-button shadow-lg">
+                    Get Started
+                  </button>
+                </Link>
+              )}
             </div>
           </Carousel.Item>
           {/* <Carousel.Item>

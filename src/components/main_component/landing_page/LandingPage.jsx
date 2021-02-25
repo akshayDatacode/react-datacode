@@ -7,6 +7,7 @@ import { ReactComponent as Question } from '../../../assets/images/svg/question.
 import { ReactComponent as Aboutus } from '../../../assets/images/svg/aboutus.svg'
 import CategoryCard from './CategoryCard'
 import { data, techData } from './helper'
+import PropTypes from "prop-types";
 import FooterComponentUpper from "../../../app/components/footer_component/FooterComponentUpper";
 import {
   faConnectdevelop,
@@ -35,7 +36,7 @@ class LandingPage extends Component {
         <Helmet>
           <title>Datacode | Computer Science Learning Community</title>
         </Helmet>
-        <CarouselComponent name={this.props.userProfile.firstName} />
+        <CarouselComponent name={this.props.userProfile && this.props.userProfile.firstName} />
         <div className="row m-0 px-md-5 community-section">
           <div className="col-12 col-md-6 text-center">
             <Question width="100%" height="Auto" />
@@ -111,5 +112,17 @@ class LandingPage extends Component {
     );
   }
 }
+
+LandingPage.defaultProps = {
+  name: "",
+  userProfile: {},
+  firstName: "",
+};
+
+LandingPage.propTypes = {
+  name: PropTypes.string,
+  userProfile: PropTypes.instanceOf(Object),
+  firstName: PropTypes.string,
+};
 
 export default LandingPage;

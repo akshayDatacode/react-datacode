@@ -21,6 +21,7 @@ const getLogoutUser = (state) => {
   return {
     ...state,
     currentUser: null,
+    userProfile: null,
   };
 };
 

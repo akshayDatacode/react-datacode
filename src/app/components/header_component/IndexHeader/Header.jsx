@@ -129,12 +129,14 @@ const Header = ({
                       <DropdownItem><Link to={`/my_library`}><span>My Library</span></Link></DropdownItem>
                       <DropdownItem><Link to="/edit_profile">Edit Profile</Link></DropdownItem>
                       <DropdownItem>
-                        <span>
-                          <Link to="/" onClick={() => logoutUser()}>
-                            <FontAwesomeIcon icon={faSignOutAlt} className="mr-2" />{" "}
-                          Log out
+                        <Link to="/" onClick={() => logoutUser()}>
+                          <li>
+                            <span>
+                              <FontAwesomeIcon icon={faSignOutAlt} className="mr-2" />{" "}
+                              Log out
+                            </span>
+                          </li>
                         </Link>
-                        </span>
                       </DropdownItem>
                     </DropdownMenu>
                   </UncontrolledDropdown>

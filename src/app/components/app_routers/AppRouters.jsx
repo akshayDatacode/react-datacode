@@ -376,7 +376,9 @@ import EditProfile from "../../../components/user/component/profile/edit_profile
 import MyLibrary from '../../../components/user/component/profile/my_library'
 // --------------------------------------------------------------------
 
-const AppRouters = () => {
+const AppRouters = ({
+  setLocalUser
+}) => {
 
   useEffect(() => {
     var localUser = JSON.parse(localStorage.getItem("userDetails"));
