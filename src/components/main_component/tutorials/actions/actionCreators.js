@@ -1,4 +1,8 @@
-import { SET_TUTORIALS_LIST, SET_TUTORIALS_BY_ID } from "../constants";
+import {
+  SET_TUTORIALS_LIST,
+  SET_TUTORIALS_BY_ID,
+  SET_TUTORIALS_BY_USERNAME,
+} from "../constants";
 
 export const setTutorialsList = (data) => ({
   type: SET_TUTORIALS_LIST,
@@ -7,5 +11,10 @@ export const setTutorialsList = (data) => ({
 
 export const setTutorialById = (data) => ({
   type: SET_TUTORIALS_BY_ID,
+  payload: data,
+});
+
+export const setTutorialsByUserName = (data) => ({
+  type: SET_TUTORIALS_BY_USERNAME,
   payload: data,
 });

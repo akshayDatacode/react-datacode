@@ -158,15 +158,20 @@ const TutorialPage = ({
                 <div className="col-4">
                   {
                     isSaved ?
-                      <i onClick={() => handleUnsaveFromLibrary()} className="fad fa-bookmark orange mx-2" />
+                      <>
+                        <i onClick={() => handleUnsaveFromLibrary()} className="fad fa-bookmark voilet mx-2" />
+                        <p className="mt-md-4 mt-2 mb-0">unsave from your library</p>
+                      </>
                       :
-                      <i onClick={() => handleSaveToLibrary()} className="far fa-bookmark orange mx-2" />
+                      <>
+                        <i onClick={() => handleSaveToLibrary()} className="far fa-bookmark voilet mx-2" />
+                        <p className="mt-md-4 mt-2 mb-0">save into your library</p>
+                      </>
                   }
-                  <p className="mt-md-4 mt-2 mb-0">save into your library</p>
                 </div>
                 <div className="col-4">
                   <Link to={`/tutorial/${id}`}>
-                    <i className="fad fa-comment-smile blue mx-2" />
+                    <i className="fad fa-comments-alt voilet mx-2" />
                   </Link>
                   <h1 className="mt-md-4 mt-2 mb-0">
                     {tutorial.comments && tutorial.comments.length}

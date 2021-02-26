@@ -71,7 +71,7 @@ const SideDrawer = ({
               />
             </div>
           </div>
-          <div className="row m-0 px-3 side-header">
+          <div className="row m-0 mt-md-0 mt-4 px-3 side-header">
             {currentUser && currentUser.userName ? (
               <>
                 <div className="header-profile">

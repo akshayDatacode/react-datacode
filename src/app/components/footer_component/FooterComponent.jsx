@@ -141,7 +141,7 @@ const FooterComponent = ({
           <div className="col-md-4 pb-3 pb-md-0 col-12 d-flex justify-content-between">
             <span>Our Story</span>
             <span>Our Partners</span>
-            <span>Become Partner</span>
+            <span>Become a partner</span>
           </div>
         </div>
         <div className="row m-0 text-center d-flex justify-content-center bg-dark py-2">

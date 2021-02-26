@@ -93,12 +93,12 @@ const TutorialCard = ({
               <i onClick={() => handleLink()} className="far fa-heart-circle red mx-2" />}
             {
               isSaved ?
-                <i onClick={() => handleUnsaveFromLibrary()} className="fad fa-bookmark orange mx-2" />
+                <i onClick={() => handleUnsaveFromLibrary()} className="fad fa-bookmark voilet mx-2" />
                 :
-                <i onClick={() => handleSaveToLibrary()} className="far fa-bookmark orange mx-2" />
+                <i onClick={() => handleSaveToLibrary()} className="far fa-bookmark voilet mx-2" />
             }
             <Link to={`/tutorial/${id}`}>
-              <i className="fad fa-comment-smile blue mx-2" />
+              <i className="fad fa-comments-alt voilet mx-2" />
             </Link>
           </div>
         </div>

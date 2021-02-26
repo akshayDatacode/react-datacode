@@ -181,9 +181,26 @@
   .orange {
     color: orangered;
   }
+  .voilet {
+    color: #673de6;
+  }
   .yellow {
     color: yellow;
   }
+}
+
+.tutorial-list-card {
+  h6 {
+    font-size: 15px;
+  }
+  p {
+    font-size: 12px;
+  }
+  box-shadow: 0 7px 4px 0px rgba(0, 0, 0, 0.09);
+  height: auto;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 0 10px 0;
 }
 
 .tutorial-page {
@@ -319,17 +336,17 @@
 
 .add-totorial {
   .add-form {
-    border: solid 1px #30006d;
+    border: none;
     padding: 15px;
     position: fixed;
-    box-shadow: 0 3px 6px 0px #30006d;
+    box-shadow: 0 3px 6px 0px #673de6;
     height: auto;
-    border-radius: 10px;
+    border-radius: 5px;
   }
   h2 {
     font-size: 28px;
   }
-  .button {
+  .add-button {
     background-color: rgb(46, 131, 12);
     color: #ffffff;
     font-size: 13px;
@@ -337,6 +354,34 @@
       color: #ffffff;
       font-size: 13px;
     }
+  }
+  .edit-button {
+    background-color: #673de6;
+    color: #ffffff;
+    font-size: 13px;
+    i {
+      color: #ffffff;
+      font-size: 13px;
+    }
+  }
+  .cancel-button {
+    background-color: grey;
+    color: #ffffff;
+    font-size: 13px;
+    i {
+      color: #ffffff;
+      font-size: 13px;
+    }
+  }
+}
+
+.delete-tutorial-modal {
+  .modal-header,
+  h5 {
+    font-size: 15px;
+    color: #30006d;
+    font-family: "Akzidenz", "‘Helvetica Neue’", Helvetica, Arial, sans-serif;
+    font-weight: 700;
   }
 }
 

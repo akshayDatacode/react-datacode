@@ -4,6 +4,9 @@ import { createReducer } from "../../../../core/reduxUtils";
 const initialState = {
   tutorialsList: [],
   tutorial: {},
+  tutorialByUser: [],
+  addTutorialLoading: false,
+  tutorialListLoading: false,
   error: "4444",
 };
 
