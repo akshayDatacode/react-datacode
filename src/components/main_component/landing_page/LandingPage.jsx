@@ -18,6 +18,7 @@ import {
   faDAndDBeyond,
 } from "@fortawesome/free-brands-svg-icons";
 import TechnologyCard from "./TechnologyCard";
+import NewsLetter from "./NewsLetter";
 
 class LandingPage extends Component {
   state = {};
@@ -49,7 +50,7 @@ class LandingPage extends Component {
               Learning has never been this easy, then what are you waiting for? Join Datacode.in and Learn with Community
             </p>
             <Link to="/signup">
-              <button className="btn join-us-button shadow-lg text-center">
+              <button className="btn join-us-button text-center">
                 Join Us
               </button>
             </Link>
@@ -108,6 +109,7 @@ class LandingPage extends Component {
             <h6 className="text-right justify-content-right">Find out more <i className="fal fa-long-arrow-right" /></h6>
           </div>
         </div>
+        <NewsLetter />
       </>
     );
   }

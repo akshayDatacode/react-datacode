@@ -30,7 +30,7 @@
   .get-started-button {
     //height: 20px;
     //width: 50px;
-    background-color: wheat;
+    background-color: #ffffff;
     border-radius: 10px;
     color: #30006d;
     font-weight: 600;
@@ -44,9 +44,9 @@
 .community-section {
   .join-us-button {
     //height: 20px;
-    //width: 50px;
-    background-color: wheat;
-    border-radius: 3px;
+    width: 150px;
+    background-color: #ffffff;
+    border-radius: 7px;
     color: #30006d;
     font-weight: 600;
     font-family: "Fira Code", monospace;
@@ -61,12 +61,14 @@
   .find-out-more {
     height: 200px;
     width: 300px;
-    background-color: #30006d;
+    background-color: #673de6;
     color: white;
+    font-size: 400;
     border-radius: 5px;
     .find-out-more {
       vertical-align: bottom;
-      color: #fdd023;
+      color: #ffffff;
+      font-weight: 800;
       text-align: right;
       justify-content: right;
     }
@@ -103,6 +105,63 @@
   }
 }
 
+.news-letter-section {
+  height: 300px;
+  align-items: center;
+  .subscribe-form {
+    justify-content: center;
+    background-color: #673de6;
+    padding: 0 80px 0 80px;
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 100px;
+    input {
+      border: solid 2px #30006d;
+      height: 50px;
+      &::placeholder {
+        color: #673de6;
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+      &:-ms-input-placeholder {
+        color: #673de6;
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+      &::-ms-input-placeholder {
+        color: #673de6;
+        font-size: 12px;
+        font-weight: 600;
+      }
+    }
+
+    label {
+      color: #ffffff;
+    }
+  }
+  .subscribe-text {
+    justify-content: center;
+    h2 {
+      font-size: 35px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+  .subscribe-button {
+    width: 200px;
+    height: 55px;
+    background-color: #30006d;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    border: solid 2px #ffffff;
+    outline: none;
+  }
+}
+
 @media (max-width: 767px) {
   .category-section {
     h2 {
@@ -111,5 +170,27 @@
   }
   .carousel-card {
     height: auto;
+  }
+  .news-letter-section {
+    height: auto;
+    border-top: solid 2px #673de6;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    .subscribe-form {
+      padding: 0 30px 0 30px;
+      border-bottom-right-radius: 100px;
+      border-bottom-left-radius: 100px;
+      border-top-left-radius: 0px;
+    }
+    .subscribe-text {
+      padding-top: 20px;
+      h2 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
   }
 }
