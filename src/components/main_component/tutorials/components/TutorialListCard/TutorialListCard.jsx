@@ -18,10 +18,11 @@ const TutorialListCard = ({
   removeTutorial,
   userProfile: { myTutorialsLibrary },
   handleEditTutorial,
+  handleGetTutorialByUserName,
 }) => {
   const [isLiked, setLiked] = useState()
   const [isSaved, setSaved] = useState()
-  const [likeCount, setLikeCount] = useState(likesCount)
+  // const [likeCount, setLikeCount] = useState(likesCount)
   const [openModal, setOpenModal] = useState(false)
 
   useEffect(() => {
@@ -43,17 +44,21 @@ const TutorialListCard = ({
   }, [tutorial, likesCount])
 
   const handleLike = () => {
-    if (userName !== tutorial.userName) {
-      likeTutorial({ id, userName }).then((res) => {
-        if (res) {
-          setLiked(true)
-          setLikeCount(likesCount)
-        }
-      })
-    } else {
-      alert("You can't give community love to your submited tutorial")
-    }
+    likeTutorial({ id, userName }).then((res) => {
+      if (res) {
+        setLiked(true)
+        handleGetTutorialByUserName()
+      }
+    })
+  }
 
+  const handleUnLike = () => {
+    unlikeTutorial({ id, userName }).then((res) => {
+      if (res) {
+        setLiked(false)
+        handleGetTutorialByUserName()
+      }
+    })
   }
 
   const handleSaveToLibrary = () => {
@@ -104,9 +109,9 @@ const TutorialListCard = ({
         <div className="col-9">
           <div className="row m-0 mt-3 mb-2 text-right p-0">
             <div className="col-12 p-0 text-right">
-              {likeCount}
-              {isLiked ? <i className="fad fa-heart-circle red mx-2" /> :
-                <i onClick={() => handleLike()} className="far fa-heart-circle red mx-2" />}
+              {likesCount}
+              {isLiked ? <i onClick={() => handleUnLike()} className="fad fa-heart red mx-2" /> :
+                <i onClick={() => handleLike()} className="far fa-heart red mx-2" />}
               {
                 isSaved ?
                   <i onClick={() => handleUnsaveFromLibrary()} className="fad fa-bookmark voilet mx-2" />

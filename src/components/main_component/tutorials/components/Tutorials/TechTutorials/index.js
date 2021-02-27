@@ -6,6 +6,7 @@ import { getTutorialsList } from "../../../actions";
 
 const mapStateToProps = ({ tutorial }) => ({
   tutorialsList: tutorial.tutorialsList,
+  tutorialListLoading: tutorial.tutorialListLoading,
 });
 
 const mapDispatchToProps = {

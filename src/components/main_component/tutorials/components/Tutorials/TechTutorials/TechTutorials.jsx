@@ -6,36 +6,26 @@ import { techData, techCategory } from '../helpers'
 import TutorialCard from '../TutorialCard'
 import Filter from '../Filter'
 import { Helmet } from 'react-helmet'
+import Loader from 'react-loader-spinner'
 
 
 const TechTutorials = ({
   getTutorialsList,
   match: { params: { technology } },
   tutorialsList,
+  tutorialListLoading,
 }) => {
 
   const [techDetails, setTechDetails] = useState({})
 
   const [pageNumber, setPageNumber] = useState(0)
 
-  const tutorialsPerPage = 6
-  const pagesVisited = pageNumber * tutorialsPerPage
-  console.log("tutorialsList", tutorialsList)
-  const displayTutorials = tutorialsList
-    .slice(pagesVisited, pagesVisited + tutorialsPerPage)
-    .map((item) => {
-      return <TutorialCard tutorial={item} id={item.id} title={item.title} likesCount={item.likes.length} />
-    })
-
-  const pageCount = Math.ceil(tutorialsList.length / tutorialsPerPage)
-
-  const changePage = ({ selected }) => {
-    setPageNumber(selected)
+  const handleTutorialList = () => {
+    getTutorialsList(technology)
   }
 
   useEffect(() => {
-    getTutorialsList(technology)
-
+    handleTutorialList()
     techData.find((item) => {
       if (item.technology === technology) {
         return setTechDetails(item)
@@ -43,6 +33,27 @@ const TechTutorials = ({
     })
     window.scrollTo(0, 0);
   }, [])
+
+  const tutorialsPerPage = 3
+  const pagesVisited = pageNumber * tutorialsPerPage
+  console.log("tutorialsList", tutorialsList)
+  const displayTutorials = tutorialsList
+    .slice(pagesVisited, pagesVisited + tutorialsPerPage)
+    .map((item) => {
+      return <TutorialCard
+        handleTutorialList={handleTutorialList}
+        tutorial={item}
+        id={item.id}
+        title={item.title}
+        likesCount={item.likes.length}
+      />
+    })
+
+  const pageCount = Math.ceil(tutorialsList.length / tutorialsPerPage)
+
+  const changePage = ({ selected }) => {
+    setPageNumber(selected)
+  }
 
   return (
     <>
@@ -82,22 +93,34 @@ const TechTutorials = ({
               </div>
             </div>
             <div className="col-12 col-md-9">
-              <div className="row m-0 d-flex justify-content-center tutorial-card-section">
-                {displayTutorials}
-                <ReactPaginate
-                  previousLabel={"Prev"}
-                  nextLabel={"Next"}
-                  pageCount={pageCount}
-                  onPageChange={changePage}
-                  containerClassName={"pagination"}
-                  pageLinkClassName={"page"}
-                  previousLinkClassName={"previousBtn"}
-                  nextLinkClassName={"nextBtn"}
-                  disabledClassName={"disabled"}
-                  activeClassName={"activePage"}
-                  activeLinkClassName={"activeClassLink"}
-                />
-              </div>
+              {tutorialListLoading ?
+                <div className="d-flex text-center justify-content-center">
+                  <Loader
+                    type="ThreeDots"
+                    color="#30006d"
+                    height={100}
+                    width={100}
+                    timeout={11000} //8 secs
+                  />
+                </div>
+                :
+                <div className="row m-0 d-flex justify-content-center tutorial-card-section">
+                  {displayTutorials}
+                  <ReactPaginate
+                    previousLabel={"Prev"}
+                    nextLabel={"Next"}
+                    pageCount={pageCount}
+                    onPageChange={changePage}
+                    containerClassName={"pagination"}
+                    pageLinkClassName={"page"}
+                    previousLinkClassName={"previousBtn"}
+                    nextLinkClassName={"nextBtn"}
+                    disabledClassName={"disabled"}
+                    activeClassName={"activePage"}
+                    activeLinkClassName={"activeClassLink"}
+                  />
+                </div>
+              }
             </div>
           </div>
         </div>

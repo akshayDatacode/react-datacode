@@ -81,7 +81,6 @@ export const likeTutorial = (data) => (dispatch) => {
     .put(`${baseURL}/tutorial/like_tutorial`, data)
     .then(({ data }) => {
       if (data.success) {
-        dispatch(actions.setTutorialById(data));
         return { success: true, data: data.tutorial };
       }
     })
@@ -95,7 +94,6 @@ export const unlikeTutorial = (data) => (dispatch) => {
     .put(`${baseURL}/tutorial/unlike_tutorial`, data)
     .then(({ data }) => {
       if (data.success) {
-        dispatch(actions.setTutorialById(data));
         return { success: true, data: data.tutorial };
       }
     })

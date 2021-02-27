@@ -32,7 +32,6 @@ const TutorialPage = ({
 
     getTutorialById(id).then((res) => {
       if (res) {
-        console.log(res.data)
         setTechDetails(res.data)
         if (res.data && res.data.likes) {
           res.data.likes.find((item) => {
@@ -41,11 +40,9 @@ const TutorialPage = ({
             }
           })
         }
-
         if (userProfile && userProfile.myTutorialsLibrary) {
           myTutorialsLibrary.map((item) => {
             if (item.id === id) {
-              debugger
               return setSaved(true)
             }
           })
@@ -58,7 +55,8 @@ const TutorialPage = ({
     unlikeTutorial({ id, userName }).then((res) => {
       if (res) {
         setLiked(false)
-        //setLikeCount(likesCount)
+        getTutorialById(id)
+        // setLikeCount(likesCount-1)
       }
     })
   }
@@ -67,6 +65,7 @@ const TutorialPage = ({
     likeTutorial({ id, userName }).then((res) => {
       if (res) {
         setLiked(true)
+        getTutorialById(id)
         // setLikeCount(likesCount + 1)
       }
     })
@@ -147,9 +146,9 @@ const TutorialPage = ({
               <div className="row m-0 mt-5 mt-md-0">
                 <div className="col-4 ">
                   {isLiked ?
-                    <i onClick={() => handleUnlike()} className="fad fa-heart-circle red mx-2" />
+                    <i onClick={() => handleUnlike()} className="fad fa-heart red mx-2" />
                     :
-                    <i onClick={() => handleLink()} className="far fa-heart-circle red mx-2" />
+                    <i onClick={() => handleLink()} className="far fa-heart red mx-2" />
                   }
                   <h1 className="mt-md-4 mt-2 mb-0">
                     {tutorial.likes && tutorial.likes.length}

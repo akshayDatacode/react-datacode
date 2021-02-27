@@ -13,12 +13,15 @@ const TutorialCard = ({
   unsaveFromLibrary,
   tutorial,
   userProfile,
-  userProfile: { myTutorialsLibrary }
+  userProfile: { myTutorialsLibrary },
+  handleTutorialList,
 }) => {
+
+  console.log("likedddds", likesCount)
 
   const [isLiked, setLiked] = useState()
   const [isSaved, setSaved] = useState()
-  const [likeCount, setLikeCount] = useState(likesCount)
+  // const [likeCount, setLikeCount] = useState(likesCount)
 
   useEffect(() => {
     if (tutorial && tutorial.likes) {
@@ -42,7 +45,8 @@ const TutorialCard = ({
     unlikeTutorial({ id, userName }).then((res) => {
       if (res) {
         setLiked(false)
-        setLikeCount(likesCount)
+        // setLikeCount(likesCount)
+        handleTutorialList()
       }
     })
   }
@@ -51,7 +55,8 @@ const TutorialCard = ({
     likeTutorial({ id, userName }).then((res) => {
       if (res) {
         setLiked(true)
-        setLikeCount(likesCount)
+        // setLikeCount(likesCount)
+        handleTutorialList()
       }
     })
   }
@@ -88,9 +93,9 @@ const TutorialCard = ({
         </Link>
         <div className="row m-0 mt-3 mb-2 text-right p-0">
           <div className="col-12 p-0 text-right">
-            {likeCount}
-            {isLiked ? <i onClick={() => handleUnlike()} className="fad fa-heart-circle red mx-2" /> :
-              <i onClick={() => handleLink()} className="far fa-heart-circle red mx-2" />}
+            {likesCount}
+            {isLiked ? <i onClick={() => handleUnlike()} className="fad fa-heart red mx-2" /> :
+              <i onClick={() => handleLink()} className="far fa-heart red mx-2" />}
             {
               isSaved ?
                 <i onClick={() => handleUnsaveFromLibrary()} className="fad fa-bookmark voilet mx-2" />

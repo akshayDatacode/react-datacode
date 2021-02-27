@@ -194,6 +194,7 @@ const AddTutorial = ({
                   title={item.title}
                   likesCount={item.likes.length}
                   handleEditTutorial={handleEditTutorial}
+                  handleGetTutorialByUserName={handleGetTutorialByUserName}
                 />
               )) :
                 <img
