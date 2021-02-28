@@ -375,6 +375,34 @@
   }
 }
 
+.tags-input {
+  width: 100%;
+  margin: 10px;
+  .tags-area {
+    width: 100%;
+    border: solid 2px #673de6;
+    border-radius: 2px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    .tag {
+      margin: 0 5px 0 5px;
+      padding: 0 8px 0 8px;
+      font-size: 10px;
+      color: #ffffff;
+      display: flex;
+      border-radius: 3px;
+      background-color: #673de6;
+      align-items: center;
+    }
+    input {
+      flex: 1;
+      outline: none;
+      border: none;
+    }
+  }
+}
+
 .delete-tutorial-modal {
   .modal-header,
   h5 {

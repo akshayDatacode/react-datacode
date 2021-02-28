@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 const TutorialCard = ({
   id,
   title,
+  tags,
   likeTutorial,
   unlikeTutorial,
   likesCount,
@@ -107,10 +108,17 @@ const TutorialCard = ({
             </Link>
           </div>
         </div>
-        <div className="row m-0 mb-2">
-          <span className="tag">{title}</span>
+        <div className="tags-input row m-0 mb-2">
+          <div className="col-12 p-0">
+            <div className="tags-area border-0">
+              {tags.map((tag, index) => (
+                <div className="tag" key={index}>
+                  <span>{tag}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
-
         <Link to={`/tutorial/${id}`}><h6>{title}</h6></Link>
         <p>
           A little bit discription about the course and also
@@ -129,6 +137,7 @@ TutorialCard.defaultProps = {
   tutorial: {},
   myTutorialsLibrary: [],
   userProfile: {},
+  tags: [],
 }
 
 TutorialCard.propTypes = {

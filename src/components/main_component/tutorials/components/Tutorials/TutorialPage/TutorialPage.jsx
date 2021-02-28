@@ -10,7 +10,7 @@ const TutorialPage = ({
   userData: { userName, email },
   getTutorialById,
   tutorial,
-  tutorial: { likes },
+  tutorial: { tags },
   unlikeTutorial,
   likeTutorial,
   saveToLibrary,
@@ -102,6 +102,17 @@ const TutorialPage = ({
               <p className="text-left nav-link px-0"><Link to="/index_technologies">Tutorials</Link> / <Link to={`/tutorials/${techDetails && techDetails.technology}`}>{`${techDetails && techDetails.technology} Tutorial`}</Link> / <Link to={`/tutorials/${techDetails && techDetails.technology}`}>{`${techDetails.title} Course Name`}</Link></p>
               <h2>{techDetails && techDetails.technology}</h2>
               <h1>{techDetails && techDetails.title}</h1>
+              <div className="tags-input row m-0">
+                <div className="col-12 p-0">
+                  <div className="tags-area border-0">
+                    {tags && tags.map((tag, index) => (
+                      <div className="tag" key={index}>
+                        <span>{tag}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
               <p>From building websites to analyzing data, the choice is yours. Find the best of the best courses to learn from...</p>
               <a target="blank" href={techDetails && techDetails.link}>
                 <button className="text-center btn start-learning-btn">
@@ -213,6 +224,7 @@ TutorialPage.defaultProps = {
   id: "",
   userData: {},
   tutorial: {},
+  tags: [],
 }
 
 TutorialPage.propTypes = {

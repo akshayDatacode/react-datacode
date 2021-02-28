@@ -44,6 +44,7 @@ const TechTutorials = ({
         handleTutorialList={handleTutorialList}
         tutorial={item}
         id={item.id}
+        tags={item.tags}
         title={item.title}
         likesCount={item.likes.length}
       />
@@ -105,20 +106,31 @@ const TechTutorials = ({
                 </div>
                 :
                 <div className="row m-0 d-flex justify-content-center tutorial-card-section">
-                  {displayTutorials}
-                  <ReactPaginate
-                    previousLabel={"Prev"}
-                    nextLabel={"Next"}
-                    pageCount={pageCount}
-                    onPageChange={changePage}
-                    containerClassName={"pagination"}
-                    pageLinkClassName={"page"}
-                    previousLinkClassName={"previousBtn"}
-                    nextLinkClassName={"nextBtn"}
-                    disabledClassName={"disabled"}
-                    activeClassName={"activePage"}
-                    activeLinkClassName={"activeClassLink"}
-                  />
+                  {tutorialsList && tutorialsList.length ?
+                    <>
+                      {displayTutorials}
+                      <ReactPaginate
+                        previousLabel={"Prev"}
+                        nextLabel={"Next"}
+                        pageCount={pageCount}
+                        onPageChange={changePage}
+                        containerClassName={"pagination"}
+                        pageLinkClassName={"page"}
+                        previousLinkClassName={"previousBtn"}
+                        nextLinkClassName={"nextBtn"}
+                        disabledClassName={"disabled"}
+                        activeClassName={"activePage"}
+                        activeLinkClassName={"activeClassLink"}
+                      />
+                    </>
+                    :
+                    <img
+                      height="350px"
+                      width="350px"
+                      src={require(`../../../../../../assets/images/svg/noitem.png`)}
+                      alt="avatar"
+                      className="mx-auto img-fluid img-circle"
+                    />}
                 </div>
               }
             </div>

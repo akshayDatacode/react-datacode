@@ -7,6 +7,7 @@ import { renderInputField } from '../../../../../shared_components/ReduxFormFiel
 import { required } from '../../../../../utils/validators'
 
 import TutorialListCard from '../TutorialListCard'
+import TagsInput from './TagsInput'
 
 const AddTutorial = ({
   reset,
@@ -25,6 +26,7 @@ const AddTutorial = ({
   // const [tutorialsList, setTutorialsList] = useState()
   const [pageNumber, setPageNumber] = useState(0)
   const [isEdit, setIsEdit] = useState(false)
+  const [tags, setTags] = useState([])
 
   useEffect(() => {
     console.log("qqqq", userProfile)
@@ -58,9 +60,11 @@ const AddTutorial = ({
     } else {
       tutorial['userName'] = userName
       tutorial['id'] = Math.random().toString(36).substr(4, 9)
+      tutorial['tags'] = tags
       addTutorial(tutorial).then((res) => {
         if (res && res.success) {
           handleGetTutorialByUserName()
+          setTags([])
           reset('tutorial')
         }
       })
@@ -79,6 +83,7 @@ const AddTutorial = ({
     initialize({})
     setIsEdit(!isEdit)
   }
+
 
   // const tutorialsPerPage = 6
   // const pagesVisited = pageNumber * tutorialsPerPage
@@ -121,6 +126,13 @@ const AddTutorial = ({
                   label='Enter Tutorial Link'
                   placeholder=""
                   validate={[required]}
+                />
+              </div>
+              <div className="mt-3">
+                <label className="form-label">Add tags for tutorial</label>
+                <TagsInput
+                  setTags={setTags}
+                  tags={tags}
                 />
               </div>
               <div>
@@ -192,6 +204,7 @@ const AddTutorial = ({
                   tutorial={item}
                   id={item.id}
                   title={item.title}
+                  tags={item.tags}
                   likesCount={item.likes.length}
                   handleEditTutorial={handleEditTutorial}
                   handleGetTutorialByUserName={handleGetTutorialByUserName}

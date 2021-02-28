@@ -7,6 +7,7 @@ import DeleteTutorialModal from './DeleteTutorialModal'
 const TutorialListCard = ({
   id,
   title,
+  tags,
   likeTutorial,
   unlikeTutorial,
   likesCount,
@@ -123,6 +124,18 @@ const TutorialListCard = ({
               </Link>
               <i onClick={() => handleEditTutorial(id)} className="far fa-edit voilet mx-2" />
               <i onClick={() => setOpenModal(!openModal)} className="far fa-trash voilet mx-2" />
+            </div>
+          </div>
+          <div className="tags-input row m-0">
+            <div className="col-12 p-0">
+              <div className="tags-area border-0">
+                {tags.map((tag, index) => (
+                  <div className="tag" key={index}>
+                    <span>{tag}</span>
+                  </div>
+                ))}
+              </div>
+
             </div>
           </div>
           <Link to={`/tutorial/${id}`}><h6>{title}</h6></Link>
