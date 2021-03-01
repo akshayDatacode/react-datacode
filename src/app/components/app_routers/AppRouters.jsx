@@ -376,6 +376,9 @@ import EditProfile from "../../../components/user/component/profile/edit_profile
 import MyLibrary from '../../../components/user/component/profile/my_library'
 // --------------------------------------------------------------------
 
+// Blogs Text Editor  --------------
+import TextEditor from '../../../components/main_component/aticles/BlogsEditor/TextEditor'
+
 const AppRouters = ({
   setLocalUser
 }) => {
@@ -1256,6 +1259,9 @@ const AppRouters = ({
 
         <Route exact path="/edit_profile" render={authGuard(EditProfile)} />
         <Route exact path="/my_library" render={authGuard(MyLibrary)} />
+
+        {/* -------BLog Editor---- */}
+        <Route path="/editor" component={TextEditor} />
         {/* ____________________________________________ */}
 
         <Route path="*" component={NotFound} />
