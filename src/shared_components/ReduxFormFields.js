@@ -69,7 +69,7 @@ export const renderCheckboxField = ({
   meta: { touched, error, warning },
 }) => {
   return (
-    <div className="option-pair mt-2">
+    <div className="option-pair align-items-center">
       <input
         {...input}
         type="checkbox"
@@ -77,7 +77,7 @@ export const renderCheckboxField = ({
         onChange={(value) => input.onChange(value)}
         checked={input.value}
       />
-      <label>{label}</label>
+      <label className="ml-1 form-label">{label}</label>
       {touched && errorMessage(error, warning)}
     </div>
   );
@@ -97,7 +97,7 @@ export const renderRadioField = ({
         onChange={(value) => input.onChange(value)}
         onBlur={() => input.onBlur(input.value)}
       />
-      <label>{label}</label>
+      <label className="ml-1 form-label">{label}</label>
       {touched && errorMessage(error, warning)}
     </div>
   );

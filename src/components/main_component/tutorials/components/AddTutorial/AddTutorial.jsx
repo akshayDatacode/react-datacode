@@ -3,7 +3,7 @@ import { Field, reduxForm } from 'redux-form'
 import PropTypes from 'prop-types'
 import Loader from 'react-loader-spinner'
 
-import { renderInputField } from '../../../../../shared_components/ReduxFormFields'
+import { renderInputField, renderCheckboxField, renderRadioField } from '../../../../../shared_components/ReduxFormFields'
 import { required } from '../../../../../utils/validators'
 
 import TutorialListCard from '../TutorialListCard'
@@ -60,11 +60,13 @@ const AddTutorial = ({
     } else {
       tutorial['userName'] = userName
       tutorial['id'] = Math.random().toString(36).substr(4, 9)
+      const tags = [tutorial.cost, tutorial.type, tutorial.level]
       tutorial['tags'] = tags
+      console.log("tutorial", tutorial)
       addTutorial(tutorial).then((res) => {
         if (res && res.success) {
           handleGetTutorialByUserName()
-          setTags([])
+          // setTags([])
           reset('tutorial')
         }
       })
@@ -73,6 +75,7 @@ const AddTutorial = ({
   }
 
   const handleEditTutorial = (id) => {
+    window.scrollTo(0, 0);
     console.log("edit id", id)
     const editTutotial = tutorialByUser.find((item) => item.id === id)
     initialize(editTutotial)
@@ -129,12 +132,94 @@ const AddTutorial = ({
                 />
               </div>
               <div className="mt-3">
-                <label className="form-label">Add tags for tutorial</label>
-                <TagsInput
-                  setTags={setTags}
-                  tags={tags}
-                />
+                <label className="form-label">This tutorial is:</label>
+                <div className="type-tag">
+                  <div className="px-1 type-checkbox">
+                    <Field
+                      name='cost'
+                      component={renderRadioField}
+                      value="Free"
+                      label='Free'
+                      type="radio"
+                    />
+                  </div>
+                  <div className="px-1 mx-1 type-checkbox">
+                    <Field
+                      name='cost'
+                      component={renderRadioField}
+                      value="Paid"
+                      label='Paid'
+                      type="radio"
+                    />
+                  </div>
+                </div>
               </div>
+              <div className="mt-3">
+                <label className="form-label">Tutorial Level</label>
+                <div className="type-tag">
+                  <div className="px-1 type-checkbox">
+                    <Field
+                      name='level'
+                      component={renderRadioField}
+                      value="Beginner"
+                      label='Beginner'
+                      type="radio"
+                    />
+                  </div>
+                  <div className="px-1 mx-1 type-checkbox">
+                    <Field
+                      name='level'
+                      component={renderRadioField}
+                      value="Intermediate"
+                      label='Intermediate'
+                      type="radio"
+                    />
+                  </div>
+                  <div className="px-1 mx-1 type-checkbox">
+                    <Field
+                      name='level'
+                      component={renderRadioField}
+                      value="Advance"
+                      label='Advance'
+                      type="radio"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-3">
+                <label className="form-label">Tutorial Type</label>
+                <div className="type-tag">
+                  <div className="px-1 type-checkbox">
+                    <Field
+                      name='type'
+                      component={renderRadioField}
+                      value="Video"
+                      label='Video'
+                      type="radio"
+                    />
+                  </div>
+                  <div className="px-1 mx-1 type-checkbox">
+                    <Field
+                      name='type'
+                      component={renderRadioField}
+                      value="Book"
+                      label='Book'
+                      type="radio"
+                    />
+                  </div>
+                  <div className="px-1 mx-1 type-checkbox">
+                    <Field
+                      name='type'
+                      component={renderRadioField}
+                      value="pdf"
+                      label='PDF Notes'
+                      type="radio"
+                    />
+                  </div>
+                </div>
+              </div>
+
               <div>
                 <Field
                   name="technology"
