@@ -19,6 +19,8 @@ const TechTutorials = ({
   const [techDetails, setTechDetails] = useState({})
 
   const [pageNumber, setPageNumber] = useState(0)
+  const [checkedItems, setCheckedItems] = useState([]);
+  const [filterList, setFilterList] = useState([])
 
   const handleTutorialList = () => {
     getTutorialsList(technology)
@@ -31,12 +33,27 @@ const TechTutorials = ({
         return setTechDetails(item)
       }
     })
+    setFilterList(tutorialsList)
     window.scrollTo(0, 0);
   }, [])
 
   const tutorialsPerPage = 3
   const pagesVisited = pageNumber * tutorialsPerPage
   console.log("tutorialsList", tutorialsList)
+
+  const handleFilter = (event) => {
+    if (event.target.checked && event.target.name) {
+      checkedItems.push(event.target.name)
+      const filteredList = tutorialsList.filter(tech => Object.values(tech).some(value => value.toLowerCase().includes(checkedItems)));
+      setCheckedItems(checkedItems)
+      console.log(filteredList)
+      setFilterList(filteredList)
+      console.log(checkedItems)
+    } else {
+      setCheckedItems(checkedItems.filter(e => e !== String(event.target.name)))
+    }
+  }
+
   const displayTutorials = tutorialsList
     .slice(pagesVisited, pagesVisited + tutorialsPerPage)
     .map((item) => {
@@ -87,7 +104,10 @@ const TechTutorials = ({
           <h2 className="my-5 text-center">{`Find Best ${techDetails.title} Tutorials and Courses`}</h2>
           <div className="row m-0">
             <div className="col-12 col-sm-12 col-md-3 pt-2 main">
-              <Filter />
+              <Filter
+                checkedItems={checkedItems}
+                handleFilter={handleFilter}
+              />
               <div className="add-tutorial mt-3 mb-md-0 mb-4 p-4 align-items-center">
                 <Link to="/add_tutorial"><i className="fad fa-plus-circle green" /></Link>
                 <h5>Add your Tutorial and contribute in communtiy</h5>

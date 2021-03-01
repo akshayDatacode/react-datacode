@@ -385,10 +385,16 @@
   }
   input {
     cursor: pointer;
+    font-size: 12px;
   }
   label {
-    cursor: pointer;
-    font-size: 12px;
+    p {
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 0px;
+      align-items: center;
+    }
   }
 }
 

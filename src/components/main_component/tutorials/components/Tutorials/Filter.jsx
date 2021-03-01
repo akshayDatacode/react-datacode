@@ -1,7 +1,13 @@
 import React, { useState } from 'react'
 
-const Filter = () => {
+const Filter = ({
+  setCheckedItems,
+  checkedItems,
+  handleChange,
+}) => {
   const [showFilter, setShowFilter] = useState(true)
+
+
 
   return (
     <>
@@ -28,32 +34,86 @@ const Filter = () => {
           <div className="px-4">
             <h6>Type of course</h6>
             <div className="align-items-center d-flex mb-2">
-              <input type="checkbox" className="mr-3" />
+              <input
+                type="checkbox"
+                className="mr-3"
+                checked={checkedItems.Free}
+                name="Free"
+                onChange={handleChange}
+              />
               <p><i className="fad fa-gifts" /> Free</p>
             </div>
             <div className="align-items-center d-flex mb-2">
-              <input type="checkbox" className="mr-3" />
+              <input
+                type="checkbox"
+                className="mr-3"
+                checked={checkedItems.Paid}
+                name="Paid"
+                onChange={handleChange}
+              />
               <p>Paid <i className="fal fa-money-bill-wave" /></p>
             </div>
             <h6>Type of Medium</h6>
             <div className="align-items-center d-flex mb-2">
-              <input type="checkbox" className="mr-3" /><p>Video</p>
+              <input
+                type="checkbox"
+                className="mr-3"
+                checked={checkedItems.Video}
+                name="Video"
+                onChange={handleChange}
+              />
+              <p>Video</p>
             </div>
             <div className="align-items-center d-flex mb-2">
-              <input type="checkbox" className="mr-3" /><p>Book</p>
+              <input
+                type="checkbox"
+                className="mr-3"
+                checked={checkedItems.Book}
+                name="Book"
+                onChange={handleChange}
+              />
+              <p>Book</p>
             </div>
             <div className="align-items-center d-flex mb-2">
-              <input type="checkbox" className="mr-3" /><p>PDF Notes</p>
+              <input
+                type="checkbox"
+                className="mr-3"
+                checked={checkedItems.pdf}
+                name="pdf"
+                onChange={handleChange}
+              />
+              <p>PDF Notes</p>
             </div>
             <h6>Type of Levels</h6>
             <div className="align-items-center d-flex mb-2">
-              <input type="checkbox" className="mr-3" /><p>Beginner</p>
+              <input
+                type="checkbox"
+                className="mr-3"
+                checked={checkedItems.Beginner}
+                name="Beginner"
+                onChange={handleChange}
+              />
+              <p>Beginner</p>
             </div>
             <div className="align-items-center d-flex mb-2">
-              <input type="checkbox" className="mr-3" /><p>Intermediate</p>
+              <input
+                type="checkbox"
+                className="mr-3"
+                checked={checkedItems.Paid}
+                name="Paid"
+                onChange={handleChange}
+              />
+              <p>Intermediate</p>
             </div>
             <div className="align-items-center d-flex mb-2">
-              <input type="checkbox" className="mr-3" /><p>Advanced</p>
+              <input
+                type="checkbox"
+                className="mr-3"
+                checked={checkedItems.Advanced}
+                name="Advanced"
+                onChange={handleChange}
+              />
+              <p>Advanced</p>
             </div>
           </div>
         </div>
