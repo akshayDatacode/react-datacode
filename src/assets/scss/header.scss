@@ -57,6 +57,51 @@
     .profile-dropdown {
       width: auto;
       color: #30006d;
+      text-decoration: none;
+      .dropdown-header {
+        color: #ffffff;
+        border-bottom: solid 1px #ffffff;
+        margin-bottom: 5px;
+        font-size: 18px;
+      }
+      .dropdown-menu {
+        background-color: #673de6;
+        align-items: center;
+        a {
+          text-decoration: none;
+          :hover {
+            background-color: #ffffff;
+            color: #673de6;
+          }
+        }
+        :hover {
+          background-color: #ffffff;
+          color: #673de6;
+        }
+        button {
+          outline: none;
+          span {
+            :hover {
+              background-color: #ffffff;
+              color: #673de6;
+            }
+          }
+        }
+        i {
+          color: #ffffff;
+          font-size: 16px;
+        }
+        span {
+          color: #ffffff;
+          :hover {
+            background-color: #ffffff;
+            color: #673de6;
+          }
+          text-decoration: none;
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
     }
   }
 }

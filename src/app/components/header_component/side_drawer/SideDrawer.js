@@ -103,22 +103,22 @@ const SideDrawer = ({
                   </div>
                   <UncontrolledCollapse toggler="#toggler">
                     <div className="row m-0 mt-2">
-                      <div className="col-4">
+                      <div className="col-4 text-center">
                         <Link
                           onClick={() => backDropClickHandler()}
                           to={`/my_profile/${currentUser.email}`}
                         >
                           <i className="fas fa-user" />
+                          <p>My Profile</p>
                         </Link>
                       </div>
-                      <div className="col-4">
+                      <div className="col-4 text-center">
                         <Link
                           onClick={() => backDropClickHandler()}
                           to={`/my_library`}
                         >
-                          <span>
-                            <i className="fas fa-window-restore" />
-                          </span>
+                          <i className="fas fa-window-restore" />
+                          <p>My Library</p>
                         </Link>
                       </div>
                       <div className="col-4 text-center">
@@ -126,7 +126,8 @@ const SideDrawer = ({
                           to="/edit_profile"
                           onClick={() => backDropClickHandler()}
                         >
-                          <i className="fas fa-edit" />
+                          <i className="far fa-user-edit" />
+                          <p>Edit Profile</p>
                         </Link>
                       </div>
                     </div>

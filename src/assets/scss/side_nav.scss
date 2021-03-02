@@ -17,6 +17,10 @@
     width: 100%;
     // justify-content: center;
     align-items: center;
+
+    a {
+      text-decoration: none;
+    }
     h2 {
       font-size: 16px;
       text-decoration: quote($string: "Hello Learner");
@@ -28,7 +32,10 @@
       color: #673de6;
     }
     p {
-      font-size: 9px;
+      font-size: 10px;
+      white-space: nowrap;
+      color: #30006d;
+      font-weight: 400;
     }
   }
   .join-us {
@@ -65,13 +72,13 @@
       align-items: right;
       justify-content: right;
       padding: 6px 0 6px 0;
-      margin: 20px 0 20px 0;
+      margin: 12px 0 12px 0;
       background-color: rgb(205, 205, 243);
-      border-top-left-radius: 600px;
-      border-bottom-left-radius: 600px;
+      border-top-right-radius: 600px;
+      border-bottom-right-radius: 600px;
       position: relative;
       text-decoration: none;
-      left: 29px;
+      left: 0px;
       span {
         text-align: left;
         color: #30006d;

@@ -89,16 +89,17 @@ export const renderRadioField = ({
   meta: { touched, error, warning },
 }) => {
   return (
-    <div className="option-pair align-items-center d-flex mt-2">
+    <div className="d-flex mt-2">
       <input
         {...input}
         type="radio"
         value={input.value}
         onChange={(value) => input.onChange(value)}
         onBlur={() => input.onBlur(input.value)}
+        id={input.value}
       />
-      <label className="ml-1 form-label">
-        <p>{label}</p>
+      <label for={input.value} className="ml-1 form-label">
+        <p className="mb-0">{label}</p>
       </label>
       {touched && errorMessage(error, warning)}
     </div>

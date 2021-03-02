@@ -119,15 +119,15 @@ const Header = ({
                       alt="datacode"
                     />
                   </Link>
-                  <UncontrolledDropdown setActiveFromChild>
-                    <DropdownToggle tag="a" className="ml-3 profile-dropdown">
+                  <UncontrolledDropdown setActiveFromChild className="profile-dropdown">
+                    <DropdownToggle tag="a" className="ml-3">
                       <i className="far fa-angle-down" />
                     </DropdownToggle>
                     <DropdownMenu className="dropdown-menu mt-3" right>
-                      <DropdownItem header>Akshay Mandliya</DropdownItem>
-                      <DropdownItem><Link to={`/my_profile/${currentUser.email}`}><span>My Profile</span></Link></DropdownItem>
-                      <DropdownItem><Link to={`/my_library`}><span>My Library</span></Link></DropdownItem>
-                      <DropdownItem><Link to="/edit_profile">Edit Profile</Link></DropdownItem>
+                      <DropdownItem header><spna>{currentUser && currentUser.userName}</spna></DropdownItem>
+                      <DropdownItem><Link to={`/my_profile/${currentUser.email}`}><span><i className="fas fa-user mr-2" />My Profile</span></Link></DropdownItem>
+                      <DropdownItem><Link to={`/my_library`}><span> <i className="fas fa-window-restore mr-2" />My Library</span></Link></DropdownItem>
+                      <DropdownItem><Link to="/edit_profile"><span><i className="far fa-user-edit mr-2" />Edit Profile</span></Link></DropdownItem>
                       <DropdownItem>
                         <Link to="/" onClick={() => logoutUser()}>
                           <li>

@@ -34,86 +34,103 @@ const Filter = ({
           <div className="px-4">
             <h6>Type of course</h6>
             <div className="align-items-center d-flex mb-2">
-              <input
-                type="checkbox"
-                className="mr-3"
-                checked={checkedItems.Free}
-                name="Free"
-                onChange={handleFilter}
-              />
-              <p><i className="fad fa-gifts" /> Free</p>
+              <label className="d-flex">
+                <input
+                  type="checkbox"
+                  className="mr-3"
+                  checked={checkedItems.Free}
+                  name="Free"
+                  onChange={handleFilter}
+                />
+                <p><i className="fad fa-gifts" /> Free</p>
+              </label>
             </div>
             <div className="align-items-center d-flex mb-2">
-              <input
-                type="checkbox"
-                className="mr-3"
-                checked={checkedItems.Paid}
-                name="Paid"
-                onChange={handleFilter}
-              />
-              <p>Paid <i className="fal fa-money-bill-wave" /></p>
+              <label className="d-flex">
+                <input
+                  type="checkbox"
+                  className="mr-3"
+                  checked={checkedItems.Paid}
+                  name="Paid"
+                  onChange={handleFilter}
+                />
+                <p>Paid <i className="fal fa-money-bill-wave" /></p>
+              </label>
             </div>
             <h6>Type of Medium</h6>
             <div className="align-items-center d-flex mb-2">
-              <input
-                type="checkbox"
-                className="mr-3"
-                checked={checkedItems.Video}
-                name="Video"
-                onChange={handleFilter}
-              />
-              <p>Video</p>
+              <label className="d-flex">
+                <input
+                  type="checkbox"
+                  className="mr-3"
+                  checked={checkedItems.Video}
+                  name="Video"
+                  onChange={handleFilter}
+                  id="Video"
+                />
+                <p>Video</p>
+              </label>
             </div>
             <div className="align-items-center d-flex mb-2">
-              <input
-                type="checkbox"
-                className="mr-3"
-                checked={checkedItems.Book}
-                name="Book"
-                onChange={handleFilter}
-              />
-              <p>Book</p>
+              <label className="d-flex">
+                <input
+                  type="checkbox"
+                  className="mr-3"
+                  checked={checkedItems.Book}
+                  name="Book"
+                  onChange={handleFilter}
+                />
+                <p>Book</p>
+              </label>
             </div>
             <div className="align-items-center d-flex mb-2">
-              <input
-                type="checkbox"
-                className="mr-3"
-                checked={checkedItems.pdf}
-                name="pdf"
-                onChange={handleFilter}
-              />
-              <p>PDF Notes</p>
+              <label className="d-flex">
+                <input
+                  type="checkbox"
+                  className="mr-3"
+                  checked={checkedItems.pdf}
+                  name="pdf"
+                  onChange={handleFilter}
+                />
+                <p>PDF Notes</p>
+              </label>
             </div>
             <h6>Type of Levels</h6>
             <div className="align-items-center d-flex mb-2">
-              <input
-                type="checkbox"
-                className="mr-3"
-                checked={checkedItems.Beginner}
-                name="Beginner"
-                onChange={handleFilter}
-              />
-              <p>Beginner</p>
+              <label className="d-flex">
+                <input
+                  type="checkbox"
+                  className="mr-3"
+                  checked={checkedItems.Beginner}
+                  name="Beginner"
+                  onChange={handleFilter}
+                />
+                <p>Beginner</p>
+              </label>
             </div>
             <div className="align-items-center d-flex mb-2">
-              <input
-                type="checkbox"
-                className="mr-3"
-                checked={checkedItems.Paid}
-                name="Paid"
-                onChange={handleFilter}
-              />
-              <p>Intermediate</p>
+              <label className="d-flex">
+                <input
+                  type="checkbox"
+                  className="mr-3"
+                  checked={checkedItems.Paid}
+                  name="Paid"
+                  onChange={handleFilter}
+                />
+                <p>Intermediate</p>
+              </label>
             </div>
             <div className="align-items-center d-flex mb-2">
-              <input
-                type="checkbox"
-                className="mr-3"
-                checked={checkedItems.Advance}
-                name="Advance"
-                onChange={handleFilter}
-              />
-              <p>Advanced</p>
+              <label className="d-flex">
+                <input
+                  type="checkbox"
+                  className="mr-3"
+                  checked={checkedItems.Advance}
+                  name="Advance"
+                  onChange={handleFilter}
+                />
+                <p>Advanced</p>
+              </label>
             </div>
           </div>
         </div>
