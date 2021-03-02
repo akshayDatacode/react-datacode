@@ -37,7 +37,7 @@ const App = ({ isShowFooter, setLocalUser, getUserProfile }) => {
     var localUser = JSON.parse(localStorage.getItem("userDetails"));
     console.log("local user", localUser);
     setLocalUser(localUser);
-    if (localUser) {
+    if (localUser && localUser.data) {
       getUserProfile(localUser.data.email);
     }
     // if (showFooterPaths.includes(location.pathname)) {

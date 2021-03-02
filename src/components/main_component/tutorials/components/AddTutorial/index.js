@@ -9,8 +9,8 @@ import {
 
 const mapStateToProps = ({ tutorial, user }) => ({
   tutorialByUser: tutorial.tutorialByUser,
-  userProfile: user.userProfile && user.userProfile,
-  currentUser: user.currentUser && user.currentUser.data,
+  userProfile: user.userProfile ? user.userProfile : {},
+  currentUser: user.currentUser ? user.currentUser.data : {},
   tutorialListLoading: tutorial.tutorialListLoading,
   addTutorialLoading: tutorial.addTutorialLoading,
 });

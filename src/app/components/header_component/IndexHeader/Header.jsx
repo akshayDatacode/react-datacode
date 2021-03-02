@@ -6,6 +6,7 @@ import PropTypes from 'prop-types'
 import { debounce } from '../helper';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
+import Loader from 'react-loader-spinner';
 
 const Header = ({
   drawerClickHandler,
@@ -13,6 +14,7 @@ const Header = ({
   currentUser,
   logoutUser,
   userProfile,
+  userProfileLoading,
 }) => {
 
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -111,13 +113,24 @@ const Header = ({
                 :
                 <div className="header-profile d-flex align-items-center">
                   <Link to={`/my_profile/${currentUser && currentUser.email}`}>
-                    <img
-                      className="rounded-circle header-profile-img"
-                      height="40"
-                      width="40"
-                      src={userProfile && userProfile.imgUrl !== "" ? userProfile.imgUrl : require(`../../../../assets/images/svg/profile.jpg`)}
-                      alt="datacode"
-                    />
+                    {userProfileLoading ?
+                      <div className="rounded-circle header-profile-img">
+                        <Loader
+                          type="Audio"
+                          color="#30006d"
+                          height={40}
+                          width={40}
+                          timeout={8000} //3 secs
+                        />
+                      </div>
+                      :
+                      <img
+                        className="rounded-circle header-profile-img"
+                        height="40"
+                        width="40"
+                        src={userProfile && userProfile.imgUrl !== "" ? userProfile.imgUrl : require(`../../../../assets/images/svg/profile.jpg`)}
+                        alt="datacode"
+                      />}
                   </Link>
                   <UncontrolledDropdown setActiveFromChild className="profile-dropdown">
                     <DropdownToggle tag="a" className="ml-3">

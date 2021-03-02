@@ -1,8 +1,16 @@
 import * as constants from "../constants";
 
+const setLocalUser = (state, action) => {
+  localStorage.setItem("userDetails", JSON.stringify(action.payload));
+  return {
+    ...state,
+    error: null,
+    currentUser: action.payload,
+  };
+};
+
 const getLoginUser = (state, action) => {
   localStorage.setItem("userDetails", JSON.stringify(action.payload));
-
   return {
     ...state,
     error: null,
@@ -11,17 +19,19 @@ const getLoginUser = (state, action) => {
   };
 };
 
-const setLoginUserLoading = (state) => ({
-  ...state,
-  loginUserLoading: !state.loginUserLoading,
-});
-
-const getLogoutUser = (state) => {
-  localStorage.clear();
+const setLoginUserLoading = (state) => {
   return {
     ...state,
-    currentUser: null,
-    userProfile: null,
+    loginUserLoading: !state.loginUserLoading,
+  };
+};
+
+const getLogoutUser = (state) => {
+  localStorage.setItem("userDetails", {});
+  return {
+    ...state,
+    currentUser: {},
+    userProfile: {},
   };
 };
 
@@ -76,4 +86,5 @@ export const getUserDataHandlers = {
   [constants.SET_LOGIN_USER_LOADING]: setLoginUserLoading,
   [constants.SET_USER_PROFILE]: setUserProfile,
   [constants.SET_USER_PROFILE_LOADING]: setUserProfileLoading,
+  [constants.SET_LOCAL_USER]: setLocalUser,
 };

@@ -55,18 +55,7 @@ const TechTutorials = ({
     }
   }
 
-  const displayTutorials = (filterList && filterList.length ? filterList : tutorialsList)
-    .slice(pagesVisited, pagesVisited + tutorialsPerPage)
-    .map((item) => {
-      return <TutorialCard
-        handleTutorialList={handleTutorialList}
-        tutorial={item}
-        id={item.id}
-        tags={item.tags}
-        title={item.title}
-        likesCount={item.likes.length}
-      />
-    })
+  const listValid = filterList && filterList.length ? filterList : tutorialsList
 
   const pageCount = Math.ceil(tutorialsList.length / tutorialsPerPage)
 
@@ -129,7 +118,20 @@ const TechTutorials = ({
                 <div className="row m-0 d-flex justify-content-center tutorial-card-section">
                   {tutorialsList && tutorialsList.length ?
                     <>
-                      {displayTutorials}
+                      {
+                        listValid
+                          .slice(pagesVisited, pagesVisited + tutorialsPerPage)
+                          .map((item) => {
+                            return <TutorialCard
+                              handleTutorialList={handleTutorialList}
+                              tutorial={item}
+                              id={item.id}
+                              tags={item.tags}
+                              title={item.title}
+                              likesCount={item.likes.length}
+                            />
+                          })
+                      }
                       <ReactPaginate
                         previousLabel={"Prev"}
                         nextLabel={"Next"}

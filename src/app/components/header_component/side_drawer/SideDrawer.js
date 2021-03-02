@@ -40,6 +40,7 @@ import {
   faSignOutAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import { faFlipboard } from "@fortawesome/free-brands-svg-icons";
+import Loader from "react-loader-spinner";
 
 const SideDrawer = ({
   backDropClickHandler,
@@ -47,6 +48,7 @@ const SideDrawer = ({
   currentUser,
   logoutUser,
   userProfile,
+  userProfileLoading,
 }) => {
   let drawerClasses = "side-drawer";
   if (show) {
@@ -79,20 +81,36 @@ const SideDrawer = ({
                     onClick={() => backDropClickHandler()}
                     to={`/my_profile/${currentUser.email}`}
                   >
-                    <img
-                      className="rounded-circle header-profile-img"
-                      height="40"
-                      width="40"
-                      src={
-                        userProfile && userProfile.imgUrl !== ""
-                          ? userProfile.imgUrl
-                          : require(`../../../../assets/images/svg/profile.jpg`)
-                      }
-                      alt="avatar"
-                    />
+                    {userProfileLoading ? (
+                      <div className="rounded-circle header-profile-img">
+                        <Loader
+                          type="Audio"
+                          color="#30006d"
+                          height={40}
+                          width={40}
+                          timeout={8000} //3 secs
+                        />
+                      </div>
+                    ) : (
+                      <img
+                        className="rounded-circle header-profile-img"
+                        height="40"
+                        width="40"
+                        src={
+                          userProfile && userProfile.imgUrl !== ""
+                            ? userProfile.imgUrl
+                            : require(`../../../../assets/images/svg/profile.jpg`)
+                        }
+                        alt="avatar"
+                      />
+                    )}
                   </Link>
                   <div className="d-flex align-items-center mt-2">
-                    <h2>{`Hello! ${userProfile && userProfile.firstName}`}</h2>
+                    <h2>
+                      {`Hello! ${
+                        userProfile ? userProfile.firstName : "Learner"
+                      }`}
+                    </h2>
                     <i
                       onClick={() => toggle()}
                       className={`far ${
@@ -136,11 +154,14 @@ const SideDrawer = ({
               </>
             ) : (
               <>
-                <h2 className="mt-2">Hello! Learner</h2>
-                <p>Start your learning with Community</p>
-                <Link to="/signup" onClick={() => backDropClickHandler()}>
-                  <div className="btn join-us mb-3">Join Us</div>
-                </Link>
+                <div>
+                  <h2 className="mt-2">Hello! Learner</h2>
+                  <p>Start your learning with Community</p>
+
+                  <Link to="/signup" onClick={() => backDropClickHandler()}>
+                    <div className="btn join-us mb-3">Join Us</div>
+                  </Link>
+                </div>
               </>
             )}
           </div>

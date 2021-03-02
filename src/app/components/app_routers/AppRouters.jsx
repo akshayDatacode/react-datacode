@@ -380,7 +380,8 @@ import MyLibrary from '../../../components/user/component/profile/my_library'
 import TextEditor from '../../../components/main_component/aticles/BlogsEditor/TextEditor'
 
 const AppRouters = ({
-  setLocalUser
+  setLocalUser,
+  currentUser,
 }) => {
 
   useEffect(() => {
@@ -391,9 +392,9 @@ const AppRouters = ({
 
   const authGuard = (Component) => () => {
     var localUser = JSON.parse(localStorage.getItem("userDetails"));
-    setLocalUser(localUser)
-    return localStorage.getItem("userDetails") ? (
-      <Component userName={localUser.userName} />
+
+    return currentUser && currentUser.userName ? (
+      <Component userName={currentUser && currentUser.userName} />
     ) : (
         <Redirect to="/login" />
       );
@@ -1275,4 +1276,8 @@ const mapDispatchToProps = {
   setLocalUser,
 };
 
-export default connect(null, mapDispatchToProps)(AppRouters);
+const mapStateToProps = ({ app, user }) => ({
+  currentUser: user.currentUser ? user.currentUser.data : {},
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(AppRouters);

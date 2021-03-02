@@ -10,6 +10,7 @@ const IndexHeader = ({
   currentUser,
   logoutUser,
   userProfile,
+  userProfileLoading,
 }) => {
   //  state = {
   //    sideDrawerOpen: false,
@@ -36,14 +37,14 @@ const IndexHeader = ({
 
   return (
     <>
-      <Header userProfile={userProfile} currentUser={currentUser} logoutUser={logoutUser} drawerClickHandler={drawerToggleClickHandler} isShowAddTutorial={isShowAddTutorial} />
+      <Header userProfileLoading={userProfileLoading} userProfile={userProfile} currentUser={currentUser} logoutUser={logoutUser} drawerClickHandler={drawerToggleClickHandler} isShowAddTutorial={isShowAddTutorial} />
       {/* /<HeaderComponent /> */}
       {/* <HeaderComponent 
           drawerClickHandler={this.drawerToggleClickHandler}
           isUserLogin={this.props.isUserLogin}
         /> */}
       {/* <NavbarComponent/>  */}
-      <SideDrawer userProfile={userProfile} logoutUser={logoutUser} currentUser={currentUser} show={sideDrawerOpen} backDropClickHandler={backDropClickHandler} />
+      <SideDrawer userProfileLoading={userProfileLoading} userProfile={userProfile} logoutUser={logoutUser} currentUser={currentUser} show={sideDrawerOpen} backDropClickHandler={backDropClickHandler} />
       {backDrop}
     </>
   );

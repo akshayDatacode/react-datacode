@@ -5,7 +5,13 @@ import {
   GET_SIGNUP_USER_ERROR,
   GET_LOGOUT_USER,
   SET_USER_PROFILE,
+  SET_LOCAL_USER,
 } from "../constants";
+
+export const setLocalUser = (data) => ({
+  type: SET_LOCAL_USER,
+  payload: data,
+});
 
 export const setLoginUser = (data) => ({
   type: GET_LOGIN_USER,

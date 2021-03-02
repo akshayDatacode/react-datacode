@@ -5,8 +5,9 @@ import { logoutUser } from "../../../../components/user/actions";
 
 const mapStateToProps = ({ app, user }) => ({
   isShowAddTutorial: app.isShowAddTutorial,
-  currentUser: user.currentUser && user.currentUser.data,
+  currentUser: user.currentUser ? user.currentUser.data : {},
   userProfile: user.userProfile,
+  userProfileLoading: user.userProfileLoading,
 });
 
 const mapDispatchToProps = {

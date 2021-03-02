@@ -9,10 +9,6 @@ import {
 
 const baseURL = DatacodeConfig.baseURL;
 
-export const setLocalUser = (user) => (dispatch) => {
-  dispatch(actions.setLoginUser(user));
-};
-
 export const loginUser = (user) => (dispatch) => {
   dispatch({ type: SET_LOGIN_USER_LOADING });
   return axios
