@@ -48,20 +48,57 @@ const Header = ({
           <Dropdown isOpen={dropdownOpen} toggle={toggle}>
             <DropdownToggle caret className="category-dropdown">
               Categories
-              </DropdownToggle>
-            <DropdownMenu className="dropdown-menu">
-              <div className="row">
-                <div className="col-6">
-                  <DropdownItem header>Header</DropdownItem>
-                  <DropdownItem>Some Action</DropdownItem>
-                  <DropdownItem text>Dropdown Item Text</DropdownItem>
-                  <DropdownItem disabled>Action (disabled)</DropdownItem>
+            </DropdownToggle>
+            <DropdownMenu className="dropdown-menu p-3 text-center">
+              <h2>How datacode.in community works?</h2>
+              <div className="row m-0 d-flex">
+                <div className="col-3 text-center">
+                  <Link to="/index_technologies">
+                    <img
+                      height="70px"
+                      width="70px"
+                      src={require(`../../../../assets/images/svg/Tutorial.png`)}
+                      alt="avatar"
+                      className="my-3"
+                    />
+                  </Link>
+                  <Link to="/index_technologies"><h6 className="my-2">Learn</h6 ></Link>
                 </div>
-                <div className="col-6">
-                  <DropdownItem>Foo Action</DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>Bar Action</DropdownItem>
-                  <DropdownItem>Quo Action</DropdownItem>
+                <div className="col-3 text-center">
+                  <Link to="/index_programming_questions">
+                    <img
+                      height="70px"
+                      width="70px"
+                      src={require(`../../../../assets/images/svg/Practice.png`)}
+                      alt="avatar"
+                      className="my-3"
+                    />
+                  </Link>
+                  <Link to="/index_programming_questions"><h6 className="my-2">Practice</h6 ></Link>
+                </div>
+                <div className="col-3 text-center">
+                  <Link to="/index_quize_tests">
+                    <img
+                      height="70px"
+                      width="70px"
+                      src={require(`../../../../assets/images/svg/Test.png`)}
+                      alt="avatar"
+                      className="my-3"
+                    />
+                  </Link>
+                  <Link to="/index_quize_tests"><h6 className="my-2">Test</h6 ></Link>
+                </div>
+                <div className="col-3 text-center">
+                  <Link to="/add_tutorial">
+                    <img
+                      height="70px"
+                      width="70px"
+                      src={require(`../../../../assets/images/svg/Mcq.png`)}
+                      alt="avatar"
+                      className="my-3"
+                    />
+                  </Link>
+                  <Link to="/add_tutorial"><h6 className="my-2">Contribute</h6 ></Link>
                 </div>
               </div>
             </DropdownMenu>

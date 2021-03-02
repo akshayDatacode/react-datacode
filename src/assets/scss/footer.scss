@@ -33,17 +33,19 @@
   border-top-left-radius: 10px;
 
   border: none;
-  box-shadow: 0 -1px 8px 0px #b89ddb;
+  box-shadow: 0 -1px 8px 0px #afaeaf;
   height: auto;
-
+  a {
+    text-decoration: none;
+  }
   i {
-    color: #d1b6f5;
+    color: #ffffff;
     font-size: 20px;
   }
   p {
     padding: 0;
     margin: 0;
-    color: #d1b6f5;
+    color: #ffffff;
     font-size: 11px;
   }
 }

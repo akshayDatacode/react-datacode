@@ -25,7 +25,7 @@ const FooterNavBar = () => {
   return (
     <>
       <div className={`${!visible && `footer-navbar-hide`} footer-navbar`}>
-        <div className="row m-0 pt-3 pb-1">
+        <div className="row m-0 pt-2 pb-1">
           <div className="col-3 text-center">
             <Link
               to="/index_technologies"
@@ -49,8 +49,12 @@ const FooterNavBar = () => {
             </Link>
           </div>
           <div className="col-3 text-center">
-            <i className="fad fa-users-crown" />
-            <p>Grow</p>
+            <Link
+              to="/add_tutorial"
+            >
+              <i className="fad fa-users-crown" />
+              <p>Contribute</p>
+            </Link>
           </div>
         </div>
       </div>
