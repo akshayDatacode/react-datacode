@@ -20,10 +20,11 @@ const TechTutorials = ({
 
   const [pageNumber, setPageNumber] = useState(0)
   const [checkedItems, setCheckedItems] = useState([]);
-  const [filterList, setFilterList] = useState([])
+  const [filterList, setFilterList] = useState()
 
-  const handleTutorialList = () => {
-    getTutorialsList(technology)
+  const handleTutorialList = async () => {
+    await getTutorialsList(technology)
+    setFilterList(tutorialsList)
   }
 
   useEffect(() => {
@@ -33,7 +34,6 @@ const TechTutorials = ({
         return setTechDetails(item)
       }
     })
-    setFilterList(tutorialsList)
     window.scrollTo(0, 0);
   }, [])
 
@@ -44,17 +44,18 @@ const TechTutorials = ({
   const handleFilter = (event) => {
     if (event.target.checked && event.target.name) {
       checkedItems.push(event.target.name)
-      const filteredList = tutorialsList.filter(tech => Object.values(tech).some(value => value.toLowerCase().includes(checkedItems)));
+      const filteredList = tutorialsList.filter(tech => Object.values(tech.tags).some(value => value && checkedItems.includes(value)));
       setCheckedItems(checkedItems)
-      console.log(filteredList)
       setFilterList(filteredList)
-      console.log(checkedItems)
     } else {
-      setCheckedItems(checkedItems.filter(e => e !== String(event.target.name)))
+      const check = checkedItems.filter(e => e !== String(event.target.name))
+      setCheckedItems(check)
+      const filteredList = tutorialsList.filter(tech => Object.values(tech.tags).some(value => value && check.includes(value)));
+      setFilterList(filteredList)
     }
   }
 
-  const displayTutorials = tutorialsList
+  const displayTutorials = (filterList && filterList.length ? filterList : tutorialsList)
     .slice(pagesVisited, pagesVisited + tutorialsPerPage)
     .map((item) => {
       return <TutorialCard

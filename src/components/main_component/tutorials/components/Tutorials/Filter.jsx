@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 const Filter = ({
   setCheckedItems,
   checkedItems,
-  handleChange,
+  handleFilter,
 }) => {
   const [showFilter, setShowFilter] = useState(true)
 
@@ -27,7 +27,7 @@ const Filter = ({
               />
             </h5>
             <div className="filter-text">
-              <h5 className="text-center p-2 mb-0"><i class="far fa-filter"></i> Filter </h5>
+              <h5 className="text-center p-2 mb-0"><i className="far fa-filter"></i> Filter </h5>
               <hr className="m-0" />
             </div>
           </div>
@@ -39,7 +39,7 @@ const Filter = ({
                 className="mr-3"
                 checked={checkedItems.Free}
                 name="Free"
-                onChange={handleChange}
+                onChange={handleFilter}
               />
               <p><i className="fad fa-gifts" /> Free</p>
             </div>
@@ -49,7 +49,7 @@ const Filter = ({
                 className="mr-3"
                 checked={checkedItems.Paid}
                 name="Paid"
-                onChange={handleChange}
+                onChange={handleFilter}
               />
               <p>Paid <i className="fal fa-money-bill-wave" /></p>
             </div>
@@ -60,7 +60,7 @@ const Filter = ({
                 className="mr-3"
                 checked={checkedItems.Video}
                 name="Video"
-                onChange={handleChange}
+                onChange={handleFilter}
               />
               <p>Video</p>
             </div>
@@ -70,7 +70,7 @@ const Filter = ({
                 className="mr-3"
                 checked={checkedItems.Book}
                 name="Book"
-                onChange={handleChange}
+                onChange={handleFilter}
               />
               <p>Book</p>
             </div>
@@ -80,7 +80,7 @@ const Filter = ({
                 className="mr-3"
                 checked={checkedItems.pdf}
                 name="pdf"
-                onChange={handleChange}
+                onChange={handleFilter}
               />
               <p>PDF Notes</p>
             </div>
@@ -91,7 +91,7 @@ const Filter = ({
                 className="mr-3"
                 checked={checkedItems.Beginner}
                 name="Beginner"
-                onChange={handleChange}
+                onChange={handleFilter}
               />
               <p>Beginner</p>
             </div>
@@ -101,7 +101,7 @@ const Filter = ({
                 className="mr-3"
                 checked={checkedItems.Paid}
                 name="Paid"
-                onChange={handleChange}
+                onChange={handleFilter}
               />
               <p>Intermediate</p>
             </div>
@@ -109,9 +109,9 @@ const Filter = ({
               <input
                 type="checkbox"
                 className="mr-3"
-                checked={checkedItems.Advanced}
-                name="Advanced"
-                onChange={handleChange}
+                checked={checkedItems.Advance}
+                name="Advance"
+                onChange={handleFilter}
               />
               <p>Advanced</p>
             </div>
