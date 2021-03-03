@@ -27,7 +27,7 @@ const setLoginUserLoading = (state) => {
 };
 
 const getLogoutUser = (state) => {
-  localStorage.setItem("userDetails", {});
+  localStorage.setItem("userDetails", JSON.stringify({}));
   return {
     ...state,
     currentUser: {},
