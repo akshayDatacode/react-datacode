@@ -4,8 +4,6 @@ import { connect } from "react-redux";
 // --------------------------------------------
 import LandingPage from "../../../components/main_component/landing_page";
 import HomeComponent from "../../../components/main_component/home";
-import AboutUs from "../header_component/AboutUs";
-
 
 // Articles
 import IndexArticles from "../../../components/main_component/aticles/IndexArticles";
@@ -375,6 +373,8 @@ import MyProfile from "../../../components/user/component/profile/my_profile"
 import EditProfile from "../../../components/user/component/profile/edit_profile"
 import MyLibrary from '../../../components/user/component/profile/my_library'
 // --------------------------------------------------------------------
+// Our Story
+import OurStory from "../header_component/OurStory"
 
 // Blogs Text Editor  --------------
 import TextEditor from '../../../components/main_component/aticles/BlogsEditor/TextEditor'
@@ -409,7 +409,7 @@ const AppRouters = ({
         {/* Navigarion Routing */}
         <Route exact path="/" component={LandingPage} />
         <Route path="/home" component={HomeComponent} />
-        <Route path="/aboutus" component={AboutUs} />
+        <Route path="/our_story" component={OurStory} />
 
         {/* End ______________ */}
 
@@ -1263,6 +1263,7 @@ const AppRouters = ({
 
         <Route exact path="/edit_profile" render={authGuard(EditProfile)} />
         <Route exact path="/my_library" render={authGuard(MyLibrary)} />
+
 
         {/* -------BLog Editor---- */}
         <Route path="/editor" component={TextEditor} />

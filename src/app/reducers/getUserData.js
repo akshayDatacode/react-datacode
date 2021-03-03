@@ -26,9 +26,17 @@ const setHideAddTutorial = (state, action) => ({
   isShowAddTutorial: false,
 });
 
+const setAddTestimonial = (state, action) => {
+  return {
+    ...state,
+    showTestimonial: !state.showTestimonial,
+  };
+};
+
 export const getAppHandlers = {
   [constants.SHOW_FOOTER]: setShowFooter,
   [constants.HIDE_FOOTER]: setHideFooter,
   [constants.SHOW_ADD_TUTORIAL]: setShowAddTutorial,
   [constants.HIDE_ADD_TUTORIAL]: setHideAddTutorial,
+  [constants.SHOW_ADD_TESTIMONIAL]: setAddTestimonial,
 };

@@ -4,6 +4,8 @@ import { createReducer } from "../../core/reduxUtils";
 const initialState = {
   isShowFooter: false,
   isShowAddTutorial: false,
+  showTestimonial: false,
+  addTestimonialLoading: false,
 };
 
 const handlers = {

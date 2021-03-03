@@ -1,8 +1,9 @@
-.carousel-control-prev,
-.carousel-control-next {
-  position: relative;
+.landing-carousel {
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: relative;
+  }
 }
-
 .carousel-card {
   height: 500px;
   width: auto;

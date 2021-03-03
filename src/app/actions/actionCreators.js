@@ -3,6 +3,7 @@ import {
   HIDE_FOOTER,
   SHOW_ADD_TUTORIAL,
   HIDE_ADD_TUTORIAL,
+  SHOW_ADD_TESTIMONIAL,
 } from "../constants";
 
 export const showFooter = (data) => ({
@@ -19,4 +20,8 @@ export const showAddTutorial = (data) => ({
 
 export const hideAddTutorial = (data) => ({
   type: HIDE_ADD_TUTORIAL,
+});
+
+export const showAddTestimonial = (data) => ({
+  type: SHOW_ADD_TESTIMONIAL,
 });

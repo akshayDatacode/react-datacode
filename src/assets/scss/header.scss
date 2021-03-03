@@ -116,6 +116,75 @@
   top: -80px;
 }
 
+// Our Story SCSS
+
+.our-story-header {
+  height: 390px;
+  background-color: #30006d;
+  h1 {
+    font-size: 60px;
+    color: #ffffff;
+  }
+}
+
+.our-community {
+  justify-content: center;
+  align-items: center;
+  .social-card {
+    text-align: center;
+    margin: 10px;
+    border: solid 2px #30006d;
+    height: 200px;
+    border-radius: 5px;
+  }
+}
+.people-word {
+  justify-content: center;
+  display: flex;
+}
+
+.people-card {
+  height: 500px;
+  padding: 20px;
+  border-radius: 5px;
+
+  .quote {
+    i {
+      background-color: #673de6;
+      border-radius: 50%;
+      text-align: center;
+      padding: 15px;
+      font-size: 50px;
+      color: #ffffff;
+      text-align: left !important;
+      position: relative;
+      top: 20px;
+      left: -12px;
+    }
+  }
+  .people-card-body {
+    border: solid 2px #673de6;
+    border-radius: 7px;
+    padding: 20px;
+    p {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+}
+
+.add-testimomnial-btn {
+  justify-content: center;
+  background-color: #30006d;
+  color: #ffffff;
+}
+
+.testimonial-form {
+  padding: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
 @media only screen and (min-width: 768px) {
   // .toggle-button {
   //   display: none;
@@ -154,5 +223,19 @@
   }
   .right-section {
     justify-content: flex-end;
+  }
+  .our-story-header {
+    height: 190px;
+    h1 {
+      font-size: 40px;
+    }
+    .ourstory-img {
+      height: 110px;
+      width: 300px;
+    }
+  }
+  .vision-img {
+    height: 300px;
+    width: 300px;
   }
 }
