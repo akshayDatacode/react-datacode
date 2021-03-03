@@ -387,7 +387,10 @@ const AppRouters = ({
   useEffect(() => {
     var localUser = JSON.parse(localStorage.getItem("userDetails"));
     console.log("local user", localUser);
-    setLocalUser(localUser);
+    if (localUser && localUser !== null) {
+      setLocalUser(localUser);
+    }
+
   }, []);
 
   const authGuard = (Component) => () => {

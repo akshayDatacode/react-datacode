@@ -207,7 +207,7 @@ Header.defaultProps = {
 
 Header.propTypes = {
   email: PropTypes.string,
-  userProfile: PropTypes.object
+  userProfile: PropTypes.object,
 }
 
 export default Header

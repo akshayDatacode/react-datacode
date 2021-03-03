@@ -36,10 +36,11 @@ const App = ({ isShowFooter, setLocalUser, getUserProfile }) => {
   useEffect(() => {
     var localUser = JSON.parse(localStorage.getItem("userDetails"));
     console.log("local user", localUser);
-    setLocalUser(localUser);
-    if (localUser && localUser.data) {
+    if (localUser && localUser !== null && localUser.data) {
+      setLocalUser(localUser);
       getUserProfile(localUser.data.email);
     }
+
     // if (showFooterPaths.includes(location.pathname)) {
     //   setShowFooter(true);
     // } else {
