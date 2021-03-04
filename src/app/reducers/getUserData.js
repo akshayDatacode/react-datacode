@@ -30,8 +30,15 @@ const setAddTestimonial = (state, action) => {
   return {
     ...state,
     showTestimonial: !state.showTestimonial,
+    addTestimonialLoading: false,
   };
 };
+
+const setTestimonials = (state, action) => ({
+  ...state,
+  testimonials: action.payload,
+  addTestimonialLoading: !state.addTestimonialLoading,
+});
 
 export const getAppHandlers = {
   [constants.SHOW_FOOTER]: setShowFooter,
@@ -39,4 +46,5 @@ export const getAppHandlers = {
   [constants.SHOW_ADD_TUTORIAL]: setShowAddTutorial,
   [constants.HIDE_ADD_TUTORIAL]: setHideAddTutorial,
   [constants.SHOW_ADD_TESTIMONIAL]: setAddTestimonial,
+  [constants.SET_TESTIMONIALS]: setTestimonials,
 };

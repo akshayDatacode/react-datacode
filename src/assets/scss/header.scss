@@ -144,9 +144,14 @@
 }
 
 .people-card {
-  height: 500px;
+  height: auto;
   padding: 20px;
   border-radius: 5px;
+
+  .rounded-circle {
+    height: 70px;
+    width: 70px;
+  }
 
   .quote {
     i {
@@ -170,6 +175,11 @@
       font-size: 14px;
       font-weight: 500;
     }
+    h2 {
+      padding-top: 10px;
+      font-size: 18px;
+      color: #30006b;
+    }
   }
 }
 
@@ -183,6 +193,9 @@
   padding: 20px;
   justify-content: center;
   text-align: center;
+  h2 {
+    font-size: 18px;
+  }
 }
 
 @media only screen and (min-width: 768px) {

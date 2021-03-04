@@ -6,6 +6,7 @@ const initialState = {
   isShowAddTutorial: false,
   showTestimonial: false,
   addTestimonialLoading: false,
+  testimonials: [],
 };
 
 const handlers = {

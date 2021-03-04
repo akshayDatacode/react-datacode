@@ -29,14 +29,33 @@ export const newsLetterSubscribe = (email) => (dispatch) => {
     });
 };
 
-export const addTestimonial = (tutorial) => (dispatch) => {
+export const addTestimonial = (testimonial) => (dispatch) => {
   dispatch({ type: SET_ADD_TESTIMONIAL_LOADING });
   return axios
-    .post(`${baseURL}/tutorial/add_tutorial`, tutorial)
+    .post(`${baseURL}/user/add_testimonial`, testimonial)
     .then((res) => {
       if (res.status === 200) {
-        dispatch({ type: SET_ADD_TESTIMONIAL });
+        dispatch({ type: SET_ADD_TESTIMONIAL_LOADING });
         console.log("Testimonial", res.data);
+        return { success: true };
+      } else {
+        return { success: false };
+      }
+    })
+    .catch((error) => {
+      dispatch({ type: SET_ADD_TESTIMONIAL_LOADING });
+      console.log("Add Testimonial Error", error);
+    });
+};
+
+export const fetchTestimonials = () => (dispatch) => {
+  dispatch({ type: SET_ADD_TESTIMONIAL_LOADING });
+  return axios
+    .post(`${baseURL}/user/fetch_testimonials`)
+    .then((res) => {
+      if (res.status === 200) {
+        dispatch(actions.setTestimonials(res.data.testimonials));
+        console.log("Testimonials", res.data);
         return { success: true };
       } else {
         return { success: false };

@@ -15,6 +15,7 @@ const AddTestimonial = ({
   initialize,
   userProfile,
   setUserImgDetails,
+  fetchTestimonials,
   open,
   showAddTestimonial,
   addTestimonial,
@@ -61,12 +62,14 @@ const AddTestimonial = ({
       // })
     } else {
       console.log("testimonial", testimonial)
-      // addTestimonial(testimonial).then((res) => {
-      //   if (res && res.success) {
-      //     // setTags([])
-      //     reset('testimonial')
-      //   }
-      // })
+      testimonial['name'] = testimonial.firstName
+      addTestimonial(testimonial).then((res) => {
+        if (res && res.success) {
+          reset('testimonial')
+          showAddTestimonial()
+          fetchTestimonials()
+        }
+      })
     }
     console.log("values ()()", testimonial)
   }
@@ -74,7 +77,7 @@ const AddTestimonial = ({
   return (
     <>
       <Modal isOpen={showTestimonial} toggle={showAddTestimonial} className="delete-tutorial-modal">
-        <ModalHeader toggle={showAddTestimonial} className="modal-header">
+        <ModalHeader toggle={showAddTestimonial} className="modal-header text-center">
           Please write your love to community
         </ModalHeader>
         <div className="testimonial-form">
@@ -108,7 +111,7 @@ const AddTestimonial = ({
                   hidden
                 />
                 <label className="btn edit-profile-btn my-3" for="edit-profile-btn">
-                  Add New Profile Picture<i className="fad fa-user-edit ml-2" />
+                  Add New Picture<i className="fad fa-user-edit ml-2" />
                 </label>
               </>
             }
@@ -129,12 +132,30 @@ const AddTestimonial = ({
                 name="testimonial"
                 type="textarea"
                 component={renderInputField}
-                label='Enter Tutorial Link'
+                label='Enter Your Words'
                 placeholder=""
                 validate={[required]}
               />
             </div>
-
+            <h2 className="mt-3 mb-0">Add social media links</h2>
+            <div>
+              <Field
+                name="linkedin"
+                type="text"
+                component={renderInputField}
+                label='Linkedin'
+                placeholder=""
+              />
+            </div>
+            <div>
+              <Field
+                name="github"
+                type="text"
+                component={renderInputField}
+                label='Github'
+                placeholder=""
+              />
+            </div>
             <div className="row mt-4">
 
               <div className="col-12 text-right">
@@ -171,16 +192,6 @@ const AddTestimonial = ({
             </div>
           </form>
         </div>
-        <ModalFooter>
-          <div className="display-flex">
-            <Button color={submitButtonColor} onClick={() => onSubmit()}>
-              {submitButtonName}
-            </Button>
-            <Button color="secondary" onClick={showAddTestimonial}>
-              Cancel
-        </Button>
-          </div>
-        </ModalFooter>
       </Modal>
     </>
   )
@@ -200,8 +211,8 @@ AddTestimonial.propTypes = {
   submitButtonName: PropTypes.string,
   submitButtonColor: PropTypes.string,
   onSubmit: PropTypes.func,
-  toggle: PropTypes.func.isRequired,
-  open: PropTypes.bool.isRequired,
+  showAddTestimonial: PropTypes.func.isRequired,
+  showTestimonial: PropTypes.bool.isRequired,
 };
 
 export default reduxForm({

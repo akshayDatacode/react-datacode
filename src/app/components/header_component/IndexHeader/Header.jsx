@@ -174,7 +174,7 @@ const Header = ({
                       <i className="far fa-angle-down" />
                     </DropdownToggle>
                     <DropdownMenu className="dropdown-menu mt-3" right>
-                      <DropdownItem header><spna>{currentUser && currentUser.userName}</spna></DropdownItem>
+                      <DropdownItem header><span>{currentUser && currentUser.userName}</span></DropdownItem>
                       <DropdownItem><Link to={`/my_profile/${currentUser.email}`}><span><i className="fas fa-user mr-2" />My Profile</span></Link></DropdownItem>
                       <DropdownItem><Link to={`/my_library`}><span> <i className="fas fa-window-restore mr-2" />My Library</span></Link></DropdownItem>
                       <DropdownItem><Link to="/edit_profile"><span><i className="far fa-user-edit mr-2" />Edit Profile</span></Link></DropdownItem>

@@ -1,10 +1,23 @@
 import React from 'react'
 import PeopleWords from './PeopleWords'
 import AddTestimonial from './AddTestimonial'
+import { useEffect } from 'react'
 
 const OurStory = ({
   showAddTestimonial,
+  testimonials,
+  addTestimonialLoading,
+  fetchTestimonials,
 }) => {
+
+  useEffect(() => {
+    fetchTestimonials({}).then((res) => {
+      if (res) {
+        console.log("done")
+      }
+    })
+  }, [])
+
   return (
     <>
       <div className="row m-0 our-story-header">
@@ -63,11 +76,10 @@ const OurStory = ({
         </div>
       </div>
       <div className="row m-0 px-md-5 people-word">
-        <PeopleWords />
-        <PeopleWords />
-        <PeopleWords />
-        <PeopleWords />
-        <PeopleWords />
+        {testimonials && testimonials.map((item) => (
+          <PeopleWords item={item} />
+        ))
+        }
       </div>
       <div className="row m-0 ">
         <div className="col-12 text-center">
