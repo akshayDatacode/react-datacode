@@ -44,17 +44,21 @@
 
 .community-section {
   .join-us-button {
-    //height: 20px;
-    width: 150px;
     background-color: #ffffff;
     border-radius: 7px;
     color: #30006d;
     font-weight: 600;
     font-family: "Fira Code", monospace;
     padding: 8px;
-    border: solid 5px #30006d;
+    border: solid 2px #30006d;
     margin-top: 35px;
     align-items: center;
+    button {
+      :hover {
+        background-color: #30006d;
+        color: #ffffff;
+      }
+    }
   }
 }
 
@@ -151,7 +155,7 @@
     }
   }
   .subscribe-button {
-    width: 200px;
+    width: 250px;
     height: 55px;
     background-color: #30006d;
     color: #ffffff;

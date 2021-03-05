@@ -5,6 +5,7 @@ import {
   addTutorial,
   getTutorialByUserName,
   editTutorial,
+  linkPreview,
 } from "../../actions";
 
 const mapStateToProps = ({ tutorial, user }) => ({
@@ -19,6 +20,7 @@ const mapDispatchToProps = {
   addTutorial,
   editTutorial,
   getTutorialByUserName,
+  linkPreview,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(AddTutorial);

@@ -28,6 +28,25 @@ export const addTutorial = (tutorial) => (dispatch) => {
     });
 };
 
+export const linkPreview = (link) => (dispatch) => {
+  dispatch({ type: SET_ADD_TUTORIAL_LOADING });
+  return axios
+    .post(`${baseURL}/tutorial/link_preview`, { link })
+    .then((res) => {
+      if (res.status === 200) {
+        dispatch({ type: SET_ADD_TUTORIAL_LOADING });
+        console.log("Tutorial", res.data);
+        return { success: true };
+      } else {
+        return { success: false };
+      }
+    })
+    .catch((error) => {
+      dispatch({ type: SET_ADD_TUTORIAL_LOADING });
+      console.log("Add Tutorial Error", error);
+    });
+};
+
 export const getTutorialsList = (technology) => (dispatch) => {
   dispatch({ type: SET_TUTORIALS_LIST_LOADING });
   return axios

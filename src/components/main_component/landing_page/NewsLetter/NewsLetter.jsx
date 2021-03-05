@@ -27,8 +27,8 @@ const NewsLetter = ({
         <div className="col-md-6 col-12 px-md-5 px-4 text-md-left text-center">
           <div className="row m-0 subscribe-text">
             <div className="col-12">
-              <h2>Subscribe to our newsletter</h2>
-              <p>Subscribe to our newsletter to receive  weekly updates on our latest Tutorials and Courses, Training and certification, the latest technical blogs, practice questions, quizzes, and a lot more</p>
+              <h2>Subscribe to our weekly notes</h2>
+              <p>Subscribe to our notes mail to receive weekly updates on latest Tutorials and Courses, Training and certification, the latest technical blogs, practice questions, quizzes, and a lot more to make better your learning</p>
               <img
                 height="50px"
                 width="180px"
@@ -54,8 +54,8 @@ const NewsLetter = ({
               <div className="row pb-4 mb-3">
                 <div className="col-12 text-center">
                   <button type="submit" className={`btn subscribe-button`} disabled={submitting}>
-                    subscribe
-                </button>
+                    <span><i className="fas fa-mail-bulk mr-2" />Get this notes mail</span>
+                  </button>
                 </div>
               </div>
             </form>

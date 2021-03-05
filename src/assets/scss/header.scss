@@ -131,11 +131,27 @@
   justify-content: center;
   align-items: center;
   .social-card {
+    align-items: center;
     text-align: center;
     margin: 10px;
     border: solid 2px #30006d;
-    height: 200px;
+    height: auto;
     border-radius: 5px;
+    padding: 10px 0 20px 0;
+    h1 {
+      font-size: 25px;
+    }
+    h2 {
+      font-size: 18px;
+      white-space: nowrap;
+    }
+    p {
+      font-size: 12px;
+    }
+    .social-follow-btn {
+      border: solid 2px #30006d;
+      font-size: 13px;
+    }
   }
 }
 .people-word {

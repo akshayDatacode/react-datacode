@@ -53,7 +53,7 @@ class LandingPage extends Component {
             </p>
             <Link to="/signup">
               <button className="btn join-us-button text-center">
-                Join Us
+                Join Community
               </button>
             </Link>
           </div>

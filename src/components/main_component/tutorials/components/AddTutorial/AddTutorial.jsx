@@ -22,6 +22,7 @@ const AddTutorial = ({
   tutorialListLoading,
   tutorialByUser,
   editTutorial,
+  linkPreview,
 }) => {
   // const [tutorialsList, setTutorialsList] = useState()
   const [pageNumber, setPageNumber] = useState(0)
@@ -48,6 +49,7 @@ const AddTutorial = ({
 
   const onSubmit = (values) => {
     const tutorial = { ...values }
+    linkPreview(tutorial.link)
 
     if (isEdit) {
       editTutorial(tutorial).then((res) => {

@@ -1,7 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { Link } from 'react-router-dom';
+import Gallery from 'react-grid-gallery';
+
+import { IMAGES } from './helpers'
 import PeopleWords from './PeopleWords'
 import AddTestimonial from './AddTestimonial'
-import { useEffect } from 'react'
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  fab,
+  faFacebookSquare,
+  faLinkedinIn,
+  faYoutube,
+  faInstagram,
+  faWhatsapp,
+  faTwitter,
+  faTelegramPlane,
+} from "@fortawesome/free-brands-svg-icons";
+
 
 const OurStory = ({
   showAddTestimonial,
@@ -41,8 +57,8 @@ const OurStory = ({
             </div>
             <div className="col-md-6 col-12 text-center">
               <img
-                height="600px"
-                width="600px"
+                height="500px"
+                width="500px"
                 src={require(`../../../../assets/images/svg/vision.svg`)}
                 alt="avatar"
                 className="vision-img"
@@ -54,25 +70,65 @@ const OurStory = ({
       <div className="row m-0 px-md-5 our-community">
         <div className="col-12 px-md-5 px-3">
           <div className="row m-0 d-flex justify-content-center">
-            <div className="col-md-3 social-card col-12">
-              <h2>Facebook</h2>
+            <div className="col-md-3 social-card col-12 align-items-center">
+              <Link
+                to="/signup"
+              >
+                <img
+                  height="200px"
+                  width="200px"
+                  src={require(`../../../../assets/images/svg/community.svg`)}
+                  alt="avatar"
+                  className="ourstory-img mt-md-4 mt-0"
+                />
+              </Link>
+              <h1>27K ++</h1>
+              <h2>Beginners Community</h2>
+              <p>Follow Datacode.in on Instagram for Tech news, code snippets</p>
+              <Link to="/signup"><div className="btn social-follow-btn">Join Community</div></Link>
             </div>
-            <div className="col-md-3 social-card col-12">
-              <h2>Instagram</h2>
+            <div className="col-md-3 social-card col-12 align-items-center">
+              <Link
+                to="/index_technologies"
+              >
+                <img
+                  height="200px"
+                  width="200px"
+                  src={require(`../../../../assets/images/svg/reach.svg`)}
+                  alt="avatar"
+                  className="ourstory-img mt-md-4 mt-0"
+                />
+              </Link>
+              <h1>10K ++</h1>
+              <h2>Active Learners</h2>
+              <p>Follow Datacode.in on Instagram for Tech news, code snippets</p>
+              <Link to="/index_technologies"><div className="btn social-follow-btn">Start Learning</div></Link>
             </div>
-            <div className="col-md-3 social-card col-12">
-              <h2>LinkedIn</h2>
-            </div>
-            <div className="col-md-3 social-card col-12">
-              <h2>Twitter</h2>
-            </div>
-            <div className="col-md-3 social-card col-12">
-              <h2>Telegram</h2>
-            </div>
-            <div className="col-md-3 social-card col-12">
-              <h2>Youtube</h2>
+            <div className="col-md-3 social-card col-12 align-items-center">
+              <a
+                href="https://www.linkedin.com/company/datacode_in/"
+                target="_blank"
+              >
+                <img
+                  height="200px"
+                  width="200px"
+                  src={require(`../../../../assets/images/svg/tech_mentor.svg`)}
+                  alt="avatar"
+                  className="ourstory-img mt-md-4 mt-0"
+                />
+              </a>
+              <h1>300 ++</h1>
+              <h2>Tech Mentors</h2>
+              <p>Follow Datacode.in on Instagram for Tech news, code snippets</p>
+              <a href="https://www.facebook.com/Datacode.in/" target="_blank"><div className="btn social-follow-btn">Let's connect with mentors</div></a>
             </div>
           </div>
+        </div>
+      </div>
+      <h1 className="mt-5 text-center">Our Community Moments</h1>
+      <div className="row m-0 mt-3 px-0 px-md-3">
+        <div className="col-12 px-md-5 px-2">
+          <Gallery images={IMAGES} />
         </div>
       </div>
       <div className="row m-0 px-md-5 people-word">
