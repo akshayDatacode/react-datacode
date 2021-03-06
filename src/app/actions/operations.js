@@ -12,19 +12,19 @@ import {
 const baseURL = DatacodeConfig.baseURL;
 
 export const newsLetterSubscribe = (email) => (dispatch) => {
-  dispatch({ type: SET_SUBSCRIBE_NEWS_LETTER });
+  dispatch({ type: SET_SUBSCRIBE_LOADING });
   return axios
     .post(`${baseURL}/user/subscribe-letter`, email)
     .then((res) => {
       if (res.status === 200) {
-        dispatch({ type: SET_SUBSCRIBE_NEWS_LETTER });
+        dispatch({ type: SET_SUBSCRIBE_LOADING });
         return { success: true };
       } else {
         return { success: false };
       }
     })
     .catch((error) => {
-      dispatch({ type: SET_SUBSCRIBE_NEWS_LETTER });
+      dispatch({ type: SET_SUBSCRIBE_LOADING });
       console.log("Add subscribe Error", error);
     });
 };

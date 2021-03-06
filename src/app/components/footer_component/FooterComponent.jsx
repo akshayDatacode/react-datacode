@@ -54,8 +54,8 @@ const FooterComponent = ({
         <div className="row m-0 mt-3 px-md-5 px-3 d-flex align-items-center">
           <div className="col-md-8 col-12">
             <div className="row m-0 align-items-center">
-              <div className="col-12 col-md-2 p-md-0 text-md-right text-left">
-                <h6>Follow us on <i className="fal fa-long-arrow-right" /></h6>
+              <div className="col-12 col-md-2 p-md-0 align-items-center text-md-right text-left">
+                <h6><span>Follow us on <i className="fal fa-long-arrow-right" /></span></h6>
               </div>
               <div className="col-12 col-md-10 text-left">
                 <a
@@ -103,7 +103,7 @@ const FooterComponent = ({
                   />
                 </a>
                 <a
-                  href="https://www.linkedin.com/company/datacode_in/"
+                  href="https://twitter.com/Datacode_in"
                   target="_blank"
                 >
                   <FontAwesomeIcon
@@ -114,7 +114,7 @@ const FooterComponent = ({
                   />
                 </a>
                 <a
-                  href="https://www.linkedin.com/company/datacode_in/"
+                  href="https://t.me/joinchat/Fc4UnJ4PxbUT-O5m"
                   target="_blank"
                 >
                   <FontAwesomeIcon
@@ -125,7 +125,7 @@ const FooterComponent = ({
                   />
                 </a>
                 <a
-                  href="https://www.linkedin.com/company/datacode_in/"
+                  href="https://chat.whatsapp.com/DrJNupSO3Go5kiNaO17sgq"
                   target="_blank"
                 >
                   <FontAwesomeIcon
@@ -140,8 +140,8 @@ const FooterComponent = ({
           </div>
           <div className="col-md-4 pb-3 pb-md-0 col-12 d-flex justify-content-between">
             <Link to="/our_story"><span>Our Story</span></Link>
-            <span>Our Partners</span>
-            <span>Become a partner</span>
+            <Link to="/our_partners"><span>Our Partners</span></Link>
+            <Link to="/contact_us"><span>Become a partner</span></Link>
           </div>
         </div>
         <div className="row m-0 text-center d-flex justify-content-center bg-dark py-2">

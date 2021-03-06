@@ -118,7 +118,8 @@
 
 // Our Story SCSS
 
-.our-story-header {
+.our-story-header,
+.our-partners-header {
   height: 390px;
   background-color: #30006d;
   h1 {
@@ -154,15 +155,35 @@
     }
   }
 }
-.people-word {
-  justify-content: center;
-  display: flex;
+
+.react-multi-carousel-list {
+  button {
+    outline: none;
+  }
+  .react-multi-carousel-item {
+    width: 300px;
+    padding: 0 20px 0 20px;
+    button {
+      outline: none;
+    }
+  }
+}
+
+.react-multiple-carousel__arrow {
+  background-color: #673de6;
+  min-height: 33px;
+  min-width: 33px;
+}
+.react-multiple-carousel__arrow:hover {
+  background-color: #30006b;
 }
 
 .people-card {
-  height: auto;
   padding: 20px;
   border-radius: 5px;
+  display: initial;
+  box-shadow: 0 7px 4px 0px rgba(0, 0, 0, 0.09);
+  height: auto;
 
   .rounded-circle {
     height: 70px;

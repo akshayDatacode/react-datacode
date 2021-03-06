@@ -4,8 +4,9 @@ import { connect } from "react-redux";
 
 import { newsLetterSubscribe } from "../../../../app/actions";
 
-const mapStateToProps = ({ user }) => ({
+const mapStateToProps = ({ user, app }) => ({
   userProfile: user.userProfile,
+  addSubscribeLoading: app.addSubscribeLoading,
 });
 
 const mapDispatchToProps = {

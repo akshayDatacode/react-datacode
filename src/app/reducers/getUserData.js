@@ -40,6 +40,11 @@ const setTestimonials = (state, action) => ({
   addTestimonialLoading: !state.addTestimonialLoading,
 });
 
+const setAddSubscribeLoading = (state) => ({
+  ...state,
+  addSubscribeLoading: !state.addSubscribeLoading,
+});
+
 export const getAppHandlers = {
   [constants.SHOW_FOOTER]: setShowFooter,
   [constants.HIDE_FOOTER]: setHideFooter,
@@ -47,4 +52,5 @@ export const getAppHandlers = {
   [constants.HIDE_ADD_TUTORIAL]: setHideAddTutorial,
   [constants.SHOW_ADD_TESTIMONIAL]: setAddTestimonial,
   [constants.SET_TESTIMONIALS]: setTestimonials,
+  [constants.SET_SUBSCRIBE_LOADING]: setAddSubscribeLoading,
 };

@@ -7,6 +7,7 @@ const initialState = {
   showTestimonial: false,
   addTestimonialLoading: false,
   testimonials: [],
+  addSubscribeLoading: false,
 };
 
 const handlers = {

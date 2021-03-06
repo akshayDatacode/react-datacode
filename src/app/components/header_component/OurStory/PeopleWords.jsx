@@ -1,11 +1,23 @@
 import React from 'react'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  fab,
+  faFacebookSquare,
+  faLinkedinIn,
+  faYoutube,
+  faInstagram,
+  faWhatsapp,
+  faTwitter,
+  faTelegramPlane,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
 
 const PeopleWords = ({
   item,
 }) => {
   return (
     <>
-      <div className="col-md-3 col-13 people-card ">
+      <div className="people-card">
         <div className="quote">
           <i className="fas fa-quote-left text-left" />
         </div>
@@ -19,6 +31,10 @@ const PeopleWords = ({
               alt="avatar"
             />
             <h2>{item.name}</h2>
+            <span>
+              <a href={item.linkedin} target="_blank"><FontAwesomeIcon color="#30006d" icon={faLinkedinIn} size="1x" /></a>
+              <a href={item.github} target="_blank"><FontAwesomeIcon color="#30006d" className="ml-2" icon={faGithub} size="1x" /></a>
+            </span>
             <p>{item.testimonial}</p>
           </div>
         </div>

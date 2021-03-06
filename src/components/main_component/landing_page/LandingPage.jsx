@@ -47,8 +47,11 @@ class LandingPage extends Component {
           <div className="col-12 col-md-6 pt-5 pr-4">
             <h3>Are you a Computer Science Beginner?</h3>
             <h5 className="mt-1 text-left"><b>And not sure where to start from?</b></h5>
-            <p className="mt-3 pr-4 text-left">
+            <p className="mt-3 pr-4 text-left mb-0">
               We at Datacode.in aims in creating a platform for beginners' communities where they will get the best online technical content like the latest technical blogs, tutorials and courses, practice questions, quizzes, training and certification, and lot more on a single platform.
+             </p>
+            <br />
+            <p className="mb-0">
               Learning has never been this easy, then what are you waiting for? Join Datacode.in and Learn with Community
             </p>
             <Link to="/signup">
@@ -66,6 +69,7 @@ class LandingPage extends Component {
             </div>
             <p className="mt-3 pr-4 text-left">
               Datacode Provides you the Best free Learning Content from all over the world to Improve your Skills and Make your Learning Easy and Quick.
+              <br />
               Either one is at Beginners or at the Advance level you find your track and learn from it.
             </p>
             <div className="find-out-more shadow-lg p-3">

@@ -4,6 +4,10 @@ import { connect } from "react-redux";
 // --------------------------------------------
 import LandingPage from "../../../components/main_component/landing_page";
 import HomeComponent from "../../../components/main_component/home";
+import ContactUs from "../header_component/ContactUs";
+import OurPartners from "../header_component/OurPartners"
+// Our Story
+import OurStory from "../header_component/OurStory"
 
 // Articles
 import IndexArticles from "../../../components/main_component/aticles/IndexArticles";
@@ -373,8 +377,7 @@ import MyProfile from "../../../components/user/component/profile/my_profile"
 import EditProfile from "../../../components/user/component/profile/edit_profile"
 import MyLibrary from '../../../components/user/component/profile/my_library'
 // --------------------------------------------------------------------
-// Our Story
-import OurStory from "../header_component/OurStory"
+
 
 // Blogs Text Editor  --------------
 import TextEditor from '../../../components/main_component/aticles/BlogsEditor/TextEditor'
@@ -410,7 +413,8 @@ const AppRouters = ({
         <Route exact path="/" component={LandingPage} />
         <Route path="/home" component={HomeComponent} />
         <Route path="/our_story" component={OurStory} />
-
+        <Route path="/contact_us" component={ContactUs} />
+        <Route path="/our_partners" component={OurPartners} />
         {/* End ______________ */}
 
         {/* Starting Articles */}

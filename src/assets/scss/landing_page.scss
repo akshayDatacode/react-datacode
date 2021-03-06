@@ -167,6 +167,16 @@
   }
 }
 
+.thanks-for-subscribing {
+  justify-content: center;
+  align-items: center;
+  h2 {
+    color: #ffffff;
+    font-size: 25px;
+    text-align: center;
+  }
+}
+
 @media (max-width: 767px) {
   .category-section {
     h2 {
@@ -183,6 +193,7 @@
     border-top-right-radius: 20px;
 
     .subscribe-form {
+      min-height: 200px;
       padding: 0 30px 0 30px;
       border-bottom-right-radius: 100px;
       border-bottom-left-radius: 100px;

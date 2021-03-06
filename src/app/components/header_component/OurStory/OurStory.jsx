@@ -6,6 +6,9 @@ import { IMAGES } from './helpers'
 import PeopleWords from './PeopleWords'
 import AddTestimonial from './AddTestimonial'
 
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   fab,
@@ -27,12 +30,33 @@ const OurStory = ({
 }) => {
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     fetchTestimonials({}).then((res) => {
       if (res) {
         console.log("done")
       }
     })
   }, [])
+
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
 
   return (
     <>
@@ -131,11 +155,13 @@ const OurStory = ({
           <Gallery images={IMAGES} />
         </div>
       </div>
-      <div className="row m-0 px-md-5 people-word">
-        {testimonials && testimonials.map((item) => (
-          <PeopleWords item={item} />
-        ))
-        }
+      <h1 className="mt-5 text-center">What our community says to us!</h1>
+      <div className="m-0 px-md-5 people-word" style={{ position: "relative" }}>
+        <Carousel responsive={responsive}>
+          {testimonials && testimonials.map((item) => (
+            <PeopleWords item={item} />
+          ))}
+        </Carousel>
       </div>
       <div className="row m-0 ">
         <div className="col-12 text-center">
