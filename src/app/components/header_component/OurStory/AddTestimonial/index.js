@@ -5,6 +5,8 @@ import {
   showAddTestimonial,
   addTestimonial,
   fetchTestimonials,
+  editTestimonial,
+  setEditTestimonial,
 } from "../../../../actions";
 import { setUserImgDetails } from "../../../../../components/user/actions";
 
@@ -15,6 +17,8 @@ const mapStateToProps = ({ app, user }) => ({
   currentUser: user.currentUser ? user.currentUser.data : {},
   userProfile: user.userProfile ? user.userProfile : {},
   userProfileLoading: user.userProfileLoading,
+  isEditTestimonial: app.isEditTestimonial,
+  editTestimonialData: app.editTestimonialData ? app.editTestimonialData : {},
 });
 
 const mapDispatchToProps = {
@@ -22,6 +26,8 @@ const mapDispatchToProps = {
   addTestimonial,
   setUserImgDetails,
   fetchTestimonials,
+  editTestimonial,
+  setEditTestimonial,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(AddTestimonial);

@@ -1,7 +1,12 @@
 import OurStory from "./OurStory";
 
 import { connect } from "react-redux";
-import { showAddTestimonial, fetchTestimonials } from "../../../actions";
+import {
+  showAddTestimonial,
+  fetchTestimonials,
+  setEditTestimonial,
+  deleteTestimonial,
+} from "../../../actions";
 
 const mapStateToProps = ({ app, user }) => ({
   isShowAddTutorial: app.isShowAddTutorial,
@@ -15,6 +20,8 @@ const mapStateToProps = ({ app, user }) => ({
 const mapDispatchToProps = {
   showAddTestimonial,
   fetchTestimonials,
+  setEditTestimonial,
+  deleteTestimonial,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(OurStory);

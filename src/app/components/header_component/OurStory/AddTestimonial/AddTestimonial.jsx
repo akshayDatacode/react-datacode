@@ -7,7 +7,6 @@ import Loader from 'react-loader-spinner'
 import { renderInputField } from '../../../../../shared_components/ReduxFormFields'
 import { required } from '../../../../../utils/validators'
 
-
 const AddTestimonial = ({
   reset,
   handleSubmit,
@@ -16,25 +15,30 @@ const AddTestimonial = ({
   userProfile,
   setUserImgDetails,
   fetchTestimonials,
-  open,
   showAddTestimonial,
   addTestimonial,
   showTestimonial,
-  submitButtonName,
-  submitButtonColor,
-  title,
-  message,
   addTestimonialLoading,
   userProfileLoading,
+  isEditTestimonial,
+  editTestimonialData,
+  editTestimonial,
+  setEditTestimonial,
 }) => {
-  const [isEdit, setIsEdit] = useState(false)
   const [imgUrl, setImgUrl] = useState("")
   const [image, setImage] = useState("")
 
   useEffect(() => {
-    setImgUrl(userProfile && userProfile.imgUrl)
-    initialize(userProfile)
-  }, [userProfile])
+    if (isEditTestimonial) {
+      console.log("ddddin side edit", editTestimonialData)
+      editTestimonialData['firstName'] = editTestimonialData.name
+      setImgUrl(editTestimonialData && editTestimonialData.imgUrl)
+      initialize(editTestimonialData)
+    } else {
+      setImgUrl(userProfile && userProfile.imgUrl)
+      initialize(userProfile)
+    }
+  }, [userProfile, editTestimonialData])
 
   const postUserImgDetails = () => {
     const data = new FormData()
@@ -52,17 +56,19 @@ const AddTestimonial = ({
   const onSubmit = (values) => {
     const testimonial = { ...values }
     testimonial["imgUrl"] = imgUrl
-    if (isEdit) {
-      // editTutorial(tutorial).then((res) => {
-      //   if (res && res.success) {
-      //     reset('testimonial')
-      //     initialize({})
-      //     setIsEdit(!isEdit)
-      //   }
-      // })
+    testimonial['name'] = testimonial.firstName
+    if (isEditTestimonial) {
+      editTestimonial(testimonial).then((res) => {
+        if (res && res.success) {
+          reset('testimonial')
+          initialize({})
+          setEditTestimonial({})
+          showAddTestimonial()
+          fetchTestimonials()
+        }
+      })
     } else {
       console.log("testimonial", testimonial)
-      testimonial['name'] = testimonial.firstName
       addTestimonial(testimonial).then((res) => {
         if (res && res.success) {
           reset('testimonial')
@@ -74,6 +80,7 @@ const AddTestimonial = ({
     console.log("values ()()", testimonial)
   }
 
+  console.log("imgurl", imgUrl)
   return (
     <>
       <Modal isOpen={showTestimonial} toggle={showAddTestimonial} className="delete-tutorial-modal">
@@ -93,8 +100,8 @@ const AddTestimonial = ({
                 className="rounded-circle header-profile-img"
                 height="140"
                 width="140"
-                src={imgUrl !== "" ? imgUrl : userProfile && userProfile.imgUrl}
-                alt="avatar"
+                src={imgUrl !== "" ? imgUrl : require(`../../../../../assets/images/svg/monolog.svg`)}
+                alt="userprofile"
               />}
           </div>
           <div>
@@ -169,16 +176,16 @@ const AddTestimonial = ({
                     timeout={19000} //8 secs
                   /> :
                   <>
-                    {isEdit &&
+                    {isEditTestimonial &&
                       <div className="btn cancel-button mr-3">
                         Cancel
                         </div>
                     }
-                    <button type="submit" className={`btn ${isEdit ? 'edit-button' : 'add-button'} login-button`} disabled={submitting}>
+                    <button type="submit" className={`btn ${isEditTestimonial ? 'edit-button' : 'add-button'} login-button`} disabled={submitting}>
                       {
-                        isEdit ?
+                        isEditTestimonial ?
                           <>
-                            <i className="far fa-edit voilet mr-2" /> <span>Edit Tutorial</span>
+                            <i className="far fa-edit voilet mr-2" /> <span>Edit Testimonial</span>
                           </>
                           :
                           <>

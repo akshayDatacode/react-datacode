@@ -5,6 +5,7 @@ import {
   HIDE_ADD_TUTORIAL,
   SHOW_ADD_TESTIMONIAL,
   SET_TESTIMONIALS,
+  SET_EDIT_TESTIMONIAL,
 } from "../constants";
 
 export const showFooter = (data) => ({
@@ -30,4 +31,9 @@ export const showAddTestimonial = (data) => ({
 export const setTestimonials = (data) => ({
   type: SET_TESTIMONIALS,
   payload: data,
+});
+
+export const setEditTestimonial = (testimonial) => ({
+  type: SET_EDIT_TESTIMONIAL,
+  payload: testimonial,
 });

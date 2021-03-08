@@ -4,8 +4,10 @@ import PropTypes from 'prop-types'
 
 const MyProfile = ({
   getUserProfile,
+  match: { params },
   match: { params: { email } },
   userProfile,
+  currentUser,
 }) => {
 
   useEffect(() => {
@@ -13,7 +15,7 @@ const MyProfile = ({
     if (email) {
       getUserProfile(email);
     }
-  }, [])
+  }, [email])
 
   const { firstName, branch, university, imgUrl } = userProfile && userProfile
 
@@ -26,7 +28,7 @@ const MyProfile = ({
               className="rounded-circle header-profile-img"
               height="140"
               width="140"
-              src={imgUrl !== "" ? imgUrl : require(`../../../../../assets/images/svg/profile.jpg`)}
+              src={imgUrl !== "" ? imgUrl : require(`../../../../../assets/images/svg/monolog.svg`)}
               alt="avatar"
             />
           </div>
@@ -37,9 +39,11 @@ const MyProfile = ({
             <i className="fab fa-twitter-square mr-3" />
             <i className="fab fa-github" />
           </div>
-          <Link to="/edit_profile" >
-            <div className="btn edit-profile-btn my-3">Edit Profile <i className="fad fa-user-edit ml-2" /></div>
-          </Link>
+          {(email === (currentUser && currentUser.email)) &&
+            <Link to="/edit_profile" >
+              <div className="btn edit-profile-btn my-3">Edit Profile <i className="fad fa-user-edit ml-2" /></div>
+            </Link>
+          }
 
           <div className="profile-dashboard mt-0 mt-2">
             <div className="row m-0">

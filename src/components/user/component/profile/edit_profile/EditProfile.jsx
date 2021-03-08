@@ -19,6 +19,7 @@ const EditProfile = ({
   useEffect(() => {
     window.scrollTo(0, 0);
     if (userProfile) {
+      setImage(userProfile.imgUrl)
       initialize(userProfile)
     }
   }, [userProfile])
@@ -72,7 +73,7 @@ const EditProfile = ({
                 className="rounded-circle header-profile-img"
                 height="140"
                 width="140"
-                src={imgUrl !== "" ? imgUrl : userProfile && userProfile.imgUrl}
+                src={imgUrl !== "" ? imgUrl : require(`../../../../../assets/images/svg/monolog.svg`)}
                 alt="avatar"
               />}
           </div>

@@ -30,7 +30,9 @@ const setAddTestimonial = (state, action) => {
   return {
     ...state,
     showTestimonial: !state.showTestimonial,
+    isEditTestimonial: false,
     addTestimonialLoading: false,
+    editTestimonialData: {},
   };
 };
 
@@ -45,12 +47,28 @@ const setAddSubscribeLoading = (state) => ({
   addSubscribeLoading: !state.addSubscribeLoading,
 });
 
+const setIsEditTestimonial = (state, action) => {
+  return {
+    ...state,
+    isEditTestimonial: !state.isEditTestimonial,
+    editTestimonialData: action.payload,
+    showTestimonial: !state.showTestimonial,
+  };
+};
+
+const setAddContactMessageLoading = (state) => ({
+  ...state,
+  addContactMessageLoading: !state.addContactMessageLoading,
+});
+
 export const getAppHandlers = {
   [constants.SHOW_FOOTER]: setShowFooter,
   [constants.HIDE_FOOTER]: setHideFooter,
   [constants.SHOW_ADD_TUTORIAL]: setShowAddTutorial,
   [constants.HIDE_ADD_TUTORIAL]: setHideAddTutorial,
   [constants.SHOW_ADD_TESTIMONIAL]: setAddTestimonial,
+  [constants.SET_EDIT_TESTIMONIAL]: setIsEditTestimonial,
   [constants.SET_TESTIMONIALS]: setTestimonials,
   [constants.SET_SUBSCRIBE_LOADING]: setAddSubscribeLoading,
+  [constants.SET_ADD_CONTACT_MESSAGE_LOADING]: setAddContactMessageLoading,
 };

@@ -27,6 +27,9 @@ const OurStory = ({
   testimonials,
   addTestimonialLoading,
   fetchTestimonials,
+  currentUser,
+  setEditTestimonial,
+  deleteTestimonial,
 }) => {
 
   useEffect(() => {
@@ -57,6 +60,18 @@ const OurStory = ({
       items: 1
     }
   };
+
+  const handleTestimonialEdit = (testimonial) => {
+    setEditTestimonial(testimonial)
+  }
+
+  const handleTestimonialDelete = (testimonial) => {
+    deleteTestimonial(testimonial).then((res) => {
+      if (res && res.success) {
+        fetchTestimonials()
+      }
+    })
+  }
 
   return (
     <>
@@ -159,7 +174,12 @@ const OurStory = ({
       <div className="m-0 px-md-5 people-word" style={{ position: "relative" }}>
         <Carousel responsive={responsive}>
           {testimonials && testimonials.map((item) => (
-            <PeopleWords item={item} />
+            <PeopleWords
+              item={item}
+              currentUser={currentUser}
+              handleTestimonialEdit={handleTestimonialEdit}
+              handleTestimonialDelete={handleTestimonialDelete}
+            />
           ))}
         </Carousel>
       </div>

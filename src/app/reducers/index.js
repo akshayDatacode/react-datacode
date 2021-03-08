@@ -8,6 +8,9 @@ const initialState = {
   addTestimonialLoading: false,
   testimonials: [],
   addSubscribeLoading: false,
+  isEditTestimonial: false,
+  editTestimonialData: {},
+  addContactMessageLoading: false,
 };
 
 const handlers = {

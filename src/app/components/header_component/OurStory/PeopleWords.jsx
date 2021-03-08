@@ -13,7 +13,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const PeopleWords = ({
-  item,
+  item, currentUser, handleTestimonialEdit, handleTestimonialDelete
 }) => {
   return (
     <>
@@ -27,13 +27,19 @@ const PeopleWords = ({
               className="rounded-circle"
               height="140"
               width="140"
-              src={item.imgUrl}
+              src={item && item.imgUrl}
               alt="avatar"
             />
             <h2>{item.name}</h2>
             <span>
               <a href={item.linkedin} target="_blank"><FontAwesomeIcon color="#30006d" icon={faLinkedinIn} size="1x" /></a>
               <a href={item.github} target="_blank"><FontAwesomeIcon color="#30006d" className="ml-2" icon={faGithub} size="1x" /></a>
+              {(currentUser && currentUser.email === item.email) &&
+                <>
+                  <i onClick={() => handleTestimonialEdit(item)} className="far fa-edit ml-2 voilet" />
+                  <i onClick={() => handleTestimonialDelete(item)} className="far fa-trash ml-2 voilet" />
+                </>
+              }
             </span>
             <p>{item.testimonial}</p>
           </div>
