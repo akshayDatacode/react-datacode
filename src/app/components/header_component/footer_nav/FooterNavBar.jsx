@@ -50,7 +50,7 @@ const FooterNavBar = () => {
           </div>
           <div className="col-3 text-center">
             <Link
-              to="/add_tutorial"
+              to="/contributor"
             >
               <i className="fad fa-users-crown" />
               <p>Contribute</p>

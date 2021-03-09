@@ -7,6 +7,7 @@ import Comment from "../comment"
 
 const TutorialPage = ({
   match: { params: { id } },
+  userData,
   userData: { userName, email, myTutorialsLibrary },
   getTutorialById,
   tutorial,

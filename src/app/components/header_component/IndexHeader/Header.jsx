@@ -88,7 +88,7 @@ const Header = ({
                   <Link to="/index_quize_tests"><h6 className="my-2">Test</h6 ></Link>
                 </div>
                 <div className="col-3 text-center">
-                  <Link to="/add_tutorial">
+                  <Link to="/contributor">
                     <img
                       height="70px"
                       width="70px"
@@ -97,7 +97,7 @@ const Header = ({
                       className="my-3"
                     />
                   </Link>
-                  <Link to="/add_tutorial"><h6 className="my-2">Contribute</h6 ></Link>
+                  <Link to="/contributor"><h6 className="my-2">Contribute</h6 ></Link>
                 </div>
               </div>
             </DropdownMenu>

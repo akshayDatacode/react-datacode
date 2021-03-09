@@ -1,1 +1,0 @@
-export const SET_TUTORIALS_LIST = "SET_TUTORIALS_LIST";

@@ -209,6 +209,18 @@ a {
   vertical-align: top;
 }
 
+.react-multiple-carousel__arrow--right::before {
+  content: "\f0a9";
+  padding-top: 1px;
+  font-family: "Font Awesome 5 Pro";
+}
+
+.react-multiple-carousel__arrow--left::before {
+  content: "\f0a8";
+  padding-top: 1px;
+  font-family: "Font Awesome 5 Pro";
+}
+
 @media (max-width: 767px) {
   body {
     overflow-x: hidden;

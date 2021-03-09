@@ -26,8 +26,10 @@ import "../assets/scss/footer.scss";
 import "../assets/scss/home.scss";
 import "../assets/scss/header.scss";
 import "../assets/scss/side_nav.scss";
-import "../assets/scss/category.scss";
+import "../assets/scss/tutorial.scss";
 import "../assets/scss/profile.scss";
+import "../assets/scss/contributor.scss";
+import "react-multi-carousel/lib/styles.css";
 
 const App = ({ isShowFooter, setLocalUser, getUserProfile }) => {
   const showFooterPaths = ["#/", "#/home"];

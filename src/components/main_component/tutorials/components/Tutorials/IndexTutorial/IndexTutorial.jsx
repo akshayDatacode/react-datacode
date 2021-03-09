@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import Carousel from 'react-multi-carousel';
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHome,
@@ -34,6 +36,7 @@ import Technologies from "../../../../../right_section/Technologies";
 
 import { techIcon, techCategory } from '../helpers'
 import TutorialCard from "../TutorialCard";
+import { displayName } from "react-grid-gallery";
 
 
 const IndexTutorial = ({
@@ -51,6 +54,26 @@ const IndexTutorial = ({
       hideAddTutorial()
     }
   }, [])
+
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
 
   const filteredList = techIcon.filter(tech => Object.values(tech).some(value => value.toLowerCase().includes(search.toLowerCase())));
 
@@ -80,39 +103,47 @@ const IndexTutorial = ({
               <p className="text-center">How it works?</p>
             </div>
             <div className="col-12 col-md-8 p-0 m-0 text-center ">
-              <div className="row m-0 p-2 d-flex justify-content-center">
-                <div className="col-12 m-2 p-3 text-center col-md-3 flow-card">
-                  <i className="fad fa-file-search blue" />
-                  <h5>Find your tutorial and lean</h5>
-                </div>
-                <div className="col-12 m-2 p-3 col-md-3 text-center flow-card">
-                  <i className="fad fa-plus-circle green" />
-                  <h5>Add your Tutorial and contribute in communtiy</h5>
-                </div>
-                <div className="col-12 m-2 p-3 col-md-3 text-center flow-card">
-                  <i className="fad fa-users-medical" />
-                  <h5>Join Community learning group and learn with your peers and get all best tutorials notifiction</h5>
-                </div>
-                <div className="col-12 m-2 p-3  col-md-3 text-center flow-card">
-                  <i className="fad fa-heart-circle red" />
-                  <h5>Love your faourave one! fromthe list of tutorials</h5>
-                </div>
-                <div className="col-12 m-2 p-3 col-md-3 text-center flow-card">
-                  <i className="fad fa-bookmark orange" />
-                  <h5>Create your library save your favoirate tutorial</h5>
-                </div>
-                <div className="col-12 m-2 p-3 col-md-3 text-center flow-card">
-                  <i className="fad fa-comment-smile" />
-                  <h5>Comment and review your best tutorial to help other community members</h5>
-                </div>
-                <div className="col-12 m-2 p-3 col-md-3 text-center flow-card">
-                  <i className="fad fa-chart-line" />
-                  <h5>Help to make Best Tutorial at top</h5>
-                </div>
-                <div className="col-12 m-2 p-3 col-md-3 text-center flow-card">
-                  <i className="fad fa-trophy-alt yellow" />
-                  <h5>Earn Community Rewards from your contribution</h5>
-                </div>
+              <div className="m-0 p-2" style={{ position: "relative" }}>
+                <Carousel
+                  draggable={true}
+                  infinite={true}
+                  dotListClass="custom-dot-list-style"
+                  responsive={responsive}
+                  autoPlay={true}
+                >
+                  <div className="m-2 p-3 text-center flow-card">
+                    <i className="fad fa-file-search blue" />
+                    <h5>Find your tutorial and lean</h5>
+                  </div>
+                  <div className="m-2 p-3 text-center flow-card">
+                    <i className="fad fa-plus-circle green" />
+                    <h5>Add your Tutorial and contribute in communtiy</h5>
+                  </div>
+                  <div className="m-2 p-3 text-center flow-card">
+                    <i className="fad fa-users-medical" />
+                    <h5>Join Community learning group and learn with your peers and get all best tutorials notifiction</h5>
+                  </div>
+                  <div className="m-2 p-3 text-center flow-card">
+                    <i className="fad fa-heart-circle red" />
+                    <h5>Love your faourave one! fromthe list of tutorials</h5>
+                  </div>
+                  <div className="m-2 p-3 text-center flow-card">
+                    <i className="fad fa-bookmark orange" />
+                    <h5>Create your library save your favoirate tutorial</h5>
+                  </div>
+                  <div className="m-2 p-3 text-center flow-card">
+                    <i className="fad fa-comment-smile" />
+                    <h5>Comment and review your best tutorial to help other community members</h5>
+                  </div>
+                  <div className="m-2 p-3 text-center flow-card">
+                    <i className="fad fa-chart-line" />
+                    <h5>Help to make Best Tutorial at top</h5>
+                  </div>
+                  <div className="m-2 p-3 text-center flow-card">
+                    <i className="fad fa-trophy-alt yellow" />
+                    <h5>Earn Community Rewards from your contribution</h5>
+                  </div>
+                </Carousel>
               </div>
             </div>
           </div>

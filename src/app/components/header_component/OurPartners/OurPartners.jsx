@@ -30,14 +30,52 @@ const OurPartners = () => {
           <h1>Our Partners</h1>
         </div>
       </div>
-      <h1>Community Partners</h1>
-      <h6>DevCIndore</h6>
-      <h6>DevCPune</h6>
-      <h1>Education Partners</h1>
-      <h6>TYP</h6>
-      <h6>Frontiaz</h6>
-      <h1>IT Partner</h1>
-      <h1>Blog Partner</h1>
+      <h1 className="px-md-5 px-0 mt-5 mb-4 text-md-left text-center">Our community partners</h1>
+      <div className="row m-0 px-md-5 px-2">
+        <div className="col-md-1 col-12">
+          <img
+            height="70px"
+            width="70px"
+            src={require(`../../../../assets/images/svg/Tutorial.png`)}
+            alt="avatar"
+            className="my-3"
+          />
+        </div>
+        <div className="col-md-11 col-12">
+          <h6>Facebook Developer Circle, Indore</h6>
+          <p>Local Indore Region chapter for students and developer</p>
+        </div>
+      </div>
+      <div className="row m-0 px-md-5 px-2">
+        <div className="col-md-1 col-12">
+          <img
+            height="70px"
+            width="70px"
+            src={require(`../../../../assets/images/svg/Tutorial.png`)}
+            alt="avatar"
+            className="my-3"
+          />
+        </div>
+        <div className="col-md-11 col-12">
+          <h6>Facebook Developer Circle, Indore</h6>
+          <p>Local Indore Region chapter for students and developer</p>
+        </div>
+      </div>
+      <div className="row m-0 px-md-5 px-2">
+        <div className="col-md-1 col-12">
+          <img
+            height="70px"
+            width="70px"
+            src={require(`../../../../assets/images/svg/Tutorial.png`)}
+            alt="avatar"
+            className="my-3"
+          />
+        </div>
+        <div className="col-md-11 col-12">
+          <h6>Facebook Developer Circle, Indore</h6>
+          <p>Local Indore Region chapter for students and developer</p>
+        </div>
+      </div>
     </>
   )
 }

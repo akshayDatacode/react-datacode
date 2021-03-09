@@ -137,7 +137,7 @@ class HomeComponent extends Component {
             <div className="col-12 col-md-6 text-center pr-md-5 p-0">
               <h1 className="mt-md-5 mt-3">Want to contibute in <br />Learning Community</h1>
               <p className="mt-md-3 mt-2">Start Contributing by creating notes and uploading blogs and much more and become a contributor of the awesome learning community</p>
-              <Link to="/add_tutorial"><div className="btn contributor-btn mt-md-5 my-4"><h6>Be a contributor</h6></div></Link>
+              <Link to="/contributor"><div className="btn contributor-btn mt-md-5 my-4"><h6>Be a contributor</h6></div></Link>
             </div>
           </div>
         </div>

@@ -378,6 +378,8 @@ import EditProfile from "../../../components/user/component/profile/edit_profile
 import MyLibrary from '../../../components/user/component/profile/my_library'
 // --------------------------------------------------------------------
 
+// Contributor ------
+import ContributorLanding from '../../../components/contributor'
 
 // Blogs Text Editor  --------------
 import TextEditor from '../../../components/main_component/aticles/BlogsEditor/TextEditor'
@@ -1268,6 +1270,8 @@ const AppRouters = ({
         <Route exact path="/edit_profile" render={authGuard(EditProfile)} />
         <Route exact path="/my_library" render={authGuard(MyLibrary)} />
 
+        {/* Contributor Landing */}
+        <Route exact path="/contributor" component={ContributorLanding} />
 
         {/* -------BLog Editor---- */}
         <Route path="/editor" component={TextEditor} />

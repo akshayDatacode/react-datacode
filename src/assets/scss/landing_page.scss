@@ -7,7 +7,16 @@
 .carousel-card {
   height: 500px;
   width: auto;
-  background-color: #30006d;
+  background: rgb(48, 0, 182);
+  background: linear-gradient(
+    81deg,
+    rgba(48, 0, 182, 1) 11%,
+    rgba(48, 0, 182, 1) 35%,
+    rgba(79, 34, 209, 1) 57%,
+    rgba(92, 48, 220, 1) 66%,
+    rgba(103, 61, 230, 1) 74%,
+    rgba(103, 61, 230, 1) 88%
+  );
   // background: linear-gradient(#30006d, #6d03f7c9);
   h1,
   h6 {

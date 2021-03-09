@@ -22,45 +22,6 @@
       }
     }
   }
-  .tutorial-community-card {
-    border: solid 2px #30006d;
-    border-radius: 15px;
-    justify-content: center;
-    align-items: center;
-    h2 {
-      font-size: 40px;
-      font-weight: 700;
-    }
-    .flow-card {
-      border: solid 1px #30006d;
-      box-shadow: 0 7px 4px 0px rgba(0, 0, 0, 0.09);
-      height: auto;
-      border-radius: 5px;
-      h5 {
-        font-size: 15px;
-        font-weight: 700;
-        margin-top: 15px;
-      }
-      i {
-        font-size: 55px;
-      }
-      .red {
-        color: rgb(150, 1, 38);
-      }
-      .green {
-        color: rgb(46, 131, 12);
-      }
-      .blue {
-        color: rgb(6, 67, 124);
-      }
-      .orange {
-        color: orangered;
-      }
-      .yellow {
-        color: yellow;
-      }
-    }
-  }
 
   .search {
     padding: 10px 50px 10px 50px;
@@ -142,6 +103,46 @@
     margin: 10px;
     p {
       font-size: 11px;
+    }
+  }
+}
+
+.tutorial-community-card {
+  border: solid 2px #30006d;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .flow-card {
+    border: solid 1px #30006d;
+    box-shadow: 0 7px 4px 0px rgba(0, 0, 0, 0.09);
+    height: 200px;
+    border-radius: 5px;
+    h5 {
+      font-size: 15px;
+      font-weight: 700;
+      margin-top: 15px;
+    }
+    i {
+      font-size: 55px;
+    }
+    .red {
+      color: rgb(150, 1, 38);
+    }
+    .green {
+      color: rgb(46, 131, 12);
+    }
+    .blue {
+      color: rgb(6, 67, 124);
+    }
+    .orange {
+      color: orangered;
+    }
+    .yellow {
+      color: yellow;
     }
   }
 }
@@ -496,6 +497,9 @@
       h2 {
         font-size: 30px;
         margin-top: 15px;
+      }
+      .flow-card {
+        height: 180px;
       }
     }
   }

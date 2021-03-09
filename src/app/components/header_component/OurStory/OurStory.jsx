@@ -171,7 +171,7 @@ const OurStory = ({
         </div>
       </div>
       <h1 className="mt-5 text-center">What our community says to us!</h1>
-      <div className="m-0 px-md-5 people-word" style={{ position: "relative" }}>
+      <div className="m-0 px-md-5 " style={{ position: "relative" }}>
         <Carousel responsive={responsive}>
           {testimonials && testimonials.map((item) => (
             <PeopleWords
@@ -185,9 +185,7 @@ const OurStory = ({
       </div>
       <div className="row m-0 ">
         <div className="col-12 text-center">
-          {testimonials && testimonials.find((item) => item.email === currentUser.email) ?
-            <div onClick={() => handleTestimonialEdit()} className="btn add-testimomnial-btn">Edit your words</div>
-            :
+          {!(testimonials && testimonials.find((item) => item.email === currentUser.email)) &&
             <div onClick={() => showAddTestimonial()} className="btn add-testimomnial-btn">What do you say for us?</div>
           }
         </div>
