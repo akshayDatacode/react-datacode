@@ -5,8 +5,8 @@ import TutorialCard from '../../../../main_component/tutorials/components/Tutori
 import { categories } from './helper'
 
 const MyLibrary = ({
-  userProfile,
-  userProfile: { myTutorialsLibrary }
+  currentUser,
+  currentUser: { myTutorialsLibrary }
 }) => {
   const [showTechIcon, setShowTechIcon] = useState('programming')
 
@@ -53,12 +53,12 @@ const MyLibrary = ({
 }
 
 MyLibrary.defaultProps = {
-  userProfile: {},
+  currentUser: {},
   myTutorialsLibrary: [],
 }
 
 MyLibrary.propTypes = {
-  userProfile: PropTypes.object,
+  currentUser: PropTypes.object,
   myTutorialsLibrary: PropTypes.array,
 }
 

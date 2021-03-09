@@ -8,8 +8,8 @@ import { required, email } from '../../../../../utils/validators'
 
 const EditProfile = ({
   initialize, reset, handleSubmit, submitting,
-  signupUserLoading, userProfile, editUserProfile,
-  setUserProfile, setUserImgDetails, userProfileLoading,
+  signupUserLoading, editCurrentUser,
+  setUserProfile, setUserImgDetails, userProfileLoading, currentUser,
 }) => {
 
   const [image, setImage] = useState("")
@@ -18,11 +18,11 @@ const EditProfile = ({
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    if (userProfile) {
-      setImage(userProfile.imgUrl)
-      initialize(userProfile)
+    if (currentUser) {
+      setImgUrl(currentUser.imgUrl)
+      initialize(currentUser)
     }
-  }, [userProfile])
+  }, [currentUser])
 
   const history = useHistory()
 
@@ -44,11 +44,11 @@ const EditProfile = ({
     console.log("values ()()", user)
     user['imgUrl'] = imgUrl
 
-    editUserProfile(user).then((res) => {
+    editCurrentUser(user).then((res) => {
       if (res) {
         //  setUserProfile(res.data)
-        console.log("Updated", userProfile && userProfile.email)
-        history.push(`/my_profile/${userProfile && userProfile.email}`)
+        console.log("Updated", currentUser && currentUser.email)
+        history.push(`/my_profile/${currentUser && currentUser.email}`)
         reset('editForm')
       } else {
         console.log("Error", res)

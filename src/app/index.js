@@ -9,7 +9,7 @@ import IndexFooter from "./components/footer_component/indexFooter";
 import IndexHeader from "./components/header_component/IndexHeader";
 import FooterComponentUpper from "./components/footer_component/FooterComponentUpper";
 import FooterNavBar from "./components/header_component/footer_nav/FooterNavBar";
-import { setLocalUser, getUserProfile } from "../components/user/actions";
+import { setLocalUser } from "../components/user/actions";
 import { showFooter } from "./actions";
 
 // import fire from "./config/fire";
@@ -37,8 +37,7 @@ const App = ({ isShowFooter, setLocalUser, getUserProfile }) => {
     var localUser = JSON.parse(localStorage.getItem("userDetails"));
     console.log("local user", localUser);
     if (localUser && localUser !== null && localUser.data) {
-      setLocalUser(localUser);
-      getUserProfile(localUser.data.email);
+      setLocalUser(localUser.data);
     }
 
     // if (showFooterPaths.includes(location.pathname)) {
@@ -95,7 +94,6 @@ const App = ({ isShowFooter, setLocalUser, getUserProfile }) => {
 
 const mapDispatchToProps = {
   setLocalUser,
-  getUserProfile,
 };
 
 const mapStateToProps = ({ app }) => ({

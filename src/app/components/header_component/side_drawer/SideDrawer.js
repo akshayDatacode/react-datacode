@@ -13,18 +13,12 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHome,
-  faAddressBook,
-  faQuestion,
   faCheckSquare,
   faUsers,
   faMap,
   faComments,
   faAddressCard,
   faClipboardCheck,
-  faDoorOpen,
-  faInfoCircle,
-  faSplotch,
-  faBookOpen,
   faChalkboardTeacher,
   faTasks,
   faLaptopCode,
@@ -47,7 +41,6 @@ const SideDrawer = ({
   show,
   currentUser,
   logoutUser,
-  userProfile,
   userProfileLoading,
 }) => {
   let drawerClasses = "side-drawer";
@@ -97,8 +90,8 @@ const SideDrawer = ({
                         height="40"
                         width="40"
                         src={
-                          userProfile && userProfile.imgUrl !== ""
-                            ? userProfile.imgUrl
+                          currentUser && currentUser.imgUrl !== ""
+                            ? currentUser.imgUrl
                             : require(`../../../../assets/images/svg/profile.jpg`)
                         }
                         alt="avatar"
@@ -108,7 +101,7 @@ const SideDrawer = ({
                   <div className="d-flex align-items-center mt-2">
                     <h2>
                       {`Hello! ${
-                        userProfile ? userProfile.firstName : "Learner"
+                        currentUser ? currentUser.firstName : "Learner"
                       }`}
                     </h2>
                     <i
@@ -242,7 +235,7 @@ const SideDrawer = ({
                   </span>
                 </li>
               </Link>
-              {currentUser && (
+              {currentUser && currentUser.email && (
                 <Link to="/" onClick={() => logoutUser()}>
                   <li>
                     <span>
@@ -255,107 +248,6 @@ const SideDrawer = ({
             </ul>
           </div>
         </div>
-        {/* <ul>
-          <li>
-            <a
-              href="/react-datacode/#/home"
-              onClick={() => backDropClickHandler()}
-            >
-              {" "}
-              <FontAwesomeIcon icon={faHome} className="mr-2" />
-              Home
-            </a>
-            <hr id="dividerline" />
-          </li>
-          <li>
-            <a href="/react-datacode/#/index_technologies">
-              {" "}
-              <FontAwesomeIcon icon={faChalkboardTeacher} className="mr-2" />
-              Tutorials/Courses
-            </a>
-            <hr id="dividerline" />
-          </li>
-
-          <li>
-            <a href="/react-datacode/#/index_training_certification">
-              {" "}
-              <FontAwesomeIcon icon={faAward} className="mr-2" />
-              Training/Certification
-            </a>
-            <hr id="dividerline" />
-          </li>
-
-          <li>
-            <a href="/react-datacode/#/index_code_challange">
-              <FontAwesomeIcon icon={faLaptopCode} className="mr-2" />
-              Code Challange
-            </a>
-            <hr id="dividerline" />
-          </li>
-
-          <li>
-            <a href="/react-datacode/#/index_interview_questioins">
-              <FontAwesomeIcon icon={faUserTie} className="mr-2" />
-              Interview Preparation
-            </a>
-            <hr id="dividerline" />
-          </li>
-          <li>
-            <a href="/react-datacode/#/index_mcqs">
-              <FontAwesomeIcon icon={faTasks} className="mr-2" />
-              Programming MCQs
-            </a>
-            <hr id="dividerline" />
-          </li>
-
-          <li>
-            <a href="/react-datacode/#/index_practice_questions">
-              <FontAwesomeIcon icon={faCode} className="mr-2" />
-              Practice Questions
-            </a>
-            <hr id="dividerline" />
-          </li>
-
-          <li>
-            <a href="/react-datacode/#/index_quize_tests">
-              <FontAwesomeIcon icon={faFlask} className="mr-2" />
-              Quiz Tests
-            </a>
-            <hr id="dividerline" />
-          </li>
-
-          <li>
-            <a href="/react-datacode/#/index_programming_questions">
-              <FontAwesomeIcon icon={faFileCode} className="mr-2" />
-              Example Questions
-            </a>
-            <hr id="dividerline" />
-          </li>
-          <li>
-            <a href="/react-datacode/#/index_articles">
-              <FontAwesomeIcon icon={faBookOpen} className="mr-2" />
-              Blogs
-            </a>
-            <hr id="dividerline" />
-          </li>
-          <li>
-            <a href="/react-datacode/#/index_events">
-              <FontAwesomeIcon icon={faCalendar} className="mr-2" />
-              Events
-            </a>
-            <hr id="dividerline" />
-          </li>
-
-          <li>
-            <a href="/react-datacode/#/index_events">
-              <FontAwesomeIcon icon={faSignInAlt} className="mr-2" />
-              Login/Signup
-            </a>
-          </li>
-          <li>
-            <a href="#footer">Log Out</a>
-          </li>
-        </ul> */}
       </div>
     </>
   );
@@ -363,12 +255,12 @@ const SideDrawer = ({
 
 SideDrawer.defaultProps = {
   email: "",
-  userProfile: {},
+  currentUser: {},
 };
 
 SideDrawer.propTypes = {
   email: PropTypes.string,
-  userProfile: PropTypes.object,
+  currentUser: PropTypes.object,
 };
 
 export default SideDrawer;

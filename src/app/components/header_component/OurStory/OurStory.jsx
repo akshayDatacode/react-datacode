@@ -185,7 +185,11 @@ const OurStory = ({
       </div>
       <div className="row m-0 ">
         <div className="col-12 text-center">
-          <div onClick={() => showAddTestimonial()} className="btn add-testimomnial-btn">What do you say for us?</div>
+          {testimonials && testimonials.find((item) => item.email === currentUser.email) ?
+            <div onClick={() => handleTestimonialEdit()} className="btn add-testimomnial-btn">Edit your words</div>
+            :
+            <div onClick={() => showAddTestimonial()} className="btn add-testimomnial-btn">What do you say for us?</div>
+          }
         </div>
       </div>
       <AddTestimonial />

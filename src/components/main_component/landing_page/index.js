@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 import { showFooter, hideFooter } from "../../../app/actions";
 
 const mapStateToProps = ({ user }) => ({
-  userProfile: user.userProfile,
+  currentUser: user.currentUser ? user.currentUser : {},
 });
 
 const mapDispatchToProps = {

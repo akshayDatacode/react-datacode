@@ -4,19 +4,19 @@ import { connect } from "react-redux";
 
 import {
   getUserProfile,
-  editUserProfile,
+  editCurrentUser,
   setUserImgDetails,
   // setUserProfile,
 } from "../../../actions";
 
 const mapStateToProps = ({ app, user }) => ({
-  userProfile: user.userProfile,
   userProfileLoading: user.userProfileLoading,
+  currentUser: user.currentUser ? user.currentUser : {},
 });
 
 const mapDispatchToProps = {
   getUserProfile,
-  editUserProfile,
+  editCurrentUser,
   setUserImgDetails,
   // setUserProfile,
 };

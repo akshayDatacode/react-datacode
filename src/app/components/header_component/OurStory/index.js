@@ -12,8 +12,7 @@ const mapStateToProps = ({ app, user }) => ({
   isShowAddTutorial: app.isShowAddTutorial,
   addTestimonialLoading: app.addTestimonialLoading,
   testimonials: app.testimonials ? app.testimonials : [],
-  currentUser: user.currentUser ? user.currentUser.data : {},
-  userProfile: user.userProfile,
+  currentUser: user.currentUser ? user.currentUser : {},
   userProfileLoading: user.userProfileLoading,
 });
 

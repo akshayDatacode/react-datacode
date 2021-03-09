@@ -13,7 +13,6 @@ const Header = ({
   isShowAddTutorial,
   currentUser,
   logoutUser,
-  userProfile,
   userProfileLoading,
 }) => {
 
@@ -125,7 +124,7 @@ const Header = ({
           </Link>
         </div>
         <div className="col-4 p-0 d-md-flex right-section m-0">
-          {!currentUser ?
+          {!currentUser.email ?
             <div>
               {isShowAddTutorial ?
                 <Link to="/add_tutorial">
@@ -165,7 +164,7 @@ const Header = ({
                         className="rounded-circle header-profile-img"
                         height="40"
                         width="40"
-                        src={userProfile && userProfile.imgUrl !== "" ? userProfile.imgUrl : require(`../../../../assets/images/svg/profile.jpg`)}
+                        src={(currentUser && currentUser.imgUrl !== "") ? currentUser.imgUrl : require(`../../../../assets/images/svg/monolog.svg`)}
                         alt="datacode"
                       />}
                   </Link>
@@ -174,7 +173,7 @@ const Header = ({
                       <i className="far fa-angle-down" />
                     </DropdownToggle>
                     <DropdownMenu className="dropdown-menu mt-3" right>
-                      <DropdownItem header><span>{currentUser && currentUser.userName}</span></DropdownItem>
+                      <DropdownItem header><span>{currentUser && currentUser.firstName}</span></DropdownItem>
                       <DropdownItem><Link to={`/my_profile/${currentUser.email}`}><span><i className="fas fa-user mr-2" />My Profile</span></Link></DropdownItem>
                       <DropdownItem><Link to={`/my_library`}><span> <i className="fas fa-window-restore mr-2" />My Library</span></Link></DropdownItem>
                       <DropdownItem><Link to="/edit_profile"><span><i className="far fa-user-edit mr-2" />Edit Profile</span></Link></DropdownItem>
@@ -202,12 +201,12 @@ const Header = ({
 
 Header.defaultProps = {
   email: '',
-  userProfile: {},
+  currentUser: {},
 }
 
 Header.propTypes = {
   email: PropTypes.string,
-  userProfile: PropTypes.object,
+  currentUser: PropTypes.object,
 }
 
 export default Header

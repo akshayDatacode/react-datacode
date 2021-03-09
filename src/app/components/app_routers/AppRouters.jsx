@@ -1285,7 +1285,7 @@ const mapDispatchToProps = {
 };
 
 const mapStateToProps = ({ app, user }) => ({
-  currentUser: user.currentUser ? user.currentUser.data : {},
+  currentUser: user.currentUser ? user.currentUser : {},
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(AppRouters);

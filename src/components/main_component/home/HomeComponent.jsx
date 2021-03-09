@@ -25,7 +25,7 @@ class HomeComponent extends Component {
           <title>Datacode | Computer Science Learning Community</title>
         </Helmet>
         <div className="landing-carousel">
-          <CarouselComponent name={this.props.userProfile && this.props.userProfile.firstName} />
+          <CarouselComponent name={this.props.currentUser && this.props.currentUser.firstName} />
         </div>
         <h3 className="activities my-3 my-md-5">Activities for you!!!</h3>
         <div className="row m-0 home">
@@ -148,13 +148,13 @@ class HomeComponent extends Component {
 
 HomeComponent.defaultProps = {
   name: "",
-  userProfile: {},
+  currentUser: {},
   firstName: "",
 };
 
 HomeComponent.propTypes = {
   name: PropTypes.string,
-  userProfile: PropTypes.object,
+  currentUser: PropTypes.object,
   firstName: PropTypes.string,
 };
 

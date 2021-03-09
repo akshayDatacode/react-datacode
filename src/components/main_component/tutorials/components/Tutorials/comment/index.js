@@ -6,7 +6,7 @@ import { commentTutorial } from "../../../actions";
 
 const mapStateToProps = ({ tutorial, user }) => ({
   tutorialsList: tutorial.tutorialsList,
-  userData: user.currentUser && user.currentUser.data,
+  userData: user.currentUser ? user.currentUser : {},
 });
 
 const mapDispatchToProps = {

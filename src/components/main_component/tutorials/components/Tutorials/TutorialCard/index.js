@@ -7,8 +7,7 @@ import { saveToLibrary, unsaveFromLibrary } from "../../../../../user/actions";
 
 const mapStateToProps = ({ tutorial, user }) => ({
   tutorialsList: tutorial.tutorialsList,
-  userData: user.currentUser ? user.currentUser.data : {},
-  userProfile: user.userProfile ? user.userProfile : {},
+  userData: user.currentUser ? user.currentUser : {},
 });
 
 const mapDispatchToProps = {

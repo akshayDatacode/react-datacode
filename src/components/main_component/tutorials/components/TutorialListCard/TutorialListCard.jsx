@@ -11,13 +11,12 @@ const TutorialListCard = ({
   likeTutorial,
   unlikeTutorial,
   likesCount,
-  userData: { userName, email },
+  userData,
+  userData: { userName, email, myTutorialsLibrary },
   saveToLibrary,
   unsaveFromLibrary,
   tutorial,
-  userProfile,
   removeTutorial,
-  userProfile: { myTutorialsLibrary },
   handleEditTutorial,
   handleGetTutorialByUserName,
 }) => {
@@ -35,7 +34,7 @@ const TutorialListCard = ({
       })
     }
 
-    if (userProfile && userProfile.myTutorialsLibrary) {
+    if (userData && userData.myTutorialsLibrary) {
       myTutorialsLibrary.map((item) => {
         if (item.id === tutorial.id) {
           return setSaved(true)
@@ -162,7 +161,6 @@ TutorialListCard.defaultProps = {
   userData: {},
   tutorial: {},
   myTutorialsLibrary: [],
-  userProfile: {},
 }
 
 TutorialListCard.propTypes = {
@@ -172,7 +170,6 @@ TutorialListCard.propTypes = {
   userData: PropTypes.object,
   tutorial: PropTypes.object,
   myTutorialsLibrary: PropTypes.array,
-  userProfile: PropTypes.object,
 }
 
 export default TutorialListCard

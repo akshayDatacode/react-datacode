@@ -2,6 +2,7 @@ import * as constants from "../constants";
 
 const setLocalUser = (state, action) => {
   localStorage.setItem("userDetails", JSON.stringify(action.payload));
+  console.log("local Redux User", action.payload);
   return {
     ...state,
     error: null,

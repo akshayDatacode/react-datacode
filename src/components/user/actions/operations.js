@@ -15,7 +15,7 @@ export const loginUser = (user) => (dispatch) => {
     .post(`${baseURL}user/login`, user)
     .then((res) => {
       if (res.status === 200) {
-        dispatch(actions.setLoginUser(res.data));
+        dispatch(actions.setLoginUser(res.data.data));
         return { success: true, data: res.data };
       } else {
         return { success: false };
@@ -35,7 +35,7 @@ export const signupUser = (user) => (dispatch) => {
     .then((res) => {
       console.log("ssss", res);
       if (res.status === 200) {
-        dispatch(actions.setSignupUser(res.data));
+        dispatch(actions.setSignupUser(res.data.data));
         console.log("Signed yu", res.data);
         return { success: true, data: res.data };
       }
@@ -82,15 +82,33 @@ export const getUserProfile = (email) => (dispatch) => {
     });
 };
 
-export const editUserProfile = (user) => (dispatch) => {
+export const getCurrentUserProfile = (email) => (dispatch) => {
+  dispatch({ type: SET_USER_PROFILE_LOADING });
+  return axios
+    .post(`${baseURL}/user/get-profile`, { email })
+    .then(({ data }) => {
+      if (data.success) {
+        console.log("User Profile:__", data.userProfile);
+        dispatch(actions.setLocalUser(data.userProfile));
+        return { success: true, data: data.userProfile };
+      }
+    })
+    .catch((error) => {
+      dispatch({ type: SET_USER_PROFILE_LOADING });
+      console.log("get userProfile error", error);
+    });
+};
+
+export const editCurrentUser = (user) => (dispatch) => {
   dispatch({ type: SET_USER_PROFILE_LOADING });
   return axios
     .put(`${baseURL}/user/edit-profile`, user)
     .then(({ data }) => {
       if (data.success) {
-        console.log("User Profile:__", data.userProfile);
-        dispatch(actions.setUserProfile(data.userProfile));
-        return { success: true, data: data.userProfile };
+        debugger;
+        console.log("User Profile:__", data.updatedUser);
+        dispatch(getCurrentUserProfile(data.updatedUser.email));
+        return { success: true, data: data.updatedUser };
       }
     })
     .catch((error) => {
@@ -131,7 +149,7 @@ export const saveToLibrary = (data) => (dispatch) => {
     .put(`${baseURL}/user/save-to-library`, data)
     .then(({ data }) => {
       if (data.success) {
-        dispatch(actions.setUserProfile(data.user));
+        dispatch(actions.setLocalUser(data.user));
         return { success: true, data: data.user };
       }
     })
@@ -146,7 +164,7 @@ export const unsaveFromLibrary = (data) => (dispatch) => {
     .then(({ data }) => {
       if (data.success) {
         console.log("User Profile:__", data.userProfile);
-        dispatch(actions.setUserProfile(data.user));
+        dispatch(actions.setLocalUser(data.user));
         return { success: true, data: data.userProfile };
       }
     })

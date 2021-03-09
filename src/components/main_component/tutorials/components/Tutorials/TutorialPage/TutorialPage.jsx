@@ -7,7 +7,7 @@ import Comment from "../comment"
 
 const TutorialPage = ({
   match: { params: { id } },
-  userData: { userName, email },
+  userData: { userName, email, myTutorialsLibrary },
   getTutorialById,
   tutorial,
   tutorial: { tags },
@@ -15,8 +15,6 @@ const TutorialPage = ({
   likeTutorial,
   saveToLibrary,
   unsaveFromLibrary,
-  userProfile,
-  userProfile: { myTutorialsLibrary }
 }) => {
 
   const [techDetails, setTechDetails] = useState({})
@@ -40,7 +38,7 @@ const TutorialPage = ({
             }
           })
         }
-        if (userProfile && userProfile.myTutorialsLibrary) {
+        if (userData && userData.myTutorialsLibrary) {
           myTutorialsLibrary.map((item) => {
             if (item.id === id) {
               return setSaved(true)

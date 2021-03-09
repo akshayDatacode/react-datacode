@@ -16,8 +16,8 @@ const AddTutorial = ({
   initialize,
   addTutorial,
   getTutorialByUserName,
-  userProfile,
-  userProfile: { userName },
+  currentUser,
+  currentUser: { userName },
   addTutorialLoading,
   tutorialListLoading,
   tutorialByUser,
@@ -30,13 +30,13 @@ const AddTutorial = ({
   const [tags, setTags] = useState([])
 
   useEffect(() => {
-    console.log("qqqq", userProfile)
+    console.log("qqqq", currentUser)
     // const userName = currentUser
     if (userName) {
       handleGetTutorialByUserName()
     }
     window.scrollTo(0, 0);
-  }, [userProfile])
+  }, [userName])
 
   const handleGetTutorialByUserName = () => {
     getTutorialByUserName(userName).then((res) => {
@@ -317,12 +317,14 @@ AddTutorial.defaultProps = {
   userName: '',
   tutorialsList: [],
   addTutorialLoading: false,
-  tutorialListLoading: false
+  tutorialListLoading: false,
+  currentUser: {},
 }
 
 AddTutorial.propTypes = {
   userName: PropTypes.string,
   tutorialsList: PropTypes.array,
+  currentUser: PropTypes.object,
 }
 
 export default reduxForm({

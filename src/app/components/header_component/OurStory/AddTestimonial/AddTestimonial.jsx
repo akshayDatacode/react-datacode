@@ -12,7 +12,7 @@ const AddTestimonial = ({
   handleSubmit,
   submitting,
   initialize,
-  userProfile,
+  currentUser,
   setUserImgDetails,
   fetchTestimonials,
   showAddTestimonial,
@@ -35,10 +35,10 @@ const AddTestimonial = ({
       setImgUrl(editTestimonialData && editTestimonialData.imgUrl)
       initialize(editTestimonialData)
     } else {
-      setImgUrl(userProfile && userProfile.imgUrl)
-      initialize(userProfile)
+      setImgUrl(currentUser && currentUser.imgUrl)
+      initialize(currentUser)
     }
-  }, [userProfile, editTestimonialData])
+  }, [currentUser, editTestimonialData])
 
   const postUserImgDetails = () => {
     const data = new FormData()
