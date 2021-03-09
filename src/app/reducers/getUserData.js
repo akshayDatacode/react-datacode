@@ -53,6 +53,7 @@ const setIsEditTestimonial = (state, action) => {
     isEditTestimonial: !state.isEditTestimonial,
     editTestimonialData: action.payload,
     showTestimonial: !state.showTestimonial,
+    addTestimonialLoading: false,
   };
 };
 

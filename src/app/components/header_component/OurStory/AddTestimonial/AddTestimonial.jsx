@@ -63,7 +63,6 @@ const AddTestimonial = ({
           reset('testimonial')
           initialize({})
           setEditTestimonial({})
-          showAddTestimonial()
           fetchTestimonials()
         }
       })
