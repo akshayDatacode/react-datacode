@@ -69,29 +69,37 @@ const TechTutorials = ({
       <div className="row m-0 category-page">
         <div className="col-12 p-md-5 p-2">
           <div className="row m-0 category-header ">
-            <div className="col-12 col-md-6 pt-4 left-header-section px-md-5 px-2">
-              <div className="nav">
-                <p className="nav-link px-0"><Link to="/home">Library</Link> / <Link to="/index_technologies">Tutorials</Link> / <Link to={`/tutorials/${techDetails && techDetails.technology}`}>{`${techDetails && techDetails.title} Tutorial`}</Link></p>
+            <div className="col-12">
+              <div className="row m-0">
+                <div className="col-12 px-0">
+                  <div className="nav p-0">
+                    <p className="nav-link pt-2"><Link to="/home">Library</Link> / <Link to="/index_technologies">Tutorials</Link> / <Link to={`/tutorials/${techDetails && techDetails.technology}`}>{`${techDetails && techDetails.title} Tutorial`}</Link></p>
+                  </div>
+                </div>
               </div>
-              <h2>{techDetails && techDetails.title}</h2>
-              <h1>Tutorials & Courses</h1>
-              <p>From building websites to analyzing data, the choice is yours. Find the best of the best courses to learn from...</p>
-            </div>
-            <div className="col-12 col-md-6 text-center d-flex justify-content-right right-header-section">
-              {techData.map((item) => (
-                (item.technology === technology) &&
-                <img
-                  height="400px"
-                  width="400px"
-                  src={require(`../../../../../../assets/images/svg/${item.svgSource}`)}
-                  alt="avatar"
-                  className="text-right img-fluid img-circle d-block"
-                />
-              ))
-              }
+              <div className="row m-0">
+                <div className="col-6 pt-md-4 pt-1 left-header-section px-md-3 px-0">
+                  <h2>{techDetails && techDetails.title}</h2>
+                  <h1>Tutorials & Courses</h1>
+                  <p className="desktop-tutorial-text">From building websites to analyzing data, the choice is yours. Find the best of the best courses to learn from...</p>
+                </div>
+                <div className="col-6 right-header-section">
+                  {techData.map((item) => (
+                    (item.technology === technology) &&
+                    <img
+                      height="400px"
+                      width="400px"
+                      src={require(`../../../../../../assets/images/svg/${item.svgSource}`)}
+                      alt="avatar"
+                      className="tech-turorial-img"
+                    />
+                  ))
+                  }
+                </div>
+              </div>
             </div>
           </div>
-          <h2 className="my-5 text-center">{`Find Best ${techDetails.title} Tutorials and Courses`}</h2>
+          <h2 className="my-md-5 mt-5 mb-2 text-center">{`Find Best ${techDetails.title} Tutorials and Courses`}</h2>
           <div className="row m-0">
             <div className="col-12 col-sm-12 col-md-3 pt-2 main">
               <Filter

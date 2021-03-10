@@ -91,6 +91,11 @@ const TutorialListCard = ({
     })
   }
 
+  const handleDescription = (description) => {
+    if (description) {
+      return description.slice(0, 200)
+    }
+  }
 
   return (
     <>
@@ -100,7 +105,8 @@ const TutorialListCard = ({
             <img
               // height="150px"
               // width="150px"
-              src={require(`../../../../../assets/images/svg/Python.png`)}
+              // src={require(`../../../../../assets/images/svg/Python.png`)}
+              src={tutorial.img}
               alt="avatar"
               className="card-img-top mx-auto mt-3 img-fluid img-circle d-block"
             />
@@ -139,7 +145,7 @@ const TutorialListCard = ({
           </div>
           <Link to={`/tutorial/${id}`}><h6>{title}</h6></Link>
           <p>
-            A little bit discription about the course and also
+            {`${handleDescription(tutorial && tutorial.description)}...`}
           </p>
         </div>
       </div>

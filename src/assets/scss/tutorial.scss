@@ -1,7 +1,7 @@
 .category-page {
   .category-header {
     border: solid 2px #30006d;
-    border-radius: 10px;
+    border-radius: 7px;
     align-items: center;
     .left-header-section {
       align-items: center;
@@ -15,11 +15,11 @@
         font-size: 40px;
         align-items: center;
       }
-      .nav-link {
-        font-size: 16px;
-        font-weight: 700;
-        color: black;
-      }
+    }
+    .nav-link {
+      font-size: 16px;
+      font-weight: 700;
+      color: black;
     }
   }
 
@@ -28,7 +28,7 @@
     height: 50px;
     width: 100%;
     border: solid 2px #30006d;
-    border-radius: 10px;
+    border-radius: 7px;
     outline: none;
   }
   .search-icon {
@@ -109,7 +109,7 @@
 
 .tutorial-community-card {
   border: solid 2px #30006d;
-  border-radius: 15px;
+  border-radius: 7px;
   justify-content: center;
   align-items: center;
   h2 {
@@ -448,6 +448,7 @@
   top: 16px;
   color: gray;
 }
+// Mobile visible=-------
 
 @media (max-width: 767px) {
   h2 {
@@ -477,25 +478,44 @@
     .category-header {
       .left-header-section {
         h1 {
-          font-size: 40px;
-          text-align: center;
+          font-size: 27px;
+          text-align: left;
         }
         h2 {
-          font-size: 33px;
-          text-align: center;
+          font-size: 22px;
+          text-align: left;
         }
-        p {
-          text-align: center;
-          font-size: 16px;
-          margin-top: 10px;
-          padding: 0 10px 0 10px;
+        .desktop-tutorial-text {
+          display: none;
+        }
+        // p {
+        //   text-align: center;
+        //   font-size: 16px;
+        //   margin-top: 10px;
+        //   padding: 0 10px 0 10px;
+        // }
+      }
+      .right-header-section {
+        img {
+          position: relative;
+          right: 34px;
+          padding: 5px;
+          height: 150px;
+          width: 190px;
+        }
+        .tech-turorial-img {
+          text-align: right;
+          height: 100px;
+          width: 100px;
+          position: relative;
+          right: -30px;
         }
       }
     }
     .tutorial-community-card {
       border: none;
       h2 {
-        font-size: 30px;
+        font-size: 26px;
         margin-top: 15px;
       }
       .flow-card {
@@ -542,5 +562,11 @@
     overflow-y: hidden;
     display: flex;
     white-space: nowrap;
+  }
+}
+
+@media (min-width: 767px) {
+  .mobile-tutorial-text {
+    display: none;
   }
 }

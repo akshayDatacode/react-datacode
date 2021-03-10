@@ -4,6 +4,7 @@ import Header from "./Header";
 // import NavbarComponent from "./NavbarComponent";
 import SideDrawer from "../side_drawer/SideDrawer";
 import BackDrop from "../back_drop/BackDrop";
+import { Link } from "react-router-dom";
 
 const IndexHeader = ({
   isShowAddTutorial,
@@ -36,6 +37,18 @@ const IndexHeader = ({
 
   return (
     <>
+      <div className="row m-0 header-upper">
+        <div className="col-12 px-0 text-right">
+          <div className="px-2 col-12">
+            <Link to="/our_story">
+              <span className="mx-2">Our Story</span>
+            </Link>
+            <Link to="/our_partners">
+              <span className="mx-2">Our Partners</span>
+            </Link>
+          </div>
+        </div>
+      </div>
       <Header userProfileLoading={userProfileLoading} currentUser={currentUser} logoutUser={logoutUser} drawerClickHandler={drawerToggleClickHandler} isShowAddTutorial={isShowAddTutorial} />
       {/* /<HeaderComponent /> */}
       {/* <HeaderComponent 

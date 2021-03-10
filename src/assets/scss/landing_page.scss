@@ -194,6 +194,21 @@
   }
   .carousel-card {
     height: auto;
+    h1 {
+      font-size: 29px;
+    }
+    h2 {
+      font-size: 17px;
+    }
+    .heading-second {
+      font-size: 20px;
+    }
+    .qoute {
+      display: none;
+    }
+    .get-started-button {
+      margin-top: 5px;
+    }
   }
   .news-letter-section {
     height: auto;

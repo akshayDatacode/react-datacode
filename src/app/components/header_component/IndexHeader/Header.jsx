@@ -169,7 +169,7 @@ const Header = ({
                       />}
                   </Link>
                   <UncontrolledDropdown setActiveFromChild className="profile-dropdown">
-                    <DropdownToggle tag="a" className="ml-3">
+                    <DropdownToggle tag="a" className="ml-1">
                       <i className="far fa-angle-down" />
                     </DropdownToggle>
                     <DropdownMenu className="dropdown-menu mt-3" right>

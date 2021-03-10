@@ -116,6 +116,22 @@
   top: -80px;
 }
 
+.header-upper {
+  a {
+    text-decoration: none;
+  }
+  :hover {
+    color: #30006b;
+  }
+  padding: 5px 0 5px 0;
+  span {
+    color: #673de6;
+    font-size: 12px;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+}
+
 // Our Story SCSS
 
 .our-story-header,
@@ -263,6 +279,10 @@
         height: 30px;
       }
     }
+  }
+  .header-upper {
+    justify-content: center;
+    display: flex;
   }
 
   .header-text {

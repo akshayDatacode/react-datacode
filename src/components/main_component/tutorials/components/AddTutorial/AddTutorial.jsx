@@ -47,9 +47,8 @@ const AddTutorial = ({
     })
   }
 
-  const onSubmit = (values) => {
+  const onSubmit = async (values) => {
     const tutorial = { ...values }
-    linkPreview(tutorial.link)
 
     if (isEdit) {
       editTutorial(tutorial).then((res) => {
@@ -60,16 +59,24 @@ const AddTutorial = ({
         }
       })
     } else {
-      tutorial['userName'] = userName
-      tutorial['id'] = Math.random().toString(36).substr(4, 9)
-      const tags = [tutorial.cost, tutorial.type, tutorial.level]
-      tutorial['tags'] = tags
-      console.log("tutorial", tutorial)
-      addTutorial(tutorial).then((res) => {
-        if (res && res.success) {
-          handleGetTutorialByUserName()
-          // setTags([])
-          reset('tutorial')
+      await linkPreview(tutorial.link).then((res) => {
+        if (res && res.linkPrev) {
+          const { image, title, description, url } = res.linkPrev
+          tutorial['img'] = image
+          tutorial['title'] = title
+          tutorial['description'] = description
+          tutorial['userName'] = userName
+          tutorial['id'] = Math.random().toString(36).substr(4, 9)
+          const tags = [tutorial.cost, tutorial.type, tutorial.level]
+          tutorial['tags'] = tags
+          console.log("tutorial", tutorial)
+          addTutorial(tutorial).then((res) => {
+            if (res && res.success) {
+              handleGetTutorialByUserName()
+              // setTags([])
+              reset('tutorial')
+            }
+          })
         }
       })
     }
@@ -113,7 +120,7 @@ const AddTutorial = ({
             <h1 className="text-center align-items-center">{isEdit ? 'Edit Tutorial' : 'Add Tutorial'}</h1>
 
             <form className="" onSubmit={handleSubmit(onSubmit)}>
-              <div>
+              {/* <div>
                 <Field
                   name="title"
                   type="text"
@@ -122,7 +129,7 @@ const AddTutorial = ({
                   placeholder=""
                   validate={[required]}
                 />
-              </div>
+              </div> */}
               <div>
                 <Field
                   name="link"
@@ -131,6 +138,7 @@ const AddTutorial = ({
                   label='Enter Tutorial Link'
                   placeholder=""
                   validate={[required]}
+                  isDisabled={isEdit ? true : false}
                 />
               </div>
               <div className="mt-3">

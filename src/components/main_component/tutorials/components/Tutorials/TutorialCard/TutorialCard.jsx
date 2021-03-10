@@ -14,6 +14,7 @@ const TutorialCard = ({
   saveToLibrary,
   unsaveFromLibrary,
   tutorial,
+  tutorial: { img, description, link },
   handleTutorialList,
 }) => {
 
@@ -79,17 +80,30 @@ const TutorialCard = ({
     })
   }
 
+  const handleDescription = (description) => {
+    if (description) {
+      return description.slice(0, 100)
+    }
+  }
+
   return (
     <>
       <div className="col-12 col-md-3 tutorial-card mx-4 mt-md-3 mt-4">
         <Link to={`/tutorial/${id}`}>
           <img
+            height="300px"
+            width="300px"
+            src={img ? img : require(`../../../../../../assets/images/svg/Python.png`)}
+            alt="avatar"
+            className="text-center my-auto mx-auto img-fluid img-circle d-block"
+          />
+          {/* <img
             height="150px"
             width="150px"
-            src={require(`../../../../../../assets/images/svg/Python.png`)}
+            src={tutorial.img ? tutorial.img : require(`../../../../../../assets/images/svg/Python.png`)}
             alt="avatar"
           // className="card-img-top mx-auto img-fluid img-circle d-block"
-          />
+          /> */}
         </Link>
         <div className="row m-0 mt-3 mb-2 text-right p-0">
           <div className="col-12 p-0 text-right">
@@ -120,8 +134,8 @@ const TutorialCard = ({
         </div>
         <Link to={`/tutorial/${id}`}><h6>{title}</h6></Link>
         <p>
-          A little bit discription about the course and also
-              </p>
+          {`${handleDescription(description)}...`}
+        </p>
       </div>
     </>
   )

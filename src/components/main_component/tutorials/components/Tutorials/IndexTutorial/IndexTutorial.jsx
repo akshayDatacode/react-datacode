@@ -83,21 +83,22 @@ const IndexTutorial = ({
       <div className="row m-0 category-page">
         <div className="col-12 p-md-5 p-2">
           <div className="row m-0 category-header ">
-            <div className="col-12 col-md-6 pt-4 left-header-section px-md-5 px-2">
+            <div className="col-6 pt-md-4 pt-0 left-header-section px-md-5 px-2">
               <h1>Tutorials & Courses</h1>
-              <p>From building websites to analyzing data, the choice is yours. Find the best of the best courses to learn from...</p>
+              <p className="desktop-tutorial-text">From building websites to analyzing data, the choice is yours. Find the best of the best courses to learn from...</p>
             </div>
-            <div className="col-12 col-md-6 text-center d-flex justify-content-right right-header-section">
+            <div className="col-6 text-center d-flex justify-content-right right-header-section">
               <img
-                height="600px"
-                width="600px"
+                height="300px"
+                width="500px"
                 src={require(`../../../../../../assets/images/svg/tutorial.png`)}
                 alt="avatar"
-                className="text-center img-fluid img-circle d-block"
+                className="text-center"
               />
             </div>
           </div>
-          <div className="row m-0 mt-5 p-0 tutorial-community-card">
+          <p className="text-center mt-3 mobile-tutorial-text">From building websites to analyzing data, the choice is yours. Find the best of the best courses to learn from...</p>
+          <div className="row m-0 mt-md-5 mt-3 p-0 tutorial-community-card">
             <div className="col-12 col-md-4 text-center">
               <h2 className="text-center ">Let's start, learning with community</h2>
               <p className="text-center">How it works?</p>

@@ -29,20 +29,21 @@ export const addTutorial = (tutorial) => (dispatch) => {
 };
 
 export const linkPreview = (link) => (dispatch) => {
-  dispatch({ type: SET_ADD_TUTORIAL_LOADING });
+  const data = {
+    key: "3d1af686ac55371d129d64d81d3f2625",
+    q: link,
+  };
   return axios
-    .post(`${baseURL}/tutorial/link_preview`, { link })
+    .post(`https://api.linkpreview.net`, data)
     .then((res) => {
       if (res.status === 200) {
-        dispatch({ type: SET_ADD_TUTORIAL_LOADING });
-        console.log("Tutorial", res.data);
-        return { success: true };
+        console.log("Tutorial Link PRiw", res.data);
+        return { success: true, linkPrev: res.data };
       } else {
         return { success: false };
       }
     })
     .catch((error) => {
-      dispatch({ type: SET_ADD_TUTORIAL_LOADING });
       console.log("Add Tutorial Error", error);
     });
 };

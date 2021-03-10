@@ -11,7 +11,7 @@ const TutorialPage = ({
   userData: { userName, email, myTutorialsLibrary },
   getTutorialById,
   tutorial,
-  tutorial: { tags },
+  tutorial: { tags, img, description, link },
   unlikeTutorial,
   likeTutorial,
   saveToLibrary,
@@ -88,7 +88,11 @@ const TutorialPage = ({
     })
   }
 
-
+  const handleDescription = (description) => {
+    if (description) {
+      return description.slice(0, 200)
+    }
+  }
 
   console.log("tech details", techDetails)
 
@@ -112,7 +116,9 @@ const TutorialPage = ({
                   </div>
                 </div>
               </div>
-              <p>From building websites to analyzing data, the choice is yours. Find the best of the best courses to learn from...</p>
+              <p>
+                {`${handleDescription(description)}...`}
+              </p>
               <a target="blank" href={techDetails && techDetails.link}>
                 <button className="text-center btn start-learning-btn">
                   Start Learning
@@ -120,7 +126,7 @@ const TutorialPage = ({
               </a>
             </div>
             <div className="col-12 col-md-6 text-center d-flex justify-content-right right-header-section">
-              {techData.map((item) => (
+              {/* {techData.map((item) => (
                 (item.id === id) &&
                 <img
                   height="300px"
@@ -130,7 +136,14 @@ const TutorialPage = ({
                   className="text-right img-fluid img-circle d-block"
                 />
               ))
-              }
+              } */}
+              <img
+                height="300px"
+                width="300px"
+                src={img ? img : require(`../../../../../../assets/images/svg/Python.png`)}
+                alt="avatar"
+                className="text-right my-auto mx-auto img-fluid img-circle d-block"
+              />
             </div>
           </div>
           <div className="row m-0 mt-5 align-items-center">
