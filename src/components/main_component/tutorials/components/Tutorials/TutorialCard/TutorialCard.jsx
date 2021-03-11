@@ -18,8 +18,6 @@ const TutorialCard = ({
   handleTutorialList,
 }) => {
 
-  console.log("likedddds", likesCount)
-
   const [isLiked, setLiked] = useState()
   const [isSaved, setSaved] = useState()
   // const [likeCount, setLikeCount] = useState(likesCount)

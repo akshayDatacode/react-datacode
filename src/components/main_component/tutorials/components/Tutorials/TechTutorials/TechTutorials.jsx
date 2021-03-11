@@ -39,7 +39,6 @@ const TechTutorials = ({
 
   const tutorialsPerPage = 3
   const pagesVisited = pageNumber * tutorialsPerPage
-  console.log("tutorialsList", tutorialsList)
 
   const handleFilter = (event) => {
     if (event.target.checked && event.target.name) {

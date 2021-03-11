@@ -148,7 +148,7 @@ const Header = ({
                 </Link>
                 :
                 <div className="header-profile d-flex align-items-center">
-                  <Link to={`/my_profile/${currentUser && currentUser.email}`}>
+                  <Link to={`/my_profile/${currentUser && currentUser.userName}`}>
                     {userProfileLoading ?
                       <div className="rounded-circle header-profile-img">
                         <Loader
@@ -174,7 +174,7 @@ const Header = ({
                     </DropdownToggle>
                     <DropdownMenu className="dropdown-menu mt-3" right>
                       <DropdownItem header><span>{currentUser && currentUser.firstName}</span></DropdownItem>
-                      <DropdownItem><Link to={`/my_profile/${currentUser.email}`}><span><i className="fas fa-user mr-2" />My Profile</span></Link></DropdownItem>
+                      <DropdownItem><Link to={`/my_profile/${currentUser.userName}`}><span><i className="fas fa-user mr-2" />My Profile</span></Link></DropdownItem>
                       <DropdownItem><Link to={`/my_library`}><span> <i className="fas fa-window-restore mr-2" />My Library</span></Link></DropdownItem>
                       <DropdownItem><Link to="/edit_profile"><span><i className="far fa-user-edit mr-2" />Edit Profile</span></Link></DropdownItem>
                       <DropdownItem>

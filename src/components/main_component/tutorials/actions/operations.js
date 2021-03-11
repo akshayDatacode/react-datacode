@@ -6,6 +6,7 @@ import {
   SET_ADD_TUTORIAL_LOADING,
   SET_TUTORIALS_LIST_LOADING,
 } from "../constants";
+import { getUserProfile } from "../../../user/actions";
 
 const baseURL = DatacodeConfig.baseURL;
 
@@ -70,6 +71,7 @@ export const getTutorialById = (id) => (dispatch) => {
     .post(`${baseURL}/tutorial/get_tutorial`, { id })
     .then(({ data }) => {
       if (data.success) {
+        dispatch(getUserProfile(data.tutorial.userName));
         dispatch(actions.setTutorialById(data));
         return { success: true, data: data.tutorial };
       }

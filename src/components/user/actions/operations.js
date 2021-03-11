@@ -65,10 +65,10 @@ export const forgotPassword = (user) => (dispatch) => {
     });
 };
 
-export const getUserProfile = (email) => (dispatch) => {
+export const getUserProfile = (userName) => (dispatch) => {
   dispatch({ type: SET_USER_PROFILE_LOADING });
   return axios
-    .post(`${baseURL}/user/get-profile`, { email })
+    .post(`${baseURL}/user/get-profile`, { userName })
     .then(({ data }) => {
       if (data.success) {
         console.log("User Profile:__", data.userProfile);
@@ -82,10 +82,10 @@ export const getUserProfile = (email) => (dispatch) => {
     });
 };
 
-export const getCurrentUserProfile = (email) => (dispatch) => {
+export const getCurrentUserProfile = (userName) => (dispatch) => {
   dispatch({ type: SET_USER_PROFILE_LOADING });
   return axios
-    .post(`${baseURL}/user/get-profile`, { email })
+    .post(`${baseURL}/user/get-profile`, { userName })
     .then(({ data }) => {
       if (data.success) {
         console.log("User Profile:__", data.userProfile);
@@ -107,7 +107,7 @@ export const editCurrentUser = (user) => (dispatch) => {
       if (data.success) {
         debugger;
         console.log("User Profile:__", data.updatedUser);
-        dispatch(getCurrentUserProfile(data.updatedUser.email));
+        dispatch(getCurrentUserProfile(data.updatedUser.userName));
         return { success: true, data: data.updatedUser };
       }
     })

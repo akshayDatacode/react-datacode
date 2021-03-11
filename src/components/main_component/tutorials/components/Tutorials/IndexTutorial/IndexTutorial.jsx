@@ -166,8 +166,8 @@ const IndexTutorial = ({
           <div className="row m-0">
             <div className="col-12 col-md-4 tech-tag-col">
               <ul className="mt-5">
-                {techCategory.map((item) => (
-                  <li className="tech-tag" onClick={() => setShowTechIcon(item.techCategory)}>
+                {techCategory.map((item, i) => (
+                  <li key={i} className="tech-tag" onClick={() => setShowTechIcon(item.techCategory)}>
                     <img
                       height="30px"
                       width="30px"
@@ -182,9 +182,9 @@ const IndexTutorial = ({
             </div>
             <div className="col-12 col-md-8">
               <div className="row m-0 mt-4 px-5 d-flex justify-content-center">
-                {filteredList.map((item) => (
+                {filteredList.map((item, i) => (
                   item.techCategory === showTechIcon &&
-                  <Link to={`/tutorials/${item.technology}`}>
+                  <Link key={i} to={`/tutorials/${item.technology}`}>
                     <div className="col-12 col-md-3 d-flex tech-card">
                       <img
                         height="50px"

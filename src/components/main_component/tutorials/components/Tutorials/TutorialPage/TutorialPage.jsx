@@ -16,6 +16,7 @@ const TutorialPage = ({
   likeTutorial,
   saveToLibrary,
   unsaveFromLibrary,
+  submitter,
 }) => {
 
   const [techDetails, setTechDetails] = useState({})
@@ -94,8 +95,6 @@ const TutorialPage = ({
     }
   }
 
-  console.log("tech details", techDetails)
-
   return (
     <>
       <div className="row m-0 tutorial-page justify-content-center">
@@ -154,14 +153,14 @@ const TutorialPage = ({
                   <img
                     height="100px"
                     width="100px"
-                    src={require(`../../../../../../assets/images/svg/React.png`)}
+                    src={(submitter && submitter.imgUrl) ? submitter.imgUrl : require(`../../../../../../assets/images/svg/React.png`)}
                     alt="avatar"
-                    className="text-right img-fluid img-circle d-block"
+                    className="rounded-circle text-right img-fluid img-circle d-block"
                   />
                 </div>
                 <div className="col-9">
-                  <h6>Akshay Mandliya</h6>
-                  <p>A Compluter Science Student of IPS academy, Love to contribute in community</p>
+                  <h6>{(submitter && submitter.firstName) ? `${submitter.firstName} ${submitter.lastName}` : "Datacode Contributor"}</h6>
+                  <p>{submitter ? submitter.bio : ""}</p>
                 </div>
               </div>
             </div>

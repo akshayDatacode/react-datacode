@@ -5,19 +5,19 @@ import PropTypes from 'prop-types'
 const MyProfile = ({
   getUserProfile,
   match: { params },
-  match: { params: { email } },
+  match: { params: { userName } },
   userProfile,
   currentUser,
 }) => {
 
   useEffect(() => {
-    console.log("email", email)
-    if (email) {
-      getUserProfile(email);
+    console.log("userName", userName)
+    if (userName) {
+      getUserProfile(userName);
     }
-  }, [email])
+  }, [userName])
 
-  const { firstName, branch, university, imgUrl } = userProfile && userProfile
+  const { firstName, branch, university, imgUrl } = userProfile ? userProfile : {}
 
   return (
     <>
@@ -39,7 +39,7 @@ const MyProfile = ({
             <i className="fab fa-twitter-square mr-3" />
             <i className="fab fa-github" />
           </div>
-          {(email === (currentUser && currentUser.email)) &&
+          {(userName === (currentUser && currentUser.userName)) &&
             <Link to="/edit_profile" >
               <div className="btn edit-profile-btn my-3">Edit Profile <i className="fad fa-user-edit ml-2" /></div>
             </Link>

@@ -524,6 +524,15 @@
     }
   }
 
+  .tutorial-page {
+    .left-header-section {
+      order: 2;
+    }
+    .right-header-section {
+      order: 1;
+    }
+  }
+
   .tech-tag-col {
     overflow-x: scroll;
     overflow-y: hidden;

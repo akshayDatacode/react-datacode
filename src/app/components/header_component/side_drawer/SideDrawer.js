@@ -72,7 +72,7 @@ const SideDrawer = ({
                 <div className="header-profile">
                   <Link
                     onClick={() => backDropClickHandler()}
-                    to={`/my_profile/${currentUser.email}`}
+                    to={`/my_profile/${currentUser.userName}`}
                   >
                     {userProfileLoading ? (
                       <div className="rounded-circle header-profile-img">
@@ -117,7 +117,7 @@ const SideDrawer = ({
                       <div className="col-4 text-center">
                         <Link
                           onClick={() => backDropClickHandler()}
-                          to={`/my_profile/${currentUser.email}`}
+                          to={`/my_profile/${currentUser.userName}`}
                         >
                           <i className="fas fa-user" />
                           <p>My Profile</p>

@@ -47,8 +47,8 @@ const EditProfile = ({
     editCurrentUser(user).then((res) => {
       if (res) {
         //  setUserProfile(res.data)
-        console.log("Updated", currentUser && currentUser.email)
-        history.push(`/my_profile/${currentUser && currentUser.email}`)
+        console.log("Updated", currentUser && currentUser.userName)
+        history.push(`/my_profile/${currentUser && currentUser.userName}`)
         reset('editForm')
       } else {
         console.log("Error", res)

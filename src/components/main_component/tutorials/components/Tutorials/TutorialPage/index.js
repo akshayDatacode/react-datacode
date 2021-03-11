@@ -12,6 +12,7 @@ import { saveToLibrary, unsaveFromLibrary } from "../../../../../user/actions";
 const mapStateToProps = ({ tutorial, user }) => ({
   tutorial: tutorial.tutorial,
   userData: user.currentUser ? user.currentUser : {},
+  submitter: user.userProfile ? user.userProfile : {},
 });
 
 const mapDispatchToProps = {
