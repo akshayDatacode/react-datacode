@@ -1,8 +1,14 @@
 import React from 'react'
 import Carousel from 'react-multi-carousel';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const ContributorLanding = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
+
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.

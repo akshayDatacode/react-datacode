@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
+import { handleTextVisibility } from '../../../../../../utils'
+
 const TutorialCard = ({
   id,
   title,
@@ -78,12 +80,6 @@ const TutorialCard = ({
     })
   }
 
-  const handleDescription = (description) => {
-    if (description) {
-      return description.slice(0, 100)
-    }
-  }
-
   return (
     <>
       <div className="col-12 col-md-3 tutorial-card mx-4 mt-md-3 mt-4">
@@ -132,7 +128,7 @@ const TutorialCard = ({
         </div>
         <Link to={`/tutorial/${id}`}><h6>{title}</h6></Link>
         <p>
-          {`${handleDescription(description)}...`}
+          {`${handleTextVisibility(description, 100)}`}
         </p>
       </div>
     </>

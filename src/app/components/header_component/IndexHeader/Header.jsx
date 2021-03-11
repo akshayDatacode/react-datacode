@@ -147,49 +147,72 @@ const Header = ({
                   Add Tutorial
                 </Link>
                 :
-                <div className="header-profile d-flex align-items-center">
-                  <Link to={`/my_profile/${currentUser && currentUser.userName}`}>
-                    {userProfileLoading ?
-                      <div className="rounded-circle header-profile-img">
-                        <Loader
-                          type="Audio"
-                          color="#30006d"
-                          height={40}
-                          width={40}
-                          timeout={8000} //3 secs
-                        />
-                      </div>
-                      :
-                      <img
-                        className="rounded-circle header-profile-img"
-                        height="40"
-                        width="40"
-                        src={(currentUser && currentUser.imgUrl !== "") ? currentUser.imgUrl : require(`../../../../assets/images/svg/monolog.svg`)}
-                        alt="datacode"
-                      />}
-                  </Link>
-                  <UncontrolledDropdown setActiveFromChild className="profile-dropdown">
-                    <DropdownToggle tag="a" className="ml-1">
-                      <i className="far fa-angle-down" />
-                    </DropdownToggle>
-                    <DropdownMenu className="dropdown-menu mt-3" right>
-                      <DropdownItem header><span>{currentUser && currentUser.firstName}</span></DropdownItem>
-                      <DropdownItem><Link to={`/my_profile/${currentUser.userName}`}><span><i className="fas fa-user mr-2" />My Profile</span></Link></DropdownItem>
-                      <DropdownItem><Link to={`/my_library`}><span> <i className="fas fa-window-restore mr-2" />My Library</span></Link></DropdownItem>
-                      <DropdownItem><Link to="/edit_profile"><span><i className="far fa-user-edit mr-2" />Edit Profile</span></Link></DropdownItem>
-                      <DropdownItem>
-                        <Link to="/" onClick={() => logoutUser()}>
-                          <li>
-                            <span>
-                              <FontAwesomeIcon icon={faSignOutAlt} className="mr-2" />{" "}
+                <>
+                  <div className="header-profile d-flex align-items-center">
+                    <UncontrolledDropdown setActiveFromChild className="profile-dropdown">
+                      <DropdownToggle tag="a" className="mr-3">
+                        <i className="far fa-plus" />
+                      </DropdownToggle>
+                      <DropdownMenu className="dropdown-menu mt-3" right>
+                        <DropdownItem header><span>Add Contribution</span></DropdownItem>
+                        <DropdownItem><Link to={`/add_tutorial`}><span><i className="fas fa-user mr-2" />Add Tutorials</span></Link></DropdownItem>
+                        <DropdownItem><Link to={`/contact_us`}><span><i className="fas fa-window-restore mr-2" />Report Bug</span></Link></DropdownItem>
+                        <DropdownItem><Link to="/contact_us"><span><i className="far fa-user-edit mr-2" />Ask Feature</span></Link></DropdownItem>
+                        <DropdownItem>
+                          <Link to="/" onClick={() => logoutUser()}>
+                            <li>
+                              <span>
+                                <FontAwesomeIcon icon={faSignOutAlt} className="mr-2" />{" "}
                               Log out
                             </span>
-                          </li>
-                        </Link>
-                      </DropdownItem>
-                    </DropdownMenu>
-                  </UncontrolledDropdown>
-                </div>
+                            </li>
+                          </Link>
+                        </DropdownItem>
+                      </DropdownMenu>
+                    </UncontrolledDropdown>
+                    <Link to={`/my_profile/${currentUser && currentUser.userName}`}>
+                      {userProfileLoading ?
+                        <div className="rounded-circle header-profile-img">
+                          <Loader
+                            type="Audio"
+                            color="#30006d"
+                            height={40}
+                            width={40}
+                            timeout={8000} //3 secs
+                          />
+                        </div>
+                        :
+                        <img
+                          className="rounded-circle header-profile-img"
+                          height="40"
+                          width="40"
+                          src={(currentUser && currentUser.imgUrl !== "") ? currentUser.imgUrl : require(`../../../../assets/images/svg/monolog.svg`)}
+                          alt="datacode"
+                        />}
+                    </Link>
+                    <UncontrolledDropdown setActiveFromChild className="profile-dropdown">
+                      <DropdownToggle tag="a" className="ml-1">
+                        <i className="far fa-angle-down" />
+                      </DropdownToggle>
+                      <DropdownMenu className="dropdown-menu mt-3" right>
+                        <DropdownItem header><span>{currentUser && currentUser.firstName}</span></DropdownItem>
+                        <DropdownItem><Link to={`/my_profile/${currentUser.userName}`}><span><i className="fas fa-user mr-2" />My Profile</span></Link></DropdownItem>
+                        <DropdownItem><Link to={`/my_library`}><span> <i className="fas fa-window-restore mr-2" />My Library</span></Link></DropdownItem>
+                        <DropdownItem><Link to="/edit_profile"><span><i className="far fa-user-edit mr-2" />Edit Profile</span></Link></DropdownItem>
+                        <DropdownItem>
+                          <Link to="/" onClick={() => logoutUser()}>
+                            <li>
+                              <span>
+                                <FontAwesomeIcon icon={faSignOutAlt} className="mr-2" />{" "}
+                              Log out
+                            </span>
+                            </li>
+                          </Link>
+                        </DropdownItem>
+                      </DropdownMenu>
+                    </UncontrolledDropdown>
+                  </div>
+                </>
               }
             </>
           }

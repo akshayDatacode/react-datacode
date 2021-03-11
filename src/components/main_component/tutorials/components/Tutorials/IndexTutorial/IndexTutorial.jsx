@@ -181,11 +181,11 @@ const IndexTutorial = ({
               </ul>
             </div>
             <div className="col-12 col-md-8">
-              <div className="row m-0 mt-4 px-5 d-flex justify-content-center">
+              <div className="row m-0 mt-4 px-5">
                 {filteredList.map((item, i) => (
-                  item.techCategory === showTechIcon &&
-                  <Link key={i} to={`/tutorials/${item.technology}`}>
-                    <div className="col-12 col-md-3 d-flex tech-card">
+                  (item.techCategory === showTechIcon) &&
+                  <Link key={i} to={`/tutorials/${item.technology}`} className="mx-3 justify-content-center">
+                    <div className="col-12 mx-md-2 d-flex tech-card">
                       <img
                         height="50px"
                         width="50px"
@@ -193,7 +193,7 @@ const IndexTutorial = ({
                         alt="avatar"
                       // className="card-img-top mx-auto img-fluid img-circle d-block"
                       />
-                      <h6 className="ml-3">{item.title}</h6>
+                      <h6 className="ml-3 align-itmes-center">{item.title}</h6>
                     </div>
                   </Link>
                 ))}

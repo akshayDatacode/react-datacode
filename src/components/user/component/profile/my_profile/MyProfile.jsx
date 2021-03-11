@@ -17,7 +17,7 @@ const MyProfile = ({
     }
   }, [userName])
 
-  const { firstName, branch, university, imgUrl } = userProfile ? userProfile : {}
+  const { firstName, branch, university, imgUrl, bio } = userProfile ? userProfile : {}
 
   return (
     <>
@@ -33,7 +33,7 @@ const MyProfile = ({
             />
           </div>
           <h6 className="mt-3 mb-0">{firstName}</h6>
-          <span className="bio">Community Boy | React | I Love Datacode</span>
+          <span className="bio">{bio}</span>
           <div className="mt-3">
             <i className="fab fa-linkedin mr-3" />
             <i className="fab fa-twitter-square mr-3" />

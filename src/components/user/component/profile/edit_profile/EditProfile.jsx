@@ -132,6 +132,13 @@ const EditProfile = ({
                 validate={[required]}
               />
               <Field
+                name="bio"
+                type="text"
+                component={renderInputField}
+                label='Status'
+                placeholder=""
+              />
+              <Field
                 name="email"
                 type="email"
                 component={renderInputField}

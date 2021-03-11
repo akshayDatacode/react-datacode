@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
 import DeleteTutorialModal from './DeleteTutorialModal'
+import { handleTextVisibility } from '../../../../../utils'
 
 const TutorialListCard = ({
   id,
@@ -91,28 +92,22 @@ const TutorialListCard = ({
     })
   }
 
-  const handleDescription = (description) => {
-    if (description) {
-      return description.slice(0, 200)
-    }
-  }
-
   return (
     <>
       <div className="row m-0 tutorial-list-card">
-        <div className="col-3 align-items-center">
+        <div className="col-md-4 col-4 pr-0 align-items-center">
           <Link to={`/tutorial/${id}`}>
             <img
-              // height="150px"
-              // width="150px"
+              height="200px"
+              width="200px"
               // src={require(`../../../../../assets/images/svg/Python.png`)}
               src={tutorial.img}
               alt="avatar"
-              className="card-img-top mx-auto mt-3 img-fluid img-circle d-block"
+              className="mt-3 img-fluid"
             />
           </Link>
         </div>
-        <div className="col-9">
+        <div className="col-md-8 col-8">
           <div className="row m-0 mt-3 mb-2 text-right p-0">
             <div className="col-12 p-0 text-right">
               {likesCount}
@@ -143,9 +138,9 @@ const TutorialListCard = ({
 
             </div>
           </div>
-          <Link to={`/tutorial/${id}`}><h6>{title}</h6></Link>
+          <Link to={`/tutorial/${id}`}><h6>{`${handleTextVisibility(tutorial && tutorial.title, 50)}`}</h6></Link>
           <p>
-            {`${handleDescription(tutorial && tutorial.description)}...`}
+            {`${handleTextVisibility(tutorial && tutorial.description, 200)}`}
           </p>
         </div>
       </div>
@@ -176,6 +171,7 @@ TutorialListCard.propTypes = {
   userData: PropTypes.object,
   tutorial: PropTypes.object,
   myTutorialsLibrary: PropTypes.array,
+  handleTextVisibility: PropTypes.func.isRequired,
 }
 
 export default TutorialListCard

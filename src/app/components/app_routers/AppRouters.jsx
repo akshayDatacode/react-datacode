@@ -1266,6 +1266,7 @@ const AppRouters = ({
         {/* Profile */}
         {/* <Route path="/my_profile/:email" render={authGuard(MyProfile)} /> */}
         <Route path="/my_profile/:userName" component={MyProfile} />
+        <Route path="/profile/:userName" component={MyProfile} />
 
         <Route exact path="/edit_profile" render={authGuard(EditProfile)} />
         <Route exact path="/my_library" render={authGuard(MyLibrary)} />

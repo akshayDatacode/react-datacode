@@ -2,8 +2,10 @@ import React, { useEffect, useState } from 'react'
 import { techData } from '../helpers'
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
+import moment from 'moment'
 
 import Comment from "../comment"
+import { handleTextVisibility } from '../../../../../../utils'
 
 const TutorialPage = ({
   match: { params: { id } },
@@ -11,7 +13,7 @@ const TutorialPage = ({
   userData: { userName, email, myTutorialsLibrary },
   getTutorialById,
   tutorial,
-  tutorial: { tags, img, description, link },
+  tutorial: { tags, img, description, link, createdAt },
   unlikeTutorial,
   likeTutorial,
   saveToLibrary,
@@ -89,24 +91,18 @@ const TutorialPage = ({
     })
   }
 
-  const handleDescription = (description) => {
-    if (description) {
-      return description.slice(0, 200)
-    }
-  }
-
   return (
     <>
       <div className="row m-0 tutorial-page justify-content-center">
         <div className="col-12 p-md-5 p-2">
-          <div className="row m-0 category-header text-center">
-            <div className="col-12 col-md-6 pt-4 left-header-section px-md-5 px-2">
+          <div className="row m-0 category-header">
+            <div className="col-12 col-md-6 pt-4 text-center left-header-section px-md-5 px-2">
               <p className="text-left nav-link px-0"><Link to="/index_technologies">Tutorials</Link> / <Link to={`/tutorials/${techDetails && techDetails.technology}`}>{`${techDetails && techDetails.technology} Tutorial`}</Link> / <Link to={`/tutorials/${techDetails && techDetails.technology}`}>{`${techDetails.title} Course Name`}</Link></p>
               <h2>{techDetails && techDetails.technology}</h2>
               <h1>{techDetails && techDetails.title}</h1>
               <div className="tags-input row m-0">
                 <div className="col-12 p-0">
-                  <div className="tags-area border-0">
+                  <div className="tags-area d-flex justify-content-center border-0">
                     {tags && tags.map((tag, index) => (
                       <div className="tag" key={index}>
                         <span>{tag}</span>
@@ -116,7 +112,7 @@ const TutorialPage = ({
                 </div>
               </div>
               <p>
-                {`${handleDescription(description)}...`}
+                {`${handleTextVisibility(description, 200)}`}
               </p>
               <a target="blank" href={techDetails && techDetails.link}>
                 <button className="text-center btn start-learning-btn">
@@ -147,22 +143,25 @@ const TutorialPage = ({
           </div>
           <div className="row m-0 mt-5 align-items-center">
             <div className="col-12 p-3 col-md-6 submitter-card">
-              <h6>Tutorial Submitted By:-</h6>
-              <div className="row m-0 mt-3">
-                <div className="col-3">
-                  <img
-                    height="100px"
-                    width="100px"
-                    src={(submitter && submitter.imgUrl) ? submitter.imgUrl : require(`../../../../../../assets/images/svg/React.png`)}
-                    alt="avatar"
-                    className="rounded-circle text-right img-fluid img-circle d-block"
-                  />
+              <Link to={`/profile/${submitter && submitter.userName}`}>
+                <h6>Tutorial Submitted By:-</h6>
+                <div className="row m-0 mt-3">
+                  <div className="col-3">
+                    <img
+                      height="50px"
+                      width="50px"
+                      src={(submitter && submitter.imgUrl) ? submitter.imgUrl : require(`../../../../../../assets/images/svg/React.png`)}
+                      alt="avatar"
+                      className="rounded-circle text-right "
+                    />
+                  </div>
+                  <div className="col-9">
+                    <h6>{(submitter && submitter.firstName) ? `${submitter.firstName} ${submitter.lastName}` : "Datacode Contributor"}</h6>
+                    <p>{submitter ? submitter.bio : ""}</p>
+                    <span>{moment(createdAt).fromNow()}</span>
+                  </div>
                 </div>
-                <div className="col-9">
-                  <h6>{(submitter && submitter.firstName) ? `${submitter.firstName} ${submitter.lastName}` : "Datacode Contributor"}</h6>
-                  <p>{submitter ? submitter.bio : ""}</p>
-                </div>
-              </div>
+              </Link>
             </div>
             <div className="col-12 col-md-6 text-center justify-content-space-between">
               <div className="row m-0 mt-5 mt-md-0">
@@ -216,7 +215,10 @@ const TutorialPage = ({
                     alt="avatar"
                     className="mr-2 text-right img-fluid img-circle d-block"
                   />
-                  <h6 className="mb-0">{item.postedBy}</h6>
+                  <div>
+                    <h6 className="mb-0">{item.postedBy}</h6>
+                    <span className="comment-time">{moment(item.createdAt).fromNow()}</span>
+                  </div>
                 </div>
                 <p className="text-left">{item.text}</p>
               </div>
