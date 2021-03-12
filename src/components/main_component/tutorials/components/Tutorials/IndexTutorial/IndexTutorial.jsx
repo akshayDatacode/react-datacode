@@ -151,21 +151,12 @@ const IndexTutorial = ({
           <div className="row m-0">
             <div className="col-12 text-center">
               <h2 className="text-center my-5">Find the Best Programming Courses & Tutorials</h2>
-              <div className="d-flex mx-md-5 mx-2 fontSearch">
-                <input
-                  type="text"
-                  className="search"
-                  value={search}
-                  placeholder="Technology"
-                  onChange={(e) => setSearch(e.target.value)}
-                />
-                <i className="fad fa-search search-icon" />
-              </div>
+
             </div>
           </div>
-          <div className="row m-0">
-            <div className="col-12 col-md-4 tech-tag-col">
-              <ul className="mt-5">
+          <div className='row mx-md-5'>
+            <div className="col-12 tech-tag-col">
+              <ul>
                 {techCategory.map((item, i) => (
                   <li key={i} className="tech-tag" onClick={() => setShowTechIcon(item.techCategory)}>
                     <img
@@ -180,21 +171,31 @@ const IndexTutorial = ({
                 ))}
               </ul>
             </div>
-            <div className="col-12 col-md-8">
-              <div className="row m-0 mt-4 px-5">
+          </div>
+          <div className="row m-0">
+            <div className="col-12">
+              <div className="d-flex mx-md-5 mx-2 fontSearch">
+                <input
+                  type="text"
+                  className="search"
+                  value={search}
+                  placeholder="Technology"
+                  onChange={(e) => setSearch(e.target.value)}
+                />
+                <i className="fad fa-search search-icon" />
+              </div>
+              <div className="row m-0 mt-4 px-md-5 px-0 justify-content-center">
                 {filteredList.map((item, i) => (
                   (item.techCategory === showTechIcon) &&
-                  <Link key={i} to={`/tutorials/${item.technology}`} className="mx-3 justify-content-center">
-                    <div className="col-12 mx-md-2 d-flex tech-card">
-                      <img
-                        height="50px"
-                        width="50px"
-                        src={require(`../../../../../../assets/images/svg/${item.svgSource}`)}
-                        alt="avatar"
-                      // className="card-img-top mx-auto img-fluid img-circle d-block"
-                      />
-                      <h6 className="ml-3 align-itmes-center">{item.title}</h6>
-                    </div>
+                  <Link className="col-12 col-md-2 tech-card" key={i} to={`/tutorials/${item.technology}`}>
+                    <img
+                      height="50px"
+                      width="50px"
+                      src={require(`../../../../../../assets/images/svg/${item.svgSource}`)}
+                      alt="avatar"
+                      className="mr-md-3 mr-4"
+                    />
+                    <h6>{item.title}</h6>
                   </Link>
                 ))}
               </div>

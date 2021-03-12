@@ -32,7 +32,7 @@ const Comment = ({
 
   return (
     <>
-      <form className="d-flex justify-content-center" onSubmit={handleSubmit(onSubmit)}>
+      <form className="d-flex justify-content-center align-items-center" onSubmit={handleSubmit(onSubmit)}>
         <Field
           name="comment"
           type="textarea"
@@ -40,10 +40,10 @@ const Comment = ({
           placeholder="review"
           validate={[required]}
         />
-        <div className="row mt-4 ml-4">
+        <div className="row mt-2 ml-4">
           <div className="col-12 text-right">
             <button type="submit" className="btn btn-primary login-button" disabled={submitting}>
-              Submit
+              Submit Review
               </button>
           </div>
         </div>

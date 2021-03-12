@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { techData } from '../helpers'
+import { techIcon } from '../helpers'
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import moment from 'moment'
@@ -26,7 +26,7 @@ const TutorialPage = ({
   const [isLiked, setLiked] = useState()
 
   useEffect(() => {
-    techData.find((item) => {
+    techIcon.find((item) => {
       if (item.id === id) {
         return setTechDetails(item)
       }
@@ -93,11 +93,11 @@ const TutorialPage = ({
 
   return (
     <>
-      <div className="row m-0 tutorial-page justify-content-center">
+      <div className="row m-0 mt-3 mt-md-0 tutorial-page justify-content-center">
         <div className="col-12 p-md-5 p-2">
           <div className="row m-0 category-header">
             <div className="col-12 col-md-6 pt-4 text-center left-header-section px-md-5 px-2">
-              <p className="text-left nav-link px-0"><Link to="/index_technologies">Tutorials</Link> / <Link to={`/tutorials/${techDetails && techDetails.technology}`}>{`${techDetails && techDetails.technology} Tutorial`}</Link> / <Link to={`/tutorials/${techDetails && techDetails.technology}`}>{`${techDetails.title} Course Name`}</Link></p>
+              <p className="text-left nav-link px-0"><Link to="/index_technologies">Tutorials</Link> / <Link to={`/tutorials/${techDetails && techDetails.technology}`}>{`${techDetails && techDetails.technology} Tutorial`}</Link> / <Link to={`/tutorials/${techDetails && techDetails.technology}`}>{`${handleTextVisibility(techDetails.title, 50)}`}</Link></p>
               <h2>{techDetails && techDetails.technology}</h2>
               <h1>{techDetails && techDetails.title}</h1>
               <div className="tags-input row m-0">
@@ -111,7 +111,7 @@ const TutorialPage = ({
                   </div>
                 </div>
               </div>
-              <p>
+              <p className="mt-3">
                 {`${handleTextVisibility(description, 200)}`}
               </p>
               <a target="blank" href={techDetails && techDetails.link}>
@@ -121,17 +121,6 @@ const TutorialPage = ({
               </a>
             </div>
             <div className="col-12 col-md-6 text-center d-flex justify-content-right right-header-section">
-              {/* {techData.map((item) => (
-                (item.id === id) &&
-                <img
-                  height="300px"
-                  width="300px"
-                  src={require(`../../../../../../assets/images/svg/${item.svgSource}`)}
-                  alt="avatar"
-                  className="text-right img-fluid img-circle d-block"
-                />
-              ))
-              } */}
               <img
                 height="300px"
                 width="300px"
@@ -148,8 +137,8 @@ const TutorialPage = ({
                 <div className="row m-0 mt-3">
                   <div className="col-3">
                     <img
-                      height="50px"
-                      width="50px"
+                      height="100px"
+                      width="100px"
                       src={(submitter && submitter.imgUrl) ? submitter.imgUrl : require(`../../../../../../assets/images/svg/React.png`)}
                       alt="avatar"
                       className="rounded-circle text-right "
@@ -200,8 +189,7 @@ const TutorialPage = ({
               </div>
             </div>
           </div>
-          <div className="m-0 mt-5 comment-section justify-content-center">
-
+          <div className="m-0 mt-5 px-3 comment-section justify-content-center">
             <h6 className="text-center">Write your reviews and comments of this tutorial</h6>
             <p>ask question and provide information that might be helpful to the people taking this course</p>
             <Comment id={id} userName={userName} />
@@ -223,7 +211,6 @@ const TutorialPage = ({
                 <p className="text-left">{item.text}</p>
               </div>
             ))}
-
           </div>
         </div>
       </div>

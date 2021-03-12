@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import ReactPaginate from 'react-paginate'
 
-import { techData, techCategory } from '../helpers'
+import { techData, techCategory, techIcon } from '../helpers'
 import TutorialCard from '../TutorialCard'
 import Filter from '../Filter'
 import { Helmet } from 'react-helmet'
@@ -29,7 +29,7 @@ const TechTutorials = ({
 
   useEffect(() => {
     handleTutorialList()
-    techData.find((item) => {
+    techIcon.find((item) => {
       if (item.technology === technology) {
         return setTechDetails(item)
       }
@@ -72,7 +72,7 @@ const TechTutorials = ({
               <div className="row m-0">
                 <div className="col-12 px-0">
                   <div className="nav p-0">
-                    <p className="nav-link pt-2"><Link to="/home">Library</Link> / <Link to="/index_technologies">Tutorials</Link> / <Link to={`/tutorials/${techDetails && techDetails.technology}`}>{`${techDetails && techDetails.title} Tutorial`}</Link></p>
+                    <p className="nav-link pt-2"><Link to="/home">Library</Link> / <Link to="/index_technologies">Tutorials</Link> / <Link to={`/tutorials/${technology}`}>{`${techDetails && techDetails.title} Tutorial`}</Link></p>
                   </div>
                 </div>
               </div>
@@ -83,7 +83,7 @@ const TechTutorials = ({
                   <p className="desktop-tutorial-text">From building websites to analyzing data, the choice is yours. Find the best of the best courses to learn from...</p>
                 </div>
                 <div className="col-6 right-header-section">
-                  {techData.map((item) => (
+                  {techIcon.map((item) => (
                     (item.technology === technology) &&
                     <img
                       height="400px"
@@ -98,7 +98,7 @@ const TechTutorials = ({
               </div>
             </div>
           </div>
-          <h2 className="my-md-5 mt-5 mb-2 text-center">{`Find Best ${techDetails.title} Tutorials and Courses`}</h2>
+          <h2 className="my-md-5 mt-5 mb-2 text-center">{`Find Best ${techDetails && techDetails.title} Tutorials and Courses`}</h2>
           <div className="row m-0">
             <div className="col-12 col-sm-12 col-md-3 pt-2 main">
               <Filter

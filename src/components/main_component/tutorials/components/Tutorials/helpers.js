@@ -21,7 +21,7 @@ export const techIcon = [
     svgSource: "React.png",
     technology: "React",
     title: "React",
-    techCategory: "webDevelopment",
+    techCategory: "programming",
   },
 ];
 
@@ -73,20 +73,5 @@ export const techCategory = [
     link: "",
     title: "Cloud Computing",
     techCategory: "cloudComputing",
-  },
-];
-
-export const techData = [
-  {
-    svgSource: "React.png",
-    title: "React",
-    technology: "React",
-    id: "asder12",
-  },
-  {
-    svgSource: "Python.png",
-    title: "Python",
-    technology: "Python",
-    id: "asder13",
   },
 ];

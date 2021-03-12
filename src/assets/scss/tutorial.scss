@@ -44,6 +44,7 @@
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
+    display: flex;
     align-items: center;
   }
 }
@@ -51,9 +52,15 @@
 .tech-tag-col {
   ul {
     list-style-type: none;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    height: 300px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: auto;
+    white-space: nowrap;
+    display: flex;
+    padding: 0;
+    li {
+      display: flexbox;
+    }
     :hover {
       background-color: rgba(0, 0, 0, 0.09);
       height: auto;
@@ -539,6 +546,9 @@
     .right-header-section {
       order: 1;
     }
+    h1 {
+      font-size: 24px;
+    }
   }
 
   .tech-tag-col {
@@ -579,6 +589,13 @@
     overflow-y: hidden;
     display: flex;
     white-space: nowrap;
+  }
+
+  .submitter-card {
+    img {
+      height: 60px;
+      width: 60px;
+    }
   }
 }
 
